@@ -8,6 +8,105 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500;1,6..72,600&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="css/styles.css" />
+<style>
+/* ── Live project card accent colours ── */
+.wkcard__media--dental  { background: linear-gradient(135deg,#1e3a5f 0%,#2a6ea6 100%); }
+.wkcard__media--pinnacle{ background: linear-gradient(135deg,#1a1a2e 0%,#16213e 50%,#0f3460 100%); }
+.wkcard__media--malnad  { background: linear-gradient(135deg,#1b4332 0%,#2d6a4f 100%); }
+
+/* Live badge */
+.wkcard__live-badge {
+  position:absolute; bottom:14px; left:14px;
+  font-size:10px; font-weight:600; letter-spacing:.08em;
+  color:#fff; background:rgba(255,255,255,.18);
+  border:1px solid rgba(255,255,255,.25);
+  backdrop-filter:blur(6px);
+  padding:3px 9px; border-radius:20px;
+  text-transform:uppercase;
+}
+.wkcard__media { position:relative; }
+
+/* Mega-nav mini thumbnails */
+.wcard__img--dental  { background: linear-gradient(135deg,#1e3a5f,#2a6ea6); }
+.wcard__img--pinnacle{ background: linear-gradient(135deg,#1a1a2e,#0f3460); }
+.wcard__img--malnad  { background: linear-gradient(135deg,#1b4332,#2d6a4f); }
+
+/* ── FAQ Section ── */
+.faq {
+  padding: 100px 0 80px;
+  background: #fff;
+}
+.faq__in {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+.faq__head {
+  margin-bottom: 52px;
+}
+.faq__title {
+  margin-top: 10px;
+  font-size: clamp(2rem, 4vw, 2.8rem);
+}
+.faq__sub {
+  color: var(--ink-3, #6b7280);
+  margin-top: 14px;
+  font-size: 1.05rem;
+  max-width: 560px;
+}
+.faq__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border-top: 1px solid var(--rule, #e5e7eb);
+}
+.faq__item {
+  border-bottom: 1px solid var(--rule, #e5e7eb);
+}
+.faq__item summary { list-style: none; }
+.faq__item summary::-webkit-details-marker { display: none; }
+.faq__q {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 22px 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--ink-1, #0b1024);
+  transition: color .18s;
+  user-select: none;
+}
+.faq__q:hover { color: var(--blue, #1f4fd8); }
+.faq__q span { flex: 1; }
+.faq__caret {
+  width: 16px; height: 16px;
+  flex-shrink: 0;
+  transition: transform .28s cubic-bezier(.4,0,.2,1);
+  color: var(--ink-3, #6b7280);
+}
+.faq__item[open] .faq__caret  { transform: rotate(180deg); }
+.faq__item[open] .faq__q      { color: var(--blue, #1f4fd8); }
+.faq__a {
+  padding: 0 4px 22px;
+  animation: faqSlide .22s ease;
+}
+@keyframes faqSlide {
+  from { opacity:0; transform:translateY(-6px); }
+  to   { opacity:1; transform:translateY(0); }
+}
+.faq__a p {
+  color: var(--ink-2, #374151);
+  font-size: .975rem;
+  line-height: 1.7;
+  margin: 0;
+}
+@media (max-width:640px) {
+  .faq { padding: 64px 0 48px; }
+  .faq__in { padding: 0 20px; }
+}
+</style>
 </head>
 <body>
 <div class="grain"></div>
@@ -85,9 +184,9 @@
       </div>
       <div class="mega__panel" data-panel="work">
         <div class="mega-work">
-          <a class="wcard" href="work.html"><div class="wcard__img ph"></div><div class="wcard__meta"><div class="wcard__t">Northwind SaaS</div><div class="wcard__c">Platform · Web app</div></div></a>
-          <a class="wcard" href="work.html"><div class="wcard__img ph"></div><div class="wcard__meta"><div class="wcard__t">Atlas Commerce</div><div class="wcard__c">E-commerce · SEO</div></div></a>
-          <a class="wcard" href="work.html"><div class="wcard__img ph"></div><div class="wcard__meta"><div class="wcard__t">Pulse Health</div><div class="wcard__c">Mobile app</div></div></a>
+          <a class="wcard" href="https://ashirwaddentalclinic.vercel.app/" target="_blank" rel="noopener"><div class="wcard__img ph wcard__img--dental"></div><div class="wcard__meta"><div class="wcard__t">Ashirwad Dental Clinic</div><div class="wcard__c">Web · Redesign</div></div></a>
+          <a class="wcard" href="https://www.pinnacleinc.co/" target="_blank" rel="noopener"><div class="wcard__img ph wcard__img--pinnacle"></div><div class="wcard__meta"><div class="wcard__t">Pinnacle Inc.</div><div class="wcard__c">Web · EdTech</div></div></a>
+          <a class="wcard" href="https://www.malnadstories.com/" target="_blank" rel="noopener"><div class="wcard__img ph wcard__img--malnad"></div><div class="wcard__meta"><div class="wcard__t">Malnad Stories</div><div class="wcard__c">E-commerce · Web App</div></div></a>
         </div>
       </div>
     </div>
@@ -111,54 +210,143 @@
 
 <section class="wkwrap" data-screen-label="Case Studies">
   <div class="wkgrid">
-    <a class="wkcard reveal" href="contact.html">
-      <div class="wkcard__media"><span class="wkcard__cat2">SaaS · Web App</span><span class="wkcard__mono">N</span><span class="wkcard__go"><svg viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H4M10 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></div>
+    <a class="wkcard wkcard--live reveal" href="https://ashirwaddentalclinic.vercel.app/" target="_blank" rel="noopener">
+      <div class="wkcard__media wkcard__media--dental"><span class="wkcard__cat2">Web · Redesign</span><span class="wkcard__mono">A</span><span class="wkcard__go"><svg viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H4M10 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="wkcard__live-badge">Live ↗</span></div>
       <div class="wkcard__body">
-        <h3 class="wkcard__title">Northwind</h3>
-        <p class="wkcard__desc">A B2B operations platform with billing, roles and dashboards — built in 8 weeks.</p>
-        <div class="wkcard__result"><b>3.4×</b> faster workflows</div>
+        <h3 class="wkcard__title">Ashirwad Dental Clinic</h3>
+        <p class="wkcard__desc">Full website redesign for a dental clinic — modern feel, WhatsApp booking flow, and a gallery that builds patient trust.</p>
+        <div class="wkcard__result"><b>Modern</b> patient experience</div>
       </div>
     </a>
-    <a class="wkcard reveal" href="contact.html" data-d="1">
-      <div class="wkcard__media"><span class="wkcard__cat2">Web · SEO</span><span class="wkcard__mono">A</span><span class="wkcard__go"><svg viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H4M10 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></div>
+    <a class="wkcard wkcard--live reveal" href="https://www.pinnacleinc.co/" target="_blank" rel="noopener" data-d="1">
+      <div class="wkcard__media wkcard__media--pinnacle"><span class="wkcard__cat2">Web · EdTech</span><span class="wkcard__mono">P</span><span class="wkcard__go"><svg viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H4M10 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="wkcard__live-badge">Live ↗</span></div>
       <div class="wkcard__body">
-        <h3 class="wkcard__title">Atlas Commerce</h3>
-        <p class="wkcard__desc">A headless storefront rebuilt for speed and search, with a CMS the team enjoys.</p>
-        <div class="wkcard__result"><b>+118%</b> organic traffic</div>
+        <h3 class="wkcard__title">Pinnacle Inc.</h3>
+        <p class="wkcard__desc">Landing page and brand presence for a GRE &amp; IELTS coaching company — built to convert prospective students.</p>
+        <div class="wkcard__result"><b>EdTech</b> lead generation</div>
       </div>
     </a>
-    <a class="wkcard reveal" href="contact.html" data-d="2">
-      <div class="wkcard__media"><span class="wkcard__cat2">Mobile App</span><span class="wkcard__mono">P</span><span class="wkcard__go"><svg viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H4M10 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></div>
+    <a class="wkcard wkcard--live reveal" href="https://www.malnadstories.com/" target="_blank" rel="noopener" data-d="2">
+      <div class="wkcard__media wkcard__media--malnad"><span class="wkcard__cat2">E-commerce · Web App</span><span class="wkcard__mono">M</span><span class="wkcard__go"><svg viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H4M10 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="wkcard__live-badge">Live ↗</span></div>
       <div class="wkcard__body">
-        <h3 class="wkcard__title">Pulse Health</h3>
-        <p class="wkcard__desc">A cross-platform health app shipped to both stores, with offline sync and push.</p>
-        <div class="wkcard__result"><b>4.8★</b> app store rating</div>
+        <h3 class="wkcard__title">Malnad Stories</h3>
+        <p class="wkcard__desc">A full-stack photo album e-commerce platform for trek and travel memories — custom printing, secure payments, and cloud storage.</p>
+        <div class="wkcard__result"><b>Full-stack</b> launch ready</div>
       </div>
     </a>
-    <a class="wkcard reveal" href="contact.html">
-      <div class="wkcard__media"><span class="wkcard__cat2">SEO · Content</span><span class="wkcard__mono">V</span><span class="wkcard__go"><svg viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H4M10 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></div>
-      <div class="wkcard__body">
-        <h3 class="wkcard__title">Vantage Finance</h3>
-        <p class="wkcard__desc">Technical SEO plus a content engine that compounds month over month.</p>
-        <div class="wkcard__result"><b>#1</b> for target keywords</div>
-      </div>
-    </a>
-    <a class="wkcard reveal" href="contact.html" data-d="1">
-      <div class="wkcard__media"><span class="wkcard__cat2">SaaS · Care</span><span class="wkcard__mono">L</span><span class="wkcard__go"><svg viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H4M10 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></div>
-      <div class="wkcard__body">
-        <h3 class="wkcard__title">Loop Analytics</h3>
-        <p class="wkcard__desc">A real-time analytics product we built, then kept running on a monthly retainer.</p>
-        <div class="wkcard__result"><b>99.98%</b> uptime</div>
-      </div>
-    </a>
-    <a class="wkcard reveal" href="contact.html" data-d="2">
-      <div class="wkcard__media"><span class="wkcard__cat2">Brand · Marketing</span><span class="wkcard__mono">B</span><span class="wkcard__go"><svg viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H4M10 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></div>
-      <div class="wkcard__body">
-        <h3 class="wkcard__title">Brightleaf</h3>
-        <p class="wkcard__desc">Brand identity, a marketing site and a launch campaign — shipped in one sprint.</p>
-        <div class="wkcard__result"><b>5×</b> launch-week signups</div>
-      </div>
-    </a>
+  </div>
+</section>
+
+<section class="faq" data-screen-label="FAQ">
+  <div class="faq__in">
+    <div class="faq__head">
+      <span class="eyebrow">Before you ask</span>
+      <h2 class="tr faq__title">Common questions, <span class="serif-i">honest answers.</span></h2>
+      <p class="faq__sub">Everything we get asked before a project kicks off — and a few things you should ask even if you haven't yet.</p>
+    </div>
+    <div class="faq__list" id="faqList">
+
+      <details class="faq__item">
+        <summary class="faq__q">
+          <span>What makes Elyx different from other web agencies?</span>
+          <svg class="faq__caret" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="faq__a">
+          <p>Most agencies hand your project to a rotating cast of sub-contractors. At Elyx, a small core team owns every engagement from discovery to launch — same people, same context, start to finish. You get direct access, faster decisions, and work that's actually cohesive.</p>
+        </div>
+      </details>
+
+      <details class="faq__item">
+        <summary class="faq__q">
+          <span>How much does a project cost?</span>
+          <svg class="faq__caret" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="faq__a">
+          <p>Engagements start at ₹9,999 for a focused landing page or redesign. Larger platforms and full-stack builds are scoped after a discovery call — we price by outcome, not by the hour. No surprise line items mid-project.</p>
+        </div>
+      </details>
+
+      <details class="faq__item">
+        <summary class="faq__q">
+          <span>How long does it take to build a website?</span>
+          <svg class="faq__caret" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="faq__a">
+          <p>A marketing site or landing page typically ships in 1–2 weeks. A complex web app or e-commerce platform takes 4–8 weeks depending on scope. We always agree on a timeline before we start and flag blockers early — no radio silence.</p>
+        </div>
+      </details>
+
+      <details class="faq__item">
+        <summary class="faq__q">
+          <span>Do you work with clients who already have a website?</span>
+          <svg class="faq__caret" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="faq__a">
+          <p>Yes — redesigns and migrations are a big part of what we do. We'll audit what you have, keep anything worth keeping (SEO equity, existing content), and rebuild the rest properly. Ashirwad Dental Clinic is a good example of this.</p>
+        </div>
+      </details>
+
+      <details class="faq__item">
+        <summary class="faq__q">
+          <span>What technologies do you build with?</span>
+          <svg class="faq__caret" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="faq__a">
+          <p>We're stack-agnostic and pick what fits the job. React, Next.js, and TypeScript for most frontends. Node.js, FastAPI, or Python backends. PostgreSQL or MongoDB for data. We don't lock you into proprietary systems that need us to maintain them forever.</p>
+        </div>
+      </details>
+
+      <details class="faq__item">
+        <summary class="faq__q">
+          <span>Will I be able to update the site myself after launch?</span>
+          <svg class="faq__caret" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="faq__a">
+          <p>Yes — we build for handoff. Where it makes sense we integrate a CMS so your team can edit content without touching code. We also document everything and offer a walkthrough session so you're never dependent on us for routine updates.</p>
+        </div>
+      </details>
+
+      <details class="faq__item">
+        <summary class="faq__q">
+          <span>Do you offer post-launch support and maintenance?</span>
+          <svg class="faq__caret" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="faq__a">
+          <p>Yes. We have monthly maintenance and care retainers that cover uptime monitoring, security patches, performance checks, and a set of update hours each month. You can pick this up at launch or add it later — no pressure either way.</p>
+        </div>
+      </details>
+
+      <details class="faq__item">
+        <summary class="faq__q">
+          <span>What does the process look like from first message to go-live?</span>
+          <svg class="faq__caret" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="faq__a">
+          <p>A short discovery call → scoped proposal with timeline and price → design (wireframes + visual) → build with two rounds of feedback → QA + staging review → launch. You're looped in at every stage, not just the beginning and end.</p>
+        </div>
+      </details>
+
+      <details class="faq__item">
+        <summary class="faq__q">
+          <span>Do you only take on large projects, or can smaller businesses work with you?</span>
+          <svg class="faq__caret" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="faq__a">
+          <p>Small businesses are some of our favourite clients. A focused, well-built website for a local dental clinic or a coaching centre can genuinely change their business. We take on a limited number of projects at a time precisely so smaller engagements get the same attention as bigger ones.</p>
+        </div>
+      </details>
+
+      <details class="faq__item">
+        <summary class="faq__q">
+          <span>How do payments and contracts work?</span>
+          <svg class="faq__caret" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="faq__a">
+          <p>50% upfront to begin, 50% on final delivery. Everything is covered in a straightforward statement of work — scope, deliverables, timeline, and revision rounds. No retainer lock-ins unless you want one.</p>
+        </div>
+      </details>
+
+    </div>
   </div>
 </section>
 
