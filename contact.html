@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contact — Elyx Solutions</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500;1,6..72,600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+<div class="grain"></div>
+<!-- ============================ NAV ============================ -->
+<div class="nav-shell scrolled" id="navShell">
+  <nav class="nav" id="nav">
+    <a class="brand" href="index.html" aria-label="Elyx Solutions home">
+      <svg class="brand__mark" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+        <g transform="skewX(-10)">
+          <rect x="7" y="4" width="15" height="4.4" rx="1.2" fill="#1f4fd8"></rect>
+          <rect x="7" y="11.8" width="11" height="4.4" rx="1.2" fill="#0b1024"></rect>
+          <rect x="7" y="19.6" width="15" height="4.4" rx="1.2" fill="#1f4fd8"></rect>
+        </g>
+      </svg>
+      <span class="brand__name">Elyx</span>
+    </a>
+    <div class="nav__links" id="navLinks">
+      <div class="nav__item" data-menu="services">
+        <button type="button">Services
+          <svg class="caret" viewBox="0 0 10 10" fill="none"><path d="M1 3l4 4 4-4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+        </button>
+      </div>
+      <div class="nav__item" data-menu="work">
+        <button type="button">Work
+          <svg class="caret" viewBox="0 0 10 10" fill="none"><path d="M1 3l4 4 4-4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+        </button>
+      </div>
+      <div class="nav__item"><a href="about.html">About</a></div>
+      <div class="nav__item"><a href="contact.html">Contact</a></div>
+    </div>
+    <div class="nav__right">
+      <a class="btn btn--primary nav__cta" href="contact.html">Let's talk <svg class="arr" width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H4M10 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+      <button class="nav__burger" id="burger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <div class="mobile-menu__group">
+      <span class="mobile-menu__label">Services</span>
+      <a href="services.html#saas">SaaS Development</a>
+      <a href="services.html#web">Web Development</a>
+      <a href="services.html#app">App Development</a>
+      <a href="services.html#seo">SEO Optimization</a>
+      <a href="services.html#care">Maintenance &amp; Care</a>
+    </div>
+    <div class="mobile-menu__group">
+      <span class="mobile-menu__label">Company</span>
+      <a href="about.html">About</a>
+      <a href="work.html">Work</a>
+      <a href="services.html#pricing">Pricing</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <a class="btn btn--blue mobile-menu__cta" href="contact.html">Let's talk <svg class="arr" width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H4M10 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+  </div>
+  <div class="mega" id="mega">
+    <div class="mega__inner">
+      <div class="mega__panel" data-panel="services">
+        <div class="mega-grid">
+          <div class="mega-tiles">
+            <a class="mtile" href="services.html#saas"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M6 16a4 4 0 010-8 5 5 0 019.6-1.5A3.5 3.5 0 0118 16H6z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">SaaS Development</span><span class="mtile__d">Multi-tenant platforms, end to end.</span></span></a>
+            <a class="mtile" href="services.html#seo"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><circle cx="10.5" cy="10.5" r="6" stroke="currentColor" stroke-width="1.6"></circle><path d="M15 15l5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg></span><span><span class="mtile__t">SEO Optimization</span><span class="mtile__d">Technical &amp; content-led growth.</span></span></a>
+            <a class="mtile" href="services.html#web"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M9 8l-4 4 4 4M15 8l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">Web Development</span><span class="mtile__d">Sites &amp; web apps that fly.</span></span></a>
+            <a class="mtile" href="services.html#app"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><rect x="7" y="3" width="10" height="18" rx="2.5" stroke="currentColor" stroke-width="1.6"></rect><path d="M11 18h2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg></span><span><span class="mtile__t">App Development</span><span class="mtile__d">Native &amp; cross-platform mobile.</span></span></a>
+            <a class="mtile" href="services.html#care"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M12 8v4l3 2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path><circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="1.6"></circle></svg></span><span><span class="mtile__t">Maintenance &amp; Care</span><span class="mtile__d">Monitoring, updates, iteration.</span></span></a>
+            <a class="mtile" href="services.html#pricing"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M4 14l5-5 4 4 7-7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path><path d="M20 6v4h-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">Pricing</span><span class="mtile__d">Engagements from ₹9,999.</span></span></a>
+          </div>
+          <a class="mega-feature" href="services.html#pricing">
+            <div class="ph-grid"></div>
+            <div class="mega-feature__k">Featured</div>
+            <div class="mega-feature__t">Simple pricing. Engagements start at ₹9,999.</div>
+            <div class="mega-feature__l">See pricing <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H4M10 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+          </a>
+        </div>
+      </div>
+      <div class="mega__panel" data-panel="work">
+        <div class="mega-work">
+          <a class="wcard" href="work.html"><div class="wcard__img ph"></div><div class="wcard__meta"><div class="wcard__t">Northwind SaaS</div><div class="wcard__c">Platform · Web app</div></div></a>
+          <a class="wcard" href="work.html"><div class="wcard__img ph"></div><div class="wcard__meta"><div class="wcard__t">Atlas Commerce</div><div class="wcard__c">E-commerce · SEO</div></div></a>
+          <a class="wcard" href="work.html"><div class="wcard__img ph"></div><div class="wcard__meta"><div class="wcard__t">Pulse Health</div><div class="wcard__c">Mobile app</div></div></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<span id="top"></span>
+<header class="page-hero" style="padding-bottom:clamp(30px,5vh,60px)" data-screen-label="Contact Hero">
+  <div class="deco" data-parallax="0.1" aria-hidden="true"><span class="orb orb-a"></span><span class="orb orb-c"></span></div>
+  <div class="page-hero__in">
+    <span class="eyebrow">Contact</span>
+    <h1 class="tr">Let's build something worth <span class="serif-i">shipping.</span></h1>
+    <p class="lead reveal">Tell us about your project. We'll get back within one business day with a clear next step — no sales runaround.</p>
+  </div>
+</header>
+
+<section class="contact" data-screen-label="Contact Form">
+  <div class="contact__grid">
+    <form class="cform reveal" id="cform" novalidate>
+      <div class="cform__fields">
+        <div class="field--row">
+          <div class="field"><label for="f-name">Name</label><input id="f-name" name="name" type="text" placeholder="Your name" required /></div>
+          <div class="field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" placeholder="you@company.com" required /></div>
+        </div>
+        <div class="field--row">
+          <div class="field"><label for="f-company">Company</label><input id="f-company" name="company" type="text" placeholder="Company name" /></div>
+          <div class="field"><label for="f-service">Service</label>
+            <select id="f-service" name="service">
+              <option>SaaS Development</option>
+              <option>Web Development</option>
+              <option>App Development</option>
+              <option>SEO Optimization</option>
+              <option>Maintenance &amp; Care</option>
+              <option>Not sure yet</option>
+            </select>
+          </div>
+        </div>
+        <div class="field"><label for="f-budget">Budget</label>
+          <select id="f-budget" name="budget">
+            <option>₹9,999 – ₹50,000</option>
+            <option>₹50,000 – ₹2,00,000</option>
+            <option>₹2,00,000 – ₹5,00,000</option>
+            <option>₹5,00,000+</option>
+          </select>
+        </div>
+        <div class="field"><label for="f-msg">Project details</label><textarea id="f-msg" name="message" placeholder="What are you building, and what does success look like?"></textarea></div>
+        <div class="cform__submit">
+          <button class="btn btn--blue" type="submit">Send message <svg class="arr" width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H4M10 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+          <span class="cform__note">Reply within 1 business day</span>
+        </div>
+      </div>
+      <div class="cform__success">
+        <svg viewBox="0 0 20 20" fill="none"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+        <div><h4>Message sent — thank you.</h4><p>We've received your details and will get back to you within one business day. Keep an eye on your inbox.</p></div>
+      </div>
+    </form>
+
+    <aside class="caside reveal" data-d="1">
+      <div class="cbox cbox--dark">
+        <div class="ph-grid"></div>
+        <div class="cbox__k">Email us</div>
+        <a class="cbox__v" href="mailto:elyxsolution@gmail.com">elyxsolution@gmail.com</a>
+        <div class="cbox__row">
+          <a class="cbox__chip" href="https://www.linkedin.com/company/elyxsolutions04/" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="cbox__chip" href="https://www.instagram.com/elyxsolutions" target="_blank" rel="noopener">Instagram</a>
+        </div>
+      </div>
+      <div class="cbox">
+        <div class="cbox__k">Availability</div>
+        <div class="cbox__v" style="display:flex;align-items:center;"><span class="cdot"></span>Taking new projects</div>
+        <p class="cform__note" style="margin-top:12px;">We take on a handful of projects at a time so each one gets our full attention.</p>
+      </div>
+      <div class="cbox">
+        <div class="cbox__k">What happens next</div>
+        <ul style="list-style:none;margin-top:16px;display:flex;flex-direction:column;gap:14px;">
+          <li style="display:flex;gap:11px;font-family:var(--sans);font-size:14.5px;color:var(--ink-soft);line-height:1.45;"><span style="color:var(--blue);flex:none;"><svg viewBox="0 0 20 20" fill="none"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>We read every message ourselves — no bots.</li>
+          <li style="display:flex;gap:11px;font-family:var(--sans);font-size:14.5px;color:var(--ink-soft);line-height:1.45;"><span style="color:var(--blue);flex:none;"><svg viewBox="0 0 20 20" fill="none"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>A short call to understand scope &amp; goals.</li>
+          <li style="display:flex;gap:11px;font-family:var(--sans);font-size:14.5px;color:var(--ink-soft);line-height:1.45;"><span style="color:var(--blue);flex:none;"><svg viewBox="0 0 20 20" fill="none"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>A clear proposal with timeline &amp; pricing.</li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</section>
+<!-- ============================ FOOTER ============================ -->
+<footer class="footer">
+  <div class="footer__in">
+    <div class="footer__top">
+      <div>
+        <a class="brand" href="index.html" aria-label="Elyx Solutions home">
+      <svg class="brand__mark" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+        <g transform="skewX(-10)">
+          <rect x="7" y="4" width="15" height="4.4" rx="1.2" fill="#1f4fd8"></rect>
+          <rect x="7" y="11.8" width="11" height="4.4" rx="1.2" fill="#0b1024"></rect>
+          <rect x="7" y="19.6" width="15" height="4.4" rx="1.2" fill="#1f4fd8"></rect>
+        </g>
+      </svg>
+      <span class="brand__name">Elyx</span>
+    </a>
+        <p class="footer__lede">Beyond just presence — we build digital <span class="serif-i" style="color:var(--blue)">value.</span></p>
+      </div>
+      <div class="fcol">
+        <h4>Services</h4>
+        <a href="services.html#saas">SaaS Development</a>
+        <a href="services.html#web">Web Development</a>
+        <a href="services.html#app">App Development</a>
+        <a href="services.html#seo">SEO Optimization</a>
+        <a href="services.html#care">Maintenance &amp; Care</a>
+      </div>
+      <div class="fcol">
+        <h4>Company</h4>
+        <a href="about.html">About</a>
+        <a href="work.html">Work</a>
+        <a href="services.html#pricing">Pricing</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="fcol">
+        <h4>Connect</h4>
+        <a href="mailto:elyxsolution@gmail.com">elyxsolution@gmail.com</a>
+        <a href="https://www.linkedin.com/company/elyxsolutions04/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://www.instagram.com/elyxsolutions" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+    <div class="footer__bot">
+      <span>© 2026 Elyx Solutions. All rights reserved.</span>
+      <span>Designed &amp; built in-house.</span>
+    </div>
+  </div>
+</footer>
+<script src="js/site.js"></script>
+</body>
+</html>

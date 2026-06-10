@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Work — Elyx Solutions</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500;1,6..72,600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+<div class="grain"></div>
+<!-- ============================ NAV ============================ -->
+<div class="nav-shell scrolled" id="navShell">
+  <nav class="nav" id="nav">
+    <a class="brand" href="index.html" aria-label="Elyx Solutions home">
+      <svg class="brand__mark" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+        <g transform="skewX(-10)">
+          <rect x="7" y="4" width="15" height="4.4" rx="1.2" fill="#1f4fd8"></rect>
+          <rect x="7" y="11.8" width="11" height="4.4" rx="1.2" fill="#0b1024"></rect>
+          <rect x="7" y="19.6" width="15" height="4.4" rx="1.2" fill="#1f4fd8"></rect>
+        </g>
+      </svg>
+      <span class="brand__name">Elyx</span>
+    </a>
+    <div class="nav__links" id="navLinks">
+      <div class="nav__item" data-menu="services">
+        <button type="button">Services
+          <svg class="caret" viewBox="0 0 10 10" fill="none"><path d="M1 3l4 4 4-4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+        </button>
+      </div>
+      <div class="nav__item" data-menu="work">
+        <button type="button">Work
+          <svg class="caret" viewBox="0 0 10 10" fill="none"><path d="M1 3l4 4 4-4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+        </button>
+      </div>
+      <div class="nav__item"><a href="about.html">About</a></div>
+      <div class="nav__item"><a href="contact.html">Contact</a></div>
+    </div>
+    <div class="nav__right">
+      <a class="btn btn--primary nav__cta" href="contact.html">Let's talk <svg class="arr" width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H4M10 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+      <button class="nav__burger" id="burger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <div class="mobile-menu__group">
+      <span class="mobile-menu__label">Services</span>
+      <a href="services.html#saas">SaaS Development</a>
+      <a href="services.html#web">Web Development</a>
+      <a href="services.html#app">App Development</a>
+      <a href="services.html#seo">SEO Optimization</a>
+      <a href="services.html#care">Maintenance &amp; Care</a>
+    </div>
+    <div class="mobile-menu__group">
+      <span class="mobile-menu__label">Company</span>
+      <a href="about.html">About</a>
+      <a href="work.html">Work</a>
+      <a href="services.html#pricing">Pricing</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <a class="btn btn--blue mobile-menu__cta" href="contact.html">Let's talk <svg class="arr" width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H4M10 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+  </div>
+  <div class="mega" id="mega">
+    <div class="mega__inner">
+      <div class="mega__panel" data-panel="services">
+        <div class="mega-grid">
+          <div class="mega-tiles">
+            <a class="mtile" href="services.html#saas"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M6 16a4 4 0 010-8 5 5 0 019.6-1.5A3.5 3.5 0 0118 16H6z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">SaaS Development</span><span class="mtile__d">Multi-tenant platforms, end to end.</span></span></a>
+            <a class="mtile" href="services.html#seo"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><circle cx="10.5" cy="10.5" r="6" stroke="currentColor" stroke-width="1.6"></circle><path d="M15 15l5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg></span><span><span class="mtile__t">SEO Optimization</span><span class="mtile__d">Technical &amp; content-led growth.</span></span></a>
+            <a class="mtile" href="services.html#web"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M9 8l-4 4 4 4M15 8l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">Web Development</span><span class="mtile__d">Sites &amp; web apps that fly.</span></span></a>
+            <a class="mtile" href="services.html#app"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><rect x="7" y="3" width="10" height="18" rx="2.5" stroke="currentColor" stroke-width="1.6"></rect><path d="M11 18h2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg></span><span><span class="mtile__t">App Development</span><span class="mtile__d">Native &amp; cross-platform mobile.</span></span></a>
+            <a class="mtile" href="services.html#care"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M12 8v4l3 2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path><circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="1.6"></circle></svg></span><span><span class="mtile__t">Maintenance &amp; Care</span><span class="mtile__d">Monitoring, updates, iteration.</span></span></a>
+            <a class="mtile" href="services.html#pricing"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M4 14l5-5 4 4 7-7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path><path d="M20 6v4h-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">Pricing</span><span class="mtile__d">Engagements from ₹9,999.</span></span></a>
+          </div>
+          <a class="mega-feature" href="services.html#pricing">
+            <div class="ph-grid"></div>
+            <div class="mega-feature__k">Featured</div>
+            <div class="mega-feature__t">Simple pricing. Engagements start at ₹9,999.</div>
+            <div class="mega-feature__l">See pricing <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H4M10 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+          </a>
+        </div>
+      </div>
+      <div class="mega__panel" data-panel="work">
+        <div class="mega-work">
+          <a class="wcard" href="work.html"><div class="wcard__img ph"></div><div class="wcard__meta"><div class="wcard__t">Northwind SaaS</div><div class="wcard__c">Platform · Web app</div></div></a>
+          <a class="wcard" href="work.html"><div class="wcard__img ph"></div><div class="wcard__meta"><div class="wcard__t">Atlas Commerce</div><div class="wcard__c">E-commerce · SEO</div></div></a>
+          <a class="wcard" href="work.html"><div class="wcard__img ph"></div><div class="wcard__meta"><div class="wcard__t">Pulse Health</div><div class="wcard__c">Mobile app</div></div></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<span id="top"></span>
+<header class="page-hero" data-screen-label="Work Hero">
+  <div class="deco" data-parallax="0.1" aria-hidden="true"><span class="orb orb-a"></span><span class="orb orb-c"></span></div>
+  <div class="page-hero__in">
+    <span class="eyebrow">Selected work</span>
+    <h1 class="tr">Work that moved the <span class="serif-i">needle</span> — not just the pixels.</h1>
+    <p class="lead reveal">A selection of products we've designed, built and grown — all of it by the three of us. Every engagement starts at ₹9,999 and is scoped to the outcome that matters.</p>
+    <div class="page-hero__chips reveal" data-d="1">
+      <span class="chip"><span class="dot"></span>SaaS</span>
+      <span class="chip"><span class="dot"></span>Web</span>
+      <span class="chip"><span class="dot"></span>Mobile</span>
+      <span class="chip"><span class="dot"></span>SEO &amp; Growth</span>
+    </div>
+  </div>
+</header>
+
+<section class="wkwrap" data-screen-label="Case Studies">
+  <div class="wkgrid">
+    <a class="wkcard reveal" href="contact.html">
+      <div class="wkcard__media"><span class="wkcard__cat2">SaaS · Web App</span><span class="wkcard__mono">N</span><span class="wkcard__go"><svg viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H4M10 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></div>
+      <div class="wkcard__body">
+        <h3 class="wkcard__title">Northwind</h3>
+        <p class="wkcard__desc">A B2B operations platform with billing, roles and dashboards — built in 8 weeks.</p>
+        <div class="wkcard__result"><b>3.4×</b> faster workflows</div>
+      </div>
+    </a>
+    <a class="wkcard reveal" href="contact.html" data-d="1">
+      <div class="wkcard__media"><span class="wkcard__cat2">Web · SEO</span><span class="wkcard__mono">A</span><span class="wkcard__go"><svg viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H4M10 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></div>
+      <div class="wkcard__body">
+        <h3 class="wkcard__title">Atlas Commerce</h3>
+        <p class="wkcard__desc">A headless storefront rebuilt for speed and search, with a CMS the team enjoys.</p>
+        <div class="wkcard__result"><b>+118%</b> organic traffic</div>
+      </div>
+    </a>
+    <a class="wkcard reveal" href="contact.html" data-d="2">
+      <div class="wkcard__media"><span class="wkcard__cat2">Mobile App</span><span class="wkcard__mono">P</span><span class="wkcard__go"><svg viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H4M10 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></div>
+      <div class="wkcard__body">
+        <h3 class="wkcard__title">Pulse Health</h3>
+        <p class="wkcard__desc">A cross-platform health app shipped to both stores, with offline sync and push.</p>
+        <div class="wkcard__result"><b>4.8★</b> app store rating</div>
+      </div>
+    </a>
+    <a class="wkcard reveal" href="contact.html">
+      <div class="wkcard__media"><span class="wkcard__cat2">SEO · Content</span><span class="wkcard__mono">V</span><span class="wkcard__go"><svg viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H4M10 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></div>
+      <div class="wkcard__body">
+        <h3 class="wkcard__title">Vantage Finance</h3>
+        <p class="wkcard__desc">Technical SEO plus a content engine that compounds month over month.</p>
+        <div class="wkcard__result"><b>#1</b> for target keywords</div>
+      </div>
+    </a>
+    <a class="wkcard reveal" href="contact.html" data-d="1">
+      <div class="wkcard__media"><span class="wkcard__cat2">SaaS · Care</span><span class="wkcard__mono">L</span><span class="wkcard__go"><svg viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H4M10 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></div>
+      <div class="wkcard__body">
+        <h3 class="wkcard__title">Loop Analytics</h3>
+        <p class="wkcard__desc">A real-time analytics product we built, then kept running on a monthly retainer.</p>
+        <div class="wkcard__result"><b>99.98%</b> uptime</div>
+      </div>
+    </a>
+    <a class="wkcard reveal" href="contact.html" data-d="2">
+      <div class="wkcard__media"><span class="wkcard__cat2">Brand · Marketing</span><span class="wkcard__mono">B</span><span class="wkcard__go"><svg viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H4M10 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></div>
+      <div class="wkcard__body">
+        <h3 class="wkcard__title">Brightleaf</h3>
+        <p class="wkcard__desc">Brand identity, a marketing site and a launch campaign — shipped in one sprint.</p>
+        <div class="wkcard__result"><b>5×</b> launch-week signups</div>
+      </div>
+    </a>
+  </div>
+</section>
+
+<section class="cta" data-screen-label="Contact CTA">
+  <div class="cta__in reveal">
+    <div class="deco deco-dark" data-parallax="0.08" style="z-index:-1" aria-hidden="true"><span class="orb orb-a"></span></div>
+    <div class="ph-grid cta__bg"></div>
+    <div class="cta__glow"></div>
+    <span class="eyebrow is-light" style="justify-content:center;">Let's build</span>
+    <h2 class="cta__t tr" style="color:#fff;margin-top:20px;">Have something worth <span class="em">building?</span></h2>
+    <p class="cta__sub">Tell us where you're headed. We'll bring the team, the plan and the craft to get you there.</p>
+    <div class="cta__row">
+      <a class="btn btn--blue" href="contact.html">Start a project <svg class="arr" width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H4M10 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+      <a class="btn btn--light" href="services.html#pricing">View pricing</a>
+    </div>
+  </div>
+</section>
+<!-- ============================ FOOTER ============================ -->
+<footer class="footer">
+  <div class="footer__in">
+    <div class="footer__top">
+      <div>
+        <a class="brand" href="index.html" aria-label="Elyx Solutions home">
+      <svg class="brand__mark" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+        <g transform="skewX(-10)">
+          <rect x="7" y="4" width="15" height="4.4" rx="1.2" fill="#1f4fd8"></rect>
+          <rect x="7" y="11.8" width="11" height="4.4" rx="1.2" fill="#0b1024"></rect>
+          <rect x="7" y="19.6" width="15" height="4.4" rx="1.2" fill="#1f4fd8"></rect>
+        </g>
+      </svg>
+      <span class="brand__name">Elyx</span>
+    </a>
+        <p class="footer__lede">Beyond just presence — we build digital <span class="serif-i" style="color:var(--blue)">value.</span></p>
+      </div>
+      <div class="fcol">
+        <h4>Services</h4>
+        <a href="services.html#saas">SaaS Development</a>
+        <a href="services.html#web">Web Development</a>
+        <a href="services.html#app">App Development</a>
+        <a href="services.html#seo">SEO Optimization</a>
+        <a href="services.html#care">Maintenance &amp; Care</a>
+      </div>
+      <div class="fcol">
+        <h4>Company</h4>
+        <a href="about.html">About</a>
+        <a href="work.html">Work</a>
+        <a href="services.html#pricing">Pricing</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="fcol">
+        <h4>Connect</h4>
+        <a href="mailto:elyxsolution@gmail.com">elyxsolution@gmail.com</a>
+        <a href="https://www.linkedin.com/company/elyxsolutions04/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://www.instagram.com/elyxsolutions" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+    <div class="footer__bot">
+      <span>© 2026 Elyx Solutions. All rights reserved.</span>
+      <span>Designed &amp; built in-house.</span>
+    </div>
+  </div>
+</footer>
+<script src="js/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Services — Elyx Solutions</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500;1,6..72,600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+<div class="grain"></div>
+
+<!-- ============================ NAV ============================ -->
+<div class="nav-shell scrolled" id="navShell">
+  <nav class="nav" id="nav">
+    <a class="brand" href="index.html" aria-label="Elyx Solutions home">
+      <svg class="brand__mark" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+        <g transform="skewX(-10)">
+          <rect x="7" y="4" width="15" height="4.4" rx="1.2" fill="#1f4fd8"></rect>
+          <rect x="7" y="11.8" width="11" height="4.4" rx="1.2" fill="#0b1024"></rect>
+          <rect x="7" y="19.6" width="15" height="4.4" rx="1.2" fill="#1f4fd8"></rect>
+        </g>
+      </svg>
+      <span class="brand__name">Elyx</span>
+    </a>
+
+    <div class="nav__links" id="navLinks">
+      <div class="nav__item" data-menu="services">
+        <button type="button">Services
+          <svg class="caret" viewBox="0 0 10 10" fill="none"><path d="M1 3l4 4 4-4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+        </button>
+      </div>
+      <div class="nav__item" data-menu="work">
+        <button type="button">Work
+          <svg class="caret" viewBox="0 0 10 10" fill="none"><path d="M1 3l4 4 4-4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+        </button>
+      </div>
+      <div class="nav__item"><a href="about.html">About</a></div>
+      <div class="nav__item"><a href="contact.html">Contact</a></div>
+    </div>
+
+    <div class="nav__right">
+      <a class="btn btn--primary nav__cta" href="contact.html">Let's talk
+        <svg class="arr" width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H4M10 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+      </a>
+      <button class="nav__burger" id="burger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <div class="mobile-menu__group">
+      <span class="mobile-menu__label">Services</span>
+      <a href="#saas">SaaS Development</a>
+      <a href="#web">Web Development</a>
+      <a href="#app">App Development</a>
+      <a href="#seo">SEO Optimization</a>
+      <a href="#care">Maintenance &amp; Care</a>
+    </div>
+    <div class="mobile-menu__group">
+      <span class="mobile-menu__label">Company</span>
+      <a href="about.html">About</a>
+      <a href="index.html">Home</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <a class="btn btn--blue mobile-menu__cta" href="contact.html">Let's talk
+      <svg class="arr" width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H4M10 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+    </a>
+  </div>
+
+  <!-- Mega panel -->
+  <div class="mega" id="mega">
+    <div class="mega__inner">
+      <!-- SERVICES -->
+      <div class="mega__panel" data-panel="services">
+        <div class="mega-grid">
+          <div class="mega-tiles">
+            <a class="mtile" href="#saas">
+              <span class="mtile__ic">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M6 16a4 4 0 010-8 5 5 0 019.6-1.5A3.5 3.5 0 0118 16H6z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"></path></svg>
+              </span>
+              <span><span class="mtile__t">SaaS Development</span><span class="mtile__d">Multi-tenant platforms, end to end.</span></span>
+            </a>
+            <a class="mtile" href="#seo">
+              <span class="mtile__ic">
+                <svg viewBox="0 0 24 24" fill="none"><circle cx="10.5" cy="10.5" r="6" stroke="currentColor" stroke-width="1.6"></circle><path d="M15 15l5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg>
+              </span>
+              <span><span class="mtile__t">SEO Optimization</span><span class="mtile__d">Technical &amp; content-led growth.</span></span>
+            </a>
+            <a class="mtile" href="#web">
+              <span class="mtile__ic">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M9 8l-4 4 4 4M15 8l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+              </span>
+              <span><span class="mtile__t">Web Development</span><span class="mtile__d">Sites &amp; web apps that fly.</span></span>
+            </a>
+            <a class="mtile" href="#app">
+              <span class="mtile__ic">
+                <svg viewBox="0 0 24 24" fill="none"><rect x="7" y="3" width="10" height="18" rx="2.5" stroke="currentColor" stroke-width="1.6"></rect><path d="M11 18h2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg>
+              </span>
+              <span><span class="mtile__t">App Development</span><span class="mtile__d">Native &amp; cross-platform mobile.</span></span>
+            </a>
+            <a class="mtile" href="#care">
+              <span class="mtile__ic">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M12 8v4l3 2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path><circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="1.6"></circle></svg>
+              </span>
+              <span><span class="mtile__t">Maintenance &amp; Care</span><span class="mtile__d">Monitoring, updates, iteration.</span></span>
+            </a>
+            <a class="mtile" href="#pricing">
+              <span class="mtile__ic">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M4 14l5-5 4 4 7-7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path><path d="M20 6v4h-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+              </span>
+              <span><span class="mtile__t">Pricing</span><span class="mtile__d">Engagements from ₹9,999.</span></span>
+            </a>
+          </div>
+          <a class="mega-feature" href="#pricing">
+            <div class="ph-grid"></div>
+            <div class="mega-feature__k">Featured</div>
+            <div class="mega-feature__t">Simple pricing. Engagements start at ₹9,999.</div>
+            <div class="mega-feature__l">See pricing
+              <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H4M10 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- WORK -->
+      <div class="mega__panel" data-panel="work">
+        <div class="mega-work">
+          <a class="wcard" href="work.html"><div class="wcard__img ph"></div><div class="wcard__meta"><div class="wcard__t">Northwind SaaS</div><div class="wcard__c">Platform · Web app</div></div></a>
+          <a class="wcard" href="work.html"><div class="wcard__img ph"></div><div class="wcard__meta"><div class="wcard__t">Atlas Commerce</div><div class="wcard__c">E-commerce · SEO</div></div></a>
+          <a class="wcard" href="work.html"><div class="wcard__img ph"></div><div class="wcard__meta"><div class="wcard__t">Pulse Health</div><div class="wcard__c">Mobile app</div></div></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================ PAGE HERO ============================ -->
+<span id="top"></span>
+<header class="page-hero" data-screen-label="Services Hero">
+  <div class="deco" data-parallax="0.1" aria-hidden="true"><span class="orb orb-a"></span><span class="orb orb-c"></span></div>
+  <div class="page-hero__in">
+    <span class="eyebrow">Services</span>
+    <h1 class="tr">Everything you need to <span class="serif-i">build, launch</span> and grow — under one roof.</h1>
+    <p class="lead reveal">Strategy, design, engineering and growth — all from the three of us. No handoffs, no outsourcing, no agencies stacked on agencies. Just the people who build it, accountable for the outcome.</p>
+    <div class="page-hero__cta reveal" data-d="1">
+      <a class="btn btn--blue" href="#pricing">See pricing
+        <svg class="arr" width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H4M10 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+      </a>
+      <a class="btn btn--ghost" href="contact.html">Start a project</a>
+    </div>
+    <div class="page-hero__chips reveal" data-d="2">
+      <a class="chip" href="#saas"><span class="dot"></span>SaaS Development</a>
+      <a class="chip" href="#web"><span class="dot"></span>Web Development</a>
+      <a class="chip" href="#app"><span class="dot"></span>App Development</a>
+      <a class="chip" href="#seo"><span class="dot"></span>SEO Optimization</a>
+      <a class="chip" href="#care"><span class="dot"></span>Maintenance &amp; Care</a>
+    </div>
+  </div>
+</header>
+
+<!-- ============================ SERVICE ROWS ============================ -->
+<section class="srows">
+
+  <!-- SaaS -->
+  <article class="srow reveal" id="saas">
+    <div class="srow__text">
+      <div class="srow__num">01</div>
+      <h2 class="srow__t">SaaS Development</h2>
+      <p class="srow__d">We architect and build multi-tenant SaaS products end to end — from the data model and authentication to billing, dashboards and the polish that makes people stay. Built to scale from your first customer to your ten-thousandth.</p>
+      <ul class="srow__list">
+        <li><svg viewBox="0 0 20 20" fill="none"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>Architecture &amp; data modelling</li>
+        <li><svg viewBox="0 0 20 20" fill="none"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>Auth, roles &amp; permissions</li>
+        <li><svg viewBox="0 0 20 20" fill="none"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>Subscriptions &amp; billing</li>
+        <li><svg viewBox="0 0 20 20" fill="none"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>Admin &amp; analytics dashboards</li>
+      </ul>
+      <p class="srow__price">Engagements from <b>₹9,999</b></p>
+    </div>
+    <div class="srow__visual">
+      <div class="ph-grid"></div><div class="svis-glow"></div>
+      <div class="svis-ic"><svg viewBox="0 0 24 24" fill="none"><path d="M6 16a4 4 0 010-8 5 5 0 019.6-1.5A3.5 3.5 0 0118 16H6z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"></path></svg></div>
+      <div class="svis-bars">
+        <div class="svis-bar lg hot"></div><div class="svis-bar md"></div><div class="svis-bar sm"></div>
+      </div>
+      <div class="svis-row"><span class="svis-pill">Multi-tenant</span><span class="svis-pill">Billing</span><span class="svis-pill">Dashboards</span></div>
+    </div>
+  </article>
+
+  <!-- Web -->
+  <article class="srow flip reveal" id="web">
+    <div class="srow__text">
+      <div class="srow__num">02</div>
+      <h2 class="srow__t">Web Development</h2>
+      <p class="srow__d">Fast, accessible marketing sites and web apps built on a modern stack — with a headless CMS your team will actually enjoy using. Pixel-faithful to design, tuned for Core Web Vitals, and effortless to update.</p>
+      <ul class="srow__list">
+        <li><svg viewBox="0 0 20 20" fill="none"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>Marketing sites &amp; landing pages</li>
+        <li><svg viewBox="0 0 20 20" fill="none"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>Web apps &amp; portals</li>
+        <li><svg viewBox="0 0 20 20" fill="none"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>Headless CMS integration</li>
+        <li><svg viewBox="0 0 20 20" fill="none"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>E-commerce builds</li>
+      </ul>
+      <p class="srow__price">Engagements from <b>₹9,999</b></p>
+    </div>
+    <div class="srow__visual">
+      <div class="ph-grid"></div><div class="svis-glow"></div>
+      <div class="svis-ic"><svg viewBox="0 0 24 24" fill="none"><path d="M9 8l-4 4 4 4M15 8l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+      <div class="svis-bars">
+        <div class="svis-bar md"></div><div class="svis-bar lg hot"></div><div class="svis-bar sm"></div>
+      </div>
+      <div class="svis-row"><span class="svis-pill">Next.js</span><span class="svis-pill">Headless CMS</span><span class="svis-pill">E-commerce</span></div>
+    </div>
+  </article>
+
+  <!-- App -->
+  <article class="srow reveal" id="app">
+    <div class="srow__text">
+      <div class="srow__num">03</div>
+      <h2 class="srow__t">App Development</h2>
+      <p class="srow__d">Native and cross-platform mobile apps with the performance, feel and reliability your users expect. From a single codebase to platform-specific polish — shipped to both stores and maintained beyond launch.</p>
+      <ul class="srow__list">
+        <li><svg viewBox="0 0 20 20" fill="none"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>iOS &amp; Android</li>
+        <li><svg viewBox="0 0 20 20" fill="none"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>React Native &amp; Flutter</li>
+        <li><svg viewBox="0 0 20 20" fill="none"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>App Store submission</li>
+        <li><svg viewBox="0 0 20 20" fill="none"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>Push, offline &amp; analytics</li>
+      </ul>
+      <p class="srow__price">Engagements from <b>₹9,999</b></p>
+    </div>
+    <div class="srow__visual">
+      <div class="ph-grid"></div><div class="svis-glow"></div>
+      <div class="svis-ic"><svg viewBox="0 0 24 24" fill="none"><rect x="7" y="3" width="10" height="18" rx="2.5" stroke="currentColor" stroke-width="1.6"></rect><path d="M11 18h2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg></div>
+      <div class="svis-bars">
+        <div class="svis-bar sm"></div><div class="svis-bar md hot"></div><div class="svis-bar lg"></div>
+      </div>
+      <div class="svis-row"><span class="svis-pill">iOS</span><span class="svis-pill">Android</span><span class="svis-pill">React Native</span></div>
+    </div>
+  </article>
+
+  <!-- SEO -->
+  <article class="srow flip reveal" id="seo">
+    <div class="srow__text">
+      <div class="srow__num">04</div>
+      <h2 class="srow__t">SEO Optimization</h2>
+      <p class="srow__d">Technical foundations, content strategy and measurable rankings — growth that compounds long after launch. We fix what search engines penalise, build what they reward, and report on what actually moves revenue.</p>
+      <ul class="srow__list">
+        <li><svg viewBox="0 0 20 20" fill="none"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>Technical SEO audits</li>
+        <li><svg viewBox="0 0 20 20" fill="none"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>Content &amp; keyword strategy</li>
+        <li><svg viewBox="0 0 20 20" fill="none"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>Core Web Vitals</li>
+        <li><svg viewBox="0 0 20 20" fill="none"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>Analytics &amp; reporting</li>
+      </ul>
+      <p class="srow__price">Engagements from <b>₹9,999</b></p>
+    </div>
+    <div class="srow__visual">
+      <div class="ph-grid"></div><div class="svis-glow"></div>
+      <div class="svis-ic"><svg viewBox="0 0 24 24" fill="none"><circle cx="10.5" cy="10.5" r="6" stroke="currentColor" stroke-width="1.6"></circle><path d="M15 15l5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg></div>
+      <div class="svis-bars">
+        <div class="svis-bar sm"></div><div class="svis-bar md"></div><div class="svis-bar lg hot"></div>
+      </div>
+      <div class="svis-row"><span class="svis-pill">Technical SEO</span><span class="svis-pill">Content</span><span class="svis-pill">Analytics</span></div>
+    </div>
+  </article>
+
+  <!-- Care -->
+  <article class="srow reveal" id="care">
+    <div class="srow__text">
+      <div class="srow__num">05</div>
+      <h2 class="srow__t">Maintenance &amp; Care</h2>
+      <p class="srow__d">Proactive monitoring, updates and ongoing iteration — we stay long after launch so your product keeps getting better. Uptime watched around the clock, dependencies kept current, and a roadmap that never stalls.</p>
+      <ul class="srow__list">
+        <li><svg viewBox="0 0 20 20" fill="none"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>24/7 monitoring &amp; alerts</li>
+        <li><svg viewBox="0 0 20 20" fill="none"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>Security &amp; dependency updates</li>
+        <li><svg viewBox="0 0 20 20" fill="none"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>Backups &amp; recovery</li>
+        <li><svg viewBox="0 0 20 20" fill="none"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>Continuous iteration</li>
+      </ul>
+      <p class="srow__price">Retainers from <b>₹9,999</b><span style="opacity:.7">/mo</span></p>
+    </div>
+    <div class="srow__visual">
+      <div class="ph-grid"></div><div class="svis-glow"></div>
+      <div class="svis-ic"><svg viewBox="0 0 24 24" fill="none"><path d="M12 8v4l3 2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path><circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="1.6"></circle></svg></div>
+      <div class="svis-bars">
+        <div class="svis-bar lg"></div><div class="svis-bar sm hot"></div><div class="svis-bar md"></div>
+      </div>
+      <div class="svis-row"><span class="svis-pill">Monitoring</span><span class="svis-pill">Updates</span><span class="svis-pill">Support</span></div>
+    </div>
+  </article>
+</section>
+
+<!-- ============================ PRICING ============================ -->
+<section class="pricing" id="pricing" data-screen-label="Pricing">
+  <div class="deco deco-dark" data-parallax="0.12" aria-hidden="true"><span class="orb orb-a"></span><span class="orb orb-b"></span></div>
+  <div class="pricing__in">
+    <div class="pricing__head reveal">
+      <span class="eyebrow is-light" style="justify-content:center;">Pricing</span>
+      <h2 class="h2 tr" style="color:#fff;">Simple pricing. <span class="serif-i">Serious</span> value.</h2>
+      <p class="lead">Every engagement is scoped to exactly what you need — and it all starts from one honest number.</p>
+    </div>
+
+    <div class="price-anchor reveal">
+      <div class="price-anchor__k">Engagements start at</div>
+      <div class="price-anchor__n"><span class="price-anchor__cur">₹</span>9,999</div>
+      <p class="price-anchor__sub">One starting price across <b>every</b> service — design, build, SEO and care. Final pricing scales with scope, and we'll always quote it up front.</p>
+    </div>
+
+    <div class="ptiers">
+      <div class="ptier featured reveal">
+        <div class="ptier__top">
+          <span class="ptier__name">Launch</span>
+          <span class="ptier__badge">Starter</span>
+        </div>
+        <div class="ptier__price"><span class="cur">₹</span>9,999<span class="from">from</span></div>
+        <p class="ptier__desc">A focused build to get a polished product or site live — fast.</p>
+        <ul class="ptier__feats">
+          <li><svg viewBox="0 0 20 20" fill="none"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>Discovery &amp; scoping</li>
+          <li><svg viewBox="0 0 20 20" fill="none"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>Design &amp; build of one service</li>
+          <li><svg viewBox="0 0 20 20" fill="none"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>Launch &amp; handover</li>
+          <li><svg viewBox="0 0 20 20" fill="none"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>30 days post-launch support</li>
+        </ul>
+        <a class="btn btn--light" href="contact.html">Get started</a>
+      </div>
+
+      <div class="ptier reveal" data-d="1">
+        <div class="ptier__top">
+          <span class="ptier__name">Build</span>
+        </div>
+        <div class="ptier__price"><span class="from" style="margin-bottom:0">Custom</span></div>
+        <p class="ptier__desc">A full product across multiple services, designed and engineered end to end.</p>
+        <ul class="ptier__feats">
+          <li><svg viewBox="0 0 20 20" fill="none"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>Everything in Launch</li>
+          <li><svg viewBox="0 0 20 20" fill="none"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>Multi-service scope</li>
+          <li><svg viewBox="0 0 20 20" fill="none"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>All three of us on it</li>
+          <li><svg viewBox="0 0 20 20" fill="none"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>SEO &amp; growth setup</li>
+        </ul>
+        <a class="btn btn--ghost" href="contact.html" style="border-color:rgba(255,255,255,0.2);color:#fff">Request a quote</a>
+      </div>
+
+      <div class="ptier reveal" data-d="2">
+        <div class="ptier__top">
+          <span class="ptier__name">Partner</span>
+        </div>
+        <div class="ptier__price"><span class="from" style="margin-bottom:0">Let's talk</span></div>
+        <p class="ptier__desc">An ongoing partnership — we build, maintain and grow with you, month after month.</p>
+        <ul class="ptier__feats">
+          <li><svg viewBox="0 0 20 20" fill="none"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>Everything in Build</li>
+          <li><svg viewBox="0 0 20 20" fill="none"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>Ongoing maintenance &amp; care</li>
+          <li><svg viewBox="0 0 20 20" fill="none"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>Quarterly roadmap &amp; reviews</li>
+          <li><svg viewBox="0 0 20 20" fill="none"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>Priority response SLA</li>
+        </ul>
+        <a class="btn btn--ghost" href="contact.html" style="border-color:rgba(255,255,255,0.2);color:#fff">Book a call</a>
+      </div>
+    </div>
+
+    <p class="pricing__note">All prices in INR and exclusive of taxes. Final scope and pricing confirmed before any work begins.</p>
+  </div>
+</section>
+
+<!-- ============================ CTA ============================ -->
+<section class="cta" id="contact" data-screen-label="Contact CTA">
+  <div class="cta__in reveal">
+    <div class="deco deco-dark" data-parallax="0.08" style="z-index:-1" aria-hidden="true"><span class="orb orb-a"></span></div>
+    <div class="ph-grid cta__bg"></div>
+    <div class="cta__glow"></div>
+    <span class="eyebrow is-light" style="justify-content:center;">Let's build</span>
+    <h2 class="cta__t tr" style="color:#fff;margin-top:20px;">Have something worth <span class="em">building?</span></h2>
+    <p class="cta__sub">Tell us where you're headed. We'll bring the team, the plan and the craft to get you there.</p>
+    <div class="cta__row">
+      <a class="btn btn--blue" href="mailto:elyxsolution@gmail.com">Start a project
+        <svg class="arr" width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H4M10 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+      </a>
+      <a class="btn btn--light" href="#pricing">View pricing</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ FOOTER ============================ -->
+<footer class="footer">
+  <div class="footer__in">
+    <div class="footer__top">
+      <div>
+        <a class="brand" href="index.html">
+          <svg class="brand__mark" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+            <g transform="skewX(-10)">
+              <rect x="7" y="4" width="15" height="4.4" rx="1.2" fill="#1f4fd8"></rect>
+              <rect x="7" y="11.8" width="11" height="4.4" rx="1.2" fill="#0b1024"></rect>
+              <rect x="7" y="19.6" width="15" height="4.4" rx="1.2" fill="#1f4fd8"></rect>
+            </g>
+          </svg>
+          <span class="brand__name">Elyx</span>
+        </a>
+        <p class="footer__lede">Beyond just presence — we build digital <span class="serif-i" style="color:var(--blue)">value.</span></p>
+      </div>
+      <div class="fcol">
+        <h4>Services</h4>
+        <a href="#saas">SaaS Development</a>
+        <a href="#web">Web Development</a>
+        <a href="#app">App Development</a>
+        <a href="#seo">SEO Optimization</a>
+        <a href="#care">Maintenance &amp; Care</a>
+      </div>
+      <div class="fcol">
+        <h4>Company</h4>
+        <a href="about.html">About</a>
+        <a href="index.html">Home</a>
+        <a href="#pricing">Pricing</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="fcol">
+        <h4>Connect</h4>
+        <a href="mailto:elyxsolution@gmail.com">elyxsolution@gmail.com</a>
+        <a href="https://www.linkedin.com/company/elyxsolutions04/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://www.instagram.com/elyxsolutions" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+    <div class="footer__bot">
+      <span>© 2026 Elyx Solutions. All rights reserved.</span>
+      <span>Designed &amp; built in-house.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/site.js"></script>
+</body>
+</html>

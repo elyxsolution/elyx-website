@@ -1,0 +1,349 @@
+/* ============================================================
+   Elyx Solutions — interactions
+   ============================================================ */
+(function () {
+  'use strict';
+
+  var clamp = function (v, a, b) { return Math.max(a, Math.min(b, v)); };
+  var lerp = function (a, b, t) { return a + (b - a) * t; };
+  // normalize p into [a,b] -> [0,1]
+  var range = function (p, a, b) { return clamp((p - a) / (b - a), 0, 1); };
+  var smooth = function (t) { return t * t * (3 - 2 * t); };
+
+  var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* ---------------------------------------------------------
+     NAV scrolled state + MEGA MENU
+  --------------------------------------------------------- */
+  var shell = document.getElementById('navShell');
+  var mega = document.getElementById('mega');
+  var items = Array.prototype.slice.call(document.querySelectorAll('.nav__item[data-menu]'));
+  var panels = Array.prototype.slice.call(document.querySelectorAll('.mega__panel'));
+  var openKey = null, closeT = null;
+
+  function openMenu(key) {
+    clearTimeout(closeT);
+    openKey = key;
+    shell.classList.add('menu-open');
+    mega.classList.add('show');
+    panels.forEach(function (p) { p.classList.toggle('on', p.getAttribute('data-panel') === key); });
+    items.forEach(function (it) { it.classList.toggle('active', it.getAttribute('data-menu') === key); });
+  }
+  function closeMenu() {
+    openKey = null;
+    shell.classList.remove('menu-open');
+    mega.classList.remove('show');
+    items.forEach(function (it) { it.classList.remove('active'); });
+  }
+
+  items.forEach(function (it) {
+    var key = it.getAttribute('data-menu');
+    var btn = it.querySelector('button');
+    it.addEventListener('mouseenter', function () { openMenu(key); });
+    btn.addEventListener('focus', function () { openMenu(key); });
+    btn.addEventListener('click', function (e) {
+      e.preventDefault();
+      openKey === key ? closeMenu() : openMenu(key);
+    });
+  });
+
+  if (shell) {
+    shell.addEventListener('mouseleave', function () { closeT = setTimeout(closeMenu, 160); });
+    shell.addEventListener('mouseenter', function () { clearTimeout(closeT); });
+  }
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeMenu(); });
+  if (mega) {
+    mega.querySelectorAll('a').forEach(function (a) { a.addEventListener('click', closeMenu); });
+  }
+
+  /* ---- mobile menu ---- */
+  var burger = document.getElementById('burger');
+  var mobileMenu = document.getElementById('mobileMenu');
+  function setMobile(open) {
+    shell.classList.toggle('mobile-open', open);
+    if (burger) burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    if (mobileMenu) mobileMenu.setAttribute('aria-hidden', open ? 'false' : 'true');
+    document.body.style.overflow = open ? 'hidden' : '';
+  }
+  if (burger) {
+    burger.addEventListener('click', function () {
+      setMobile(!shell.classList.contains('mobile-open'));
+    });
+  }
+  if (mobileMenu) {
+    mobileMenu.querySelectorAll('a').forEach(function (a) {
+      a.addEventListener('click', function () { setMobile(false); });
+    });
+  }
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') setMobile(false); });
+
+  /* ---------------------------------------------------------
+     SCROLL: nav state + hero laptop choreography
+  --------------------------------------------------------- */
+  var track = document.getElementById('heroTrack');
+  var laptop = document.getElementById('laptop');
+  var heroCopy = document.getElementById('heroCopy');
+  var heroOpen = document.getElementById('heroOpen');
+  var heroOpenInner = document.getElementById('heroOpenInner');
+  var laptopGlow = document.getElementById('laptopGlow');
+  var scrollCue = document.getElementById('scrollCue');
+  var screenBody = document.querySelector('.screen__body');
+
+  var ticking = false;
+  var lastScrollY = 0;
+  // parallax layers (decorative). Transform is set on wrappers only, so
+  // child keyframe animations (drifting orbs) are never overwritten.
+  var parallaxEls = Array.prototype.slice.call(document.querySelectorAll('[data-parallax]'));
+  function updateParallax(y) {
+    if (reduced) return;
+    var vh = window.innerHeight, i, el, r, center, off, f;
+    for (i = 0; i < parallaxEls.length; i++) {
+      el = parallaxEls[i];
+      r = el.getBoundingClientRect();
+      if (r.bottom < -vh || r.top > vh * 2) continue; // skip far off-screen
+      center = r.top + r.height / 2;
+      off = center - vh / 2;
+      f = parseFloat(el.getAttribute('data-parallax')) || 0.1;
+      el.style.transform = 'translate3d(0,' + (-off * f).toFixed(1) + 'px,0)';
+    }
+  }
+
+  function onScroll() {
+    var y = window.pageYOffset || document.documentElement.scrollTop;
+
+    // nav background
+    if (shell) {
+    shell.classList.toggle('scrolled', y > 24);
+
+    // Always visible near top
+    if (y < 120) {
+      shell.classList.remove('nav-hidden');
+    }
+    // Scrolling down → hide
+    else if (y > lastScrollY + 8 ) {
+      shell.classList.add('nav-hidden');
+    }
+    // Scrolling up → show
+     else if (y < lastScrollY - 8 ) {
+      shell.classList.remove('nav-hidden');
+    }
+  }
+
+  lastScrollY = y;
+    if (openKey && y > 4) closeMenu();
+
+    updateParallax(y);
+
+    if (!track || !laptop) return;
+
+    var max = track.offsetHeight - window.innerHeight;
+    var start = track.offsetTop;
+    var p = clamp((y - start) / max, 0, 1);
+
+    // hero copy fades up and out early
+    var cp = range(p, 0, 0.16);
+    if (heroCopy) {
+      heroCopy.style.opacity = String(1 - cp);
+      heroCopy.style.transform = 'translateY(' + (cp * -80) + 'px)';
+    }
+    if (scrollCue) scrollCue.style.opacity = String(1 - range(p, 0, 0.08));
+
+    // laptop: starts low + tilted, rises to center, flattens, then zooms in
+    var flat = smooth(range(p, 0.02, 0.54));   // 0 tilted/low -> 1 flat/centered
+    var zoom = smooth(range(p, 0.5, 1));       // grows into the screen
+    var rotX = (1 - flat) * 40;
+    var ty = lerp(28, 0, flat);                // vh: lower half -> center
+    var scale = lerp(0.52, 1.0, flat) + zoom * 0.8;
+    laptop.style.transform =
+      'rotateX(' + rotX.toFixed(2) + 'deg) translateY(' + ty.toFixed(2) + 'vh) scale(' + scale.toFixed(3) + ')';
+
+    // blue under-glow blooms then fades as cover takes over
+    if (laptopGlow) {
+      laptopGlow.style.opacity = String(range(p, 0.22, 0.55) * 0.85 * (1 - range(p, 0.78, 0.95)));
+    }
+    // screen content fades as we zoom into it
+    if (screenBody) screenBody.style.opacity = String(1 - range(p, 0.5, 0.72));
+
+    // dark cover "opens" into services
+    if (heroOpen) heroOpen.style.opacity = String(smooth(range(p, 0.6, 0.92)));
+    if (heroOpenInner) {
+      var oi = range(p, 0.78, 1);
+      heroOpenInner.style.opacity = String(oi);
+      heroOpenInner.style.transform = 'translateY(' + ((1 - oi) * 26).toFixed(1) + 'px)';
+    }
+  }
+
+  function requestTick() {
+    if (!ticking) { ticking = true; requestAnimationFrame(function () { onScroll(); ticking = false; }); }
+  }
+  window.addEventListener('scroll', requestTick, { passive: true });
+  window.addEventListener('resize', requestTick);
+  onScroll();
+
+  /* ---------------------------------------------------------
+     REVEAL on scroll
+  --------------------------------------------------------- */
+  var reveals = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window && !reduced) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); }
+      });
+    }, { threshold: 0.16, rootMargin: '0px 0px -8% 0px' });
+    reveals.forEach(function (el) { io.observe(el); });
+  } else {
+    reveals.forEach(function (el) { el.classList.add('in'); });
+  }
+
+  /* ---------------------------------------------------------
+     TEXT REVEAL — split headings into words that slide up on scroll
+     (preserves inline markup like <span class="serif-i"> and <br>)
+  --------------------------------------------------------- */
+  var trEls = Array.prototype.slice.call(document.querySelectorAll('.tr'));
+  function splitTR(el) {
+    if (el.getAttribute('data-split')) return;
+    el.setAttribute('data-split', '1');
+    var idx = { n: 0 };
+    (function walk(node) {
+      var kids = Array.prototype.slice.call(node.childNodes);
+      kids.forEach(function (ch) {
+        if (ch.nodeType === 3) {
+          var parts = ch.textContent.split(/(\s+)/);
+          var frag = document.createDocumentFragment();
+          parts.forEach(function (pp) {
+            if (pp === '') return;
+            if (/^\s+$/.test(pp)) { frag.appendChild(document.createTextNode(pp)); return; }
+            var w = document.createElement('span'); w.className = 'tw';
+            var inn = document.createElement('span'); inn.className = 'tw-i'; inn.textContent = pp;
+            inn.style.transitionDelay = (idx.n * 0.035).toFixed(3) + 's';
+            idx.n++;
+            w.appendChild(inn); frag.appendChild(w);
+          });
+          node.replaceChild(frag, ch);
+        } else if (ch.nodeType === 1 && ch.tagName !== 'BR') {
+          walk(ch);
+        }
+      });
+    })(el);
+  }
+  if ('IntersectionObserver' in window && !reduced) {
+    trEls.forEach(splitTR);
+    var io2 = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (en.isIntersecting) { en.target.classList.add('in'); io2.unobserve(en.target); }
+      });
+    }, { threshold: 0.25, rootMargin: '0px 0px -10% 0px' });
+    trEls.forEach(function (el) { io2.observe(el); });
+  } else {
+    trEls.forEach(function (el) { el.classList.add('in'); });
+  }
+
+  /* ---- Fallback reveal (robust against flaky IntersectionObserver) ----
+     Reveals any .reveal / .tr element that is within the viewport, driven
+     by load + scroll. Belt-and-suspenders alongside the observers above so
+     above-the-fold content never stays hidden. */
+  function revealCheck() {
+    var vh = window.innerHeight;
+    var i, el, r;
+    for (i = 0; i < reveals.length; i++) {
+      el = reveals[i];
+      if (el.classList.contains('in')) continue;
+      r = el.getBoundingClientRect();
+      if (r.top < vh * 0.92 && r.bottom > 0) el.classList.add('in');
+    }
+    for (i = 0; i < trEls.length; i++) {
+      el = trEls[i];
+      if (el.classList.contains('in')) continue;
+      r = el.getBoundingClientRect();
+      if (r.top < vh * 0.92 && r.bottom > 0) el.classList.add('in');
+    }
+  }
+  window.addEventListener('load', revealCheck);
+  window.addEventListener('scroll', revealCheck, { passive: true });
+  window.addEventListener('resize', revealCheck);
+  revealCheck();
+  // run again after layout/fonts settle (in-view only — preserves scroll reveals)
+  requestAnimationFrame(function () { requestAnimationFrame(revealCheck); });
+  setTimeout(revealCheck, 180);
+  setTimeout(revealCheck, 600);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(revealCheck);
+  function initWave() {
+    var c = document.getElementById('waveCanvas');
+    if (!c) return;
+    var ctx = c.getContext('2d');
+    var w = 0, h = 0, dpr = 1;
+
+    function size() {
+      dpr = Math.min(window.devicePixelRatio || 1, 2);
+      var r = c.getBoundingClientRect();
+      w = Math.max(1, r.width); h = Math.max(1, r.height);
+      c.width = Math.round(w * dpr); c.height = Math.round(h * dpr);
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    }
+    size();
+    window.addEventListener('resize', size);
+
+    var cols = 44, rows = 30, t = 0;
+
+    function frame() {
+      ctx.clearRect(0, 0, w, h);
+      var cx = w * 0.52, cy = h * 0.5;
+      for (var i = 0; i < cols; i++) {
+        for (var j = 0; j < rows; j++) {
+          var u = i / (cols - 1), v = j / (rows - 1);
+          var x = u * w;
+          var by = v * h;
+          // radial falloff so the field reads as a soft blob
+          var dx = (x - cx) / w, dy = (by - cy) / h;
+          var dist = Math.sqrt(dx * dx + dy * dy);
+          var fall = Math.max(0, 1 - dist * 1.7);
+          var wv = Math.sin(i * 0.42 + j * 0.22 + t) + Math.sin(i * 0.16 - t * 0.8 + j * 0.1);
+          var y = by + wv * 7 * (0.4 + fall);
+          var d = (wv + 2) / 4; // 0..1
+          var a = (0.06 + d * 0.5) * (0.25 + fall);
+          if (a <= 0.01) continue;
+          var rad = 0.5 + d * 1.4 * (0.4 + fall);
+          ctx.beginPath();
+          ctx.arc(x, y, rad, 0, 6.2832);
+          ctx.fillStyle = 'rgba(255,255,255,' + a.toFixed(3) + ')';
+          ctx.fill();
+        }
+      }
+      t += reduced ? 0 : 0.022;
+      requestAnimationFrame(frame);
+      if (reduced) return; // draw a single static frame
+    }
+    requestAnimationFrame(frame);
+  }
+  initWave();
+
+  /* ---------------------------------------------------------
+     CONTACT FORM — front-end success state (no backend)
+  --------------------------------------------------------- */
+  var cform = document.getElementById('cform');
+  if (cform) {
+    cform.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var name = cform.querySelector('#f-name');
+      var email = cform.querySelector('#f-email');
+      var ok = true;
+      [name, email].forEach(function (el) {
+        if (!el) return;
+        if (!el.value.trim() || (el.type === 'email' && !/.+@.+\..+/.test(el.value))) {
+          el.style.borderColor = '#d8434f';
+          el.style.boxShadow = '0 0 0 4px rgba(216,67,79,0.12)';
+          ok = false;
+        } else {
+          el.style.borderColor = '';
+          el.style.boxShadow = '';
+        }
+      });
+      if (!ok) { (name && !name.value.trim() ? name : email).focus(); return; }
+      cform.classList.add('sent');
+      cform.scrollIntoView ? null : null; // avoid scrollIntoView per guidelines
+    });
+    cform.querySelectorAll('input, textarea').forEach(function (el) {
+      el.addEventListener('input', function () { el.style.borderColor = ''; el.style.boxShadow = ''; });
+    });
+  }
+})();
