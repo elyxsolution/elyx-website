@@ -271,21 +271,31 @@ section { position: relative; }
   border-radius: 22px;
   box-shadow: 0 30px 70px -28px rgba(11,16,36,0.30), 0 2px 6px rgba(11,16,36,0.04);
   padding: 22px;
+  display: grid; grid-template-columns: minmax(0, 1fr);
   opacity: 0; transform: translateY(-10px) scale(0.985);
   transition: opacity 0.34s var(--ease), transform 0.34s var(--ease);
   pointer-events: none;
 }
 /* keep the full-width wrapper click-through; only the visible panel is interactive */
 .mega.show .mega__inner { opacity: 1; transform: translateY(0) scale(1); pointer-events: auto; }
-.mega__panel { display: none; }
-.mega__panel.on { display: block; animation: megaIn 0.4s var(--ease); }
-@keyframes megaIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+/* both panels share one grid cell → the dropdown is the same size for Services
+   and Work, and switching crossfades with a swoosh (no blink, no resize) */
+.mega__panel {
+  grid-area: 1 / 1;
+  opacity: 0; transform: translateX(16px);
+  pointer-events: none;
+  transition: opacity 0.28s var(--ease), transform 0.42s var(--ease);
+}
+.mega__panel.on { opacity: 1; transform: none; pointer-events: auto; }
+@media (prefers-reduced-motion: reduce) {
+  .mega__panel { transition: none; transform: none; }
+}
 
 /* services mega grid */
 .mega-grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 18px; }
 .mega-tiles { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
 .mtile {
-  display: flex; gap: 13px; align-items: flex-start;
+  display: flex; gap: 13px; align-items: center;
   padding: 13px; border-radius: 14px; transition: background 0.22s var(--ease);
 }
 .mtile:hover { background: var(--bg-2); }
@@ -298,7 +308,7 @@ section { position: relative; }
 .mtile:hover .mtile__ic { background: var(--blue); color: #fff; }
 .mtile__ic svg { width: 19px; height: 19px; }
 .mtile__t { font-family: var(--sans); font-weight: 550; font-size: 14.5px; color: var(--ink); letter-spacing: -0.01em; }
-.mtile__d { font-family: var(--sans); font-size: 12.5px; color: var(--ink-faint); margin-top: 2px; line-height: 1.4; }
+.mtile__d { display: none; } /* descriptions hidden — minimal icon + title tiles */
 
 .mega-feature {
   position: relative; border-radius: 16px; overflow: hidden;
@@ -322,6 +332,16 @@ section { position: relative; }
 .wcard__meta { padding: 12px 13px; }
 .wcard__t { font-family: var(--sans); font-weight: 550; font-size: 14px; letter-spacing: -0.01em; }
 .wcard__c { font-family: var(--sans); font-size: 12px; color: var(--ink-faint); margin-top: 2px; }
+
+/* work mega — services-style split: quick-link tiles + compact cards */
+.mega-grid--work { grid-template-columns: 1fr 1.6fr; align-items: center; }
+.mega-wlinks { display: flex; flex-direction: column; gap: 6px; }
+.mega-wlinks .mtile { padding: 14px 12px; }
+.mega-grid--work .mega-work { gap: 12px; }
+.mega-grid--work .wcard__img { aspect-ratio: 4/3; }
+.mega-grid--work .wcard__meta { padding: 10px 11px; }
+.mega-grid--work .wcard__t { font-size: 13px; }
+.mega-grid--work .wcard__c { font-size: 11.5px; margin-top: 1px; }
 
 /* placeholders */
 .ph {
@@ -1005,6 +1025,7 @@ section { position: relative; }
   position: relative; overflow: hidden;
   background: var(--dark); color: #fff;
   padding: clamp(80px, 14vh, 150px) var(--pad) clamp(70px, 11vh, 120px);
+  scroll-margin-top: 84px;
 }
 .tools__in { max-width: var(--maxw); margin: 0 auto; text-align: center;
   position: relative; z-index: 2; }
