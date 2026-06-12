@@ -879,6 +879,19 @@ section { position: relative; }
 .tcard__n { font-family: var(--sans); font-weight: 600; font-size: 16px; margin-top: 16px; letter-spacing: -0.01em; }
 .tcard__r { font-family: var(--sans); font-size: 13.5px; color: var(--ink-faint); margin-top: 3px; }
 
+/* combined founders feature — single group photo + merged categories */
+.founders { max-width: 760px; margin: 52px auto 0; }
+.founders__photo {
+  aspect-ratio: 3 / 2; border-radius: var(--r); overflow: hidden;
+  border: 1px solid var(--line);
+  background-color: var(--bg-2);
+  background-image: repeating-linear-gradient(135deg, rgba(31,79,216,0.08) 0 1px, transparent 1px 11px);
+}
+.founders__photo img { width: 100%; height: 100%; object-fit: cover; display: block; image-orientation: from-image; }
+.founders__cap { text-align: center; margin-top: 22px; }
+.founders__n { font-family: var(--serif); font-size: clamp(22px, 2.6vw, 30px); letter-spacing: -0.01em; }
+.founders__r { font-family: var(--sans); font-size: 14.5px; color: var(--ink-faint); margin-top: 8px; }
+
 /* approach steps (reuse on about) */
 .steps { max-width: var(--maxw); margin: 0 auto; padding: 0 var(--pad) clamp(50px,9vh,110px); }
 .steps__grid { margin-top: 50px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 0;
