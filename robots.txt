@@ -1,0 +1,5 @@
+# robots.txt — Elyx Solutions
+User-agent: *
+Allow: /
+
+Sitemap: https://elyxsolutions.in/sitemap.xml

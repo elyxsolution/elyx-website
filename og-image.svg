@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="26%" cy="-5%" r="115%">
+      <stop offset="0%" stop-color="#16307a"/>
+      <stop offset="52%" stop-color="#0a1130"/>
+      <stop offset="100%" stop-color="#080b1a"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- brand lockup -->
+  <g transform="translate(96,92)">
+    <g transform="scale(1.5) skewX(-10)">
+      <rect x="0" y="0" width="22" height="6.2" rx="1.6" fill="#3b6cf0"/>
+      <rect x="0" y="11" width="16" height="6.2" rx="1.6" fill="#ffffff"/>
+      <rect x="0" y="22" width="22" height="6.2" rx="1.6" fill="#3b6cf0"/>
+    </g>
+    <text x="62" y="34" fill="#ffffff" font-size="36" font-weight="700" letter-spacing="-1.2">Elyx</text>
+  </g>
+
+  <!-- headline -->
+  <text x="94" y="332" fill="#ffffff" font-size="88" font-weight="600" letter-spacing="-3.5">We build digital</text>
+  <text x="94" y="424" font-size="88" font-weight="600" letter-spacing="-3.5"><tspan font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-weight="500" fill="#9fb4ff">value</tspan><tspan fill="#ffffff">.</tspan></text>
+
+  <!-- keyword strip -->
+  <text x="96" y="506" fill="#9fb4ff" font-size="25" font-weight="600" letter-spacing="3.4">WEB · APP · SAAS DEVELOPMENT · SEO</text>
+
+  <!-- domain -->
+  <text x="1104" y="566" fill="#7e8aa6" font-size="25" text-anchor="end">elyxsolutions.in</text>
+</svg>

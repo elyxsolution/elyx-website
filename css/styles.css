@@ -212,7 +212,7 @@ section { position: relative; }
 /* center links */
 .nav__links { display: flex; align-items: center; gap: 4px; }
 .nav__item > a, .nav__item > button {
-  font-family: var(--sans); font-size: 15px; font-weight: 450;
+  font-family: var(--sans); font-size: 15px; font-weight: 500;
   letter-spacing: -0.01em; color: var(--ink-soft);
   padding: 9px 15px; border-radius: 100px; cursor: pointer;
   background: none; border: 0;
