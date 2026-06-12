@@ -26,11 +26,6 @@
 }
 .wkcard__media { position:relative; }
 
-/* Mega-nav mini thumbnails */
-.wcard__img--dental  { background: linear-gradient(135deg,#1e3a5f,#2a6ea6); }
-.wcard__img--pinnacle{ background: linear-gradient(135deg,#1a1a2e,#0f3460); }
-.wcard__img--malnad  { background: linear-gradient(135deg,#1b4332,#2d6a4f); }
-
 /* ── FAQ Section ── */
 .faq {
   padding: 100px 0 80px;
@@ -112,17 +107,18 @@
 <div class="grain"></div>
 <!-- ============================ NAV ============================ -->
 <div class="nav-shell scrolled" id="navShell">
+  <a class="brand nav__brand" href="index.html" aria-label="Elyx Solutions home">
+    <svg class="brand__mark" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+      <g transform="skewX(-10)">
+        <rect x="7" y="4" width="15" height="4.4" rx="1.2" fill="#1f4fd8"></rect>
+        <rect x="7" y="11.8" width="11" height="4.4" rx="1.2" fill="#0b1024"></rect>
+        <rect x="7" y="19.6" width="15" height="4.4" rx="1.2" fill="#1f4fd8"></rect>
+      </g>
+    </svg>
+    <span class="brand__name">Elyx</span>
+  </a>
+
   <nav class="nav" id="nav">
-    <a class="brand" href="index.html" aria-label="Elyx Solutions home">
-      <svg class="brand__mark" viewBox="0 0 28 28" fill="none" aria-hidden="true">
-        <g transform="skewX(-10)">
-          <rect x="7" y="4" width="15" height="4.4" rx="1.2" fill="#1f4fd8"></rect>
-          <rect x="7" y="11.8" width="11" height="4.4" rx="1.2" fill="#0b1024"></rect>
-          <rect x="7" y="19.6" width="15" height="4.4" rx="1.2" fill="#1f4fd8"></rect>
-        </g>
-      </svg>
-      <span class="brand__name">Elyx</span>
-    </a>
     <div class="nav__links" id="navLinks">
       <div class="nav__item" data-menu="services">
         <button type="button">Services
@@ -137,13 +133,14 @@
       <div class="nav__item"><a href="about.html">About</a></div>
       <div class="nav__item"><a href="contact.html">Contact</a></div>
     </div>
-    <div class="nav__right">
-      <a class="btn btn--primary nav__cta" href="contact.html">Let's talk <svg class="arr" width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H4M10 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
-      <button class="nav__burger" id="burger" aria-label="Open menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
   </nav>
+
+  <div class="nav__right">
+    <a class="btn btn--primary nav__cta" href="contact.html">Let's talk <svg class="arr" width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H4M10 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+    <button class="nav__burger" id="burger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
   <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
     <div class="mobile-menu__group">
       <span class="mobile-menu__label">Services</span>
@@ -184,9 +181,9 @@
       </div>
       <div class="mega__panel" data-panel="work">
         <div class="mega-work">
-          <a class="wcard" href="https://ashirwaddentalclinic.vercel.app/" target="_blank" rel="noopener"><div class="wcard__img ph wcard__img--dental"></div><div class="wcard__meta"><div class="wcard__t">Ashirwad Dental Clinic</div><div class="wcard__c">Web · Redesign</div></div></a>
-          <a class="wcard" href="https://www.pinnacleinc.co/" target="_blank" rel="noopener"><div class="wcard__img ph wcard__img--pinnacle"></div><div class="wcard__meta"><div class="wcard__t">Pinnacle Inc.</div><div class="wcard__c">Web · EdTech</div></div></a>
-          <a class="wcard" href="https://www.malnadstories.com/" target="_blank" rel="noopener"><div class="wcard__img ph wcard__img--malnad"></div><div class="wcard__meta"><div class="wcard__t">Malnad Stories</div><div class="wcard__c">E-commerce · Web App</div></div></a>
+          <a class="wcard" href="work.html"><div class="wcard__img ph wcard__img--dental"></div><div class="wcard__meta"><div class="wcard__t">Ashirwad Dental Clinic</div><div class="wcard__c">Web · Redesign</div></div></a>
+          <a class="wcard" href="work.html"><div class="wcard__img ph wcard__img--pinnacle"></div><div class="wcard__meta"><div class="wcard__t">Pinnacle Inc.</div><div class="wcard__c">Web · EdTech</div></div></a>
+          <a class="wcard" href="work.html"><div class="wcard__img ph wcard__img--malnad"></div><div class="wcard__meta"><div class="wcard__t">Malnad Stories</div><div class="wcard__c">E-commerce · Web App</div></div></a>
         </div>
       </div>
     </div>
@@ -210,7 +207,7 @@
 
 <section class="wkwrap" data-screen-label="Case Studies">
   <div class="wkgrid">
-    <a class="wkcard wkcard--live reveal" href="https://ashirwaddentalclinic.vercel.app/" target="_blank" rel="noopener">
+    <a class="wkcard wkcard--live reveal" href="https://ashirwad-landingpage.vercel.app" target="_blank" rel="noopener">
       <div class="wkcard__media wkcard__media--dental"><span class="wkcard__cat2">Web · Redesign</span><span class="wkcard__mono">A</span><span class="wkcard__go"><svg viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H4M10 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="wkcard__live-badge">Live ↗</span></div>
       <div class="wkcard__body">
         <h3 class="wkcard__title">Ashirwad Dental Clinic</h3>
@@ -234,6 +231,39 @@
         <div class="wkcard__result"><b>Full-stack</b> launch ready</div>
       </div>
     </a>
+  </div>
+</section>
+
+<section class="tools" data-screen-label="Tools We Use">
+  <div class="deco deco-dark" data-parallax="0.1" aria-hidden="true"><span class="orb orb-a"></span><span class="orb orb-b"></span></div>
+  <div class="tools__in">
+    <span class="tools__pill reveal">Our stack</span>
+    <h2 class="tools__h tr">Tools <span class="serif-i">we use</span></h2>
+    <p class="tools__sub reveal">The kit the three of us reach for every day — across development, design, marketing and SEO. Move your cursor through them.</p>
+    <div class="tools__phys reveal" id="toolsPhys">
+      <span class="tbadge" style="--s:86px" data-mono="RE" title="React"><img src="https://cdn.simpleicons.org/react" alt="React" width="40" height="40" /></span>
+      <span class="tbadge" style="--s:78px" data-mono="NE" title="Next.js"><img src="https://cdn.simpleicons.org/nextdotjs" alt="Next.js" width="40" height="40" /></span>
+      <span class="tbadge" style="--s:96px" data-mono="TY" title="TypeScript"><img src="https://cdn.simpleicons.org/typescript" alt="TypeScript" width="40" height="40" /></span>
+      <span class="tbadge" style="--s:80px" data-mono="JA" title="JavaScript"><img src="https://cdn.simpleicons.org/javascript" alt="JavaScript" width="40" height="40" /></span>
+      <span class="tbadge" style="--s:88px" data-mono="NO" title="Node.js"><img src="https://cdn.simpleicons.org/nodedotjs" alt="Node.js" width="40" height="40" /></span>
+      <span class="tbadge" style="--s:76px" data-mono="HT" title="HTML5"><img src="https://cdn.simpleicons.org/html5" alt="HTML5" width="40" height="40" /></span>
+      <span class="tbadge" style="--s:94px" data-mono="TA" title="Tailwind CSS"><img src="https://cdn.simpleicons.org/tailwindcss" alt="Tailwind CSS" width="40" height="40" /></span>
+      <span class="tbadge" style="--s:82px" data-mono="PY" title="Python"><img src="https://cdn.simpleicons.org/python" alt="Python" width="40" height="40" /></span>
+      <span class="tbadge" style="--s:90px" data-mono="FI" title="Figma"><img src="https://cdn.simpleicons.org/figma" alt="Figma" width="40" height="40" /></span>
+      <span class="tbadge" style="--s:78px" data-mono="FR" title="Framer"><img src="https://cdn.simpleicons.org/framer" alt="Framer" width="40" height="40" /></span>
+      <span class="tbadge" style="--s:98px" data-mono="WO" title="WordPress"><img src="https://cdn.simpleicons.org/wordpress" alt="WordPress" width="40" height="40" /></span>
+      <span class="tbadge" style="--s:80px" data-mono="WE" title="Webflow"><img src="https://cdn.simpleicons.org/webflow" alt="Webflow" width="40" height="40" /></span>
+      <span class="tbadge" style="--s:86px" data-mono="SH" title="Shopify"><img src="https://cdn.simpleicons.org/shopify" alt="Shopify" width="40" height="40" /></span>
+      <span class="tbadge" style="--s:94px" data-mono="GI" title="GitHub"><img src="https://cdn.simpleicons.org/github" alt="GitHub" width="40" height="40" /></span>
+      <span class="tbadge" style="--s:76px" data-mono="VE" title="Vercel"><img src="https://cdn.simpleicons.org/vercel" alt="Vercel" width="40" height="40" /></span>
+      <span class="tbadge" style="--s:88px" data-mono="ST" title="Stripe"><img src="https://cdn.simpleicons.org/stripe" alt="Stripe" width="40" height="40" /></span>
+      <span class="tbadge" style="--s:82px" data-mono="GO" title="Google Analytics"><img src="https://cdn.simpleicons.org/googleanalytics" alt="Google Analytics" width="40" height="40" /></span>
+      <span class="tbadge" style="--s:96px" data-mono="GO" title="Google Ads"><img src="https://cdn.simpleicons.org/googleads" alt="Google Ads" width="40" height="40" /></span>
+      <span class="tbadge" style="--s:78px" data-mono="SE" title="Semrush"><img src="https://cdn.simpleicons.org/semrush" alt="Semrush" width="40" height="40" /></span>
+      <span class="tbadge" style="--s:86px" data-mono="MA" title="Mailchimp"><img src="https://cdn.simpleicons.org/mailchimp" alt="Mailchimp" width="40" height="40" /></span>
+      <span class="tbadge" style="--s:90px" data-mono="NO" title="Notion"><img src="https://cdn.simpleicons.org/notion" alt="Notion" width="40" height="40" /></span>
+      <span class="tools__hint"><svg viewBox="0 0 24 24" fill="none"><path d="M9 11V6a2 2 0 014 0v5m0-3a2 2 0 014 0v3m-4-1a2 2 0 014 0v1a7 7 0 01-7 7h-1a7 7 0 01-5-2l-3-3a1.6 1.6 0 012.3-2.2L11 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>Move your cursor to scatter them</span>
+    </div>
   </div>
 </section>
 
@@ -409,6 +439,7 @@
     </div>
   </div>
 </footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js"></script>
 <script src="js/site.js"></script>
 </body>
 </html>

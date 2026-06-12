@@ -346,4 +346,140 @@
       el.addEventListener('input', function () { el.style.borderColor = ''; el.style.boxShadow = ''; });
     });
   }
+
+  /* ---------------------------------------------------------
+     TOOLS — physics playground (logos fall + cursor repel)
+     Uses Matter.js (loaded on work.html). DOM badges are synced
+     to physics bodies; graceful fallbacks if anything is missing.
+  --------------------------------------------------------- */
+  function toolFallback(img) {
+    var badge = img.parentNode;
+    var label = badge ? (badge.getAttribute('data-mono') || '') : '';
+    var span = document.createElement('span');
+    span.className = 'tmono';
+    span.textContent = label || (img.getAttribute('alt') || '?').slice(0, 2).toUpperCase();
+    if (img.parentNode) img.parentNode.replaceChild(span, img);
+  }
+  function wireToolFallbacks(scope) {
+    Array.prototype.slice.call(scope.querySelectorAll('.tbadge img')).forEach(function (img) {
+      img.addEventListener('error', function () {
+        if (!img.dataset.retry) {
+          img.dataset.retry = '1';
+          img.src = img.src.split('?')[0] + '?r=' + Date.now();
+          return;
+        }
+        toolFallback(img);
+      });
+      if (img.complete && img.naturalWidth === 0) {
+        if (!img.dataset.retry) { img.dataset.retry = '1'; img.src = img.src.split('?')[0] + '?r=' + Date.now(); }
+        else toolFallback(img);
+      }
+    });
+  }
+
+  function initToolsPhysics() {
+    var stage = document.getElementById('toolsPhys');
+    if (!stage) return;
+    wireToolFallbacks(stage);
+
+    var badges = Array.prototype.slice.call(stage.querySelectorAll('.tbadge'));
+    var noPhysics = (typeof window.Matter === 'undefined') || reduced;
+    if (noPhysics) { stage.classList.add('tools__phys--static'); return; }
+
+    var M = window.Matter;
+    var W = stage.clientWidth, H = stage.clientHeight;
+    var engine = M.Engine.create();
+    engine.gravity.y = 1;
+    var world = engine.world;
+
+    // sizes/radii
+    var meta = badges.map(function (b) {
+      var s = parseFloat(getComputedStyle(b).width) || 60;
+      return { el: b, r: s / 2 };
+    });
+
+    // walls (thick, static) — floor + sides
+    var t = 240;
+    var wallOpt = { isStatic: true, restitution: 0.4 };
+    var floor = M.Bodies.rectangle(W / 2, H + t / 2 - 1, W + t * 2, t, wallOpt);
+    var left = M.Bodies.rectangle(-t / 2 + 1, H / 2, t, H * 4, wallOpt);
+    var right = M.Bodies.rectangle(W + t / 2 - 1, H / 2, t, H * 4, wallOpt);
+    M.World.add(world, [floor, left, right]);
+
+    // bodies — start above the stage, staggered, so they fall in
+    var bodies = meta.map(function (m, i) {
+      var x = m.r + 20 + Math.random() * Math.max(1, (W - m.r * 2 - 40));
+      var y = -80 - Math.random() * 700;
+      var body = M.Bodies.circle(x, y, m.r, {
+        restitution: 0.5, friction: 0.06, frictionAir: 0.012, density: 0.0012
+      });
+      M.Body.setAngularVelocity(body, (Math.random() - 0.5) * 0.2);
+      m.body = body;
+      // initial transform (clipped above stage) before runner starts
+      m.el.style.transform = 'translate(' + (x - m.r) + 'px,' + (y - m.r) + 'px)';
+      return body;
+    });
+    M.World.add(world, bodies);
+
+    // cursor repulsion — logos scatter away from the pointer (no dragging)
+    var ptr = { x: -9999, y: -9999, active: false };
+    function setPtr(e) {
+      var rect = stage.getBoundingClientRect();
+      ptr.x = e.clientX - rect.left;
+      ptr.y = e.clientY - rect.top;
+      ptr.active = true;
+    }
+    stage.addEventListener('pointermove', setPtr, { passive: true });
+    stage.addEventListener('pointerleave', function () { ptr.active = false; });
+
+    var R = 175;       // influence radius
+    var FORCE = 0.0065; // repel strength (relative to gravity)
+    M.Events.on(engine, 'beforeUpdate', function () {
+      if (!ptr.active) return;
+      for (var i = 0; i < meta.length; i++) {
+        var b = meta[i].body;
+        var dx = b.position.x - ptr.x, dy = b.position.y - ptr.y;
+        var d = Math.sqrt(dx * dx + dy * dy);
+        var reach = R + meta[i].r;
+        if (d > 0.01 && d < reach) {
+          var f = (1 - d / reach) * FORCE * b.mass;
+          M.Body.applyForce(b, b.position, { x: (dx / d) * f, y: (dy / d) * f });
+        }
+      }
+    });
+
+    // sync DOM to bodies every frame
+    M.Events.on(engine, 'afterUpdate', function () {
+      for (var i = 0; i < meta.length; i++) {
+        var p = meta[i].body.position, a = meta[i].body.angle, r = meta[i].r;
+        meta[i].el.style.transform =
+          'translate(' + (p.x - r) + 'px,' + (p.y - r) + 'px) rotate(' + a + 'rad)';
+      }
+    });
+
+    var runner = M.Runner.create();
+    var started = false;
+    function start() { if (started) return; started = true; M.Runner.run(runner, engine); }
+
+    // start dropping when the section scrolls into view
+    if ('IntersectionObserver' in window) {
+      var io3 = new IntersectionObserver(function (entries) {
+        entries.forEach(function (en) { if (en.isIntersecting) { start(); io3.disconnect(); } });
+      }, { threshold: 0.2 });
+      io3.observe(stage);
+    } else { start(); }
+
+    // keep walls in sync with size changes
+    var rt;
+    window.addEventListener('resize', function () {
+      clearTimeout(rt);
+      rt = setTimeout(function () {
+        W = stage.clientWidth; H = stage.clientHeight;
+        M.Body.setPosition(floor, { x: W / 2, y: H + t / 2 - 1 });
+        M.Body.setPosition(right, { x: W + t / 2 - 1, y: H / 2 });
+        M.Body.setPosition(left, { x: -t / 2 + 1, y: H / 2 });
+      }, 200);
+    });
+  }
+  initToolsPhysics();
 })();
