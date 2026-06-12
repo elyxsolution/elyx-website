@@ -1000,6 +1000,9 @@ section { position: relative; }
 .cform__success svg { flex: none; width: 24px; height: 24px; color: var(--blue); margin-top: 2px; }
 .cform__success h4 { font-family: var(--serif); font-size: 22px; font-weight: 500; }
 .cform__success p { font-family: var(--sans); font-size: 14.5px; color: var(--ink-soft); margin-top: 6px; }
+.cform__error { font-family: var(--sans); font-size: 13.5px; color: #d8434f; margin-top: -4px; }
+.cform__hp { position: absolute; left: -9999px; top: -9999px; width: 1px; height: 1px; opacity: 0; pointer-events: none; }
+.btn:disabled { opacity: 0.6; cursor: default; }
 
 @media (max-width: 1000px) {
   .team__grid { grid-template-columns: repeat(3, 1fr); }

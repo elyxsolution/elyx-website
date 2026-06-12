@@ -322,28 +322,67 @@
   --------------------------------------------------------- */
   var cform = document.getElementById('cform');
   if (cform) {
+    var endpoint = window.ELYX_CONTACT_ENDPOINT || '';
+    var submitBtn = cform.querySelector('button[type="submit"]');
+    var errorEl = document.getElementById('cformError');
+    var nameEl = cform.querySelector('#f-name');
+    var emailEl = cform.querySelector('#f-email');
+
+    function setError(msg) {
+      if (!errorEl) return;
+      if (msg) { errorEl.textContent = msg; errorEl.hidden = false; }
+      else { errorEl.hidden = true; }
+    }
+    function mark(el, bad) {
+      if (!el) return;
+      el.style.borderColor = bad ? '#d8434f' : '';
+      el.style.boxShadow = bad ? '0 0 0 4px rgba(216,67,79,0.12)' : '';
+    }
+
     cform.addEventListener('submit', function (e) {
       e.preventDefault();
-      var name = cform.querySelector('#f-name');
-      var email = cform.querySelector('#f-email');
+      setError('');
+
       var ok = true;
-      [name, email].forEach(function (el) {
-        if (!el) return;
-        if (!el.value.trim() || (el.type === 'email' && !/.+@.+\..+/.test(el.value))) {
-          el.style.borderColor = '#d8434f';
-          el.style.boxShadow = '0 0 0 4px rgba(216,67,79,0.12)';
-          ok = false;
-        } else {
-          el.style.borderColor = '';
-          el.style.boxShadow = '';
-        }
-      });
-      if (!ok) { (name && !name.value.trim() ? name : email).focus(); return; }
-      cform.classList.add('sent');
-      cform.scrollIntoView ? null : null; // avoid scrollIntoView per guidelines
+      if (!nameEl.value.trim()) { mark(nameEl, true); ok = false; }
+      if (!emailEl.value.trim() || !/.+@.+\..+/.test(emailEl.value)) { mark(emailEl, true); ok = false; }
+      if (!ok) { (nameEl.value.trim() ? emailEl : nameEl).focus(); return; }
+
+      // honeypot — if a bot filled the hidden field, fake success and send nothing
+      var hp = cform.querySelector('[name="company_website"]');
+      if (hp && hp.value) { cform.classList.add('sent'); return; }
+
+      var body = new URLSearchParams(new FormData(cform));
+
+      // No endpoint configured yet → demo success (dev only)
+      if (!/^https:\/\//.test(endpoint)) {
+        console.warn('[Elyx] window.ELYX_CONTACT_ENDPOINT is not set — showing demo success without sending. See backend/SETUP.md.');
+        cform.classList.add('sent');
+        return;
+      }
+
+      var original = submitBtn.innerHTML;
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Sending…';
+
+      fetch(endpoint, { method: 'POST', body: body })
+        .then(function (r) { return r.json().catch(function () { return { ok: r.ok }; }); })
+        .then(function (res) {
+          if (res && res.ok) {
+            cform.classList.add('sent');
+          } else {
+            throw new Error((res && res.error) || 'Request failed');
+          }
+        })
+        .catch(function () {
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = original;
+          setError('Something went wrong — please email us at elyxsolution@gmail.com.');
+        });
     });
+
     cform.querySelectorAll('input, textarea').forEach(function (el) {
-      el.addEventListener('input', function () { el.style.borderColor = ''; el.style.boxShadow = ''; });
+      el.addEventListener('input', function () { mark(el, false); setError(''); });
     });
   }
 
