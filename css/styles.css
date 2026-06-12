@@ -888,9 +888,20 @@ section { position: relative; }
   background-image: repeating-linear-gradient(135deg, rgba(31,79,216,0.08) 0 1px, transparent 1px 11px);
 }
 .founders__photo img { width: 100%; height: 100%; object-fit: cover; display: block; image-orientation: from-image; }
-.founders__cap { text-align: center; margin-top: 22px; }
-.founders__n { font-family: var(--serif); font-size: clamp(22px, 2.6vw, 30px); letter-spacing: -0.01em; }
-.founders__r { font-family: var(--sans); font-size: 14.5px; color: var(--ink-faint); margin-top: 8px; }
+.founders__cap { text-align: center; margin-top: 24px; }
+.founders__names {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: center;
+  gap: 8px 28px;
+}
+.founders__name {
+  position: relative; font-family: var(--serif); font-weight: 500;
+  font-size: clamp(22px, 2.8vw, 32px); letter-spacing: -0.01em; color: var(--ink);
+}
+.founders__name:not(:last-child)::after {
+  content: ""; position: absolute; right: -14px; top: 50%; transform: translateY(-50%);
+  width: 1px; height: 0.72em; background: var(--line-2);
+}
+.founders__r { font-family: var(--sans); font-size: 14.5px; color: var(--ink-faint); margin-top: 12px; }
 
 /* approach steps (reuse on about) */
 .steps { max-width: var(--maxw); margin: 0 auto; padding: 0 var(--pad) clamp(50px,9vh,110px); }
