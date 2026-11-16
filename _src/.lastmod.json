@@ -84,7 +84,7 @@
     "lastmod": "2026-11-16"
   },
   "/blog/": {
-    "hash": "8d291915520ce9ad95fcda5a7b360781",
+    "hash": "c18a6f8651a07e24b490ef5144a9581f",
     "lastmod": "2026-11-16"
   },
   "/blog/category/industries/": {
@@ -164,7 +164,7 @@
     "lastmod": "2026-11-16"
   },
   "/blog/author/shreyasmv/": {
-    "hash": "275417f8aa4ba2fb7465773d9a3afada",
+    "hash": "2d1a2568abafcefe68f7d7e3babdd537",
     "lastmod": "2026-11-16"
   },
   "/blog/author/rahulc/": {
@@ -213,6 +213,10 @@
   },
   "/blog/ai-built-prototype-needs-real-engineering/": {
     "hash": "10002dc5788857da580c7f908e56f002",
+    "lastmod": "2026-11-16"
+  },
+  "/blog/what-are-ai-agents/": {
+    "hash": "9ac922b8f766233548713981a9ffff72",
     "lastmod": "2026-11-16"
   }
 }
