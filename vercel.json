@@ -3,8 +3,13 @@
   "trailingSlash": true,
   "redirects": [
     {
-      "source": "/blogs",
-      "destination": "/blog/",
+      "source": "/blogs/author/:slug/",
+      "destination": "/blog/author/:slug/",
+      "permanent": true
+    },
+    {
+      "source": "/blogs/authot/:slug/",
+      "destination": "/blog/author/:slug/",
       "permanent": true
     },
     {
@@ -18,6 +23,16 @@
       "permanent": true
     },
     {
+      "source": "/blogs/:slug/",
+      "destination": "/blog/:slug/",
+      "permanent": true
+    },
+    {
+      "source": "/authors/:slug/",
+      "destination": "/blog/author/:slug/",
+      "permanent": true
+    },
+    {
       "source": "/blogs/:slug",
       "destination": "/blog/:slug/",
       "permanent": true
@@ -25,6 +40,16 @@
     {
       "source": "/authors/:slug",
       "destination": "/blog/author/:slug/",
+      "permanent": true
+    },
+    {
+      "source": "/blogs/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blogs",
+      "destination": "/blog/",
       "permanent": true
     }
   ],
