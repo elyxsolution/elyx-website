@@ -135,6 +135,7 @@ function mdBlocks(md) {
 
 /** Front matter: `key: value` lines between --- fences. Lists: comma separated. */
 function frontMatter(src) {
+  src = String(src).replace(/\r\n?/g, '\n'); // files checked out with Windows line endings must parse the same
   const m = src.match(/^---\s*\n([\s\S]*?)\n---\s*\n?([\s\S]*)$/);
   if (!m) return { data: {}, body: src };
   const data = {};

@@ -54,7 +54,10 @@ function loadPosts() {
     const cat = catBySlug[data.category];
     if (!cat) { warn('Article "' + file + '": unknown category "' + data.category + '" (skipped)'); return; }
     if (data.author && !authorBySlug[data.author]) warn('Article "' + file + '": unknown author "' + data.author + '", using default');
-    if (data.title.length > 70) warn('Article "' + file + '": title is ' + data.title.length + ' chars; aim for under 60');
+    // `title` is the H1 and may be long; `seo_title` (optional) is the browser tab / search result / share-card title and is the one that must stay short.
+    const seoTitle = (data.seo_title || '').trim() || data.title;
+    if (seoTitle.length > 70) warn('Article "' + file + '": ' + (data.seo_title ? 'seo_title' : 'title') + ' is ' + seoTitle.length + ' chars; aim for under 60' + (data.seo_title ? '' : ' (or keep the long title and add a short seo_title)'));
+    if (data.title.length > 110) warn('Article "' + file + '": title is ' + data.title.length + ' chars; keep the H1 under 110');
 
     let blocks = mdBlocks(body);
     // pull the FAQ section out of the body (## FAQ ... until next ##)
@@ -74,7 +77,7 @@ function loadPosts() {
     const words = body.split(/\s+/).length;
     const moneyUrl = data.money || (data.industry && indBySlug[data.industry] ? '/websites-for/' + data.industry + '/' : cat.money);
     posts.push({
-      file, slug, title: data.title, description: data.description,
+      file, slug, title: data.title, seoTitle, description: data.description,
       category: cat.slug, categoryName: cat.name, cat, date: data.date, updated: data.updated || '',
       author: authorBySlug[data.author] ? data.author : config.defaultAuthor,
       moneyUrl, industry: data.industry || '', case: data.case || '', pinned: /^(true|yes)$/i.test(data.pinned || ''),
@@ -209,9 +212,9 @@ ${S.ctaSection()}`;
   ].filter(Boolean);
 
   return {
-    urlPath: post.url, title: post.title, description: post.description, crumbs, graph, main, article: post.slug, ogType: 'article',
+    urlPath: post.url, title: post.seoTitle, ogTitle: post.seoTitle, description: post.description, crumbs, graph, main, article: post.slug, ogType: 'article',
     articleMeta: '\n<meta property="article:published_time" content="' + published + '" />\n<meta property="article:modified_time" content="' + modified + '" />\n<meta property="article:section" content="' + esc(cat.name) + '" />\n<meta property="article:author" content="' + abs('/blog/author/' + a.slug + '/') + '" />',
-    ogKey: 'blog-' + post.slug, ogKicker: cat.name, ogHeadline: post.title, lastmod: modified, priority: 0.7, changefreq: 'monthly', scripts: ''
+    ogKey: 'blog-' + post.slug, ogKicker: cat.name, ogHeadline: post.seoTitle, lastmod: modified, priority: 0.7, changefreq: 'monthly', scripts: ''
   };
 }
 

@@ -1,0 +1,3 @@
+# Markdown articles are always checked out with LF line endings (the site generator parses front matter line by line).
+_src/content/**/*.md text eol=lf
+*.md text eol=lf

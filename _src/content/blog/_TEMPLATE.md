@@ -1,5 +1,6 @@
 ---
 title: How Much Does a Website Cost in India? (2027)
+seo_title: 
 slug: website-cost-india
 category: pricing-hiring
 description: One sentence for Google (under 155 characters) that promises something specific.
