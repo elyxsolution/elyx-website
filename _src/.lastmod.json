@@ -56,7 +56,7 @@
     "lastmod": "2026-11-16"
   },
   "/work/malnad-stories/": {
-    "hash": "5c780556588d5d390761f89edb1f7924",
+    "hash": "4cc39133a4d0a8f14b88dd57ec8a125a",
     "lastmod": "2026-11-16"
   },
   "/pricing/": {
@@ -84,7 +84,7 @@
     "lastmod": "2026-11-16"
   },
   "/blog/": {
-    "hash": "bcd33f6e233c046e3aff0a4c0734c9c1",
+    "hash": "2e95e24b2b3708a259a9f1e4a3dbb0cf",
     "lastmod": "2026-11-16"
   },
   "/blog/category/industries/": {
@@ -164,7 +164,7 @@
     "lastmod": "2026-11-16"
   },
   "/blog/author/shreyasmv/": {
-    "hash": "bad24baa83ec5b33c0ed6c1ecd1a4885",
+    "hash": "5b5399fbeab33cd95b8e47c9de3fe385",
     "lastmod": "2026-11-16"
   },
   "/blog/author/rahulc/": {
@@ -229,6 +229,10 @@
   },
   "/blog/gym-website-design/": {
     "hash": "577fbd9f947cc293ca5a468e6b7fab37",
+    "lastmod": "2026-11-16"
+  },
+  "/blog/travel-agency-website/": {
+    "hash": "b3ce8c8bdcc029e2c14ce612580a019b",
     "lastmod": "2026-11-16"
   }
 }
