@@ -1,0 +1,218 @@
+{
+  "/services/web-development/": {
+    "hash": "00228dc6d53a2f43a601dabeac383f57",
+    "lastmod": "2026-11-16"
+  },
+  "/services/saas-development/": {
+    "hash": "17db4a4a94e005b90451de9c48761694",
+    "lastmod": "2026-11-16"
+  },
+  "/services/app-development/": {
+    "hash": "c6fad399cef9030a14446ba278834419",
+    "lastmod": "2026-11-16"
+  },
+  "/services/seo-optimization/": {
+    "hash": "c9971efd3613115906083fb3c9d48c37",
+    "lastmod": "2026-11-16"
+  },
+  "/services/maintenance-care/": {
+    "hash": "f0f5c4c6a7a114ad578459d56600f255",
+    "lastmod": "2026-11-16"
+  },
+  "/websites-for/dentists/": {
+    "hash": "5e2c880eaa41363ceeab6348ff69884a",
+    "lastmod": "2026-11-16"
+  },
+  "/websites-for/coaching-centres/": {
+    "hash": "a494a2d52520a44e6e0808a3872bbcdb",
+    "lastmod": "2026-11-16"
+  },
+  "/websites-for/restaurants-and-cafes/": {
+    "hash": "765c481d323ed4ff2f8f2e01626c8f25",
+    "lastmod": "2026-11-16"
+  },
+  "/websites-for/salons-and-spas/": {
+    "hash": "6db68df85ee2fc089f6c6bc232de52bb",
+    "lastmod": "2026-11-16"
+  },
+  "/websites-for/real-estate/": {
+    "hash": "5562e8bcdafa07376cf9c3c72e1e5bfd",
+    "lastmod": "2026-11-16"
+  },
+  "/websites-for/ca-and-law-firms/": {
+    "hash": "e0e2af6736f9838149f8dc464ff3494c",
+    "lastmod": "2026-11-16"
+  },
+  "/websites-for/": {
+    "hash": "7f02a5de668b3a54faa151017e9e0289",
+    "lastmod": "2026-11-16"
+  },
+  "/work/ashirwad-dental/": {
+    "hash": "7af4a6b36ef5f905fee6fe4f460311c1",
+    "lastmod": "2026-11-16"
+  },
+  "/work/pinnacle-inc/": {
+    "hash": "0ac3c4225d21eb3eb82c71f471157c1d",
+    "lastmod": "2026-11-16"
+  },
+  "/work/malnad-stories/": {
+    "hash": "50b2cfa9e8c1fcf764d33c82b117df6d",
+    "lastmod": "2026-11-16"
+  },
+  "/pricing/": {
+    "hash": "85630f0f274c3fcfb3f3b99bc4337ce6",
+    "lastmod": "2026-11-16"
+  },
+  "/web-development-bengaluru/": {
+    "hash": "29c1a7782e6477b43b8ce7154d8a57ce",
+    "lastmod": "2026-11-16"
+  },
+  "/tools/": {
+    "hash": "09e13b4f9488b58df10c35985553e05e",
+    "lastmod": "2026-11-16"
+  },
+  "/tools/website-cost-calculator/": {
+    "hash": "bc5b2262bf6fef883adfe413fe8f5136",
+    "lastmod": "2026-11-16"
+  },
+  "/tools/website-launch-checklist/": {
+    "hash": "06c687cf244341586dbe19d8127463e0",
+    "lastmod": "2026-11-16"
+  },
+  "/tools/google-business-profile-checker/": {
+    "hash": "5d42b20c16f133505e1ce3a986c9598e",
+    "lastmod": "2026-11-16"
+  },
+  "/blog/": {
+    "hash": "4e4dc8d1fac10299d03464a6816076ca",
+    "lastmod": "2026-11-16"
+  },
+  "/blog/category/industries/": {
+    "hash": "c34533d3d71c91e85f357950dc59bf11",
+    "lastmod": "2026-11-16"
+  },
+  "/blog/category/pricing-hiring/": {
+    "hash": "565f67e9200e56c2e5b6cb7dfc42eca6",
+    "lastmod": "2026-11-16"
+  },
+  "/blog/category/websites/": {
+    "hash": "9593ae9e6d6fe0a1e2b325c309268cc2",
+    "lastmod": "2026-11-16"
+  },
+  "/blog/category/saas/": {
+    "hash": "ce5a7c2fea23d5d946e5b2c89cca8be0",
+    "lastmod": "2026-11-16"
+  },
+  "/blog/category/apps/": {
+    "hash": "014c1f269b5447c19f32e10975fef803",
+    "lastmod": "2026-11-16"
+  },
+  "/blog/category/seo/": {
+    "hash": "85a7d5e3658a710dc3f16a4cc1aede5b",
+    "lastmod": "2026-11-16"
+  },
+  "/blog/category/care/": {
+    "hash": "df9fd1964208a17e8b682cc10df46ddb",
+    "lastmod": "2026-11-16"
+  },
+  "/blog/category/ai/": {
+    "hash": "d70f117df3d7f89883b91436f93c66c3",
+    "lastmod": "2026-11-16"
+  },
+  "/blog/category/explained/": {
+    "hash": "ca1d85d3fe0d57ca9a9b13070617a249",
+    "lastmod": "2026-11-16"
+  },
+  "/blog/category/grow-online/": {
+    "hash": "7fa5e782c06b7ce6b64b14f88ccd9ea5",
+    "lastmod": "2026-11-16"
+  },
+  "/authors/shreyas/": {
+    "hash": "3c3d29c2a74d8fb7f0b2fbc125f99840",
+    "lastmod": "2026-11-16"
+  },
+  "/authors/rahul/": {
+    "hash": "c9339c4a1a13d59085f79e899c9a5e5d",
+    "lastmod": "2026-11-16"
+  },
+  "/authors/nawaz/": {
+    "hash": "53d4ff213f949fd956a0d76e3c23661e",
+    "lastmod": "2026-11-16"
+  },
+  "/": {
+    "hash": "94b29aaef37171bba4f6e1acad687459",
+    "lastmod": "2026-11-16"
+  },
+  "/services.html": {
+    "hash": "984f293050c31fcde34d331ea070958f",
+    "lastmod": "2026-11-16"
+  },
+  "/work.html": {
+    "hash": "4b52e490543134b93414ed8f66b2dbcd",
+    "lastmod": "2026-11-16"
+  },
+  "/about.html": {
+    "hash": "dde2cd0de2cca2dfb48ec84efc558877",
+    "lastmod": "2026-11-16"
+  },
+  "/contact.html": {
+    "hash": "0f7a0d65865151c6548cd5b101be1f68",
+    "lastmod": "2026-11-16"
+  },
+  "/blog/website-cost-india-test/": {
+    "hash": "a1ff5000c716d79e4f5fc4eaac443c80",
+    "lastmod": "2026-11-16"
+  },
+  "/blog/author/shreyasmv/": {
+    "hash": "b865a06d77828bfe9dbfa074c831d071",
+    "lastmod": "2026-11-16"
+  },
+  "/blog/author/rahulc/": {
+    "hash": "cb4cbcbdb16361fdbcd87339c66bb05e",
+    "lastmod": "2026-11-16"
+  },
+  "/blog/author/nawaz/": {
+    "hash": "a699372200d5608ecd7f165e421f3c0e",
+    "lastmod": "2026-11-16"
+  },
+  "/blog/website-or-google-business-profile/": {
+    "hash": "054ed21afa218668704b8144b3561a7f",
+    "lastmod": "2026-11-16"
+  },
+  "/blog/website-cost-india/": {
+    "hash": "bf76d67315083908dfbc1f624ac0867d",
+    "lastmod": "2026-11-16"
+  },
+  "/blog/study-abroad-landing-page/": {
+    "hash": "cc735468035001fbff47807adac9cc13",
+    "lastmod": "2026-11-16"
+  },
+  "/blog/spreadsheet-to-software/": {
+    "hash": "574414b6f4579ff784ad59cf388f43bf",
+    "lastmod": "2026-11-16"
+  },
+  "/blog/redesign-website-without-losing-google-rankings/": {
+    "hash": "6433a992ac99f2590db4e0cb8861aaf4",
+    "lastmod": "2026-11-16"
+  },
+  "/blog/rank-on-google-maps/": {
+    "hash": "c7697dd6455501e497a93967d5dfe29e",
+    "lastmod": "2026-11-16"
+  },
+  "/blog/how-we-built-malnad-stories/": {
+    "hash": "7f57cfc5397865c72d83f11ae5eb8570",
+    "lastmod": "2026-11-16"
+  },
+  "/blog/dental-clinic-website-india/": {
+    "hash": "9cd847b02872e1bcaff8af5b30c5bb2c",
+    "lastmod": "2026-11-16"
+  },
+  "/blog/coaching-centre-website/": {
+    "hash": "2852ad46601b3f20b83976fcb8f34bb3",
+    "lastmod": "2026-11-16"
+  },
+  "/blog/ai-built-prototype-needs-real-engineering/": {
+    "hash": "75cb053f8a58956f634f9c4ce6591133",
+    "lastmod": "2026-11-16"
+  }
+}

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-IN">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,26 +14,88 @@
 <meta property="og:title" content="About — A Three-Person Digital Studio | Elyx Solutions" />
 <meta property="og:description" content="A focused three-person studio handling strategy, design, engineering and growth in-house — no outsourcing, no handoffs." />
 <meta property="og:url" content="https://elyxsolutions.in/about.html" />
-<meta property="og:image" content="https://elyxsolutions.in/og-image.png" />
+<meta property="og:image" content="https://elyxsolutions.in/og/about.png" />
 <meta property="og:locale" content="en_IN" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="About — A Three-Person Digital Studio | Elyx Solutions" />
 <meta name="twitter:description" content="A focused three-person studio handling strategy, design, engineering and growth in-house — no outsourcing, no handoffs." />
-<meta name="twitter:image" content="https://elyxsolutions.in/og-image.png" />
+<meta name="twitter:image" content="https://elyxsolutions.in/og/about.png" />
 <!-- Icons -->
 <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-<link rel="apple-touch-icon" href="favicon.svg" />
+<link rel="icon" href="icon-192.png" sizes="192x192" type="image/png" />
+<link rel="apple-touch-icon" href="apple-touch-icon.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500;1,6..72,600&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="css/styles.css" />
+<!--@head-->
+<link rel="stylesheet" href="css/pages.css" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://elyxsolutions.in/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "About",
+          "item": "https://elyxsolutions.in/about.html"
+        }
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://elyxsolutions.in/blog/author/shreyasmv/#person",
+      "name": "Shreyas M V",
+      "jobTitle": "Co-founder, Elyx Solutions",
+      "url": "https://elyxsolutions.in/blog/author/shreyasmv/",
+      "worksFor": {
+        "@id": "https://elyxsolutions.in/#organization"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/shreyas-m-v-311b99205/"
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://elyxsolutions.in/blog/author/rahulc/#person",
+      "name": "Rahul C",
+      "jobTitle": "Co-founder, Elyx Solutions",
+      "url": "https://elyxsolutions.in/blog/author/rahulc/",
+      "worksFor": {
+        "@id": "https://elyxsolutions.in/#organization"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://elyxsolutions.in/blog/author/nawaz/#person",
+      "name": "Nawaz",
+      "jobTitle": "Co-founder, Elyx Solutions",
+      "worksFor": {
+        "@id": "https://elyxsolutions.in/#organization"
+      }
+    }
+  ]
+}
+</script>
+<!--@/head-->
 </head>
 <body>
 <div class="grain"></div>
-<!-- ============================ NAV ============================ -->
+<!--@nav-->
 <div class="nav-shell scrolled" id="navShell">
-  <a class="brand nav__brand" href="index.html" aria-label="Elyx Solutions home">
+  <a class="brand nav__brand" href="./" aria-label="Elyx Solutions home">
     <svg class="brand__mark" viewBox="0 0 28 28" fill="none" aria-hidden="true">
       <g transform="skewX(-10)">
         <rect x="7" y="4" width="15" height="4.4" rx="1.2" fill="#1f4fd8"></rect>
@@ -44,60 +106,62 @@
     <span class="brand__name">Elyx</span>
   </a>
 
-  <nav class="nav" id="nav">
+  <nav class="nav" id="nav" aria-label="Main">
     <div class="nav__links" id="navLinks">
-      <div class="nav__item" data-menu="services">
-        <button type="button">Services
-          <svg class="caret" viewBox="0 0 10 10" fill="none"><path d="M1 3l4 4 4-4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-        </button>
-      </div>
-      <div class="nav__item" data-menu="work">
-        <button type="button">Work
-          <svg class="caret" viewBox="0 0 10 10" fill="none"><path d="M1 3l4 4 4-4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-        </button>
-      </div>
+      <div class="nav__item" data-menu="services"><button type="button">Services <svg class="caret" viewBox="0 0 10 10" fill="none"><path d="M1 3l4 4 4-4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button></div>
+      <div class="nav__item" data-menu="industries"><button type="button">Industries <svg class="caret" viewBox="0 0 10 10" fill="none"><path d="M1 3l4 4 4-4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button></div>
+      <div class="nav__item" data-menu="work"><button type="button">Work <svg class="caret" viewBox="0 0 10 10" fill="none"><path d="M1 3l4 4 4-4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button></div>
+      <div class="nav__item"><a href="blog/">Blog</a></div>
       <div class="nav__item"><a href="about.html">About</a></div>
       <div class="nav__item"><a href="contact.html">Contact</a></div>
     </div>
   </nav>
 
   <div class="nav__right">
-    <a class="btn btn--primary nav__cta" href="contact.html">Let's talk <svg class="arr" width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H4M10 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+    <a class="btn btn--primary nav__cta" href="contact.html" data-track="cta_click" data-pos="nav">Let's talk <svg class="arr" width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H4M10 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
     <button class="nav__burger" id="burger" aria-label="Open menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
   </div>
+
+  <!-- Mobile menu -->
   <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
     <div class="mobile-menu__group">
       <span class="mobile-menu__label">Services</span>
-      <a href="services.html#saas">SaaS Development</a>
-      <a href="services.html#web">Web Development</a>
-      <a href="services.html#app">App Development</a>
-      <a href="services.html#seo">SEO Optimization</a>
-      <a href="services.html#care">Maintenance &amp; Care</a>
+      <a href="services/web-development/">Web Development</a>
+      <a href="services/saas-development/">SaaS Development</a>
+      <a href="services/app-development/">App Development</a>
+      <a href="services/seo-optimization/">SEO Optimization</a>
+      <a href="services/maintenance-care/">Maintenance &amp; Care</a>
+    </div>
+    <div class="mobile-menu__group">
+      <span class="mobile-menu__label">Websites for</span>
+      <a href="websites-for/dentists/">Dentists &amp; Clinics</a>
+      <a href="websites-for/coaching-centres/">Coaching Centres</a>
+      <a href="websites-for/restaurants-and-cafes/">Restaurants &amp; Cafés</a>
+      <a href="websites-for/salons-and-spas/">Salons &amp; Spas</a>
+      <a href="websites-for/real-estate/">Real Estate</a>
+      <a href="websites-for/ca-and-law-firms/">CA &amp; Law Firms</a>
     </div>
     <div class="mobile-menu__group">
       <span class="mobile-menu__label">Company</span>
       <a href="about.html">About</a>
       <a href="work.html">Work</a>
-      <a href="services.html#pricing">Pricing</a>
+      <a href="pricing/">Pricing</a>
+      <a href="blog/">Blog</a>
+      <a href="tools/">Free tools</a>
       <a href="contact.html">Contact</a>
     </div>
     <a class="btn btn--blue mobile-menu__cta" href="contact.html">Let's talk <svg class="arr" width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H4M10 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
   </div>
+
+  <!-- Mega panel -->
   <div class="mega" id="mega">
     <div class="mega__inner">
       <div class="mega__panel" data-panel="services">
         <div class="mega-grid">
-          <div class="mega-tiles">
-            <a class="mtile" href="services.html#saas"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M6 16a4 4 0 010-8 5 5 0 019.6-1.5A3.5 3.5 0 0118 16H6z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">SaaS Development</span><span class="mtile__d">Multi-tenant platforms, end to end.</span></span></a>
-            <a class="mtile" href="services.html#seo"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><circle cx="10.5" cy="10.5" r="6" stroke="currentColor" stroke-width="1.6"></circle><path d="M15 15l5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg></span><span><span class="mtile__t">SEO Optimization</span><span class="mtile__d">Technical &amp; content-led growth.</span></span></a>
-            <a class="mtile" href="services.html#web"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M9 8l-4 4 4 4M15 8l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">Web Development</span><span class="mtile__d">Sites &amp; web apps that fly.</span></span></a>
-            <a class="mtile" href="services.html#app"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><rect x="7" y="3" width="10" height="18" rx="2.5" stroke="currentColor" stroke-width="1.6"></rect><path d="M11 18h2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg></span><span><span class="mtile__t">App Development</span><span class="mtile__d">Native &amp; cross-platform mobile.</span></span></a>
-            <a class="mtile" href="services.html#care"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M12 8v4l3 2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path><circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="1.6"></circle></svg></span><span><span class="mtile__t">Maintenance &amp; Care</span><span class="mtile__d">Monitoring, updates, iteration.</span></span></a>
-            <a class="mtile" href="services.html#pricing"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M4 14l5-5 4 4 7-7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path><path d="M20 6v4h-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">Pricing</span><span class="mtile__d">Engagements from ₹9,999.</span></span></a>
-          </div>
-          <a class="mega-feature" href="services.html#pricing">
+          <div class="mega-tiles"><a class="mtile" href="services/web-development/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M9 8l-4 4 4 4M15 8l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">Web Development</span></span></a><a class="mtile" href="services/saas-development/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M6 16a4 4 0 010-8 5 5 0 019.6-1.5A3.5 3.5 0 0118 16H6z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">SaaS Development</span></span></a><a class="mtile" href="services/app-development/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><rect x="7" y="3" width="10" height="18" rx="2.5" stroke="currentColor" stroke-width="1.6"></rect><path d="M11 18h2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg></span><span><span class="mtile__t">App Development</span></span></a><a class="mtile" href="services/seo-optimization/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><circle cx="10.5" cy="10.5" r="6" stroke="currentColor" stroke-width="1.6"></circle><path d="M15 15l5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg></span><span><span class="mtile__t">SEO Optimization</span></span></a><a class="mtile" href="services/maintenance-care/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M12 8v4l3 2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path><circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="1.6"></circle></svg></span><span><span class="mtile__t">Maintenance &amp; Care</span></span></a><a class="mtile" href="pricing/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M4 14l5-5 4 4 7-7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path><path d="M20 6v4h-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">Pricing</span></span></a></div>
+          <a class="mega-feature" href="pricing/">
             <div class="ph-grid"></div>
             <div class="mega-feature__k">Featured</div>
             <div class="mega-feature__t">Simple pricing. Engagements start at ₹9,999.</div>
@@ -105,23 +169,33 @@
           </a>
         </div>
       </div>
+
+      <div class="mega__panel" data-panel="industries">
+        <div class="mega-grid">
+          <div class="mega-tiles"><a class="mtile" href="websites-for/dentists/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M12 5c-2-1.5-6-1.5-6 2.5 0 3 1.5 4 1.5 7 0 2 .8 4.5 2 4.5s1.5-2 2.5-2 1.3 2 2.5 2 2-2.5 2-4.5c0-3 1.5-4 1.5-7C18 3.5 14 3.5 12 5z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">Dentists &amp; Clinics</span></span></a><a class="mtile" href="websites-for/coaching-centres/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M3 9l9-4 9 4-9 4-9-4z M7 11v4c0 1.5 2.2 3 5 3s5-1.5 5-3v-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">Coaching Centres</span></span></a><a class="mtile" href="websites-for/restaurants-and-cafes/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M7 3v8M5 3v5a2 2 0 004 0V3M7 11v10M17 3c-2 1.5-3 4-3 7h3v11" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">Restaurants &amp; Cafés</span></span></a><a class="mtile" href="websites-for/salons-and-spas/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><circle cx="6" cy="7" r="2.5" stroke="currentColor" stroke-width="1.6"></circle><circle cx="6" cy="17" r="2.5" stroke="currentColor" stroke-width="1.6"></circle><path d="M8 8.5L20 18M8 15.5L20 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg></span><span><span class="mtile__t">Salons &amp; Spas</span></span></a><a class="mtile" href="websites-for/real-estate/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M4 21V8l8-5 8 5v13M9 21v-6h6v6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">Real Estate</span></span></a><a class="mtile" href="websites-for/ca-and-law-firms/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M12 4v16M6 20h12M5 8h14M5 8l-2.5 6a3 3 0 005 0L5 8zM19 8l-2.5 6a3 3 0 005 0L19 8z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">CA &amp; Law Firms</span></span></a></div>
+          <a class="mega-feature" href="websites-for/">
+            <div class="ph-grid"></div>
+            <div class="mega-feature__k">Built for your trade</div>
+            <div class="mega-feature__t">What a site for your kind of business actually needs.</div>
+            <div class="mega-feature__l">All industries <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H4M10 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+          </a>
+        </div>
+      </div>
+
       <div class="mega__panel" data-panel="work">
         <div class="mega-grid mega-grid--work">
           <div class="mega-wlinks">
-            <a class="mtile" href="work.html#tools"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.6"></circle><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5.1 5.1l2.1 2.1M16.8 16.8l2.1 2.1M18.9 5.1L16.8 7.2M7.2 16.8l-2.1 2.1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg></span><span><span class="mtile__t">Tools we use</span><span class="mtile__d">The stack behind every build.</span></span></a>
-            <a class="mtile" href="work.html#faq"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"></circle><path d="M9.6 9.2a2.5 2.5 0 014.7 1.1c0 1.6-2.3 2-2.3 3.6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path><circle cx="12" cy="16.6" r="0.7" fill="currentColor"></circle></svg></span><span><span class="mtile__t">FAQ about Elyx</span><span class="mtile__d">Common questions, honest answers.</span></span></a>
-            <a class="mtile" href="work.html"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="6.5" height="6.5" rx="1.6" stroke="currentColor" stroke-width="1.6"></rect><rect x="13.5" y="4" width="6.5" height="6.5" rx="1.6" stroke="currentColor" stroke-width="1.6"></rect><rect x="4" y="13.5" width="6.5" height="6.5" rx="1.6" stroke="currentColor" stroke-width="1.6"></rect><rect x="13.5" y="13.5" width="6.5" height="6.5" rx="1.6" stroke="currentColor" stroke-width="1.6"></rect></svg></span><span><span class="mtile__t">All projects</span><span class="mtile__d">Browse our selected work.</span></span></a>
+            <a class="mtile" href="work.html#tools"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.6"></circle><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5.1 5.1l2.1 2.1M16.8 16.8l2.1 2.1M18.9 5.1L16.8 7.2M7.2 16.8l-2.1 2.1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg></span><span><span class="mtile__t">Tools we use</span></span></a>
+            <a class="mtile" href="work.html#faq"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"></circle><path d="M9.6 9.2a2.5 2.5 0 014.7 1.1c0 1.6-2.3 2-2.3 3.6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path><circle cx="12" cy="16.6" r="0.7" fill="currentColor"></circle></svg></span><span><span class="mtile__t">FAQ about Elyx</span></span></a>
+            <a class="mtile" href="work.html"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="6.5" height="6.5" rx="1.6" stroke="currentColor" stroke-width="1.6"></rect><rect x="13.5" y="4" width="6.5" height="6.5" rx="1.6" stroke="currentColor" stroke-width="1.6"></rect><rect x="4" y="13.5" width="6.5" height="6.5" rx="1.6" stroke="currentColor" stroke-width="1.6"></rect><rect x="13.5" y="13.5" width="6.5" height="6.5" rx="1.6" stroke="currentColor" stroke-width="1.6"></rect></svg></span><span><span class="mtile__t">All projects</span></span></a>
           </div>
-          <div class="mega-work">
-            <a class="wcard" href="work.html"><div class="wcard__img ph wcard__img--dental"></div><div class="wcard__meta"><div class="wcard__t">Ashirwad Dental Clinic</div><div class="wcard__c">Web · Redesign</div></div></a>
-            <a class="wcard" href="work.html"><div class="wcard__img ph wcard__img--pinnacle"></div><div class="wcard__meta"><div class="wcard__t">Pinnacle Inc.</div><div class="wcard__c">Web · EdTech</div></div></a>
-            <a class="wcard" href="work.html"><div class="wcard__img ph wcard__img--malnad"></div><div class="wcard__meta"><div class="wcard__t">Malnad Stories</div><div class="wcard__c">E-commerce · Web App</div></div></a>
-          </div>
+          <div class="mega-work"><a class="wcard" href="work/ashirwad-dental/"><div class="wcard__img ph wcard__img--dental"></div><div class="wcard__meta"><div class="wcard__t">Ashirwad Dental Clinic</div><div class="wcard__c">Web · Redesign</div></div></a><a class="wcard" href="work/pinnacle-inc/"><div class="wcard__img ph wcard__img--pinnacle"></div><div class="wcard__meta"><div class="wcard__t">Pinnacle Inc.</div><div class="wcard__c">Web · EdTech</div></div></a><a class="wcard" href="work/malnad-stories/"><div class="wcard__img ph wcard__img--malnad"></div><div class="wcard__meta"><div class="wcard__t">Malnad Stories</div><div class="wcard__c">E-commerce · Web App</div></div></a></div>
         </div>
       </div>
     </div>
   </div>
 </div>
+<!--@/nav-->
 <span id="top"></span>
 <header class="page-hero" data-screen-label="About Hero">
   <div class="deco" data-parallax="0.1" aria-hidden="true"><span class="orb orb-a"></span><span class="orb orb-c"></span></div>
@@ -183,6 +257,9 @@
       <div class="founders__r">Co-founders · Development &amp; SaaS · Web &amp; App · Design · Marketing &amp; SEO</div>
     </figcaption>
   </figure>
+  <!--@team-cards-->
+<div class="pcards"><article class="pcard"><img class="pcard__ph" src="uploads/authors/shreyasmv.jpg" alt="Shreyas M V" width="64" height="64" loading="lazy" /><h3>Shreyas M V</h3><span class="pcard__r">Co-founder, Elyx Solutions</span><p>Shreyas M V is a co-founder of Elyx Solutions and writes the Elyx blog: practical guides on website cost, redesigns, local SEO, software and AI for Indian businesses, drawn from projects the studio has shipped.</p><div class="pcard__links"><a href="blog/author/shreyasmv/">Profile</a><a href="https://www.linkedin.com/in/shreyas-m-v-311b99205/" target="_blank" rel="noopener me">LinkedIn ↗</a></div></article><article class="pcard"><span class="pcard__ph pcard__ph--init">R</span><h3>Rahul C</h3><span class="pcard__r">Co-founder, Elyx Solutions</span><p>Rahul C is a co-founder of Elyx Solutions, a three-person digital studio in Bengaluru that designs, builds and grows websites, apps and SaaS products.</p><div class="pcard__links"><a href="blog/author/rahulc/">Profile</a></div></article><article class="pcard"><span class="pcard__ph pcard__ph--init">N</span><h3>Nawaz</h3><span class="pcard__r">Co-founder, Elyx Solutions</span><p>Nawaz is a co-founder of Elyx Solutions, a three-person digital studio in Bengaluru that designs, builds and grows websites, apps and SaaS products.</p><div class="pcard__links"></div></article></div>
+<!--@/team-cards-->
 </section>
 
 <section class="steps" data-screen-label="Approach">
@@ -208,55 +285,79 @@
     <p class="cta__sub">Tell us where you're headed. We'll bring the team, the plan and the craft to get you there.</p>
     <div class="cta__row">
       <a class="btn btn--blue" href="contact.html">Start a project <svg class="arr" width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H4M10 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
-      <a class="btn btn--light" href="services.html#pricing">View pricing</a>
+      <a class="btn btn--light" href="pricing/">View pricing</a>
     </div>
   </div>
 </section>
-<!-- ============================ FOOTER ============================ -->
+<!--@footer-->
 <footer class="footer">
   <div class="footer__in">
     <div class="footer__top">
       <div>
-        <a class="brand" href="index.html" aria-label="Elyx Solutions home">
-      <svg class="brand__mark" viewBox="0 0 28 28" fill="none" aria-hidden="true">
-        <g transform="skewX(-10)">
-          <rect x="7" y="4" width="15" height="4.4" rx="1.2" fill="#1f4fd8"></rect>
-          <rect x="7" y="11.8" width="11" height="4.4" rx="1.2" fill="#0b1024"></rect>
-          <rect x="7" y="19.6" width="15" height="4.4" rx="1.2" fill="#1f4fd8"></rect>
-        </g>
-      </svg>
-      <span class="brand__name">Elyx</span>
-    </a>
+        <a class="brand" href="./" aria-label="Elyx Solutions home">
+          <svg class="brand__mark" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+            <g transform="skewX(-10)">
+              <rect x="7" y="4" width="15" height="4.4" rx="1.2" fill="#1f4fd8"></rect>
+              <rect x="7" y="11.8" width="11" height="4.4" rx="1.2" fill="#0b1024"></rect>
+              <rect x="7" y="19.6" width="15" height="4.4" rx="1.2" fill="#1f4fd8"></rect>
+            </g>
+          </svg>
+          <span class="brand__name">Elyx</span>
+        </a>
         <p class="footer__lede">Beyond just presence — we build digital <span class="serif-i" style="color:var(--blue)">value.</span></p>
       </div>
       <div class="fcol">
         <h4>Services</h4>
-        <a href="services.html#saas">SaaS Development</a>
-        <a href="services.html#web">Web Development</a>
-        <a href="services.html#app">App Development</a>
-        <a href="services.html#seo">SEO Optimization</a>
-        <a href="services.html#care">Maintenance &amp; Care</a>
+        <a href="services/web-development/">Web Development</a>
+        <a href="services/saas-development/">SaaS Development</a>
+        <a href="services/app-development/">App Development</a>
+        <a href="services/seo-optimization/">SEO Optimization</a>
+        <a href="services/maintenance-care/">Maintenance &amp; Care</a>
+      </div>
+      <div class="fcol">
+        <h4>Websites for</h4>
+        <a href="websites-for/dentists/">Dentists &amp; Clinics</a>
+        <a href="websites-for/coaching-centres/">Coaching Centres</a>
+        <a href="websites-for/restaurants-and-cafes/">Restaurants &amp; Cafés</a>
+        <a href="websites-for/salons-and-spas/">Salons &amp; Spas</a>
+        <a href="websites-for/real-estate/">Real Estate</a>
+        <a href="websites-for/ca-and-law-firms/">CA &amp; Law Firms</a>
       </div>
       <div class="fcol">
         <h4>Company</h4>
         <a href="about.html">About</a>
         <a href="work.html">Work</a>
-        <a href="services.html#pricing">Pricing</a>
+        <a href="pricing/">Pricing</a>
+        <a href="tools/">Free tools</a>
+        <a href="blog/">Blog</a>
+        <a href="web-development-bengaluru/">Bengaluru</a>
         <a href="contact.html">Contact</a>
       </div>
       <div class="fcol">
         <h4>Connect</h4>
-        <a href="mailto:elyxsolution@gmail.com">elyxsolution@gmail.com</a>
+        <a href="mailto:hello@elyxsolutions.in">hello@elyxsolutions.in</a>
+        <a href="tel:+919611729733" data-track="call_click" data-pos="footer">+91 96117 29733</a>
+        <a href="tel:+917204723340" data-track="call_click" data-pos="footer">+91 72047 23340</a>
+        <a href="https://wa.me/919611729733?text=Hi%20Elyx%2C%20I'd%20like%20to%20talk%20about%20a%20project." target="_blank" rel="noopener" data-track="whatsapp_click" data-pos="footer">WhatsApp</a>
         <a href="https://www.linkedin.com/company/elyxsolutions04/" target="_blank" rel="noopener">LinkedIn</a>
         <a href="https://www.instagram.com/elyxsolutions" target="_blank" rel="noopener">Instagram</a>
+        <span class="footer__addr">Bengaluru, Karnataka</span>
       </div>
     </div>
     <div class="footer__bot">
       <span>© 2026 Elyx Solutions. All rights reserved.</span>
-      <span>Designed &amp; built in-house.</span>
+      <span>Designed &amp; built in-house · Bengaluru, India.</span>
     </div>
   </div>
 </footer>
+<a class="wa-float" href="https://wa.me/919611729733?text=Hi%20Elyx%2C%20I'd%20like%20to%20talk%20about%20a%20project." target="_blank" rel="noopener" aria-label="Chat with Elyx on WhatsApp" data-track="whatsapp_click" data-pos="floating">
+  <svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16.04 3C9.4 3 4 8.4 4 15.03c0 2.12.55 4.19 1.6 6.01L4 29l8.12-1.57a12.03 12.03 0 0 0 3.92.65C22.68 28.08 28.08 22.67 28.08 16 28.08 9.36 22.7 3 16.04 3Zm0 22.06c-1.22 0-2.4-.33-3.44-.95l-.25-.15-4.82.93.97-4.7-.17-.27a9.9 9.9 0 0 1-1.52-5.27c0-5.5 4.48-9.98 10-9.98 5.5 0 9.98 4.48 9.98 9.98s-4.48 10.41-9.98 10.41l-.77-.02Zm5.47-7.46c-.3-.15-1.77-.87-2.04-.97-.28-.1-.48-.15-.68.15-.2.3-.78.97-.95 1.17-.18.2-.35.22-.65.07-.3-.15-1.27-.47-2.42-1.5-.9-.8-1.5-1.78-1.67-2.08-.18-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.68-1.64-.93-2.25-.25-.58-.5-.5-.68-.5h-.58c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.5s1.07 2.9 1.22 3.1c.15.2 2.1 3.2 5.08 4.48.7.3 1.26.48 1.7.62.72.23 1.37.2 1.88.12.58-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35Z"/></svg>
+</a>
+<!--@/footer-->
+<!--@scripts-->
+<script>window.ELYX={"email":"hello@elyxsolutions.in","whatsapp":"https://wa.me/919611729733?text=Hi%20Elyx%2C%20I'd%20like%20to%20talk%20about%20a%20project.","phone":"+91 96117 29733","booking":""};</script>
 <script src="js/site.js"></script>
+<script src="js/analytics.js"></script>
+<!--@/scripts-->
 </body>
 </html>

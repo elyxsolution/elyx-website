@@ -1,0 +1,55 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "trailingSlash": true,
+  "redirects": [
+    {
+      "source": "/blogs",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blogs/author/:slug",
+      "destination": "/blog/author/:slug/",
+      "permanent": true
+    },
+    {
+      "source": "/blogs/authot/:slug",
+      "destination": "/blog/author/:slug/",
+      "permanent": true
+    },
+    {
+      "source": "/blogs/:slug",
+      "destination": "/blog/:slug/",
+      "permanent": true
+    },
+    {
+      "source": "/authors/:slug",
+      "destination": "/blog/author/:slug/",
+      "permanent": true
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        }
+      ]
+    },
+    {
+      "source": "/og/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400"
+        }
+      ]
+    }
+  ]
+}

@@ -8,8 +8,9 @@
  */
 
 // ----------------------------- CONFIG -----------------------------
-var NOTIFY_EMAIL = 'elyxsolution@gmail.com'; // where notifications are sent
+var NOTIFY_EMAIL = 'hello@elyxsolutions.in'; // where notifications are sent
 var SHEET_NAME   = 'Submissions';            // tab name inside the sheet
+var HEADERS      = ['Timestamp', 'Name', 'Email', 'Company', 'Service', 'Message', 'How found us', 'Source article', 'Landing page', 'Calculator estimate'];
 var SHEET_ID     = '';                        // optional: paste a Sheet ID to target a specific spreadsheet
 // ------------------------------------------------------------------
 
@@ -28,19 +29,27 @@ function doPost(e) {
     var company = String(p.company || '').trim();
     var service = String(p.service || '').trim();
     var message = String(p.message || '').trim();
+    // attribution fields (playbook: "ask every lead how they found us and log the article")
+    var howFound = String(p.how_found || '').trim();
+    var sourceArticle = String(p.source_article || '').trim();
+    var landingPage = String(p.landing_page || '').trim();
+    var estimate = String(p.estimate || '').trim();
 
     if (!name || !email) return _json({ ok: false, error: 'Name and email are required.' });
     if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) return _json({ ok: false, error: 'Invalid email address.' });
 
     var sheet = _sheet();
     if (sheet.getLastRow() === 0) {
-      sheet.appendRow(['Timestamp', 'Name', 'Email', 'Company', 'Service', 'Message']);
-      sheet.getRange(1, 1, 1, 6).setFontWeight('bold');
+      sheet.appendRow(HEADERS);
+      sheet.getRange(1, 1, 1, HEADERS.length).setFontWeight('bold');
       sheet.setFrozenRows(1);
+    } else if (!sheet.getRange(1, 7).getValue()) {
+      // older sheet with the original 6 columns: add the new headers once
+      sheet.getRange(1, 7, 1, HEADERS.length - 6).setValues([HEADERS.slice(6)]).setFontWeight('bold');
     }
-    sheet.appendRow([new Date(), name, email, company, service, message]);
+    sheet.appendRow([new Date(), name, email, company, service, message, howFound, sourceArticle, landingPage, estimate]);
 
-    _notify(name, email, company, service, message);
+    _notify(name, email, company, service, message, howFound, sourceArticle, estimate);
     return _json({ ok: true });
   } catch (err) {
     return _json({ ok: false, error: String(err) });
@@ -59,14 +68,17 @@ function _sheet() {
   return ss.getSheetByName(SHEET_NAME) || ss.insertSheet(SHEET_NAME);
 }
 
-function _notify(name, email, company, service, message) {
+function _notify(name, email, company, service, message, howFound, sourceArticle, estimate) {
   var subject = 'New enquiry — ' + name + (company ? ' (' + company + ')' : '');
   var rows = [
     ['Name', name],
     ['Email', email],
     ['Company', company || '—'],
     ['Service', service || '—'],
-    ['Message', message || '—']
+    ['Message', message || '—'],
+    ['How they found us', howFound || '—'],
+    ['Article they read', sourceArticle || '—'],
+    ['Calculator estimate', estimate || '—']
   ];
   var html = '<div style="font-family:Arial,Helvetica,sans-serif;font-size:15px;color:#0b1024;line-height:1.5">'
     + '<h2 style="margin:0 0 14px;font-size:18px">New contact form enquiry</h2>'

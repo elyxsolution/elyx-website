@@ -326,8 +326,26 @@
     var submitBtn = cform.querySelector('button[type="submit"]');
     var errorEl = document.getElementById('cformError');
     var nameEl = cform.querySelector('#f-name');
+
+    /* ---- prefill + attribution (?service=, ?est=, ?src=) ---- */
+    var qs = new URLSearchParams(location.search);
+    var svcMap = { 'saas-development': 'SaaS Development', 'web-development': 'Web Development', 'app-development': 'App Development', 'seo-optimization': 'SEO Optimization', 'maintenance-care': 'Maintenance & Care' };
+    var svcSel = cform.querySelector('#f-service');
+    if (svcSel && qs.get('service') && svcMap[qs.get('service')]) svcSel.value = svcMap[qs.get('service')];
+    var msgEl = cform.querySelector('#f-msg');
+    if (msgEl && qs.get('est') && !msgEl.value) msgEl.value = 'Estimate from the cost calculator: ' + qs.get('est') + '\n\nProject details: ';
+    var srcEl = cform.querySelector('#f-src'), landEl = cform.querySelector('#f-landing'), estEl = cform.querySelector('#f-est');
+    try {
+      if (srcEl) srcEl.value = qs.get('src') || sessionStorage.getItem('elyx_last_article') || '';
+      if (landEl) landEl.value = sessionStorage.getItem('elyx_landing') || '';
+    } catch (e) {}
+    if (estEl) estEl.value = qs.get('est') || '';
     var emailEl = cform.querySelector('#f-email');
 
+    function sentEvent() {
+      var fd = new FormData(cform);
+      document.dispatchEvent(new CustomEvent('elyx:form_submit', { detail: { service: fd.get('service') || '', how_found: fd.get('how_found') || '', article_slug: fd.get('source_article') || '' } }));
+    }
     function setError(msg) {
       if (!errorEl) return;
       if (msg) { errorEl.textContent = msg; errorEl.hidden = false; }
@@ -358,6 +376,7 @@
       if (!/^https:\/\//.test(endpoint)) {
         console.warn('[Elyx] window.ELYX_CONTACT_ENDPOINT is not set — showing demo success without sending. See backend/SETUP.md.');
         cform.classList.add('sent');
+        sentEvent();
         return;
       }
 
@@ -370,6 +389,7 @@
         .then(function (res) {
           if (res && res.ok) {
             cform.classList.add('sent');
+            sentEvent();
           } else {
             throw new Error((res && res.error) || 'Request failed');
           }
@@ -377,7 +397,7 @@
         .catch(function () {
           submitBtn.disabled = false;
           submitBtn.innerHTML = original;
-          setError('Something went wrong — please email us at elyxsolution@gmail.com.');
+          setError('Something went wrong — please email us at ' + ((window.ELYX && window.ELYX.email) || 'hello@elyxsolutions.in') + '.');
         });
     });
 

@@ -1,5 +1,7 @@
 # robots.txt — Elyx Solutions
 User-agent: *
 Allow: /
+Disallow: /_src/
+Disallow: /404.html
 
 Sitemap: https://elyxsolutions.in/sitemap.xml

@@ -1,0 +1,63 @@
+{
+  "_readme": "Single source of truth for contact details, tracking and authors. Edit this file, then run:  node _src/build.js   (see _src/README.md). Empty values are simply left out of the site — nothing breaks.",
+  "domain": "https://elyxsolutions.in",
+  "name": "Elyx Solutions",
+  "email": "hello@elyxsolutions.in",
+  "phone": "+91 96117 29733",
+  "phoneSecondary": "+91 72047 23340",
+  "whatsapp": "919611729733",
+  "whatsappMessage": "Hi Elyx, I'd like to talk about a project.",
+  "address": {
+    "street": "",
+    "locality": "Bengaluru",
+    "region": "Karnataka",
+    "postalCode": "",
+    "country": "IN"
+  },
+  "mapUrl": "",
+  "googleBusinessProfileUrl": "",
+  "bookingUrl": "",
+  "ga4Id": "",
+  "social": {
+    "linkedin": "https://www.linkedin.com/company/elyxsolutions04/",
+    "instagram": "https://www.instagram.com/elyxsolutions"
+  },
+  "defaultAuthor": "shreyasmv",
+  "authors": [
+    {
+      "slug": "shreyasmv",
+      "name": "Shreyas M V",
+      "role": "Co-founder, Elyx Solutions",
+      "bio": "Shreyas M V is a co-founder of Elyx Solutions and writes the Elyx blog: practical guides on website cost, redesigns, local SEO, software and AI for Indian businesses, drawn from projects the studio has shipped.",
+      "topics": [
+        "Website cost and pricing",
+        "Websites and redesigns",
+        "Local SEO and Google Business Profile",
+        "SaaS and software for small businesses",
+        "AI for business"
+      ],
+      "linkedin": "https://www.linkedin.com/in/shreyas-m-v-311b99205/",
+      "photo": "uploads/authors/shreyasmv.jpg"
+    },
+    {
+      "slug": "rahulc",
+      "name": "Rahul C",
+      "role": "Co-founder, Elyx Solutions",
+      "bio": "Rahul C is a co-founder of Elyx Solutions, a three-person digital studio in Bengaluru that designs, builds and grows websites, apps and SaaS products.",
+      "topics": [],
+      "linkedin": "",
+      "photo": ""
+    },
+    {
+      "slug": "nawaz",
+      "name": "Nawaz",
+      "role": "Co-founder, Elyx Solutions",
+      "bio": "Nawaz is a co-founder of Elyx Solutions, a three-person digital studio in Bengaluru that designs, builds and grows websites, apps and SaaS products.",
+      "topics": [],
+      "linkedin": "",
+      "photo": "",
+      "blog": false
+    }
+  ],
+  "_note_blog": "An author with \"blog\": false has no /blog/author/ page but still appears in the About team and founder schema."
+}
