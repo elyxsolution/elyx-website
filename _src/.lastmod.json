@@ -84,7 +84,7 @@
     "lastmod": "2026-11-16"
   },
   "/blog/": {
-    "hash": "bcd33f6e233c046e3aff0a4c0734c9c1",
+    "hash": "3a0c7fd181940bb6edb78ce97a7037cc",
     "lastmod": "2026-11-16"
   },
   "/blog/category/industries/": {
@@ -164,7 +164,7 @@
     "lastmod": "2026-11-16"
   },
   "/blog/author/shreyasmv/": {
-    "hash": "bad24baa83ec5b33c0ed6c1ecd1a4885",
+    "hash": "db11e3894d2accddffc76985855cf30a",
     "lastmod": "2026-11-16"
   },
   "/blog/author/rahulc/": {
@@ -229,6 +229,10 @@
   },
   "/blog/gym-website-design/": {
     "hash": "577fbd9f947cc293ca5a468e6b7fab37",
+    "lastmod": "2026-11-16"
+  },
+  "/blog/homestay-website/": {
+    "hash": "099c099b6ff4e3bbf0e5a0a50d2d23f4",
     "lastmod": "2026-11-16"
   }
 }
