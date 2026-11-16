@@ -84,7 +84,7 @@
     "lastmod": "2026-11-16"
   },
   "/blog/": {
-    "hash": "bcd33f6e233c046e3aff0a4c0734c9c1",
+    "hash": "fc02631d95cbdd052c041b516e11834f",
     "lastmod": "2026-11-16"
   },
   "/blog/category/industries/": {
@@ -164,7 +164,7 @@
     "lastmod": "2026-11-16"
   },
   "/blog/author/shreyasmv/": {
-    "hash": "bad24baa83ec5b33c0ed6c1ecd1a4885",
+    "hash": "e28c89ded564067bc8ffde81ffb0b6f4",
     "lastmod": "2026-11-16"
   },
   "/blog/author/rahulc/": {
@@ -230,5 +230,9 @@
   "/blog/gym-website-design/": {
     "hash": "577fbd9f947cc293ca5a468e6b7fab37",
     "lastmod": "2026-11-16"
+  },
+  "/blog/restaurant-website-india/": {
+    "hash": "d83aca9f55d50bdff6dec58a4a6d041c",
+    "lastmod": "2026-11-17"
   }
 }
