@@ -3,6 +3,16 @@
   "trailingSlash": true,
   "redirects": [
     {
+      "source": "/blog/category/:slug",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/category/:slug/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
       "source": "/blogs/author/:slug/",
       "destination": "/blog/author/:slug/",
       "permanent": true
