@@ -84,7 +84,7 @@
     "lastmod": "2026-11-16"
   },
   "/blog/": {
-    "hash": "c18a6f8651a07e24b490ef5144a9581f",
+    "hash": "ea8564c5042555583c8206cde93c60d5",
     "lastmod": "2026-11-16"
   },
   "/blog/category/industries/": {
@@ -164,7 +164,7 @@
     "lastmod": "2026-11-16"
   },
   "/blog/author/shreyasmv/": {
-    "hash": "2d1a2568abafcefe68f7d7e3babdd537",
+    "hash": "dd70c1bcc6a3f1a9a8ea4366a5918575",
     "lastmod": "2026-11-16"
   },
   "/blog/author/rahulc/": {
@@ -217,6 +217,10 @@
   },
   "/blog/what-are-ai-agents/": {
     "hash": "9ac922b8f766233548713981a9ffff72",
+    "lastmod": "2026-11-16"
+  },
+  "/blog/salon-website-with-online-booking/": {
+    "hash": "caeed8aaed4e9b9f03c558284c7ee35f",
     "lastmod": "2026-11-16"
   }
 }
