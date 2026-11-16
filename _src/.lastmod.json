@@ -84,7 +84,7 @@
     "lastmod": "2026-11-16"
   },
   "/blog/": {
-    "hash": "cdd2ae29e85f22349b83f5b1dcb82e00",
+    "hash": "bcd33f6e233c046e3aff0a4c0734c9c1",
     "lastmod": "2026-11-16"
   },
   "/blog/category/industries/": {
@@ -164,7 +164,7 @@
     "lastmod": "2026-11-16"
   },
   "/blog/author/shreyasmv/": {
-    "hash": "06c9057b8891e8b7a612c9f62fa7ea34",
+    "hash": "bad24baa83ec5b33c0ed6c1ecd1a4885",
     "lastmod": "2026-11-16"
   },
   "/blog/author/rahulc/": {
@@ -225,6 +225,10 @@
   },
   "/blog/website-for-doctors-india/": {
     "hash": "50d46581e4e91dd9310c954398a83ab5",
+    "lastmod": "2026-11-16"
+  },
+  "/blog/gym-website-design/": {
+    "hash": "577fbd9f947cc293ca5a468e6b7fab37",
     "lastmod": "2026-11-16"
   }
 }
