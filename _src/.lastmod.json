@@ -84,7 +84,7 @@
     "lastmod": "2026-11-16"
   },
   "/blog/": {
-    "hash": "bcd33f6e233c046e3aff0a4c0734c9c1",
+    "hash": "797318c14d7f22ae610b20cc46855abb",
     "lastmod": "2026-11-16"
   },
   "/blog/category/industries/": {
@@ -164,7 +164,7 @@
     "lastmod": "2026-11-16"
   },
   "/blog/author/shreyasmv/": {
-    "hash": "bad24baa83ec5b33c0ed6c1ecd1a4885",
+    "hash": "54b1176493207b125c28aa1891e7e550",
     "lastmod": "2026-11-16"
   },
   "/blog/author/rahulc/": {
@@ -229,6 +229,10 @@
   },
   "/blog/gym-website-design/": {
     "hash": "577fbd9f947cc293ca5a468e6b7fab37",
+    "lastmod": "2026-11-16"
+  },
+  "/blog/school-website-design/": {
+    "hash": "119006d57c545c1c8535cfbc5643251a",
     "lastmod": "2026-11-16"
   }
 }
