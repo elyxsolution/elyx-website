@@ -84,7 +84,7 @@
     "lastmod": "2026-11-16"
   },
   "/blog/": {
-    "hash": "bcd33f6e233c046e3aff0a4c0734c9c1",
+    "hash": "beed49cf6072d57e034e3cdf2bc2d8a5",
     "lastmod": "2026-11-16"
   },
   "/blog/category/industries/": {
@@ -164,7 +164,7 @@
     "lastmod": "2026-11-16"
   },
   "/blog/author/shreyasmv/": {
-    "hash": "bad24baa83ec5b33c0ed6c1ecd1a4885",
+    "hash": "2f99ec634b1f1c1f197a6a008bca612a",
     "lastmod": "2026-11-16"
   },
   "/blog/author/rahulc/": {
@@ -229,6 +229,10 @@
   },
   "/blog/gym-website-design/": {
     "hash": "577fbd9f947cc293ca5a468e6b7fab37",
+    "lastmod": "2026-11-16"
+  },
+  "/blog/event-management-company-website/": {
+    "hash": "e0bcde9657e6f0cd6f085920ce000010",
     "lastmod": "2026-11-16"
   }
 }
