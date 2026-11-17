@@ -60,7 +60,7 @@
     "lastmod": "2026-11-16"
   },
   "/pricing/": {
-    "hash": "1188d9f7d7d5f68430807817cb5f55be",
+    "hash": "b3f743c7d9829bf4378d50c4f1456886",
     "lastmod": "2026-11-17"
   },
   "/web-development-bengaluru/": {
@@ -84,7 +84,7 @@
     "lastmod": "2026-11-16"
   },
   "/blog/": {
-    "hash": "7ebb2d321f4dd6070b3583808a5d8992",
+    "hash": "eeac0677a3c484cd05de7f41b786ff8f",
     "lastmod": "2026-11-17"
   },
   "/blog/category/industries/": {
@@ -168,8 +168,8 @@
     "lastmod": "2026-11-17"
   },
   "/blog/author/rahulc/": {
-    "hash": "1ea943d28b6bc2ebb97d8ca0787b19c6",
-    "lastmod": "2026-11-16"
+    "hash": "cb5e147765538eebec3fd0c3dde0a34b",
+    "lastmod": "2026-11-17"
   },
   "/blog/author/nawaz/": {
     "hash": "a699372200d5608ecd7f165e421f3c0e",
@@ -334,5 +334,9 @@
   "/blog/advocate-website-india/": {
     "hash": "a5162d090fcea457c724396c6a004fa6",
     "lastmod": "2026-11-16"
+  },
+  "/blog/how-long-to-build-a-website/": {
+    "hash": "12aa15e2782d86591d3d61361b14b646",
+    "lastmod": "2026-11-17"
   }
 }
