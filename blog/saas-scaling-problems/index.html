@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>SaaS Scaling Problems: What Breaks Between 1 and 1,000</title>
+<meta name="description" content="SaaS scaling problems in a young product: what breaks first in performance, support, billing and monitoring, with worked examples and a checklist." />
+<link rel="canonical" href="https://elyxsolutions.in/blog/saas-scaling-problems/" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#080b1a" />
+<!-- Open Graph -->
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Elyx Solutions" />
+<meta property="og:title" content="SaaS Scaling Problems: What Breaks Between 1 and 1,000" />
+<meta property="og:description" content="SaaS scaling problems in a young product: what breaks first in performance, support, billing and monitoring, with worked examples and a checklist." />
+<meta property="og:url" content="https://elyxsolutions.in/blog/saas-scaling-problems/" />
+<meta property="og:image" content="https://elyxsolutions.in/og/blog-saas-scaling-problems.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:locale" content="en_IN" />
+<meta property="article:published_time" content="2026-11-17" />
+<meta property="article:modified_time" content="2026-11-17" />
+<meta property="article:section" content="SaaS &amp; MVP Building" />
+<meta property="article:author" content="https://elyxsolutions.in/blog/author/shreyasmv/" />
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="SaaS Scaling Problems: What Breaks Between 1 and 1,000" />
+<meta name="twitter:description" content="SaaS scaling problems in a young product: what breaks first in performance, support, billing and monitoring, with worked examples and a checklist." />
+<meta name="twitter:image" content="https://elyxsolutions.in/og/blog-saas-scaling-problems.png" />
+<!-- Icons -->
+<link rel="icon" href="../../favicon.svg" type="image/svg+xml" />
+<link rel="icon" href="../../icon-192.png" sizes="192x192" type="image/png" />
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500;1,6..72,600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../../css/styles.css" />
+<link rel="stylesheet" href="../../css/pages.css" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://elyxsolutions.in/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://elyxsolutions.in/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "From First Customer to First 1,000: What Breaks in a Young SaaS",
+          "item": "https://elyxsolutions.in/blog/saas-scaling-problems/"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://elyxsolutions.in/blog/saas-scaling-problems/#article",
+      "headline": "From First Customer to First 1,000: What Breaks in a Young SaaS",
+      "description": "SaaS scaling problems in a young product: what breaks first in performance, support, billing and monitoring, with worked examples and a checklist.",
+      "image": [
+        "https://elyxsolutions.in/og/blog-saas-scaling-problems.png"
+      ],
+      "datePublished": "2026-11-17",
+      "dateModified": "2026-11-17",
+      "author": {
+        "@type": "Person",
+        "@id": "https://elyxsolutions.in/blog/author/shreyasmv/#person",
+        "name": "Shreyas M V",
+        "url": "https://elyxsolutions.in/blog/author/shreyasmv/",
+        "sameAs": [
+          "https://www.linkedin.com/in/shreyas-m-v-311b99205/"
+        ]
+      },
+      "publisher": {
+        "@id": "https://elyxsolutions.in/#organization"
+      },
+      "mainEntityOfPage": "https://elyxsolutions.in/blog/saas-scaling-problems/",
+      "articleSection": "SaaS & MVP Building",
+      "inLanguage": "en-IN"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What are the most common SaaS scaling problems?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The most common SaaS scaling problems are slow performance, rising cloud costs, overloaded support, manual billing and weak monitoring. V2STech and Mediusware both trace them to a system built for an earlier stage. Scalekit adds enterprise login and audit requirements for products moving upmarket."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is horizontal scaling in SaaS?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Horizontal scaling means adding more copies of your application behind a load balancer instead of buying a bigger server. It needs shared storage and sessions so any copy can serve any request. The database often stays the bottleneck."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why does my SaaS get slow as customers grow?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A SaaS gets slow because queries, indexes, caching and background jobs were sized for fewer users. Mediusware lists inefficient queries, missing indexes, synchronous processes and no load testing as typical causes. Check the slowest queries before blaming the team."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "When should a SaaS start monitoring?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A SaaS should start monitoring before launch, not after the first complaint. V2STech says to implement performance monitoring early. At minimum, watch uptime, error rate, response time, failed jobs and failed payments."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the common SaaS payment problems?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Common payment problems are failed debits, mid-cycle upgrades, refunds, trials that end without a card and invoices that need a GSTIN. Wise warns that manual invoicing creates bottlenecks and compliance risk. Decide each case before launch and test it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I stop my cloud bill growing faster than revenue?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Make cost visible per environment and feature, then right-size from actual usage. V2STech recommends cost monitoring, budgets and autoscaling, and cites Flexera's estimate that 28 percent of cloud spend is wasted on average. That is an average, not your figure."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What do enterprise buyers ask a young SaaS for?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Enterprise buyers ask for single sign-on, user provisioning, fine-grained access control and audit logs, per Scalekit. Business, IT and security teams each evaluate the product. Scalekit sells authentication, so its build-time estimates are a vendor's view."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I rewrite my SaaS to scale it?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A full rewrite is rarely the first step. V2STech advises moving gradually to modular services, starting with the highest-load parts such as authentication, reporting and data ingestion. Fix queries, caching and background jobs first."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does a care plan for a SaaS cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The studio's draft care range is ₹9,999–₹24,999 a month, excluding 18% GST, and it is indicative, never a quote. It scales with how many apps are covered, the update hours and response time. A fixed quote is confirmed in writing after a call."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body data-article="saas-scaling-problems">
+<div class="grain"></div>
+<div class="nav-shell scrolled" id="navShell">
+  <a class="brand nav__brand" href="../../" aria-label="Elyx Solutions home">
+    <svg class="brand__mark" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+      <g transform="skewX(-10)">
+        <rect x="7" y="4" width="15" height="4.4" rx="1.2" fill="#1f4fd8"></rect>
+        <rect x="7" y="11.8" width="11" height="4.4" rx="1.2" fill="#0b1024"></rect>
+        <rect x="7" y="19.6" width="15" height="4.4" rx="1.2" fill="#1f4fd8"></rect>
+      </g>
+    </svg>
+    <span class="brand__name">Elyx</span>
+  </a>
+
+  <nav class="nav" id="nav" aria-label="Main">
+    <div class="nav__links" id="navLinks">
+      <div class="nav__item" data-menu="services"><button type="button">Services <svg class="caret" viewBox="0 0 10 10" fill="none"><path d="M1 3l4 4 4-4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button></div>
+      <div class="nav__item" data-menu="industries"><button type="button">Industries <svg class="caret" viewBox="0 0 10 10" fill="none"><path d="M1 3l4 4 4-4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button></div>
+      <div class="nav__item" data-menu="work"><button type="button">Work <svg class="caret" viewBox="0 0 10 10" fill="none"><path d="M1 3l4 4 4-4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button></div>
+      <div class="nav__item"><a href="../../blog/">Blog</a></div>
+      <div class="nav__item"><a href="../../about.html">About</a></div>
+      <div class="nav__item"><a href="../../contact.html">Contact</a></div>
+    </div>
+  </nav>
+
+  <div class="nav__right">
+    <a class="btn btn--primary nav__cta" href="../../contact.html" data-track="cta_click" data-pos="nav">Let's talk <svg class="arr" width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H4M10 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+    <button class="nav__burger" id="burger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <div class="mobile-menu__group">
+      <span class="mobile-menu__label">Services</span>
+      <a href="../../services/web-development/">Web Development</a>
+      <a href="../../services/saas-development/">SaaS Development</a>
+      <a href="../../services/app-development/">App Development</a>
+      <a href="../../services/seo-optimization/">SEO Optimization</a>
+      <a href="../../services/maintenance-care/">Maintenance &amp; Care</a>
+    </div>
+    <div class="mobile-menu__group">
+      <span class="mobile-menu__label">Websites for</span>
+      <a href="../../websites-for/dentists/">Dentists &amp; Clinics</a>
+      <a href="../../websites-for/coaching-centres/">Coaching Centres</a>
+      <a href="../../websites-for/restaurants-and-cafes/">Restaurants &amp; Cafés</a>
+      <a href="../../websites-for/salons-and-spas/">Salons &amp; Spas</a>
+      <a href="../../websites-for/real-estate/">Real Estate</a>
+      <a href="../../websites-for/ca-and-law-firms/">CA &amp; Law Firms</a>
+    </div>
+    <div class="mobile-menu__group">
+      <span class="mobile-menu__label">Company</span>
+      <a href="../../about.html">About</a>
+      <a href="../../work.html">Work</a>
+      <a href="../../pricing/">Pricing</a>
+      <a href="../../blog/">Blog</a>
+      <a href="../../tools/">Free tools</a>
+      <a href="../../contact.html">Contact</a>
+    </div>
+    <a class="btn btn--blue mobile-menu__cta" href="../../contact.html">Let's talk <svg class="arr" width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H4M10 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+  </div>
+
+  <!-- Mega panel -->
+  <div class="mega" id="mega">
+    <div class="mega__inner">
+      <div class="mega__panel" data-panel="services">
+        <div class="mega-grid">
+          <div class="mega-tiles"><a class="mtile" href="../../services/web-development/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M9 8l-4 4 4 4M15 8l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">Web Development</span></span></a><a class="mtile" href="../../services/saas-development/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M6 16a4 4 0 010-8 5 5 0 019.6-1.5A3.5 3.5 0 0118 16H6z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">SaaS Development</span></span></a><a class="mtile" href="../../services/app-development/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><rect x="7" y="3" width="10" height="18" rx="2.5" stroke="currentColor" stroke-width="1.6"></rect><path d="M11 18h2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg></span><span><span class="mtile__t">App Development</span></span></a><a class="mtile" href="../../services/seo-optimization/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><circle cx="10.5" cy="10.5" r="6" stroke="currentColor" stroke-width="1.6"></circle><path d="M15 15l5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg></span><span><span class="mtile__t">SEO Optimization</span></span></a><a class="mtile" href="../../services/maintenance-care/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M12 8v4l3 2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path><circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="1.6"></circle></svg></span><span><span class="mtile__t">Maintenance &amp; Care</span></span></a><a class="mtile" href="../../pricing/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M4 14l5-5 4 4 7-7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path><path d="M20 6v4h-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">Pricing</span></span></a></div>
+          <a class="mega-feature" href="../../pricing/">
+            <div class="ph-grid"></div>
+            <div class="mega-feature__k">Featured</div>
+            <div class="mega-feature__t">Simple pricing. Engagements start at ₹9,999.</div>
+            <div class="mega-feature__l">See pricing <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H4M10 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+          </a>
+        </div>
+      </div>
+
+      <div class="mega__panel" data-panel="industries">
+        <div class="mega-grid">
+          <div class="mega-tiles"><a class="mtile" href="../../websites-for/dentists/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M12 5c-2-1.5-6-1.5-6 2.5 0 3 1.5 4 1.5 7 0 2 .8 4.5 2 4.5s1.5-2 2.5-2 1.3 2 2.5 2 2-2.5 2-4.5c0-3 1.5-4 1.5-7C18 3.5 14 3.5 12 5z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">Dentists &amp; Clinics</span></span></a><a class="mtile" href="../../websites-for/coaching-centres/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M3 9l9-4 9 4-9 4-9-4z M7 11v4c0 1.5 2.2 3 5 3s5-1.5 5-3v-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">Coaching Centres</span></span></a><a class="mtile" href="../../websites-for/restaurants-and-cafes/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M7 3v8M5 3v5a2 2 0 004 0V3M7 11v10M17 3c-2 1.5-3 4-3 7h3v11" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">Restaurants &amp; Cafés</span></span></a><a class="mtile" href="../../websites-for/salons-and-spas/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><circle cx="6" cy="7" r="2.5" stroke="currentColor" stroke-width="1.6"></circle><circle cx="6" cy="17" r="2.5" stroke="currentColor" stroke-width="1.6"></circle><path d="M8 8.5L20 18M8 15.5L20 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg></span><span><span class="mtile__t">Salons &amp; Spas</span></span></a><a class="mtile" href="../../websites-for/real-estate/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M4 21V8l8-5 8 5v13M9 21v-6h6v6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">Real Estate</span></span></a><a class="mtile" href="../../websites-for/ca-and-law-firms/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M12 4v16M6 20h12M5 8h14M5 8l-2.5 6a3 3 0 005 0L5 8zM19 8l-2.5 6a3 3 0 005 0L19 8z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">CA &amp; Law Firms</span></span></a></div>
+          <a class="mega-feature" href="../../websites-for/">
+            <div class="ph-grid"></div>
+            <div class="mega-feature__k">Built for your trade</div>
+            <div class="mega-feature__t">What a site for your kind of business actually needs.</div>
+            <div class="mega-feature__l">All industries <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H4M10 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+          </a>
+        </div>
+      </div>
+
+      <div class="mega__panel" data-panel="work">
+        <div class="mega-grid mega-grid--work">
+          <div class="mega-wlinks">
+            <a class="mtile" href="../../work.html#tools"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.6"></circle><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5.1 5.1l2.1 2.1M16.8 16.8l2.1 2.1M18.9 5.1L16.8 7.2M7.2 16.8l-2.1 2.1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg></span><span><span class="mtile__t">Tools we use</span></span></a>
+            <a class="mtile" href="../../work.html#faq"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"></circle><path d="M9.6 9.2a2.5 2.5 0 014.7 1.1c0 1.6-2.3 2-2.3 3.6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path><circle cx="12" cy="16.6" r="0.7" fill="currentColor"></circle></svg></span><span><span class="mtile__t">FAQ about Elyx</span></span></a>
+            <a class="mtile" href="../../work.html"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="6.5" height="6.5" rx="1.6" stroke="currentColor" stroke-width="1.6"></rect><rect x="13.5" y="4" width="6.5" height="6.5" rx="1.6" stroke="currentColor" stroke-width="1.6"></rect><rect x="4" y="13.5" width="6.5" height="6.5" rx="1.6" stroke="currentColor" stroke-width="1.6"></rect><rect x="13.5" y="13.5" width="6.5" height="6.5" rx="1.6" stroke="currentColor" stroke-width="1.6"></rect></svg></span><span><span class="mtile__t">All projects</span></span></a>
+          </div>
+          <div class="mega-work"><a class="wcard" href="../../work/ashirwad-dental/"><div class="wcard__img ph wcard__img--dental"></div><div class="wcard__meta"><div class="wcard__t">Ashirwad Dental Clinic</div><div class="wcard__c">Web · Redesign</div></div></a><a class="wcard" href="../../work/pinnacle-inc/"><div class="wcard__img ph wcard__img--pinnacle"></div><div class="wcard__meta"><div class="wcard__t">Pinnacle Inc.</div><div class="wcard__c">Web · EdTech</div></div></a><a class="wcard" href="../../work/malnad-stories/"><div class="wcard__img ph wcard__img--malnad"></div><div class="wcard__meta"><div class="wcard__t">Malnad Stories</div><div class="wcard__c">E-commerce · Web App</div></div></a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<span id="top"></span>
+<main class="bl"><div class="bl__in">
+  <div class="bl__crumbs">
+    <a class="bl__back" href="../../blog/">← Back to Blog</a>
+    <nav aria-label="Breadcrumb"><ol><li><a href="../../">Home</a></li><li aria-hidden="true">/</li><li><a href="../../blog/">Blog</a></li><li aria-hidden="true">/</li><li aria-current="page">From First Customer to First 1,000: What Breaks in a Young SaaS</li></ol></nav>
+  </div>
+  <div class="bl__cols">
+    <article class="barticle" data-article="saas-scaling-problems">
+      <header>
+        <p class="bbyline">By <a class="bauthor" href="../../blog/author/shreyasmv/"><img class="bauthor__ph" src="../../uploads/authors/shreyasmv.jpg" alt="" width="24" height="24" loading="lazy" /><span>Shreyas M V</span></a><span aria-hidden="true">·</span><span>Published <time datetime="2026-11-17">17 November 2026</time></span><span aria-hidden="true">·</span><span>13 min read</span></p>
+        <h1>From First Customer to First 1,000: What Breaks in a Young SaaS</h1>
+        <p class="blead">SaaS scaling problems in a young product: what breaks first in performance, support, billing and monitoring, with worked examples and a checklist.</p>
+      </header>
+      <nav class="btoc" aria-label="Table of contents"><b>On this page</b><ol><li><a href="#saas-scaling-problems-the-order-they-usually-appear"><span>01</span>SaaS Scaling Problems: The Order They Usually Appear</a></li><li><a href="#performance-why-a-young-saas-gets-slow"><span>02</span>Performance: Why A Young SaaS Gets Slow</a></li><li><a href="#what-is-horizontal-scaling-in-saas"><span>03</span>What Is Horizontal Scaling In SaaS?</a></li><li><a href="#seamless-scaling-events-planning-for-a-known-spike"><span>04</span>Seamless Scaling Events: Planning For A Known Spike</a></li><li><a href="#cloud-costs-why-the-bill-grows-faster-than-revenue"><span>05</span>Cloud Costs: Why The Bill Grows Faster Than Revenue</a></li><li><a href="#support-when-tickets-become-the-bottleneck"><span>06</span>Support: When Tickets Become The Bottleneck</a></li><li><a href="#saas-and-payment-problems-billing-edge-cases"><span>07</span>SaaS And Payment Problems: Billing Edge Cases</a></li><li><a href="#monitoring-hear-about-it-before-customers-do"><span>08</span>Monitoring: Hear About It Before Customers Do</a></li><li><a href="#enterprise-asks-when-the-first-large-buyer-arrives"><span>09</span>Enterprise Asks: When The First Large Buyer Arrives</a></li><li><a href="#what-usually-goes-wrong"><span>10</span>What Usually Goes Wrong</a></li><li><a href="#what-to-do-next"><span>11</span>What To Do Next</a></li><li><a href="#sources"><span>12</span>Sources</a></li><li><a href="#faq"><span>13</span>Frequently asked questions</a></li></ol></nav>
+      <div class="prose">
+<p>SaaS scaling problems in a young product tend to arrive in this order: slow screens and a rising cloud bill, then support work that eats the founders' week, then billing cases the first version never handled, with outages nobody saw coming running through all of it. The qualification that matters is that no source gives a customer count at which each problem starts, so the order here is my reading of published pages, not a measured sequence. What the sources agree on is the cause: a system built to test an idea is now carrying more users, data and money than it was designed for.</p>
+<ul><li><strong>Performance.</strong> Slow pages and timeouts are usually a design limit, not a developer problem, per Mediusware and V2STech.</li><li><strong>Support.</strong> A product that is hard to set up turns into tickets before it turns into churn.</li><li><strong>Billing.</strong> A subscription has more states than paid and unpaid, and each state you did not plan becomes a manual job.</li><li><strong>Monitoring.</strong> Alert on response time, errors, failed jobs and failed payments so you hear before your customers tell you.</li></ul>
+<h2 id="saas-scaling-problems-the-order-they-usually-appear">SaaS Scaling Problems: The Order They Usually Appear</h2>
+<p>A young SaaS usually feels performance and cost first, support next, billing edge cases after that, and blind spots in monitoring throughout. The table below lists each problem, its first visible sign and the source that names it.</p>
+<div class="prose-table"><table><thead><tr><th>Problem</th><th>First visible sign</th><th>Named by</th></tr></thead><tbody><tr><td>Performance</td><td>Reports and dashboards slow at peak hours</td><td>V2STech, Mediusware</td></tr><tr><td>Cloud cost</td><td>Bill rises faster than revenue</td><td>V2STech</td></tr><tr><td>Support</td><td>Founders answer the same setup questions</td><td>Wise, V2STech</td></tr><tr><td>Billing</td><td>Manual fixes for upgrades and failed payments</td><td>Wise</td></tr><tr><td>Monitoring</td><td>Customers report outages first</td><td>Mediusware</td></tr><tr><td>Enterprise asks</td><td>Deals stall on login and audit questions</td><td>Scalekit</td></tr></tbody></table></div>
+<p>I built this table from the problems named by V2STech, Mediusware, Wise and Scalekit (all read on 17 November 2026), kept those that match the brief, and ordered them by when a founder tends to feel them. The ordering is my judgement. Three of the four publishers sell scaling or enterprise services, so their lists are a starting point, not a study.</p>
+<p>The expensive decisions come before any of this. The studio's <a href="../../services/saas-development/">SaaS development page</a> says how tenants are separated, how permissions work and how billing states are modelled are settled in the first two weeks, because they are costly to change later.</p>
+<h2 id="performance-why-a-young-saas-gets-slow">Performance: Why A Young SaaS Gets Slow</h2>
+<p>A young SaaS gets slow because the system was built for a smaller product than the one it now runs. Mediusware lists the usual causes: inefficient queries, missing indexes, heavy read and write loads, unoptimised third-party calls, too many synchronous processes and no load testing before growth.</p>
+<p>Mediusware's own example is a reporting feature that overloads the database, or a dashboard making too many real-time calls. V2STech adds the cost: it cites a Google study, unnamed on its page, that a rise in page load time from one second to three seconds increases bounce probability by 32 percent. That figure is about page loads, so read it as a direction for sign-up and pricing pages, not an exact number for logged-in screens.</p>
+<p>Fix in this order, cheapest first (my ordering of the fixes both publishers list):</p>
+<ol><li>Find the slowest queries and add the missing indexes.</li><li>Cache data that is read often and changes rarely.</li><li>Move reports, exports and emails to background workers, as V2STech suggests wherever a real-time answer is not needed.</li><li>Separate analytics queries from the database that takes payments and sign-ups.</li><li>Split a service out only after the steps above stop helping.</li></ol>
+<p>V2STech advises moving from a single codebase to modular services gradually, starting with the high-load parts such as authentication, reporting and data ingestion, not rewriting everything at once.</p>
+<h2 id="what-is-horizontal-scaling-in-saas">What Is Horizontal Scaling In SaaS?</h2>
+<p>Horizontal scaling means running more copies of the same application behind a load balancer, instead of moving to one bigger server, which is vertical scaling. That definition is the standard meaning, not something either source spells out, though Mediusware and V2STech both list load balancing and autoscaling among the fixes.</p>
+<p>It only works if any copy can serve any request. Sessions, uploaded files and scheduled jobs then have to sit in a shared database, shared storage or a queue, not on one server's disk. That is my reading of how the pieces fit.</p>
+<p>The database is the harder half, because every copy of the app talks to the same one, and Mediusware puts database bottlenecks first in its list. My rule of thumb: buy a bigger database before you split it, and add app servers only when processors are saturated at peak and the slow queries are already fixed.</p>
+<h2 id="seamless-scaling-events-planning-for-a-known-spike">Seamless Scaling Events: Planning For A Known Spike</h2>
+<p>A scaling event goes smoothly when the spike is predicted and rehearsed, since Mediusware names the lack of load testing before major growth periods as a cause of slowdowns. V2STech says load tests should copy real usage patterns, not ideal ones, and that autoscaling should follow real demand.</p>
+<p>A known spike could be a launch, a campaign, or a customer's month-end invoice run. This checklist is my synthesis of those two pages, to run a week before:</p>
+<ul><li>[ ] The date and the expected number of users written down.</li><li>[ ] A test that replays a realistic mix: sign-in, dashboard, report, export.</li><li>[ ] Slow queries and database connections checked during the test.</li><li>[ ] Autoscaling limits set, with a cost alert as a ceiling.</li><li>[ ] A backup restored in the last month, not just taken.</li><li>[ ] One named person who is reachable, and a rollback plan.</li></ul>
+<h2 id="cloud-costs-why-the-bill-grows-faster-than-revenue">Cloud Costs: Why The Bill Grows Faster Than Revenue</h2>
+<p>A cloud bill grows faster than revenue when nobody can see which feature, customer or environment causes it. V2STech cites Flexera's 2023 State of the Cloud Report: organisations waste an estimated 28 percent of cloud spend through inefficiency and poor cost visibility.</p>
+<p>A worked example, using an assumed bill of 1 lakh rupees a month, which is my input and not a sourced figure:</p>
+<ul><li>28 percent of 1,00,000 is 28,000 a month.</li><li>28,000 x 12 is 3,36,000, or 3.36 lakh a year.</li></ul>
+<p>Flexera's number is an average across many organisations, not your waste, so use it only to judge whether an afternoon of review is worth it.</p>
+<p>A Reddit r/webdev thread from April 2026 shows founders asking this question. The pattern in it, in my words, is that lumped-together costs hide the driver and that adding another service after each failure leaves a system nobody can follow. V2STech's remedy is cost monitoring beside performance monitoring, right-sizing from actual usage and autoscaling that follows demand. I would add one step: separate production from staging in the bill.</p>
+<h2 id="support-when-tickets-become-the-bottleneck">Support: When Tickets Become The Bottleneck</h2>
+<p>Support breaks when every customer question needs a founder, which happens fastest when setup is complex. A Reddit r/SaaS thread from February 2026 describes a product whose retention suffered because it became hard to set up and support load rose with it.</p>
+<p>Wise, citing Userpilot, says better onboarding flows lift retention and adoption, and lists in-app guides, timed email sequences and paths by use case as ways to cut tickets. V2STech names manual onboarding and overwhelmed support as operational bottlenecks and advises automating onboarding, provisioning and billing early, and writing processes down.</p>
+<p>The table matches common ticket types to a product fix. The fixes are my reading, with the sources noted where they apply.</p>
+<div class="prose-table"><table><thead><tr><th>Ticket pattern</th><th>Fix in the product</th><th>Basis</th></tr></thead><tbody><tr><td>How do I set this up?</td><td>In-app guide, import tool</td><td>Wise</td></tr><tr><td>Where is my invoice?</td><td>Self-serve invoice download</td><td>My reading</td></tr><tr><td>Why did my plan change?</td><td>Clear emails on every billing event</td><td>My reading</td></tr><tr><td>It is slow or broken</td><td>Status page and alerts</td><td>Mediusware</td></tr></tbody></table></div>
+<p>An admin view helps here. The studio's SaaS page lists admin dashboards that show who signed up, who is active and who is about to churn. My rule of thumb: when the same question arrives a third time in a month, change the product, not the reply.</p>
+<h2 id="saas-and-payment-problems-billing-edge-cases">SaaS And Payment Problems: Billing Edge Cases</h2>
+<p>Billing breaks in a young SaaS because a subscription has more states than paid and unpaid, and the first version usually models only two. Mediusware reports that expansion revenue is 41 percent of new ARR in early-stage SaaS and over 50 percent above $50M ARR, with no source named, so treat it as indicative that plan changes are normal, not rare.</p>
+<p>Wise warns that manual invoicing, outdated revenue recognition and siloed reporting create bottlenecks and compliance risk, and recommends automation that syncs with accounting tools and tax automation. The table lists the cases to decide before launch.</p>
+<div class="prose-table"><table><thead><tr><th>Case</th><th>Decide before launch</th></tr></thead><tbody><tr><td>Trial ends with no card</td><td>Pause, downgrade or lock the account?</td></tr><tr><td>UPI or card debit fails</td><td>How many retries, over how many days?</td></tr><tr><td>Upgrade mid-cycle</td><td>Charge the difference now or at renewal?</td></tr><tr><td>Downgrade or cancel</td><td>Access until period end, or immediate?</td></tr><tr><td>Refund or dispute</td><td>Who approves, and what happens to access?</td></tr><tr><td>Business customer</td><td>GSTIN on the invoice, and when it is issued</td></tr><tr><td>Annual plan paid by bank transfer</td><td>Who matches the payment, and how fast?</td></tr></tbody></table></div>
+<p>The studio's <a href="../../blog/saas-development-cost-india/">SaaS MVP cost article</a> reports, from Appwizards and Zethic pages read in November 2026, that auto-debit on cards and UPI runs under the RBI e-mandate framework with an advance notice before each debit, and that invoices need the customer's GSTIN. I have not checked those rules against an RBI circular, so confirm them with your payment gateway and a chartered accountant. Cheap quotes often leave out the failed-payment path, so ask for it by name.</p>
+<h2 id="monitoring-hear-about-it-before-customers-do">Monitoring: Hear About It Before Customers Do</h2>
+<p>Monitoring means automatic alerts on the few signals that predict a customer complaint, because Mediusware says weak monitoring hides problems until users report them. Its list of what to track is response time, server load, database performance, API latency, error rates, background job failures, user drop-off points and performance issues that touch revenue.</p>
+<div class="prose-table"><table><thead><tr><th>Signal</th><th>What it catches</th></tr></thead><tbody><tr><td>Uptime and contact forms</td><td>Site down, or enquiries silently lost</td></tr><tr><td>Error rate</td><td>A release that broke a screen</td></tr><tr><td>Response time and API latency</td><td>Slow queries, slow third parties</td></tr><tr><td>Database performance</td><td>Missing indexes, overloaded reports</td></tr><tr><td>Background job failures</td><td>Emails, exports and invoices that never ran</td></tr><tr><td>Failed payments and webhooks</td><td>Revenue lost without an error page</td></tr><tr><td>Backups</td><td>A restore that has never been tested</td></tr></tbody></table></div>
+<p>The first five rows come from Mediusware's and V2STech's lists. The last two are my additions, because billing and backups fail quietly. Scalekit names Sentry as an example of a purpose-built application monitoring product, which suggests buying the tooling.</p>
+<p>An alert nobody owns is not monitoring. Name one person for each alert and decide what they do at 2 a.m.</p>
+<h2 id="enterprise-asks-when-the-first-large-buyer-arrives">Enterprise Asks: When The First Large Buyer Arrives</h2>
+<p>A first large customer usually brings questions about login, access and audit trails that a young SaaS has not built. Scalekit says enterprise evaluation involves business teams, IT and security teams, and that IT looks for single sign-on, user provisioning, fine-grained access control and audit logs.</p>
+<p>Scalekit also says that after speaking with more than 50 SaaS teams, almost all had underestimated the time involved, and that building these features in-house takes four or more quarters and four to five platform engineers. It sells an authentication product, so read those numbers as a vendor's claim. My reading: decide whether to build or buy before the security questionnaire arrives, and model roles and permissions early.</p>
+<h2 id="what-usually-goes-wrong">What Usually Goes Wrong</h2>
+<p>Most scaling mistakes come from fixing the wrong layer or fixing everything at once. The causes come from the sources, and the fixes are my reading.</p>
+<div class="prose-table"><table><thead><tr><th>Mistake</th><th>Cause</th><th>Fix</th></tr></thead><tbody><tr><td>Blaming developers for slowness</td><td>Limits sit in queries, hosting, monitoring</td><td>Profile first (Mediusware)</td></tr><tr><td>Rewriting everything</td><td>Fear of the old code</td><td>Decouple the heaviest parts first (V2STech)</td></tr><tr><td>Scaling before the base works</td><td>Pressure to grow</td><td>Fix onboarding, billing and support first (Wise)</td></tr><tr><td>Load tests with ideal traffic</td><td>Easy to script</td><td>Replay real usage (V2STech)</td></tr><tr><td>Billing models success only</td><td>Demo shows the happy path</td><td>Write the failure table above</td></tr><tr><td>One more service per incident</td><td>Quick fixes pile up</td><td>Keep a simple diagram, remove before adding</td></tr></tbody></table></div>
+<h2 id="what-to-do-next">What To Do Next</h2>
+<p>Start with a 30-day sequence that costs time, not licences: this ordering is mine, not a sourced method.</p>
+<ol><li><strong>Week 1, see.</strong> Set alerts for the seven signals above and restore one backup.</li><li><strong>Week 2, speed.</strong> Fix the five slowest screens, starting with queries and indexes.</li><li><strong>Week 3, billing.</strong> Work through the billing table above and test every row in test mode.</li><li><strong>Week 4, support.</strong> Tally last month's tickets by type and fix the top one in the product.</li></ol>
+<p>If you would rather hand part of this over, the studio's <a href="../../services/saas-development/">SaaS development page</a> covers monitoring, backups and clean deployment from day one. Its <a href="../../services/maintenance-care/">maintenance and care plans</a> cover uptime monitoring, dependency updates, backups with a tested restore, performance checks and monthly update hours, at ₹9,999–₹24,999 a month as an indicative draft range excluding 18% GST. A fixed quote is confirmed in writing after a call, and there is no retainer lock-in unless you want one. The <a href="../../pricing/">pricing page</a> shows every range.</p>
+<h2 id="sources">Sources</h2>
+<ul><li><a href="https://www.v2stech.com/resources/blogs/common-saas-scaling-problems-and-how-to-fix-them" rel="noopener" target="_blank">Common SaaS Scaling Problems and How to Fix Them</a>, V2STech (read 17 November 2026)</li><li><a href="https://mediusware.com/blog/saas-scaling-problem-not-developers" rel="noopener" target="_blank">Your SaaS Isn't Slow Because of Developers: It's a Scaling Problem</a>, Mediusware (read 17 November 2026)</li><li><a href="https://wise.com/us/blog/scaling-a-saas-business" rel="noopener" target="_blank">8 Proven Strategies for Scaling a SaaS Business</a>, Wise (read 17 November 2026)</li><li><a href="https://www.scalekit.com/blog/scaling-your-saas-to-enterprise-what-does-it-take" rel="noopener" target="_blank">Scaling Your SaaS to Enterprise: What Does It Take?</a>, Scalekit (read 17 November 2026)</li><li><a href="https://reddit.com/r/webdev/comments/1sledj0/what_are_the_most_common_cloud_and_infrastructure" rel="noopener" target="_blank">What are the most common cloud and infrastructure mistakes when scaling a SaaS product?</a>, Reddit r/webdev, April 2026 (community thread)</li><li><a href="https://reddit.com/r/SaaS/comments/1r73wxw/stuck_at_6k_mrr_struggling_to_scale" rel="noopener" target="_blank">Stuck at 6k MRR - struggling to scale</a>, Reddit r/SaaS, February 2026 (community thread)</li></ul>
+      </div>
+      <section class="bfaq" id="faq"><h2>Frequently asked questions</h2><div class="faq__list"><details class="faq__item">
+  <summary class="faq__q"><span>What are the most common SaaS scaling problems?</span><svg class="faq__caret" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+  <div class="faq__a"><p>The most common SaaS scaling problems are slow performance, rising cloud costs, overloaded support, manual billing and weak monitoring. V2STech and Mediusware both trace them to a system built for an earlier stage. Scalekit adds enterprise login and audit requirements for products moving upmarket.</p></div>
+</details>
+<details class="faq__item">
+  <summary class="faq__q"><span>What is horizontal scaling in SaaS?</span><svg class="faq__caret" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+  <div class="faq__a"><p>Horizontal scaling means adding more copies of your application behind a load balancer instead of buying a bigger server. It needs shared storage and sessions so any copy can serve any request. The database often stays the bottleneck.</p></div>
+</details>
+<details class="faq__item">
+  <summary class="faq__q"><span>Why does my SaaS get slow as customers grow?</span><svg class="faq__caret" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+  <div class="faq__a"><p>A SaaS gets slow because queries, indexes, caching and background jobs were sized for fewer users. Mediusware lists inefficient queries, missing indexes, synchronous processes and no load testing as typical causes. Check the slowest queries before blaming the team.</p></div>
+</details>
+<details class="faq__item">
+  <summary class="faq__q"><span>When should a SaaS start monitoring?</span><svg class="faq__caret" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+  <div class="faq__a"><p>A SaaS should start monitoring before launch, not after the first complaint. V2STech says to implement performance monitoring early. At minimum, watch uptime, error rate, response time, failed jobs and failed payments.</p></div>
+</details>
+<details class="faq__item">
+  <summary class="faq__q"><span>What are the common SaaS payment problems?</span><svg class="faq__caret" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+  <div class="faq__a"><p>Common payment problems are failed debits, mid-cycle upgrades, refunds, trials that end without a card and invoices that need a GSTIN. Wise warns that manual invoicing creates bottlenecks and compliance risk. Decide each case before launch and test it.</p></div>
+</details>
+<details class="faq__item">
+  <summary class="faq__q"><span>How do I stop my cloud bill growing faster than revenue?</span><svg class="faq__caret" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+  <div class="faq__a"><p>Make cost visible per environment and feature, then right-size from actual usage. V2STech recommends cost monitoring, budgets and autoscaling, and cites Flexera's estimate that 28 percent of cloud spend is wasted on average. That is an average, not your figure.</p></div>
+</details>
+<details class="faq__item">
+  <summary class="faq__q"><span>What do enterprise buyers ask a young SaaS for?</span><svg class="faq__caret" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+  <div class="faq__a"><p>Enterprise buyers ask for single sign-on, user provisioning, fine-grained access control and audit logs, per Scalekit. Business, IT and security teams each evaluate the product. Scalekit sells authentication, so its build-time estimates are a vendor's view.</p></div>
+</details>
+<details class="faq__item">
+  <summary class="faq__q"><span>Should I rewrite my SaaS to scale it?</span><svg class="faq__caret" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+  <div class="faq__a"><p>A full rewrite is rarely the first step. V2STech advises moving gradually to modular services, starting with the highest-load parts such as authentication, reporting and data ingestion. Fix queries, caching and background jobs first.</p></div>
+</details>
+<details class="faq__item">
+  <summary class="faq__q"><span>How much does a care plan for a SaaS cost?</span><svg class="faq__caret" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+  <div class="faq__a"><p>The studio's draft care range is ₹9,999–₹24,999 a month, excluding 18% GST, and it is indicative, never a quote. It scales with how many apps are covered, the update hours and response time. A fixed quote is confirmed in writing after a call.</p></div>
+</details></div></section>
+      <div class="bfoot"><span>SaaS &amp; MVP Building</span></div>
+    </article>
+    <aside class="baside" aria-label="From Elyx"><div class="bcta">
+  <span class="bcta__k">Elyx Solutions</span>
+  <h3>Have a SaaS idea or a process worth turning into software?</h3>
+  <a class="btn btn--blue" href="https://wa.me/919611729733?text=Hi%20Elyx%2C%20I'd%20like%20to%20talk%20about%20a%20project.%20(from%20the%20article%20%22From%20First%20Customer%20to%20First%201%2C000%3A%20What%20Breaks%20in%20a%20Young%20SaaS%22)" target="_blank" rel="noopener" data-track="whatsapp_click" data-article="saas-scaling-problems" data-card-pos="side">WhatsApp us <svg class="arr" width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H4M10 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+  <a class="btn btn--ghost" href="../../services/saas-development/" data-track="card_click" data-article="saas-scaling-problems" data-card-pos="side" data-btn="soft">See SaaS development</a>
+</div></aside>
+  </div>
+</div></main>
+<section class="cta" data-screen-label="Contact CTA">
+  <div class="cta__in reveal">
+    <div class="deco deco-dark" data-parallax="0.08" style="z-index:-1" aria-hidden="true"><span class="orb orb-a"></span></div>
+    <div class="ph-grid cta__bg"></div>
+    <div class="cta__glow"></div>
+    <span class="eyebrow is-light" style="justify-content:center;">Let's build</span>
+    <h2 class="cta__t" style="color:#fff;margin-top:20px;">Have something worth <span class="em">building?</span></h2>
+    <p class="cta__sub">Tell us where you're headed. We'll bring the team, the plan and the craft to get you there.</p>
+    <div class="cta__row">
+      <a class="btn btn--blue" href="../../contact.html" data-track="cta_click" data-pos="cta-section">Start a project <svg class="arr" width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H4M10 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+      <a class="btn btn--light" href="../../contact.html#book" data-track="cta_click" data-pos="cta-section">Book a call</a>
+    </div>
+  </div>
+</section>
+<footer class="footer">
+  <div class="footer__in">
+    <div class="footer__top">
+      <div>
+        <a class="brand" href="../../" aria-label="Elyx Solutions home">
+          <svg class="brand__mark" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+            <g transform="skewX(-10)">
+              <rect x="7" y="4" width="15" height="4.4" rx="1.2" fill="#1f4fd8"></rect>
+              <rect x="7" y="11.8" width="11" height="4.4" rx="1.2" fill="#0b1024"></rect>
+              <rect x="7" y="19.6" width="15" height="4.4" rx="1.2" fill="#1f4fd8"></rect>
+            </g>
+          </svg>
+          <span class="brand__name">Elyx</span>
+        </a>
+        <p class="footer__lede">Beyond just presence — we build digital <span class="serif-i" style="color:var(--blue)">value.</span></p>
+      </div>
+      <div class="fcol">
+        <h4>Services</h4>
+        <a href="../../services/web-development/">Web Development</a>
+        <a href="../../services/saas-development/">SaaS Development</a>
+        <a href="../../services/app-development/">App Development</a>
+        <a href="../../services/seo-optimization/">SEO Optimization</a>
+        <a href="../../services/maintenance-care/">Maintenance &amp; Care</a>
+      </div>
+      <div class="fcol">
+        <h4>Websites for</h4>
+        <a href="../../websites-for/dentists/">Dentists &amp; Clinics</a>
+        <a href="../../websites-for/coaching-centres/">Coaching Centres</a>
+        <a href="../../websites-for/restaurants-and-cafes/">Restaurants &amp; Cafés</a>
+        <a href="../../websites-for/salons-and-spas/">Salons &amp; Spas</a>
+        <a href="../../websites-for/real-estate/">Real Estate</a>
+        <a href="../../websites-for/ca-and-law-firms/">CA &amp; Law Firms</a>
+      </div>
+      <div class="fcol">
+        <h4>Company</h4>
+        <a href="../../about.html">About</a>
+        <a href="../../work.html">Work</a>
+        <a href="../../pricing/">Pricing</a>
+        <a href="../../tools/">Free tools</a>
+        <a href="../../blog/">Blog</a>
+        <a href="../../web-development-bengaluru/">Bengaluru</a>
+        <a href="../../contact.html">Contact</a>
+      </div>
+      <div class="fcol">
+        <h4>Connect</h4>
+        <a href="mailto:hello@elyxsolutions.in">hello@elyxsolutions.in</a>
+        <a href="tel:+919611729733" data-track="call_click" data-pos="footer">+91 96117 29733</a>
+        <a href="tel:+917204723340" data-track="call_click" data-pos="footer">+91 72047 23340</a>
+        <a href="https://wa.me/919611729733?text=Hi%20Elyx%2C%20I'd%20like%20to%20talk%20about%20a%20project." target="_blank" rel="noopener" data-track="whatsapp_click" data-pos="footer">WhatsApp</a>
+        <a href="https://www.linkedin.com/company/elyxsolutions04/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://www.instagram.com/elyxsolutions" target="_blank" rel="noopener">Instagram</a>
+        <span class="footer__addr">Bengaluru, Karnataka</span>
+      </div>
+    </div>
+    <div class="footer__bot">
+      <span>© 2026 Elyx Solutions. All rights reserved.</span>
+      <span>Designed &amp; built in-house · Bengaluru, India.</span>
+    </div>
+  </div>
+</footer>
+<a class="wa-float" href="https://wa.me/919611729733?text=Hi%20Elyx%2C%20I'd%20like%20to%20talk%20about%20a%20project." target="_blank" rel="noopener" aria-label="Chat with Elyx on WhatsApp" data-track="whatsapp_click" data-pos="floating">
+  <svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16.04 3C9.4 3 4 8.4 4 15.03c0 2.12.55 4.19 1.6 6.01L4 29l8.12-1.57a12.03 12.03 0 0 0 3.92.65C22.68 28.08 28.08 22.67 28.08 16 28.08 9.36 22.7 3 16.04 3Zm0 22.06c-1.22 0-2.4-.33-3.44-.95l-.25-.15-4.82.93.97-4.7-.17-.27a9.9 9.9 0 0 1-1.52-5.27c0-5.5 4.48-9.98 10-9.98 5.5 0 9.98 4.48 9.98 9.98s-4.48 10.41-9.98 10.41l-.77-.02Zm5.47-7.46c-.3-.15-1.77-.87-2.04-.97-.28-.1-.48-.15-.68.15-.2.3-.78.97-.95 1.17-.18.2-.35.22-.65.07-.3-.15-1.27-.47-2.42-1.5-.9-.8-1.5-1.78-1.67-2.08-.18-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.68-1.64-.93-2.25-.25-.58-.5-.5-.68-.5h-.58c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.5s1.07 2.9 1.22 3.1c.15.2 2.1 3.2 5.08 4.48.7.3 1.26.48 1.7.62.72.23 1.37.2 1.88.12.58-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35Z"/></svg>
+</a>
+<script>window.ELYX={"email":"hello@elyxsolutions.in","whatsapp":"https://wa.me/919611729733?text=Hi%20Elyx%2C%20I'd%20like%20to%20talk%20about%20a%20project.","phone":"+91 96117 29733","booking":""};</script>
+<script src="../../js/site.js"></script>
+<script src="../../js/analytics.js"></script>
+</body>
+</html>
