@@ -4,8 +4,8 @@
     "lastmod": "2026-11-17"
   },
   "/services/saas-development/": {
-    "hash": "843b20cf0509f60427a8a64f07a821aa",
-    "lastmod": "2026-11-16"
+    "hash": "1951fd1e9c27d8b90fede4990778fc6e",
+    "lastmod": "2026-11-17"
   },
   "/services/app-development/": {
     "hash": "c6fad399cef9030a14446ba278834419",
@@ -84,7 +84,7 @@
     "lastmod": "2026-11-16"
   },
   "/blog/": {
-    "hash": "864ad439a31145becd32a830cb3a63da",
+    "hash": "d3e34f29fbfc241ecc7e5880785b7bf2",
     "lastmod": "2026-11-17"
   },
   "/blog/category/industries/": {
@@ -164,7 +164,7 @@
     "lastmod": "2026-11-16"
   },
   "/blog/author/shreyasmv/": {
-    "hash": "8a3c75079771cf5a2469865f8413ccf7",
+    "hash": "0880ce30273f22917ba9e5248f59c4da",
     "lastmod": "2026-11-17"
   },
   "/blog/author/rahulc/": {
@@ -373,6 +373,10 @@
   },
   "/blog/headless-cms-explained/": {
     "hash": "310adb35900b363b798f44d1e5267ee8",
+    "lastmod": "2026-11-17"
+  },
+  "/blog/validate-a-saas-idea/": {
+    "hash": "1a55353b6edbb8406498078c04c1f10b",
     "lastmod": "2026-11-17"
   }
 }
