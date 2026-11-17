@@ -84,7 +84,7 @@
     "lastmod": "2026-11-16"
   },
   "/blog/": {
-    "hash": "7ebb2d321f4dd6070b3583808a5d8992",
+    "hash": "ac064d3d96565e0b048e043ef1704ca2",
     "lastmod": "2026-11-17"
   },
   "/blog/category/industries/": {
@@ -168,8 +168,8 @@
     "lastmod": "2026-11-17"
   },
   "/blog/author/rahulc/": {
-    "hash": "1ea943d28b6bc2ebb97d8ca0787b19c6",
-    "lastmod": "2026-11-16"
+    "hash": "42ab49f748f8d815c010ab6666c955d9",
+    "lastmod": "2026-11-17"
   },
   "/blog/author/nawaz/": {
     "hash": "a699372200d5608ecd7f165e421f3c0e",
@@ -334,5 +334,9 @@
   "/blog/advocate-website-india/": {
     "hash": "a5162d090fcea457c724396c6a004fa6",
     "lastmod": "2026-11-16"
+  },
+  "/blog/who-owns-my-website-code/": {
+    "hash": "e626183d51f22e07fbe24d750f141970",
+    "lastmod": "2026-11-17"
   }
 }
