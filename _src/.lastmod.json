@@ -1,6 +1,6 @@
 {
   "/services/web-development/": {
-    "hash": "f2ebb0574eaf97e72527744ec640d4e0",
+    "hash": "3056ae57cd719c4cc546d4acbb4eeb40",
     "lastmod": "2026-11-17"
   },
   "/services/saas-development/": {
@@ -84,7 +84,7 @@
     "lastmod": "2026-11-16"
   },
   "/blog/": {
-    "hash": "864ad439a31145becd32a830cb3a63da",
+    "hash": "72ee7eb353e90a1a737dfb53e000fc15",
     "lastmod": "2026-11-17"
   },
   "/blog/category/industries/": {
@@ -164,7 +164,7 @@
     "lastmod": "2026-11-16"
   },
   "/blog/author/shreyasmv/": {
-    "hash": "8a3c75079771cf5a2469865f8413ccf7",
+    "hash": "2687b37083cc3d5042f56c3cb45819b9",
     "lastmod": "2026-11-17"
   },
   "/blog/author/rahulc/": {
@@ -373,6 +373,10 @@
   },
   "/blog/headless-cms-explained/": {
     "hash": "310adb35900b363b798f44d1e5267ee8",
+    "lastmod": "2026-11-17"
+  },
+  "/blog/website-launch-checklist/": {
+    "hash": "941f368f2dae62e9bef634babf7f3683",
     "lastmod": "2026-11-17"
   }
 }
