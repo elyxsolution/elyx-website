@@ -4,8 +4,8 @@
     "lastmod": "2026-11-17"
   },
   "/services/saas-development/": {
-    "hash": "843b20cf0509f60427a8a64f07a821aa",
-    "lastmod": "2026-11-16"
+    "hash": "79e352fa1d730072bfab1d09fb5e2033",
+    "lastmod": "2026-11-17"
   },
   "/services/app-development/": {
     "hash": "c6fad399cef9030a14446ba278834419",
@@ -56,8 +56,8 @@
     "lastmod": "2026-11-17"
   },
   "/work/malnad-stories/": {
-    "hash": "4cc39133a4d0a8f14b88dd57ec8a125a",
-    "lastmod": "2026-11-16"
+    "hash": "654e4c37056f7ee95aebf67988d2cdee",
+    "lastmod": "2026-11-17"
   },
   "/pricing/": {
     "hash": "b3f743c7d9829bf4378d50c4f1456886",
@@ -84,7 +84,7 @@
     "lastmod": "2026-11-16"
   },
   "/blog/": {
-    "hash": "864ad439a31145becd32a830cb3a63da",
+    "hash": "9b2ce9e79611658b630f38fcde05fa09",
     "lastmod": "2026-11-17"
   },
   "/blog/category/industries/": {
@@ -164,7 +164,7 @@
     "lastmod": "2026-11-16"
   },
   "/blog/author/shreyasmv/": {
-    "hash": "8a3c75079771cf5a2469865f8413ccf7",
+    "hash": "73d30d6f74bbb14fd9b8973f4db10448",
     "lastmod": "2026-11-17"
   },
   "/blog/author/rahulc/": {
@@ -373,6 +373,10 @@
   },
   "/blog/headless-cms-explained/": {
     "hash": "310adb35900b363b798f44d1e5267ee8",
+    "lastmod": "2026-11-17"
+  },
+  "/blog/admin-dashboard-design/": {
+    "hash": "c88a31e57bcf1c6118b7870a12f1ee0c",
     "lastmod": "2026-11-17"
   }
 }

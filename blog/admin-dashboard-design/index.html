@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Building an Admin Dashboard Your Team Will Actually Use</title>
+<meta name="description" content="Admin dashboard design for SaaS and internal tools: which metrics to show, how filters, roles and exports should work, and when a template is enough." />
+<link rel="canonical" href="https://elyxsolutions.in/blog/admin-dashboard-design/" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#080b1a" />
+<!-- Open Graph -->
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Elyx Solutions" />
+<meta property="og:title" content="Building an Admin Dashboard Your Team Will Actually Use" />
+<meta property="og:description" content="Admin dashboard design for SaaS and internal tools: which metrics to show, how filters, roles and exports should work, and when a template is enough." />
+<meta property="og:url" content="https://elyxsolutions.in/blog/admin-dashboard-design/" />
+<meta property="og:image" content="https://elyxsolutions.in/og/blog-admin-dashboard-design.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:locale" content="en_IN" />
+<meta property="article:published_time" content="2026-11-17" />
+<meta property="article:modified_time" content="2026-11-17" />
+<meta property="article:section" content="SaaS &amp; MVP Building" />
+<meta property="article:author" content="https://elyxsolutions.in/blog/author/shreyasmv/" />
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Building an Admin Dashboard Your Team Will Actually Use" />
+<meta name="twitter:description" content="Admin dashboard design for SaaS and internal tools: which metrics to show, how filters, roles and exports should work, and when a template is enough." />
+<meta name="twitter:image" content="https://elyxsolutions.in/og/blog-admin-dashboard-design.png" />
+<!-- Icons -->
+<link rel="icon" href="../../favicon.svg" type="image/svg+xml" />
+<link rel="icon" href="../../icon-192.png" sizes="192x192" type="image/png" />
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500;1,6..72,600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../../css/styles.css" />
+<link rel="stylesheet" href="../../css/pages.css" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://elyxsolutions.in/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://elyxsolutions.in/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Building an Admin Dashboard Your Team Will Actually Use",
+          "item": "https://elyxsolutions.in/blog/admin-dashboard-design/"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://elyxsolutions.in/blog/admin-dashboard-design/#article",
+      "headline": "Building an Admin Dashboard Your Team Will Actually Use",
+      "description": "Admin dashboard design for SaaS and internal tools: which metrics to show, how filters, roles and exports should work, and when a template is enough.",
+      "image": [
+        "https://elyxsolutions.in/og/blog-admin-dashboard-design.png"
+      ],
+      "datePublished": "2026-11-17",
+      "dateModified": "2026-11-17",
+      "author": {
+        "@type": "Person",
+        "@id": "https://elyxsolutions.in/blog/author/shreyasmv/#person",
+        "name": "Shreyas M V",
+        "url": "https://elyxsolutions.in/blog/author/shreyasmv/",
+        "sameAs": [
+          "https://www.linkedin.com/in/shreyas-m-v-311b99205/"
+        ]
+      },
+      "publisher": {
+        "@id": "https://elyxsolutions.in/#organization"
+      },
+      "mainEntityOfPage": "https://elyxsolutions.in/blog/admin-dashboard-design/",
+      "articleSection": "SaaS & MVP Building",
+      "inLanguage": "en-IN"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is an admin dashboard?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "An admin dashboard is the internal set of screens staff use to view, search, change and report on the data behind a product or business. Customers do not see it. It is also called an admin panel."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I design a dashboard?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Start with roles and decisions, not charts: list who logs in, what each person does first, and which numbers change what they do. Then design the home screen, the filtered lists behind each number, and the exports. Test it with real rows."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I make a good dashboard design?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A good dashboard design shows few numbers, each with an owner and a click-through to the rows behind it. It opens each role on a filtered view and shows only the menu items that role can use. These are my rules, not a published standard."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What metrics should an admin dashboard show?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Show the numbers a named person would act on this week, usually four to six tiles. A SaaS owner might lead with sign-ups, active accounts and accounts at risk, which the studio's SaaS page names. Move vanity totals to a reports page."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What roles does an admin dashboard need?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most small products need an owner, a staff role that works records, a finance role and a read-only role. Start from deny by default and add permissions per role. A multi-tenant product also checks the customer account before the role."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should an admin dashboard allow exports?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes for roles that need it, but only under the same permissions as the screen. Mask personal fields where possible, run large exports in the background and log every one. Confirm your data-protection duties with a qualified adviser."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I use a free admin dashboard template or build custom?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use a template when you have one or two roles and a developer to connect it; build custom when roles differ per customer or exports must be audited. Templates described by TailAdmin and Creative Tim supply components, not your permission model. A hybrid is common."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does an admin dashboard cost in India?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "As an indicative draft range, a SaaS MVP including admin and analytics is ₹1,50,000–₹6,00,000, and a custom web app with dashboards is ₹75,000–₹3,00,000, both excluding 18% GST. These are not quotes. A fixed quote is confirmed in writing after a call."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does it take to build an admin dashboard?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Built inside a larger product, it follows that product's timeline: indicatively 4–8 weeks for a custom web app and 8–16 weeks for a SaaS MVP, per the site's draft price data. The dashboard alone is not timed separately."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does an admin dashboard need to work on a phone?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It depends on the device your staff use. Ask which three tasks happen on a phone, such as looking up a customer, calling and marking a job done, and make those work first. The full reporting screens can stay desktop-first."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body data-article="admin-dashboard-design">
+<div class="grain"></div>
+<div class="nav-shell scrolled" id="navShell">
+  <a class="brand nav__brand" href="../../" aria-label="Elyx Solutions home">
+    <svg class="brand__mark" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+      <g transform="skewX(-10)">
+        <rect x="7" y="4" width="15" height="4.4" rx="1.2" fill="#1f4fd8"></rect>
+        <rect x="7" y="11.8" width="11" height="4.4" rx="1.2" fill="#0b1024"></rect>
+        <rect x="7" y="19.6" width="15" height="4.4" rx="1.2" fill="#1f4fd8"></rect>
+      </g>
+    </svg>
+    <span class="brand__name">Elyx</span>
+  </a>
+
+  <nav class="nav" id="nav" aria-label="Main">
+    <div class="nav__links" id="navLinks">
+      <div class="nav__item" data-menu="services"><button type="button">Services <svg class="caret" viewBox="0 0 10 10" fill="none"><path d="M1 3l4 4 4-4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button></div>
+      <div class="nav__item" data-menu="industries"><button type="button">Industries <svg class="caret" viewBox="0 0 10 10" fill="none"><path d="M1 3l4 4 4-4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button></div>
+      <div class="nav__item" data-menu="work"><button type="button">Work <svg class="caret" viewBox="0 0 10 10" fill="none"><path d="M1 3l4 4 4-4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button></div>
+      <div class="nav__item"><a href="../../blog/">Blog</a></div>
+      <div class="nav__item"><a href="../../about.html">About</a></div>
+      <div class="nav__item"><a href="../../contact.html">Contact</a></div>
+    </div>
+  </nav>
+
+  <div class="nav__right">
+    <a class="btn btn--primary nav__cta" href="../../contact.html" data-track="cta_click" data-pos="nav">Let's talk <svg class="arr" width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H4M10 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+    <button class="nav__burger" id="burger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <div class="mobile-menu__group">
+      <span class="mobile-menu__label">Services</span>
+      <a href="../../services/web-development/">Web Development</a>
+      <a href="../../services/saas-development/">SaaS Development</a>
+      <a href="../../services/app-development/">App Development</a>
+      <a href="../../services/seo-optimization/">SEO Optimization</a>
+      <a href="../../services/maintenance-care/">Maintenance &amp; Care</a>
+    </div>
+    <div class="mobile-menu__group">
+      <span class="mobile-menu__label">Websites for</span>
+      <a href="../../websites-for/dentists/">Dentists &amp; Clinics</a>
+      <a href="../../websites-for/coaching-centres/">Coaching Centres</a>
+      <a href="../../websites-for/restaurants-and-cafes/">Restaurants &amp; Cafés</a>
+      <a href="../../websites-for/salons-and-spas/">Salons &amp; Spas</a>
+      <a href="../../websites-for/real-estate/">Real Estate</a>
+      <a href="../../websites-for/ca-and-law-firms/">CA &amp; Law Firms</a>
+    </div>
+    <div class="mobile-menu__group">
+      <span class="mobile-menu__label">Company</span>
+      <a href="../../about.html">About</a>
+      <a href="../../work.html">Work</a>
+      <a href="../../pricing/">Pricing</a>
+      <a href="../../blog/">Blog</a>
+      <a href="../../tools/">Free tools</a>
+      <a href="../../contact.html">Contact</a>
+    </div>
+    <a class="btn btn--blue mobile-menu__cta" href="../../contact.html">Let's talk <svg class="arr" width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H4M10 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+  </div>
+
+  <!-- Mega panel -->
+  <div class="mega" id="mega">
+    <div class="mega__inner">
+      <div class="mega__panel" data-panel="services">
+        <div class="mega-grid">
+          <div class="mega-tiles"><a class="mtile" href="../../services/web-development/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M9 8l-4 4 4 4M15 8l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">Web Development</span></span></a><a class="mtile" href="../../services/saas-development/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M6 16a4 4 0 010-8 5 5 0 019.6-1.5A3.5 3.5 0 0118 16H6z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">SaaS Development</span></span></a><a class="mtile" href="../../services/app-development/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><rect x="7" y="3" width="10" height="18" rx="2.5" stroke="currentColor" stroke-width="1.6"></rect><path d="M11 18h2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg></span><span><span class="mtile__t">App Development</span></span></a><a class="mtile" href="../../services/seo-optimization/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><circle cx="10.5" cy="10.5" r="6" stroke="currentColor" stroke-width="1.6"></circle><path d="M15 15l5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg></span><span><span class="mtile__t">SEO Optimization</span></span></a><a class="mtile" href="../../services/maintenance-care/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M12 8v4l3 2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path><circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="1.6"></circle></svg></span><span><span class="mtile__t">Maintenance &amp; Care</span></span></a><a class="mtile" href="../../pricing/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M4 14l5-5 4 4 7-7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path><path d="M20 6v4h-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">Pricing</span></span></a></div>
+          <a class="mega-feature" href="../../pricing/">
+            <div class="ph-grid"></div>
+            <div class="mega-feature__k">Featured</div>
+            <div class="mega-feature__t">Simple pricing. Engagements start at ₹9,999.</div>
+            <div class="mega-feature__l">See pricing <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H4M10 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+          </a>
+        </div>
+      </div>
+
+      <div class="mega__panel" data-panel="industries">
+        <div class="mega-grid">
+          <div class="mega-tiles"><a class="mtile" href="../../websites-for/dentists/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M12 5c-2-1.5-6-1.5-6 2.5 0 3 1.5 4 1.5 7 0 2 .8 4.5 2 4.5s1.5-2 2.5-2 1.3 2 2.5 2 2-2.5 2-4.5c0-3 1.5-4 1.5-7C18 3.5 14 3.5 12 5z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">Dentists &amp; Clinics</span></span></a><a class="mtile" href="../../websites-for/coaching-centres/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M3 9l9-4 9 4-9 4-9-4z M7 11v4c0 1.5 2.2 3 5 3s5-1.5 5-3v-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">Coaching Centres</span></span></a><a class="mtile" href="../../websites-for/restaurants-and-cafes/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M7 3v8M5 3v5a2 2 0 004 0V3M7 11v10M17 3c-2 1.5-3 4-3 7h3v11" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">Restaurants &amp; Cafés</span></span></a><a class="mtile" href="../../websites-for/salons-and-spas/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><circle cx="6" cy="7" r="2.5" stroke="currentColor" stroke-width="1.6"></circle><circle cx="6" cy="17" r="2.5" stroke="currentColor" stroke-width="1.6"></circle><path d="M8 8.5L20 18M8 15.5L20 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg></span><span><span class="mtile__t">Salons &amp; Spas</span></span></a><a class="mtile" href="../../websites-for/real-estate/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M4 21V8l8-5 8 5v13M9 21v-6h6v6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">Real Estate</span></span></a><a class="mtile" href="../../websites-for/ca-and-law-firms/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M12 4v16M6 20h12M5 8h14M5 8l-2.5 6a3 3 0 005 0L5 8zM19 8l-2.5 6a3 3 0 005 0L19 8z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">CA &amp; Law Firms</span></span></a></div>
+          <a class="mega-feature" href="../../websites-for/">
+            <div class="ph-grid"></div>
+            <div class="mega-feature__k">Built for your trade</div>
+            <div class="mega-feature__t">What a site for your kind of business actually needs.</div>
+            <div class="mega-feature__l">All industries <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H4M10 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+          </a>
+        </div>
+      </div>
+
+      <div class="mega__panel" data-panel="work">
+        <div class="mega-grid mega-grid--work">
+          <div class="mega-wlinks">
+            <a class="mtile" href="../../work.html#tools"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.6"></circle><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5.1 5.1l2.1 2.1M16.8 16.8l2.1 2.1M18.9 5.1L16.8 7.2M7.2 16.8l-2.1 2.1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg></span><span><span class="mtile__t">Tools we use</span></span></a>
+            <a class="mtile" href="../../work.html#faq"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"></circle><path d="M9.6 9.2a2.5 2.5 0 014.7 1.1c0 1.6-2.3 2-2.3 3.6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path><circle cx="12" cy="16.6" r="0.7" fill="currentColor"></circle></svg></span><span><span class="mtile__t">FAQ about Elyx</span></span></a>
+            <a class="mtile" href="../../work.html"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="6.5" height="6.5" rx="1.6" stroke="currentColor" stroke-width="1.6"></rect><rect x="13.5" y="4" width="6.5" height="6.5" rx="1.6" stroke="currentColor" stroke-width="1.6"></rect><rect x="4" y="13.5" width="6.5" height="6.5" rx="1.6" stroke="currentColor" stroke-width="1.6"></rect><rect x="13.5" y="13.5" width="6.5" height="6.5" rx="1.6" stroke="currentColor" stroke-width="1.6"></rect></svg></span><span><span class="mtile__t">All projects</span></span></a>
+          </div>
+          <div class="mega-work"><a class="wcard" href="../../work/ashirwad-dental/"><div class="wcard__img ph wcard__img--dental"></div><div class="wcard__meta"><div class="wcard__t">Ashirwad Dental Clinic</div><div class="wcard__c">Web · Redesign</div></div></a><a class="wcard" href="../../work/pinnacle-inc/"><div class="wcard__img ph wcard__img--pinnacle"></div><div class="wcard__meta"><div class="wcard__t">Pinnacle Inc.</div><div class="wcard__c">Web · EdTech</div></div></a><a class="wcard" href="../../work/malnad-stories/"><div class="wcard__img ph wcard__img--malnad"></div><div class="wcard__meta"><div class="wcard__t">Malnad Stories</div><div class="wcard__c">E-commerce · Web App</div></div></a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<span id="top"></span>
+<main class="bl"><div class="bl__in">
+  <div class="bl__crumbs">
+    <a class="bl__back" href="../../blog/">← Back to Blog</a>
+    <nav aria-label="Breadcrumb"><ol><li><a href="../../">Home</a></li><li aria-hidden="true">/</li><li><a href="../../blog/">Blog</a></li><li aria-hidden="true">/</li><li aria-current="page">Building an Admin Dashboard Your Team Will Actually Use</li></ol></nav>
+  </div>
+  <div class="bl__cols">
+    <article class="barticle" data-article="admin-dashboard-design">
+      <header>
+        <p class="bbyline">By <a class="bauthor" href="../../blog/author/shreyasmv/"><img class="bauthor__ph" src="../../uploads/authors/shreyasmv.jpg" alt="" width="24" height="24" loading="lazy" /><span>Shreyas M V</span></a><span aria-hidden="true">·</span><span>Published <time datetime="2026-11-17">17 November 2026</time></span><span aria-hidden="true">·</span><span>14 min read</span></p>
+        <h1>Building an Admin Dashboard Your Team Will Actually Use</h1>
+        <p class="blead">Admin dashboard design for SaaS and internal tools: which metrics to show, how filters, roles and exports should work, and when a template is enough.</p>
+      </header>
+      <nav class="btoc" aria-label="Table of contents"><b>On this page</b><ol><li><a href="#what-is-an-admin-dashboard-and-who-is-it-for"><span>01</span>What Is an Admin Dashboard, and Who Is It For?</a></li><li><a href="#admin-dashboard-roles-and-permissions-design-them-first"><span>02</span>Admin Dashboard Roles and Permissions: Design Them First</a></li><li><a href="#metrics-which-numbers-belong-on-the-home-screen"><span>03</span>Metrics: Which Numbers Belong on the Home Screen</a></li><li><a href="#filters-search-and-tables-finding-a-record-in-seconds"><span>04</span>Filters, Search and Tables: Finding a Record in Seconds</a></li><li><a href="#exports-let-data-out-without-losing-control"><span>05</span>Exports: Let Data Out Without Losing Control</a></li><li><a href="#admin-dashboard-design-ideas-by-product-type"><span>06</span>Admin Dashboard Design Ideas by Product Type</a></li><li><a href="#admin-dashboard-ui-layout-navigation-and-phones"><span>07</span>Admin Dashboard UI: Layout, Navigation and Phones</a></li><li><a href="#admin-panel-dashboard-templates-or-a-custom-build"><span>08</span>Admin Panel Dashboard Templates or a Custom Build?</a></li><li><a href="#what-an-admin-dashboard-costs-and-how-long-it-takes"><span>09</span>What an Admin Dashboard Costs and How Long It Takes</a></li><li><a href="#what-usually-goes-wrong-with-admin-dashboards"><span>10</span>What Usually Goes Wrong With Admin Dashboards</a></li><li><a href="#what-to-do-next"><span>11</span>What to Do Next</a></li><li><a href="#sources"><span>12</span>Sources</a></li><li><a href="#faq"><span>13</span>Frequently asked questions</a></li></ol></nav>
+      <div class="prose">
+<p>Admin dashboard design that a team keeps using starts with people and decisions, not with a chart library: name each role, put only action-triggering numbers on the home screen, make filters find a record in seconds, and put exports under the same permissions as everything else. The qualification is that the pages ranking for this search are template catalogues and galleries, so the rules on metrics, roles and exports below are my own reasoning, labelled as such. The template facts come from two vendor pages read on 17 November 2026.</p>
+<ul><li><strong>Roles first.</strong> Decide who logs in and what each person may see, change and export before drawing a screen.</li><li><strong>Metrics with an owner.</strong> A number earns a home-screen tile only if a named person would act on it.</li><li><strong>Exports are copies.</strong> Treat each one as data leaving the system: same permissions, same masking, logged.</li><li><strong>Template or custom.</strong> A free template covers layout and charts; it does not cover your permission model.</li></ul>
+<h2 id="what-is-an-admin-dashboard-and-who-is-it-for">What Is an Admin Dashboard, and Who Is It For?</h2>
+<p>An admin dashboard is the internal set of screens that staff use to run a product or a business: see what is happening, find a record, change it and report on it. It is also called an admin panel, so &quot;admin panel dashboard design&quot; and &quot;admin dashboard design&quot; describe the same job. Customers never see it.</p>
+<p>Every SaaS product and every internal tool ends up needing one, because someone must answer a customer or fix a record without asking a developer to open the database. The studio's <a href="../../services/saas-development/">SaaS development page</a> describes the internal view as the place to see who signed up, who is active and who is about to churn, and it lists turning spreadsheets and WhatsApp groups into software as a build it takes on.</p>
+<p>That second point is the test of &quot;used&quot;: a dashboard succeeds when staff open it instead of the spreadsheet. My reading is that this comes down to roles, a short home screen, fast filters and trusted exports, in that order.</p>
+<p><strong>What is documented:</strong> template contents (TailAdmin, Creative Tim), the studio's own service descriptions and price data, and two vendor cost estimates. <strong>What is my reading:</strong> every rule on roles, metrics, filters and exports.</p>
+<h2 id="admin-dashboard-roles-and-permissions-design-them-first">Admin Dashboard Roles and Permissions: Design Them First</h2>
+<p>Design roles first, because each role decides which screens, numbers and buttons exist. The studio's SaaS page puts invitations, team roles and the permission model among the things it builds, and says the choices made in the first two weeks are the expensive ones to change later.</p>
+<p>The example below is fictional: Disha Test Prep, a made-up coaching centre in Hubballi with four kinds of staff. It illustrates the method and is not a client or a result.</p>
+<div class="prose-table"><table><thead><tr><th>Role</th><th>Sees</th><th>Changes</th><th>Exports</th></tr></thead><tbody><tr><td>Owner</td><td>Everything, every branch</td><td>Settings, users, fee waivers</td><td>All, logged</td></tr><tr><td>Counsellor</td><td>Own leads and demos</td><td>Lead status, notes</td><td>Own leads only</td></tr><tr><td>Accounts</td><td>Fees and receipts</td><td>Payment entries</td><td>Fee reports, phones masked</td></tr><tr><td>Faculty</td><td>Own batches</td><td>Attendance, marks</td><td>Nothing</td></tr></tbody></table></div>
+<p>Five rules follow, none of them from a published standard:</p>
+<ul><li><strong>Deny by default.</strong> A new role sees nothing until each permission is ticked.</li><li><strong>Check on the server.</strong> Hiding a button is not security, so the back end must refuse the action too.</li><li><strong>Keep customers apart.</strong> In a multi-tenant product the first check is the tenant, then the role. The studio's SaaS page says the permission model is what keeps one customer's data away from another's.</li><li><strong>Plan for leavers.</strong> One screen lists who has access, with a remove button the owner can use the same day.</li><li><strong>Log sensitive actions.</strong> Record who changed a fee, deleted a lead or exported a list, and when.</li></ul>
+<h2 id="metrics-which-numbers-belong-on-the-home-screen">Metrics: Which Numbers Belong on the Home Screen</h2>
+<p>A number belongs on the home screen only if a named person would do something different after reading it. That is my test, not a sourced benchmark. The studio's discovery step asks for a similar discipline: it maps the users, the workflow and the one metric that decides whether version one worked.</p>
+<p>The table runs the test on six candidate numbers for the fictional centre. Four pass and become tiles; two move to a reports page.</p>
+<div class="prose-table"><table><thead><tr><th>Candidate number</th><th>Who acts</th><th>What they do</th><th>Home tile?</th></tr></thead><tbody><tr><td>Enquiries not yet called</td><td>Counsellor</td><td>Call today</td><td>Yes</td></tr><tr><td>Demo classes this week</td><td>Counsellor</td><td>Confirm on WhatsApp</td><td>Yes</td></tr><tr><td>Fees overdue past 7 days</td><td>Accounts</td><td>Send a reminder</td><td>Yes</td></tr><tr><td>Seats left per batch</td><td>Owner</td><td>Open a new batch</td><td>Yes</td></tr><tr><td>Total website visits</td><td>Nobody</td><td>Nothing</td><td>No</td></tr><tr><td>Lifetime enquiries</td><td>Owner</td><td>Nothing weekly</td><td>No</td></tr></tbody></table></div>
+<p>The arithmetic is 6 candidates minus 2 that fail the test, which leaves 4 tiles. As a rule of thumb, which is also mine, four to six tiles is enough before a reader starts skipping. Each tile should show its period, a comparison with the previous one, and a click that opens the filtered rows behind the number.</p>
+<p>Charts are the easy part: TailAdmin's page says its template ships with ApexCharts.js. The hard part is deciding which number deserves one.</p>
+<h2 id="filters-search-and-tables-finding-a-record-in-seconds">Filters, Search and Tables: Finding a Record in Seconds</h2>
+<p>Good filters answer &quot;show me the rows I must act on&quot; in one click, so each role's page should open already filtered. This is design practice from my own reading, and it is where staff decide whether the tool is faster than a spreadsheet.</p>
+<ol><li><strong>Open on the useful view.</strong> A counsellor lands on &quot;my leads, not yet called&quot;, not the whole table.</li><li><strong>Show what is filtered.</strong> Active filters appear as removable chips beside a result count.</li><li><strong>Keep the view in the web address.</strong> A link to a filtered list then opens the same rows for a colleague.</li><li><strong>Use Indian date presets.</strong> Offer today, this week, this month and this financial year, which runs from 1 April to 31 March.</li><li><strong>Forgive how people type.</strong> Search should match a phone number typed without +91 or spaces, and name spellings that vary, such as Mohammed and Muhammad.</li><li><strong>Make the table a work list.</strong> A sticky header, a column picker and a WhatsApp button beside each phone number save a trip to another app.</li></ol>
+<h2 id="exports-let-data-out-without-losing-control">Exports: Let Data Out Without Losing Control</h2>
+<p>Treat an export as a copy of your data leaving the system, so it follows the same role rules as the screen and leaves a record. Nothing in the sources I read covers exports, which the research also flags as a gap in the top pages, so this checklist is my own and worth adapting.</p>
+<ul><li>[ ] Only roles with an export permission see the button.</li><li>[ ] The file holds the rows and columns that user can see, so filters and masks carry over.</li><li>[ ] Phone numbers and emails are masked for roles that do not need them.</li><li>[ ] Large exports run in the background and arrive in a downloads list.</li><li>[ ] The file is saved as UTF-8; test it in Excel with a Kannada or Hindi name.</li><li>[ ] Amounts are plain numbers in one column and dates use one fixed format, so Excel can sort and sum them.</li><li>[ ] Every export is logged with user, time, filters and row count.</li><li>[ ] Invoice and GST reports carry the customer's GSTIN and place of supply, which Appwizards says Indian invoices need (as cited in the studio's cost article, read 17 November 2026).</li></ul>
+<p>Exports are also how personal data most often leaves a system. This article does not cover India's data-protection rules, so confirm your duties with a qualified adviser before you design what staff may download.</p>
+<h2 id="admin-dashboard-design-ideas-by-product-type">Admin Dashboard Design Ideas by Product Type</h2>
+<p>The right home screen depends on the product, and the table pairs each type with what its admin screen should lead with. The first three rows follow TailAdmin's recommendations by use case, read on 17 November 2026; the rest are labelled.</p>
+<div class="prose-table"><table><thead><tr><th>Product type</th><th>Leads with</th><th>Basis</th></tr></thead><tbody><tr><td>E-commerce</td><td>Sales, stock, customers</td><td>TailAdmin</td></tr><tr><td>Project management</td><td>Task tracking</td><td>TailAdmin</td></tr><tr><td>Content management</td><td>Content lists, simple layout</td><td>TailAdmin</td></tr><tr><td>SaaS product</td><td>Sign-ups, active accounts, churn risk</td><td>Elyx SaaS page</td></tr><tr><td>Coaching centre or school</td><td>Leads to call, demos, fees due</td><td>My reading</td></tr></tbody></table></div>
+<p>The Malnad Stories case study lists admin tooling among what one team delivered launch ready for an album store where customers upload photos, design an album and pay online. It does not describe the screens, so I cannot say what that dashboard leads with; the <a href="../../blog/travel-agency-website/">trek operator website article</a> covers the customer side.</p>
+<h2 id="admin-dashboard-ui-layout-navigation-and-phones">Admin Dashboard UI: Layout, Navigation and Phones</h2>
+<p>An admin dashboard UI works best with a fixed left menu, a content area beside it and one job per screen. Creative Tim describes its Material Dashboard Django template this way, with navigation mainly on a left sidebar and content in the main panel on the right.</p>
+<p>Four design rules, again my reading:</p>
+<ul><li><strong>Menu by role.</strong> Show each person only the pages their role can use.</li><li><strong>Confirm the destructive.</strong> Deleting or refunding asks first, and where possible can be undone.</li><li><strong>Design the empty, loading and error states.</strong> Each says what happened and what to do next.</li><li><strong>Check the device.</strong> For admin dashboard design on mobile, find out which three tasks staff do on a phone, such as lookup, call and mark done, and build those first.</li></ul>
+<h2 id="admin-panel-dashboard-templates-or-a-custom-build">Admin Panel Dashboard Templates or a Custom Build?</h2>
+<p>A free template is a sound start for a small internal tool with one or two roles, and a custom build earns its cost when roles, tenants and exports are the product. The table lists five templates as TailAdmin and Creative Tim describe them on 17 November 2026; I have not tested any of them.</p>
+<div class="prose-table"><table><thead><tr><th>Template</th><th>Built on</th><th>What the source says</th></tr></thead><tbody><tr><td>TailAdmin</td><td>HTML, Tailwind CSS v4</td><td>Free; 500+ UI components, 10 dashboard variations</td></tr><tr><td>Tabler</td><td>Bootstrap 5</td><td>Suited to data-heavy dashboards; 4,590 icons</td></tr><tr><td>AdminKit</td><td>Bootstrap 5</td><td>15 demo pages, including invoice and calendar</td></tr><tr><td>Volt</td><td>Bootstrap 5</td><td>100+ components, 11 example pages, strong charting</td></tr><tr><td>Argon Dashboard Django</td><td>Bootstrap 4, Django</td><td>Includes authentication, database setup, Docker scripts</td></tr></tbody></table></div>
+<p>The extracts in my research describe components, charts and example pages. They do not describe per-role permissions, tenant separation or export rules, which is the part this article argues is the real work.</p>
+<p>Check the framework version before choosing. TailAdmin's own list includes Bootstrap 3 templates and calls one suited to legacy code, and licences differ, so read each before commercial use.</p>
+<div class="prose-table"><table><thead><tr><th>Choose a template when</th><th>Choose a custom build when</th></tr></thead><tbody><tr><td>One or two roles</td><td>Roles differ for each customer</td></tr><tr><td>One team, one company's data</td><td>Several customers share one product</td></tr><tr><td>Exports are rare and unaudited</td><td>Exports must be permissioned and logged</td></tr><tr><td>You have a developer to wire it in</td><td>Billing states appear in the admin</td></tr></tbody></table></div>
+<p>A hybrid is also possible: take components from a template and build the data model and permissions yourself.</p>
+<h2 id="what-an-admin-dashboard-costs-and-how-long-it-takes">What an Admin Dashboard Costs and How Long It Takes</h2>
+<p>The site's price data treats an admin dashboard as part of a larger build, not a product on its own. As of November 2026 the data is a draft, so every range here is indicative, never a quote, excludes 18% GST, and a fixed quote is confirmed in writing after a call.</p>
+<ul><li><strong>SaaS MVP:</strong> ₹1,50,000–₹6,00,000 over 8–16 weeks, including multi-tenant architecture, authentication, billing, admin and analytics.</li><li><strong>Custom web app or portal:</strong> ₹75,000–₹3,00,000 over 4–8 weeks, including logins and dashboards, with 8 screens included and extra screens priced per screen.</li></ul>
+<p>The <a href="../../tools/website-cost-calculator/">website cost calculator</a> lists an admin dashboard as a separate option for web app, mobile and SaaS builds, and the <a href="../../pricing/">pricing page</a> shows every range.</p>
+<p>For an outside view, the studio's <a href="../../blog/saas-development-cost-india/">SaaS MVP cost article</a> cites SinghJi Tech at $3,000 to $10,000 for an admin dashboard and Appwizards at 10 person-days. Against Appwizards' 120-day estimate, 10 / 120 is 8.3 percent. Accounts and roles, billing, admin and reporting together are 12 + 15 + 10 + 6 = 43 days, or 35.8 percent.</p>
+<h2 id="what-usually-goes-wrong-with-admin-dashboards">What Usually Goes Wrong With Admin Dashboards</h2>
+<p>Most admin dashboards fail because they were designed for a screenshot, not for a Tuesday morning of real work. The table pairs each failure with its likely cause and a fix; the causes are my analysis.</p>
+<div class="prose-table"><table><thead><tr><th>What goes wrong</th><th>Likely cause</th><th>Fix</th></tr></thead><tbody><tr><td>Twenty tiles, none read</td><td>Every stakeholder asked for a number</td><td>The action test; move the rest to reports</td></tr><tr><td>Staff return to spreadsheets</td><td>Slow search, no bulk actions</td><td>Watch one person do a day's tasks; fix the top three delays</td></tr><tr><td>Everyone is an admin</td><td>Roles skipped to save time</td><td>Deny by default; four named roles</td></tr><tr><td>Exports leak data</td><td>Export ignores roles</td><td>Same rules as the screen, plus a log</td></tr><tr><td>Looks fine, breaks on real data</td><td>Designed with tidy sample rows</td><td>Test long names, empty states and thousands of rows</td></tr><tr><td>Styling drifts</td><td>Small tweaks pile up unchecked</td><td>One shared component set for colour and spacing</td></tr></tbody></table></div>
+<p>The last row echoes a Reddit thread on a Tailwind admin template, which notes that utility-class styling drifts without any error. It is one discussion, not a survey.</p>
+<h2 id="what-to-do-next">What to Do Next</h2>
+<p>Spend one afternoon listing before any screen is drawn, because roles, metrics and export rules cost nothing to change on paper. Work through this checklist:</p>
+<ul><li>[ ] List every role and the three jobs each does first.</li><li>[ ] Name the person and action behind each candidate metric; drop the rest.</li><li>[ ] Write the permission table: see, change, export and delete for each role.</li><li>[ ] Set the default filter for each role's landing page.</li><li>[ ] Write the export rules and the log.</li><li>[ ] Choose template or custom using the table above.</li><li>[ ] Compare the indicative range with the pricing page and calculator.</li></ul>
+<p>If the dashboard belongs to a SaaS product or an internal tool you want built, the <a href="../../services/saas-development/">SaaS development service</a> starts with a week of discovery that maps users, workflow and the one metric, and ends in a written scope with a cut line.</p>
+<h2 id="sources">Sources</h2>
+<ul><li><a href="https://tailadmin.com/blog/free-html-admin-dashboard" rel="noopener" target="_blank">25+ Free HTML Admin &amp; Dashboard Template of 2026</a>, TailAdmin (read 17 November 2026)</li><li><a href="https://www.creative-tim.com/blog/web-design/admin-dashboard-templates-for-your-next-project/" rel="noopener" target="_blank">10+ Best Free Admin Dashboard Templates For Your Next Project</a>, Creative Tim (read 17 November 2026)</li><li><a href="https://singhjitech.com/blog/saas-product-development-cost-2026" rel="noopener" target="_blank">SaaS Development Cost 2025 to 2026 (Per Feature)</a>, SinghJi Tech (as cited in the studio's SaaS cost article, 17 November 2026)</li><li><a href="https://www.appwizards.in/blog/saas-development-cost-india" rel="noopener" target="_blank">SaaS Development Cost in India: 2026 Guide</a>, Appwizards (as cited in the studio's SaaS cost article, 17 November 2026)</li><li><a href="https://reddit.com/r/tailwindcss/comments/1vtcge5/ainative_admin_dashboard_with_tailwind_200" rel="noopener" target="_blank">AI-native admin dashboard with Tailwind, 200+ components</a>, Reddit r/tailwindcss (discussion thread, 20 August 2026)</li></ul>
+      </div>
+      <section class="bfaq" id="faq"><h2>Frequently asked questions</h2><div class="faq__list"><details class="faq__item">
+  <summary class="faq__q"><span>What is an admin dashboard?</span><svg class="faq__caret" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+  <div class="faq__a"><p>An admin dashboard is the internal set of screens staff use to view, search, change and report on the data behind a product or business. Customers do not see it. It is also called an admin panel.</p></div>
+</details>
+<details class="faq__item">
+  <summary class="faq__q"><span>How do I design a dashboard?</span><svg class="faq__caret" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+  <div class="faq__a"><p>Start with roles and decisions, not charts: list who logs in, what each person does first, and which numbers change what they do. Then design the home screen, the filtered lists behind each number, and the exports. Test it with real rows.</p></div>
+</details>
+<details class="faq__item">
+  <summary class="faq__q"><span>How do I make a good dashboard design?</span><svg class="faq__caret" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+  <div class="faq__a"><p>A good dashboard design shows few numbers, each with an owner and a click-through to the rows behind it. It opens each role on a filtered view and shows only the menu items that role can use. These are my rules, not a published standard.</p></div>
+</details>
+<details class="faq__item">
+  <summary class="faq__q"><span>What metrics should an admin dashboard show?</span><svg class="faq__caret" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+  <div class="faq__a"><p>Show the numbers a named person would act on this week, usually four to six tiles. A SaaS owner might lead with sign-ups, active accounts and accounts at risk, which the studio's SaaS page names. Move vanity totals to a reports page.</p></div>
+</details>
+<details class="faq__item">
+  <summary class="faq__q"><span>What roles does an admin dashboard need?</span><svg class="faq__caret" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+  <div class="faq__a"><p>Most small products need an owner, a staff role that works records, a finance role and a read-only role. Start from deny by default and add permissions per role. A multi-tenant product also checks the customer account before the role.</p></div>
+</details>
+<details class="faq__item">
+  <summary class="faq__q"><span>Should an admin dashboard allow exports?</span><svg class="faq__caret" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+  <div class="faq__a"><p>Yes for roles that need it, but only under the same permissions as the screen. Mask personal fields where possible, run large exports in the background and log every one. Confirm your data-protection duties with a qualified adviser.</p></div>
+</details>
+<details class="faq__item">
+  <summary class="faq__q"><span>Should I use a free admin dashboard template or build custom?</span><svg class="faq__caret" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+  <div class="faq__a"><p>Use a template when you have one or two roles and a developer to connect it; build custom when roles differ per customer or exports must be audited. Templates described by TailAdmin and Creative Tim supply components, not your permission model. A hybrid is common.</p></div>
+</details>
+<details class="faq__item">
+  <summary class="faq__q"><span>How much does an admin dashboard cost in India?</span><svg class="faq__caret" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+  <div class="faq__a"><p>As an indicative draft range, a SaaS MVP including admin and analytics is ₹1,50,000–₹6,00,000, and a custom web app with dashboards is ₹75,000–₹3,00,000, both excluding 18% GST. These are not quotes. A fixed quote is confirmed in writing after a call.</p></div>
+</details>
+<details class="faq__item">
+  <summary class="faq__q"><span>How long does it take to build an admin dashboard?</span><svg class="faq__caret" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+  <div class="faq__a"><p>Built inside a larger product, it follows that product's timeline: indicatively 4–8 weeks for a custom web app and 8–16 weeks for a SaaS MVP, per the site's draft price data. The dashboard alone is not timed separately.</p></div>
+</details>
+<details class="faq__item">
+  <summary class="faq__q"><span>Does an admin dashboard need to work on a phone?</span><svg class="faq__caret" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+  <div class="faq__a"><p>It depends on the device your staff use. Ask which three tasks happen on a phone, such as looking up a customer, calling and marking a job done, and make those work first. The full reporting screens can stay desktop-first.</p></div>
+</details></div></section>
+      <div class="bfoot"><span>SaaS &amp; MVP Building</span></div>
+    </article>
+    <aside class="baside" aria-label="From Elyx"><div class="bcta">
+  <span class="bcta__k">Elyx Solutions</span>
+  <h3>Have a SaaS idea or a process worth turning into software?</h3>
+  <a class="btn btn--blue" href="https://wa.me/919611729733?text=Hi%20Elyx%2C%20I'd%20like%20to%20talk%20about%20a%20project.%20(from%20the%20article%20%22Building%20an%20Admin%20Dashboard%20Your%20Team%20Will%20Actually%20Use%22)" target="_blank" rel="noopener" data-track="whatsapp_click" data-article="admin-dashboard-design" data-card-pos="side">WhatsApp us <svg class="arr" width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H4M10 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+  <a class="btn btn--ghost" href="../../services/saas-development/" data-track="card_click" data-article="admin-dashboard-design" data-card-pos="side" data-btn="soft">See SaaS development</a>
+</div></aside>
+  </div>
+</div></main>
+<section class="cta" data-screen-label="Contact CTA">
+  <div class="cta__in reveal">
+    <div class="deco deco-dark" data-parallax="0.08" style="z-index:-1" aria-hidden="true"><span class="orb orb-a"></span></div>
+    <div class="ph-grid cta__bg"></div>
+    <div class="cta__glow"></div>
+    <span class="eyebrow is-light" style="justify-content:center;">Let's build</span>
+    <h2 class="cta__t" style="color:#fff;margin-top:20px;">Have something worth <span class="em">building?</span></h2>
+    <p class="cta__sub">Tell us where you're headed. We'll bring the team, the plan and the craft to get you there.</p>
+    <div class="cta__row">
+      <a class="btn btn--blue" href="../../contact.html" data-track="cta_click" data-pos="cta-section">Start a project <svg class="arr" width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H4M10 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+      <a class="btn btn--light" href="../../contact.html#book" data-track="cta_click" data-pos="cta-section">Book a call</a>
+    </div>
+  </div>
+</section>
+<footer class="footer">
+  <div class="footer__in">
+    <div class="footer__top">
+      <div>
+        <a class="brand" href="../../" aria-label="Elyx Solutions home">
+          <svg class="brand__mark" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+            <g transform="skewX(-10)">
+              <rect x="7" y="4" width="15" height="4.4" rx="1.2" fill="#1f4fd8"></rect>
+              <rect x="7" y="11.8" width="11" height="4.4" rx="1.2" fill="#0b1024"></rect>
+              <rect x="7" y="19.6" width="15" height="4.4" rx="1.2" fill="#1f4fd8"></rect>
+            </g>
+          </svg>
+          <span class="brand__name">Elyx</span>
+        </a>
+        <p class="footer__lede">Beyond just presence — we build digital <span class="serif-i" style="color:var(--blue)">value.</span></p>
+      </div>
+      <div class="fcol">
+        <h4>Services</h4>
+        <a href="../../services/web-development/">Web Development</a>
+        <a href="../../services/saas-development/">SaaS Development</a>
+        <a href="../../services/app-development/">App Development</a>
+        <a href="../../services/seo-optimization/">SEO Optimization</a>
+        <a href="../../services/maintenance-care/">Maintenance &amp; Care</a>
+      </div>
+      <div class="fcol">
+        <h4>Websites for</h4>
+        <a href="../../websites-for/dentists/">Dentists &amp; Clinics</a>
+        <a href="../../websites-for/coaching-centres/">Coaching Centres</a>
+        <a href="../../websites-for/restaurants-and-cafes/">Restaurants &amp; Cafés</a>
+        <a href="../../websites-for/salons-and-spas/">Salons &amp; Spas</a>
+        <a href="../../websites-for/real-estate/">Real Estate</a>
+        <a href="../../websites-for/ca-and-law-firms/">CA &amp; Law Firms</a>
+      </div>
+      <div class="fcol">
+        <h4>Company</h4>
+        <a href="../../about.html">About</a>
+        <a href="../../work.html">Work</a>
+        <a href="../../pricing/">Pricing</a>
+        <a href="../../tools/">Free tools</a>
+        <a href="../../blog/">Blog</a>
+        <a href="../../web-development-bengaluru/">Bengaluru</a>
+        <a href="../../contact.html">Contact</a>
+      </div>
+      <div class="fcol">
+        <h4>Connect</h4>
+        <a href="mailto:hello@elyxsolutions.in">hello@elyxsolutions.in</a>
+        <a href="tel:+919611729733" data-track="call_click" data-pos="footer">+91 96117 29733</a>
+        <a href="tel:+917204723340" data-track="call_click" data-pos="footer">+91 72047 23340</a>
+        <a href="https://wa.me/919611729733?text=Hi%20Elyx%2C%20I'd%20like%20to%20talk%20about%20a%20project." target="_blank" rel="noopener" data-track="whatsapp_click" data-pos="footer">WhatsApp</a>
+        <a href="https://www.linkedin.com/company/elyxsolutions04/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://www.instagram.com/elyxsolutions" target="_blank" rel="noopener">Instagram</a>
+        <span class="footer__addr">Bengaluru, Karnataka</span>
+      </div>
+    </div>
+    <div class="footer__bot">
+      <span>© 2026 Elyx Solutions. All rights reserved.</span>
+      <span>Designed &amp; built in-house · Bengaluru, India.</span>
+    </div>
+  </div>
+</footer>
+<a class="wa-float" href="https://wa.me/919611729733?text=Hi%20Elyx%2C%20I'd%20like%20to%20talk%20about%20a%20project." target="_blank" rel="noopener" aria-label="Chat with Elyx on WhatsApp" data-track="whatsapp_click" data-pos="floating">
+  <svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16.04 3C9.4 3 4 8.4 4 15.03c0 2.12.55 4.19 1.6 6.01L4 29l8.12-1.57a12.03 12.03 0 0 0 3.92.65C22.68 28.08 28.08 22.67 28.08 16 28.08 9.36 22.7 3 16.04 3Zm0 22.06c-1.22 0-2.4-.33-3.44-.95l-.25-.15-4.82.93.97-4.7-.17-.27a9.9 9.9 0 0 1-1.52-5.27c0-5.5 4.48-9.98 10-9.98 5.5 0 9.98 4.48 9.98 9.98s-4.48 10.41-9.98 10.41l-.77-.02Zm5.47-7.46c-.3-.15-1.77-.87-2.04-.97-.28-.1-.48-.15-.68.15-.2.3-.78.97-.95 1.17-.18.2-.35.22-.65.07-.3-.15-1.27-.47-2.42-1.5-.9-.8-1.5-1.78-1.67-2.08-.18-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.68-1.64-.93-2.25-.25-.58-.5-.5-.68-.5h-.58c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.5s1.07 2.9 1.22 3.1c.15.2 2.1 3.2 5.08 4.48.7.3 1.26.48 1.7.62.72.23 1.37.2 1.88.12.58-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35Z"/></svg>
+</a>
+<script>window.ELYX={"email":"hello@elyxsolutions.in","whatsapp":"https://wa.me/919611729733?text=Hi%20Elyx%2C%20I'd%20like%20to%20talk%20about%20a%20project.","phone":"+91 96117 29733","booking":""};</script>
+<script src="../../js/site.js"></script>
+<script src="../../js/analytics.js"></script>
+</body>
+</html>
