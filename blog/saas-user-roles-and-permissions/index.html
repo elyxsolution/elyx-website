@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>SaaS User Roles and Permissions: Design Them on Day One</title>
+<meta name="description" content="SaaS user roles and permissions for founders: a five-role starting model, a safe invite flow, when to add SSO and the mistakes that force rework." />
+<link rel="canonical" href="https://elyxsolutions.in/blog/saas-user-roles-and-permissions/" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#080b1a" />
+<!-- Open Graph -->
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Elyx Solutions" />
+<meta property="og:title" content="SaaS User Roles and Permissions: Design Them on Day One" />
+<meta property="og:description" content="SaaS user roles and permissions for founders: a five-role starting model, a safe invite flow, when to add SSO and the mistakes that force rework." />
+<meta property="og:url" content="https://elyxsolutions.in/blog/saas-user-roles-and-permissions/" />
+<meta property="og:image" content="https://elyxsolutions.in/og/blog-saas-user-roles-and-permissions.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:locale" content="en_IN" />
+<meta property="article:published_time" content="2026-11-17" />
+<meta property="article:modified_time" content="2026-11-17" />
+<meta property="article:section" content="SaaS &amp; MVP Building" />
+<meta property="article:author" content="https://elyxsolutions.in/blog/author/shreyasmv/" />
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="SaaS User Roles and Permissions: Design Them on Day One" />
+<meta name="twitter:description" content="SaaS user roles and permissions for founders: a five-role starting model, a safe invite flow, when to add SSO and the mistakes that force rework." />
+<meta name="twitter:image" content="https://elyxsolutions.in/og/blog-saas-user-roles-and-permissions.png" />
+<!-- Icons -->
+<link rel="icon" href="../../favicon.svg" type="image/svg+xml" />
+<link rel="icon" href="../../icon-192.png" sizes="192x192" type="image/png" />
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500;1,6..72,600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../../css/styles.css" />
+<link rel="stylesheet" href="../../css/pages.css" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://elyxsolutions.in/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://elyxsolutions.in/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Authentication, Roles and Permissions: Getting Them Right From Day One",
+          "item": "https://elyxsolutions.in/blog/saas-user-roles-and-permissions/"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://elyxsolutions.in/blog/saas-user-roles-and-permissions/#article",
+      "headline": "Authentication, Roles and Permissions: Getting Them Right From Day One",
+      "description": "SaaS user roles and permissions for founders: a five-role starting model, a safe invite flow, when to add SSO and the mistakes that force rework.",
+      "image": [
+        "https://elyxsolutions.in/og/blog-saas-user-roles-and-permissions.png"
+      ],
+      "datePublished": "2026-11-17",
+      "dateModified": "2026-11-17",
+      "author": {
+        "@type": "Person",
+        "@id": "https://elyxsolutions.in/blog/author/shreyasmv/#person",
+        "name": "Shreyas M V",
+        "url": "https://elyxsolutions.in/blog/author/shreyasmv/",
+        "sameAs": [
+          "https://www.linkedin.com/in/shreyas-m-v-311b99205/"
+        ]
+      },
+      "publisher": {
+        "@id": "https://elyxsolutions.in/#organization"
+      },
+      "mainEntityOfPage": "https://elyxsolutions.in/blog/saas-user-roles-and-permissions/",
+      "articleSection": "SaaS & MVP Building",
+      "inLanguage": "en-IN"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What are user roles in SaaS apps?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A user role in a SaaS app is a named set of allowed actions, such as Admin, Editor or Viewer. AppOmni describes it as a predefined set of capabilities that decides what someone can see, do or change. Each person gets one role per workspace."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do you design SaaS roles and permissions?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Start with the actions in your product, group them into five or fewer roles, and write the role-by-action grid before building screens. Then check permissions, not role names, on the server. Add custom roles only when a customer needs one."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between roles and permissions?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A permission is one allowed action, such as refunding an invoice, and a role is a named bundle of permissions. Code should check the permission. The role table then decides who holds it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why do roles and permissions matter in SaaS?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "They limit what a mistake or a stolen login can reach. AppOmni lists reduced accidental changes, a smaller attack surface and support for compliance as the reasons. They also decide whether one customer's data stays away from another's."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should permissions live in the token or be fetched on each request?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For an early product, fetching on each request and caching briefly is the safer default, because a token copy goes stale until it expires. This is my reading, since the pages I read do not settle it. Tokens suit cases where a short delay in revoking access is acceptable."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How should I model a super admin in a multi-tenant SaaS?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Keep it as a platform-level role separate from tenant roles, and log everything it does. Forum threads show developers struggling when a super admin is forced into a tenant table. A membership table avoids that."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "When should I add SSO to my SaaS?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Add SSO when a paying customer's IT team requires it, not before. Nimbryx, as recorded in our cost article, says enterprise buyers ask for it later. Until then, keep a stable internal user ID so it can be attached."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does it cost to build authentication and roles?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Published figures vary, and the site's draft SaaS MVP range is ₹1,50,000–₹6,00,000, indicative and never a quote. In the estimate our cost article uses, accounts, roles and authentication are 12 of 120 days. A fixed quote is confirmed in writing after a call."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should customers be able to create custom roles?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not at launch. Custom roles add screens, tests and support questions, so wait until a paying customer asks and your permission layer already works. Until then, five fixed roles are enough."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body data-article="saas-user-roles-and-permissions">
+<div class="grain"></div>
+<div class="nav-shell scrolled" id="navShell">
+  <a class="brand nav__brand" href="../../" aria-label="Elyx Solutions home">
+    <svg class="brand__mark" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+      <g transform="skewX(-10)">
+        <rect x="7" y="4" width="15" height="4.4" rx="1.2" fill="#1f4fd8"></rect>
+        <rect x="7" y="11.8" width="11" height="4.4" rx="1.2" fill="#0b1024"></rect>
+        <rect x="7" y="19.6" width="15" height="4.4" rx="1.2" fill="#1f4fd8"></rect>
+      </g>
+    </svg>
+    <span class="brand__name">Elyx</span>
+  </a>
+
+  <nav class="nav" id="nav" aria-label="Main">
+    <div class="nav__links" id="navLinks">
+      <div class="nav__item" data-menu="services"><button type="button">Services <svg class="caret" viewBox="0 0 10 10" fill="none"><path d="M1 3l4 4 4-4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button></div>
+      <div class="nav__item" data-menu="industries"><button type="button">Industries <svg class="caret" viewBox="0 0 10 10" fill="none"><path d="M1 3l4 4 4-4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button></div>
+      <div class="nav__item" data-menu="work"><button type="button">Work <svg class="caret" viewBox="0 0 10 10" fill="none"><path d="M1 3l4 4 4-4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button></div>
+      <div class="nav__item"><a href="../../blog/">Blog</a></div>
+      <div class="nav__item"><a href="../../about.html">About</a></div>
+      <div class="nav__item"><a href="../../contact.html">Contact</a></div>
+    </div>
+  </nav>
+
+  <div class="nav__right">
+    <a class="btn btn--primary nav__cta" href="../../contact.html" data-track="cta_click" data-pos="nav">Let's talk <svg class="arr" width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H4M10 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+    <button class="nav__burger" id="burger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <div class="mobile-menu__group">
+      <span class="mobile-menu__label">Services</span>
+      <a href="../../services/web-development/">Web Development</a>
+      <a href="../../services/saas-development/">SaaS Development</a>
+      <a href="../../services/app-development/">App Development</a>
+      <a href="../../services/seo-optimization/">SEO Optimization</a>
+      <a href="../../services/maintenance-care/">Maintenance &amp; Care</a>
+    </div>
+    <div class="mobile-menu__group">
+      <span class="mobile-menu__label">Websites for</span>
+      <a href="../../websites-for/dentists/">Dentists &amp; Clinics</a>
+      <a href="../../websites-for/coaching-centres/">Coaching Centres</a>
+      <a href="../../websites-for/restaurants-and-cafes/">Restaurants &amp; Cafés</a>
+      <a href="../../websites-for/salons-and-spas/">Salons &amp; Spas</a>
+      <a href="../../websites-for/real-estate/">Real Estate</a>
+      <a href="../../websites-for/ca-and-law-firms/">CA &amp; Law Firms</a>
+    </div>
+    <div class="mobile-menu__group">
+      <span class="mobile-menu__label">Company</span>
+      <a href="../../about.html">About</a>
+      <a href="../../work.html">Work</a>
+      <a href="../../pricing/">Pricing</a>
+      <a href="../../blog/">Blog</a>
+      <a href="../../tools/">Free tools</a>
+      <a href="../../contact.html">Contact</a>
+    </div>
+    <a class="btn btn--blue mobile-menu__cta" href="../../contact.html">Let's talk <svg class="arr" width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H4M10 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+  </div>
+
+  <!-- Mega panel -->
+  <div class="mega" id="mega">
+    <div class="mega__inner">
+      <div class="mega__panel" data-panel="services">
+        <div class="mega-grid">
+          <div class="mega-tiles"><a class="mtile" href="../../services/web-development/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M9 8l-4 4 4 4M15 8l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">Web Development</span></span></a><a class="mtile" href="../../services/saas-development/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M6 16a4 4 0 010-8 5 5 0 019.6-1.5A3.5 3.5 0 0118 16H6z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">SaaS Development</span></span></a><a class="mtile" href="../../services/app-development/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><rect x="7" y="3" width="10" height="18" rx="2.5" stroke="currentColor" stroke-width="1.6"></rect><path d="M11 18h2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg></span><span><span class="mtile__t">App Development</span></span></a><a class="mtile" href="../../services/seo-optimization/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><circle cx="10.5" cy="10.5" r="6" stroke="currentColor" stroke-width="1.6"></circle><path d="M15 15l5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg></span><span><span class="mtile__t">SEO Optimization</span></span></a><a class="mtile" href="../../services/maintenance-care/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M12 8v4l3 2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path><circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="1.6"></circle></svg></span><span><span class="mtile__t">Maintenance &amp; Care</span></span></a><a class="mtile" href="../../pricing/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M4 14l5-5 4 4 7-7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path><path d="M20 6v4h-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">Pricing</span></span></a></div>
+          <a class="mega-feature" href="../../pricing/">
+            <div class="ph-grid"></div>
+            <div class="mega-feature__k">Featured</div>
+            <div class="mega-feature__t">Simple pricing. Engagements start at ₹9,999.</div>
+            <div class="mega-feature__l">See pricing <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H4M10 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+          </a>
+        </div>
+      </div>
+
+      <div class="mega__panel" data-panel="industries">
+        <div class="mega-grid">
+          <div class="mega-tiles"><a class="mtile" href="../../websites-for/dentists/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M12 5c-2-1.5-6-1.5-6 2.5 0 3 1.5 4 1.5 7 0 2 .8 4.5 2 4.5s1.5-2 2.5-2 1.3 2 2.5 2 2-2.5 2-4.5c0-3 1.5-4 1.5-7C18 3.5 14 3.5 12 5z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">Dentists &amp; Clinics</span></span></a><a class="mtile" href="../../websites-for/coaching-centres/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M3 9l9-4 9 4-9 4-9-4z M7 11v4c0 1.5 2.2 3 5 3s5-1.5 5-3v-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">Coaching Centres</span></span></a><a class="mtile" href="../../websites-for/restaurants-and-cafes/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M7 3v8M5 3v5a2 2 0 004 0V3M7 11v10M17 3c-2 1.5-3 4-3 7h3v11" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">Restaurants &amp; Cafés</span></span></a><a class="mtile" href="../../websites-for/salons-and-spas/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><circle cx="6" cy="7" r="2.5" stroke="currentColor" stroke-width="1.6"></circle><circle cx="6" cy="17" r="2.5" stroke="currentColor" stroke-width="1.6"></circle><path d="M8 8.5L20 18M8 15.5L20 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg></span><span><span class="mtile__t">Salons &amp; Spas</span></span></a><a class="mtile" href="../../websites-for/real-estate/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M4 21V8l8-5 8 5v13M9 21v-6h6v6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">Real Estate</span></span></a><a class="mtile" href="../../websites-for/ca-and-law-firms/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M12 4v16M6 20h12M5 8h14M5 8l-2.5 6a3 3 0 005 0L5 8zM19 8l-2.5 6a3 3 0 005 0L19 8z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">CA &amp; Law Firms</span></span></a></div>
+          <a class="mega-feature" href="../../websites-for/">
+            <div class="ph-grid"></div>
+            <div class="mega-feature__k">Built for your trade</div>
+            <div class="mega-feature__t">What a site for your kind of business actually needs.</div>
+            <div class="mega-feature__l">All industries <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H4M10 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+          </a>
+        </div>
+      </div>
+
+      <div class="mega__panel" data-panel="work">
+        <div class="mega-grid mega-grid--work">
+          <div class="mega-wlinks">
+            <a class="mtile" href="../../work.html#tools"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.6"></circle><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5.1 5.1l2.1 2.1M16.8 16.8l2.1 2.1M18.9 5.1L16.8 7.2M7.2 16.8l-2.1 2.1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg></span><span><span class="mtile__t">Tools we use</span></span></a>
+            <a class="mtile" href="../../work.html#faq"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"></circle><path d="M9.6 9.2a2.5 2.5 0 014.7 1.1c0 1.6-2.3 2-2.3 3.6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path><circle cx="12" cy="16.6" r="0.7" fill="currentColor"></circle></svg></span><span><span class="mtile__t">FAQ about Elyx</span></span></a>
+            <a class="mtile" href="../../work.html"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="6.5" height="6.5" rx="1.6" stroke="currentColor" stroke-width="1.6"></rect><rect x="13.5" y="4" width="6.5" height="6.5" rx="1.6" stroke="currentColor" stroke-width="1.6"></rect><rect x="4" y="13.5" width="6.5" height="6.5" rx="1.6" stroke="currentColor" stroke-width="1.6"></rect><rect x="13.5" y="13.5" width="6.5" height="6.5" rx="1.6" stroke="currentColor" stroke-width="1.6"></rect></svg></span><span><span class="mtile__t">All projects</span></span></a>
+          </div>
+          <div class="mega-work"><a class="wcard" href="../../work/ashirwad-dental/"><div class="wcard__img ph wcard__img--dental"></div><div class="wcard__meta"><div class="wcard__t">Ashirwad Dental Clinic</div><div class="wcard__c">Web · Redesign</div></div></a><a class="wcard" href="../../work/pinnacle-inc/"><div class="wcard__img ph wcard__img--pinnacle"></div><div class="wcard__meta"><div class="wcard__t">Pinnacle Inc.</div><div class="wcard__c">Web · EdTech</div></div></a><a class="wcard" href="../../work/malnad-stories/"><div class="wcard__img ph wcard__img--malnad"></div><div class="wcard__meta"><div class="wcard__t">Malnad Stories</div><div class="wcard__c">E-commerce · Web App</div></div></a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<span id="top"></span>
+<main class="bl"><div class="bl__in">
+  <div class="bl__crumbs">
+    <a class="bl__back" href="../../blog/">← Back to Blog</a>
+    <nav aria-label="Breadcrumb"><ol><li><a href="../../">Home</a></li><li aria-hidden="true">/</li><li><a href="../../blog/">Blog</a></li><li aria-hidden="true">/</li><li aria-current="page">Authentication, Roles and Permissions: Getting Them Right From Day One</li></ol></nav>
+  </div>
+  <div class="bl__cols">
+    <article class="barticle" data-article="saas-user-roles-and-permissions">
+      <header>
+        <p class="bbyline">By <a class="bauthor" href="../../blog/author/shreyasmv/"><img class="bauthor__ph" src="../../uploads/authors/shreyasmv.jpg" alt="" width="24" height="24" loading="lazy" /><span>Shreyas M V</span></a><span aria-hidden="true">·</span><span>Published <time datetime="2026-11-17">17 November 2026</time></span><span aria-hidden="true">·</span><span>12 min read</span></p>
+        <h1>Authentication, Roles and Permissions: Getting Them Right From Day One</h1>
+        <p class="blead">SaaS user roles and permissions for founders: a five-role starting model, a safe invite flow, when to add SSO and the mistakes that force rework.</p>
+      </header>
+      <nav class="btoc" aria-label="Table of contents"><b>On this page</b><ol><li><a href="#authentication-authorization-roles-and-permissions-four-words-four-jobs"><span>01</span>Authentication, Authorization, Roles and Permissions: Four Words, Four Jobs</a></li><li><a href="#saas-user-roles-and-permissions-a-five-role-starting-model"><span>02</span>SaaS User Roles and Permissions: A Five-Role Starting Model</a></li><li><a href="#check-permissions-in-code-not-role-names"><span>03</span>Check Permissions in Code, Not Role Names</a></li><li><a href="#tenants-workspaces-and-the-platform-admin"><span>04</span>Tenants, Workspaces and the Platform Admin</a></li><li><a href="#invites-the-flow-most-guides-skip"><span>05</span>Invites: The Flow Most Guides Skip</a></li><li><a href="#sign-in-choices-buy-the-login-build-the-roles"><span>06</span>Sign-In Choices: Buy the Login, Build the Roles</a></li><li><a href="#sso-later-what-to-prepare-now"><span>07</span>SSO Later: What to Prepare Now</a></li><li><a href="#what-the-security-pages-warn-about-least-privilege-and-role-creep"><span>08</span>What the Security Pages Warn About: Least Privilege and Role Creep</a></li><li><a href="#common-mistakes-causes-and-fixes"><span>09</span>Common Mistakes, Causes and Fixes</a></li><li><a href="#a-day-one-checklist"><span>10</span>A Day-One Checklist</a></li><li><a href="#what-to-do-next"><span>11</span>What To Do Next</a></li><li><a href="#sources"><span>12</span>Sources</a></li><li><a href="#faq"><span>13</span>Frequently asked questions</a></li></ol></nav>
+      <div class="prose">
+<p>SaaS user roles and permissions are cheapest to get right in week one: use a bought sign-in, give each person one role per workspace, check permissions on the server instead of role names, and add SSO only when a paying customer asks. Roles, tenants and invites touch every screen and every database query, so changing them after launch means reopening finished work. The honest qualification is that the evidence I read is three practitioner pages and a handful of developer forum threads, with no standards body or measured data, so the design choices below are my reading and are labelled that way.</p>
+<ul><li><strong>Start small.</strong> Five fixed roles cover most B2B launches, and custom roles can wait for a customer who needs one.</li><li><strong>Check permissions.</strong> Code that asks &quot;may this user refund an invoice&quot; survives a new role. Code that asks &quot;is this user an admin&quot; does not.</li><li><strong>Invites are a flow.</strong> A pending invite needs a role, a workspace, an expiry and a single-use link, and none of the top pages I read covered it.</li><li><strong>SSO later.</strong> Prepare for it now by never using the email address as the user's identity.</li></ul>
+<h2 id="authentication-authorization-roles-and-permissions-four-words-four-jobs">Authentication, Authorization, Roles and Permissions: Four Words, Four Jobs</h2>
+<p>Authentication proves who someone is, authorization decides what they may do, a permission is one allowed action, and a role is a named bundle of permissions. AppOmni, a SaaS security vendor, defines a user role as a predefined set of capabilities that decides what someone can see, do or change inside an app. It also says that who can do what is one of the biggest factors in a SaaS product's security posture (read on 17 November 2026).</p>
+<p>My reading: keep the four apart in your head and your code. A login screen answers the first, and everything after it answers the second. Most rework starts when &quot;login&quot; and &quot;access&quot; are treated as one feature.</p>
+<h2 id="saas-user-roles-and-permissions-a-five-role-starting-model">SaaS User Roles and Permissions: A Five-Role Starting Model</h2>
+<p>Most B2B products can launch with five workspace roles: Owner, Admin, Member, Viewer and Billing. AppOmni's examples are Admin, Editor or Contributor, and Viewer or Read-only; Owner and Billing are my additions, so treat the table as analysis, not a standard.</p>
+<div class="prose-table"><table><thead><tr><th>Role</th><th>Can do</th><th>Cannot do</th></tr></thead><tbody><tr><td>Owner</td><td>Everything, including delete workspace and transfer ownership</td><td>Be removed by anyone else</td></tr><tr><td>Admin</td><td>Invite people, change roles, manage settings</td><td>Delete the workspace, change the owner</td></tr><tr><td>Member</td><td>Create and edit the product's main records</td><td>Invite people, see billing</td></tr><tr><td>Viewer</td><td>Read records and reports</td><td>Change anything</td></tr><tr><td>Billing</td><td>See plans, invoices and payment details</td><td>See product data</td></tr></tbody></table></div>
+<p>Billing earns its place in India because invoices carry the buyer's GSTIN, per Appwizards as reported in our <a href="../../blog/saas-development-cost-india/">SaaS MVP cost article</a>. Accounts staff then need invoices without seeing customer records.</p>
+<p>The arithmetic keeps the model honest: 5 roles and 10 actions make 50 yes-or-no decisions. Write them in a spreadsheet before any screen is designed, and you will find the arguments while they are cheap.</p>
+<p><strong>Choose fixed roles when</strong> you have fewer than a handful of customers and every request so far fits one of the five. <strong>Choose custom roles when</strong> a paying customer needs a combination you cannot express, and the permission layer below already exists.</p>
+<h2 id="check-permissions-in-code-not-role-names">Check Permissions in Code, Not Role Names</h2>
+<p>Write each check against a permission such as <code>invoice.refund</code> and map roles to permissions in one table, so adding a role is a data change and not a code change. Take a made-up fee-collection product for coaching centres. If its code says &quot;if admin&quot; in every refund path, adding an Accountant role means editing every one of them; if it says &quot;if may refund&quot;, the Accountant is one new row.</p>
+<p>Developer threads on Reddit between December 2025 and April 2026 keep asking two related things: whether to put permissions inside the sign-in token or fetch them on each navigation, and how to hide menus by role (see Sources). The pages I read do not answer either.</p>
+<p>My reading: hiding a menu is a convenience and the server is the enforcement, so every API call must check the permission itself. A permission copied into a token goes stale until the token expires, so for an early product I would look permissions up per request and cache briefly.</p>
+<h2 id="tenants-workspaces-and-the-platform-admin">Tenants, Workspaces and the Platform Admin</h2>
+<p>A tenant is one customer company, and every role should be scoped to a tenant, with your own staff's powers kept in a separate platform-level role. Reddit threads ask how to model a super admin in a multi-tenant database and whether system-level and tenant-level roles should be separate. My reading is yes, and the simplest shape is a membership table of user, tenant and role.</p>
+<p>That shape also fits India. A chartered accountant, a consultant or an agency often serves several client companies, so one person holds an Admin role in one workspace and a Viewer role in another. A single &quot;user.role&quot; column cannot say that.</p>
+<p>On tenancy the cost article's sources split: Voidmatrix says single-tenant is fine while you validate, while Appwizards and Nimbryx say adding multi-tenancy later is close to a rebuild. <a href="../../services/saas-development/">Elyx Solutions' SaaS development page</a> lists authentication, roles and permissions among the things a build covers and says tenant separation and permissions are settled in the first weeks.</p>
+<p>Reddit threads also describe struggles with inheritance and overrides, for example permissions that flow from account to site to course. Start flat, with one role per workspace, and add per-record overrides only when a customer asks.</p>
+<h2 id="invites-the-flow-most-guides-skip">Invites: The Flow Most Guides Skip</h2>
+<p>An invite is a pending membership: an email address, a role, a workspace, an expiry and a single-use link, created by someone allowed to grant that role. As of 17 November 2026 none of the four top-ranking pages in this research covers invites, so this section is my design reading and not a sourced standard.</p>
+<div class="prose-table"><table><thead><tr><th>Step</th><th>What happens</th><th>What can go wrong</th></tr></thead><tbody><tr><td>1. Create</td><td>Admin enters email and role; a pending invite is stored</td><td>Typo in the email</td></tr><tr><td>2. Send</td><td>A link with a one-time token goes out</td><td>Link forwarded to the wrong person</td></tr><tr><td>3. Open</td><td>New person sets up sign-in; existing user just signs in</td><td>Existing account missed, duplicate created</td></tr><tr><td>4. Accept</td><td>Membership is created and the invite is marked used</td><td>Link reused after acceptance</td></tr><tr><td>5. Manage</td><td>Admin sees pending invites, can resend or revoke</td><td>Stale invites stay live for months</td></tr></tbody></table></div>
+<p>Three rules matter most. Let people invite only roles at or below their own, so an Admin cannot mint an Owner. Tie acceptance to the invited email or phone number, because a link pasted into a WhatsApp group will be forwarded. Store only a hash of the token, and give invites a short expiry that you show on screen.</p>
+<h2 id="sign-in-choices-buy-the-login-build-the-roles">Sign-In Choices: Buy the Login, Build the Roles</h2>
+<p>For a first version, buy the sign-in and build the roles, because login is a commodity and your permission model is not. Our cost article records Nevatrix and Voidmatrix both advising managed authentication for v1 and building only what differentiates the product. BetterCloud lists multi-factor authentication (MFA), a second proof such as a code on a phone, among its core security measures.</p>
+<p>The Indian wrinkle is identity. Many small businesses run on personal Gmail addresses or shared mailboxes, and staff change phone numbers. Decide on day one whether a person is identified by email, mobile number or both, and send invites to the one they actually check.</p>
+<h2 id="sso-later-what-to-prepare-now">SSO Later: What to Prepare Now</h2>
+<p>Build single sign-on (SSO), where a customer's company login opens your product, when a paying customer's IT team requires it, and prepare now by never treating the email address as the user's identity. BetterCloud says SSO simplifies login and reduces password fatigue. Nimbryx, as recorded in our cost article, says enterprise buyers ask for it later, and Appwizards places SSO in its multi-tenant platform tier.</p>
+<p>What to prepare, as my reading:</p>
+<ul><li><strong>A stable user ID.</strong> Use an internal ID as the key, so an SSO login can attach to an existing person.</li><li><strong>Identity apart from membership.</strong> How someone signs in and what they may do should be separate tables.</li><li><strong>A verified company domain per tenant.</strong> SSO is usually switched on for a domain.</li><li><strong>Role mapping.</strong> Decide whether the customer's groups map to your roles.</li><li><strong>A break-glass owner.</strong> One password-and-MFA login that still works if the customer's identity provider fails.</li></ul>
+<p><strong>Build SSO when</strong> a signed contract depends on it. <strong>Skip it when</strong> nobody has asked and your customers are small teams.</p>
+<h2 id="what-the-security-pages-warn-about-least-privilege-and-role-creep">What the Security Pages Warn About: Least Privilege and Role Creep</h2>
+<p>AppOmni defines least privilege as giving each user the minimum permissions their job needs, and its list of recurring failures works as a brief for your first roles. The table pairs each warning with a design response that is my reading, not AppOmni's advice.</p>
+<div class="prose-table"><table><thead><tr><th>AppOmni warning</th><th>Design response</th></tr></thead><tbody><tr><td>Role creep: extra access never removed</td><td>Show last-active and role date; prompt reviews</td></tr><tr><td>Permissive defaults</td><td>New members start as Viewer, not Admin</td></tr><tr><td>Integrations with wide access</td><td>Scoped API keys, listed in settings</td></tr><tr><td>Orphaned accounts</td><td>Removing a member ends their sessions</td></tr><tr><td>Manual processes</td><td>An audit log of role changes</td></tr></tbody></table></div>
+<p>AppOmni's marketing-contractor example, where admin access exposed client data, is illustrative, not a measured incident. BetterCloud makes the same point about leavers: access should be revoked promptly, and reviews should be regular.</p>
+<h2 id="common-mistakes-causes-and-fixes">Common Mistakes, Causes and Fixes</h2>
+<p>The expensive mistakes are structural ones that a screen review never finds. The table is my analysis, built from the forum questions and the sources above.</p>
+<div class="prose-table"><table><thead><tr><th>Mistake</th><th>Usual cause</th><th>Fix</th></tr></thead><tbody><tr><td>Role names checked in code</td><td>Fast MVP shortcut</td><td>Check permissions, map roles in one table</td></tr><tr><td>Access hidden only in the menu</td><td>Front-end-first build</td><td>Enforce on the server for every call</td></tr><tr><td>Tenant filter forgotten on one query</td><td>Scoping written by hand</td><td>Apply the tenant in one shared place</td></tr><tr><td>Email used as identity</td><td>Simplest login</td><td>Internal user ID from day one</td></tr><tr><td>Last Owner can leave</td><td>No rule written</td><td>Block removing or demoting the last Owner</td></tr><tr><td>Support staff use a customer's Admin</td><td>No platform role</td><td>Separate platform role with an audit log</td></tr></tbody></table></div>
+<h2 id="a-day-one-checklist">A Day-One Checklist</h2>
+<p>Copy this list into your project notes and tick it before the first customer signs up.</p>
+<ul><li>Write the role-by-action grid and get it signed off.</li><li>Decide the identity: email, mobile or both.</li><li>Use a membership table: user, tenant, role.</li><li>Check permissions on the server for every request.</li><li>Make new members the lowest useful role.</li><li>Build invites with expiry, revoke and a pending list.</li><li>Block removing the last Owner.</li><li>Keep platform staff roles apart from customer roles.</li><li>Log every role change and every removal.</li><li>Register cloud and identity-provider admin accounts in the company's name, as our <a href="../../blog/who-owns-my-website-code/">website ownership guide</a> explains for domains and logins.</li></ul>
+<h2 id="what-to-do-next">What To Do Next</h2>
+<p>Write the role grid this week, before any screen exists, and test it with two real customers' job titles. If you want a team to build it, Elyx Solutions' <a href="../../services/saas-development/">SaaS development service</a> covers sign-up, login, invitations, team roles and the permission model, and you sign off the data model and permissions before the build starts.</p>
+<p>The site's draft range for a SaaS MVP is ₹1,50,000–₹6,00,000, with a typical timeline of 8–16 weeks. It is indicative only, never a quote, it excludes 18% GST, and a fixed quote is confirmed in writing after a call. See the <a href="../../pricing/">pricing page</a> for the other ranges.</p>
+<p>In our cost article's sources, accounts, roles and authentication take 12 of 120 estimated days, which is 12 / 120 = 10 percent. That is one estimate for one product, so use it as a prompt to ask what a quote includes, not as a benchmark.</p>
+<h2 id="sources">Sources</h2>
+<ul><li><a href="https://appomni.com/learn/saas-security-fundamentals/user-roles-and-least-privilege-in-saas-apps/" rel="noopener" target="_blank">User Roles and Least Privilege in SaaS Apps</a>, AppOmni (read 17 November 2026)</li><li><a href="https://www.bettercloud.com/what-is-saas-user-management/" rel="noopener" target="_blank">SaaS user management: Optimize costs &amp; enhance security</a>, BetterCloud (read 17 November 2026)</li><li><a href="https://www.perpetualny.com/blog/how-to-design-effective-saas-roles-and-permissions" rel="noopener" target="_blank">How to Design Effective SaaS Roles and Permissions</a>, Perpetual (headings only could be read)</li><li><a href="https://reddit.com/r/Nestjs_framework/comments/1pkoa1q/how_do_you_handle_rolebased_page_access_and" rel="noopener" target="_blank">How do you handle role-based page access and dynamic menu rendering in production SaaS apps?</a>, Reddit (thread, December 2025)</li><li><a href="https://reddit.com/r/Database/comments/1rfw4bz/best_way_to_model_super_admin_in_multitenant_saas" rel="noopener" target="_blank">Best way to model Super Admin in multi-tenant SaaS</a>, Reddit (thread, February 2026)</li><li><a href="https://reddit.com/r/SaaS/comments/1sb5678/i_underestimated_how_complex_permissions_get_in" rel="noopener" target="_blank">I underestimated how complex permissions get in multi-tenant apps</a>, Reddit (thread, April 2026)</li></ul>
+      </div>
+      <section class="bfaq" id="faq"><h2>Frequently asked questions</h2><div class="faq__list"><details class="faq__item">
+  <summary class="faq__q"><span>What are user roles in SaaS apps?</span><svg class="faq__caret" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+  <div class="faq__a"><p>A user role in a SaaS app is a named set of allowed actions, such as Admin, Editor or Viewer. AppOmni describes it as a predefined set of capabilities that decides what someone can see, do or change. Each person gets one role per workspace.</p></div>
+</details>
+<details class="faq__item">
+  <summary class="faq__q"><span>How do you design SaaS roles and permissions?</span><svg class="faq__caret" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+  <div class="faq__a"><p>Start with the actions in your product, group them into five or fewer roles, and write the role-by-action grid before building screens. Then check permissions, not role names, on the server. Add custom roles only when a customer needs one.</p></div>
+</details>
+<details class="faq__item">
+  <summary class="faq__q"><span>What is the difference between roles and permissions?</span><svg class="faq__caret" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+  <div class="faq__a"><p>A permission is one allowed action, such as refunding an invoice, and a role is a named bundle of permissions. Code should check the permission. The role table then decides who holds it.</p></div>
+</details>
+<details class="faq__item">
+  <summary class="faq__q"><span>Why do roles and permissions matter in SaaS?</span><svg class="faq__caret" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+  <div class="faq__a"><p>They limit what a mistake or a stolen login can reach. AppOmni lists reduced accidental changes, a smaller attack surface and support for compliance as the reasons. They also decide whether one customer's data stays away from another's.</p></div>
+</details>
+<details class="faq__item">
+  <summary class="faq__q"><span>Should permissions live in the token or be fetched on each request?</span><svg class="faq__caret" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+  <div class="faq__a"><p>For an early product, fetching on each request and caching briefly is the safer default, because a token copy goes stale until it expires. This is my reading, since the pages I read do not settle it. Tokens suit cases where a short delay in revoking access is acceptable.</p></div>
+</details>
+<details class="faq__item">
+  <summary class="faq__q"><span>How should I model a super admin in a multi-tenant SaaS?</span><svg class="faq__caret" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+  <div class="faq__a"><p>Keep it as a platform-level role separate from tenant roles, and log everything it does. Forum threads show developers struggling when a super admin is forced into a tenant table. A membership table avoids that.</p></div>
+</details>
+<details class="faq__item">
+  <summary class="faq__q"><span>When should I add SSO to my SaaS?</span><svg class="faq__caret" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+  <div class="faq__a"><p>Add SSO when a paying customer's IT team requires it, not before. Nimbryx, as recorded in our cost article, says enterprise buyers ask for it later. Until then, keep a stable internal user ID so it can be attached.</p></div>
+</details>
+<details class="faq__item">
+  <summary class="faq__q"><span>How much does it cost to build authentication and roles?</span><svg class="faq__caret" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+  <div class="faq__a"><p>Published figures vary, and the site's draft SaaS MVP range is ₹1,50,000–₹6,00,000, indicative and never a quote. In the estimate our cost article uses, accounts, roles and authentication are 12 of 120 days. A fixed quote is confirmed in writing after a call.</p></div>
+</details>
+<details class="faq__item">
+  <summary class="faq__q"><span>Should customers be able to create custom roles?</span><svg class="faq__caret" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+  <div class="faq__a"><p>Not at launch. Custom roles add screens, tests and support questions, so wait until a paying customer asks and your permission layer already works. Until then, five fixed roles are enough.</p></div>
+</details></div></section>
+      <div class="bfoot"><span>SaaS &amp; MVP Building</span></div>
+    </article>
+    <aside class="baside" aria-label="From Elyx"><div class="bcta">
+  <span class="bcta__k">Elyx Solutions</span>
+  <h3>Have a SaaS idea or a process worth turning into software?</h3>
+  <a class="btn btn--blue" href="https://wa.me/919611729733?text=Hi%20Elyx%2C%20I'd%20like%20to%20talk%20about%20a%20project.%20(from%20the%20article%20%22Authentication%2C%20Roles%20and%20Permissions%3A%20Getting%20Them%20Right%20From%20Day%20One%22)" target="_blank" rel="noopener" data-track="whatsapp_click" data-article="saas-user-roles-and-permissions" data-card-pos="side">WhatsApp us <svg class="arr" width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H4M10 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+  <a class="btn btn--ghost" href="../../services/saas-development/" data-track="card_click" data-article="saas-user-roles-and-permissions" data-card-pos="side" data-btn="soft">See SaaS development</a>
+</div></aside>
+  </div>
+</div></main>
+<section class="cta" data-screen-label="Contact CTA">
+  <div class="cta__in reveal">
+    <div class="deco deco-dark" data-parallax="0.08" style="z-index:-1" aria-hidden="true"><span class="orb orb-a"></span></div>
+    <div class="ph-grid cta__bg"></div>
+    <div class="cta__glow"></div>
+    <span class="eyebrow is-light" style="justify-content:center;">Let's build</span>
+    <h2 class="cta__t" style="color:#fff;margin-top:20px;">Have something worth <span class="em">building?</span></h2>
+    <p class="cta__sub">Tell us where you're headed. We'll bring the team, the plan and the craft to get you there.</p>
+    <div class="cta__row">
+      <a class="btn btn--blue" href="../../contact.html" data-track="cta_click" data-pos="cta-section">Start a project <svg class="arr" width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H4M10 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+      <a class="btn btn--light" href="../../contact.html#book" data-track="cta_click" data-pos="cta-section">Book a call</a>
+    </div>
+  </div>
+</section>
+<footer class="footer">
+  <div class="footer__in">
+    <div class="footer__top">
+      <div>
+        <a class="brand" href="../../" aria-label="Elyx Solutions home">
+          <svg class="brand__mark" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+            <g transform="skewX(-10)">
+              <rect x="7" y="4" width="15" height="4.4" rx="1.2" fill="#1f4fd8"></rect>
+              <rect x="7" y="11.8" width="11" height="4.4" rx="1.2" fill="#0b1024"></rect>
+              <rect x="7" y="19.6" width="15" height="4.4" rx="1.2" fill="#1f4fd8"></rect>
+            </g>
+          </svg>
+          <span class="brand__name">Elyx</span>
+        </a>
+        <p class="footer__lede">Beyond just presence — we build digital <span class="serif-i" style="color:var(--blue)">value.</span></p>
+      </div>
+      <div class="fcol">
+        <h4>Services</h4>
+        <a href="../../services/web-development/">Web Development</a>
+        <a href="../../services/saas-development/">SaaS Development</a>
+        <a href="../../services/app-development/">App Development</a>
+        <a href="../../services/seo-optimization/">SEO Optimization</a>
+        <a href="../../services/maintenance-care/">Maintenance &amp; Care</a>
+      </div>
+      <div class="fcol">
+        <h4>Websites for</h4>
+        <a href="../../websites-for/dentists/">Dentists &amp; Clinics</a>
+        <a href="../../websites-for/coaching-centres/">Coaching Centres</a>
+        <a href="../../websites-for/restaurants-and-cafes/">Restaurants &amp; Cafés</a>
+        <a href="../../websites-for/salons-and-spas/">Salons &amp; Spas</a>
+        <a href="../../websites-for/real-estate/">Real Estate</a>
+        <a href="../../websites-for/ca-and-law-firms/">CA &amp; Law Firms</a>
+      </div>
+      <div class="fcol">
+        <h4>Company</h4>
+        <a href="../../about.html">About</a>
+        <a href="../../work.html">Work</a>
+        <a href="../../pricing/">Pricing</a>
+        <a href="../../tools/">Free tools</a>
+        <a href="../../blog/">Blog</a>
+        <a href="../../web-development-bengaluru/">Bengaluru</a>
+        <a href="../../contact.html">Contact</a>
+      </div>
+      <div class="fcol">
+        <h4>Connect</h4>
+        <a href="mailto:hello@elyxsolutions.in">hello@elyxsolutions.in</a>
+        <a href="tel:+919611729733" data-track="call_click" data-pos="footer">+91 96117 29733</a>
+        <a href="tel:+917204723340" data-track="call_click" data-pos="footer">+91 72047 23340</a>
+        <a href="https://wa.me/919611729733?text=Hi%20Elyx%2C%20I'd%20like%20to%20talk%20about%20a%20project." target="_blank" rel="noopener" data-track="whatsapp_click" data-pos="footer">WhatsApp</a>
+        <a href="https://www.linkedin.com/company/elyxsolutions04/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://www.instagram.com/elyxsolutions" target="_blank" rel="noopener">Instagram</a>
+        <span class="footer__addr">Bengaluru, Karnataka</span>
+      </div>
+    </div>
+    <div class="footer__bot">
+      <span>© 2026 Elyx Solutions. All rights reserved.</span>
+      <span>Designed &amp; built in-house · Bengaluru, India.</span>
+    </div>
+  </div>
+</footer>
+<a class="wa-float" href="https://wa.me/919611729733?text=Hi%20Elyx%2C%20I'd%20like%20to%20talk%20about%20a%20project." target="_blank" rel="noopener" aria-label="Chat with Elyx on WhatsApp" data-track="whatsapp_click" data-pos="floating">
+  <svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16.04 3C9.4 3 4 8.4 4 15.03c0 2.12.55 4.19 1.6 6.01L4 29l8.12-1.57a12.03 12.03 0 0 0 3.92.65C22.68 28.08 28.08 22.67 28.08 16 28.08 9.36 22.7 3 16.04 3Zm0 22.06c-1.22 0-2.4-.33-3.44-.95l-.25-.15-4.82.93.97-4.7-.17-.27a9.9 9.9 0 0 1-1.52-5.27c0-5.5 4.48-9.98 10-9.98 5.5 0 9.98 4.48 9.98 9.98s-4.48 10.41-9.98 10.41l-.77-.02Zm5.47-7.46c-.3-.15-1.77-.87-2.04-.97-.28-.1-.48-.15-.68.15-.2.3-.78.97-.95 1.17-.18.2-.35.22-.65.07-.3-.15-1.27-.47-2.42-1.5-.9-.8-1.5-1.78-1.67-2.08-.18-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.68-1.64-.93-2.25-.25-.58-.5-.5-.68-.5h-.58c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.5s1.07 2.9 1.22 3.1c.15.2 2.1 3.2 5.08 4.48.7.3 1.26.48 1.7.62.72.23 1.37.2 1.88.12.58-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35Z"/></svg>
+</a>
+<script>window.ELYX={"email":"hello@elyxsolutions.in","whatsapp":"https://wa.me/919611729733?text=Hi%20Elyx%2C%20I'd%20like%20to%20talk%20about%20a%20project.","phone":"+91 96117 29733","booking":""};</script>
+<script src="../../js/site.js"></script>
+<script src="../../js/analytics.js"></script>
+</body>
+</html>
