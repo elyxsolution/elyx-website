@@ -1,6 +1,6 @@
 {
   "/services/web-development/": {
-    "hash": "dd9202911691038c58fe83934e180374",
+    "hash": "f2ebb0574eaf97e72527744ec640d4e0",
     "lastmod": "2026-11-17"
   },
   "/services/saas-development/": {
@@ -84,7 +84,7 @@
     "lastmod": "2026-11-16"
   },
   "/blog/": {
-    "hash": "ac064d3d96565e0b048e043ef1704ca2",
+    "hash": "864ad439a31145becd32a830cb3a63da",
     "lastmod": "2026-11-17"
   },
   "/blog/category/industries/": {
@@ -168,7 +168,7 @@
     "lastmod": "2026-11-17"
   },
   "/blog/author/rahulc/": {
-    "hash": "42ab49f748f8d815c010ab6666c955d9",
+    "hash": "a507b9fc8d794fb4d6d7d209d4d4656b",
     "lastmod": "2026-11-17"
   },
   "/blog/author/nawaz/": {
@@ -337,6 +337,42 @@
   },
   "/blog/who-owns-my-website-code/": {
     "hash": "e626183d51f22e07fbe24d750f141970",
+    "lastmod": "2026-11-17"
+  },
+  "/blog/wordpress-vs-webflow-vs-nextjs/": {
+    "hash": "553f1e18e3acaff45a6ae35afb35b8a1",
+    "lastmod": "2026-11-17"
+  },
+  "/blog/wix-vs-wordpress-india/": {
+    "hash": "08b38179e624d41386980fc2f8dad1d8",
+    "lastmod": "2026-11-17"
+  },
+  "/blog/when-to-redesign-a-website/": {
+    "hash": "86414136e18a94a2ee2fc0c2e271e94f",
+    "lastmod": "2026-11-17"
+  },
+  "/blog/whatsapp-booking-for-website/": {
+    "hash": "0d27910b41c8e7991e8ab8a1c20a5349",
+    "lastmod": "2026-11-17"
+  },
+  "/blog/web-development-company-red-flags/": {
+    "hash": "92753c0a3581ac9512972dcd66b88f38",
+    "lastmod": "2026-11-17"
+  },
+  "/blog/landing-page-vs-website/": {
+    "hash": "24a8bae428f1d5e333209b3ed3ab55e7",
+    "lastmod": "2026-11-17"
+  },
+  "/blog/landing-page-best-practices/": {
+    "hash": "e39965228804cb0031c944ddb9e8e9fd",
+    "lastmod": "2026-11-17"
+  },
+  "/blog/how-long-to-build-a-website/": {
+    "hash": "12aa15e2782d86591d3d61361b14b646",
+    "lastmod": "2026-11-17"
+  },
+  "/blog/headless-cms-explained/": {
+    "hash": "310adb35900b363b798f44d1e5267ee8",
     "lastmod": "2026-11-17"
   }
 }
