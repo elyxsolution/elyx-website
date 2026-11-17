@@ -1,7 +1,7 @@
 {
   "/services/web-development/": {
-    "hash": "f77a87913fbefc95d2ef432ab0560b1d",
-    "lastmod": "2026-11-16"
+    "hash": "9805bcfe39c52ad1771e2115b49ba90f",
+    "lastmod": "2026-11-17"
   },
   "/services/saas-development/": {
     "hash": "843b20cf0509f60427a8a64f07a821aa",
@@ -84,7 +84,7 @@
     "lastmod": "2026-11-16"
   },
   "/blog/": {
-    "hash": "7ebb2d321f4dd6070b3583808a5d8992",
+    "hash": "d7f3c365f33f182b2c9e3fdc04be8993",
     "lastmod": "2026-11-17"
   },
   "/blog/category/industries/": {
@@ -168,8 +168,8 @@
     "lastmod": "2026-11-17"
   },
   "/blog/author/rahulc/": {
-    "hash": "1ea943d28b6bc2ebb97d8ca0787b19c6",
-    "lastmod": "2026-11-16"
+    "hash": "bc06a9bc7f8318d6c49413f54839256e",
+    "lastmod": "2026-11-17"
   },
   "/blog/author/nawaz/": {
     "hash": "a699372200d5608ecd7f165e421f3c0e",
@@ -334,5 +334,9 @@
   "/blog/advocate-website-india/": {
     "hash": "a5162d090fcea457c724396c6a004fa6",
     "lastmod": "2026-11-16"
+  },
+  "/blog/landing-page-vs-website/": {
+    "hash": "24a8bae428f1d5e333209b3ed3ab55e7",
+    "lastmod": "2026-11-17"
   }
 }
