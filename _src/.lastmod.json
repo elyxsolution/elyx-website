@@ -1,6 +1,6 @@
 {
   "/services/web-development/": {
-    "hash": "f2ebb0574eaf97e72527744ec640d4e0",
+    "hash": "c304579467f70f17ac87c6b51aed5421",
     "lastmod": "2026-11-17"
   },
   "/services/saas-development/": {
@@ -84,7 +84,7 @@
     "lastmod": "2026-11-16"
   },
   "/blog/": {
-    "hash": "864ad439a31145becd32a830cb3a63da",
+    "hash": "463c1b79bc87102ba9bd78377694967b",
     "lastmod": "2026-11-17"
   },
   "/blog/category/industries/": {
@@ -164,7 +164,7 @@
     "lastmod": "2026-11-16"
   },
   "/blog/author/shreyasmv/": {
-    "hash": "8a3c75079771cf5a2469865f8413ccf7",
+    "hash": "5c8ec42360277c56798a14fc44ae4f1e",
     "lastmod": "2026-11-17"
   },
   "/blog/author/rahulc/": {
@@ -373,6 +373,10 @@
   },
   "/blog/headless-cms-explained/": {
     "hash": "310adb35900b363b798f44d1e5267ee8",
+    "lastmod": "2026-11-17"
+  },
+  "/blog/payment-gateway-for-website-india/": {
+    "hash": "05a8313529c6a19867972af3a7d44bdd",
     "lastmod": "2026-11-17"
   }
 }
