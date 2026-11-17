@@ -1,6 +1,6 @@
 {
   "/services/web-development/": {
-    "hash": "f2ebb0574eaf97e72527744ec640d4e0",
+    "hash": "506b69ee55aef6d4ea5bc8cb7514cead",
     "lastmod": "2026-11-17"
   },
   "/services/saas-development/": {
@@ -84,7 +84,7 @@
     "lastmod": "2026-11-16"
   },
   "/blog/": {
-    "hash": "864ad439a31145becd32a830cb3a63da",
+    "hash": "c653e929b248769336ecf4f886566cb2",
     "lastmod": "2026-11-17"
   },
   "/blog/category/industries/": {
@@ -164,7 +164,7 @@
     "lastmod": "2026-11-16"
   },
   "/blog/author/shreyasmv/": {
-    "hash": "8a3c75079771cf5a2469865f8413ccf7",
+    "hash": "67f10ff83a37dd4b6df0a6ecc1411573",
     "lastmod": "2026-11-17"
   },
   "/blog/author/rahulc/": {
@@ -373,6 +373,10 @@
   },
   "/blog/headless-cms-explained/": {
     "hash": "310adb35900b363b798f44d1e5267ee8",
+    "lastmod": "2026-11-17"
+  },
+  "/blog/shopify-vs-woocommerce-india/": {
+    "hash": "9e7211e653c16a269cf30a4a621342c8",
     "lastmod": "2026-11-17"
   }
 }
