@@ -4,8 +4,8 @@
     "lastmod": "2026-11-17"
   },
   "/services/saas-development/": {
-    "hash": "843b20cf0509f60427a8a64f07a821aa",
-    "lastmod": "2026-11-16"
+    "hash": "aff6f08c88230a54701da06433a09687",
+    "lastmod": "2026-11-17"
   },
   "/services/app-development/": {
     "hash": "c6fad399cef9030a14446ba278834419",
@@ -84,7 +84,7 @@
     "lastmod": "2026-11-16"
   },
   "/blog/": {
-    "hash": "864ad439a31145becd32a830cb3a63da",
+    "hash": "b3b783bba59ce90a5b47789280cd1c1e",
     "lastmod": "2026-11-17"
   },
   "/blog/category/industries/": {
@@ -164,7 +164,7 @@
     "lastmod": "2026-11-16"
   },
   "/blog/author/shreyasmv/": {
-    "hash": "8a3c75079771cf5a2469865f8413ccf7",
+    "hash": "236452cdee9e8c6eb60adcdd49147642",
     "lastmod": "2026-11-17"
   },
   "/blog/author/rahulc/": {
@@ -373,6 +373,10 @@
   },
   "/blog/headless-cms-explained/": {
     "hash": "310adb35900b363b798f44d1e5267ee8",
+    "lastmod": "2026-11-17"
+  },
+  "/blog/mvp-features-list/": {
+    "hash": "a3277dd96eba5525bf169cc1d3b7e3c9",
     "lastmod": "2026-11-17"
   }
 }
