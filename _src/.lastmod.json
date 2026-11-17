@@ -60,8 +60,8 @@
     "lastmod": "2026-11-16"
   },
   "/pricing/": {
-    "hash": "ec63695cc02230fc2cba7627f90a7c33",
-    "lastmod": "2026-11-16"
+    "hash": "e9c89ba458e2482b60a91531936a35e2",
+    "lastmod": "2026-11-17"
   },
   "/web-development-bengaluru/": {
     "hash": "29c1a7782e6477b43b8ce7154d8a57ce",
@@ -84,8 +84,8 @@
     "lastmod": "2026-11-16"
   },
   "/blog/": {
-    "hash": "bcd33f6e233c046e3aff0a4c0734c9c1",
-    "lastmod": "2026-11-16"
+    "hash": "cc5e5b8afee589ada9415ab6df05c26e",
+    "lastmod": "2026-11-17"
   },
   "/blog/category/industries/": {
     "hash": "c34533d3d71c91e85f357950dc59bf11",
@@ -164,8 +164,8 @@
     "lastmod": "2026-11-16"
   },
   "/blog/author/shreyasmv/": {
-    "hash": "bad24baa83ec5b33c0ed6c1ecd1a4885",
-    "lastmod": "2026-11-16"
+    "hash": "9fa5055a90d35dd69919d6dce9cb8b33",
+    "lastmod": "2026-11-17"
   },
   "/blog/author/rahulc/": {
     "hash": "1ea943d28b6bc2ebb97d8ca0787b19c6",
@@ -230,5 +230,9 @@
   "/blog/gym-website-design/": {
     "hash": "577fbd9f947cc293ca5a468e6b7fab37",
     "lastmod": "2026-11-16"
+  },
+  "/blog/app-development-cost-india/": {
+    "hash": "892e5c1b02e88c3c4cdc13e78a2f1b71",
+    "lastmod": "2026-11-17"
   }
 }
