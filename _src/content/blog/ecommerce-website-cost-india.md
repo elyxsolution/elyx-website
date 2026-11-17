@@ -4,7 +4,7 @@ seo_title: Ecommerce Website Cost India: Shopify vs WooCommerce
 slug: ecommerce-website-cost-india
 category: pricing-hiring
 description: Ecommerce website cost India: setup, monthly and payment-gateway fees for Shopify, WooCommerce and custom builds, with a worked break-even example.
-date: 2026-11-16
+date: 2026-11-14
 author: shreyasmv
 ---
 The ecommerce website cost India agencies quote in 2026 runs from about ₹25,000 for a configured Shopify store to ₹10 lakh or more for a custom build, and the route you choose explains most of the gap. In the four sources that price each route separately, Shopify and WooCommerce stores sit between roughly ₹0.2 lakh and ₹4 lakh, and custom stores start at ₹2 lakh or more. The qualification is that every source is a studio or agency that sells builds, so these ranges are market signals, not quotes.

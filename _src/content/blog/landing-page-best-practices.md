@@ -3,7 +3,7 @@ title: Anatomy of a Landing Page That Converts (With Real Examples)
 slug: landing-page-best-practices
 category: websites
 description: Landing page best practices section by section: headline, action, proof, speed and testing, with six named examples and the Pinnacle Inc. brief.
-date: 2026-11-17
+date: 2026-11-15
 author: rahulc
 case: pinnacle-inc
 ---

@@ -4,7 +4,7 @@ seo_title: NGO Website India: Donations, 80G, Payments, Transparency
 slug: ngo-website-india
 category: industries
 description: NGO website India checklist: what a donation page, 80G block, impact report and payment setup need, read from four large NGO sites and one audit list.
-date: 2026-11-16
+date: 2026-11-13
 author: shreyasmv
 ---
 An NGO website in India raises donations when a stranger can check who you are, see where the money goes and give by UPI or card in under a minute. That takes four parts: a donation page, a visible 80G and registration block, a dated impact report and a payment setup that issues a receipt. The qualification that matters is regulation: the research behind this article holds no primary tax text, so the 80G and payment sections are a business checklist, not tax or legal advice.

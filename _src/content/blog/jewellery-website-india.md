@@ -4,7 +4,7 @@ seo_title: Jewellery Website India: From Instagram DMs to Online Sales
 slug: jewellery-website-india
 category: industries
 description: Jewellery website India guide for Instagram-first sellers: how to structure a catalogue, show gold rates honestly and choose enquiry or checkout.
-date: 2026-11-16
+date: 2026-11-13
 author: shreyasmv
 ---
 A jewellery website India shoppers can buy from does three jobs that Instagram DMs cannot: it lists every piece with a price and photos at a fixed address, it shows the gold rate with a date so a quoted price can be trusted, and it lets the shopper enquire or check out depending on the piece. The honest qualification is that our sources are store homepages and search results, with no figures on jewellery conversion, gold-rate widgets or payment rules. So the catalogue advice is my reading of how three Indian jewellery stores organise their sites, and the gold-rate and checkout advice is a framework to confirm, not a documented standard.

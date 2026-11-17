@@ -3,7 +3,7 @@ title: Why Your Website Must Be Built for Phones First
 slug: mobile-friendly-website
 category: websites
 description: What a mobile friendly website needs: thumb-sized taps, readable text and speed on a slow connection, plus a test to run today. No India usage figures.
-date: 2026-11-17
+date: 2026-11-16
 author: shreyasmv
 ---
 A mobile friendly website works on a phone without pinching, zooming or sideways scrolling, and building for phones first means you design that small screen before the desktop one. The reason is practical: Google now crawls every site with its phone crawler, and your visitors judge you on the screen in their hand. The honest qualification is that my research contains no Indian usage statistics, so this page proves the build rules and the speed risk, and shows you how to measure your own audience.

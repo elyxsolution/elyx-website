@@ -1,5 +1,5 @@
 /* ============================================================
-   Elyx Solutions — interactions
+   Elyx Solutions - interactions
    ============================================================ */
 (function () {
   'use strict';
@@ -196,7 +196,7 @@
   }
 
   /* ---------------------------------------------------------
-     TEXT REVEAL — split headings into words that slide up on scroll
+     TEXT REVEAL - split headings into words that slide up on scroll
      (preserves inline markup like <span class="serif-i"> and <br>)
   --------------------------------------------------------- */
   var trEls = Array.prototype.slice.call(document.querySelectorAll('.tr'));
@@ -262,7 +262,7 @@
   window.addEventListener('scroll', revealCheck, { passive: true });
   window.addEventListener('resize', revealCheck);
   revealCheck();
-  // run again after layout/fonts settle (in-view only — preserves scroll reveals)
+  // run again after layout/fonts settle (in-view only - preserves scroll reveals)
   requestAnimationFrame(function () { requestAnimationFrame(revealCheck); });
   setTimeout(revealCheck, 180);
   setTimeout(revealCheck, 600);
@@ -318,7 +318,7 @@
   initWave();
 
   /* ---------------------------------------------------------
-     CONTACT FORM — front-end success state (no backend)
+     CONTACT FORM - front-end success state (no backend)
   --------------------------------------------------------- */
   var cform = document.getElementById('cform');
   if (cform) {
@@ -366,7 +366,7 @@
       if (!emailEl.value.trim() || !/.+@.+\..+/.test(emailEl.value)) { mark(emailEl, true); ok = false; }
       if (!ok) { (nameEl.value.trim() ? emailEl : nameEl).focus(); return; }
 
-      // honeypot — if a bot filled the hidden field, fake success and send nothing
+      // honeypot - if a bot filled the hidden field, fake success and send nothing
       var hp = cform.querySelector('[name="company_website"]');
       if (hp && hp.value) { cform.classList.add('sent'); return; }
 
@@ -374,7 +374,7 @@
 
       // No endpoint configured yet → demo success (dev only)
       if (!/^https:\/\//.test(endpoint)) {
-        console.warn('[Elyx] window.ELYX_CONTACT_ENDPOINT is not set — showing demo success without sending. See backend/SETUP.md.');
+        console.warn('[Elyx] window.ELYX_CONTACT_ENDPOINT is not set - showing demo success without sending. See backend/SETUP.md.');
         cform.classList.add('sent');
         sentEvent();
         return;
@@ -397,7 +397,7 @@
         .catch(function () {
           submitBtn.disabled = false;
           submitBtn.innerHTML = original;
-          setError('Something went wrong — please email us at ' + ((window.ELYX && window.ELYX.email) || 'hello@elyxsolutions.in') + '.');
+          setError('Something went wrong - please email us at ' + ((window.ELYX && window.ELYX.email) || 'support.elyxsolutions@gmail.com') + '.');
         });
     });
 
@@ -407,7 +407,7 @@
   }
 
   /* ---------------------------------------------------------
-     TOOLS — physics playground (logos fall + cursor repel)
+     TOOLS - physics playground (logos fall + cursor repel)
      Uses Matter.js (loaded on work.html). DOM badges are synced
      to physics bodies; graceful fallbacks if anything is missing.
   --------------------------------------------------------- */
@@ -457,7 +457,7 @@
       return { el: b, r: s / 2 };
     });
 
-    // walls (thick, static) — floor + sides
+    // walls (thick, static) - floor + sides
     var t = 240;
     var wallOpt = { isStatic: true, restitution: 0.4 };
     var floor = M.Bodies.rectangle(W / 2, H + t / 2 - 1, W + t * 2, t, wallOpt);
@@ -465,7 +465,7 @@
     var right = M.Bodies.rectangle(W + t / 2 - 1, H / 2, t, H * 4, wallOpt);
     M.World.add(world, [floor, left, right]);
 
-    // bodies — start above the stage, staggered, so they fall in
+    // bodies - start above the stage, staggered, so they fall in
     var bodies = meta.map(function (m, i) {
       var x = m.r + 20 + Math.random() * Math.max(1, (W - m.r * 2 - 40));
       var y = -80 - Math.random() * 700;
@@ -480,7 +480,7 @@
     });
     M.World.add(world, bodies);
 
-    // cursor repulsion — logos scatter away from the pointer (no dragging)
+    // cursor repulsion - logos scatter away from the pointer (no dragging)
     var ptr = { x: -9999, y: -9999, active: false };
     function setPtr(e) {
       var rect = stage.getBoundingClientRect();

@@ -4,7 +4,7 @@ seo_title: Multi-Tenant Architecture Explained for Founders
 slug: multi-tenant-architecture-explained
 category: saas
 description: Multi-tenant architecture explained for founders: shared vs separate databases, how data isolation works and what each choice costs to run and change.
-date: 2026-11-17
+date: 2026-11-16
 author: shreyasmv
 ---
 Multi-tenant architecture explained in one line: one running copy of a software product serves many customers, called tenants, and the code keeps each tenant's data apart from every other tenant's. Most SaaS products work this way because sharing servers and code makes each extra customer cheap to add. The qualification a founder needs is that "keeping data apart" can be done at three depths, and the cheapest depth is safe only if the application checks the tenant on every request.

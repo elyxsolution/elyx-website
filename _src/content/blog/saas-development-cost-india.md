@@ -3,7 +3,7 @@ title: SaaS MVP Cost in India: What a Founder Should Budget
 slug: saas-development-cost-india
 category: pricing-hiring
 description: SaaS development cost India in 2026: sourced MVP ranges in lakh, auth, billing and dashboard costs, what to cut from v1 and a 12-month budget.
-date: 2026-11-17
+date: 2026-11-14
 author: shreyasmv
 ---
 SaaS development cost India in 2026: agencies publish about 3 to 10 lakh for a lean MVP and 12 to 35 lakh for a first version you can charge for, and the studio's own draft range for a SaaS MVP is {{price:saas}}. The gap between those tiers comes from scope, not from hourly rates: self-serve sign-up, subscription billing, team roles and an admin panel make up roughly half of a build. The qualification that matters is that every figure here is an asking price from a vendor, so budget the build plus a year of upkeep, and compare quotes line by line.

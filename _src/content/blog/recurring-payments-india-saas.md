@@ -4,7 +4,7 @@ seo_title: Recurring Payments for SaaS in India: UPI, GST, Stripe
 slug: recurring-payments-india-saas
 category: saas
 description: Recurring payments for India SaaS: RBI e-mandate rules, UPI AutoPay limits, failed-payment recovery, GST invoices and a dated Razorpay vs Stripe check.
-date: 2026-11-17
+date: 2026-11-16
 author: shreyasmv
 ---
 Recurring payments for an India SaaS run on an e-mandate: the customer approves the first charge with extra authentication, and the bank then sends a notice at least 24 hours before every later debit. Under the RBI's April 2026 framework, a charge above 15 thousand rupees needs fresh authentication each time, so annual plans and large upgrades cannot renew silently. The honest qualification is that this page rests on the RBI's own text, Stripe's documentation and vendor blogs, with no Razorpay documentation and no GST primary source, so those parts say what is missing.

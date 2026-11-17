@@ -66,7 +66,7 @@ function homeIndustries() {
   const industries = require('./data/industries');
   return `<section class="pg pg--industries" id="industries" data-screen-label="Industries">
   <div class="pg__in">
-    <div class="pg__head reveal"><span class="eyebrow">04 — Built for your trade</span><h2 class="h2-sm tr">A website for <span class="serif-i">your kind</span> of business.</h2><p class="lead">Clinics, coaching centres, restaurants, salons, real estate, CA and law firms: each page shows what a site for that trade really needs, with starting prices.</p></div>
+    <div class="pg__head reveal"><span class="eyebrow">04. Built for your trade</span><h2 class="h2-sm tr">A website for <span class="serif-i">your kind</span> of business.</h2><p class="lead">Clinics, coaching centres, restaurants, salons, real estate, CA and law firms: each page shows what a site for that trade really needs, with starting prices.</p></div>
     <div class="tilegrid reveal">${industries.map((it) => `<a class="tcard" href="/websites-for/${it.slug}/"><span class="tcard__ic">${chrome.svg24(it.icon)}</span><h3>${it.name.replace(/&/g, '&amp;')}</h3><p>${it.short.replace(/&/g, '&amp;')} · from ₹9,999</p><span class="tcard__more">See the page ${chrome.ARROW}</span></a>`).join('')}</div>
   </div>
 </section>`;
@@ -152,7 +152,7 @@ HAND.forEach((h) => {
 const order = sitemapEntries.sort((a, b) => (a.url === '/' ? -1 : b.url === '/' ? 1 : a.url.localeCompare(b.url)));
 write('sitemap.xml', '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
   order.map((e) => `  <url>\n    <loc>${abs(e.url)}</loc>\n    <lastmod>${e.lastmod}</lastmod>\n    <changefreq>${e.changefreq}</changefreq>\n    <priority>${e.priority}</priority>\n  </url>`).join('\n') + '\n</urlset>\n');
-write('robots.txt', `# robots.txt — Elyx Solutions\nUser-agent: *\nAllow: /\nDisallow: /_src/\nDisallow: /404.html\n\nSitemap: ${abs('/sitemap.xml')}\n`);
+write('robots.txt', `# robots.txt, Elyx Solutions\nUser-agent: *\nAllow: /\nDisallow: /_src/\nDisallow: /404.html\n\nSitemap: ${abs('/sitemap.xml')}\n`);
 write('blog/feed.xml', blog.feedXml(ctx));
 fs.writeFileSync(LEDGER_FILE, JSON.stringify(ledger, null, 2));
 

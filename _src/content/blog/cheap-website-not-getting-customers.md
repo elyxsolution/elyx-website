@@ -3,7 +3,7 @@ title: Why Your ₹5,000 Website Isn't Getting You Customers
 slug: cheap-website-not-getting-customers
 category: pricing-hiring
 description: Cheap website not getting customers? Seven sourced causes, a visitors-to-customers worked example, a fix-or-rebuild rule and a checklist for Indian owners.
-date: 2026-11-17
+date: 2026-11-14
 author: shreyasmv
 ---
 A cheap website not getting customers usually fails for reasons that have little to do with the price: it loads slowly on a phone, gives the visitor no clear next step, and does not appear for local searches. The five practitioner pages we read name those same causes, plus too few real visitors and no tracking. The honest qualification is that none of them tests sites at this price, so the figure in the title is a prompt to audit your site, not a verdict on it.

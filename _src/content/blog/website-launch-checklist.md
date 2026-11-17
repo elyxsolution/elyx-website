@@ -4,7 +4,7 @@ seo_title: Website Launch Checklist: 40 Checks Before You Go Live
 slug: website-launch-checklist
 category: websites
 description: A 40-point website launch checklist for Indian businesses: SEO, analytics, forms, legal pages, backups and speed, plus a dated go-live schedule.
-date: 2026-11-17
+date: 2026-11-16
 author: shreyasmv
 ---
 A website launch checklist is the list of checks you finish on a staging copy, on the day of the switch and in the first week, so that forms, tracking, redirects and search settings work when real visitors arrive. The 40 checks below cover content, forms, speed, SEO, analytics, legal pages and backups, with a dated schedule for the go-live week. The honest qualification is that every source I used is a vendor or practitioner guide, with no Google or regulator document among them, so the search items are common practice, not rules.

@@ -4,7 +4,7 @@ seo_title: Website Requirements Template: Free Brief for Owners
 slug: website-requirements-template
 category: pricing-hiring
 description: A free website requirements template to copy into Google Docs or Word: five parts, a filled example and the answers that move your quote.
-date: 2026-11-17
+date: 2026-11-14
 author: shreyasmv
 ---
 A website requirements template is a short form that makes you write down what the site is for, who it serves, which pages and features it needs, what you will supply and what you can spend, before anyone designs a screen. The five-part template below is built for an Indian small business, and a filled example sits beside every question. The honest qualification is that the sources I read are practitioner guides and one public-sector document, with no data showing that a brief cuts cost or delay, so that benefit rests on their reasoning and my reading.

@@ -42,7 +42,7 @@ module.exports = [
       { n: '1', u: ' tap', l: 'To start a WhatsApp booking' }
     ],
     quote: {
-      text: 'Elyx didn\'t just build our platform — they understood the business behind it. We shipped in eight weeks what two prior agencies couldn\'t in a year.',
+      text: 'Elyx didn\'t just build our platform, they understood the business behind it. We shipped in eight weeks what two prior agencies couldn\'t in a year.',
       name: 'Dr Hemalatha',
       role: 'Co-Founder, Ashirwad Dental Clinics'
     },
@@ -82,7 +82,7 @@ module.exports = [
     timelineTotal: '',
     metrics: [],
     quote: {
-      text: 'The most reliable technical partner we\'ve had. Things just work — and when they don\'t, they\'re already on it.',
+      text: 'The most reliable technical partner we\'ve had. Things just work, and when they don\'t, they\'re already on it.',
       name: 'Pinnacle Inc.',
       role: 'GRE & IELTS coaching'
     },

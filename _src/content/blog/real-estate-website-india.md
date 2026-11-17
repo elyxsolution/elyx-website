@@ -4,7 +4,7 @@ seo_title: Real Estate Website India: Listings, Leads and RERA
 slug: real-estate-website-india
 category: industries
 description: Real estate website India guide: project pages, virtual tours, lead routing and the RERA details to show, with what the research could not confirm.
-date: 2026-11-16
+date: 2026-11-12
 author: shreyasmv
 industry: real-estate
 ---

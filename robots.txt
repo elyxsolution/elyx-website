@@ -1,4 +1,4 @@
-# robots.txt — Elyx Solutions
+# robots.txt, Elyx Solutions
 User-agent: *
 Allow: /
 Disallow: /_src/

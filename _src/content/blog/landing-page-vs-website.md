@@ -3,7 +3,7 @@ title: Landing Page or Full Website: Which Should You Build First?
 slug: landing-page-vs-website
 category: websites
 description: Landing page vs website for an Indian business: use cases, budgets, ad campaigns and when to expand, with dated prices and a decision table.
-date: 2026-11-17
+date: 2026-11-15
 author: rahulc
 ---
 Landing page vs website comes down to one question: where will your first visitors come from? Build a landing page first when one ad, message or QR code sends one audience to one action, and build a website first when people must find you by searching, compare you with others or check who is behind the business. The honest qualification is that every source I read is a vendor or practitioner page, and none tests results at Indian prices, so the decision rules below are my reading of their reasoning.

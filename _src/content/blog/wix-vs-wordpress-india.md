@@ -4,7 +4,7 @@ seo_title: Wix vs WordPress India: 3-Year Cost and When to Switch
 slug: wix-vs-wordpress-india
 category: websites
 description: Wix vs WordPress India, plus a custom site: a three-year cost in rupees from sources that disagree, where builders hit limits and when to switch.
-date: 2026-11-17
+date: 2026-11-15
 author: rahulc
 ---
 Wix vs WordPress India comes down to this: Wix is the faster start for a small brochure site you will edit yourself, self-hosted WordPress is cheaper to run over three years and easier to leave, and a custom website suits a business that has outgrown both. The qualification that matters is price, because the two sources I read that price Wix for India put its plans roughly six times apart. The table below shows both and tells you how to settle it at Wix's own checkout.

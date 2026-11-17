@@ -1,5 +1,5 @@
 /* ============================================================
-   Elyx Solutions — free tools (cost calculator, launch checklist,
+   Elyx Solutions - free tools (cost calculator, launch checklist,
    Google Business Profile checker). No dependencies.
    ============================================================ */
 (function () {

@@ -3,7 +3,7 @@ title: What Are AI Agents? A Plain-English Guide for Business Owners
 slug: what-are-ai-agents
 category: ai
 description: What are AI agents? Four sourced definitions, real examples, a hype test and a first-task checklist for Indian business owners. Facts dated Nov 2026.
-date: 2026-11-16
+date: 2026-11-12
 author: shreyasmv
 ---
 What are AI agents? An AI agent is software that takes a goal you set, breaks it into steps, uses tools such as your calendar, inbox or database to carry those steps out, and checks its own result along the way. A chatbot answers; an agent acts. The honest qualification is that today's agents still need a human to set the goal, limit the access and approve anything risky, so most of the promise on vendor pages is ahead of what a small business should hand over.

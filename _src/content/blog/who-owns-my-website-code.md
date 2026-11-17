@@ -4,7 +4,7 @@ seo_title: Who Owns My Website Code? Domain, Hosting and Logins
 slug: who-owns-my-website-code
 category: pricing-hiring
 description: Who owns my website code, domain and content? A sourced India checklist of ownership traps, lock-in signs and the handover list to ask for.
-date: 2026-11-17
+date: 2026-11-15
 author: rahulc
 ---
 Who owns my website code? Whoever your written agreement and the account names say owns it, which is not always the person who paid. Paying a developer does not by itself move the domain, hosting, code or logins into your name, and in India an outside developer may keep the rights in the code they wrote unless they assign them to you in writing. The honest qualification is that this page rests on five practitioner pages and one Google help page, not on a lawyer's view, so have a lawyer read your own contract.

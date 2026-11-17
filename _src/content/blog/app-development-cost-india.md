@@ -3,7 +3,7 @@ title: How Much Does It Cost to Build an App in India?
 slug: app-development-cost-india
 category: pricing-hiring
 description: App development cost India by app type, with cross-platform savings, store fees and maintenance, compared across nine agency pages read in Nov 2026.
-date: 2026-11-17
+date: 2026-11-14
 author: shreyasmv
 ---
 App development cost in India runs from about ₹0.5 lakh for a very simple app to ₹1 crore or more for a complex platform, according to nine agency pages read on 17 November 2026. The pages disagree sharply, so the honest answer is a band tied to scope, not a single price. For a cross-platform iOS and Android app, the draft range on this site is {{price:mobile}}, indicative and never a quote, and a fixed quote is confirmed in writing after a call with [Elyx Solutions](/services/app-development/).

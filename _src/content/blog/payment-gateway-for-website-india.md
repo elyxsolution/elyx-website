@@ -4,7 +4,7 @@ seo_title: Payment Gateway for Website India: Fees, UPI, Settlement
 slug: payment-gateway-for-website-india
 category: websites
 description: Payment gateway for website India: Razorpay, Cashfree, PhonePe and PayU compared on fees, UPI, settlement and sign-up documents, as read in November 2026.
-date: 2026-11-17
+date: 2026-11-16
 author: shreyasmv
 ---
 The right payment gateway for a website in India is the one whose written quote gives the lowest total cost for your payment mix, pays out on a schedule you can plan around, and signs up your type of business. As of November 2026, Razorpay lists 2% plus 18% GST, Cashfree advertised 1.6% to new merchants for up to 12 months, and PayU lists 2% or 3% by payment method. The honest qualification is that most sources here are the gateways' own pages, and none of them documents Stripe, so this page cannot rate it.

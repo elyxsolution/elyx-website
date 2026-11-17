@@ -4,7 +4,7 @@ seo_title: Restaurant Website India: Is Swiggy and Zomato Enough?
 slug: restaurant-website-india
 category: industries
 description: Restaurant website India guide: aggregator commission worked out with your own rate, plus menus, reservations, WhatsApp and Google Maps.
-date: 2026-11-17
+date: 2026-11-12
 author: shreyasmv
 ---
 Yes, a restaurant website in India is still worth having if you are on Swiggy and Zomato, but a small one, because the apps rent you customers while your own site is where regulars reach you without paying commission. The honest qualification is that no source we read states a commission rate, so this article gives you a formula to run on your own contract. Mantis, a vendor of restaurant data, says Indian restaurants lean on Zomato and Swiggy for discovery and pay for it in commission, and that a direct ordering page on their own site is still uncommon.

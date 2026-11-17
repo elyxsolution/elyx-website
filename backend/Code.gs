@@ -1,5 +1,5 @@
 /**
- * Elyx Solutions — Contact form backend (Google Apps Script)
+ * Elyx Solutions - Contact form backend (Google Apps Script)
  * --------------------------------------------------------------
  * Receives a POST from the website contact form, appends the
  * submission to a Google Sheet, and emails a notification.
@@ -8,7 +8,7 @@
  */
 
 // ----------------------------- CONFIG -----------------------------
-var NOTIFY_EMAIL = 'hello@elyxsolutions.in'; // where notifications are sent
+var NOTIFY_EMAIL = 'support.elyxsolutions@gmail.com'; // where notifications are sent
 var SHEET_NAME   = 'Submissions';            // tab name inside the sheet
 var HEADERS      = ['Timestamp', 'Name', 'Email', 'Company', 'Service', 'Message', 'How found us', 'Source article', 'Landing page', 'Calculator estimate'];
 var SHEET_ID     = '';                        // optional: paste a Sheet ID to target a specific spreadsheet
@@ -58,7 +58,7 @@ function doPost(e) {
   }
 }
 
-// Visiting the Web App URL in a browser hits this — handy health check.
+// Visiting the Web App URL in a browser hits this - handy health check.
 function doGet() {
   return _json({ ok: true, service: 'Elyx contact form', usage: 'POST form-encoded data to submit.' });
 }
@@ -69,16 +69,16 @@ function _sheet() {
 }
 
 function _notify(name, email, company, service, message, howFound, sourceArticle, estimate) {
-  var subject = 'New enquiry — ' + name + (company ? ' (' + company + ')' : '');
+  var subject = 'New enquiry - ' + name + (company ? ' (' + company + ')' : '');
   var rows = [
     ['Name', name],
     ['Email', email],
-    ['Company', company || '—'],
-    ['Service', service || '—'],
-    ['Message', message || '—'],
-    ['How they found us', howFound || '—'],
-    ['Article they read', sourceArticle || '—'],
-    ['Calculator estimate', estimate || '—']
+    ['Company', company || ' - '],
+    ['Service', service || ' - '],
+    ['Message', message || ' - '],
+    ['How they found us', howFound || ' - '],
+    ['Article they read', sourceArticle || ' - '],
+    ['Calculator estimate', estimate || ' - ']
   ];
   var html = '<div style="font-family:Arial,Helvetica,sans-serif;font-size:15px;color:#0b1024;line-height:1.5">'
     + '<h2 style="margin:0 0 14px;font-size:18px">New contact form enquiry</h2>'

@@ -1,5 +1,5 @@
 /* ============================================================
-   Elyx Solutions — event tracking
+   Elyx Solutions - event tracking
    GA4 events: card_click, whatsapp_click, call_click, call_booked,
    form_submit, cta_click, calculator_estimate. Every event carries the
    article slug (when the visitor is on an article) and the page path, so

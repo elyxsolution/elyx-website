@@ -4,7 +4,7 @@ seo_title: Website Hidden Costs: Domain, Hosting, Email and SSL
 slug: website-hidden-costs
 category: pricing-hiring
 description: Website hidden costs line by line: domain, hosting, email, SSL, plugins and upkeep, with a sourced year-two budget and who should own each account.
-date: 2026-11-17
+date: 2026-11-14
 author: shreyasmv
 ---
 Website hidden costs are the recurring bills that a build quote does not list: domain and hosting renewals, business email, paid licences, backups and the hours of upkeep that begin the day the site goes live. In the sources read for this page, hosting and domain deals are sold at an introductory price that rises at renewal, and most quotes cover the build only. The honest qualification is that every figure below comes from vendors in the US, UK, Europe or Malaysia, in dollars, pounds or euros, so use them to see the shape of the bill and get each renewal price in rupees, in writing, before you sign.

@@ -3,7 +3,7 @@ title: 9 Signs Your Business Website Needs a Redesign
 slug: when-to-redesign-a-website
 category: websites
 description: When to redesign a website: nine signs with a test for each, a refresh, revamp or rebuild table, and steps that help protect your Google rankings.
-date: 2026-11-17
+date: 2026-11-15
 author: rahulc
 ---
 When to redesign a website comes down to one test: a problem you can measure keeps costing you enquiries, and a smaller fix has not removed it. The nine signs below are slow pages, a broken phone layout, visitors who do not enquire, a dated look, a site you cannot edit, old software, a changed business, falling search traffic and complaints. The honest qualification is that the five pages I read are written by firms that sell design, builders or agency services, and none is Indian, so the counting rule here is my reading, not a sourced benchmark.

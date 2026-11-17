@@ -154,7 +154,7 @@ function footer() {
           </svg>
           <span class="brand__name">Elyx</span>
         </a>
-        <p class="footer__lede">Beyond just presence — we build digital <span class="serif-i" style="color:var(--blue)">value.</span></p>
+        <p class="footer__lede">Beyond just presence, we build digital <span class="serif-i" style="color:var(--blue)">value.</span></p>
       </div>
       <div class="fcol">
         <h4>Services</h4>

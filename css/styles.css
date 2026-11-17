@@ -1,5 +1,5 @@
 /* ============================================================
-   Elyx Solutions — homepage styles
+   Elyx Solutions - homepage styles
    Type: Newsreader (serif, italic accents) + Helvetica/system sans
    Color: cool-white page, blue-black ink, royal blue accent
    ============================================================ */
@@ -141,7 +141,7 @@ section { position: relative; }
   transform: translateY(-140%);
 }
 
-/* centred pill — hugs just the links */
+/* centred pill - hugs just the links */
 .nav {
   background: rgba(255,255,255,0.78);
 
@@ -179,7 +179,7 @@ section { position: relative; }
   -webkit-backdrop-filter: saturate(160%) blur(16px);
 }
 
-/* brand (top-left) sits free — integrated, no pill. CTA (top-right) outside the pill */
+/* brand (top-left) sits free - integrated, no pill. CTA (top-right) outside the pill */
 .nav__brand {
   position: absolute;
   left: clamp(20px, 4vw, 48px);
@@ -308,7 +308,7 @@ section { position: relative; }
 .mtile:hover .mtile__ic { background: var(--blue); color: #fff; }
 .mtile__ic svg { width: 19px; height: 19px; }
 .mtile__t { font-family: var(--sans); font-weight: 550; font-size: 14.5px; color: var(--ink); letter-spacing: -0.01em; }
-.mtile__d { display: none; } /* descriptions hidden — minimal icon + title tiles */
+.mtile__d { display: none; } /* descriptions hidden - minimal icon + title tiles */
 
 .mega-feature {
   position: relative; border-radius: 16px; overflow: hidden;
@@ -333,7 +333,7 @@ section { position: relative; }
 .wcard__t { font-family: var(--sans); font-weight: 550; font-size: 14px; letter-spacing: -0.01em; }
 .wcard__c { font-family: var(--sans); font-size: 12px; color: var(--ink-faint); margin-top: 2px; }
 
-/* work mega — services-style split: quick-link tiles + compact cards */
+/* work mega - services-style split: quick-link tiles + compact cards */
 .mega-grid--work { grid-template-columns: 1fr 1.6fr; align-items: center; }
 .mega-wlinks { display: flex; flex-direction: column; gap: 6px; }
 .mega-wlinks .mtile { padding: 14px 12px; }
@@ -700,7 +700,7 @@ section { position: relative; }
 }
 
 /* ============================================================
-   PAGE HERO (interior pages — services, about, etc.)
+   PAGE HERO (interior pages - services, about, etc.)
    ============================================================ */
 .page-hero {
   position: relative; overflow: hidden;
@@ -879,7 +879,7 @@ section { position: relative; }
 .tcard__n { font-family: var(--sans); font-weight: 600; font-size: 16px; margin-top: 16px; letter-spacing: -0.01em; }
 .tcard__r { font-family: var(--sans); font-size: 13.5px; color: var(--ink-faint); margin-top: 3px; }
 
-/* combined founders feature — single group photo + merged categories */
+/* combined founders feature - single group photo + merged categories */
 .founders { max-width: 760px; margin: 52px auto 0; }
 .founders__photo {
   aspect-ratio: 3 / 2; border-radius: var(--r); overflow: hidden;
@@ -1046,7 +1046,7 @@ section { position: relative; }
 }
 
 /* ============================================================
-   TOOLS WE USE — floating logo physics playground
+   TOOLS WE USE - floating logo physics playground
    ============================================================ */
 .tools {
   position: relative; overflow: hidden;
@@ -1070,7 +1070,7 @@ section { position: relative; }
 .tools__sub { font-family: var(--sans); font-size: clamp(15px, 1.3vw, 18px);
   color: rgba(255,255,255,0.55); margin: 20px auto 0; max-width: 46ch; line-height: 1.55; }
 
-/* the field — physics playground (logos fall + drag) */
+/* the field - physics playground (logos fall + drag) */
 .tools__phys {
   position: relative; z-index: 2; width: 100%;
   height: clamp(440px, 56vh, 600px);

@@ -4,7 +4,7 @@ seo_title: Fixed Price vs Hourly Development: How Contracts Work
 slug: fixed-price-vs-hourly-development
 category: pricing-hiring
 description: Fixed price vs hourly development explained: how fixed, hourly and retainer contracts work, who carries the risk, and how a 50/50 payment split fits.
-date: 2026-11-17
+date: 2026-11-14
 author: shreyasmv
 ---
 Fixed price vs hourly development comes down to one question: who pays when the work takes longer than planned. On a fixed-price contract you agree the scope and the total before work starts, and the developer absorbs overruns. On hourly billing you pay for the hours worked and carry that risk yourself. The qualification that matters is that a fixed price is only fixed for the written scope, so the contract wording counts for more than the label.

@@ -4,7 +4,7 @@ seo_title: Small Business Website Cost in India: 10k, 30k, 1 Lakh
 slug: small-business-website-cost-india
 category: pricing-hiring
 description: Small business website cost India: what 10k, 30k and 1 lakh buy side by side, what GST takes out, running costs and where cheap quotes cut corners.
-date: 2026-11-16
+date: 2026-11-13
 author: shreyasmv
 ---
 Small business website cost in India runs from about 7.5k for a basic few-page site to 1.5 lakh for a custom-designed business site, according to the vendor price lists read for this article on 16 November 2026. What you pay decides how many pages you get, who writes them and whether search setup and tracking are included. The qualification is that every figure comes from a vendor selling websites, and 18% GST is often charged on top.

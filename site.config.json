@@ -1,8 +1,8 @@
 {
-  "_readme": "Single source of truth for contact details, tracking and authors. Edit this file, then run:  node _src/build.js   (see _src/README.md). Empty values are simply left out of the site — nothing breaks.",
+  "_readme": "Single source of truth for contact details, tracking and authors. Edit this file, then run:  node _src/build.js   (see _src/README.md). Empty values are simply left out of the site - nothing breaks.",
   "domain": "https://elyxsolutions.in",
   "name": "Elyx Solutions",
-  "email": "hello@elyxsolutions.in",
+  "email": "support.elyxsolutions@gmail.com",
   "phone": "+91 96117 29733",
   "phoneSecondary": "+91 72047 23340",
   "whatsapp": "919611729733",

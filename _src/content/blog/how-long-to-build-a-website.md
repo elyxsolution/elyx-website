@@ -4,7 +4,7 @@ seo_title: How Long to Build a Website: Timelines by Project Type
 slug: how-long-to-build-a-website
 category: pricing-hiring
 description: How long to build a website: timelines for landing pages, business sites, stores and apps, why they differ, and what delays a launch.
-date: 2026-11-17
+date: 2026-11-15
 author: rahulc
 ---
 How long to build a website depends mostly on scope and on how quickly you supply content. On this site's draft price data, a landing page takes {{weeks:landing}}, a business website {{weeks:website}} and an e-commerce store or custom web app {{weeks:ecommerce}}. Published guides from Elementor and Forbes Advisor give similar or longer ranges, and all of them assume you are not the bottleneck: late copy, photos and approvals stop the clock.

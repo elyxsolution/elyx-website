@@ -4,7 +4,7 @@ seo_title: Travel Agency Website: Itineraries, Payments, Galleries
 slug: travel-agency-website
 category: industries
 description: A travel agency website for Indian trek operators: itinerary pages, bookings, payments, galleries, post-trip upsells and the Malnad Stories build.
-date: 2026-11-16
+date: 2026-11-13
 author: shreyasmv
 case: malnad-stories
 ---

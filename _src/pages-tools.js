@@ -127,7 +127,7 @@ ${S.ctaSection()}`
     </div>
     <aside class="calc__result" aria-live="polite">
       <span class="calc__k">Indicative estimate</span>
-      <div class="calc__range-out" id="calcOut">—</div>
+      <div class="calc__range-out" id="calcOut">-</div>
       <div class="calc__meta"><span id="calcWeeks"></span></div>
       <p class="calc__note">${esc(pricing.gstNote)} A starting point, not a quote.</p>
       <a class="btn btn--blue" id="calcSend" href="/contact.html" data-track="cta_click" data-pos="calculator">Send this estimate to Elyx ${chrome.ARROW}</a>
