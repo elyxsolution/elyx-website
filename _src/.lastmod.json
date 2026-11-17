@@ -1,7 +1,7 @@
 {
   "/services/web-development/": {
-    "hash": "f77a87913fbefc95d2ef432ab0560b1d",
-    "lastmod": "2026-11-16"
+    "hash": "7810e41c10ba7215d371d21515fc7523",
+    "lastmod": "2026-11-17"
   },
   "/services/saas-development/": {
     "hash": "843b20cf0509f60427a8a64f07a821aa",
@@ -52,8 +52,8 @@
     "lastmod": "2026-11-16"
   },
   "/work/pinnacle-inc/": {
-    "hash": "ae965f0d72269519ffb3c29096b4ebed",
-    "lastmod": "2026-11-16"
+    "hash": "b034f213341be76360208b1710b2a436",
+    "lastmod": "2026-11-17"
   },
   "/work/malnad-stories/": {
     "hash": "4cc39133a4d0a8f14b88dd57ec8a125a",
@@ -84,7 +84,7 @@
     "lastmod": "2026-11-16"
   },
   "/blog/": {
-    "hash": "7ebb2d321f4dd6070b3583808a5d8992",
+    "hash": "4a97ae85c7b1ab5ddb0fbb56358e0f84",
     "lastmod": "2026-11-17"
   },
   "/blog/category/industries/": {
@@ -168,8 +168,8 @@
     "lastmod": "2026-11-17"
   },
   "/blog/author/rahulc/": {
-    "hash": "1ea943d28b6bc2ebb97d8ca0787b19c6",
-    "lastmod": "2026-11-16"
+    "hash": "75b487de3b2fb6ca840910ed421420e8",
+    "lastmod": "2026-11-17"
   },
   "/blog/author/nawaz/": {
     "hash": "a699372200d5608ecd7f165e421f3c0e",
@@ -334,5 +334,9 @@
   "/blog/advocate-website-india/": {
     "hash": "a5162d090fcea457c724396c6a004fa6",
     "lastmod": "2026-11-16"
+  },
+  "/blog/landing-page-best-practices/": {
+    "hash": "e39965228804cb0031c944ddb9e8e9fd",
+    "lastmod": "2026-11-17"
   }
 }
