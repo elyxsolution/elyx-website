@@ -1,7 +1,7 @@
 {
   "/services/web-development/": {
-    "hash": "f77a87913fbefc95d2ef432ab0560b1d",
-    "lastmod": "2026-11-16"
+    "hash": "49fe5f396093480135dc9c37d715a75a",
+    "lastmod": "2026-11-17"
   },
   "/services/saas-development/": {
     "hash": "843b20cf0509f60427a8a64f07a821aa",
@@ -84,7 +84,7 @@
     "lastmod": "2026-11-16"
   },
   "/blog/": {
-    "hash": "7ebb2d321f4dd6070b3583808a5d8992",
+    "hash": "f9d5bf74120d5b077e4fbba730a02398",
     "lastmod": "2026-11-17"
   },
   "/blog/category/industries/": {
@@ -168,8 +168,8 @@
     "lastmod": "2026-11-17"
   },
   "/blog/author/rahulc/": {
-    "hash": "1ea943d28b6bc2ebb97d8ca0787b19c6",
-    "lastmod": "2026-11-16"
+    "hash": "8cc69af5001e13d1631ee3858197a51c",
+    "lastmod": "2026-11-17"
   },
   "/blog/author/nawaz/": {
     "hash": "a699372200d5608ecd7f165e421f3c0e",
@@ -334,5 +334,9 @@
   "/blog/advocate-website-india/": {
     "hash": "a5162d090fcea457c724396c6a004fa6",
     "lastmod": "2026-11-16"
+  },
+  "/blog/wix-vs-wordpress-india/": {
+    "hash": "08b38179e624d41386980fc2f8dad1d8",
+    "lastmod": "2026-11-17"
   }
 }
