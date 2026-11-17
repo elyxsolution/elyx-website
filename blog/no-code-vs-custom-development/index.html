@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>No-Code vs Custom Code for Your First SaaS</title>
+<meta name="description" content="No-code vs custom development for a first SaaS: where Bubble and Softr stop, when to migrate and a costed example with the arithmetic shown." />
+<link rel="canonical" href="https://elyxsolutions.in/blog/no-code-vs-custom-development/" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#080b1a" />
+<!-- Open Graph -->
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Elyx Solutions" />
+<meta property="og:title" content="No-Code vs Custom Code for Your First SaaS" />
+<meta property="og:description" content="No-code vs custom development for a first SaaS: where Bubble and Softr stop, when to migrate and a costed example with the arithmetic shown." />
+<meta property="og:url" content="https://elyxsolutions.in/blog/no-code-vs-custom-development/" />
+<meta property="og:image" content="https://elyxsolutions.in/og/blog-no-code-vs-custom-development.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:locale" content="en_IN" />
+<meta property="article:published_time" content="2026-11-17" />
+<meta property="article:modified_time" content="2026-11-17" />
+<meta property="article:section" content="SaaS &amp; MVP Building" />
+<meta property="article:author" content="https://elyxsolutions.in/blog/author/shreyasmv/" />
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="No-Code vs Custom Code for Your First SaaS" />
+<meta name="twitter:description" content="No-code vs custom development for a first SaaS: where Bubble and Softr stop, when to migrate and a costed example with the arithmetic shown." />
+<meta name="twitter:image" content="https://elyxsolutions.in/og/blog-no-code-vs-custom-development.png" />
+<!-- Icons -->
+<link rel="icon" href="../../favicon.svg" type="image/svg+xml" />
+<link rel="icon" href="../../icon-192.png" sizes="192x192" type="image/png" />
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500;1,6..72,600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../../css/styles.css" />
+<link rel="stylesheet" href="../../css/pages.css" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://elyxsolutions.in/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://elyxsolutions.in/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "No-Code vs Custom Code for Your First SaaS",
+          "item": "https://elyxsolutions.in/blog/no-code-vs-custom-development/"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://elyxsolutions.in/blog/no-code-vs-custom-development/#article",
+      "headline": "No-Code vs Custom Code for Your First SaaS",
+      "description": "No-code vs custom development for a first SaaS: where Bubble and Softr stop, when to migrate and a costed example with the arithmetic shown.",
+      "image": [
+        "https://elyxsolutions.in/og/blog-no-code-vs-custom-development.png"
+      ],
+      "datePublished": "2026-11-17",
+      "dateModified": "2026-11-17",
+      "author": {
+        "@type": "Person",
+        "@id": "https://elyxsolutions.in/blog/author/shreyasmv/#person",
+        "name": "Shreyas M V",
+        "url": "https://elyxsolutions.in/blog/author/shreyasmv/",
+        "sameAs": [
+          "https://www.linkedin.com/in/shreyas-m-v-311b99205/"
+        ]
+      },
+      "publisher": {
+        "@id": "https://elyxsolutions.in/#organization"
+      },
+      "mainEntityOfPage": "https://elyxsolutions.in/blog/no-code-vs-custom-development/",
+      "articleSection": "SaaS & MVP Building",
+      "inLanguage": "en-IN"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is no-code development?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No-code development is building software through visual, drag-and-drop tools without writing code, so business users can make working apps. ServiceNow contrasts it with low-code, which still expects some coding. The platform generates and hosts the underlying code for you."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is custom code?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Custom code is software written specifically for your product in standard frameworks, so you own it and can move it between developers and hosts. App369 and VibStack both describe it as full flexibility at the price of more time and ongoing maintenance."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is no-code cheaper than custom development?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No-code is cheaper to start and often dearer later. VibStack puts early platform bills at $50 to $500 a month and about $500 to $1,500 at 2,000 active users, and says the totals often cross within 12 to 24 months. App369 gives wider ranges, so run the worked example with your own numbers."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can Bubble handle a real SaaS product?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Bubble can run a real product at early scale, but the sources say limits appear under load. VibStack says most no-code platforms cope with hundreds to a few thousand active users before speed and cost worsen, and FiniteLoop says to test realistic volumes. Check Bubble's current workload limits before you rely on it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "When should I move off no-code?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Move when a measured trigger is hit: the platform bill nears a custom running cost, core workflows need workarounds, you refuse customer requests, or you cannot answer security questions. VibStack says this usually lands 12 to 24 months in, and Eltherion says several signs together justify a rebuild."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I export a no-code app as code?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Usually not. App369 says most no-code platforms do not export application code, though FlutterFlow can export Flutter code. Customer Impact says Webflow's code export needs a paid Workspace plan and omits CMS content, so check export terms before you build."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will investors take a no-code MVP seriously?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The sources disagree. VibStack says seed investors expect ownable IP and scalable architecture, while FiniteLoop says most early-stage investors care more about evidence of demand than the build method."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does a no-code MVP take compared with custom code?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A no-code MVP takes about 1 to 8 weeks and a custom one about 6 weeks to 4 months, per App369 and VibStack. For comparison, the studio's draft timeline for a SaaS MVP is 8–16 weeks, agreed after discovery."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body data-article="no-code-vs-custom-development">
+<div class="grain"></div>
+<div class="nav-shell scrolled" id="navShell">
+  <a class="brand nav__brand" href="../../" aria-label="Elyx Solutions home">
+    <svg class="brand__mark" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+      <g transform="skewX(-10)">
+        <rect x="7" y="4" width="15" height="4.4" rx="1.2" fill="#1f4fd8"></rect>
+        <rect x="7" y="11.8" width="11" height="4.4" rx="1.2" fill="#0b1024"></rect>
+        <rect x="7" y="19.6" width="15" height="4.4" rx="1.2" fill="#1f4fd8"></rect>
+      </g>
+    </svg>
+    <span class="brand__name">Elyx</span>
+  </a>
+
+  <nav class="nav" id="nav" aria-label="Main">
+    <div class="nav__links" id="navLinks">
+      <div class="nav__item" data-menu="services"><button type="button">Services <svg class="caret" viewBox="0 0 10 10" fill="none"><path d="M1 3l4 4 4-4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button></div>
+      <div class="nav__item" data-menu="industries"><button type="button">Industries <svg class="caret" viewBox="0 0 10 10" fill="none"><path d="M1 3l4 4 4-4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button></div>
+      <div class="nav__item" data-menu="work"><button type="button">Work <svg class="caret" viewBox="0 0 10 10" fill="none"><path d="M1 3l4 4 4-4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button></div>
+      <div class="nav__item"><a href="../../blog/">Blog</a></div>
+      <div class="nav__item"><a href="../../about.html">About</a></div>
+      <div class="nav__item"><a href="../../contact.html">Contact</a></div>
+    </div>
+  </nav>
+
+  <div class="nav__right">
+    <a class="btn btn--primary nav__cta" href="../../contact.html" data-track="cta_click" data-pos="nav">Let's talk <svg class="arr" width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H4M10 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+    <button class="nav__burger" id="burger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <div class="mobile-menu__group">
+      <span class="mobile-menu__label">Services</span>
+      <a href="../../services/web-development/">Web Development</a>
+      <a href="../../services/saas-development/">SaaS Development</a>
+      <a href="../../services/app-development/">App Development</a>
+      <a href="../../services/seo-optimization/">SEO Optimization</a>
+      <a href="../../services/maintenance-care/">Maintenance &amp; Care</a>
+    </div>
+    <div class="mobile-menu__group">
+      <span class="mobile-menu__label">Websites for</span>
+      <a href="../../websites-for/dentists/">Dentists &amp; Clinics</a>
+      <a href="../../websites-for/coaching-centres/">Coaching Centres</a>
+      <a href="../../websites-for/restaurants-and-cafes/">Restaurants &amp; Cafés</a>
+      <a href="../../websites-for/salons-and-spas/">Salons &amp; Spas</a>
+      <a href="../../websites-for/real-estate/">Real Estate</a>
+      <a href="../../websites-for/ca-and-law-firms/">CA &amp; Law Firms</a>
+    </div>
+    <div class="mobile-menu__group">
+      <span class="mobile-menu__label">Company</span>
+      <a href="../../about.html">About</a>
+      <a href="../../work.html">Work</a>
+      <a href="../../pricing/">Pricing</a>
+      <a href="../../blog/">Blog</a>
+      <a href="../../tools/">Free tools</a>
+      <a href="../../contact.html">Contact</a>
+    </div>
+    <a class="btn btn--blue mobile-menu__cta" href="../../contact.html">Let's talk <svg class="arr" width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H4M10 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+  </div>
+
+  <!-- Mega panel -->
+  <div class="mega" id="mega">
+    <div class="mega__inner">
+      <div class="mega__panel" data-panel="services">
+        <div class="mega-grid">
+          <div class="mega-tiles"><a class="mtile" href="../../services/web-development/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M9 8l-4 4 4 4M15 8l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">Web Development</span></span></a><a class="mtile" href="../../services/saas-development/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M6 16a4 4 0 010-8 5 5 0 019.6-1.5A3.5 3.5 0 0118 16H6z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">SaaS Development</span></span></a><a class="mtile" href="../../services/app-development/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><rect x="7" y="3" width="10" height="18" rx="2.5" stroke="currentColor" stroke-width="1.6"></rect><path d="M11 18h2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg></span><span><span class="mtile__t">App Development</span></span></a><a class="mtile" href="../../services/seo-optimization/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><circle cx="10.5" cy="10.5" r="6" stroke="currentColor" stroke-width="1.6"></circle><path d="M15 15l5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg></span><span><span class="mtile__t">SEO Optimization</span></span></a><a class="mtile" href="../../services/maintenance-care/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M12 8v4l3 2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path><circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="1.6"></circle></svg></span><span><span class="mtile__t">Maintenance &amp; Care</span></span></a><a class="mtile" href="../../pricing/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M4 14l5-5 4 4 7-7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path><path d="M20 6v4h-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">Pricing</span></span></a></div>
+          <a class="mega-feature" href="../../pricing/">
+            <div class="ph-grid"></div>
+            <div class="mega-feature__k">Featured</div>
+            <div class="mega-feature__t">Simple pricing. Engagements start at ₹9,999.</div>
+            <div class="mega-feature__l">See pricing <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H4M10 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+          </a>
+        </div>
+      </div>
+
+      <div class="mega__panel" data-panel="industries">
+        <div class="mega-grid">
+          <div class="mega-tiles"><a class="mtile" href="../../websites-for/dentists/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M12 5c-2-1.5-6-1.5-6 2.5 0 3 1.5 4 1.5 7 0 2 .8 4.5 2 4.5s1.5-2 2.5-2 1.3 2 2.5 2 2-2.5 2-4.5c0-3 1.5-4 1.5-7C18 3.5 14 3.5 12 5z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">Dentists &amp; Clinics</span></span></a><a class="mtile" href="../../websites-for/coaching-centres/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M3 9l9-4 9 4-9 4-9-4z M7 11v4c0 1.5 2.2 3 5 3s5-1.5 5-3v-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">Coaching Centres</span></span></a><a class="mtile" href="../../websites-for/restaurants-and-cafes/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M7 3v8M5 3v5a2 2 0 004 0V3M7 11v10M17 3c-2 1.5-3 4-3 7h3v11" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">Restaurants &amp; Cafés</span></span></a><a class="mtile" href="../../websites-for/salons-and-spas/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><circle cx="6" cy="7" r="2.5" stroke="currentColor" stroke-width="1.6"></circle><circle cx="6" cy="17" r="2.5" stroke="currentColor" stroke-width="1.6"></circle><path d="M8 8.5L20 18M8 15.5L20 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg></span><span><span class="mtile__t">Salons &amp; Spas</span></span></a><a class="mtile" href="../../websites-for/real-estate/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M4 21V8l8-5 8 5v13M9 21v-6h6v6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">Real Estate</span></span></a><a class="mtile" href="../../websites-for/ca-and-law-firms/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M12 4v16M6 20h12M5 8h14M5 8l-2.5 6a3 3 0 005 0L5 8zM19 8l-2.5 6a3 3 0 005 0L19 8z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">CA &amp; Law Firms</span></span></a></div>
+          <a class="mega-feature" href="../../websites-for/">
+            <div class="ph-grid"></div>
+            <div class="mega-feature__k">Built for your trade</div>
+            <div class="mega-feature__t">What a site for your kind of business actually needs.</div>
+            <div class="mega-feature__l">All industries <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H4M10 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+          </a>
+        </div>
+      </div>
+
+      <div class="mega__panel" data-panel="work">
+        <div class="mega-grid mega-grid--work">
+          <div class="mega-wlinks">
+            <a class="mtile" href="../../work.html#tools"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.6"></circle><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5.1 5.1l2.1 2.1M16.8 16.8l2.1 2.1M18.9 5.1L16.8 7.2M7.2 16.8l-2.1 2.1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg></span><span><span class="mtile__t">Tools we use</span></span></a>
+            <a class="mtile" href="../../work.html#faq"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"></circle><path d="M9.6 9.2a2.5 2.5 0 014.7 1.1c0 1.6-2.3 2-2.3 3.6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path><circle cx="12" cy="16.6" r="0.7" fill="currentColor"></circle></svg></span><span><span class="mtile__t">FAQ about Elyx</span></span></a>
+            <a class="mtile" href="../../work.html"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="6.5" height="6.5" rx="1.6" stroke="currentColor" stroke-width="1.6"></rect><rect x="13.5" y="4" width="6.5" height="6.5" rx="1.6" stroke="currentColor" stroke-width="1.6"></rect><rect x="4" y="13.5" width="6.5" height="6.5" rx="1.6" stroke="currentColor" stroke-width="1.6"></rect><rect x="13.5" y="13.5" width="6.5" height="6.5" rx="1.6" stroke="currentColor" stroke-width="1.6"></rect></svg></span><span><span class="mtile__t">All projects</span></span></a>
+          </div>
+          <div class="mega-work"><a class="wcard" href="../../work/ashirwad-dental/"><div class="wcard__img ph wcard__img--dental"></div><div class="wcard__meta"><div class="wcard__t">Ashirwad Dental Clinic</div><div class="wcard__c">Web · Redesign</div></div></a><a class="wcard" href="../../work/pinnacle-inc/"><div class="wcard__img ph wcard__img--pinnacle"></div><div class="wcard__meta"><div class="wcard__t">Pinnacle Inc.</div><div class="wcard__c">Web · EdTech</div></div></a><a class="wcard" href="../../work/malnad-stories/"><div class="wcard__img ph wcard__img--malnad"></div><div class="wcard__meta"><div class="wcard__t">Malnad Stories</div><div class="wcard__c">E-commerce · Web App</div></div></a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<span id="top"></span>
+<main class="bl"><div class="bl__in">
+  <div class="bl__crumbs">
+    <a class="bl__back" href="../../blog/">← Back to Blog</a>
+    <nav aria-label="Breadcrumb"><ol><li><a href="../../">Home</a></li><li aria-hidden="true">/</li><li><a href="../../blog/">Blog</a></li><li aria-hidden="true">/</li><li aria-current="page">No-Code vs Custom Code for Your First SaaS</li></ol></nav>
+  </div>
+  <div class="bl__cols">
+    <article class="barticle" data-article="no-code-vs-custom-development">
+      <header>
+        <p class="bbyline">By <a class="bauthor" href="../../blog/author/shreyasmv/"><img class="bauthor__ph" src="../../uploads/authors/shreyasmv.jpg" alt="" width="24" height="24" loading="lazy" /><span>Shreyas M V</span></a><span aria-hidden="true">·</span><span>Published <time datetime="2026-11-17">17 November 2026</time></span><span aria-hidden="true">·</span><span>14 min read</span></p>
+        <h1>No-Code vs Custom Code for Your First SaaS</h1>
+        <p class="blead">No-code vs custom development for a first SaaS: where Bubble and Softr stop, when to migrate and a costed example with the arithmetic shown.</p>
+      </header>
+      <nav class="btoc" aria-label="Table of contents"><b>On this page</b><ol><li><a href="#no-code-vs-custom-development-what-the-terms-mean"><span>01</span>No-Code vs Custom Development: What The Terms Mean</a></li><li><a href="#no-code-vs-custom-development-side-by-side"><span>02</span>No-Code vs Custom Development Side By Side</a></li><li><a href="#bubble-and-softr-what-they-do-well-and-where-they-stop"><span>03</span>Bubble And Softr: What They Do Well And Where They Stop</a></li><li><a href="#when-to-choose-no-code-and-when-to-choose-custom-code"><span>04</span>When To Choose No-Code, And When To Choose Custom Code</a></li><li><a href="#real-costs-what-published-figures-say"><span>05</span>Real Costs: What Published Figures Say</a></li><li><a href="#worked-example-when-the-platform-bill-overtakes-the-build"><span>06</span>Worked Example: When The Platform Bill Overtakes The Build</a></li><li><a href="#when-to-migrate-from-no-code-to-custom-code"><span>07</span>When To Migrate From No-Code To Custom Code</a></li><li><a href="#the-hybrid-route-no-code-front-end-custom-back-end"><span>08</span>The Hybrid Route: No-Code Front End, Custom Back End</a></li><li><a href="#lock-in-shutdowns-and-who-owns-what"><span>09</span>Lock-In, Shutdowns And Who Owns What</a></li><li><a href="#a-go-or-no-go-checklist-before-you-pick-a-platform"><span>10</span>A Go Or No-Go Checklist Before You Pick A Platform</a></li><li><a href="#what-usually-goes-wrong"><span>11</span>What Usually Goes Wrong</a></li><li><a href="#what-to-do-next"><span>12</span>What To Do Next</a></li><li><a href="#sources"><span>13</span>Sources</a></li><li><a href="#faq"><span>14</span>Frequently asked questions</a></li></ol></nav>
+      <div class="prose">
+<p>No-code vs custom development for a first SaaS comes down to what you still have to learn. Choose no-code, such as Bubble, if the product is mostly sign-in, forms, lists and payments and your real question is whether anyone will pay; choose custom code if the software is the business. The qualification is that every source I read is a vendor or an agency selling one side, none publishes independent data, and the cost crossover swings from months to years depending on your inputs.</p>
+<ul><li><strong>Start no-code when</strong> you are testing demand: the sources put a first working version at days to eight weeks.</li><li><strong>Move to custom when</strong> the platform bill, the speed or a customer's request is what holds you back, not before.</li><li><strong>Real costs.</strong> In the worked example below, a custom build pays back in anything from 7 to 75 months, depending on three inputs.</li><li><strong>Plan the exit on day one.</strong> Keep your data exportable, write the business rules down and set a trigger in advance.</li></ul>
+<h2 id="no-code-vs-custom-development-what-the-terms-mean">No-Code vs Custom Development: What The Terms Mean</h2>
+<p>No-code builds software through visual tools with no programming, low-code lets developers add code where the tool falls short, and custom development means writing the product in code you control. ServiceNow says low-code targets developers and no-code targets business users, and Google Cloud rates customisation as moderate for no-code and high for low-code (both read on 17 November 2026). SAP calls hand-written development &quot;pro-code&quot;.</p>
+<p>Custom code is software written for your product in a standard framework, so you can change developers or hosts without a rebuild, per App369. AI app builders add a fourth route: describe the app in a prompt and receive working software. Appfarm says such apps still need judging on maintainability and whether they can safely become production software.</p>
+<h2 id="no-code-vs-custom-development-side-by-side">No-Code vs Custom Development Side By Side</h2>
+<p>Seven criteria decide this choice: speed, upfront cost, flexibility, scale, ownership, upkeep and hiring. I took them from VibStack's comparison, read on 17 November 2026, and added timelines from App369.</p>
+<div class="prose-table"><table><thead><tr><th>Criterion</th><th>No-code</th><th>Custom</th><th>Ahead</th></tr></thead><tbody><tr><td>Speed to first version</td><td>1 to 8 weeks</td><td>6 weeks to 4 months</td><td>No-code</td></tr><tr><td>Upfront cost</td><td>$50 to $500 a month, plus your time</td><td>$5,000 and up</td><td>No-code</td></tr><tr><td>Flexibility</td><td>The platform's blocks and plugins</td><td>Anything that can be coded</td><td>Custom</td></tr><tr><td>Scale</td><td>Slows past a few thousand active users</td><td>Designed to your load</td><td>Custom</td></tr><tr><td>Ownership</td><td>App logic stays on the platform</td><td>You own the code</td><td>Custom</td></tr><tr><td>Early upkeep</td><td>Platform handles hosting and patches</td><td>Needs developer attention</td><td>No-code</td></tr><tr><td>Hiring</td><td>Platform specialists are rarer</td><td>Standard skills, easy to hire</td><td>Custom</td></tr></tbody></table></div>
+<p>No-code leads on speed, upfront cost and early upkeep, and custom leads on the other four. The sources agree on direction and disagree on numbers, and several cells are agency opinion rather than measurement, so test any limit with your own data volumes, as Eltherion advises.</p>
+<h2 id="bubble-and-softr-what-they-do-well-and-where-they-stop">Bubble And Softr: What They Do Well And Where They Stop</h2>
+<p>Bubble and Softr are built for different jobs, and VibStack calls choosing the wrong platform the most common no-code mistake. The table shows what the sources say each does and where it stops, as read on 17 November 2026.</p>
+<div class="prose-table"><table><thead><tr><th>Platform</th><th>Built for</th><th>Limit the sources name</th></tr></thead><tbody><tr><td>Bubble</td><td>Full web apps with database logic</td><td>Workload-metered plans; cost and speed strain with traction</td></tr><tr><td>Softr</td><td>Apps and portals on Airtable or Google Sheets</td><td>None stated in the sources I read</td></tr><tr><td>Webflow</td><td>Marketing sites with a CMS</td><td>Code export only on paid Workspace plans</td></tr></tbody></table></div>
+<p>Bubble is the most capable of these for complex web apps, per VibStack, and Appfarm calls it the broadest general-purpose lightweight option. FiniteLoop says the wall shows up in three places: performance under real load, logic the visual editor cannot express, and integrations with no ready connector.</p>
+<p>FiniteLoop lists Bubble's paid plans at $32 (Starter), $119 (Growth) and $349 (Team) a month, billed annually. VibStack's example of a growing Bubble app adds $50 of plugins and $100 of database capacity to a $150 plan. Plans move: App369 notes that Bubble and three other builders changed plan names or prices, so read the pricing page on the day you budget.</p>
+<p>None of the sources lists Softr's own limits, so I will not invent them. My reading is that because the data sits in Airtable or a Google Sheet, your data model, permissions and growth are capped by that store and by Softr's plan. Ask Softr for its current limits before you commit.</p>
+<h2 id="when-to-choose-no-code-and-when-to-choose-custom-code">When To Choose No-Code, And When To Choose Custom Code</h2>
+<p>Choose no-code when the first version exists to test demand, with few users and logic that fits on one page, and choose custom code when customers will pay for the software or depend on it daily. I co-run Elyx Solutions, which builds custom products, so weigh my reading of the custom side accordingly. Its <a href="../../services/saas-development/">SaaS development page</a> gives the advice that holds on either path: ship the smallest version that proves the idea and agree a cut line.</p>
+<p>Choose no-code when:</p>
+<ul><li><strong>You are testing demand.</strong> VibStack says a competent builder can ship a marketplace, booking app or dashboard in 4 to 8 weeks.</li><li><strong>The users are your own team</strong> or a handful of early customers, per Eltherion.</li><li><strong>The logic fits on one page:</strong> if this happens, do that.</li><li><strong>The app may not exist in a year.</strong> VibStack's rule is not to pay for custom code in that case.</li><li><strong>You want a fast loop.</strong> FiniteLoop says changing a workflow in an afternoon, with no deploy cycle, shortens the gap between a user conversation and a shipped fix.</li></ul>
+<p>Choose custom code when:</p>
+<ul><li><strong>Customers pay for it or depend on it daily,</strong> per Eltherion.</li><li><strong>Permissions, business rules or calculations are complex.</strong></li><li><strong>You hold regulated or sensitive data</strong> and need control over where it lives. FiniteLoop says to confirm the platform's compliance posture first.</li><li><strong>Usage-based bills grow faster than revenue.</strong></li><li><strong>The edge is the technology.</strong> VibStack says a proprietary algorithm belongs in code you own.</li></ul>
+<p>The sources split on investors. VibStack says seed investors expect ownable IP, while FiniteLoop says most early-stage investors care more about evidence of demand than the build method. My reading: show demand first, and expect the ownership question to come with a buyer or a larger round.</p>
+<h2 id="real-costs-what-published-figures-say">Real Costs: What Published Figures Say</h2>
+<p>Published figures for a custom MVP run from about $5,000 to over $100,000, because each source prices a different team and scope. The table gives each source's own numbers in US dollars as published, read on 17 November 2026.</p>
+<div class="prose-table"><table><thead><tr><th>Source</th><th>No-code</th><th>Custom</th><th>Basis</th></tr></thead><tbody><tr><td>VibStack</td><td>$50 to $500 a month, plus your time</td><td>$5,000 to $15,000 to build; $100 to $300 a month to run</td><td>Agency prices</td></tr><tr><td>App369</td><td>MVP $0 to $15,000; upkeep $100 to $1,000 a month</td><td>MVP $30,000 to $100,000+; upkeep $1,000 to $10,000+ a month</td><td>Market estimates</td></tr><tr><td>Eltherion</td><td>Subscription plus builder time</td><td>Internal-tool MVP $20,000 to $50,000</td><td>Senior US team</td></tr><tr><td>Appfarm</td><td>Not stated</td><td>Upkeep 15 to 25 percent of build a year</td><td>Enterprise apps</td></tr></tbody></table></div>
+<p>The upkeep figures disagree most. On VibStack's build range, Appfarm's 15 to 25 percent gives $1,500 to $3,750 a year (15 percent of 10,000, 25 percent of 15,000), close to VibStack's $1,200 to $3,600 (100 and 300, times 12). App369's $1,000 a month or more implies much larger builds.</p>
+<p>Platform plans are priced in dollars, so your rupee bill also moves with the exchange rate. For Indian budgets in lakh, the <a href="../../blog/saas-development-cost-india/">SaaS MVP cost article</a> gathers agency ranges. The site's own draft range for a SaaS MVP is ₹1,50,000–₹6,00,000 over 8–16 weeks: indicative only, excluding 18% GST, and a fixed quote is confirmed in writing after a call (see the <a href="../../pricing/">pricing page</a>).</p>
+<h2 id="worked-example-when-the-platform-bill-overtakes-the-build">Worked Example: When The Platform Bill Overtakes The Build</h2>
+<p>A custom build pays for itself when its price, divided by the monthly saving on running costs, comes out at a period you will still be in business for. The formula is payback in months = custom build ÷ (monthly platform bill − monthly custom running cost). I used VibStack's inputs, the only ones that put both bills side by side: a platform bill of $500 to $1,500 a month at about 2,000 active users, a custom build of $10,000 to $15,000 and $100 to $300 a month to run.</p>
+<div class="prose-table"><table><thead><tr><th>Case</th><th>Platform bill a month</th><th>Custom build; run a month</th><th>Payback</th></tr></thead><tbody><tr><td>A: cheap platform, dear custom</td><td>$500</td><td>$15,000; $300</td><td>15,000 ÷ (500 − 300) = 75 months</td></tr><tr><td>B: midpoints</td><td>$1,000</td><td>$12,500; $200</td><td>12,500 ÷ (1,000 − 200) = 15.6 months</td></tr><tr><td>C: dear platform, cheap custom</td><td>$1,500</td><td>$10,000; $100</td><td>10,000 ÷ (1,500 − 100) = 7.1 months</td></tr></tbody></table></div>
+<p>Case B sits inside VibStack's own 12 to 24 month crossover, and cases A and C show how far that moves. My reading: the formula matters more than any answer, because the number you control is the gap between your platform bill and what a developer would charge to run the same product.</p>
+<p>The example assumes you pay the 2,000-user bill from month one, which flatters custom. It leaves out the no-code build cost and your own learning time, which flatter no-code, and it comes from an agency that sells rebuilds. Treat the three cases as a guide to which input to check, not as a forecast.</p>
+<h2 id="when-to-migrate-from-no-code-to-custom-code">When To Migrate From No-Code To Custom Code</h2>
+<p>Migrate when a measured limit, not a hunch, is costing you customers or money; VibStack puts that point at 12 to 24 months for apps with real traction. Eltherion says no single sign means rebuild, but several together usually do. The table turns its signs into things you can measure.</p>
+<div class="prose-table"><table><thead><tr><th>Signal</th><th>What to measure</th><th>Source</th></tr></thead><tbody><tr><td>Cost</td><td>Monthly platform bill against a quote's running cost</td><td>VibStack, Eltherion</td></tr><tr><td>Speed</td><td>Pages or workflows that now need workarounds</td><td>Eltherion</td></tr><tr><td>Refusals</td><td>Customer requests you decline for platform reasons</td><td>Eltherion</td></tr><tr><td>Single point of failure</td><td>How many people can explain how it fits together</td><td>Eltherion</td></tr><tr><td>Buyer questions</td><td>Security reviews you cannot answer</td><td>Eltherion</td></tr></tbody></table></div>
+<p>Write a number against each row before launch. FiniteLoop's advice is to decide the exit criteria in advance, so migration is a plan rather than a scramble.</p>
+<p>A rebuild is priced like any custom project, per Eltherion, though proven requirements keep the scope tight. VibStack claims founders who build twice routinely spend 1.5 times the cost of building custom once, which is one agency's figure I could not verify. Migrating late, Eltherion adds, means doing it with real customers and messy data.</p>
+<h2 id="the-hybrid-route-no-code-front-end-custom-back-end">The Hybrid Route: No-Code Front End, Custom Back End</h2>
+<p>A hybrid keeps the screens you are still testing in no-code and puts the data and rules you must protect in code you own. FiniteLoop describes a no-code front end talking to a custom back end or API, and CobeisFresh lists five patterns, including a custom core with no-code admin screens and no-code for the MVP only.</p>
+<p>My reading: for a first SaaS, the custom core with a no-code admin tool is the safest start. Customers never touch the admin side, while your database, billing rules and permissions stay outside the platform.</p>
+<h2 id="lock-in-shutdowns-and-who-owns-what">Lock-In, Shutdowns And Who Owns What</h2>
+<p>Leaving a no-code platform usually means a rebuild, because most do not export the app as code, per App369. Customer Impact says Webflow's code export needs a paid Workspace plan and leaves out CMS content, ecommerce data and localised pages, though CMS collections export as CSV. Eltherion adds that some builders let you export data and design but run the app only on their platform.</p>
+<p>Platforms can also end. App369 checked the two cases below on 22 October 2026.</p>
+<div class="prose-table"><table><thead><tr><th>Builder</th><th>What happened</th><th>Date</th></tr></thead><tbody><tr><td>Google App Maker</td><td>Turned down; apps could not be migrated directly</td><td>Existing apps stopped 19 January 2021</td></tr><tr><td>Amazon Honeycode</td><td>Beta ended; apps unusable afterwards</td><td>29 February 2024</td></tr></tbody></table></div>
+<p>Keep a copy of your data in a store you own, write the rules down, and register the domain and accounts in your own name. The <a href="../../blog/who-owns-my-website-code/">website ownership article</a> explains the same checks for a site, and the questions carry over to a product.</p>
+<h2 id="a-go-or-no-go-checklist-before-you-pick-a-platform">A Go Or No-Go Checklist Before You Pick A Platform</h2>
+<p>You can go ahead on no-code if every line below is true, and one false line is a reason to scope custom work for at least that piece. I merged FiniteLoop's six-step test with Eltherion's eight questions and reworded both.</p>
+<ul><li>[ ] The 3 to 5 things the MVP must prove are written down.</li><li>[ ] Each maps to standard patterns: forms, lists, accounts, payments, simple workflows.</li><li>[ ] No core value depends on proprietary logic, heavy processing or real-time behaviour.</li><li>[ ] Users and data for the next 6 to 12 months fit the plan tier you would pay for, not only launch day.</li><li>[ ] You priced the platform plan against a written quote for the same scope.</li><li>[ ] You can export your data and describe the rules outside the platform.</li><li>[ ] Someone other than the builder can explain how it works.</li><li>[ ] You have written the trigger that makes you rebuild.</li></ul>
+<h2 id="what-usually-goes-wrong">What Usually Goes Wrong</h2>
+<p>Most failures come from picking a platform for the wrong job, skipping the exit plan and pricing only the entry plan. The causes below come from the sources, and the fixes are my reading.</p>
+<div class="prose-table"><table><thead><tr><th>Mistake</th><th>Cause</th><th>Fix</th></tr></thead><tbody><tr><td>Wrong platform</td><td>A page-builder used for a marketplace (VibStack)</td><td>Match platform to product type first</td></tr><tr><td>Entry-plan costing</td><td>Plugins, capacity and per-user fees stack up (VibStack)</td><td>Model the bill at ten times today's usage (Eltherion)</td></tr><tr><td>No exit trigger</td><td>Limits noticed mid-incident (FiniteLoop)</td><td>Write the triggers before launch</td></tr><tr><td>Knowledge in one head</td><td>One builder understands the workflows (Eltherion)</td><td>Document rules and data outside the platform</td></tr><tr><td>Custom before demand</td><td>Paying to build guesses (Eltherion)</td><td>Prove demand first, then rebuild what worked</td></tr></tbody></table></div>
+<h2 id="what-to-do-next">What To Do Next</h2>
+<p>Write down the one thing your first version must prove, work through the checklist above, then price both paths for that scope with the formula. If you land on custom, the studio's <a href="../../services/saas-development/">SaaS development page</a> explains how a build is scoped, and says the code is yours. If you already have a quick prototype, including one made with AI tools, it says the work starts with a short audit of the code, hosting and data model. If you need a marketing site rather than a product, the <a href="../../blog/wix-vs-wordpress-india/">Wix vs WordPress vs custom comparison</a> covers that choice.</p>
+<h2 id="sources">Sources</h2>
+<ul><li><a href="https://servicenow.com/platform/what-is-no-code.html" rel="noopener" target="_blank">What is no code?</a>, ServiceNow (read 17 November 2026)</li><li><a href="https://sap.com/resources/what-is-low-code-no-code" rel="noopener" target="_blank">What is Low-Code/No-Code?</a>, SAP (read 17 November 2026)</li><li><a href="https://cloud.google.com/discover/low-code-vs-no-code" rel="noopener" target="_blank">Low-code vs. no-code development</a>, Google Cloud (read 17 November 2026)</li><li><a href="https://vibstack.com/blogs/no-code-vs-custom-app-development" rel="noopener" target="_blank">No-Code vs Custom App Development: Honest Comparison</a>, VibStack (read 17 November 2026)</li><li><a href="https://app369.com/blog/no-code-vs-low-code-vs-custom-development-2026" rel="noopener" target="_blank">No-Code vs Low-Code vs Custom Dev (2026)</a>, App369 (read 17 November 2026)</li><li><a href="https://thefiniteloop.com/no-code-platform-vs-custom-development-mvp/" rel="noopener" target="_blank">No-Code Platform vs Custom Dev: 6 Proven Steps for Your MVP</a>, FiniteLoop, 2 November 2026</li><li><a href="https://eltherion.com/compare/no-code-vs-custom-development" rel="noopener" target="_blank">No-code vs. custom development</a>, Eltherion (read 17 November 2026)</li><li><a href="https://www.customerimpact.be/en/blog/no-code-vs-custom-development/" rel="noopener" target="_blank">No-code vs custom development</a>, Customer Impact (read 17 November 2026)</li><li><a href="https://www.cobeisfresh.com/blog/no-code-vs-custom-software-development" rel="noopener" target="_blank">No-Code vs. Custom Development: Why One Can't Replace the Other</a>, CobeisFresh (read 17 November 2026)</li><li><a href="https://www.appfarm.io/blog/no-code-vs-low-code-vs-custom" rel="noopener" target="_blank">No-code vs low-code vs custom development: how to choose for enterprise apps</a>, Appfarm (read 17 November 2026)</li></ul>
+      </div>
+      <section class="bfaq" id="faq"><h2>Frequently asked questions</h2><div class="faq__list"><details class="faq__item">
+  <summary class="faq__q"><span>What is no-code development?</span><svg class="faq__caret" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+  <div class="faq__a"><p>No-code development is building software through visual, drag-and-drop tools without writing code, so business users can make working apps. ServiceNow contrasts it with low-code, which still expects some coding. The platform generates and hosts the underlying code for you.</p></div>
+</details>
+<details class="faq__item">
+  <summary class="faq__q"><span>What is custom code?</span><svg class="faq__caret" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+  <div class="faq__a"><p>Custom code is software written specifically for your product in standard frameworks, so you own it and can move it between developers and hosts. App369 and VibStack both describe it as full flexibility at the price of more time and ongoing maintenance.</p></div>
+</details>
+<details class="faq__item">
+  <summary class="faq__q"><span>Is no-code cheaper than custom development?</span><svg class="faq__caret" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+  <div class="faq__a"><p>No-code is cheaper to start and often dearer later. VibStack puts early platform bills at $50 to $500 a month and about $500 to $1,500 at 2,000 active users, and says the totals often cross within 12 to 24 months. App369 gives wider ranges, so run the worked example with your own numbers.</p></div>
+</details>
+<details class="faq__item">
+  <summary class="faq__q"><span>Can Bubble handle a real SaaS product?</span><svg class="faq__caret" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+  <div class="faq__a"><p>Bubble can run a real product at early scale, but the sources say limits appear under load. VibStack says most no-code platforms cope with hundreds to a few thousand active users before speed and cost worsen, and FiniteLoop says to test realistic volumes. Check Bubble's current workload limits before you rely on it.</p></div>
+</details>
+<details class="faq__item">
+  <summary class="faq__q"><span>When should I move off no-code?</span><svg class="faq__caret" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+  <div class="faq__a"><p>Move when a measured trigger is hit: the platform bill nears a custom running cost, core workflows need workarounds, you refuse customer requests, or you cannot answer security questions. VibStack says this usually lands 12 to 24 months in, and Eltherion says several signs together justify a rebuild.</p></div>
+</details>
+<details class="faq__item">
+  <summary class="faq__q"><span>Can I export a no-code app as code?</span><svg class="faq__caret" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+  <div class="faq__a"><p>Usually not. App369 says most no-code platforms do not export application code, though FlutterFlow can export Flutter code. Customer Impact says Webflow's code export needs a paid Workspace plan and omits CMS content, so check export terms before you build.</p></div>
+</details>
+<details class="faq__item">
+  <summary class="faq__q"><span>Will investors take a no-code MVP seriously?</span><svg class="faq__caret" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+  <div class="faq__a"><p>The sources disagree. VibStack says seed investors expect ownable IP and scalable architecture, while FiniteLoop says most early-stage investors care more about evidence of demand than the build method.</p></div>
+</details>
+<details class="faq__item">
+  <summary class="faq__q"><span>How long does a no-code MVP take compared with custom code?</span><svg class="faq__caret" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+  <div class="faq__a"><p>A no-code MVP takes about 1 to 8 weeks and a custom one about 6 weeks to 4 months, per App369 and VibStack. For comparison, the studio's draft timeline for a SaaS MVP is 8–16 weeks, agreed after discovery.</p></div>
+</details></div></section>
+      <div class="bfoot"><span>SaaS &amp; MVP Building</span></div>
+    </article>
+    <aside class="baside" aria-label="From Elyx"><div class="bcta">
+  <span class="bcta__k">Elyx Solutions</span>
+  <h3>Have a SaaS idea or a process worth turning into software?</h3>
+  <a class="btn btn--blue" href="https://wa.me/919611729733?text=Hi%20Elyx%2C%20I'd%20like%20to%20talk%20about%20a%20project.%20(from%20the%20article%20%22No-Code%20vs%20Custom%20Code%20for%20Your%20First%20SaaS%22)" target="_blank" rel="noopener" data-track="whatsapp_click" data-article="no-code-vs-custom-development" data-card-pos="side">WhatsApp us <svg class="arr" width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H4M10 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+  <a class="btn btn--ghost" href="../../services/saas-development/" data-track="card_click" data-article="no-code-vs-custom-development" data-card-pos="side" data-btn="soft">See SaaS development</a>
+</div></aside>
+  </div>
+</div></main>
+<section class="cta" data-screen-label="Contact CTA">
+  <div class="cta__in reveal">
+    <div class="deco deco-dark" data-parallax="0.08" style="z-index:-1" aria-hidden="true"><span class="orb orb-a"></span></div>
+    <div class="ph-grid cta__bg"></div>
+    <div class="cta__glow"></div>
+    <span class="eyebrow is-light" style="justify-content:center;">Let's build</span>
+    <h2 class="cta__t" style="color:#fff;margin-top:20px;">Have something worth <span class="em">building?</span></h2>
+    <p class="cta__sub">Tell us where you're headed. We'll bring the team, the plan and the craft to get you there.</p>
+    <div class="cta__row">
+      <a class="btn btn--blue" href="../../contact.html" data-track="cta_click" data-pos="cta-section">Start a project <svg class="arr" width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H4M10 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+      <a class="btn btn--light" href="../../contact.html#book" data-track="cta_click" data-pos="cta-section">Book a call</a>
+    </div>
+  </div>
+</section>
+<footer class="footer">
+  <div class="footer__in">
+    <div class="footer__top">
+      <div>
+        <a class="brand" href="../../" aria-label="Elyx Solutions home">
+          <svg class="brand__mark" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+            <g transform="skewX(-10)">
+              <rect x="7" y="4" width="15" height="4.4" rx="1.2" fill="#1f4fd8"></rect>
+              <rect x="7" y="11.8" width="11" height="4.4" rx="1.2" fill="#0b1024"></rect>
+              <rect x="7" y="19.6" width="15" height="4.4" rx="1.2" fill="#1f4fd8"></rect>
+            </g>
+          </svg>
+          <span class="brand__name">Elyx</span>
+        </a>
+        <p class="footer__lede">Beyond just presence — we build digital <span class="serif-i" style="color:var(--blue)">value.</span></p>
+      </div>
+      <div class="fcol">
+        <h4>Services</h4>
+        <a href="../../services/web-development/">Web Development</a>
+        <a href="../../services/saas-development/">SaaS Development</a>
+        <a href="../../services/app-development/">App Development</a>
+        <a href="../../services/seo-optimization/">SEO Optimization</a>
+        <a href="../../services/maintenance-care/">Maintenance &amp; Care</a>
+      </div>
+      <div class="fcol">
+        <h4>Websites for</h4>
+        <a href="../../websites-for/dentists/">Dentists &amp; Clinics</a>
+        <a href="../../websites-for/coaching-centres/">Coaching Centres</a>
+        <a href="../../websites-for/restaurants-and-cafes/">Restaurants &amp; Cafés</a>
+        <a href="../../websites-for/salons-and-spas/">Salons &amp; Spas</a>
+        <a href="../../websites-for/real-estate/">Real Estate</a>
+        <a href="../../websites-for/ca-and-law-firms/">CA &amp; Law Firms</a>
+      </div>
+      <div class="fcol">
+        <h4>Company</h4>
+        <a href="../../about.html">About</a>
+        <a href="../../work.html">Work</a>
+        <a href="../../pricing/">Pricing</a>
+        <a href="../../tools/">Free tools</a>
+        <a href="../../blog/">Blog</a>
+        <a href="../../web-development-bengaluru/">Bengaluru</a>
+        <a href="../../contact.html">Contact</a>
+      </div>
+      <div class="fcol">
+        <h4>Connect</h4>
+        <a href="mailto:hello@elyxsolutions.in">hello@elyxsolutions.in</a>
+        <a href="tel:+919611729733" data-track="call_click" data-pos="footer">+91 96117 29733</a>
+        <a href="tel:+917204723340" data-track="call_click" data-pos="footer">+91 72047 23340</a>
+        <a href="https://wa.me/919611729733?text=Hi%20Elyx%2C%20I'd%20like%20to%20talk%20about%20a%20project." target="_blank" rel="noopener" data-track="whatsapp_click" data-pos="footer">WhatsApp</a>
+        <a href="https://www.linkedin.com/company/elyxsolutions04/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://www.instagram.com/elyxsolutions" target="_blank" rel="noopener">Instagram</a>
+        <span class="footer__addr">Bengaluru, Karnataka</span>
+      </div>
+    </div>
+    <div class="footer__bot">
+      <span>© 2026 Elyx Solutions. All rights reserved.</span>
+      <span>Designed &amp; built in-house · Bengaluru, India.</span>
+    </div>
+  </div>
+</footer>
+<a class="wa-float" href="https://wa.me/919611729733?text=Hi%20Elyx%2C%20I'd%20like%20to%20talk%20about%20a%20project." target="_blank" rel="noopener" aria-label="Chat with Elyx on WhatsApp" data-track="whatsapp_click" data-pos="floating">
+  <svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16.04 3C9.4 3 4 8.4 4 15.03c0 2.12.55 4.19 1.6 6.01L4 29l8.12-1.57a12.03 12.03 0 0 0 3.92.65C22.68 28.08 28.08 22.67 28.08 16 28.08 9.36 22.7 3 16.04 3Zm0 22.06c-1.22 0-2.4-.33-3.44-.95l-.25-.15-4.82.93.97-4.7-.17-.27a9.9 9.9 0 0 1-1.52-5.27c0-5.5 4.48-9.98 10-9.98 5.5 0 9.98 4.48 9.98 9.98s-4.48 10.41-9.98 10.41l-.77-.02Zm5.47-7.46c-.3-.15-1.77-.87-2.04-.97-.28-.1-.48-.15-.68.15-.2.3-.78.97-.95 1.17-.18.2-.35.22-.65.07-.3-.15-1.27-.47-2.42-1.5-.9-.8-1.5-1.78-1.67-2.08-.18-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.68-1.64-.93-2.25-.25-.58-.5-.5-.68-.5h-.58c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.5s1.07 2.9 1.22 3.1c.15.2 2.1 3.2 5.08 4.48.7.3 1.26.48 1.7.62.72.23 1.37.2 1.88.12.58-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35Z"/></svg>
+</a>
+<script>window.ELYX={"email":"hello@elyxsolutions.in","whatsapp":"https://wa.me/919611729733?text=Hi%20Elyx%2C%20I'd%20like%20to%20talk%20about%20a%20project.","phone":"+91 96117 29733","booking":""};</script>
+<script src="../../js/site.js"></script>
+<script src="../../js/analytics.js"></script>
+</body>
+</html>
