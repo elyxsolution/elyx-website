@@ -1001,6 +1001,23 @@ section { position: relative; }
 .cform__note { font-family: var(--sans); font-size: 13px; color: var(--ink-faint); }
 
 .caside { display: flex; flex-direction: column; gap: 16px; }
+.cform__reach { font-family: var(--sans); font-size: 13px; line-height: 1.55; color: var(--ink-faint); padding: 12px 14px; background: var(--bg-2); border: 1px solid var(--line); border-radius: 12px; }
+.cform__reach a { color: var(--ink); font-weight: 550; white-space: nowrap; }
+.cform__reach a:hover { color: var(--blue); }
+.cbox__phones { display: flex; flex-wrap: wrap; gap: 4px 16px; margin-top: 8px; font-family: var(--sans); font-size: 13px; }
+.cbox__phones a { color: rgba(255,255,255,0.7); }
+.cbox__phones a:hover { color: #fff; }
+.svcpick { border: 0; margin: 0; padding: 0; min-width: 0; border-radius: 14px; }
+.svcpick legend { padding: 0; margin-bottom: 12px; font-family: var(--sans); font-size: 13px; font-weight: 600; color: var(--ink); }
+.svcpick__grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+.svcpick__item { display: flex; align-items: flex-start; gap: 11px; padding: 12px 14px; background: #fff; border: 1px solid var(--line-2); border-radius: 12px; cursor: pointer; transition: border-color .2s var(--ease), background .2s var(--ease), box-shadow .2s var(--ease); }
+.svcpick__item:hover { border-color: var(--blue); }
+.svcpick__item input { flex: none; width: 17px; height: 17px; margin: 2px 0 0; accent-color: var(--blue); cursor: pointer; }
+.svcpick__item b { display: block; font-family: var(--sans); font-size: 14px; font-weight: 600; line-height: 1.3; color: var(--ink); }
+.svcpick__item small { display: block; margin-top: 2px; font-family: var(--sans); font-size: 12.5px; line-height: 1.4; color: var(--ink-faint); }
+.svcpick__item:has(input:checked) { border-color: var(--blue); background: var(--blue-soft); box-shadow: 0 0 0 3px rgba(31,79,216,0.10); }
+.svcpick--bad .svcpick__grid { outline: 2px solid rgba(216,67,79,0.55); outline-offset: 6px; border-radius: 14px; }
+@media (max-width: 640px) { .svcpick__grid { grid-template-columns: 1fr; } }
 .cbox { border: 1px solid var(--line); border-radius: var(--r); padding: 28px; background: var(--bg-2); }
 .cbox--dark { background: var(--dark); color: #fff; position: relative; overflow: hidden; isolation: isolate; }
 .cbox--dark .ph-grid { position: absolute; inset: 0; z-index: -1; opacity: 0.4; }

@@ -170,7 +170,7 @@
   <div class="page-hero__in">
     <span class="eyebrow">Contact</span>
     <h1 class="tr">Let's build something worth <span class="serif-i">shipping.</span></h1>
-    <p class="lead reveal">Tell us about your project. We'll get back within one business day with a clear next step, no sales runaround.</p>
+    <p class="lead reveal">Choose what you need and tell us a little about it. We'll reach out within one business day with a clear next step and a quote tailored to your requirements.</p>
   </div>
 </header>
 
@@ -178,23 +178,35 @@
   <div class="contact__grid">
     <form class="cform reveal" id="cform" novalidate>
       <div class="cform__fields">
+        <div class="cform__reach">Prefer to talk first? Email <a href="mailto:support.elyxsolutions@gmail.com">support.elyxsolutions@gmail.com</a> or call <a href="tel:+919611729733">+91 96117 29733</a> / <a href="tel:+917204723340">+91 72047 23340</a>.</div>
         <div class="field--row">
           <div class="field"><label for="f-name">Name</label><input id="f-name" name="name" type="text" placeholder="Your name" required /></div>
           <div class="field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" placeholder="you@company.com" required /></div>
         </div>
         <div class="field--row">
-          <div class="field"><label for="f-company">Company</label><input id="f-company" name="company" type="text" placeholder="Company name" /></div>
-          <div class="field"><label for="f-service">Service</label>
-            <select id="f-service" name="service">
-              <option>SaaS Development</option>
-              <option>Web Development</option>
-              <option>App Development</option>
-              <option>SEO Optimization</option>
-              <option>Maintenance &amp; Care</option>
-              <option>Not sure yet</option>
-            </select>
-          </div>
+          <div class="field"><label for="f-phone">Phone or WhatsApp <span class="opt-note">(optional)</span></label><input id="f-phone" name="phone" type="tel" placeholder="+91 98765 43210" autocomplete="tel" /></div>
+          <div class="field"><label for="f-company">Company <span class="opt-note">(optional)</span></label><input id="f-company" name="company" type="text" placeholder="Company name" /></div>
         </div>
+        <fieldset class="svcpick" id="svcpick">
+          <legend>What do you need? <span class="opt-note">(select all that apply)</span></legend>
+          <div class="svcpick__grid">
+            <label class="svcpick__item"><input class="js-svc" type="checkbox" value="Web Development" /><span><b>Web Development</b><small>Websites and landing pages</small></span></label>
+            <label class="svcpick__item"><input class="js-svc" type="checkbox" value="E-commerce" /><span><b>E-commerce</b><small>Online stores with UPI and card payments</small></span></label>
+            <label class="svcpick__item"><input class="js-svc" type="checkbox" value="Mobile App Development" /><span><b>Mobile App Development</b><small>iOS and Android apps</small></span></label>
+            <label class="svcpick__item"><input class="js-svc" type="checkbox" value="SaaS Development" /><span><b>SaaS Development</b><small>Multi-tenant products, billing and admin</small></span></label>
+            <label class="svcpick__item"><input class="js-svc" type="checkbox" value="AI Chatbots" /><span><b>AI Chatbots</b><small>Website and WhatsApp chat assistants</small></span></label>
+            <label class="svcpick__item"><input class="js-svc" type="checkbox" value="AI Call &amp; Voice Assistants" /><span><b>AI Call &amp; Voice Assistants</b><small>Answering, qualifying and booking by phone</small></span></label>
+            <label class="svcpick__item"><input class="js-svc" type="checkbox" value="WhatsApp &amp; Business Automation" /><span><b>WhatsApp &amp; Business Automation</b><small>Lead flows, follow-ups and workflows</small></span></label>
+            <label class="svcpick__item"><input class="js-svc" type="checkbox" value="CRM &amp; Lead Management" /><span><b>CRM &amp; Lead Management</b><small>Track enquiries, customers and follow-ups</small></span></label>
+            <label class="svcpick__item"><input class="js-svc" type="checkbox" value="Booking &amp; Appointment Systems" /><span><b>Booking &amp; Appointment Systems</b><small>Online scheduling and reminders</small></span></label>
+            <label class="svcpick__item"><input class="js-svc" type="checkbox" value="Payments &amp; Subscription Billing" /><span><b>Payments &amp; Subscription Billing</b><small>Gateways, invoices and recurring plans</small></span></label>
+            <label class="svcpick__item"><input class="js-svc" type="checkbox" value="Admin Dashboards &amp; Internal Tools" /><span><b>Admin Dashboards &amp; Internal Tools</b><small>Dashboards, portals and your workflow as software</small></span></label>
+            <label class="svcpick__item"><input class="js-svc" type="checkbox" value="SEO Optimization" /><span><b>SEO Optimization</b><small>Technical, local and content SEO</small></span></label>
+            <label class="svcpick__item"><input class="js-svc" type="checkbox" value="Maintenance &amp; Care" /><span><b>Maintenance &amp; Care</b><small>Updates, backups and monitoring</small></span></label>
+            <label class="svcpick__item"><input class="js-svc" type="checkbox" value="Not sure yet" /><span><b>Not sure yet</b><small>Help me work out what I need</small></span></label>
+          </div>
+          <input type="hidden" name="service" id="f-service" value="" />
+        </fieldset>
         <div class="field"><label for="f-how">How did you find us? <span class="opt-note">(optional)</span></label>
           <select id="f-how" name="how_found">
             <option value="">Select one</option>
@@ -207,21 +219,20 @@
             <option>Other</option>
           </select>
         </div>
-        <div class="field"><label for="f-msg">Project details</label><textarea id="f-msg" name="message" placeholder="What are you building, and what does success look like?"></textarea></div>
+        <div class="field"><label for="f-msg">Tell us about your project</label><textarea id="f-msg" name="message" placeholder="What are you building or fixing, and what does success look like? The more you tell us, the better the quote."></textarea></div>
         <!-- honeypot: hidden from humans; bots fill it and get silently dropped -->
         <input type="hidden" name="source_article" id="f-src" value="" />
         <input type="hidden" name="landing_page" id="f-landing" value="" />
-        <input type="hidden" name="estimate" id="f-est" value="" />
         <input class="cform__hp" type="text" name="company_website" tabindex="-1" autocomplete="off" aria-hidden="true" />
         <div class="cform__submit">
-          <button class="btn btn--blue" type="submit">Send message <svg class="arr" width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H4M10 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
-          <span class="cform__note">Reply within 1 business day</span>
+          <button class="btn btn--blue" type="submit">Request my quote <svg class="arr" width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H4M10 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+          <span class="cform__note">We reach out within 1 business day</span>
         </div>
         <p class="cform__error" id="cformError" hidden>Something went wrong, please email us at support.elyxsolutions@gmail.com.</p>
       </div>
       <div class="cform__success">
         <svg viewBox="0 0 20 20" fill="none"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-        <div><h4>Message sent, thank you.</h4><p>We've received your details and will get back to you within one business day. Keep an eye on your inbox.</p></div>
+        <div><h4>Request received, thank you.</h4><p>We have your details and will reach out within one business day with a quote tailored to your requirements. Keep an eye on your inbox.</p></div>
       </div>
     </form>
 
@@ -230,6 +241,7 @@
         <div class="ph-grid"></div>
         <div class="cbox__k">Email us</div>
         <a class="cbox__v" href="mailto:support.elyxsolutions@gmail.com">support.elyxsolutions@gmail.com</a>
+        <div class="cbox__phones"><a href="tel:+919611729733">+91 96117 29733</a><a href="tel:+917204723340">+91 72047 23340</a></div>
         <div class="cbox__row">
           <a class="cbox__chip" href="https://www.linkedin.com/company/elyxsolutions04/" target="_blank" rel="noopener">LinkedIn</a>
           <a class="cbox__chip" href="https://www.instagram.com/elyxsolutions" target="_blank" rel="noopener">Instagram</a>

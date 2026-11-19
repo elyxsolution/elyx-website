@@ -49,7 +49,7 @@ Commit + push. Done - the live form now writes to your Sheet and emails you.
 - Before the URL is set, the form shows the success message **without** sending (demo mode) and logs a warning in the browser console.
 
 ## Notes
-- **Fields stored:** Timestamp, Name, Email, Company, Service, Message, How found us, Source article, Landing page, Calculator estimate. (Budget was removed.) The last four feed the playbook's "which article produced this enquiry?" log.
+- **Fields stored:** Timestamp, Name, Email, Company, Services (every service the visitor ticked), Message, How found us, Source article, Landing page, Phone. The last four feed the playbook's "which article produced this enquiry?" log.
 - **Spam:** a hidden honeypot field (`company_website`) silently drops bots.
 - **Replying:** the notification email's reply-to is the sender's address, so you can reply straight from your inbox.
 - **Updating the script later:** after editing `Code.gs` in Apps Script, you must **Deploy → Manage deployments → edit → Deploy** again (or create a new version) for changes to go live. The URL stays the same if you edit the existing deployment.

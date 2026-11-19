@@ -10,7 +10,8 @@
 // ----------------------------- CONFIG -----------------------------
 var NOTIFY_EMAIL = 'support.elyxsolutions@gmail.com'; // where notifications are sent
 var SHEET_NAME   = 'Submissions';            // tab name inside the sheet
-var HEADERS      = ['Timestamp', 'Name', 'Email', 'Company', 'Service', 'Message', 'How found us', 'Source article', 'Landing page', 'Calculator estimate'];
+// Column 5 ('Services') holds every service the visitor ticked, separated by commas. Column 10 was 'Calculator estimate' and now holds the phone number.
+var HEADERS      = ['Timestamp', 'Name', 'Email', 'Company', 'Services', 'Message', 'How found us', 'Source article', 'Landing page', 'Phone'];
 var SHEET_ID     = '';                        // optional: paste a Sheet ID to target a specific spreadsheet
 // ------------------------------------------------------------------
 
@@ -33,7 +34,7 @@ function doPost(e) {
     var howFound = String(p.how_found || '').trim();
     var sourceArticle = String(p.source_article || '').trim();
     var landingPage = String(p.landing_page || '').trim();
-    var estimate = String(p.estimate || '').trim();
+    var phone = String(p.phone || '').trim().slice(0, 40);
 
     if (!name || !email) return _json({ ok: false, error: 'Name and email are required.' });
     if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) return _json({ ok: false, error: 'Invalid email address.' });
@@ -47,9 +48,12 @@ function doPost(e) {
       // older sheet with the original 6 columns: add the new headers once
       sheet.getRange(1, 7, 1, HEADERS.length - 6).setValues([HEADERS.slice(6)]).setFontWeight('bold');
     }
-    sheet.appendRow([new Date(), name, email, company, service, message, howFound, sourceArticle, landingPage, estimate]);
+    // sheets created before the quote form: rename the two columns whose meaning changed
+    if (sheet.getRange(1, 10).getValue() === 'Calculator estimate') sheet.getRange(1, 10).setValue('Phone');
+    if (sheet.getRange(1, 5).getValue() === 'Service') sheet.getRange(1, 5).setValue('Services');
+    sheet.appendRow([new Date(), name, email, company, service, message, howFound, sourceArticle, landingPage, phone]);
 
-    _notify(name, email, company, service, message, howFound, sourceArticle, estimate);
+    _notify(name, email, phone, company, service, message, howFound, sourceArticle);
     return _json({ ok: true });
   } catch (err) {
     return _json({ ok: false, error: String(err) });
@@ -68,20 +72,20 @@ function _sheet() {
   return ss.getSheetByName(SHEET_NAME) || ss.insertSheet(SHEET_NAME);
 }
 
-function _notify(name, email, company, service, message, howFound, sourceArticle, estimate) {
-  var subject = 'New enquiry - ' + name + (company ? ' (' + company + ')' : '');
+function _notify(name, email, phone, company, service, message, howFound, sourceArticle) {
+  var subject = 'New quote request - ' + name + (company ? ' (' + company + ')' : '');
   var rows = [
     ['Name', name],
     ['Email', email],
+    ['Phone / WhatsApp', phone || ' - '],
     ['Company', company || ' - '],
-    ['Service', service || ' - '],
-    ['Message', message || ' - '],
+    ['What they need', service || ' - '],
+    ['About their project', message || ' - '],
     ['How they found us', howFound || ' - '],
-    ['Article they read', sourceArticle || ' - '],
-    ['Calculator estimate', estimate || ' - ']
+    ['Article they read', sourceArticle || ' - ']
   ];
   var html = '<div style="font-family:Arial,Helvetica,sans-serif;font-size:15px;color:#0b1024;line-height:1.5">'
-    + '<h2 style="margin:0 0 14px;font-size:18px">New contact form enquiry</h2>'
+    + '<h2 style="margin:0 0 14px;font-size:18px">New quote request from the website</h2>'
     + '<table cellpadding="6" style="border-collapse:collapse">';
   rows.forEach(function (r) {
     html += '<tr><td style="color:#8a90a6;vertical-align:top"><b>' + r[0] + '</b></td>'

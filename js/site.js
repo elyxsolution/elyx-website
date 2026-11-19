@@ -329,9 +329,13 @@
 
     /* ---- prefill + attribution (?service=, ?est=, ?src=) ---- */
     var qs = new URLSearchParams(location.search);
-    var svcMap = { 'saas-development': 'SaaS Development', 'web-development': 'Web Development', 'app-development': 'App Development', 'seo-optimization': 'SEO Optimization', 'maintenance-care': 'Maintenance & Care' };
-    var svcSel = cform.querySelector('#f-service');
-    if (svcSel && qs.get('service') && svcMap[qs.get('service')]) svcSel.value = svcMap[qs.get('service')];
+    var svcMap = { 'web-development': 'Web Development', 'ecommerce': 'E-commerce', 'app-development': 'Mobile App Development', 'saas-development': 'SaaS Development', 'ai-chatbots': 'AI Chatbots', 'ai-call-assistants': 'AI Call & Voice Assistants', 'seo-optimization': 'SEO Optimization', 'maintenance-care': 'Maintenance & Care' };
+    var svcBoxes = cform.querySelectorAll('input.js-svc');
+    var svcWrap = document.getElementById('svcpick');
+    var svcHidden = cform.querySelector('#f-service');
+    var wantSvc = svcMap[qs.get('service')];   // "Request a quote" on a service page ticks that service
+    if (wantSvc) Array.prototype.forEach.call(svcBoxes, function (b) { if (b.value === wantSvc) b.checked = true; });
+    function chosenServices() { return Array.prototype.filter.call(svcBoxes, function (b) { return b.checked; }).map(function (b) { return b.value; }); }
     var msgEl = cform.querySelector('#f-msg');
     var srcEl = cform.querySelector('#f-src'), landEl = cform.querySelector('#f-landing'), estEl = cform.querySelector('#f-est');
     try {
@@ -343,7 +347,7 @@
 
     function sentEvent() {
       var fd = new FormData(cform);
-      document.dispatchEvent(new CustomEvent('elyx:form_submit', { detail: { service: fd.get('service') || '', how_found: fd.get('how_found') || '', article_slug: fd.get('source_article') || '' } }));
+      document.dispatchEvent(new CustomEvent('elyx:form_submit', { detail: { service: chosenServices().join(', '), how_found: fd.get('how_found') || '', article_slug: fd.get('source_article') || '' } }));
     }
     function setError(msg) {
       if (!errorEl) return;
@@ -363,12 +367,19 @@
       var ok = true;
       if (!nameEl.value.trim()) { mark(nameEl, true); ok = false; }
       if (!emailEl.value.trim() || !/.+@.+\..+/.test(emailEl.value)) { mark(emailEl, true); ok = false; }
+      if (!chosenServices().length) {
+        if (svcWrap) svcWrap.classList.add('svcpick--bad');
+        setError('Please choose at least one service, or pick "Not sure yet" and we will help.');
+        if (ok) { svcWrap.scrollIntoView({ behavior: 'smooth', block: 'center' }); return; }
+        ok = false;
+      }
       if (!ok) { (nameEl.value.trim() ? emailEl : nameEl).focus(); return; }
 
       // honeypot - if a bot filled the hidden field, fake success and send nothing
       var hp = cform.querySelector('[name="company_website"]');
       if (hp && hp.value) { cform.classList.add('sent'); return; }
 
+      svcHidden.value = chosenServices().join(', ');
       var body = new URLSearchParams(new FormData(cform));
 
       // No endpoint configured yet → demo success (dev only)
@@ -402,6 +413,9 @@
 
     cform.querySelectorAll('input, textarea').forEach(function (el) {
       el.addEventListener('input', function () { mark(el, false); setError(''); });
+    });
+    Array.prototype.forEach.call(svcBoxes, function (b) {
+      b.addEventListener('change', function () { if (svcWrap) svcWrap.classList.remove('svcpick--bad'); setError(''); });
     });
   }
 
