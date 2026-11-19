@@ -8,7 +8,7 @@
     "lastmod": "2026-11-19"
   },
   "/services/app-development/": {
-    "hash": "b48532d019b74f993fbace9f43b7897d",
+    "hash": "1246e42293ece50d0ec9b31d6e845ec1",
     "lastmod": "2026-11-19"
   },
   "/services/seo-optimization/": {
@@ -76,7 +76,7 @@
     "lastmod": "2026-11-19"
   },
   "/blog/": {
-    "hash": "92f7c98993f5b302e2fc55d3ed77b113",
+    "hash": "a6d82f3f72812a602e80c17b5a8afc08",
     "lastmod": "2026-11-19"
   },
   "/blog/category/industries/": {
@@ -156,7 +156,7 @@
     "lastmod": "2026-11-16"
   },
   "/blog/author/shreyasmv/": {
-    "hash": "0a763423ba2676b29d0d58ba4c72d815",
+    "hash": "571a009bf81ad70897b7ed9bac9b0b5d",
     "lastmod": "2026-11-19"
   },
   "/blog/author/rahulc/": {
@@ -477,6 +477,10 @@
   },
   "/services/admin-dashboards/": {
     "hash": "8263aa9e537d450de2cc2eeba2174aae",
+    "lastmod": "2026-11-19"
+  },
+  "/blog/app-store-rejection-reasons/": {
+    "hash": "f8611cc172f997473edc52e7f82971db",
     "lastmod": "2026-11-19"
   }
 }
