@@ -4,6 +4,7 @@ slug: landing-page-best-practices
 category: websites
 description: Landing page best practices section by section: headline, action, proof, speed and testing, with six named examples and the Pinnacle Inc. brief.
 date: 2026-11-15
+updated: 2026-11-19
 author: rahulc
 case: pinnacle-inc
 ---

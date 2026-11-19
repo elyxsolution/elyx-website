@@ -5,6 +5,7 @@ slug: wordpress-vs-webflow-vs-nextjs
 category: websites
 description: WordPress vs Webflow vs Next.js compared on cost, speed, editing and scaling, with a verdict by business type and sourced figures dated November 2026.
 date: 2026-11-15
+updated: 2026-11-19
 author: rahulc
 ---
 WordPress vs Webflow vs Next.js comes down to three questions: who edits the site, how fast it must load, and who looks after it once it is live. For a small Indian business with five to ten pages and no developer on staff, Webflow or a well-kept WordPress site is usually the safer start, and Next.js earns its higher build cost when the site is your main source of enquiries or needs custom features. The qualification that matters is that every source I read sells one of these platforms, so the cost and speed figures here are agency and vendor claims, not independent tests.

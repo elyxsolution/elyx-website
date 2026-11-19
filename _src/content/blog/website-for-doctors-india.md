@@ -5,6 +5,7 @@ seo_title: Website for Doctors in India: Booking, WhatsApp, Maps
 category: industries
 description: Website for doctors in India: the pages to build, WhatsApp and booking tools, Google Maps setup, Practo versus your own site, and patient-data basics.
 date: 2026-11-12
+updated: 2026-11-19
 author: shreyasmv
 industry: dentists
 case: ashirwad-dental

@@ -5,6 +5,7 @@ slug: what-pages-should-a-business-website-have
 category: websites
 description: What pages should a business website have? A minimum set of four, what each must contain, the extras worth adding and the pages to skip, for India.
 date: 2026-11-16
+updated: 2026-11-19
 author: shreyasmv
 ---
 What pages should a business website have? Four: a homepage, a services page, an about page and a contact page, plus proof that you are real (reviews, photos or credentials) placed on those pages instead of on a page of their own. Everything else is optional until a customer's question demands it. The honest qualification is that all four sources I read are practitioner and vendor guides with no tested results, so the minimum set below is my reading of where they agree.

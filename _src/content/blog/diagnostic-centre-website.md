@@ -5,6 +5,7 @@ slug: diagnostic-centre-website
 category: industries
 description: Diagnostic centre website guide: test catalogue, home-collection booking, report access and local SEO, drawn from four Indian lab sites read in Nov 2026.
 date: 2026-11-13
+updated: 2026-11-19
 author: shreyasmv
 industry: dentists
 ---

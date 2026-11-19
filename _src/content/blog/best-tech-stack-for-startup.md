@@ -5,6 +5,7 @@ slug: best-tech-stack-for-startup
 category: saas
 description: The best tech stack for startup founders is one your team knows and you can hire for. A scored decision rule, a lock-in checklist and an India cost view.
 date: 2026-11-17
+updated: 2026-11-19
 author: shreyasmv
 ---
 The best tech stack for a startup is the one your team already knows, that developers are easy to find for, and that you can leave without rewriting the product. For most web-first products, the six pages I read point to the same core: React or Next.js with TypeScript, PostgreSQL and managed hosting. The honest qualification is that those pages are agencies, a tool vendor, a guide site and two individuals' posts, with no independent survey behind them, so the judgement calls below are my opinion and I label them as such.

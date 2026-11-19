@@ -5,6 +5,7 @@ slug: event-management-company-website
 category: industries
 description: What an event management company website needs for peak season: packages, captioned galleries, enquiry routing and reviews, with a worked example.
 date: 2026-11-13
+updated: 2026-11-19
 author: shreyasmv
 ---
 An event management company website handles peak-season enquiries when a wedding family or a corporate buyer can state the date, city and guest count in one step, when packages are visible instead of hidden behind "contact us", and when galleries and reviews prove the work. We read four event-company sites (Craftworld Events, MadRun Communications, Chennai Events Management and Events & Pro), and none states a price or a package list in the text we extracted. The honest qualification is that the research holds no data on Indian wedding-season volumes, so the peak-season argument below is my reasoning, shown with assumed numbers you should replace with your own.

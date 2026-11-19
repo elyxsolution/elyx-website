@@ -5,6 +5,7 @@ category: websites
 money: /services/ecommerce-development/
 description: Shopify vs WooCommerce India: rupee fees, GST invoicing, COD and courier tools, and a verdict by monthly sales, with the arithmetic shown.
 date: 2026-11-16
+updated: 2026-11-19
 author: shreyasmv
 ---
 Shopify vs WooCommerce India comes down to who looks after the store and how much you sell each month. For a first-time Indian seller with no developer on call, Shopify is the safer start, because it hosts, patches and secures the store for a plan fee. WooCommerce turns cheaper once monthly sales are high enough that Shopify's extra fee on every third-party gateway sale costs more than paying someone to maintain it. The qualification is that every source I read is an agency or a platform vendor, and none gives an independent test or the GST rule itself.

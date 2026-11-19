@@ -5,6 +5,7 @@ seo_title: Advocate Website India: What Bar Council Rule 36 Allows
 category: industries
 description: An advocate website India's Bar Council rules permit: the particulars Rule 36 allows, what to leave out, a safe page structure and a template to copy.
 date: 2026-11-12
+updated: 2026-11-19
 author: shreyasmv
 industry: ca-and-law-firms
 ---

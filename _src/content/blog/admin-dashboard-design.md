@@ -5,6 +5,7 @@ category: saas
 money: /services/admin-dashboards/
 description: Admin dashboard design for SaaS and internal tools: which metrics to show, how filters, roles and exports should work, and when a template is enough.
 date: 2026-11-17
+updated: 2026-11-19
 author: shreyasmv
 case: malnad-stories
 ---

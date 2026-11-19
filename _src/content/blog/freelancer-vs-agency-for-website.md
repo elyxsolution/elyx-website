@@ -5,6 +5,7 @@ slug: freelancer-vs-agency-for-website
 category: pricing-hiring
 description: Freelancer vs agency for website builds, compared on cost, risk and accountability, with a three-year cost table and a ten-minute decision test.
 date: 2026-11-14
+updated: 2026-11-19
 author: shreyasmv
 ---
 Freelancer vs agency for website work comes down to who carries the risk if something goes wrong. A freelancer is usually cheaper for a small, simple site you will rarely change, an agency suits a site that earns money or needs several skills, and a small studio sits between the two. The honest qualification is that every source we read is written by someone who sells web work, so treat their price bands as rough guides, not market data.

@@ -5,6 +5,7 @@ slug: homestay-website
 category: industries
 description: A homestay website guide for India: OTA commission worked out, booking engines, UPI payments, Google listings and photos, with a checklist.
 date: 2026-11-12
+updated: 2026-11-19
 author: shreyasmv
 ---
 A homestay website wins direct bookings when a guest who found you on an OTA (online travel agency, such as MakeMyTrip or Booking.com) or on Google can check dates, see the price and pay a deposit on your own page, without a platform taking a cut. The qualification that matters is that a website does not fill rooms by itself: it converts guests you already attract, and it only saves money if your calendar stays in sync with every OTA you keep. The five pages we read for this article state no OTA commission rates, so the worked example below uses assumed numbers that you should replace with the rates in your own statements.

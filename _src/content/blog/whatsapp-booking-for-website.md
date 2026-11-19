@@ -6,6 +6,7 @@ category: websites
 money: /services/whatsapp-automation/
 description: WhatsApp booking for website owners: click-to-chat, the Business app, the Business API and hosted pages compared, with costs, scripts and a decision rule.
 date: 2026-11-15
+updated: 2026-11-19
 author: rahulc
 ---
 WhatsApp booking for website visitors can be added five ways, and the right one depends on who confirms the slot. A click-to-chat button opens a chat with a ready-typed message and you confirm by hand. The WhatsApp Business app can connect one calendar to an AI agent, and the WhatsApp Business Platform (the API) lets a provider confirm slots, send reminders and take deposits inside the chat. The honest qualification is that I could use only WhatsApp's own pages and a few vendor pages, with no independent test of any option, so every no-show figure below is a vendor's claim, not a finding.

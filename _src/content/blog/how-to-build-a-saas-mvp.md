@@ -4,6 +4,7 @@ slug: how-to-build-a-saas-mvp
 category: saas
 description: How to build a SaaS MVP in 8 weeks: a week-by-week plan from scoping and design to build sprints and launch, with a cut-line example and checklists.
 date: 2026-11-16
+updated: 2026-11-19
 author: shreyasmv
 ---
 How to build a SaaS MVP in eight weeks: spend week one on scope, week two on design and the data model, weeks three to six on four one-week build sprints, week seven on testing and week eight on a launch to a small group of real users. The studio's draft timeline for a SaaS MVP is {{weeks:saas}}, so eight weeks is the fast end and holds only when the product has one core workflow and the founder decides within the week. Treat the plan below as a schedule to work to, not a delivery promise.

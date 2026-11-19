@@ -4,6 +4,7 @@ slug: mvp-features-list
 category: saas
 description: Sort your MVP features list into must-haves and nice-to-haves, see a worked example, and keep the security and billing basics.
 date: 2026-11-17
+updated: 2026-11-19
 author: shreyasmv
 ---
 An MVP features list holds only the features a first customer needs to solve their top problem, and nothing that merely makes the product feel finished. Cut anything that does not test your core assumption, such as extra roles, coupons, a mobile app or fancy dashboards. Never cut the quality basics: separate customer data, safe logins, a working payment path with a failed-payment state, and backups. The honest qualification is that the four pages I read explain how to prioritise but say almost nothing on security or billing, so those two sections are my reading, built from the studio's own SaaS scope.

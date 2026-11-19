@@ -4,6 +4,7 @@ slug: salon-website-with-online-booking
 category: industries
 description: How a salon website with online booking cuts no-shows: booking tools compared, UPI deposits, service menus and reminders, with a worked example.
 date: 2026-11-12
+updated: 2026-11-19
 author: shreyasmv
 ---
 A salon website with online booking cuts no-shows when the client commits to a specific slot: a deposit taken at booking, a reminder before the visit, and a service menu that shows how long each service takes. SimplyBook.me and Salonkee sell deposits and reminders as their no-show tools, and Appointy claims reminders alone cut no-shows by up to 50 percent. The honest qualification is that these are vendor claims with no published method, and none of the five vendor pages we read mentions UPI.

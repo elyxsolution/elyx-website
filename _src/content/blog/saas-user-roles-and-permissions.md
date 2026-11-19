@@ -5,6 +5,7 @@ slug: saas-user-roles-and-permissions
 category: saas
 description: SaaS user roles and permissions for founders: a five-role starting model, a safe invite flow, when to add SSO and the mistakes that force rework.
 date: 2026-11-17
+updated: 2026-11-19
 author: shreyasmv
 ---
 SaaS user roles and permissions are cheapest to get right in week one: use a bought sign-in, give each person one role per workspace, check permissions on the server instead of role names, and add SSO only when a paying customer asks. Roles, tenants and invites touch every screen and every database query, so changing them after launch means reopening finished work. The honest qualification is that the evidence I read is three practitioner pages and a handful of developer forum threads, with no standards body or measured data, so the design choices below are my reading and are labelled that way.

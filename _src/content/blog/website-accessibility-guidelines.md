@@ -4,6 +4,7 @@ slug: website-accessibility-guidelines
 category: websites
 description: Website accessibility guidelines explained for Indian businesses: WCAG levels, contrast, alt text, keyboard use, forms and nine ranked quick wins.
 date: 2026-11-16
+updated: 2026-11-19
 author: shreyasmv
 ---
 Website accessibility guidelines are, in practice, one document: the Web Content Accessibility Guidelines (WCAG) from the W3C, and in November 2026 the version to build to is WCAG 2.2 at level AA. For a small business that means readable colour contrast, text for every meaningful image, a site that works without a mouse, and forms that explain themselves. The honest qualification is that my research holds no Indian law covering private business sites, only guidelines for government sites and rules from other countries, so the legal side is a question for a lawyer.

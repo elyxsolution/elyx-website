@@ -5,6 +5,7 @@ slug: school-website-design
 category: industries
 description: School website design for admission season: what the admissions page, fee table, safety information, gallery and enquiry form should contain.
 date: 2026-11-12
+updated: 2026-11-19
 author: shreyasmv
 ---
 School website design works at admission time when a parent can find the admission steps, the fees, the safety arrangements and a way to ask a question within a minute of landing on the site. The honest qualification is that the research behind this article is thin: the results are galleries, template pages and lists of example sites, and the one list we could read covers private schools in the US, UK, France and Switzerland. None of it covers fees, safety or enquiry forms, so the advice below is my reading, built from the studio's own facts for clinics and coaching centres, and every figure is either dated and sourced or labelled as an assumption.

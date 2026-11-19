@@ -5,6 +5,7 @@ slug: saas-scaling-problems
 category: saas
 description: SaaS scaling problems in a young product: what breaks first in performance, support, billing and monitoring, with worked examples and a checklist.
 date: 2026-11-17
+updated: 2026-11-19
 author: shreyasmv
 ---
 SaaS scaling problems in a young product tend to arrive in this order: slow screens and a rising cloud bill, then support work that eats the founders' week, then billing cases the first version never handled, with outages nobody saw coming running through all of it. The qualification that matters is that no source gives a customer count at which each problem starts, so the order here is my reading of published pages, not a measured sequence. What the sources agree on is the cause: a system built to test an idea is now carrying more users, data and money than it was designed for.

@@ -4,6 +4,7 @@ slug: validate-a-saas-idea
 category: saas
 description: How to validate a SaaS idea with interviews, a landing-page test, a waitlist and a paid pre-sale, with pass marks and a worked example in numbers.
 date: 2026-11-17
+updated: 2026-11-19
 author: shreyasmv
 ---
 To validate a SaaS idea before you build it, collect evidence of what people do, not what they say: hold about ten problem interviews, put up a landing page that asks for a signup, follow every signup with one question, and ask the interested ones to pay a deposit or sign a paid pilot. The honest qualification is that no test proves success, and most figures below come from tool vendors and founders' own accounts, not audited studies. My reading is that the order of the tests matters more than any single number.

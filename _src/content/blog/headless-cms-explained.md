@@ -4,6 +4,7 @@ slug: headless-cms-explained
 category: websites
 description: Headless CMS explained in plain English: how it works, how it differs from WordPress, who uses one and when it is overkill for a small business.
 date: 2026-11-15
+updated: 2026-11-19
 author: rahulc
 ---
 Headless CMS explained in one line: it is a content management system that stores your text, photos and prices but has no website attached, so a separate front end fetches that content and displays it. Your team edits in one place, and the same content can reach a website, an app or any screen that asks for it.

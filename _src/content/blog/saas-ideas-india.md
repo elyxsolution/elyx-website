@@ -4,6 +4,7 @@ slug: saas-ideas-india
 category: saas
 description: SaaS ideas India founders can test: 25 vertical ideas for clinics, coaching, kirana and logistics, each with its reasoning and a 30-day test.
 date: 2026-11-17
+updated: 2026-11-19
 author: shreyasmv
 ---
 The best SaaS ideas India offers small businesses are narrow tools for one trade's weekly chore: booking and reminders for clinics, fee collection for coaching centres, ordering and credit for kirana stores, and trip and delivery records for small transporters. This page lists 25, grouped by trade, with the reasoning behind each. The honest qualification is that no page I read proves revenue for any idea, and the research holds no source on kirana or logistics, so those ideas are my reasoning, marked as such, and each needs a 30-day test before you build.

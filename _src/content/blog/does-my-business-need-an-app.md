@@ -4,6 +4,7 @@ slug: does-my-business-need-an-app
 category: apps
 description: Does my business need an app? Four tests, a copyable checklist, website and app costs side by side, and a worked payback example, read in Nov 2026.
 date: 2026-11-17
+updated: 2026-11-19
 author: shreyasmv
 ---
 Does my business need an app? Usually not yet, because an app pays off only when customers will open it at least weekly or the job needs push notifications, offline use or phone hardware such as the camera or GPS, and otherwise a faster website does more for the money. The honest qualification is that most app statistics come from firms that sell apps, so the sections below test each figure before using it, and [the app development page on this site](/services/app-development/) starts from the same question.

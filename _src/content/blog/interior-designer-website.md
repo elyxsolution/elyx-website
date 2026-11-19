@@ -5,6 +5,7 @@ slug: interior-designer-website
 category: industries
 description: What an interior designer website needs to win projects: case pages, honest before and after photos, a qualifying enquiry form and Indian costs.
 date: 2026-11-13
+updated: 2026-11-19
 author: shreyasmv
 ---
 An interior designer website wins projects when it lets a client check you before they call: project case pages that show the brief and the result, before and after photos with honest captions, and an enquiry form that asks about budget, scope and timing. The qualification is the evidence. Nothing I could read measures how many enquiries any of this produces, so what follows is sourced where a source exists and marked as my reading where it does not.
