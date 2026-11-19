@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Building Apps That Work Offline on Patchy Networks</title>
+<meta name="description" content="An offline-first app reads and writes on the phone first and syncs later. Sync strategies, caching and field-team use cases for patchy networks." />
+<link rel="canonical" href="https://elyxsolutions.in/blog/offline-first-app/" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#080b1a" />
+<!-- Open Graph -->
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Elyx Solutions" />
+<meta property="og:title" content="Building Apps That Work Offline on Patchy Networks" />
+<meta property="og:description" content="An offline-first app reads and writes on the phone first and syncs later. Sync strategies, caching and field-team use cases for patchy networks." />
+<meta property="og:url" content="https://elyxsolutions.in/blog/offline-first-app/" />
+<meta property="og:image" content="https://elyxsolutions.in/og/blog-offline-first-app.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:locale" content="en_IN" />
+<meta property="article:published_time" content="2026-11-20" />
+<meta property="article:modified_time" content="2026-11-20" />
+<meta property="article:section" content="Mobile Apps" />
+<meta property="article:author" content="https://elyxsolutions.in/blog/author/shreyasmv/" />
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Building Apps That Work Offline on Patchy Networks" />
+<meta name="twitter:description" content="An offline-first app reads and writes on the phone first and syncs later. Sync strategies, caching and field-team use cases for patchy networks." />
+<meta name="twitter:image" content="https://elyxsolutions.in/og/blog-offline-first-app.png" />
+<!-- Icons -->
+<link rel="icon" href="../../favicon.svg" type="image/svg+xml" />
+<link rel="icon" href="../../icon-192.png" sizes="192x192" type="image/png" />
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500;1,6..72,600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../../css/styles.css" />
+<link rel="stylesheet" href="../../css/pages.css" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://elyxsolutions.in/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://elyxsolutions.in/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Building Apps That Work Offline on Patchy Networks",
+          "item": "https://elyxsolutions.in/blog/offline-first-app/"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://elyxsolutions.in/blog/offline-first-app/#article",
+      "headline": "Building Apps That Work Offline on Patchy Networks",
+      "description": "An offline-first app reads and writes on the phone first and syncs later. Sync strategies, caching and field-team use cases for patchy networks.",
+      "image": [
+        "https://elyxsolutions.in/og/blog-offline-first-app.png"
+      ],
+      "datePublished": "2026-11-20",
+      "dateModified": "2026-11-20",
+      "author": {
+        "@type": "Person",
+        "@id": "https://elyxsolutions.in/blog/author/shreyasmv/#person",
+        "name": "Shreyas M V",
+        "url": "https://elyxsolutions.in/blog/author/shreyasmv/",
+        "sameAs": [
+          "https://www.linkedin.com/in/shreyas-m-v-311b99205/"
+        ]
+      },
+      "publisher": {
+        "@id": "https://elyxsolutions.in/#organization"
+      },
+      "mainEntityOfPage": "https://elyxsolutions.in/blog/offline-first-app/",
+      "articleSection": "Mobile Apps",
+      "inLanguage": "en-IN"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is an offline-first app?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "An offline-first app is one that performs all, or a critical subset, of its core functions without internet access. Google's Android guide uses that definition. It does this by reading and writing a local database and syncing later."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the offline-first approach?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The offline-first approach is a design method that treats local storage as the default and the network as an occasional update channel. Jusuf Topic describes data being read from and written to a local store, with sync happening opportunistically in the background. Offline use is then a normal state."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I build an offline-first app?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Build the local database and a repository layer first, then decide a read, write and sync rule for each feature. Google and Flutter both start from the data layer, with a local source of truth. Add conflict rules, sync status on screen and offline testing before launch."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can an offline-first app work without internet at all?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It can do most or all of its work offline, but it needs a connection at some point to sync and update. Mendix says no connection is needed except for synchronising and updating. Actions that must be exact in real time, such as payments, still need one."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I use an offline app?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Open the app while online so it can download your data, then check that the screens show your latest information before you travel. Mendix says the app checks for newer versions and syncs when a connection exists. This is my reading for users: look for a sync or last-updated indicator."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the best framework for an offline-first app, Flutter or React Native?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Neither is the answer by itself, because the offline layer is an architecture of local database, repository and sync. Flutter documents the pattern in its own guide. Elyx builds in React Native or Flutter depending on the use case."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is last write wins safe for conflicts?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Last write wins is safe only for fields where the newest value is the right one, such as a phone number. For counts it loses data, as the stock example above shows. Mendix, Google and Jusuf Topic all list it alongside other rules."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is offline-first right for every app?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Jusuf Topic names real-time centralised apps, data too sensitive to change locally without strict validation, and always-online users as poor fits. Offline-first also adds local storage, sync, retry and conflict logic."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does an offline-first app cost more to build?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It adds work, because the sources list local storage, sync protocols, queuing, status screens and conflict tracking as extra complexity. I have no cost data to quote. Elyx engagements start from ₹9,999, and an offline-first scope is quoted on request in writing after a call."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body data-article="offline-first-app">
+<div class="grain"></div>
+<div class="nav-shell scrolled" id="navShell">
+  <a class="brand nav__brand" href="../../" aria-label="Elyx Solutions home">
+    <svg class="brand__mark" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+      <g transform="skewX(-10)">
+        <rect x="7" y="4" width="15" height="4.4" rx="1.2" fill="#1f4fd8"></rect>
+        <rect x="7" y="11.8" width="11" height="4.4" rx="1.2" fill="#0b1024"></rect>
+        <rect x="7" y="19.6" width="15" height="4.4" rx="1.2" fill="#1f4fd8"></rect>
+      </g>
+    </svg>
+    <span class="brand__name">Elyx</span>
+  </a>
+
+  <nav class="nav" id="nav" aria-label="Main">
+    <div class="nav__links" id="navLinks">
+      <div class="nav__item" data-menu="services"><button type="button">Services <svg class="caret" viewBox="0 0 10 10" fill="none"><path d="M1 3l4 4 4-4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button></div>
+      <div class="nav__item" data-menu="industries"><button type="button">Industries <svg class="caret" viewBox="0 0 10 10" fill="none"><path d="M1 3l4 4 4-4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button></div>
+      <div class="nav__item" data-menu="work"><button type="button">Work <svg class="caret" viewBox="0 0 10 10" fill="none"><path d="M1 3l4 4 4-4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button></div>
+      <div class="nav__item"><a href="../../blog/">Blog</a></div>
+      <div class="nav__item"><a href="../../about.html">About</a></div>
+      <div class="nav__item"><a href="../../contact.html">Contact</a></div>
+    </div>
+  </nav>
+
+  <div class="nav__right">
+    <a class="btn btn--primary nav__cta" href="../../contact.html" data-track="cta_click" data-pos="nav">Let's talk <svg class="arr" width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H4M10 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+    <button class="nav__burger" id="burger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <div class="mobile-menu__group">
+      <span class="mobile-menu__label">Services</span>
+      <a href="../../services/web-development/">Web Development</a>
+      <a href="../../services/ecommerce-development/">E-commerce Development</a>
+      <a href="../../services/saas-development/">SaaS Development</a>
+      <a href="../../services/app-development/">App Development</a>
+      <a href="../../services/ai-chatbots/">AI Chatbots</a>
+      <a href="../../services/ai-call-assistants/">AI Call &amp; Voice Assistants</a>
+      <a href="../../services/whatsapp-automation/">WhatsApp &amp; Business Automation</a>
+      <a href="../../services/crm-lead-management/">CRM &amp; Lead Management</a>
+      <a href="../../services/booking-systems/">Booking &amp; Appointment Systems</a>
+      <a href="../../services/payments-billing/">Payments &amp; Subscription Billing</a>
+      <a href="../../services/admin-dashboards/">Admin Dashboards &amp; Internal Tools</a>
+      <a href="../../services/seo-optimization/">SEO Optimization</a>
+      <a href="../../services/maintenance-care/">Maintenance &amp; Care</a>
+    </div>
+    <div class="mobile-menu__group">
+      <span class="mobile-menu__label">Websites for</span>
+      <a href="../../websites-for/dentists/">Dentists &amp; Clinics</a>
+      <a href="../../websites-for/coaching-centres/">Coaching Centres</a>
+      <a href="../../websites-for/restaurants-and-cafes/">Restaurants &amp; Cafés</a>
+      <a href="../../websites-for/salons-and-spas/">Salons &amp; Spas</a>
+      <a href="../../websites-for/real-estate/">Real Estate</a>
+      <a href="../../websites-for/ca-and-law-firms/">CA &amp; Law Firms</a>
+    </div>
+    <div class="mobile-menu__group">
+      <span class="mobile-menu__label">Company</span>
+      <a href="../../about.html">About</a>
+      <a href="../../work.html">Work</a>
+      <a href="../../pricing/">Pricing</a>
+      <a href="../../blog/">Blog</a>
+      <a href="../../tools/">Free tools</a>
+      <a href="../../contact.html">Contact</a>
+    </div>
+    <a class="btn btn--blue mobile-menu__cta" href="../../contact.html">Let's talk <svg class="arr" width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H4M10 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+  </div>
+
+  <!-- Mega panel -->
+  <div class="mega" id="mega">
+    <div class="mega__inner">
+      <div class="mega__panel" data-panel="services">
+        <div class="mega-grid">
+          <div class="mega-tiles"><a class="mtile" href="../../services/web-development/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M9 8l-4 4 4 4M15 8l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">Web Development</span></span></a><a class="mtile" href="../../services/ecommerce-development/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M3 4h2l2.4 10.2a1 1 0 001 .8h8.2a1 1 0 001-.76L19 8H6.2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path><circle cx="9.5" cy="19" r="1.3" fill="currentColor"></circle><circle cx="16.5" cy="19" r="1.3" fill="currentColor"></circle></svg></span><span><span class="mtile__t">E-commerce Development</span></span></a><a class="mtile" href="../../services/saas-development/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M6 16a4 4 0 010-8 5 5 0 019.6-1.5A3.5 3.5 0 0118 16H6z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">SaaS Development</span></span></a><a class="mtile" href="../../services/app-development/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><rect x="7" y="3" width="10" height="18" rx="2.5" stroke="currentColor" stroke-width="1.6"></rect><path d="M11 18h2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg></span><span><span class="mtile__t">App Development</span></span></a><a class="mtile" href="../../services/ai-chatbots/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M5 6.5A2.5 2.5 0 017.5 4h9A2.5 2.5 0 0119 6.5v6a2.5 2.5 0 01-2.5 2.5H11l-4 3.5V15h-.5A2.5 2.5 0 014 12.5v-6z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"></path><path d="M9 9.7h.01M12 9.7h.01M15 9.7h.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path></svg></span><span><span class="mtile__t">AI Chatbots</span></span></a><a class="mtile" href="../../services/ai-call-assistants/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M6.6 4h2.2l1.2 3.4-1.6 1.2a10 10 0 004.2 4.2l1.2-1.6 3.4 1.2v2.2A2 2 0 0115.2 16 11.2 11.2 0 014 4.8 2 2 0 016.6 4z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"></path><path d="M15 4.5a5.5 5.5 0 014.5 4.5M15 8a2.5 2.5 0 012 2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg></span><span><span class="mtile__t">AI Call &amp; Voice Assistants</span></span></a><a class="mtile" href="../../services/whatsapp-automation/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M13 3L5 13.2h6L10 21l8-10.2h-6L13 3z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">WhatsApp &amp; Business Automation</span></span></a><a class="mtile" href="../../services/crm-lead-management/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><circle cx="9" cy="8.5" r="3" stroke="currentColor" stroke-width="1.6"></circle><path d="M3.5 19a5.5 5.5 0 0111 0" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path><path d="M16 5.8a3 3 0 010 5.4M17.5 14.4A5.5 5.5 0 0120.5 19" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg></span><span><span class="mtile__t">CRM &amp; Lead Management</span></span></a><a class="mtile" href="../../services/booking-systems/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><rect x="4" y="5.5" width="16" height="14" rx="2.5" stroke="currentColor" stroke-width="1.6"></rect><path d="M4 10h16M8.5 3.5v4M15.5 3.5v4M9 14.5l2 2 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">Booking &amp; Appointment Systems</span></span></a><a class="mtile" href="../../services/payments-billing/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><rect x="3.5" y="6" width="17" height="12" rx="2.5" stroke="currentColor" stroke-width="1.6"></rect><path d="M3.5 10.5h17M7 15h3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg></span><span><span class="mtile__t">Payments &amp; Subscription Billing</span></span></a><a class="mtile" href="../../services/admin-dashboards/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="7" height="7" rx="1.6" stroke="currentColor" stroke-width="1.6"></rect><rect x="13" y="4" width="7" height="4.5" rx="1.6" stroke="currentColor" stroke-width="1.6"></rect><rect x="13" y="11" width="7" height="9" rx="1.6" stroke="currentColor" stroke-width="1.6"></rect><rect x="4" y="14" width="7" height="6" rx="1.6" stroke="currentColor" stroke-width="1.6"></rect></svg></span><span><span class="mtile__t">Admin Dashboards &amp; Internal Tools</span></span></a><a class="mtile" href="../../services/seo-optimization/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><circle cx="10.5" cy="10.5" r="6" stroke="currentColor" stroke-width="1.6"></circle><path d="M15 15l5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg></span><span><span class="mtile__t">SEO Optimization</span></span></a><a class="mtile" href="../../services/maintenance-care/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M12 8v4l3 2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path><circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="1.6"></circle></svg></span><span><span class="mtile__t">Maintenance &amp; Care</span></span></a><a class="mtile" href="../../pricing/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M4 14l5-5 4 4 7-7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path><path d="M20 6v4h-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">Pricing</span></span></a></div>
+          <a class="mega-feature" href="../../pricing/">
+            <div class="ph-grid"></div>
+            <div class="mega-feature__k">Featured</div>
+            <div class="mega-feature__t">Starting from ₹9,999. Quotes tailored to you.</div>
+            <div class="mega-feature__l">See pricing <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H4M10 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+          </a>
+        </div>
+      </div>
+
+      <div class="mega__panel" data-panel="industries">
+        <div class="mega-grid">
+          <div class="mega-tiles"><a class="mtile" href="../../websites-for/dentists/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M12 5c-2-1.5-6-1.5-6 2.5 0 3 1.5 4 1.5 7 0 2 .8 4.5 2 4.5s1.5-2 2.5-2 1.3 2 2.5 2 2-2.5 2-4.5c0-3 1.5-4 1.5-7C18 3.5 14 3.5 12 5z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">Dentists &amp; Clinics</span></span></a><a class="mtile" href="../../websites-for/coaching-centres/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M3 9l9-4 9 4-9 4-9-4z M7 11v4c0 1.5 2.2 3 5 3s5-1.5 5-3v-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">Coaching Centres</span></span></a><a class="mtile" href="../../websites-for/restaurants-and-cafes/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M7 3v8M5 3v5a2 2 0 004 0V3M7 11v10M17 3c-2 1.5-3 4-3 7h3v11" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">Restaurants &amp; Cafés</span></span></a><a class="mtile" href="../../websites-for/salons-and-spas/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><circle cx="6" cy="7" r="2.5" stroke="currentColor" stroke-width="1.6"></circle><circle cx="6" cy="17" r="2.5" stroke="currentColor" stroke-width="1.6"></circle><path d="M8 8.5L20 18M8 15.5L20 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg></span><span><span class="mtile__t">Salons &amp; Spas</span></span></a><a class="mtile" href="../../websites-for/real-estate/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M4 21V8l8-5 8 5v13M9 21v-6h6v6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">Real Estate</span></span></a><a class="mtile" href="../../websites-for/ca-and-law-firms/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M12 4v16M6 20h12M5 8h14M5 8l-2.5 6a3 3 0 005 0L5 8zM19 8l-2.5 6a3 3 0 005 0L19 8z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">CA &amp; Law Firms</span></span></a></div>
+          <a class="mega-feature" href="../../websites-for/">
+            <div class="ph-grid"></div>
+            <div class="mega-feature__k">Built for your trade</div>
+            <div class="mega-feature__t">What a site for your kind of business actually needs.</div>
+            <div class="mega-feature__l">All industries <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H4M10 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+          </a>
+        </div>
+      </div>
+
+      <div class="mega__panel" data-panel="work">
+        <div class="mega-grid mega-grid--work">
+          <div class="mega-wlinks">
+            <a class="mtile" href="../../work.html#tools"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.6"></circle><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5.1 5.1l2.1 2.1M16.8 16.8l2.1 2.1M18.9 5.1L16.8 7.2M7.2 16.8l-2.1 2.1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg></span><span><span class="mtile__t">Tools we use</span></span></a>
+            <a class="mtile" href="../../work.html#faq"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"></circle><path d="M9.6 9.2a2.5 2.5 0 014.7 1.1c0 1.6-2.3 2-2.3 3.6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path><circle cx="12" cy="16.6" r="0.7" fill="currentColor"></circle></svg></span><span><span class="mtile__t">FAQ about Elyx</span></span></a>
+            <a class="mtile" href="../../work.html"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="6.5" height="6.5" rx="1.6" stroke="currentColor" stroke-width="1.6"></rect><rect x="13.5" y="4" width="6.5" height="6.5" rx="1.6" stroke="currentColor" stroke-width="1.6"></rect><rect x="4" y="13.5" width="6.5" height="6.5" rx="1.6" stroke="currentColor" stroke-width="1.6"></rect><rect x="13.5" y="13.5" width="6.5" height="6.5" rx="1.6" stroke="currentColor" stroke-width="1.6"></rect></svg></span><span><span class="mtile__t">All projects</span></span></a>
+          </div>
+          <div class="mega-work"><a class="wcard" href="../../work/ashirwad-dental/"><div class="wcard__img"><img src="../../uploads/projects/ashirwad-dental.jpg" alt="Ashirwad Dental Clinic website" width="1000" height="750" loading="lazy" decoding="async" /></div><div class="wcard__meta"><div class="wcard__t">Ashirwad Dental Clinic</div><div class="wcard__c">Web · Redesign</div></div></a><a class="wcard" href="../../work/malnad-stories/"><div class="wcard__img"><img src="../../uploads/projects/malnad-stories.jpg" alt="Malnad Stories website" width="1000" height="750" loading="lazy" decoding="async" /></div><div class="wcard__meta"><div class="wcard__t">Malnad Stories</div><div class="wcard__c">E-commerce · Web App</div></div></a><a class="wcard" href="https://powertekservices.in/" target="_blank" rel="noopener"><div class="wcard__img"><img src="../../uploads/projects/powertek.jpg" alt="Powertek website" width="1000" height="750" loading="lazy" decoding="async" /></div><div class="wcard__meta"><div class="wcard__t">Powertek</div><div class="wcard__c">Web · Electrical</div></div></a><a class="wcard" href="https://hindustanfoundationandconstructions.com/" target="_blank" rel="noopener"><div class="wcard__img"><img src="../../uploads/projects/hindustan-foundation.jpg" alt="Hindustan Foundation &amp; Constructions website" width="1000" height="750" loading="lazy" decoding="async" /></div><div class="wcard__meta"><div class="wcard__t">Hindustan Foundation &amp; Constructions</div><div class="wcard__c">Web · Construction</div></div></a><a class="wcard" href="https://aralikattecafe.in/" target="_blank" rel="noopener"><div class="wcard__img"><img src="../../uploads/projects/aralikatte-cafe.jpg" alt="Aralikatte Cafe website" width="1000" height="750" loading="lazy" decoding="async" /></div><div class="wcard__meta"><div class="wcard__t">Aralikatte Cafe</div><div class="wcard__c">Web · Restaurant</div></div></a><a class="wcard" href="https://bangaloremusictrust.com/" target="_blank" rel="noopener"><div class="wcard__img"><img src="../../uploads/projects/bangalore-music-trust.jpg" alt="Bangalore Music Trust website" width="1000" height="750" loading="lazy" decoding="async" /></div><div class="wcard__meta"><div class="wcard__t">Bangalore Music Trust</div><div class="wcard__c">Web · Non-profit</div></div></a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<span id="top"></span>
+<main class="bl"><div class="bl__in">
+  <div class="bl__crumbs">
+    <a class="bl__back" href="../../blog/">← Back to Blog</a>
+    <nav aria-label="Breadcrumb"><ol><li><a href="../../">Home</a></li><li aria-hidden="true">/</li><li><a href="../../blog/">Blog</a></li><li aria-hidden="true">/</li><li aria-current="page">Building Apps That Work Offline on Patchy Networks</li></ol></nav>
+  </div>
+  <div class="bl__cols">
+    <article class="barticle" data-article="offline-first-app">
+      <header>
+        <p class="bbyline">By <a class="bauthor" href="../../blog/author/shreyasmv/"><img class="bauthor__ph" src="../../uploads/authors/shreyasmv.jpg" alt="" width="24" height="24" loading="lazy" /><span>Shreyas M V</span></a><span aria-hidden="true">·</span><span>Published <time datetime="2026-11-20">20 November 2026</time></span><span aria-hidden="true">·</span><span>14 min read</span></p>
+        <h1>Building Apps That Work Offline on Patchy Networks</h1>
+        <p class="blead">An offline-first app reads and writes on the phone first and syncs later. Sync strategies, caching and field-team use cases for patchy networks.</p>
+      </header>
+      <nav class="btoc" aria-label="Table of contents"><b>On this page</b><ol><li><a href="#what-is-an-offline-first-app"><span>01</span>What Is an Offline-First App?</a></li><li><a href="#why-patchy-networks-make-this-a-business-question"><span>02</span>Why Patchy Networks Make This a Business Question</a></li><li><a href="#offline-first-architecture-two-data-sources-one-source-of-truth"><span>03</span>Offline-First Architecture: Two Data Sources, One Source of Truth</a></li><li><a href="#caching-versus-a-local-database-what-to-store-on-the-phone"><span>04</span>Caching Versus a Local Database: What to Store on the Phone</a></li><li><a href="#reading-data-offline-three-patterns"><span>05</span>Reading Data Offline: Three Patterns</a></li><li><a href="#writing-data-offline-decide-per-action"><span>06</span>Writing Data Offline: Decide Per Action</a></li><li><a href="#sync-strategies-pull-push-and-when-to-trigger-them"><span>07</span>Sync Strategies: Pull, Push and When to Trigger Them</a></li><li><a href="#conflict-resolution-which-rule-for-which-field"><span>08</span>Conflict Resolution: Which Rule for Which Field</a></li><li><a href="#field-team-use-cases-what-works-offline-and-what-must-wait"><span>09</span>Field-Team Use Cases: What Works Offline and What Must Wait</a></li><li><a href="#flutter-react-native-and-web-where-the-offline-layer-lives"><span>10</span>Flutter, React Native and Web: Where the Offline Layer Lives</a></li><li><a href="#what-usually-goes-wrong-with-offline-apps"><span>11</span>What Usually Goes Wrong With Offline Apps</a></li><li><a href="#what-to-do-next"><span>12</span>What to Do Next</a></li><li><a href="#sources"><span>13</span>Sources</a></li><li><a href="#faq"><span>14</span>Frequently asked questions</a></li></ol></nav>
+      <div class="prose">
+<p>An offline-first app reads from and writes to a database on the phone, and syncs with the server whenever a connection allows. The screen never waits on a signal, which is what a field team on a patchy network needs. The honest qualification is that the sync, caching and conflict rules below are documented by Google, Flutter, Mendix and others, but my research holds no Indian connectivity data, so the India angle is my reading and not a measured finding.</p>
+<ul><li><strong>Core idea.</strong> The local database is the source of truth for the screen, and the network only brings it up to date.</li><li><strong>Writes decide the design.</strong> Each action is online-only, queued or saved locally first, and payments belong in the first group.</li><li><strong>Conflicts need a rule per field.</strong> &quot;Last write wins&quot; is simple, and it silently loses a stock count.</li><li><strong>Not every app needs it.</strong> A permanently online, real-time app is a poor fit.</li></ul>
+<h2 id="what-is-an-offline-first-app">What Is an Offline-First App?</h2>
+<p>An offline-first app can perform all, or a critical subset, of its core work without internet access. Google's Android developer guide defines it that way, and Flutter's documentation says such an app offers most or all of its functions while disconnected, usually by relying on stored data. Mendix, a low-code platform vendor, adds that the connection is needed only to synchronise and update.</p>
+<p>The term covers a design choice, not a feature. An offline-first approach means the app is built around local data from the start, so offline use is the normal state and not an error screen. A related version of the same idea, offline-first web applications, uses browser storage in place of a phone database (more on that below).</p>
+<h2 id="why-patchy-networks-make-this-a-business-question">Why Patchy Networks Make This a Business Question</h2>
+<p>Patchy connectivity costs a business when the app stops being usable at the moment the user needs it. Google lists limited bandwidth, short interruptions such as a lift or tunnel, and devices that connect only occasionally as the causes of spotty service, and says an app can often still work adequately in all three.</p>
+<p>Couchbase, a database vendor that sells an offline-first product, cites 70% of mobile users abandoning a slow app and 84% abandoning one that fails twice. The page I read names no study behind those figures, so treat them as a vendor's claim. The same page argues offline-first is not only for remote sites, since signal drops inside cities too.</p>
+<p>My reading for India: a field team in a tier-2 or tier-3 town, or a trek guide beyond the last tower, meets the same three causes more often than a head-office user does. Elyx's own web development page says most visitors arrive on a phone, often on a patchy 4G connection. If the work happens where signal is weak, the app has to run without it. When you are still deciding whether you need an app at all, <a href="../../blog/does-my-business-need-an-app/">Does Your Business Need an App, or Just a Better Website?</a> gives four tests, and <a href="../../services/app-development/">Elyx's app development service</a> starts from the same question.</p>
+<h2 id="offline-first-architecture-two-data-sources-one-source-of-truth">Offline-First Architecture: Two Data Sources, One Source of Truth</h2>
+<p>An offline-first architecture gives every repository at least two data sources, a local one and a network one, and treats the local one as canonical. Google's guide says screens should read only from the local source, which keeps data consistent in every connection state. The network source is the actual state of the app's data, and the two drift apart until a sync closes the gap.</p>
+<p>Two practical rules follow from Google's guide and Flutter's:</p>
+<ul><li>The screens never call the network directly. A repository layer talks to both sources and updates the local one first.</li><li>Keep separate models for the local database and the network payload, and expose a third clean model to the rest of the app. That protects screens from small changes on either side.</li></ul>
+<h2 id="caching-versus-a-local-database-what-to-store-on-the-phone">Caching Versus a Local Database: What to Store on the Phone</h2>
+<p>A cache is temporary and a local database is permanent, and an offline-first app needs the second for anything the user creates. Couchbase warns that temporary write caches have size limits, can slow the app as the queue grows, and risk data loss when they overflow. It recommends an embedded database, which stores data long-term and supports on-device backups.</p>
+<p>Google names the common options for the local source: a relational database such as Room, structured data stores, or plain files. The Medium architecture article by Jusuf Topic lists SQLite, Room and Core Data for mobile, and IndexedDB for the web. Mendix stores unsynchronised data in a local SQLite database that survives a closed app, a reboot or a flat battery.</p>
+<p>What goes on the phone matters as much as where. Mendix filters synced data to what the signed-in user is allowed to see and removes it on logout. My reading: copy that habit, because a lost phone holding the whole customer list is a problem the server never had.</p>
+<h2 id="reading-data-offline-three-patterns">Reading Data Offline: Three Patterns</h2>
+<p>The safest read pattern is to show local data immediately and refresh it in the background. Flutter's documentation describes three ways to read, and this table adds my reading of when each fits.</p>
+<div class="prose-table"><table><thead><tr><th>Pattern</th><th>How it works (Flutter docs)</th><th>Choose it when</th></tr></thead><tbody><tr><td>Network first, local as fallback</td><td>Try the API; if the call fails, return the stored copy</td><td>A screen is usually online and offline is the exception</td></tr><tr><td>Local first, then network</td><td>A stream emits stored data at once, then the fresh data</td><td>Most field screens: the user sees something instantly</td></tr><tr><td>Local only, synced separately</td><td>Reads never touch the network; a sync job refreshes the database</td><td>Data changes rarely, such as a price list updated daily</td></tr></tbody></table></div>
+<p>Flutter's own example of the third pattern is a weather app refreshed once a day. The catch is that this pattern needs the data preloaded at some point, or the first screen is empty.</p>
+<h2 id="writing-data-offline-decide-per-action">Writing Data Offline: Decide Per Action</h2>
+<p>Offline writes are the hard half, and the right strategy depends on the action, not on the app. Google's guide gives three strategies, which I have labelled below, and Flutter shows two of the same ideas in code.</p>
+<div class="prose-table"><table><thead><tr><th>Strategy</th><th>What happens</th><th>Use it for</th><th>Do not use it for</th></tr></thead><tbody><tr><td>Online-only write</td><td>Send first, save locally only if it succeeded</td><td>Anything that must be exact in real time, such as a bank transfer</td><td>Anything a user must be able to do in a dead zone</td></tr><tr><td>Queued write</td><td>Put the item in a queue, drain it with backoff when online</td><td>Analytics events and logs, where loss is tolerable</td><td>Data the user cares about</td></tr><tr><td>Local-first write</td><td>Save to the device, then queue the sync</td><td>Critical data such as a task or visit note</td><td>Any field without a conflict rule</td></tr></tbody></table></div>
+<p>For an online-only action, Google suggests disabling the screen that writes or showing an offline notice, so the user knows why. Jusuf Topic makes the matching point about payments: waiting for server confirmation is safer for critical transactions and is not ideal offline. My reading for Indian businesses: collect a fee or a UPI payment only when online, and let everything around it (the visit, the invoice draft, the receipt note) be saved locally.</p>
+<h2 id="sync-strategies-pull-push-and-when-to-trigger-them">Sync Strategies: Pull, Push and When to Trigger Them</h2>
+<p>A sync strategy is the rule for when the phone and the server reconcile, and most apps combine a pull, a push and a few triggers. Google describes pull-based sync, where the app fetches on demand, often just before a screen opens. It works best for short or medium outages, because a long one leaves the cache stale or empty for screens the user opens.</p>
+<p>Flutter describes push: the server sends a message, for example through Firebase messaging, and that triggers a sync. It also says the two approaches can be combined. Jusuf Topic lists the usual triggers: the network returning, the app starting or resuming, a manual tap, or a periodic timer, with throttling.</p>
+<p>Flutter's sample timer syncs every five minutes. The arithmetic shows why to treat that as a starting value to tune, not a setting to ship:</p>
+<ul><li>One 8-hour shift is 8 x 60 = 480 minutes, so 480 / 5 = 96 sync attempts per phone.</li><li>A team of 12 phones makes 96 x 12 = 1,152 attempts a day.</li><li>On a weak network most attempts fail or find nothing new, and each costs battery and data.</li></ul>
+<p>Flutter itself says the right period depends on your app and advises syncing only when a network is available and the battery is not low. Google adds that retries should use exponential backoff, and that a request rejected for missing credentials should not be retried until credentials exist.</p>
+<h2 id="conflict-resolution-which-rule-for-which-field">Conflict Resolution: Which Rule for Which Field</h2>
+<p>A conflict happens when two devices change the same record while offline, and the fix is a rule chosen for each kind of field. Google, Mendix and Jusuf Topic all list last write wins, where the latest change overwrites the other. Mendix adds first wins and a human workflow, and Jusuf Topic adds rule-based merging and algorithms such as CRDTs that merge automatically.</p>
+<div class="prose-table"><table><thead><tr><th>Rule</th><th>How it behaves</th><th>Fits (my reading)</th></tr></thead><tbody><tr><td>Last write wins</td><td>Latest timestamp overwrites</td><td>A customer's phone number or address</td></tr><tr><td>First write wins</td><td>The earlier change is kept</td><td>A job that only one person may claim</td></tr><tr><td>Merge by rules</td><td>Combine changes with set logic</td><td>Counts, notes that append, status steps</td></tr><tr><td>Ask a person</td><td>The user or a manager chooses</td><td>High-value records, disputed edits</td></tr></tbody></table></div>
+<p>Here is a worked example, illustrative and not from a client. A shelf shows 20 units. Staff A sells 3 offline and records 17; staff B sells 5 offline and records 15. Last write wins keeps one value, 15 or 17, and the true count is 20 - 3 - 5 = 12. Recording the changes (minus 3, minus 5) and applying both fixes it.</p>
+<p>Jusuf Topic warns that conflict handling done badly breaks user trust, for example by losing edits, and advises starting simple while leaving room to change the rule.</p>
+<h2 id="field-team-use-cases-what-works-offline-and-what-must-wait">Field-Team Use Cases: What Works Offline and What Must Wait</h2>
+<p>A field app should let staff finish their visit without signal and move only the money step online. The table applies the write strategies above to typical field tasks. It is my illustration, not a client result.</p>
+<div class="prose-table"><table><thead><tr><th>Field task</th><th>Offline?</th><th>Strategy and why</th></tr></thead><tbody><tr><td>View today's job list</td><td>Yes</td><td>Pre-downloaded, scoped to the user, refreshed on sync</td></tr><tr><td>Write a visit note or tick a checklist</td><td>Yes</td><td>Local-first write, queued</td></tr><tr><td>Photograph a site or a delivery</td><td>Yes</td><td>Saved on the device, uploaded when conditions are good</td></tr><tr><td>Update a stock count</td><td>Yes</td><td>Record changes, not totals, then merge</td></tr><tr><td>Collect a fee or payment</td><td>No</td><td>Online-only, with a clear message when offline</td></tr><tr><td>Send usage analytics</td><td>Yes</td><td>Queued, loss acceptable</td></tr></tbody></table></div>
+<p>Google says to fetch data in a way that is conscious of battery and data, for example when charging or on Wi-Fi, which suits photo uploads. Jusuf Topic names the field technician working in a remote location as the standard case. Staff-facing screens are also where <a href="../../blog/admin-dashboard-design/">a good admin dashboard</a> matters, because someone at head office has to read what the field team syncs.</p>
+<h2 id="flutter-react-native-and-web-where-the-offline-layer-lives">Flutter, React Native and Web: Where the Offline Layer Lives</h2>
+<p>The offline layer is an architecture decision, and Flutter, React Native and the web can all carry it. Flutter's documentation shows the pattern in Dart with a database service, a repository and a view model, and says its guide reflects Flutter 3.47, last updated on 5 May 2026. For React Native, my research found search results on Expo, React Query and AsyncStorage but I did not read them, so I make no claim about those tools.</p>
+<p>For the web, Jusuf Topic lists IndexedDB, LocalStorage and PouchDB as storage options. A progressive web app, which is a website built to behave like an app, caches content for offline use, according to RNF Technologies as summarised in the <a href="../../blog/does-my-business-need-an-app/">needs-an-app article</a>. Elyx's app development page says it builds iOS and Android from one codebase in React Native or Flutter, chosen for the use case.</p>
+<p>One build-or-buy question matters here. Google offers two routes, a custom sync stack with a local database and background workers, or a managed service such as Cloud Firestore that handles caching, queued writes and sync. Couchbase, which sells a sync product, tells teams not to build sync themselves, and Jusuf Topic says the backend may need changes such as an endpoint that returns changes since a timestamp.</p>
+<h2 id="what-usually-goes-wrong-with-offline-apps">What Usually Goes Wrong With Offline Apps</h2>
+<p>Most offline failures come from design gaps, not from the database. The sources name these recurring ones, and the fixes follow from them.</p>
+<div class="prose-table"><table><thead><tr><th>What goes wrong</th><th>Cause</th><th>Fix</th></tr></thead><tbody><tr><td>Edits silently lost</td><td>One conflict rule for every field</td><td>Choose a rule per field, as above</td></tr><tr><td>App slows after days offline</td><td>A temporary write queue that keeps growing</td><td>Use a real local database (Couchbase)</td></tr><tr><td>Users do not know what saved</td><td>No sync status shown</td><td>Show offline state, unsynced badges and retry (Jusuf Topic)</td></tr><tr><td>Endless failed retries</td><td>Retrying unauthorised requests</td><td>Retry only connectivity errors, with backoff (Google)</td></tr><tr><td>Sync drains the battery</td><td>A fixed short timer</td><td>Sync on triggers, when network and battery allow (Flutter)</td></tr><tr><td>Bugs appear only in the field</td><td>Offline cases never tested</td><td>Simulate network loss, partial updates and stale caches (Jusuf Topic)</td></tr><tr><td>Sync cannot be added later</td><td>The backend returns whole records only</td><td>Plan incremental sync endpoints early</td></tr></tbody></table></div>
+<p>Jusuf Topic also lists cases where offline-first is a poor fit: real-time centralised apps such as trading or live auctions, data too sensitive to change locally without strict validation, and users who are always online.</p>
+<h2 id="what-to-do-next">What to Do Next</h2>
+<p>Start by listing each action in your app and tagging it online-only, queued or local-first, because that list is the brief. Then work through this checklist before you commission or build:</p>
+<ul><li>[ ] I listed every action a field user performs, and where they do it.</li><li>[ ] I marked which actions must work with no signal.</li><li>[ ] Payments and anything real-time are marked online-only.</li><li>[ ] I chose a conflict rule for every field that two people can edit.</li><li>[ ] I know what data sits on each phone, and what clears on logout.</li><li>[ ] The screen shows offline state and unsynced items.</li><li>[ ] I asked how the build will be tested with no signal and a slow one.</li></ul>
+<p>When the list is ready, <a href="../../contact.html">request a quote</a> with it. Elyx engagements start from ₹9,999, every project is quoted to your requirements in writing after a call, and the studio's published timeline for a mobile app is 8–14 weeks. The offline layer changes the scope, which is why a quote follows the list. Read the <a href="../../services/app-development/">app development page</a> for the process, and the <a href="../../pricing/">pricing page</a> for how Elyx quotes.</p>
+<h2 id="sources">Sources</h2>
+<ul><li><a href="https://developer.android.com/topic/architecture/data-layer/offline-first" rel="noopener" target="_blank">Build an offline-first app</a>, Android Developers, Google (read 19 November 2026)</li><li><a href="https://docs.flutter.dev/app-architecture/design-patterns/offline-first" rel="noopener" target="_blank">Offline-first support</a>, Flutter documentation (read 19 November 2026)</li><li><a href="https://www.couchbase.com/blog/offline-first-more-reliable-mobile-apps/" rel="noopener" target="_blank">Offline-first: a mindset for developing faster, more reliable mobile apps</a>, Couchbase (read 19 November 2026)</li><li><a href="https://www.mendix.com/evaluation-guide/app-lifecycle/develop/ux-multi-channel-apps/offline-first-apps/" rel="noopener" target="_blank">Building Offline Native Applications in Mendix</a>, Mendix Evaluation Guide (read 19 November 2026)</li><li><a href="https://medium.com/@jusuftopic/offline-first-architecture-designing-for-reality-not-just-the-cloud-e5fd18e50a79" rel="noopener" target="_blank">Offline-First Architecture: Designing for Reality, Not Just the Cloud</a>, Jusuf Topic, Medium (read 19 November 2026)</li></ul>
+      </div>
+      <section class="bfaq" id="faq"><h2>Frequently asked questions</h2><div class="faq__list"><details class="faq__item">
+  <summary class="faq__q"><span>What is an offline-first app?</span><svg class="faq__caret" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+  <div class="faq__a"><p>An offline-first app is one that performs all, or a critical subset, of its core functions without internet access. Google's Android guide uses that definition. It does this by reading and writing a local database and syncing later.</p></div>
+</details>
+<details class="faq__item">
+  <summary class="faq__q"><span>What is the offline-first approach?</span><svg class="faq__caret" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+  <div class="faq__a"><p>The offline-first approach is a design method that treats local storage as the default and the network as an occasional update channel. Jusuf Topic describes data being read from and written to a local store, with sync happening opportunistically in the background. Offline use is then a normal state.</p></div>
+</details>
+<details class="faq__item">
+  <summary class="faq__q"><span>How do I build an offline-first app?</span><svg class="faq__caret" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+  <div class="faq__a"><p>Build the local database and a repository layer first, then decide a read, write and sync rule for each feature. Google and Flutter both start from the data layer, with a local source of truth. Add conflict rules, sync status on screen and offline testing before launch.</p></div>
+</details>
+<details class="faq__item">
+  <summary class="faq__q"><span>Can an offline-first app work without internet at all?</span><svg class="faq__caret" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+  <div class="faq__a"><p>It can do most or all of its work offline, but it needs a connection at some point to sync and update. Mendix says no connection is needed except for synchronising and updating. Actions that must be exact in real time, such as payments, still need one.</p></div>
+</details>
+<details class="faq__item">
+  <summary class="faq__q"><span>How do I use an offline app?</span><svg class="faq__caret" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+  <div class="faq__a"><p>Open the app while online so it can download your data, then check that the screens show your latest information before you travel. Mendix says the app checks for newer versions and syncs when a connection exists. This is my reading for users: look for a sync or last-updated indicator.</p></div>
+</details>
+<details class="faq__item">
+  <summary class="faq__q"><span>What is the best framework for an offline-first app, Flutter or React Native?</span><svg class="faq__caret" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+  <div class="faq__a"><p>Neither is the answer by itself, because the offline layer is an architecture of local database, repository and sync. Flutter documents the pattern in its own guide. Elyx builds in React Native or Flutter depending on the use case.</p></div>
+</details>
+<details class="faq__item">
+  <summary class="faq__q"><span>Is last write wins safe for conflicts?</span><svg class="faq__caret" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+  <div class="faq__a"><p>Last write wins is safe only for fields where the newest value is the right one, such as a phone number. For counts it loses data, as the stock example above shows. Mendix, Google and Jusuf Topic all list it alongside other rules.</p></div>
+</details>
+<details class="faq__item">
+  <summary class="faq__q"><span>Is offline-first right for every app?</span><svg class="faq__caret" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+  <div class="faq__a"><p>No. Jusuf Topic names real-time centralised apps, data too sensitive to change locally without strict validation, and always-online users as poor fits. Offline-first also adds local storage, sync, retry and conflict logic.</p></div>
+</details>
+<details class="faq__item">
+  <summary class="faq__q"><span>Does an offline-first app cost more to build?</span><svg class="faq__caret" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+  <div class="faq__a"><p>It adds work, because the sources list local storage, sync protocols, queuing, status screens and conflict tracking as extra complexity. I have no cost data to quote. Elyx engagements start from ₹9,999, and an offline-first scope is <a href="../../contact.html">quoted on request</a> in writing after a call.</p></div>
+</details></div></section>
+      <div class="bfoot"><span>Mobile Apps</span></div>
+    </article>
+    <aside class="baside" aria-label="From Elyx"><div class="bcta">
+  <span class="bcta__k">Elyx Solutions</span>
+  <h3>Thinking about a mobile app?</h3>
+  <a class="btn btn--blue" href="https://wa.me/919611729733?text=Hi%20Elyx%2C%20I'd%20like%20to%20talk%20about%20a%20project.%20(from%20the%20article%20%22Building%20Apps%20That%20Work%20Offline%20on%20Patchy%20Networks%22)" target="_blank" rel="noopener" data-track="whatsapp_click" data-article="offline-first-app" data-card-pos="side">WhatsApp us <svg class="arr" width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H4M10 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+  <a class="btn btn--ghost" href="../../services/app-development/" data-track="card_click" data-article="offline-first-app" data-card-pos="side" data-btn="soft">See app development</a>
+</div></aside>
+  </div>
+</div></main>
+<section class="cta" data-screen-label="Contact CTA">
+  <div class="cta__in reveal">
+    <div class="deco deco-dark" data-parallax="0.08" style="z-index:-1" aria-hidden="true"><span class="orb orb-a"></span></div>
+    <div class="ph-grid cta__bg"></div>
+    <div class="cta__glow"></div>
+    <span class="eyebrow is-light" style="justify-content:center;">Let's build</span>
+    <h2 class="cta__t" style="color:#fff;margin-top:20px;">Have something worth <span class="em">building?</span></h2>
+    <p class="cta__sub">Tell us where you're headed. We'll bring the team, the plan and the craft to get you there.</p>
+    <div class="cta__row">
+      <a class="btn btn--blue" href="../../contact.html" data-track="cta_click" data-pos="cta-section">Start a project <svg class="arr" width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H4M10 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+      <a class="btn btn--light" href="../../contact.html#book" data-track="cta_click" data-pos="cta-section">Book a call</a>
+    </div>
+  </div>
+</section>
+<footer class="footer">
+  <div class="footer__in">
+    <div class="footer__top">
+      <div>
+        <a class="brand" href="../../" aria-label="Elyx Solutions home">
+          <svg class="brand__mark" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+            <g transform="skewX(-10)">
+              <rect x="7" y="4" width="15" height="4.4" rx="1.2" fill="#1f4fd8"></rect>
+              <rect x="7" y="11.8" width="11" height="4.4" rx="1.2" fill="#0b1024"></rect>
+              <rect x="7" y="19.6" width="15" height="4.4" rx="1.2" fill="#1f4fd8"></rect>
+            </g>
+          </svg>
+          <span class="brand__name">Elyx</span>
+        </a>
+        <p class="footer__lede">Beyond just presence, we build digital <span class="serif-i" style="color:var(--blue)">value.</span></p>
+      </div>
+      <div class="fcol">
+        <h4>Services</h4>
+        <a href="../../services/web-development/">Web Development</a>
+        <a href="../../services/ecommerce-development/">E-commerce Development</a>
+        <a href="../../services/saas-development/">SaaS Development</a>
+        <a href="../../services/app-development/">App Development</a>
+        <a href="../../services/ai-chatbots/">AI Chatbots</a>
+        <a href="../../services/ai-call-assistants/">AI Call &amp; Voice Assistants</a>
+        <a href="../../services/whatsapp-automation/">WhatsApp &amp; Business Automation</a>
+        <a href="../../services/crm-lead-management/">CRM &amp; Lead Management</a>
+        <a href="../../services/booking-systems/">Booking &amp; Appointment Systems</a>
+        <a href="../../services/payments-billing/">Payments &amp; Subscription Billing</a>
+        <a href="../../services/admin-dashboards/">Admin Dashboards &amp; Internal Tools</a>
+        <a href="../../services/seo-optimization/">SEO Optimization</a>
+        <a href="../../services/maintenance-care/">Maintenance &amp; Care</a>
+      </div>
+      <div class="fcol">
+        <h4>Websites for</h4>
+        <a href="../../websites-for/dentists/">Dentists &amp; Clinics</a>
+        <a href="../../websites-for/coaching-centres/">Coaching Centres</a>
+        <a href="../../websites-for/restaurants-and-cafes/">Restaurants &amp; Cafés</a>
+        <a href="../../websites-for/salons-and-spas/">Salons &amp; Spas</a>
+        <a href="../../websites-for/real-estate/">Real Estate</a>
+        <a href="../../websites-for/ca-and-law-firms/">CA &amp; Law Firms</a>
+      </div>
+      <div class="fcol">
+        <h4>Company</h4>
+        <a href="../../about.html">About</a>
+        <a href="../../work.html">Work</a>
+        <a href="../../pricing/">Pricing</a>
+        <a href="../../tools/">Free tools</a>
+        <a href="../../blog/">Blog</a>
+        <a href="../../web-development-bengaluru/">Bengaluru</a>
+        <a href="../../contact.html">Contact</a>
+      </div>
+      <div class="fcol">
+        <h4>Connect</h4>
+        <a href="mailto:support.elyxsolutions@gmail.com">support.elyxsolutions@gmail.com</a>
+        <a href="tel:+919611729733" data-track="call_click" data-pos="footer">+91 96117 29733</a>
+        <a href="tel:+917204723340" data-track="call_click" data-pos="footer">+91 72047 23340</a>
+        <a href="https://wa.me/919611729733?text=Hi%20Elyx%2C%20I'd%20like%20to%20talk%20about%20a%20project." target="_blank" rel="noopener" data-track="whatsapp_click" data-pos="footer">WhatsApp</a>
+        <a href="https://www.linkedin.com/company/elyxsolutions04/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://www.instagram.com/elyxsolutions" target="_blank" rel="noopener">Instagram</a>
+        <span class="footer__addr">Bengaluru, Karnataka</span>
+      </div>
+    </div>
+    <div class="footer__bot">
+      <span>© 2026 Elyx Solutions. All rights reserved.</span>
+      <span>Designed &amp; built in-house · Bengaluru, India.</span>
+    </div>
+  </div>
+</footer>
+<a class="wa-float" href="https://wa.me/919611729733?text=Hi%20Elyx%2C%20I'd%20like%20to%20talk%20about%20a%20project." target="_blank" rel="noopener" aria-label="Chat with Elyx on WhatsApp" data-track="whatsapp_click" data-pos="floating">
+  <svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16.04 3C9.4 3 4 8.4 4 15.03c0 2.12.55 4.19 1.6 6.01L4 29l8.12-1.57a12.03 12.03 0 0 0 3.92.65C22.68 28.08 28.08 22.67 28.08 16 28.08 9.36 22.7 3 16.04 3Zm0 22.06c-1.22 0-2.4-.33-3.44-.95l-.25-.15-4.82.93.97-4.7-.17-.27a9.9 9.9 0 0 1-1.52-5.27c0-5.5 4.48-9.98 10-9.98 5.5 0 9.98 4.48 9.98 9.98s-4.48 10.41-9.98 10.41l-.77-.02Zm5.47-7.46c-.3-.15-1.77-.87-2.04-.97-.28-.1-.48-.15-.68.15-.2.3-.78.97-.95 1.17-.18.2-.35.22-.65.07-.3-.15-1.27-.47-2.42-1.5-.9-.8-1.5-1.78-1.67-2.08-.18-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.68-1.64-.93-2.25-.25-.58-.5-.5-.68-.5h-.58c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.5s1.07 2.9 1.22 3.1c.15.2 2.1 3.2 5.08 4.48.7.3 1.26.48 1.7.62.72.23 1.37.2 1.88.12.58-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35Z"/></svg>
+</a>
+<script>window.ELYX={"email":"support.elyxsolutions@gmail.com","whatsapp":"https://wa.me/919611729733?text=Hi%20Elyx%2C%20I'd%20like%20to%20talk%20about%20a%20project.","phone":"+91 96117 29733","booking":""};</script>
+<script src="../../js/site.js"></script>
+<script src="../../js/analytics.js"></script>
+</body>
+</html>
