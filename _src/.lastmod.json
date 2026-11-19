@@ -8,7 +8,7 @@
     "lastmod": "2026-11-19"
   },
   "/services/app-development/": {
-    "hash": "b48532d019b74f993fbace9f43b7897d",
+    "hash": "60c94f40da0a656204eb504082696616",
     "lastmod": "2026-11-19"
   },
   "/services/seo-optimization/": {
@@ -76,7 +76,7 @@
     "lastmod": "2026-11-19"
   },
   "/blog/": {
-    "hash": "92f7c98993f5b302e2fc55d3ed77b113",
+    "hash": "0bd2277abea4baa582092b81cf068e9b",
     "lastmod": "2026-11-19"
   },
   "/blog/category/industries/": {
@@ -156,7 +156,7 @@
     "lastmod": "2026-11-16"
   },
   "/blog/author/shreyasmv/": {
-    "hash": "0a763423ba2676b29d0d58ba4c72d815",
+    "hash": "6ed8fcc99c15a1e346d1a21d08a6d2bd",
     "lastmod": "2026-11-19"
   },
   "/blog/author/rahulc/": {
@@ -478,5 +478,9 @@
   "/services/admin-dashboards/": {
     "hash": "8263aa9e537d450de2cc2eeba2174aae",
     "lastmod": "2026-11-19"
+  },
+  "/blog/convert-website-to-app/": {
+    "hash": "a9ef64e69c99759aadb7581bd149e4d0",
+    "lastmod": "2026-11-20"
   }
 }
