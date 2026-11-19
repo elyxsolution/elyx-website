@@ -51,8 +51,8 @@ module.exports = [
   {
     slug: 'ai', name: 'AI for Business', topics: 35, group: 'traffic',
     intro: 'Using AI in a real business, with real engineering: what works, what to avoid, and when an AI-built prototype needs proper development.',
-    money: '/contact.html#book', moneyLabel: 'Book a call',
-    card: { headline: 'Got an AI idea or an AI-built prototype that needs real engineering?', proof: ['Prototype-to-production rebuilds', 'Scoped and quoted up front', 'Direct access to the three founders'], soft: { label: 'See SaaS development', href: '/services/saas-development/' }, direct: 'book' }
+    money: '/services/ai-chatbots/', moneyLabel: 'AI Chatbots',
+    card: { headline: 'Want AI that answers customers or handles repeat work?', proof: ['Chatbots, call assistants and automation', 'Answers only from content you approve', 'Quoted to your requirements, from ₹9,999'], soft: { label: 'See AI chatbots', href: '/services/ai-chatbots/' }, direct: 'book' }
   },
   {
     slug: 'explained', name: 'Digital India & Tech Explained', topics: 30, group: 'traffic',

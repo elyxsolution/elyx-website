@@ -4,7 +4,7 @@
    ₹9,999 starting price, 50/50 payment terms, 30-day post-launch support).
    Price RANGES come from pricing.json, which is still marked DRAFT. */
 
-module.exports = [
+const core = [
   /* ----------------------------------------------------------------- WEB */
   {
     slug: 'web-development',
@@ -245,3 +245,17 @@ module.exports = [
     blogCategory: 'care'
   }
 ];
+
+/* The order here is the order in the navigation, the footer and the "Service 0N" labels. */
+const all = core.concat(require('./services-extra'));
+const ORDER = [
+  'web-development', 'ecommerce-development', 'saas-development', 'app-development',
+  'ai-chatbots', 'ai-call-assistants', 'whatsapp-automation', 'crm-lead-management',
+  'booking-systems', 'payments-billing', 'admin-dashboards', 'seo-optimization', 'maintenance-care'
+];
+module.exports = ORDER.map((slug) => {
+  const s = all.find((x) => x.slug === slug);
+  if (!s) throw new Error('services.js: no service with slug ' + slug);
+  return s;
+});
+if (module.exports.length !== all.length) throw new Error('services.js: a service is missing from ORDER');

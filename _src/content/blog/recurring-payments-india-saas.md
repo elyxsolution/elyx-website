@@ -3,6 +3,7 @@ title: SaaS Billing in India: Subscriptions, GST, UPI AutoPay and Razorpay vs St
 seo_title: Recurring Payments for SaaS in India: UPI, GST, Stripe
 slug: recurring-payments-india-saas
 category: saas
+money: /services/payments-billing/
 description: Recurring payments for India SaaS: RBI e-mandate rules, UPI AutoPay limits, failed-payment recovery, GST invoices and a dated Razorpay vs Stripe check.
 date: 2026-11-16
 author: shreyasmv

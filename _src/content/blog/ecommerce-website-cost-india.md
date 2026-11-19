@@ -3,6 +3,7 @@ title: E-commerce Website Cost in India: Shopify vs WooCommerce vs Custom
 seo_title: Ecommerce Website Cost India: Shopify vs WooCommerce
 slug: ecommerce-website-cost-india
 category: pricing-hiring
+money: /services/ecommerce-development/
 description: Ecommerce website cost India: setup, monthly and payment-gateway fees for Shopify, WooCommerce and custom builds, with a worked break-even example.
 date: 2026-11-14
 author: shreyasmv

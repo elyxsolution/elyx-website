@@ -329,7 +329,7 @@
 
     /* ---- prefill + attribution (?service=, ?est=, ?src=) ---- */
     var qs = new URLSearchParams(location.search);
-    var svcMap = { 'web-development': 'Web Development', 'ecommerce': 'E-commerce', 'app-development': 'Mobile App Development', 'saas-development': 'SaaS Development', 'ai-chatbots': 'AI Chatbots', 'ai-call-assistants': 'AI Call & Voice Assistants', 'seo-optimization': 'SEO Optimization', 'maintenance-care': 'Maintenance & Care' };
+    var svcMap = { 'web-development': 'Web Development', 'ecommerce-development': 'E-commerce', 'saas-development': 'SaaS Development', 'app-development': 'Mobile App Development', 'ai-chatbots': 'AI Chatbots', 'ai-call-assistants': 'AI Call & Voice Assistants', 'whatsapp-automation': 'WhatsApp & Business Automation', 'crm-lead-management': 'CRM & Lead Management', 'booking-systems': 'Booking & Appointment Systems', 'payments-billing': 'Payments & Subscription Billing', 'admin-dashboards': 'Admin Dashboards & Internal Tools', 'seo-optimization': 'SEO Optimization', 'maintenance-care': 'Maintenance & Care' };
     var svcBoxes = cform.querySelectorAll('input.js-svc');
     var svcWrap = document.getElementById('svcpick');
     var svcHidden = cform.querySelector('#f-service');

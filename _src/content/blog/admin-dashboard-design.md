@@ -2,6 +2,7 @@
 title: Building an Admin Dashboard Your Team Will Actually Use
 slug: admin-dashboard-design
 category: saas
+money: /services/admin-dashboards/
 description: Admin dashboard design for SaaS and internal tools: which metrics to show, how filters, roles and exports should work, and when a template is enough.
 date: 2026-11-17
 author: shreyasmv

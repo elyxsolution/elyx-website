@@ -6,7 +6,7 @@
 const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
-const { ROOT, config, pricing, write, read, exists, relativize, abs, isoDate } = require('./lib');
+const { ROOT, config, pricing, inr, write, read, exists, relativize, abs, isoDate } = require('./lib');
 const chrome = require('./chrome');
 const S = require('./shell');
 const core = require('./pages-core');
@@ -48,6 +48,8 @@ function syncHandPages() {
     html = replaceBlock(html, 'footer', relativize(chrome.footer(), 0));
     html = replaceBlock(html, 'scripts', relativize(chrome.configScript() + '\n<script src="/js/site.js"></script>\n<script src="/js/analytics.js"></script>', 0));
     if (h.home) html = replaceBlock(html, 'industries', relativize(homeIndustries(), 0));
+    if (h.home) html = replaceBlock(html, 'services-also', relativize(homeAlso(), 0));
+    if (h.file === 'services.html') { html = replaceBlock(html, 'services-chips', relativize(servicesChips(), 0)); html = replaceBlock(html, 'services-more', relativize(servicesMore(), 0)); }
     if (h.file === 'about.html') html = replaceBlock(html, 'team-cards', relativize(teamCards(), 0));
     if (h.file === 'contact.html') html = replaceBlock(html, 'contact-extra', relativize(contactExtra(), 0));
     html = relativize(html, 0);   // hand-written links like /pricing/ become pricing/
@@ -70,6 +72,28 @@ function homeIndustries() {
     <div class="tilegrid reveal">${industries.map((it) => `<a class="tcard" href="/websites-for/${it.slug}/"><span class="tcard__ic">${chrome.svg24(it.icon)}</span><h3>${it.name.replace(/&/g, '&amp;')}</h3><p>${it.short.replace(/&/g, '&amp;')} · from ₹9,999</p><span class="tcard__more">See the page ${chrome.ARROW}</span></a>`).join('')}</div>
   </div>
 </section>`;
+}
+
+/* Services that have no hand-written row on /services.html get a card instead. These slugs are the five with rows. */
+const HUB_ROWS = ['saas-development', 'web-development', 'app-development', 'seo-optimization', 'maintenance-care'];
+
+function servicesChips() {
+  return require('./data/services').map((s) => `<a class="chip" href="/services/${s.slug}/"><span class="dot"></span>${s.name.replace(/&/g, '&amp;')}</a>`).join('\n      ');
+}
+
+function servicesMore() {
+  const more = require('./data/services').filter((s) => HUB_ROWS.indexOf(s.slug) === -1);
+  return `<section class="pg pg--more" id="more-services" data-screen-label="More services">
+  <div class="pg__in">
+    <div class="pg__head reveal"><span class="eyebrow">And more</span><h2 class="h2-sm tr">More ways we <span class="serif-i">can help.</span></h2><p class="lead">AI, automation and business systems, built the same way as everything else: scoped on a short call and quoted to your requirements, starting from ${inr(pricing.startingPrice)}.</p></div>
+    <div class="tilegrid reveal">${more.map((s) => `<a class="tcard" href="/services/${s.slug}/"><span class="tcard__ic">${chrome.svg24(s.icon)}</span><h3>${s.name.replace(/&/g, '&amp;')}</h3><p>${s.navDesc.replace(/&/g, '&amp;')} · from ${inr(pricing.startingPrice)}</p><span class="tcard__more">See the service ${chrome.ARROW}</span></a>`).join('')}</div>
+  </div>
+</section>`;
+}
+
+function homeAlso() {
+  const more = require('./data/services').filter((s) => HUB_ROWS.indexOf(s.slug) === -1);
+  return `<div class="services__more reveal"><span class="services__more-k">Also available</span><div class="services__more-chips">${more.map((s) => `<a href="/services/${s.slug}/">${s.name.replace(/&/g, '&amp;')}</a>`).join('')}</div></div>`;
 }
 
 function teamCards() {

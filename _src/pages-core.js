@@ -22,7 +22,7 @@ function servicePages(ctx) {
     const crumbs = [['Home', '/'], ['Services', '/services.html'], [s.name, url]];
     const main = `${S.pageHero({
       crumbs,
-      eyebrow: 'Service 0' + (idx + 1) + ' · ' + s.name,
+      eyebrow: 'Service ' + String(idx + 1).padStart(2, '0') + ' · ' + s.name,
       h1: s.h1,
       lead: s.answer,
       ctas: S.btn('Get a quote', '/contact.html?service=' + s.slug, 'blue', 'hero') + S.btnPlain('See pricing', '#pricing', 'ghost', 'hero'),
@@ -38,7 +38,7 @@ ${S.section('pg--tint', S.sectionHead('Process', s.processTitle, 'Our usual flow
 ${S.section('', S.sectionHead('Pricing & timeline', s.priceTitle) + S.quoteBlock() +
       '<p class="prose-p prose-p--wide">' + esc(s.priceNote) + '</p><p class="prose-p prose-p--wide"><b>Timeline.</b> ' + esc(s.timelineText) + '</p>' +
       '<div class="inline-ctas">' + S.btn('Request a quote tailored to you', '/contact.html?service=' + s.slug, 'blue', 'pricing-block') + '</div>', 'pricing')}
-${S.section('pg--tint', S.sectionHead('Related work', 'A build you can <span class="serif-i">look at.</span>') + '<div class="casewrap">' + S.caseCard(c, 'Related case study') + '</div>')}
+${c ? S.section('pg--tint', S.sectionHead('Related work', 'A build you can <span class="serif-i">look at.</span>') + '<div class="casewrap">' + S.caseCard(c, 'Related case study') + '</div>') : ''}
 ${S.section('', S.sectionHead('Who we do this for', 'Industries we <span class="serif-i">build for.</span>') + '<div class="page-hero__chips">' + links(s.industries, '/websites-for/', indBySlug) + '</div>')}
 ${S.articlesSection(ctx.postsFor(url, s.blogCategory), 'Read before you decide')}
 ${S.faqBlock(s.faqs)}

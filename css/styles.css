@@ -1000,6 +1000,11 @@ section { position: relative; }
 .cform__submit { display: flex; align-items: center; gap: 16px; margin-top: 6px; flex-wrap: wrap; }
 .cform__note { font-family: var(--sans); font-size: 13px; color: var(--ink-faint); }
 
+.services__more { max-width: var(--maxw); margin: 28px auto 0; padding: 0 var(--pad); display: flex; flex-wrap: wrap; align-items: center; gap: 12px 18px; }
+.services__more-k { font-family: var(--sans); font-size: 12px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: rgba(255,255,255,0.55); }
+.services__more-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.services__more-chips a { font-family: var(--sans); font-size: 13.5px; color: rgba(255,255,255,0.82); padding: 8px 14px; border: 1px solid rgba(255,255,255,0.2); border-radius: 100px; transition: background .2s var(--ease), border-color .2s var(--ease), color .2s var(--ease); }
+.services__more-chips a:hover { background: rgba(255,255,255,0.12); border-color: rgba(255,255,255,0.4); color: #fff; }
 .caside { display: flex; flex-direction: column; gap: 16px; }
 .cform__reach { font-family: var(--sans); font-size: 13px; line-height: 1.55; color: var(--ink-faint); padding: 12px 14px; background: var(--bg-2); border: 1px solid var(--line); border-radius: 12px; }
 .cform__reach a { color: var(--ink); font-weight: 550; white-space: nowrap; }

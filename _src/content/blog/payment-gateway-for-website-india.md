@@ -3,6 +3,7 @@ title: Payment Gateways for Indian Websites: Razorpay, Cashfree, PhonePe and Str
 seo_title: Payment Gateway for Website India: Fees, UPI, Settlement
 slug: payment-gateway-for-website-india
 category: websites
+money: /services/payments-billing/
 description: Payment gateway for website India: Razorpay, Cashfree, PhonePe and PayU compared on fees, UPI, settlement and sign-up documents, as read in November 2026.
 date: 2026-11-16
 author: shreyasmv

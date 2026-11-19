@@ -2,6 +2,7 @@
 title: Shopify vs WooCommerce for Indian Sellers
 slug: shopify-vs-woocommerce-india
 category: websites
+money: /services/ecommerce-development/
 description: Shopify vs WooCommerce India: rupee fees, GST invoicing, COD and courier tools, and a verdict by monthly sales, with the arithmetic shown.
 date: 2026-11-16
 author: shreyasmv

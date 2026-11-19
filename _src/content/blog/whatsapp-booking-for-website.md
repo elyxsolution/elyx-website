@@ -3,6 +3,7 @@ title: Adding WhatsApp Booking to Your Website: Every Option Compared
 seo_title: WhatsApp Booking for Website: Every Option Compared
 slug: whatsapp-booking-for-website
 category: websites
+money: /services/whatsapp-automation/
 description: WhatsApp booking for website owners: click-to-chat, the Business app, the Business API and hosted pages compared, with costs, scripts and a decision rule.
 date: 2026-11-15
 author: rahulc
