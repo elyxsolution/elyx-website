@@ -29,7 +29,7 @@ module.exports = [
     relatedCase: 'ashirwad-dental',
     relatedServices: ['web-development', 'seo-optimization', 'maintenance-care'],
     faqs: [
-      { q: 'How much does a dental clinic website cost in India?', a: 'A focused clinic landing page starts at ₹9,999. A fuller multi-page site with treatment pages, a gallery and a CMS costs more and is quoted in writing after a short call. See <a href="/pricing/">pricing</a> for typical ranges.' },
+      { q: 'How much does a dental clinic website cost in India?', a: 'A focused clinic landing page starts at ₹9,999. A fuller multi-page site with treatment pages, a gallery and a CMS costs more and is quoted in writing after a short call. See <a href="/pricing/">how we quote</a>.' },
       { q: 'Can patients book through WhatsApp?', a: 'Yes. Every page can have a click-to-chat WhatsApp button that opens a pre-filled message to your clinic number. This was part of the Ashirwad Dental redesign.' },
       { q: 'Will the site help me show up on Google Maps?', a: 'The site supports it with local schema and consistent address details, but Maps rankings are driven mainly by your Google Business Profile. We help set that up and optimise it.' },
       { q: 'Can I add before-and-after photos and patient reviews?', a: 'Technically yes, but council rules on clinic advertising apply, so we only publish what you are comfortable is compliant.' },

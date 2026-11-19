@@ -35,9 +35,9 @@ function servicePages(ctx) {
 ${S.section('', S.sectionHead('What you get', s.includedTitle) + '<div class="fgrid">' + s.included.map((i, n) => '<div class="fcard"><span class="fcard__n">0' + (n + 1) + '</span><h3>' + esc(i.t) + '</h3><p>' + esc(i.d) + '</p></div>').join('') + '</div>')}
 ${S.section('pg--tint', S.sectionHead('Process', s.processTitle, 'Our usual flow is a short discovery call, a scoped proposal, design, a build with two rounds of feedback, QA on staging, then launch. You are looped in at every stage.') +
       '<ol class="psteps">' + s.process.map((p, n) => '<li class="pstep"><span class="pstep__n">' + (n + 1) + '</span><div><h3>' + esc(p.t) + ' <small>' + esc(p.time) + '</small></h3><p>' + esc(p.d) + '</p></div></li>').join('') + '</ol>')}
-${S.section('', S.sectionHead('Pricing & timeline', s.priceTitle) + S.priceTable(s.pricingKeys) +
+${S.section('', S.sectionHead('Pricing & timeline', s.priceTitle) + S.quoteBlock() +
       '<p class="prose-p prose-p--wide">' + esc(s.priceNote) + '</p><p class="prose-p prose-p--wide"><b>Timeline.</b> ' + esc(s.timelineText) + '</p>' +
-      '<div class="inline-ctas">' + S.btn('Request a quote', '/contact.html?service=' + s.slug, 'blue', 'pricing-block') + S.btnPlain('Estimate it yourself', '/tools/website-cost-calculator/', 'ghost', 'pricing-block') + '</div>', 'pricing')}
+      '<div class="inline-ctas">' + S.btn('Request a quote tailored to you', '/contact.html?service=' + s.slug, 'blue', 'pricing-block') + '</div>', 'pricing')}
 ${S.section('pg--tint', S.sectionHead('Related work', 'A build you can <span class="serif-i">look at.</span>') + '<div class="casewrap">' + S.caseCard(c, 'Related case study') + '</div>')}
 ${S.section('', S.sectionHead('Who we do this for', 'Industries we <span class="serif-i">build for.</span>') + '<div class="page-hero__chips">' + links(s.industries, '/websites-for/', indBySlug) + '</div>')}
 ${S.articlesSection(ctx.postsFor(url, s.blogCategory), 'Read before you decide')}
@@ -78,7 +78,7 @@ function industryPages(ctx) {
 </div></section>
 ${S.section('', S.sectionHead('What your site needs', 'What a site for ' + esc(it.name.toLowerCase()) + ' <span class="serif-i">actually needs.</span>') + '<div class="fgrid">' + it.needs.map((i, n) => '<div class="fcard"><span class="fcard__n">0' + (n + 1) + '</span><h3>' + esc(i.t) + '</h3><p>' + esc(i.d) + '</p></div>').join('') + '</div>')}
 ${S.section('pg--tint', '<div class="split"><div>' + S.sectionHead('Typical page structure', 'How the page <span class="serif-i">flows.</span>', 'Every site is designed around your business, but this is the order that works for most ' + esc(it.short.toLowerCase()) + ': promise first, proof next, one clear action at every step.') + (it.regNote ? '<p class="note"><b>Worth knowing.</b> ' + esc(it.regNote) + '</p>' : '') + '</div>' + wireframe(it.layout) + '</div>')}
-${S.section('', S.sectionHead('Pricing', it.startPrice.replace('From ', 'From <span class="serif-i">') + '</span>', 'Engagements start at ' + inr(pricing.startingPrice) + '. A one-page site is the fastest way in; a fuller site with a CMS, booking or payments is quoted in writing after a short call.') + S.priceTable(it.pricingKeys) + '<div class="inline-ctas">' + S.btn('Request a quote', '/contact.html?service=web-development', 'blue', 'pricing-block') + S.btnPlain('Estimate the cost', '/tools/website-cost-calculator/', 'ghost', 'pricing-block') + '</div>')}
+${S.section('', S.sectionHead('Pricing', it.startPrice.replace('From ', 'From <span class="serif-i">') + '</span>', 'A one-page site is the fastest way in; a fuller site with a CMS, booking or payments is quoted in writing after a short call.') + S.quoteBlock() + '<div class="inline-ctas">' + S.btn('Request a quote tailored to you', '/contact.html?service=web-development', 'blue', 'pricing-block') + '</div>')}
 ${c ? S.section('pg--tint', S.sectionHead('Related build', 'Closest work <span class="serif-i">we have shipped.</span>') + '<div class="casewrap">' + S.caseCard(c, 'Related project') + '</div>') : ''}
 ${S.section('', S.sectionHead('Services involved', 'How we <span class="serif-i">deliver</span> it.') + '<div class="page-hero__chips">' + links(it.relatedServices, '/services/', svcBySlug) + '</div>')}
 ${S.articlesSection(ctx.postsForIndustry(it.slug, url), 'Guides for ' + esc(it.name.toLowerCase()))}
@@ -145,10 +145,10 @@ const PRICING_FAQS = [
   { q: 'What is the minimum I can spend with Elyx?', a: 'Engagements start at ₹9,999 for a focused landing page or redesign, and that is the starting price across every service. Final pricing scales with scope, and we always quote it up front in writing.' },
   { q: 'Do you charge by the hour?', a: 'No. We price by outcome, not by the hour. You get a fixed scope, timeline and price before any work begins, with no surprise line items mid-project.' },
   { q: 'How do payments work?', a: '50% upfront to begin and 50% on final delivery, covered by a straightforward statement of work with scope, deliverables, timeline and revision rounds. No retainer lock-ins unless you want one.' },
-  { q: 'Is GST included in the price?', a: 'Prices on this site are in INR and exclusive of taxes. GST is added at the applicable rate (currently 18% for software services) on the invoice.' },
+  { q: 'Is GST included in the price?', a: 'Prices on this site are in INR and exclusive of taxes. GST is added at the applicable rate on the invoice.' },
   { q: 'What does the Launch tier include?', a: 'Discovery and scoping, design and build of one service, launch and handover, and 30 days of post-launch support.' },
   { q: 'What if my project grows after we start?', a: 'Changes to scope are discussed and priced before we do them, so nothing is added to the bill silently. Many clients start with the Launch tier and move to Build or Partner as the project grows.' },
-  { q: 'Can I get a rough number before a call?', a: 'Yes. Use the <a href="/tools/website-cost-calculator/">website cost calculator</a> for an indicative range in a minute, then we confirm it properly in writing.' }
+  { q: 'Can I get a rough number before a call?', a: 'Every project is different, so we do not publish fixed prices. Tell us what you need and we will send a written quote tailored to your requirements, usually after one short call.' }
 ];
 
 function pricingPage(ctx) {
@@ -164,7 +164,7 @@ function pricingPage(ctx) {
   const main = `${S.pageHero({
     crumbs, eyebrow: 'Pricing', h1: 'Simple pricing. <span class="serif-i">Serious</span> value.',
     lead: 'Every engagement is scoped to exactly what you need, and it all starts from one honest number: ' + inr(pricing.startingPrice) + '. You get a fixed quote in writing before any work begins.',
-    ctas: S.btn('Get a quote', '/contact.html', 'blue', 'hero') + S.btnPlain('Try the cost calculator', '/tools/website-cost-calculator/', 'ghost', 'hero')
+    ctas: S.btn('Get a quote', '/contact.html', 'blue', 'hero') + S.btnPlain('How we quote', '#how-we-quote', 'ghost', 'hero')
   })}
 <section class="pricing pricing--page" id="tiers" data-screen-label="Pricing">
   <div class="deco deco-dark" data-parallax="0.12" aria-hidden="true"><span class="orb orb-a"></span><span class="orb orb-b"></span></div>
@@ -182,7 +182,6 @@ function pricingPage(ctx) {
     <p class="pricing__note">${esc(pricing.gstNote)} Final scope and pricing confirmed before any work begins.</p>
   </div>
 </section>
-${S.section('', S.sectionHead('Sample ranges', 'What typical projects <span class="serif-i">cost.</span>', 'These ranges come from the kinds of projects we take on. Your exact quote depends on scope and is always confirmed in writing first.') + S.priceTable(Object.keys(pricing.projects).concat(Object.keys(pricing.monthly))))}
 ${S.section('pg--tint', S.sectionHead('What changes the price', 'Five things that <span class="serif-i">move a quote.</span>') + '<div class="fgrid">' + [
     ['Size', 'The number of pages, screens or modules. A five-page site and a fifty-page catalogue are different projects.'],
     ['Features', 'Online booking, UPI and card payments, user accounts, admin dashboards and integrations each add real engineering work.'],
@@ -195,14 +194,14 @@ ${S.section('', S.sectionHead('How we quote', 'No surprises, <span class="serif-
     ['Scoped proposal', 'A written scope with deliverables, timeline and a fixed price.'],
     ['50% to begin', 'Work starts once you approve the proposal and the first half is paid.'],
     ['50% on delivery', 'The balance is due on final delivery, after your staging review.']
-  ].map((p, n) => '<li class="pstep"><span class="pstep__n">' + (n + 1) + '</span><div><h3>' + p[0] + '</h3><p>' + p[1] + '</p></div></li>').join('') + '</ol>')}
+  ].map((p, n) => '<li class="pstep"><span class="pstep__n">' + (n + 1) + '</span><div><h3>' + p[0] + '</h3><p>' + p[1] + '</p></div></li>').join('') + '</ol>', 'how-we-quote')}
 ${S.articlesSection(ctx.postsFor(url, 'pricing-hiring'), 'Cost guides')}
 ${S.faqBlock(PRICING_FAQS, 'Pricing <span class="serif-i">questions.</span>')}
 ${S.ctaSection()}`;
   return {
     urlPath: url, title: 'Website & App Development Pricing in India | Elyx',
-    description: 'Transparent web, app, SaaS and SEO pricing from Elyx: engagements start at ₹9,999, quoted in writing before work begins. See typical ranges and what changes a quote.',
-    crumbs, graph: [S.faqGraph(PRICING_FAQS), { '@type': 'OfferCatalog', name: 'Elyx Solutions pricing', itemListElement: Object.keys(pricing.projects).map((k) => ({ '@type': 'Offer', name: pricing.projects[k].label, priceCurrency: 'INR', price: String(pricing.projects[k].low), description: 'Typical range ' + inr(pricing.projects[k].low) + ' to ' + inr(pricing.projects[k].high) })) }].filter(Boolean),
+    description: 'Web, app, SaaS and SEO pricing from Elyx: starting from ₹9,999, with a written quote tailored to your requirements before any work begins. See what changes a quote.',
+    crumbs, graph: [S.faqGraph(PRICING_FAQS)],
     main, ogKey: 'pricing', ogKicker: 'Pricing', ogHeadline: 'Engagements from ₹9,999', priority: 0.9, changefreq: 'monthly'
   };
 }
@@ -213,7 +212,7 @@ function locationPage(ctx) {
   const crumbs = [['Home', '/'], ['Web development in Bengaluru', url]];
   const faqs = [
     { q: 'Are you based in Bengaluru?', a: 'Yes. Elyx Solutions is a three-person studio based in Bengaluru. We work with clients across India, and with local businesses we are happy to meet in person.' },
-    { q: 'How much does a website cost in Bengaluru?', a: 'Engagements start at ₹9,999 for a landing page or redesign. A multi-page business site, an online store or a custom web app is quoted in writing after a short call. See <a href="/pricing/">pricing</a> for typical ranges.' },
+    { q: 'How much does a website cost in Bengaluru?', a: 'Engagements start at ₹9,999 for a landing page or redesign. A multi-page business site, an online store or a custom web app is quoted in writing after a short call. See <a href="/pricing/">how we quote</a>.' },
     { q: 'Do you work with businesses outside Bengaluru?', a: 'Yes. Most of our work is done remotely with calls and screen shares, so location rarely matters. Ashirwad Dental and Malnad Stories were both built that way.' },
     { q: 'Can you help my business show up on Google Maps?', a: 'Yes. We set up and optimise your Google Business Profile alongside your website so both send the same signals. See our <a href="/services/seo-optimization/">SEO service</a>.' }
   ];

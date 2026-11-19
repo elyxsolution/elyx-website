@@ -22,7 +22,7 @@ Every SaaS product and every internal tool ends up needing one, because someone 
 
 That second point is the test of "used": a dashboard succeeds when staff open it instead of the spreadsheet. My reading is that this comes down to roles, a short home screen, fast filters and trusted exports, in that order.
 
-**What is documented:** template contents (TailAdmin, Creative Tim), the studio's own service descriptions and price data, and two vendor cost estimates. **What is my reading:** every rule on roles, metrics, filters and exports.
+**What is documented:** template contents (TailAdmin, Creative Tim), the studio's own service descriptions, and two vendor cost estimates. **What is my reading:** every rule on roles, metrics, filters and exports.
 
 ## Admin Dashboard Roles and Permissions: Design Them First
 
@@ -142,12 +142,12 @@ A hybrid is also possible: take components from a template and build the data mo
 
 ## What an Admin Dashboard Costs and How Long It Takes
 
-The site's price data treats an admin dashboard as part of a larger build, not a product on its own. As of November 2026 the data is a draft, so every range here is indicative, never a quote, excludes 18% GST, and a fixed quote is confirmed in writing after a call.
+Elyx treats an admin dashboard as part of a larger build, not a product on its own, so it is scoped inside the project it belongs to. Engagements start from {{start}}, and every quote is tailored to your requirements and confirmed in writing after a call.
 
-- **SaaS MVP:** {{price:saas}} over {{weeks:saas}}, including multi-tenant architecture, authentication, billing, admin and analytics.
-- **Custom web app or portal:** {{price:webapp}} over {{weeks:webapp}}, including logins and dashboards, with 8 screens included and extra screens priced per screen.
+- **SaaS MVP:** usually {{weeks:saas}}, including multi-tenant architecture, authentication, billing, admin and analytics.
+- **Custom web app or portal:** usually {{weeks:webapp}}, including logins and dashboards, with any extra screens scoped on top.
 
-The [website cost calculator](/tools/website-cost-calculator/) lists an admin dashboard as a separate option for web app, mobile and SaaS builds, and the [pricing page](/pricing/) shows every range.
+The [pricing page](/pricing/) explains how Elyx quotes, and the [contact page](/contact.html) is the quickest way to ask for a quote tailored to your build.
 
 For an outside view, the studio's [SaaS MVP cost article](/blog/saas-development-cost-india/) cites SinghJi Tech at $3,000 to $10,000 for an admin dashboard and Appwizards at 10 person-days. Against Appwizards' 120-day estimate, 10 / 120 is 8.3 percent. Accounts and roles, billing, admin and reporting together are 12 + 15 + 10 + 6 = 43 days, or 35.8 percent.
 
@@ -176,7 +176,7 @@ Spend one afternoon listing before any screen is drawn, because roles, metrics a
 - [ ] Set the default filter for each role's landing page.
 - [ ] Write the export rules and the log.
 - [ ] Choose template or custom using the table above.
-- [ ] Compare the indicative range with the pricing page and calculator.
+- [ ] Ask for a written quote that lists the dashboard's screens, roles and exports.
 
 If the dashboard belongs to a SaaS product or an internal tool you want built, the [SaaS development service](/services/saas-development/) starts with a week of discovery that maps users, workflow and the one metric, and ends in a written scope with a cut line.
 
@@ -220,11 +220,11 @@ Use a template when you have one or two roles and a developer to connect it; bui
 
 ### How much does an admin dashboard cost in India?
 
-As an indicative draft range, a SaaS MVP including admin and analytics is {{price:saas}}, and a custom web app with dashboards is {{price:webapp}}, both excluding 18% GST. These are not quotes. A fixed quote is confirmed in writing after a call.
+At Elyx an admin dashboard is scoped inside the SaaS MVP or web app it belongs to. Engagements start from {{start}}, excluding GST, and a quote tailored to your requirements is confirmed in writing after a call.
 
 ### How long does it take to build an admin dashboard?
 
-Built inside a larger product, it follows that product's timeline: indicatively {{weeks:webapp}} for a custom web app and {{weeks:saas}} for a SaaS MVP, per the site's draft price data. The dashboard alone is not timed separately.
+Built inside a larger product, it follows that product's timeline: usually {{weeks:webapp}} for a custom web app and {{weeks:saas}} for a SaaS MVP. The dashboard alone is not timed separately.
 
 ### Does an admin dashboard need to work on a phone?
 

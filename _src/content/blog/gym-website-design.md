@@ -96,7 +96,7 @@ A class timetable should be text on the page that your team can change without a
 | Embedded booking tool | Members must reserve a spot | Tool cost, tool look |
 | Custom class booking | Capacity and member logins matter | Longest build |
 
-For each class, store the same fields: name, day, start time, length, level, trainer, spots and how to book. On a phone, show one day at a time with day tabs, and print "last updated" near the top so members trust it. The calculator lists online booking as a separate option, and a custom build with logins is closest to what the studio prices as a web app.
+For each class, store the same fields: name, day, start time, length, level, trainer, spots and how to book. On a phone, show one day at a time with day tabs, and print "last updated" near the top so members trust it. Online booking is a separate piece of scope, and a custom build with logins is closest to what the studio builds as a web app.
 
 ## Trainer Pages That Help a Nervous First-Timer
 
@@ -155,16 +155,16 @@ Most gym site problems come from missing content and slow pages, not from the de
 | Payment dead end | No receipt or terms | Gateway receipt, policy page |
 | No visit follow-up | Nobody owns it | Same-day message |
 
-## What a Gym Website Costs, in Indicative Ranges
+## What a Gym Website Costs
 
-A gym site's cost depends on its size and on whether it needs booking and payments, which the studio prices as separate options. These figures come from this site's price data, which is a draft: every range is indicative, never a quote, and a fixed quote is confirmed in writing after a call.
+A gym site's cost depends on its size and on whether it needs booking and payments, which the studio scopes as separate options. Elyx does not publish fixed prices: engagements start from {{start}}, and a fixed quote tailored to your requirements is confirmed in writing after a call. Here is what each build usually involves.
 
-- **Landing page.** One page with an enquiry form and WhatsApp button for a trial or summer offer: {{price:landing}}, usually {{weeks:landing}}.
-- **Business website.** Up to 10 pages with a CMS and Google Maps, enough for plans, trainers and timetable: {{price:website}}, usually {{weeks:website}}.
-- **Custom web app.** Logins and capacity-limited class booking, the closest range: {{price:webapp}}, usually {{weeks:webapp}}.
-- **Care plan.** Monitoring, updates and monthly update hours: {{price:care}} a month.
+- **Landing page.** One page with an enquiry form and WhatsApp button for a trial or summer offer, usually {{weeks:landing}}.
+- **Business website.** Up to 10 pages with a CMS and Google Maps, enough for plans, trainers and timetable, usually {{weeks:website}}.
+- **Custom web app.** Logins and capacity-limited class booking, usually {{weeks:webapp}}.
+- **Care plan.** Monitoring, updates and monthly update hours, billed monthly.
 
-Ranges exclude 18% GST, and gateway or booking-tool fees are paid separately. The [pricing page](/pricing/) lists every range, and the [website cost calculator](/tools/website-cost-calculator/) shows booking and UPI payments as options.
+Prices exclude GST, and gateway or booking-tool fees are paid separately. The [pricing page](/pricing/) explains how Elyx quotes.
 
 ## What to Do Next
 
@@ -224,4 +224,4 @@ Free templates are good enough for a one-page brochure and weak on trials, payme
 
 ### How much does a gym website cost in India?
 
-A gym website's indicative range is {{price:landing}} for a landing page or {{price:website}} for a business site, excluding 18% GST. Booking and UPI payments are priced as options in the calculator. These are draft ranges, never a quote, and a fixed quote is confirmed in writing after a call.
+Elyx engagements start from {{start}}, excluding GST. A gym site is quoted to your requirements, in writing, after a call, and booking and UPI payments are scoped as options.

@@ -67,7 +67,7 @@ Without a mandate, Stripe says an off-session payment is declined. Dodo Payments
 
 ## Subscription Invoicing and GST: What the Sources Cover and What They Leave Out
 
-A subscription invoice for an Indian customer needs their GSTIN and place of supply, per Appwizards as summarised in the studio's [SaaS cost article](/blog/saas-development-cost-india/), and the site's price data uses 18% GST on software services as of November 2026. CCAvenue's blog says its platform creates a GST invoice with every charge, which is a vendor claim. The research holds no GST Council or CBIC text, so registration thresholds, export treatment and input credit are not covered here: ask a chartered accountant.
+A subscription invoice for an Indian customer needs their GSTIN and place of supply, per Appwizards as summarised in the studio's [SaaS cost article](/blog/saas-development-cost-india/), and software services carry 18% GST as of November 2026. CCAvenue's blog says its platform creates a GST invoice with every charge, which is a vendor claim. The research holds no GST Council or CBIC text, so registration thresholds, export treatment and input credit are not covered here: ask a chartered accountant.
 
 One link between tax and mandates is worth working through. Take a plan priced at 1,000 rupees before tax: 1,000 x 18% = 180, so the invoice is 1,180 rupees. Stripe says that with a mandate maximum of 1,000 rupees the customer must authenticate any charge above it, so set the maximum above the tax-inclusive price, with room for upgrades.
 
@@ -155,7 +155,7 @@ Start by listing every plan's charge including GST and marking the ones above 15
 - [ ] Does it issue GST-ready invoices, and who confirms the format?
 - [ ] What does it cost per charge, as of today?
 
-If you are building the product, the studio's [SaaS development page](/services/saas-development/) explains its scoping. Its draft SaaS MVP range is {{price:saas}}, typically {{weeks:saas}}, excluding 18% GST. It is indicative, never a quote, and a fixed quote is confirmed in writing after a call.
+If you are building the product, the studio's [SaaS development page](/services/saas-development/) explains its scoping. A SaaS MVP there typically takes {{weeks:saas}}. Engagements start from {{start}}, excluding GST, and a fixed quote tailored to your requirements is confirmed in writing after a call.
 
 For context, read the [SaaS MVP cost breakdown](/blog/saas-development-cost-india/) and the [pricing page](/pricing/), and re-check the RBI text and your gateway's documents before launch.
 
@@ -195,7 +195,7 @@ Yes, if the gateway supports it: CCAvenue says it bills in 27 currencies and set
 
 ### Do SaaS invoices need GST?
 
-A GST-registered SaaS issues tax invoices, and the site's price data uses 18% for software services as of November 2026. Appwizards says the invoice needs the customer's GSTIN and place of supply. Thresholds and exemptions are not covered here, so ask a chartered accountant.
+A GST-registered SaaS issues tax invoices, and software services carry 18% GST as of November 2026. Appwizards says the invoice needs the customer's GSTIN and place of supply. Thresholds and exemptions are not covered here, so ask a chartered accountant.
 
 ### What happens when a recurring payment fails in India?
 

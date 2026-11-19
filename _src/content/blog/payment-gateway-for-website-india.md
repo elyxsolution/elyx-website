@@ -20,7 +20,7 @@ This comparison scores each gateway on five criteria: total fee, UPI handling, s
 
 Read the sources with their interests in mind. Razorpay, Cashfree, PayU, Paytm, PhonePe and Pine Labs wrote the pages about themselves, and Toucan Pay is a gateway too. Wise sells a competing product for receiving foreign money, so I give its figures as its reading of each gateway's pricing.
 
-The fifth criterion is a build question, because someone has to wire the gateway into the site. [Elyx Solutions' web development service](/services/web-development/) includes UPI and card payments in its e-commerce build, with an indicative range of {{price:ecommerce}} over {{weeks:ecommerce}}. That range is indicative, never a quote, excludes 18% GST, and a fixed quote is confirmed in writing after a call.
+The fifth criterion is a build question, because someone has to wire the gateway into the site. [Elyx Solutions' web development service](/services/web-development/) includes UPI and card payments in its e-commerce build, which usually takes {{weeks:ecommerce}}. Engagements start from {{start}}, excluding GST, and a fixed quote tailored to your requirements is confirmed in writing after a call.
 
 ## Payment Gateway Fees in India: What Each Provider Publishes
 
@@ -145,7 +145,7 @@ Start with your own numbers, because they decide which row matters. Then work th
 - [ ] I confirmed a plugin, link or API route for my platform.
 - [ ] I tested a failed payment, a refund and a pending payment before launch.
 
-If you want the site and checkout built together, [Elyx Solutions' web development service](/services/web-development/) is where that conversation starts, and the [website cost calculator](/tools/website-cost-calculator/) lists UPI and card payments as a separate option. Fees and offers here are as of November 2026 and will change. None of this is financial, tax or legal advice, and rules such as RBI's card tokenisation requirements should be confirmed with the gateway and a qualified professional.
+If you want the site and checkout built together, [Elyx Solutions' web development service](/services/web-development/) is where that conversation starts, and UPI and card payments are scoped as a separate option. Fees and offers here are as of November 2026 and will change. None of this is financial, tax or legal advice, and rules such as RBI's card tokenisation requirements should be confirmed with the gateway and a qualified professional.
 
 ## Sources
 

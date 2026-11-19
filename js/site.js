@@ -333,7 +333,6 @@
     var svcSel = cform.querySelector('#f-service');
     if (svcSel && qs.get('service') && svcMap[qs.get('service')]) svcSel.value = svcMap[qs.get('service')];
     var msgEl = cform.querySelector('#f-msg');
-    if (msgEl && qs.get('est') && !msgEl.value) msgEl.value = 'Estimate from the cost calculator: ' + qs.get('est') + '\n\nProject details: ';
     var srcEl = cform.querySelector('#f-src'), landEl = cform.querySelector('#f-landing'), estEl = cform.querySelector('#f-est');
     try {
       if (srcEl) srcEl.value = qs.get('src') || sessionStorage.getItem('elyx_last_article') || '';

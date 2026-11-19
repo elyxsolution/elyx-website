@@ -86,7 +86,7 @@ For traffic, Preetam Nath suggests Keywords Everywhere (about $10 of credits), G
 
 IdeaProof says a B2B test costs $1,500 to $3,000 in ads and should reach a 5% click-through rate and a 15% waitlist conversion; falling short suggests a weak message or a crowded field. Treat those as a vendor's rule of thumb.
 
-If you would rather have the page built, Elyx Solutions builds landing pages in an indicative range of {{price:landing}}, typically {{weeks:landing}}, excluding 18% GST, never a quote until a fixed one is confirmed in writing after a call. See [web development](/services/web-development/) and the [landing page that converts](/blog/landing-page-best-practices/) for what goes on it.
+If you would rather have the page built, Elyx Solutions builds landing pages, typically in {{weeks:landing}}, with engagements starting from {{start}}, excluding GST, and a fixed quote tailored to your requirements confirmed in writing after a call. See [web development](/services/web-development/) and the [landing page that converts](/blog/landing-page-best-practices/) for what goes on it.
 
 ## Waitlists: What a Signup Proves and What It Does Not
 
@@ -176,7 +176,7 @@ Copy this checklist:
 - [ ] I asked for money, with a refund line.
 - [ ] I wrote my pass marks before looking at results.
 
-If the tests pass, the studio's [SaaS development page](/services/saas-development/) describes a discovery week that ends in a written scope and a cut line, with a typical MVP of {{weeks:saas}} and an indicative range of {{price:saas}}, excluding GST and never a quote. The [SaaS MVP cost article](/blog/saas-development-cost-india/) and the [pricing page](/pricing/) show what each part adds.
+If the tests pass, the studio's [SaaS development page](/services/saas-development/) describes a discovery week that ends in a written scope and a cut line, with a typical MVP of {{weeks:saas}}. Engagements start from {{start}}, excluding GST, and every quote is tailored to your requirements. The [SaaS MVP cost article](/blog/saas-development-cost-india/) and the [pricing page](/pricing/) explain what moves a quote.
 
 ## Sources
 
@@ -224,4 +224,4 @@ An AI validator can sharpen your assumptions but cannot prove demand. Supastarte
 
 ### How much does it cost to build a SaaS after validation?
 
-The studio's indicative range for a SaaS MVP is {{price:saas}}, with a typical timeline of {{weeks:saas}}, excluding 18% GST. The price data is a draft, so it is never a quote, and a fixed quote is confirmed in writing after a call.
+A SaaS MVP at Elyx has a typical timeline of {{weeks:saas}}. Engagements start from {{start}}, excluding GST, and a fixed quote tailored to your requirements is confirmed in writing after a call.

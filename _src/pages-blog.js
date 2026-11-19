@@ -18,21 +18,13 @@ const authorBySlug = Object.fromEntries((config.authors || []).filter((a) => a.b
 const warnings = [];
 const warn = (m) => warnings.push(m);
 
-/* Price tokens keep articles in sync with _src/data/pricing.json:
-     {{price-table}}   a Markdown table of every project and monthly range
-     {{price:landing}} one range, e.g. ₹9,999–₹24,999 (keys: landing, website, ecommerce, webapp, mobile, saas, seo, care)
-     {{weeks:website}} timeline, e.g. 2–4 weeks
-     {{start}}         the starting price, ₹9,999 */
+/* Tokens keep articles in sync with _src/data/pricing.json:
+     {{weeks:website}} timeline, e.g. 2–4 weeks (keys: landing, website, ecommerce, webapp, mobile, saas)
+     {{start}}         the starting price, ₹9,999
+   Elyx publishes no other price, so there are no price-range tokens: an article that uses one stops the build. */
 function expandTokens(md) {
-  const rows = (k) => pricing.projects[k] || pricing.monthly[k];
   return md
-    .replace(/\{\{price-table\}\}/g, () => {
-      const lines = ['| What | Typical range | Timeline |', '|---|---|---|'];
-      Object.keys(pricing.projects).forEach((k) => { const p = pricing.projects[k]; lines.push('| ' + p.label + ' | ' + inr(p.low) + '–' + inr(p.high) + ' | ' + p.weeksLow + '–' + p.weeksHigh + ' weeks |'); });
-      Object.keys(pricing.monthly).forEach((k) => { const p = pricing.monthly[k]; lines.push('| ' + p.label + ' | ' + inr(p.low) + '–' + inr(p.high) + ' per month | Monthly plan |'); });
-      return lines.join('\n');
-    })
-    .replace(/\{\{price:(\w+)\}\}/g, (m, k) => { const p = rows(k); if (!p) throw new Error('unknown price token ' + k); return inr(p.low) + '–' + inr(p.high); })
+    .replace(/\{\{price(?:-table|:\w+)?\}\}/g, (m) => { throw new Error('Elyx publishes no price ranges, so ' + m + ' is not allowed. Say "starting from {{start}}" and that every project is quoted to the reader\'s requirements.'); })
     .replace(/\{\{weeks:(\w+)\}\}/g, (m, k) => { const p = pricing.projects[k]; if (!p) throw new Error('unknown weeks token ' + k); return p.weeksLow + '–' + p.weeksHigh + ' weeks'; })
     .replace(/\{\{start\}\}/g, () => inr(pricing.startingPrice));
 }

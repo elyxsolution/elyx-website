@@ -6,7 +6,7 @@ description: App development cost India by app type, with cross-platform savings
 date: 2026-11-14
 author: shreyasmv
 ---
-App development cost in India runs from about ₹0.5 lakh for a very simple app to ₹1 crore or more for a complex platform, according to nine agency pages read on 17 November 2026. The pages disagree sharply, so the honest answer is a band tied to scope, not a single price. For a cross-platform iOS and Android app, the draft range on this site is {{price:mobile}}, indicative and never a quote, and a fixed quote is confirmed in writing after a call with [Elyx Solutions](/services/app-development/).
+App development cost in India runs from about ₹0.5 lakh for a very simple app to ₹1 crore or more for a complex platform, according to nine agency pages read on 17 November 2026. The pages disagree sharply, so the honest answer is a band tied to scope, not a single price. For a cross-platform iOS and Android app, [Elyx Solutions](/services/app-development/) scopes the build to its screens and features, starts engagements from {{start}}, and confirms a quote tailored to your requirements in writing after a call.
 
 - **The band.** A simple app is ₹0.5 lakh on one page and up to ₹29 lakh on another, so compare scope before totals.
 - **Cross-platform.** One codebase for both stores saves about 30 to 40 percent against two native apps on most pages.
@@ -58,7 +58,7 @@ Backend work, user roles and real-time features move an app's price more than sc
 - **AI features.** Nevatrix and Groot both start at ₹1 lakh.
 - **Integrations.** Ahex says a payment gateway can work in a sandbox in two days and need a week to be production-ready.
 
-Login, payments and push alerts are cheaper levers, and this site's calculator prices them as separate options. Sysfo's typical split of effort is 5 to 10 percent discovery, 10 to 20 design, 35 to 45 app build, 20 to 30 backend and admin, and 10 to 15 testing and launch.
+Login, payments and push alerts are smaller levers that you can scope as separate options. Sysfo's typical split of effort is 5 to 10 percent discovery, 10 to 20 design, 35 to 45 app build, 20 to 30 backend and admin, and 10 to 15 testing and launch.
 ## Android, iOS and Cross-Platform: Where the Savings Are
 
 A cross-platform build for both stores costs about 30 to 40 percent less than two native apps on most pages, and Vola says 35 to 50 percent. Cross-platform means one codebase, in React Native or Flutter, that runs on Android and iOS. The arithmetic shows the pages agree more than they seem to.
@@ -76,15 +76,15 @@ Nevatrix says Android holds the large majority of India's market, citing StatCou
 
 ## Do You Need an App, or Is a Website Enough?
 
-You need an app when customers will return daily or need push notifications, offline use or device features such as the camera; otherwise a website costs far less. Those four reasons come from this site's own app page. The table uses the site's draft price data, excluding 18% GST, indicative and never a quote.
+You need an app when customers will return daily or need push notifications, offline use or device features such as the camera; otherwise a website costs far less. Those four reasons come from this site's own app page. The table compares how long each option usually takes, because Elyx quotes every project to its own requirements, starting from {{start}}.
 
-| Option | Indicative range | Typical time |
-|---|---|---|
-| Landing page | {{price:landing}} | {{weeks:landing}} |
-| Business website | {{price:website}} | {{weeks:website}} |
-| Custom web app or portal | {{price:webapp}} | {{weeks:webapp}} |
-| Mobile app (iOS and Android) | {{price:mobile}} | {{weeks:mobile}} |
-| SaaS MVP | {{price:saas}} | {{weeks:saas}} |
+| Option | Typical time |
+|---|---|
+| Landing page | {{weeks:landing}} |
+| Business website | {{weeks:website}} |
+| Custom web app or portal | {{weeks:webapp}} |
+| Mobile app (iOS and Android) | {{weeks:mobile}} |
+| SaaS MVP | {{weeks:saas}} |
 
 A clinic whose patients mostly want to book on WhatsApp and be found on Maps can put a website first, and [the clinic website guide](/blog/website-for-doctors-india/) covers that route. A gym weighing class booking will find the website options in [the gym website guide](/blog/gym-website-design/).
 
@@ -163,11 +163,11 @@ Most overruns come from a quote that priced less than the founder assumed, then 
 | Buying once, not yearly | Yearly OS releases (Nevatrix) | Budget year one, not launch |
 | Losing control of code | The vendor holds the accounts (Nevatrix) | Name your company on both |
 
-## What This Site's Draft Range Covers
+## What an Elyx App Build Covers
 
-The draft range for an iOS and Android app on this site is {{price:mobile}}, usually {{weeks:mobile}}, excluding 18% GST. It is indicative, never a quote, and a fixed quote is confirmed in writing after a discovery call. It covers one cross-platform codebase, store submission, push notifications and ten screens.
+An iOS and Android app at Elyx usually takes {{weeks:mobile}}. It covers one cross-platform codebase, store submission and push notifications. Engagements start from {{start}}, excluding GST, and a fixed quote tailored to your requirements is confirmed in writing after a discovery call.
 
-The price moves with extra screens, a custom backend, payments, maps or real-time features. The [pricing page](/pricing/) shows every range. A monthly care plan, {{price:care}} a month indicative, covers monitoring, OS updates and agreed update hours; twelve months of it is the line to set against the 15 to 20 percent rule.
+The price moves with extra screens, a custom backend, payments, maps or real-time features. The [pricing page](/pricing/) explains how we quote. A monthly care plan covers monitoring, OS updates and agreed update hours; twelve months of it is the line to set against the 15 to 20 percent rule.
 
 My reading is that the range overlaps the simple and middle bands in the first table. Marketplaces, live tracking and regulated apps are priced highest by the pages, and need a scoped quote, not this range.
 
@@ -177,7 +177,7 @@ Write the scope first, then collect three comparable quotes and budget the first
 
 1. **List the launch screens.** Write the 5 to 8 screens needed on day one, as Nevatrix advises, and move the rest to phase two.
 2. **Test the need.** If none of the four reasons for an app applies, price a website.
-3. **Get an indicative range.** The [website cost calculator](/tools/website-cost-calculator/) includes a mobile app option.
+3. **Get a tailored quote.** Tell [Elyx](/contact.html?service=app-development) what the app must do and ask for a written quote.
 4. **Send one brief to three bidders.** Use the checklist above and compare lines, not totals.
 5. **Budget the first year.** Use the worked example, with maintenance as its own line.
 
@@ -201,7 +201,7 @@ All nine pages were read on 17 November 2026.
 
 ### How much does app development cost in India?
 
-App development cost in India runs from about ₹0.5 lakh for a very simple app to ₹1 crore or more for a complex platform, across nine agency pages read on 17 November 2026. Scope explains most of the gap. This site's draft range for a cross-platform iOS and Android app is {{price:mobile}}, indicative and never a quote.
+App development cost in India runs from about ₹0.5 lakh for a very simple app to ₹1 crore or more for a complex platform, across nine agency pages read on 17 November 2026. Scope explains most of the gap. Elyx scopes a cross-platform iOS and Android app to its screens and features and quotes it to your requirements, with engagements starting from {{start}}.
 
 ### How much does a mobile app cost in India for a small business?
 
@@ -213,7 +213,7 @@ Yes, but only a very simple one. Groot, Sysfo and Vola start simple apps at ₹0
 
 ### Do I need an app, or is a website enough?
 
-A website is enough unless customers will return daily or need push notifications, offline use or device features. This site's app page names those four reasons. A website costs less, as the price table above shows.
+A website is enough unless customers will return daily or need push notifications, offline use or device features. This site's app page names those four reasons. A website usually costs less and takes less time, as the table above shows.
 
 ### Is a cross-platform app cheaper than a native app?
 

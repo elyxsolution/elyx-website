@@ -144,7 +144,7 @@ My research holds no rate card for copywriters in India, so I cannot quote one. 
 | Use AI for ideas only | You are stuck on headline variations; remove customer names first |
 | Hire a writer | Several pages, a launch date, or a high-value service |
 
-At the studio, writing the copy is a separate option in the [website cost calculator](/tools/website-cost-calculator/), and the web development page lists it among the things that move the price. As of November 2026 the site's price data is a draft, so the indicative range for a landing page is {{price:landing}} and for a business website {{price:website}}, excluding 18% GST. These are never quotes; a fixed quote is confirmed in writing after a call.
+At the studio, writing the copy is a separate option, and the web development page lists it among the things that move the price. Elyx engagements start from {{start}}, excluding GST, and a landing page or a business website is quoted to your requirements; a fixed quote is confirmed in writing after a call.
 
 ## What Usually Goes Wrong With Self-Written Copy
 
@@ -214,4 +214,4 @@ You can use AI for ideas, but not as the final copy. WordStream recommends it fo
 
 ### Do I need Hindi or Kannada copy as well?
 
-Write one language well first, then add others if your visitors need them. The studio's cost calculator lists multiple languages as a separate option, so a second language has its own cost. Translate the finished page; do not run two drafts at once.
+Write one language well first, then add others if your visitors need them. The studio scopes multiple languages as a separate option, so a second language has its own cost. Translate the finished page; do not run two drafts at once.

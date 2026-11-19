@@ -169,7 +169,7 @@ Chaser says split ownership shows up after launch as steps each side assumed the
 
 Pick one owner, copy the tables into a sheet and give each item a date from the schedule. Then run items 7 to 14 first, because they take the longest and decide whether enquiries arrive. If you want a tick-off version, the [free launch checklist tool](/tools/website-launch-checklist/) has 25 grouped checks and saves your progress in the browser.
 
-If you would rather hand the work over, [the web development service](/services/web-development/) lists QA, staging and launch as its final stage, with 30 days of post-launch support on the Launch tier. As of November 2026 the site's price data is a draft, so the indicative range for a business website is {{price:website}} over {{weeks:website}}, excluding GST. A fixed quote is confirmed in writing after a call.
+If you would rather hand the work over, [the web development service](/services/web-development/) lists QA, staging and launch as its final stage, with 30 days of post-launch support on the Launch tier. A business website usually takes {{weeks:website}} at Elyx, and engagements start from {{start}}, excluding GST. A fixed quote tailored to your requirements is confirmed in writing after a call.
 
 ## Sources
 

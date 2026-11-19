@@ -52,7 +52,7 @@ Both firms sell maintenance, so read these as asking prices, not an independent 
 
 ## What the Studio's Care Plan Costs and Covers
 
-The studio's maintenance and care plan has a draft range of {{price:care}} a month, indicative only, never a quote, and exclusive of 18% GST on software services. A fixed quote is confirmed in writing after a call.
+The studio's maintenance and care plans are quoted to your requirements, with engagements starting from {{start}}, exclusive of GST on software services. A fixed quote is confirmed in writing after a call.
 
 Per the studio's [maintenance and care page](/services/maintenance-care/), a plan covers:
 
@@ -117,7 +117,7 @@ A small business site on a Standard-tier plan costs about ₹39,500 to ₹1,02,0
 1. **Plan.** ₹3,000 times 12 is ₹36,000, and ₹7,000 times 12 is ₹84,000.
 2. **Hosting, if not included.** Add ₹3,500 to ₹18,000 for a year of shared hosting.
 3. **Total before tax.** ₹36,000 plus ₹3,500 is ₹39,500, and ₹84,000 plus ₹18,000 is ₹1,02,000.
-4. **Tax illustration.** At 18% (the rate the studio's price data states for software services), ₹39,500 gives ₹7,110 and a total of ₹46,610; ₹1,02,000 gives ₹18,360 and ₹1,20,360.
+4. **Tax illustration.** At 18% (the rate that applies to software services), ₹39,500 gives ₹7,110 and a total of ₹46,610; ₹1,02,000 gives ₹18,360 and ₹1,20,360.
 
 If your quote already includes hosting, drop step 2. Domain, paid plugins and email are not in the total, so add them from your renewal checklist. Which lines carry GST is a question for your accountant.
 
@@ -125,7 +125,7 @@ If your quote already includes hosting, drop step 2. Domain, paid plugins and em
 
 Whether TDS applies to website maintenance charges depends on your contract and who is paying, and the research behind this article holds no primary text from the Income Tax Department, so it states no rate or threshold. This is a business lens, not tax advice, and it reflects what was available on 17 November 2026.
 
-What the sources do support is narrow. The studio's price data says prices are exclusive of GST, currently 18% on software services, added on the invoice. One search result for the TDS query was titled as an explainer on Section 194J (TDS on professional and technical fees), but it was not read, so treat it as a lead for your accountant, not an answer.
+What the sources do support is narrow. Elyx's prices are exclusive of GST, currently 18% on software services, added on the invoice. One search result for the TDS query was titled as an explainer on Section 194J (TDS on professional and technical fees), but it was not read, so treat it as a lead for your accountant, not an answer.
 
 Ask your chartered accountant three things:
 
@@ -166,7 +166,7 @@ One test settles close calls. If an hour of downtime costs you more than a month
 
 Start by filling the renewal checklist above, then ask every provider the same five questions in writing. They are: the patching schedule and the time allowed for a critical fix, whether you get a monthly report, who owns the hosting, domain and admin accounts, how many content hours are included and the rate beyond them, and the response time if the site is down or hacked.
 
-Next, run the annual arithmetic with your own quote. The [pricing page](/pricing/) and the [website cost calculator](/tools/website-cost-calculator/) cover build costs; the care range above covers upkeep.
+Next, run the annual arithmetic with your own quote. The [pricing page](/pricing/) explains how Elyx quotes build costs; the care ranges above cover upkeep.
 
 If you want the studio to look after a site, whether it built it or not, the [maintenance and care page](/services/maintenance-care/) is the place to start with a health check. A fixed quote is confirmed in writing after a call.
 
@@ -183,7 +183,7 @@ If you want the studio to look after a site, whether it built it or not, the [ma
 
 ### How much does website maintenance cost per month in India?
 
-Most small and mid-size business sites cost between ₹2,500 and ₹20,000 a month, according to Aarav Infotech's 2026 guide. Redpulse Software's bands run from ₹1,500 for basic sites to ₹15,000 and up for stores and web apps. The studio's own draft care range is {{price:care}} a month, indicative only and exclusive of GST.
+Most small and mid-size business sites cost between ₹2,500 and ₹20,000 a month, according to Aarav Infotech's 2026 guide. Redpulse Software's bands run from ₹1,500 for basic sites to ₹15,000 and up for stores and web apps. Elyx quotes care plans to your requirements, exclusive of GST, with engagements starting from {{start}}.
 
 ### What are website maintenance charges?
 

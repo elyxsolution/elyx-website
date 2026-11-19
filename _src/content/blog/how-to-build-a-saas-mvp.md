@@ -129,9 +129,9 @@ Count your right-hand answers. With three or more, plan for the longer end of {{
 
 ## Building A SaaS Product: What It Costs And What You Bring
 
-The studio's draft range for a SaaS MVP is {{price:saas}} over {{weeks:saas}}, and it is indicative only, never a quote. The range covers multi-tenant architecture, authentication, billing, admin and analytics, with three modules included and extra modules priced separately. It excludes 18% GST, and a fixed quote is confirmed in writing after a call.
+A SaaS MVP at Elyx usually takes {{weeks:saas}}. It covers multi-tenant architecture, authentication, billing, admin and analytics, and extra modules are scoped separately. Engagements start from {{start}}, excluding GST, and a fixed quote tailored to your requirements is confirmed in writing after a call.
 
-The service page says payment is 50% upfront and 50% on final delivery, and that the code is yours. See the [pricing page](/pricing/) for every draft range, and the [SaaS MVP cost article](/blog/saas-development-cost-india/) for published agency ranges and why quotes differ.
+The service page says payment is 50% upfront and 50% on final delivery, and that the code is yours. See the [pricing page](/pricing/) for how Elyx quotes, and the [SaaS MVP cost article](/blog/saas-development-cost-india/) for published agency ranges and why quotes differ.
 
 Your side of an eight-week plan is three things: one person who can decide within a day, a list of real first users, and sample data from your own business. These are my suggestions, not a studio requirement, but a slow answer in week two is the likeliest way the date slips.
 
@@ -192,7 +192,7 @@ A focused SaaS MVP takes about six to twelve weeks per Kokatta, and the studio's
 
 ### How much does it cost to build a SaaS MVP in India?
 
-The studio's draft range is {{price:saas}}, indicative only and excluding 18% GST, with a fixed quote confirmed in writing after a call. Cost moves with workflows, roles, billing, integrations and mobile apps, per Parix. The [cost article](/blog/saas-development-cost-india/) compares published agency ranges.
+Elyx engagements start from {{start}}, excluding GST, and a SaaS MVP is quoted to your requirements, in writing, after a call. Cost moves with workflows, roles, billing, integrations and mobile apps, per Parix. The [cost article](/blog/saas-development-cost-india/) compares published agency ranges.
 
 ### Can I build a SaaS MVP without coding?
 

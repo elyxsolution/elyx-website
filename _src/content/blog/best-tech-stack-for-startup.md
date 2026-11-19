@@ -135,15 +135,15 @@ Simon's moves worked because the setup lived in Terraform and Kubernetes files; 
 
 ## What the Stack Costs: Time, Money and GST
 
-A stack changes your bill less than scope does, because the studio's price note says the price moves with modules, billing and permission complexity, integrations and admin tooling. The ranges below are indicative from the site's draft price data as of November 2026. They are never a quote, and a fixed quote is confirmed in writing after a call.
+A stack changes your bill less than scope does, because the price moves with modules, billing and permission complexity, integrations and admin tooling. Elyx engagements start from {{start}}, and every quote is tailored to your requirements and confirmed in writing after a call. The table below shows how long each kind of build usually takes.
 
-| Build | Indicative range | Typical time |
-|---|---|---|
-| SaaS MVP | {{price:saas}} | {{weeks:saas}} |
-| Custom web app | {{price:webapp}} | {{weeks:webapp}} |
-| Mobile app, iOS and Android | {{price:mobile}} | {{weeks:mobile}} |
+| Build | Typical time |
+|---|---|
+| SaaS MVP | {{weeks:saas}} |
+| Custom web app | {{weeks:webapp}} |
+| Mobile app, iOS and Android | {{weeks:mobile}} |
 
-All ranges exclude 18% GST on software services. The [pricing page](/pricing/) lists every range, the [website cost calculator](/tools/website-cost-calculator/) adds options one by one, and the [SaaS MVP cost article](/blog/saas-development-cost-india/) breaks down a budget.
+Prices exclude GST. The [pricing page](/pricing/) explains how Elyx quotes, and the [SaaS MVP cost article](/blog/saas-development-cost-india/) breaks down a budget.
 
 Cloud bills in the sources are quoted in US dollars, so an Indian founder's rupee cost moves with the exchange rate. Groot Technologies notes that Google Cloud, AWS and Azure offer free tiers, and Simon's early hosting was a single instance he describes as costing $5 a month. Check each provider's current pricing page before you plan.
 
@@ -219,4 +219,4 @@ For a web app, techstack.sh suggests one Next.js app with TypeScript and Postgre
 
 ### How much does it cost to build a tech startup?
 
-The studio's indicative range for a SaaS MVP is {{price:saas}}, excluding 18% GST, and a web app is {{price:webapp}}. The price data is a draft, so these are never quotes. A fixed quote is confirmed in writing after a call.
+Elyx engagements start from {{start}}, excluding GST. A SaaS MVP or a web app is scoped to your requirements and quoted in writing after a call.

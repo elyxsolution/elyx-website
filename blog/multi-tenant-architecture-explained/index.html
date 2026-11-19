@@ -234,7 +234,7 @@
           <a class="mega-feature" href="../../pricing/">
             <div class="ph-grid"></div>
             <div class="mega-feature__k">Featured</div>
-            <div class="mega-feature__t">Simple pricing. Engagements start at ₹9,999.</div>
+            <div class="mega-feature__t">Starting from ₹9,999. Quotes tailored to you.</div>
             <div class="mega-feature__l">See pricing <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H4M10 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
           </a>
         </div>
@@ -310,7 +310,7 @@
 <div class="prose-table"><table><thead><tr><th>Tenants</th><th>Shared tables</th><th>Schema or database per tenant</th></tr></thead><tbody><tr><td>20</td><td>1 run, 2 minutes</td><td>20 runs, 40 minutes</td></tr><tr><td>200</td><td>1 run, 2 minutes</td><td>200 runs, 400 minutes (6.7 hours)</td></tr><tr><td>2,000</td><td>1 run, 2 minutes</td><td>2,000 runs, 4,000 minutes (66.7 hours)</td></tr></tbody></table></div>
 <p>The arithmetic is tenants x 2 minutes, so 200 x 2 = 400 minutes and 2,000 x 2 = 4,000. Automation shrinks the minutes but not the count of things that can fail. Per-tenant backup targets scale the same way.</p>
 <p>To compare models, divide the shared cost plus the hours of upkeep by the number of tenants. If that number exceeds what one tenant pays you, the model is unaffordable.</p>
-<p>The studio's draft SaaS MVP range is ₹1,50,000–₹6,00,000 over 8–16 weeks, and it includes multi-tenant architecture. The range is indicative only and excludes 18% GST, and a fixed quote is confirmed in writing after a call. The <a href="../../pricing/">pricing page</a> shows the other ranges.</p>
+<p>At Elyx, a SaaS MVP usually takes 8–16 weeks and includes multi-tenant architecture. Engagements start from ₹9,999, excluding GST, and a fixed quote tailored to your requirements is confirmed in writing after a call. The <a href="../../pricing/">pricing page</a> explains how Elyx quotes.</p>
 <h2 id="which-model-should-you-choose">Which Model Should You Choose?</h2>
 <p>Choose shared tables with row-level security when you expect many small tenants, and move to stronger isolation only for the tenants who need it. This rule is my reading of the sources, set out as a decision framework.</p>
 <ul><li><strong>Shared tables.</strong> Choose when tenants are small and numerous, the budget is tight and no customer demands its own data store.</li><li><strong>Schema per tenant.</strong> Choose when you expect dozens of tenants who want visible separation, and you can run changes across all of them.</li><li><strong>Database per tenant.</strong> Choose when a tenant asks for its own backup schedule or compliance boundary, which Frontegg lists as the usual trigger.</li><li><strong>Separate copy.</strong> Choose when a contract forces it, and price it as a bespoke deal.</li><li><strong>Hybrid.</strong> Choose when most tenants are small but a few are large or regulated.</li></ul>

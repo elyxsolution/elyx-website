@@ -153,7 +153,7 @@ Microsoft (Copilot Studio), ServiceNow, IBM, AWS and Google each publish their o
 - **The running cost.** What one task costs once the free credit ends.
 - **The exit.** Whether you can move your setup elsewhere.
 
-On the studio side, the site's price data does not price AI agents or AI usage, and I will not guess. The nearest figure is for software built around your workflow: the site's draft range for a custom web app or portal is {{price:webapp}}, with a typical timeline of {{weeks:webapp}}. That is indicative, never a quote, exclusive of 18% GST on software services, and a fixed quote is confirmed in writing after a call. The [pricing page](/pricing/) and the [website cost calculator](/tools/website-cost-calculator/) show the other ranges.
+On the studio side, Elyx does not publish a price for AI agents or AI usage, and I will not guess. The nearest build is software around your workflow, a custom web app or portal, which usually takes {{weeks:webapp}}. Elyx engagements start from {{start}}, exclusive of GST on software services, and a fixed quote tailored to your requirements is confirmed in writing after a call. The [pricing page](/pricing/) explains how Elyx quotes.
 
 ## How a Small Indian Business Can Start With One Agent
 
@@ -242,7 +242,7 @@ There is no single best AI agent, because the right one depends on your task, th
 
 ### How much do AI agents cost in India?
 
-The studio's site does not price AI agents, so no figure is given here. The nearest priced item is a custom web app or portal, where a workflow becomes software, at {{price:webapp}} as an indicative draft range excluding 18% GST, never a quote. AI model usage is billed separately by the provider you choose.
+Elyx does not publish a price for AI agents, so no figure is given here. The nearest build is a custom web app or portal, where a workflow becomes software, and it is quoted to your requirements. AI model usage is billed separately by the provider you choose.
 
 ### Are AI agents safe for a small business to use?
 

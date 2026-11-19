@@ -40,9 +40,9 @@ The number of pages on a website has no single right answer, and the sources agr
 
 My reading: five to eight pages at launch suits a one-location service business, and that is a judgement, not a measured result.
 
-The studio's price data points the same way. As of November 2026 its draft business-website range ({{price:website}}, indicative, never a quote) covers up to 10 pages, and the [cost calculator](/tools/website-cost-calculator/) treats five as included and prices each extra page separately. A single landing page ({{price:landing}}) is the one-page end of the scale.
+The studio's own builds point the same way. Its business-website build covers up to 10 pages, with any extra pages scoped on top, and a single landing page is the one-page end of the scale.
 
-Ranges exclude 18% GST, and a fixed quote is confirmed in writing after a call.
+Elyx engagements start from {{start}}, excluding GST, and a fixed quote tailored to your requirements is confirmed in writing after a call.
 
 ## The Homepage: What Should Be on It
 
@@ -127,7 +127,7 @@ Here is a launch plan for a fictional clinic, Kaveri Physio in Mysuru, which is 
 | Fees and FAQ combined | 1 |
 | Total | 7 |
 
-The arithmetic: 1 + 3 + 1 + 1 + 1 = 7 pages. Against the studio's draft data that is five included pages plus two extra, inside the 10-page ceiling of the business-website range.
+The arithmetic: 1 + 3 + 1 + 1 + 1 = 7 pages, inside the 10-page ceiling of the studio's business-website build.
 
 A privacy line goes beside the contact form, and a custom 404 page is added. In my plan, a reviews page and blog posts wait until there are enough real reviews and someone to write them.
 

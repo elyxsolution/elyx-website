@@ -44,7 +44,7 @@ Among the four imaging rows, MedQuest's starting prices rise in the same order a
 
 Group tests the way patients arrive. Choose test groups, as MedQuest does, when patients bring a doctor's list, and choose age, need and budget, as Redcliffe does, when they want a general checkup.
 
-Rate cards change, so staff should edit prices without a developer. That is routine [web development](/services/web-development/) work, usually through a CMS, the editor your staff use to change text and prices. Some suggestion phrases in the research ask for Hindi, and the studio's price data lists multiple languages as a separate feature, so decide that early.
+Rate cards change, so staff should edit prices without a developer. That is routine [web development](/services/web-development/) work, usually through a CMS, the editor your staff use to change text and prices. Some suggestion phrases in the research ask for Hindi, and extra languages are scoped as a separate feature, so decide that early.
 
 ## Home Collection Booking: Four Ways to Take the Request
 
@@ -129,12 +129,12 @@ Rules on selling or advertising medicines, and on physiotherapy advertising, are
 
 ## What a Diagnostic Centre Website Costs
 
-On the studio's draft price data, a single-centre lab can start with a landing page and grow into a business website, and a fixed quote is confirmed in writing after a call. All ranges are indicative, never a quote, and exclude GST, currently 18% on software services.
+A single-centre lab can start with a landing page and grow into a business website. Elyx engagements start from {{start}}, excluding GST, and a fixed quote tailored to your requirements is confirmed in writing after a call.
 
-- **Landing page:** {{price:landing}}, usually {{weeks:landing}}, with one page, an enquiry form, a WhatsApp button and basic SEO setup.
-- **Business website:** {{price:website}}, usually {{weeks:website}}, with up to 10 pages, a CMS, Google Maps, and speed and SEO foundations.
+- **Landing page:** usually {{weeks:landing}}, with one page, an enquiry form, a WhatsApp button and basic SEO setup.
+- **Business website:** usually {{weeks:website}}, with up to 10 pages, a CMS, Google Maps, and speed and SEO foundations.
 
-Online booking, a WhatsApp lead flow, extra languages and SEO setup are priced as separate features, so they are scoped on the call. The [pricing page](/pricing/) and the [website cost calculator](/tools/website-cost-calculator/) show the full ranges.
+Online booking, a WhatsApp lead flow, extra languages and SEO setup are scoped as separate features on the call. The [pricing page](/pricing/) explains how Elyx quotes.
 
 The nearest proof is a clinic, not a lab. The [Ashirwad Dental Clinic redesign](/work/ashirwad-dental/) took eight weeks from kickoff to launch and added a WhatsApp booking flow that starts in one tap. The studio lists no diagnostic lab project, so no lab result is claimed here.
 
@@ -164,7 +164,7 @@ Start with the facts that every other step reuses: your master sheet of centre d
 6. **Add centre pages.** Hours, map, phone, booking button.
 7. **Get it checked.** A professional for advertising and privacy, then test on a phone over mobile data.
 
-If you want a studio to build it, Elyx Solutions offers [web development](/services/web-development/) for clinics, and the draft price ranges above are the starting point for that call.
+If you want a studio to build it, Elyx Solutions offers [web development](/services/web-development/) for clinics, and the scope above is the starting point for that call.
 
 ## Sources
 
@@ -212,7 +212,7 @@ Make your Google Business Profile accurate for each centre and keep the site's n
 
 ### How much does a diagnostic centre website cost in India?
 
-On the studio's draft, indicative price data, a landing page is {{price:landing}} and a business website is {{price:website}}, excluding GST. Online booking, WhatsApp flow, extra languages and SEO setup are scoped on a call. A fixed quote is confirmed in writing afterwards.
+Elyx engagements start from {{start}}, excluding GST, and a landing page or a business website is quoted to your requirements. Online booking, WhatsApp flow, extra languages and SEO setup are scoped on a call. A fixed quote is confirmed in writing afterwards.
 
 ### Can a pharmacy or physio clinic use the same approach?
 

@@ -123,7 +123,7 @@ Choose the lightest upload route your firm can run and protect every day, becaus
 
 Whatever you choose, answer these before launch: who can see each client's files, how long files stay, who is alerted on an upload, and what happens when a client leaves. Ask any vendor what it stores and where. Elyx's CA page refers to a privacy notice aligned to India's DPDP Act, and the research held no text of the Act, so take professional advice on your duties.
 
-The studio's price data lists a custom web app or portal with logins and dashboards. The nearest proof in its case studies is [Malnad Stories](/work/malnad-stories/), where customers upload photos and pay online. That is not a tax-document portal, and I do not claim one. Also read the Income Tax e-filing portal's help pages, "My CA FAQ" and "Work with My CA FAQ". The research found them but did not read their text, so I leave their process to the official source.
+The studio lists a custom web app or portal with logins and dashboards among its builds. The nearest proof in its case studies is [Malnad Stories](/work/malnad-stories/), where customers upload photos and pay online. That is not a tax-document portal, and I do not claim one. Also read the Income Tax e-filing portal's help pages, "My CA FAQ" and "Work with My CA FAQ". The research found them but did not read their text, so I leave their process to the official source.
 
 ## Find a Chartered Accountant: Local Search and Google Business Profile
 
@@ -135,11 +135,11 @@ An insights section helps both search and trust. The studio's CA page suggests s
 
 ## What a Website for Chartered Accountants Costs in India
 
-On Elyx Solutions' current price data, a CA site sits between a one-page profile and a business website, with a client portal priced as a custom web app. The ranges are a draft, so treat them as indicative, never a quote. They exclude GST, currently 18% on software services, and a fixed quote is confirmed in writing after a call.
+At Elyx Solutions, a CA site sits between a one-page profile and a business website, with a client portal scoped as a custom web app. Engagements start from {{start}}, excluding GST, and a fixed quote tailored to your requirements is confirmed in writing after a call.
 
-- **Landing page:** {{price:landing}}, usually {{weeks:landing}}. One page, enquiry form, WhatsApp button, basic SEO.
-- **Business website:** {{price:website}}, usually {{weeks:website}}. Up to 10 pages, CMS, Google Maps, SEO foundations.
-- **Custom web app or portal:** {{price:webapp}}, usually {{weeks:webapp}}. Logins, dashboards, your workflow as software.
+- **Landing page:** usually {{weeks:landing}}. One page, enquiry form, WhatsApp button, basic SEO.
+- **Business website:** usually {{weeks:website}}. Up to 10 pages, CMS, Google Maps, SEO foundations.
+- **Custom web app or portal:** usually {{weeks:webapp}}. Logins, dashboards, your workflow as software.
 
 The table sets these timelines beside the only other timelines in the research. The scopes differ, and the agency figures are its own claims.
 
@@ -147,8 +147,8 @@ The table sets these timelines beside the only other timelines in the research. 
 |---|---|---|
 | The White Cat | Standard CA site | 3 to 5 weeks |
 | The White Cat | Site with client portal or upload | 6 to 8 weeks |
-| Elyx price data | Business website | {{weeks:website}} |
-| Elyx price data | Custom web app or portal | {{weeks:webapp}} |
+| Elyx | Business website | {{weeks:website}} |
+| Elyx | Custom web app or portal | {{weeks:webapp}} |
 
 The White Cat says delays usually come from gathering partner bios, not from development. See the [pricing page](/pricing/) for every range.
 
@@ -218,7 +218,7 @@ The research did not contain the rule, so I cannot answer it. Webtel's summary s
 
 ### How much does a CA firm website cost in India?
 
-On Elyx's draft, indicative price data, a landing page is {{price:landing}}, a business website is {{price:website}} and a custom portal is {{price:webapp}}, all excluding GST. A fixed quote is confirmed in writing after a call.
+Elyx engagements start from {{start}}, excluding GST. A landing page, a business website or a custom portal is quoted to your requirements, and a fixed quote is confirmed in writing after a call.
 
 ### How long does a CA firm website take?
 

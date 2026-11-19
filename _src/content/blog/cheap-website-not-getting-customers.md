@@ -33,14 +33,14 @@ The count shows agreement, not proof: four of the five pages offer paid web or m
 
 A low price does not prove a site will fail, but it tells you to check what was left out. The research holds no source describing what a site at that price includes, so the studio's own priced inclusions serve as a yardstick, not a verdict on anyone's work.
 
-As of 17 November 2026, the site's draft ranges below exclude 18% GST. They are indicative, never a quote, and a fixed quote is confirmed in writing after a call. The [pricing page](/pricing/) has the full list.
+Elyx does not publish fixed prices, because every project is different. Engagements start from {{start}}, excluding GST, and a quote tailored to your requirements is confirmed in writing after a call. The [pricing page](/pricing/) explains how that works, and the table shows how long the studio usually plans for each kind of project.
 
-| Project | Indicative range | Typical time |
-|---|---|---|
-| Landing page (1 page) | {{price:landing}} | {{weeks:landing}} |
-| Business website (5 to 10 pages) | {{price:website}} | {{weeks:website}} |
-| SEO retainer, per month | {{price:seo}} | Ongoing |
-| Maintenance and care, per month | {{price:care}} | Ongoing |
+| Project | Typical time |
+|---|---|
+| Landing page (1 page) | {{weeks:landing}} |
+| Business website (5 to 10 pages) | {{weeks:website}} |
+| SEO retainer | Ongoing, month to month |
+| Maintenance and care | Ongoing, month to month |
 
 Compare your invoice with what the studio lists for those ranges, and ask your builder to confirm each in writing:
 
@@ -149,7 +149,7 @@ MyDailyLink lists the signs a redesign is worth considering: the site looks outd
 - **Rebuild** when the phone layout is broken, you cannot edit text yourself, or three fixes in a row changed nothing.
 - **Keep** the web addresses and text that already earn visits, whichever you choose.
 
-A site is not a one-off cost. MyDailyLink says it should be reviewed regularly, and the studio's care page notes that plug-ins age and forms stop delivering without announcing it, which is what the monthly rows in the price table cover.
+A site is not a one-off cost. MyDailyLink says it should be reviewed regularly, and the studio's care page notes that plug-ins age and forms stop delivering without announcing it, which is what a monthly care plan covers.
 
 ## What Usually Goes Wrong When You Redo a Cheap Site
 
@@ -188,7 +188,7 @@ Spend one week on the audit before spending any money on a rebuild. Work through
 4. **Day 4.** Connect Search Console, GA4 and Clarity, and set up events for calls, WhatsApp taps and forms.
 5. **Days 5 to 7.** Log every enquiry and reply the same day, then read the four counts and use the diagnosis table.
 
-If the audit says rebuild, the studio's [web development service](/services/web-development/) covers redesigns, and its [Ashirwad Dental case study](/work/ashirwad-dental/) shows one: 8 weeks from kickoff to launch, with a WhatsApp booking flow and a gallery. The clinic said two earlier agencies had not delivered in a year. The [website cost calculator](/tools/website-cost-calculator/) and the [pricing page](/pricing/) give ranges, and a fixed quote follows a call.
+If the audit says rebuild, the studio's [web development service](/services/web-development/) covers redesigns, and its [Ashirwad Dental case study](/work/ashirwad-dental/) shows one: 8 weeks from kickoff to launch, with a WhatsApp booking flow and a gallery. The clinic said two earlier agencies had not delivered in a year. The [pricing page](/pricing/) explains how Elyx quotes, and a fixed quote follows a call.
 
 ## Sources
 
@@ -206,7 +206,7 @@ A cheap website usually fails to get customers because of speed, a missing call 
 
 ### How do I get a website for my business cheap?
 
-Buy only the parts that produce enquiries first: a mobile-first page, an enquiry form, a WhatsApp button and basic SEO setup. That is what the studio's landing range lists, with an indicative range of {{price:landing}} excluding GST, never a quote. Add pages and features once enquiries arrive.
+Buy only the parts that produce enquiries first: a mobile-first page, an enquiry form, a WhatsApp button and basic SEO setup. That is what the studio's landing page package lists, and Elyx engagements start from {{start}}, excluding GST. Add pages and features once enquiries arrive.
 
 ### Who can create a website for me cheaply?
 
@@ -234,4 +234,4 @@ A shop that serves a local area should have one, because the studio's SEO page s
 
 ### How much does it cost to rebuild a cheap website?
 
-As of 17 November 2026, the studio's draft ranges are {{price:landing}} for a landing page and {{price:website}} for a business website of up to 10 pages, excluding 18% GST. They are indicative, never a quote, and a fixed quote is confirmed in writing after a call.
+Elyx engagements start from {{start}}, excluding GST. A landing page, or a business website of up to 10 pages, is quoted to your requirements, in writing, after a call.

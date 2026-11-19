@@ -142,7 +142,7 @@ Four habits help, and they are my reading.
 - **Swap, do not stack.** A new feature comes in only when one of equal size goes out.
 - **Change the price in writing.** Added scope changes the quote and the date, so say so before work starts.
 
-The studio's process writes a scope and a cut line in week one, then ships working software weekly with two feedback rounds. Its draft range for a SaaS MVP is {{price:saas}} over {{weeks:saas}}, indicative only and never a quote, with a fixed quote confirmed in writing after a call. Prices exclude 18% GST.
+The studio's process writes a scope and a cut line in week one, then ships working software weekly with two feedback rounds. A SaaS MVP there usually takes {{weeks:saas}}. Engagements start from {{start}}, excluding GST, and a fixed quote tailored to your requirements is confirmed in writing after a call.
 
 ## What Usually Goes Wrong With an MVP Features List
 
@@ -171,7 +171,7 @@ Write your top three customer problems, list every feature idea, and mark each I
 - [ ] Backups with a restore you have tried.
 - [ ] A written rule for how added scope changes price and date.
 
-If you want a second opinion on the cut line, the studio's [SaaS development page](/services/saas-development/) explains how it scopes a first version. The [pricing page](/pricing/) shows the draft ranges. The studio's [Malnad Stories case study](/work/malnad-stories/) shows a build where uploads, storage and secure payments were part of the brief from the start.
+If you want a second opinion on the cut line, the studio's [SaaS development page](/services/saas-development/) explains how it scopes a first version. The [pricing page](/pricing/) explains how it quotes. The studio's [Malnad Stories case study](/work/malnad-stories/) shows a build where uploads, storage and secure payments were part of the brief from the start.
 
 ## Sources
 
@@ -216,7 +216,7 @@ Feature creep means adding excessive features, per Salesforce, until the product
 
 ### How long does an MVP take, and what does it cost?
 
-The studio's draft range is {{price:saas}} and {{weeks:saas}}, and both are indicative. The price excludes GST, and a fixed quote is confirmed in writing after a call. The [SaaS MVP cost article](/blog/saas-development-cost-india/) compares published agency ranges.
+A SaaS MVP at Elyx usually takes {{weeks:saas}}, which is indicative. Engagements start from {{start}}, excluding GST, and a fixed quote tailored to your requirements is confirmed in writing after a call. The [SaaS MVP cost article](/blog/saas-development-cost-india/) compares published agency ranges.
 
 ### Can I add cut features after launch?
 

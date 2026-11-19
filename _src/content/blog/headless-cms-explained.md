@@ -118,9 +118,9 @@ If three or more rows in the left column describe you, skip headless for now. Yo
 
 A headless build typically means paying for the content system, the front-end hosting and the developer time to connect them, so the total is usually higher than a template-based site. Contentful says the vendor hosts the repository and API while the front end is always your responsibility to build, host and maintain. My research holds no vendor price lists, so check each vendor's own pricing page and date what you find.
 
-The studio's price data gives a reference point. As of November 2026 its draft ranges are indicative only and a fixed quote is confirmed in writing after a call. A business website of 5 to 10 pages with a CMS for editing is {{price:website}} and typically takes {{weeks:website}}, and an e-commerce store is {{price:ecommerce}} over {{weeks:ecommerce}}, all excluding 18% GST.
+The studio gives a reference point on timing. A business website of 5 to 10 pages with a CMS for editing typically takes {{weeks:website}}, and an e-commerce store {{weeks:ecommerce}}. Elyx engagements start from {{start}}, excluding GST, and a fixed quote tailored to your requirements is confirmed in writing after a call.
 
-[Elyx Solutions' web development page](/services/web-development/) says that where it makes sense the studio adds a headless CMS so your team can change prices, photos and text without touching code, and records a short walkthrough. It also says it avoids proprietary lock-in. The [website cost calculator](/tools/website-cost-calculator/) shows content management as a separate option, so you can see what the editing screen adds before you ask for a quote.
+[Elyx Solutions' web development page](/services/web-development/) says that where it makes sense the studio adds a headless CMS so your team can change prices, photos and text without touching code, and records a short walkthrough. It also says it avoids proprietary lock-in. Content management is scoped as a separate option, so you can ask what the editing screen adds before you accept a quote.
 
 ## Headless CMS and SEO: What Changes
 
@@ -157,7 +157,7 @@ Your next step is to answer the edit-count test, then take the same questions to
 - [ ] Can I export my content if I leave?
 - [ ] Who monitors and updates both the CMS and the front end after launch?
 
-If one website with an easy editing screen is all you need, say so and ask for the simplest build that meets it. When you are ready to talk, [the studio's web development service](/services/web-development/) begins with a discovery call, and the [pricing page](/pricing/) shows every indicative range.
+If one website with an easy editing screen is all you need, say so and ask for the simplest build that meets it. When you are ready to talk, [the studio's web development service](/services/web-development/) begins with a discovery call, and the [pricing page](/pricing/) explains how Elyx quotes.
 
 ## Sources
 
@@ -203,4 +203,4 @@ A headless CMS is not automatically better for SEO, because results depend on ho
 
 ### How much does a headless CMS cost?
 
-A headless CMS costs a vendor subscription or hosting, plus front-end hosting and developer time, and my research holds no vendor price lists. Check each vendor's own pricing page. The studio's indicative range for a business website with a CMS is {{price:website}}, excluding 18% GST and never a quote.
+A headless CMS costs a vendor subscription or hosting, plus front-end hosting and developer time, and my research holds no vendor price lists. Check each vendor's own pricing page. At Elyx, a business website with a CMS is quoted to your requirements, with engagements starting from {{start}}, excluding GST.

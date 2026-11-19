@@ -166,14 +166,14 @@ My reading, not sourced:
 - A school needs the same plain, dated, editable pages as a clinic.
 - The studio has no school case study, so no school result is claimed.
 
-## What a School Website Costs, in Indicative Ranges
+## What a School Website Costs
 
-A school website with admission, fee, safety, gallery and enquiry pages fits the studio's business-website range, and a single admissions landing page fits the smaller one. These figures come from this site's price data, which is a draft: every range is indicative, never a quote, and a fixed quote is confirmed in writing after a call.
+A school website with admission, fee, safety, gallery and enquiry pages fits the studio's business-website build, and a single admissions landing page fits the smaller one. Elyx engagements start from {{start}}, and a fixed quote tailored to your requirements is confirmed in writing after a call.
 
-- **Landing page.** One admissions page with an enquiry form and WhatsApp button: {{price:landing}}, usually {{weeks:landing}}.
-- **Business website.** Up to 10 pages with a CMS and Google Maps: {{price:website}}, usually {{weeks:website}}.
+- **Landing page.** One admissions page with an enquiry form and WhatsApp button, usually {{weeks:landing}}.
+- **Business website.** Up to 10 pages with a CMS and Google Maps, usually {{weeks:website}}.
 
-Ranges exclude 18% GST. The price data also lists multiple languages, online booking and writing the copy as separate options, so list what you need before the call. Kannada or Hindi versions of the fee and admission pages are the ones to price first, in my reading. The [pricing page](/pricing/) lists every range and the [website cost calculator](/tools/website-cost-calculator/) shows the options.
+Prices exclude GST. Multiple languages, online booking and writing the copy are scoped as separate options, so list what you need before the call. Kannada or Hindi versions of the fee and admission pages are the ones to scope first, in my reading. The [pricing page](/pricing/) explains how Elyx quotes.
 
 ## Plan the Build Backwards From Admission Season
 
@@ -210,7 +210,7 @@ The studio's published work includes no school. The closest examples are [Ashirw
 
 ### How much does it cost to build a school website?
 
-A school website's indicative range is {{price:landing}} for an admissions landing page or {{price:website}} for a business site of up to 10 pages, excluding 18% GST. Options such as multiple languages and online booking are priced separately. These are draft ranges, never a quote, and a fixed quote is confirmed in writing after a call.
+Elyx engagements start from {{start}}, excluding GST. An admissions landing page or a business site of up to 10 pages is quoted to your requirements, options such as multiple languages and online booking are scoped separately, and a fixed quote is confirmed in writing after a call.
 
 ### How to design a school website?
 

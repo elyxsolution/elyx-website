@@ -1,45 +1,44 @@
 {
-  "status": "DRAFT",
-  "_readme": "DRAFT NUMBERS. The playbook asks for price ranges, sample quotes and a cost calculator, but only '₹9,999 starting price' exists in the current site copy. Everything else here is a placeholder estimate. Replace with your real quote data, set status to \"CONFIRMED\", then run: node _src/build.js",
-
+  "status": "CONFIRMED",
+  "_readme": "The only price Elyx publishes is the starting price below. Every project is quoted to the client's requirements, so there are no ranges, tiers, calculators or per-item prices anywhere on the site. `projects` holds timelines only ({{weeks:KEY}} in articles). Edit, then run: node _src/build.js",
   "startingPrice": 9999,
-  "gstNote": "All prices are in INR and exclusive of GST (currently 18% on software services).",
-
+  "gstNote": "All prices are in INR and exclusive of GST.",
   "projects": {
-    "landing":   { "label": "Landing page",                   "low": 9999,   "high": 24999,  "weeksLow": 1, "weeksHigh": 2,  "includes": "1 page, mobile-first design, enquiry form + WhatsApp button, basic SEO setup" },
-    "website":   { "label": "Business website (5–10 pages)",  "low": 24999,  "high": 59999,  "weeksLow": 2, "weeksHigh": 4,  "includes": "Up to 10 pages, CMS for editing, Google Maps, speed and SEO foundations" },
-    "ecommerce": { "label": "E-commerce store",               "low": 59999,  "high": 150000, "weeksLow": 4, "weeksHigh": 8,  "includes": "Catalogue, cart, UPI/card payments, order emails, admin panel" },
-    "webapp":    { "label": "Custom web app / portal",        "low": 75000,  "high": 300000, "weeksLow": 4, "weeksHigh": 8,  "includes": "Logins, dashboards, your workflow turned into software" },
-    "mobile":    { "label": "Mobile app (iOS + Android)",     "low": 150000, "high": 500000, "weeksLow": 8, "weeksHigh": 14, "includes": "One cross-platform codebase, store submission, push notifications" },
-    "saas":      { "label": "SaaS MVP",                       "low": 150000, "high": 600000, "weeksLow": 8, "weeksHigh": 16, "includes": "Multi-tenant architecture, auth, billing, admin and analytics" }
-  },
-
-  "monthly": {
-    "seo":  { "label": "SEO retainer",          "low": 9999, "high": 24999, "includes": "Technical fixes, content plan, local SEO, monthly report" },
-    "care": { "label": "Maintenance & care",    "low": 9999, "high": 24999, "includes": "Uptime monitoring, security updates, backups, monthly update hours" }
-  },
-
-  "extraUnit": {
-    "landing":   null,
-    "website":   { "label": "Extra pages",    "included": 5,  "min": 0, "max": 20, "lowEach": 2000,  "highEach": 4000 },
-    "ecommerce": { "label": "Extra product categories", "included": 5, "min": 0, "max": 30, "lowEach": 1500, "highEach": 3500 },
-    "webapp":    { "label": "Extra screens",  "included": 8,  "min": 0, "max": 40, "lowEach": 4000,  "highEach": 10000 },
-    "mobile":    { "label": "Extra screens",  "included": 10, "min": 0, "max": 40, "lowEach": 5000,  "highEach": 12000 },
-    "saas":      { "label": "Extra modules",  "included": 3,  "min": 0, "max": 10, "lowEach": 20000, "highEach": 60000 }
-  },
-
-  "features": [
-    { "id": "cms",       "label": "Content management (edit it yourself)", "low": 5000,  "high": 15000, "for": ["landing", "website", "ecommerce"] },
-    { "id": "booking",   "label": "Online appointment / booking",          "low": 8000,  "high": 25000, "for": ["landing", "website", "webapp", "mobile"] },
-    { "id": "payments",  "label": "UPI & card payments",                   "low": 8000,  "high": 20000, "for": ["landing", "website", "webapp", "mobile", "saas"] },
-    { "id": "whatsapp",  "label": "WhatsApp lead flow",                    "low": 1500,  "high": 4000,  "for": ["landing", "website", "ecommerce", "webapp", "mobile", "saas"] },
-    { "id": "multilang", "label": "Multiple languages",                    "low": 6000,  "high": 20000, "for": ["landing", "website", "ecommerce", "webapp", "mobile", "saas"] },
-    { "id": "copy",      "label": "We write the copy",                     "low": 3000,  "high": 12000, "for": ["landing", "website", "ecommerce"] },
-    { "id": "seo",       "label": "SEO setup (schema, sitemap, local SEO)", "low": 5000,  "high": 15000, "for": ["landing", "website", "ecommerce"] },
-    { "id": "motion",    "label": "Custom animation & motion design",      "low": 6000,  "high": 25000, "for": ["landing", "website", "ecommerce", "webapp", "mobile", "saas"] },
-    { "id": "admin",     "label": "Admin dashboard",                       "low": 25000, "high": 90000, "for": ["webapp", "mobile", "saas"] },
-    { "id": "auth",      "label": "User accounts & roles",                 "low": 15000, "high": 50000, "for": ["ecommerce", "mobile"] }
-  ],
-
-  "rushMultiplier": 1.25
+    "landing": {
+      "label": "Landing page",
+      "weeksLow": 1,
+      "weeksHigh": 2,
+      "includes": "1 page, mobile-first design, enquiry form + WhatsApp button, basic SEO setup"
+    },
+    "website": {
+      "label": "Business website (5-10 pages)",
+      "weeksLow": 2,
+      "weeksHigh": 4,
+      "includes": "Up to 10 pages, CMS for editing, Google Maps, speed and SEO foundations"
+    },
+    "ecommerce": {
+      "label": "E-commerce store",
+      "weeksLow": 4,
+      "weeksHigh": 8,
+      "includes": "Catalogue, cart, UPI/card payments, order emails, admin panel"
+    },
+    "webapp": {
+      "label": "Custom web app / portal",
+      "weeksLow": 4,
+      "weeksHigh": 8,
+      "includes": "Logins, dashboards, your workflow turned into software"
+    },
+    "mobile": {
+      "label": "Mobile app (iOS + Android)",
+      "weeksLow": 8,
+      "weeksHigh": 14,
+      "includes": "One cross-platform codebase, store submission, push notifications"
+    },
+    "saas": {
+      "label": "SaaS MVP",
+      "weeksLow": 8,
+      "weeksHigh": 16,
+      "includes": "Multi-tenant architecture, auth, billing, admin and analytics"
+    }
+  }
 }

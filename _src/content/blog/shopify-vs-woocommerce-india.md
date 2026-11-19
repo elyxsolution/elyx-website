@@ -167,7 +167,7 @@ Settle these answers before you open any pricing page:
 - [ ] Whether you need Razorpay Route or Subscriptions.
 - [ ] A launch date weeks before your next sale season.
 
-If you would rather have a coded store than either platform, the studio's data gives an indicative {{price:ecommerce}} for an e-commerce store, usually {{weeks:ecommerce}}, excluding 18% GST. It is a draft range and never a quote, and a fixed quote is confirmed in writing after a call. [Elyx Solutions' web development service](/services/web-development/) covers it, the [pricing page](/pricing/) lists every range, and a [maintenance and care plan](/services/maintenance-care/) is {{price:care}} a month for upkeep.
+If you would rather have a coded store than either platform, Elyx builds one, and an e-commerce store usually takes {{weeks:ecommerce}}. Engagements start from {{start}}, excluding GST, and a fixed quote tailored to your requirements is confirmed in writing after a call. [Elyx Solutions' web development service](/services/web-development/) covers it, the [pricing page](/pricing/) explains how it quotes, and a [maintenance and care plan](/services/maintenance-care/) covers upkeep.
 
 ## Sources
 

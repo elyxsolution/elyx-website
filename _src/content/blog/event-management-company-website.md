@@ -119,9 +119,9 @@ A template gives you a layout, not packages, captions, routing or reviews.
 - **Choose a template when:** you serve one city, offer two or three packages and answer enquiries yourself.
 - **Choose a custom build when:** you serve weddings and corporate buyers, need a CMS for packages and galleries, or want enquiries tracked by source.
 
-On cost, the studio's draft pricing data gives a landing page at {{price:landing}} in {{weeks:landing}} and a business website of 5 to 10 pages, with a CMS, Google Maps and speed and SEO foundations, at {{price:website}} in {{weeks:website}}. Engagements start at {{start}}. These ranges are indicative while the price data is a draft, exclude 18% GST, and are never a quote: a fixed quote is confirmed in writing after a call.
+On cost, Elyx engagements start from {{start}}. A landing page usually takes {{weeks:landing}}, and a business website of 5 to 10 pages, with a CMS, Google Maps and speed and SEO foundations, usually takes {{weeks:website}}. Prices exclude GST, and a fixed quote tailored to your requirements is confirmed in writing after a call.
 
-Booking, WhatsApp lead flow, multiple languages, copywriting and SEO setup are separate options in the [website cost calculator](/tools/website-cost-calculator/), and the [pricing page](/pricing/) shows every range.
+Booking, WhatsApp lead flow, multiple languages, copywriting and SEO setup are scoped as separate options, and the [pricing page](/pricing/) explains how Elyx quotes.
 
 ## Event Management Company Near Me: Local Search and Google Maps
 
@@ -191,7 +191,7 @@ The research gives one sourced figure, for corporate work only. Events & Pro rec
 
 ### How much does an event management company website cost?
 
-The studio's draft ranges are {{price:landing}} for a landing page and {{price:website}} for a business website of 5 to 10 pages, indicative only. They exclude 18% GST and are never a quote, because a fixed quote is confirmed in writing after a call. The [pricing page](/pricing/) shows every range.
+Elyx engagements start from {{start}}, excluding GST. A landing page and a business website of 5 to 10 pages are each quoted to your requirements, in writing, after a call. The [pricing page](/pricing/) explains how.
 
 ### How do I start an event management company?
 

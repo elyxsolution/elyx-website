@@ -51,7 +51,7 @@ The arithmetic for the first row: midpoints are $5,500 and $11,500, and the diff
 
 My reading is that these are stylised bands, not surveyed prices, since neither page states a method and every row meets exactly at the edge. I have not converted them to rupees because no source gives a rate. Two Indian studios, Mumbai Web Design and AlphaX, publish rupee ranges, and on Mumbai Web Design's page the top of the freelancer range sits above the start of its agency range, so the overlap shows up in India too.
 
-US pages start higher: Splash Creative says its agency websites start from $15,000, and Dribbble puts a fixed-price agency project at $10,000 or more. For a rupee reference point, the [pricing page](/pricing/) and the [website cost calculator](/tools/website-cost-calculator/) show indicative ranges for India.
+US pages start higher: Splash Creative says its agency websites start from $15,000, and Dribbble puts a fixed-price agency project at $10,000 or more. For a rupee reference point, Elyx engagements in India start from {{start}} and are quoted to your requirements; the [pricing page](/pricing/) explains how.
 
 ## Compare Three Years, Not Launch Day
 
@@ -112,7 +112,7 @@ Agencies have costs too. Dribbble notes less direct contact, fixed processes and
 
 A small studio fits when you want a freelancer's directness with cover from more than one person, which is the middle ground AlphaX describes. [Elyx Solutions](/services/web-development/), a Bengaluru studio, is in this category: its web development page says every project is done by the three founders, so the person you brief is the person who designs and writes the code.
 
-On the site's draft, indicative price data, a landing page is {{price:landing}}, usually {{weeks:landing}}, and a business website is {{price:website}}, usually {{weeks:website}}. Prices are in INR and exclude GST, which is currently 18% on software services. A fixed quote is confirmed in writing after a call, and care plans are {{price:care}} a month with no retainer lock-in unless you want one.
+At Elyx, a landing page usually takes {{weeks:landing}} and a business website {{weeks:website}}. Engagements start from {{start}}, in INR and excluding GST. A fixed quote tailored to your requirements is confirmed in writing after a call, and there is no retainer lock-in unless you want one.
 
 One case is on record. The [Ashirwad Dental Clinic redesign](/work/ashirwad-dental/) went from kickoff to launch in 8 weeks, and the clinic says two earlier agencies had not delivered what it needed in a year. That is one client's account, not a rate for agencies.
 
@@ -164,7 +164,7 @@ Then run the next steps in order:
 5. Test their live sites on a phone.
 6. Sign the scope with milestone payments and accounts in your name.
 
-If a three-person studio is on your shortlist, the [Elyx pricing page](/pricing/) shows the draft, indicative ranges, and a fixed quote is confirmed in writing after a call.
+If a three-person studio is on your shortlist, the [Elyx pricing page](/pricing/) explains how it quotes, and a fixed quote is confirmed in writing after a call.
 
 ## Sources
 

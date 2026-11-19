@@ -157,13 +157,13 @@ Choose Shopify for the fastest launch with the least upkeep, WooCommerce when yo
 
 NexaEx offers one rule: if a platform covers 80 percent of your needs, start there and rebuild custom when workarounds cost real money. Zethic and SiteYatra say most Indian D2C brands are well served by Shopify or WooCommerce.
 
-## Indicative Store Prices From This Site's Data
+## What an Elyx E-commerce Build Covers
 
-This site's price data gives an indicative range of {{price:ecommerce}} for an e-commerce store, usually {{weeks:ecommerce}}, excluding 18% GST. It covers a catalogue, cart, UPI and card payments, order emails and an admin panel. The data is a draft, so the range is never a quote, and a fixed quote is confirmed in writing after a call.
+An e-commerce store at Elyx usually takes {{weeks:ecommerce}} and covers a catalogue, cart, UPI and card payments, order emails and an admin panel. Engagements start from {{start}}, excluding GST, and a fixed quote tailored to your requirements is confirmed in writing after a call.
 
-The range is not like-for-like with the sources, which define scope differently, and the studio's pages describe a coded store, not a Shopify or WooCommerce setup. The calculator lists extra product categories and options such as content editing, user accounts, WhatsApp lead flow, multiple languages and SEO setup.
+The scope is not like-for-like with the sources, which define scope differently, and the studio's pages describe a coded store, not a Shopify or WooCommerce setup. Extra product categories and options such as content editing, user accounts, WhatsApp lead flow, multiple languages and SEO setup are scoped separately.
 
-A care plan for upkeep is {{price:care}} a month. The [pricing page](/pricing/) lists every range, the [website cost calculator](/tools/website-cost-calculator/) builds an indicative range from your scope, and [maintenance and care](/services/maintenance-care/) explains what a plan covers.
+A monthly care plan covers upkeep. The [pricing page](/pricing/) explains how Elyx quotes, and [maintenance and care](/services/maintenance-care/) explains what a plan covers.
 
 ## What to Do Next
 
@@ -196,7 +196,7 @@ If you want the store built, [Elyx Solutions' web development service](/services
 
 ### How much does an ecommerce website cost in India?
 
-An ecommerce website in India costs about ₹25,000 for a configured Shopify store and up to ₹10 lakh or more for a custom build, according to SiteYatra's 2026 ranges. The studio's own draft range is {{price:ecommerce}}, indicative and never a quote.
+An ecommerce website in India costs about ₹25,000 for a configured Shopify store and up to ₹10 lakh or more for a custom build, according to SiteYatra's 2026 ranges. Elyx quotes a store to your requirements, with engagements starting from {{start}}.
 
 ### Is Shopify or WooCommerce cheaper for an Indian store?
 

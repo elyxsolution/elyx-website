@@ -176,9 +176,9 @@ Most failures come from importing marketing habits into a site the Rule treats a
 
 ## What a Build Costs and What to Do Next
 
-On Elyx Solutions' current price data, a one-page advocate profile is {{price:landing}}, usually {{weeks:landing}}, and a business website is {{price:website}}, usually {{weeks:website}}. The data is a draft, so every range is indicative and never a quote. A fixed quote is confirmed in writing after a call, and prices exclude GST, currently 18% on software services.
+At Elyx Solutions, a one-page advocate profile usually takes {{weeks:landing}} and a business website {{weeks:website}}. Engagements start from {{start}}, excluding GST, and every quote is tailored to your requirements and confirmed in writing after a call.
 
-The [pricing page](/pricing/) and the [website cost calculator](/tools/website-cost-calculator/) show the ranges in full. Elyx's [page for CA and law firms](/websites-for/ca-and-law-firms/) says it builds information-first and leaves claims, testimonials and fee statements to the professional.
+The [pricing page](/pricing/) explains how Elyx quotes. Elyx's [page for CA and law firms](/websites-for/ca-and-law-firms/) says it builds information-first and leaves claims, testimonials and fee statements to the professional.
 
 1. **Gather.** Collect your enrolment records and write the particulars.
 2. **Ask.** Put the intimation and grey-area questions to your State Bar Council.
@@ -230,7 +230,7 @@ According to Weps Technologies, the proviso covers the particulars only when fur
 
 ### How much does an advocate website cost in India?
 
-On Elyx's draft, indicative price data, a landing page is {{price:landing}} and a business website is {{price:website}}, excluding GST. A fixed quote is confirmed in writing after a call.
+Elyx engagements start from {{start}}, excluding GST. A landing page and a full business website are each quoted to your requirements, in writing, after a call.
 
 ### How do I become an advocate in India?
 

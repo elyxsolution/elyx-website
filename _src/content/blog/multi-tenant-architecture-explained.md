@@ -95,7 +95,7 @@ The arithmetic is tenants x 2 minutes, so 200 x 2 = 400 minutes and 2,000 x 2 = 
 
 To compare models, divide the shared cost plus the hours of upkeep by the number of tenants. If that number exceeds what one tenant pays you, the model is unaffordable.
 
-The studio's draft SaaS MVP range is {{price:saas}} over {{weeks:saas}}, and it includes multi-tenant architecture. The range is indicative only and excludes 18% GST, and a fixed quote is confirmed in writing after a call. The [pricing page](/pricing/) shows the other ranges.
+At Elyx, a SaaS MVP usually takes {{weeks:saas}} and includes multi-tenant architecture. Engagements start from {{start}}, excluding GST, and a fixed quote tailored to your requirements is confirmed in writing after a call. The [pricing page](/pricing/) explains how Elyx quotes.
 
 ## Which Model Should You Choose?
 

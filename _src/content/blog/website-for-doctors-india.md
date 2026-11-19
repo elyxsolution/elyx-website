@@ -53,7 +53,7 @@ Pick the simplest appointment tool your front desk can answer every day, because
 | Booking calendar | Several doctors or chairs, fixed slots | Slot rules, leave days, staff training |
 | Booking with payment | You want deposits or prepaid consults | A payment gateway and refund rules |
 
-A single doctor with one clinic is usually well served by the first two rows. Add the calendar when double-booking or phone tag becomes the daily problem. Elyx's price data lists online appointment booking as a separate feature from the base site, and its web development page says the price moves with whether you need booking or online payments.
+A single doctor with one clinic is usually well served by the first two rows. Add the calendar when double-booking or phone tag becomes the daily problem. Elyx treats online appointment booking as a separate feature from the base site, and its web development page says the price moves with whether you need booking or online payments.
 
 ## WhatsApp for Clinics: Click-to-Chat Without Oversharing
 
@@ -145,12 +145,12 @@ A CMS is a content management system, the editor that lets your staff change tim
 
 ## What a Clinic Website Costs and How Elyx Built One
 
-On Elyx Solutions' current price data, a clinic site runs from a one-page landing page to a multi-page business site, and a fixed quote is confirmed in writing after a call. The ranges are a draft, so treat them as indicative, never a quote. They exclude GST, currently 18% on software services.
+At Elyx Solutions, a clinic site runs from a one-page landing page to a multi-page business site. Engagements start from {{start}}, excluding GST, and a fixed quote tailored to your requirements is confirmed in writing after a call.
 
-- **Landing page:** {{price:landing}}, usually {{weeks:landing}}. It includes one page, mobile-first design, an enquiry form, a WhatsApp button and basic SEO setup.
-- **Business website:** {{price:website}}, usually {{weeks:website}}. It includes up to 10 pages, a CMS, Google Maps, and speed and SEO foundations.
+- **Landing page:** usually {{weeks:landing}}. It includes one page, mobile-first design, an enquiry form, a WhatsApp button and basic SEO setup.
+- **Business website:** usually {{weeks:website}}. It includes up to 10 pages, a CMS, Google Maps, and speed and SEO foundations.
 
-Online booking, payments and copywriting move the price, so they are scoped on the call. The [pricing page](/pricing/) and the [website cost calculator](/tools/website-cost-calculator/) show the ranges in full.
+Online booking, payments and copywriting move the price, so they are scoped on the call. The [pricing page](/pricing/) explains how Elyx quotes.
 
 For proof, the [Ashirwad Dental Clinic redesign](/work/ashirwad-dental/) ran eight weeks from kickoff to launch. It added a WhatsApp booking flow that starts in one tap and a gallery of real photography. According to the clinic, two earlier agencies had not delivered in a year. That is one clinic's project, not a promise about yours.
 
@@ -196,7 +196,7 @@ Yes. A click-to-chat button opens WhatsApp with a pre-filled message to your cli
 
 ### How much does a website for a doctor cost in India?
 
-On Elyx's draft, indicative price data, a landing page is {{price:landing}} and a business website is {{price:website}}, excluding GST. Booking, payments and copywriting are scoped on a call. A fixed quote is confirmed in writing afterwards.
+Elyx engagements start from {{start}}, excluding GST, and a landing page or a business website is quoted to your requirements. Booking, payments and copywriting are scoped on a call. A fixed quote is confirmed in writing afterwards.
 
 ### How long does it take to build a clinic website?
 

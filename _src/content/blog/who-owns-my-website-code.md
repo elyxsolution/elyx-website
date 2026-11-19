@@ -164,7 +164,7 @@ Recover the domain first, then a copy of the site, then hosting in your name, an
 
 Here is why the domain comes first. Suppose a lookup on 17 November 2026 shows a .in name expiring on 15 January 2027: 13 days left in November, plus 31 in December, plus 15 in January, is 59 days. Tanush Digital says that once a registrar deletes a .in name, a 30-day Redemption Grace Period follows in which only that registrar can restore it and the site and email stop working, then a 5-day hold, then anyone can register it. If deletion happened on 15 January, the grace period would end about 14 February and the hold about 19 February; the sources do not say how soon after expiry deletion happens, so that date is my assumption.
 
-If the other party will not cooperate, Tanush Digital notes that dispute processes such as the INDRP exist for .in domains, and Gullysales says to take legal advice before paying anyone to release what you believe is yours. The last resort is a rebuild from copies of the live site: the [pricing page](/pricing/) shows indicative ranges, such as {{price:website}} and {{weeks:website}} for a business website, excluding 18% GST, a draft and never a quote.
+If the other party will not cooperate, Tanush Digital notes that dispute processes such as the INDRP exist for .in domains, and Gullysales says to take legal advice before paying anyone to release what you believe is yours. The last resort is a rebuild from copies of the live site: the [pricing page](/pricing/) explains how Elyx quotes, and a business website usually takes {{weeks:website}}, with engagements starting from {{start}}, excluding GST.
 
 ## What to Do Next
 

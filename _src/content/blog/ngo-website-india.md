@@ -163,16 +163,16 @@ Most NGO site failures are stale or missing facts, not broken pages. The causes 
 | Donors unsure where gifts go | No use-of-funds breakdown | Publish the split and overhead |
 | Enquiry unanswered | Unmonitored inbox | Named email, stated reply time |
 
-## What an NGO Website Costs, in Indicative Ranges
+## What an NGO Website Costs
 
-An NGO site costs what any business site of its size costs, and the price moves with the number of pages and whether you need online payments. These figures come from this site's price data, which is a draft: every range is indicative, never a quote, and a fixed quote is confirmed in writing after a call.
+An NGO site costs what any business site of its size costs, and the price moves with the number of pages and whether you need online payments. Elyx engagements start from {{start}}, and a fixed quote tailored to your requirements is confirmed in writing after a call. This is what each build usually involves.
 
-- **Landing page.** One page for a campaign or appeal: {{price:landing}}, usually {{weeks:landing}}.
-- **Business website.** Up to 10 pages with a CMS, enough for programmes, reports and a donation page: {{price:website}}, usually {{weeks:website}}.
-- **Custom web app.** Donor logins or recurring giving, the closest range: {{price:webapp}}, usually {{weeks:webapp}}.
-- **Care plan.** Monitoring, updates and monthly update hours: {{price:care}} a month.
+- **Landing page.** One page for a campaign or appeal, usually {{weeks:landing}}.
+- **Business website.** Up to 10 pages with a CMS, enough for programmes, reports and a donation page, usually {{weeks:website}}.
+- **Custom web app.** Donor logins or recurring giving, usually {{weeks:webapp}}.
+- **Care plan.** Monitoring, updates and monthly update hours, billed monthly.
 
-Ranges exclude 18% GST, and gateway fees are paid separately. The [pricing page](/pricing/) lists every range, and the [website cost calculator](/tools/website-cost-calculator/) gives an indicative figure in a minute.
+Prices exclude GST, and gateway fees are paid separately. The [pricing page](/pricing/) explains how Elyx quotes.
 
 ## What to Do Next: A Seven-Step Plan
 
@@ -232,4 +232,4 @@ They look for registration and tax status, a current report, a partnerships page
 
 ### How much does an NGO website cost in India?
 
-An NGO website's indicative range is {{price:landing}} for a landing page or {{price:website}} for a business site, excluding 18% GST. Online payments move the price. These are draft ranges, never a quote, and a fixed quote is confirmed in writing after a call.
+Elyx engagements start from {{start}}, excluding GST. A landing page or a business site is quoted to your requirements, online payments move the price, and a fixed quote is confirmed in writing after a call.

@@ -164,7 +164,7 @@ if (!NO_OG) {
 }
 
 /* ------------------------------------------------------------ owner to-do list */
-if (pricing.status !== 'CONFIRMED') note('PRICING IS DRAFT: ranges in _src/data/pricing.json are placeholders (only the ₹9,999 start is from your site). They feed the service pages, /pricing/, industry pages and the calculator. Replace with real quotes, set "status": "CONFIRMED".');
+if (pricing.status !== 'CONFIRMED') note('PRICING: _src/data/pricing.json is not marked CONFIRMED. The only price Elyx publishes is the starting price (₹9,999); every other project is quoted to the client.');
 if (!config.phone) note('Add "phone" to site.config.json (footer, contact page and schema stay without it).');
 if (!config.whatsapp) note('Add "whatsapp" (digits with country code, e.g. 919876543210) to site.config.json to switch on the floating WhatsApp button and every WhatsApp CTA.');
 if (false) note('Add your street address / postal code under "address" in site.config.json (LocalBusiness schema, footer, Bengaluru page).');

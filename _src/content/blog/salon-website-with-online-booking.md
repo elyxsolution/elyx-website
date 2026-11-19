@@ -61,7 +61,7 @@ SimplyBook.me also claims per-seat tools get more expensive with each stylist yo
 
 Deposits work as a no-show tool because they put money behind the slot, but no source we read documents UPI deposits for salons. Salonkee describes full or partial prepayment at booking. SimplyBook.me says deposits can be partial or full on any service, once you connect a payment processor.
 
-Appointy names Stripe, PayPal and Square for prepayments. None of the five pages, as read on 16 November 2026, mentions UPI. The studio's facts say it can add UPI and card payments through a payment gateway on a build, and the cost calculator lists "UPI & card payments" as a separate option.
+Appointy names Stripe, PayPal and Square for prepayments. None of the five pages, as read on 16 November 2026, mentions UPI. The studio's facts say it can add UPI and card payments through a payment gateway on a build, and treats it as a separate option in the scope.
 
 Here is how I would set the flow up, as my own suggestion and not a sourced standard:
 
@@ -144,15 +144,15 @@ Most booking problems come from the setup, not the software: missing durations, 
 | Clients leave to book | Booking button buried | Put it on every screen, as the studio's page advises |
 | Bill grows with staff | Per-seat pricing, per SimplyBook.me | Price it at your headcount in a year |
 
-## What It Costs to Build, in Indicative Ranges
+## What It Costs to Build
 
-A salon site's cost depends on its size and on whether it needs booking and payments, which the studio prices as separate options. These figures come from this site's price data, which is a draft: every range is indicative, never a quote, and a fixed quote is confirmed in writing after a call.
+A salon site's cost depends on its size and on whether it needs booking and payments, which the studio scopes as separate options. Elyx engagements start from {{start}}, and a fixed quote tailored to your requirements is confirmed in writing after a call. This is what each build usually involves.
 
-- **Landing page.** One page with an enquiry form and WhatsApp button: {{price:landing}}, usually {{weeks:landing}}.
-- **Business website.** Up to 10 pages with a CMS and Google Maps: {{price:website}}, usually {{weeks:website}}.
-- **Booking and UPI.** Listed as add-ons in the [website cost calculator](/tools/website-cost-calculator/); the studio's salon FAQ says online scheduling with calendars is quoted after a short call.
+- **Landing page.** One page with an enquiry form and WhatsApp button, usually {{weeks:landing}}.
+- **Business website.** Up to 10 pages with a CMS and Google Maps, usually {{weeks:website}}.
+- **Booking and UPI.** Scoped as add-ons; the studio's salon FAQ says online scheduling with calendars is quoted after a short call.
 
-Ranges exclude 18% GST, and software subscriptions are paid to the vendor separately. The [pricing page](/pricing/) shows every range.
+Prices exclude GST, and software subscriptions are paid to the vendor separately. The [pricing page](/pricing/) explains how Elyx quotes.
 
 For the studio's own booking build, the closest case is a clinic, not a salon. [Ashirwad Dental Clinic](/work/ashirwad-dental/) got a WhatsApp booking flow that starts in one tap, launched eight weeks after kickoff. Treat it as a flow example, not a salon result.
 
@@ -210,7 +210,7 @@ A custom site is worth it when you need your own branding, menu structure and se
 
 ### How much does a salon website with online booking cost?
 
-A salon website's indicative range is {{price:landing}} for a landing page or {{price:website}} for a business site, excluding 18% GST. Booking and UPI payments are priced as options in the calculator. These are draft ranges, never a quote, and a fixed quote is confirmed in writing after a call.
+Elyx engagements start from {{start}}, excluding GST. A salon site is quoted to your requirements, in writing, after a call, and booking and UPI payments are scoped as options.
 
 ### How do I show up for "salon with online booking near me"?
 

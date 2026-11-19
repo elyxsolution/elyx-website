@@ -121,7 +121,7 @@ The studio says click-to-chat buttons open a pre-filled message to your number. 
 - **Table:** "Hi, I would like a table for [number] on [date] at [time]. Name: [name]."
 - **Order:** "Hi, I would like to order [dish and quantity] for [pickup or delivery]. Address: [address]."
 
-Online booking is listed as an option in the [website cost calculator](/tools/website-cost-calculator/), and the studio quotes real-time booking after a call.
+Online booking is scoped as an option, and the studio quotes real-time booking after a call.
 
 ## Google Maps: Your Business Profile Does the Finding
 
@@ -166,15 +166,15 @@ Most problems come from setup and upkeep, not design. The causes below come from
 | Ordering built without a plan | No riders or pickup rule | Decide delivery first |
 | UPI promised too soon | Gateway not confirmed | Confirm UPI with your gateway |
 
-## What a Restaurant Website Costs in Indicative Ranges
+## What a Restaurant Website Costs
 
-A restaurant site's cost depends on its size and on whether it takes orders. These ranges come from this site's price data, which is a draft: every range is indicative, never a quote, and a fixed quote is confirmed in writing after a call.
+A restaurant site's cost depends on its size and on whether it takes orders. Elyx engagements start from {{start}}, and a fixed quote tailored to your requirements is confirmed in writing after a call. This is what each build usually involves.
 
-- **Menu and WhatsApp page.** One page with menu, photos, map and a WhatsApp button: {{price:landing}}, usually {{weeks:landing}}.
-- **Business website.** Up to 10 pages with a CMS and Google Maps: {{price:website}}, usually {{weeks:website}}.
-- **Direct ordering.** Catalogue, cart and UPI or card payments: {{price:ecommerce}}, usually {{weeks:ecommerce}}.
+- **Menu and WhatsApp page.** One page with menu, photos, map and a WhatsApp button, usually {{weeks:landing}}.
+- **Business website.** Up to 10 pages with a CMS and Google Maps, usually {{weeks:website}}.
+- **Direct ordering.** Catalogue, cart and UPI or card payments, usually {{weeks:ecommerce}}.
 
-Ranges exclude 18% GST and start from {{start}}. The studio built a full e-commerce platform with payments for [Malnad Stories](/work/malnad-stories/), a photo-album store, and says the same approach applies to food ordering. That is a flow example, not a restaurant result. The [pricing page](/pricing/) shows every range.
+Prices exclude GST. The studio built a full e-commerce platform with payments for [Malnad Stories](/work/malnad-stories/), a photo-album store, and says the same approach applies to food ordering. That is a flow example, not a restaurant result. The [pricing page](/pricing/) explains how Elyx quotes.
 
 ## What to Do Next
 
@@ -215,7 +215,7 @@ Neither is better for every case: the apps find you strangers and a website serv
 
 ### How much does a restaurant website cost in India?
 
-Indicative ranges are {{price:landing}} for a one-page site and {{price:website}} for a business site, excluding 18% GST. Direct ordering is priced as an e-commerce build at {{price:ecommerce}}. These are draft ranges, never a quote, and a fixed quote is confirmed in writing after a call.
+Elyx engagements start from {{start}}, excluding GST. A one-page site or a business site is quoted to your requirements, direct ordering is scoped as an e-commerce build, and a fixed quote is confirmed in writing after a call.
 
 ### Can customers order on WhatsApp instead of the apps?
 

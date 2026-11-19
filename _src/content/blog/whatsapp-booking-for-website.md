@@ -42,7 +42,7 @@ The pre-filled message is what turns a chat into a booking request. Your develop
 
 > Hi, I would like to book [service] on [day] at [time]. My name is [name].
 
-Elyx Solutions' [web development service](/services/web-development/) lists a WhatsApp click-to-chat button, call button and Google Maps among its enquiry paths, and its landing page range ({{price:landing}}, usually {{weeks:landing}}) includes a WhatsApp button. The ranges are a draft and indicative only. A fixed quote is confirmed in writing after a call, and prices exclude GST.
+Elyx Solutions' [web development service](/services/web-development/) lists a WhatsApp click-to-chat button, call button and Google Maps among its enquiry paths, and its landing page build (usually {{weeks:landing}}) includes a WhatsApp button. Engagements start from {{start}}, excluding GST, and a fixed quote tailored to your requirements is confirmed in writing after a call.
 
 Choose another option when nobody can answer inside the hour. A button with a slow reply is worse than a form, because the customer has already left your page.
 
@@ -137,7 +137,7 @@ One thread in the research asks whether a WhatsApp message from a booking brand 
 
 ## What It Costs and What to Do Next
 
-Adding a WhatsApp button costs little, and adding booking costs more because it is a separate line in the studio's price data. The site prices a landing page at {{price:landing}} ({{weeks:landing}}) and a business website at {{price:website}} ({{weeks:website}}). Online booking and a WhatsApp lead flow are priced as optional features in the [website cost calculator](/tools/website-cost-calculator/) and on the [pricing page](/pricing/). All ranges are a draft and indicative only, and a fixed quote is confirmed in writing after a call.
+Adding a WhatsApp button costs little, and adding booking costs more because it is scoped as a separate feature. A landing page at Elyx usually takes {{weeks:landing}} and a business website {{weeks:website}}, and engagements start from {{start}}. Online booking and a WhatsApp lead flow are optional features, quoted on the call, and the [pricing page](/pricing/) explains how Elyx quotes. A fixed quote is confirmed in writing after a call.
 
 The studio's one booking example is the [Ashirwad Dental Clinic redesign](/work/ashirwad-dental/), which took eight weeks from kickoff to launch and added a WhatsApp booking flow that starts in one tap. That is one clinic's project, not a promise about yours. The studio's listed facts cover click-to-chat buttons and WhatsApp flows, not API provider setups, so ask about those on the call.
 

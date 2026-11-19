@@ -1,86 +1,82 @@
 {
   "/services/web-development/": {
-    "hash": "76dbfafba8887f132317258a99b37c49",
+    "hash": "37eb6c21bcda1d8ec7228ae7341f867e",
     "lastmod": "2026-11-19"
   },
   "/services/saas-development/": {
-    "hash": "f4bae498272b8d38c4a6217149a8e443",
+    "hash": "f09efc8638ffe355f31755c10ccef00b",
     "lastmod": "2026-11-19"
   },
   "/services/app-development/": {
-    "hash": "34d97e52ebcba76b56358ae3012efaa5",
+    "hash": "81b300aaf48f558d6af7553a3afdf114",
     "lastmod": "2026-11-19"
   },
   "/services/seo-optimization/": {
-    "hash": "66ecc864fb739ed327c5072233b69948",
+    "hash": "77268556266e86d48695bbf5369706d5",
     "lastmod": "2026-11-19"
   },
   "/services/maintenance-care/": {
-    "hash": "bea54a25b19e23d11bf95ef5731899e7",
+    "hash": "727d5dc05284cf687316121efb2728c1",
     "lastmod": "2026-11-19"
   },
   "/websites-for/dentists/": {
-    "hash": "3b099c46477c10a750f887a3678bb7fd",
+    "hash": "c327133d38ae23ea1d11207d4c338e74",
     "lastmod": "2026-11-19"
   },
   "/websites-for/coaching-centres/": {
-    "hash": "0f92d11aa6cfa1be3e03a23ebd9de1da",
+    "hash": "1d82069abe7b01ad27b25d9c47c0fec8",
     "lastmod": "2026-11-19"
   },
   "/websites-for/restaurants-and-cafes/": {
-    "hash": "dcd65e8662255dbf8303a86e416bafcc",
+    "hash": "94fb88dd508c03e8cdce8babf666a2d4",
     "lastmod": "2026-11-19"
   },
   "/websites-for/salons-and-spas/": {
-    "hash": "190ba0584c5b1a5725cbfc728f7ef48c",
+    "hash": "e6d92db854b4c0d0e1f5bfd8f0025cc5",
     "lastmod": "2026-11-19"
   },
   "/websites-for/real-estate/": {
-    "hash": "8bfa4fae5954d7478d0d4cb913b9ebb9",
+    "hash": "d84dff27409ed407d4818d9490e2d937",
     "lastmod": "2026-11-19"
   },
   "/websites-for/ca-and-law-firms/": {
-    "hash": "7b9206ab69be0e094b54b204211a7480",
+    "hash": "49548648c31b212177903f85bae86a94",
     "lastmod": "2026-11-19"
   },
   "/websites-for/": {
-    "hash": "510aa52d85dc0b2e6a6a7814be13742d",
+    "hash": "5fa7823928d01652a87e6e3b5cc6bd03",
     "lastmod": "2026-11-19"
   },
   "/work/ashirwad-dental/": {
-    "hash": "0b7d7fd7fa5118fcb0a626aa5b6bf605",
+    "hash": "19652e2765dee40526203c0e10a6a3f1",
     "lastmod": "2026-11-19"
   },
   "/work/malnad-stories/": {
-    "hash": "d4897db02bedf475031c9f009b2aaef5",
+    "hash": "974cfb6bccb1bc050666c40472b718a4",
     "lastmod": "2026-11-19"
   },
   "/pricing/": {
-    "hash": "8261cc35363964c3d432ac8516138210",
+    "hash": "9259a1186db3c4f51abd72421eb71219",
     "lastmod": "2026-11-19"
   },
   "/web-development-bengaluru/": {
-    "hash": "fb7526480e9195afd0c69fd2a8033f22",
+    "hash": "f2b64d37778bd1df91bd6fcbd3ea2453",
     "lastmod": "2026-11-19"
   },
   "/tools/": {
-    "hash": "b08716414040096c498c1a3a61cb83f2",
-    "lastmod": "2026-11-19"
-  },
-  "/tools/website-cost-calculator/": {
-    "hash": "230485d4ab6d476eaa617afa1a4cc082",
+    "hash": "1e4ac669d9c02fbdce4b02c5277817a0",
     "lastmod": "2026-11-19"
   },
   "/tools/website-launch-checklist/": {
-    "hash": "6b5ee9412e776d9fbec27dc2dcd219d5",
+    "hash": "7af01e67dc5a0cd0dc3a6ffcee8ebe80",
     "lastmod": "2026-11-19"
   },
   "/tools/google-business-profile-checker/": {
-    "hash": "8055c3d3c7319d310f482282d5cfb886",
+    "hash": "dd96da12f90d086db960081db64e893f",
     "lastmod": "2026-11-19"
   },
   "/blog/": {
-    "hash": "0ed899072648f6c238cb1e3dc1695438",
+    "hash": "7cb3a9c1aa77f3862b2ec129a380418a",
     "lastmod": "2026-11-19"
   },
   "/blog/category/industries/": {
@@ -136,23 +132,23 @@
     "lastmod": "2026-11-16"
   },
   "/": {
-    "hash": "ae8a20d136a13b48726a4f4e5dea2ba1",
+    "hash": "0d9a52044c7cb6294d10d2e46e0990a9",
     "lastmod": "2026-11-19"
   },
   "/services.html": {
-    "hash": "4aa60ec3f2cf921d76ddd7de8c3ef254",
+    "hash": "ab015ef26384bd14026c7dec0e6b2c5c",
     "lastmod": "2026-11-19"
   },
   "/work.html": {
-    "hash": "7c06425f5a7b48e1f6a554e49cc17c83",
+    "hash": "01f1e7371df69f314dcfbc7e6d711d21",
     "lastmod": "2026-11-19"
   },
   "/about.html": {
-    "hash": "9c18e9e5b296ae4e321b01514bc834ee",
+    "hash": "5ac063f60d4dd8f5ef32eb6357f467f5",
     "lastmod": "2026-11-19"
   },
   "/contact.html": {
-    "hash": "4f8d828f29cff362cb60b2c0d642c93d",
+    "hash": "cc5bcbac81b5e0987c78e412c9d3efde",
     "lastmod": "2026-11-19"
   },
   "/blog/website-cost-india-test/": {
@@ -160,11 +156,11 @@
     "lastmod": "2026-11-16"
   },
   "/blog/author/shreyasmv/": {
-    "hash": "7a1517bd07dfa246d79512e0bae426dc",
+    "hash": "abace97a10e741ec77e7fa1bb8108dfa",
     "lastmod": "2026-11-19"
   },
   "/blog/author/rahulc/": {
-    "hash": "f93b7ecbe0921d69ae1abf7310db6d8a",
+    "hash": "6186d47ac1ca1375e2e4d0d0e70d522e",
     "lastmod": "2026-11-19"
   },
   "/blog/author/nawaz/": {
@@ -212,243 +208,243 @@
     "lastmod": "2026-11-16"
   },
   "/blog/what-are-ai-agents/": {
-    "hash": "fcebaadcaf17246ade0033cf109ce6ac",
+    "hash": "adcc8dda58ba7ea01407fa44c8da45a6",
     "lastmod": "2026-11-12"
   },
   "/blog/salon-website-with-online-booking/": {
-    "hash": "fc93b61aa8d1c2a284616f6d59e29928",
+    "hash": "4fd7eaa9a1e666dacc01cdedff261837",
     "lastmod": "2026-11-12"
   },
   "/blog/website-for-doctors-india/": {
-    "hash": "975f74e15086f092c544ce6086b23bbf",
+    "hash": "0e7c2f1163eefc41839c9e54e619f98c",
     "lastmod": "2026-11-12"
   },
   "/blog/gym-website-design/": {
-    "hash": "094a071e60ec29f7eff767302f0ea4cf",
+    "hash": "db17e4180f90aa25b1fbd32365215a5a",
     "lastmod": "2026-11-12"
   },
   "/blog/restaurant-website-india/": {
-    "hash": "f5315f3a6934c79a08f7895db20508f7",
+    "hash": "005d6c31def33644d0bdf70922bd8249",
     "lastmod": "2026-11-12"
   },
   "/blog/website-requirements-template/": {
-    "hash": "1464c91421f896db96d84f724572bad7",
+    "hash": "478b195c1eb03023bb05dd268fb46842",
     "lastmod": "2026-11-14"
   },
   "/blog/website-maintenance-charges/": {
-    "hash": "cd9fabff525c056555c3e9bc5db66b92",
+    "hash": "45b14a6213fc4837948373dcd7f493b8",
     "lastmod": "2026-11-14"
   },
   "/blog/website-hidden-costs/": {
-    "hash": "0af6f89320b9cbd8a5ee1310f74c8560",
+    "hash": "71f2b9732085bdfa4968c83c809ab9d2",
     "lastmod": "2026-11-14"
   },
   "/blog/saas-development-cost-india/": {
-    "hash": "8ee884b8b7f1b134f9792e16c6d52e06",
+    "hash": "d89cb388e2eb073e2e8f2c01a9029bdc",
     "lastmod": "2026-11-14"
   },
   "/blog/how-to-hire-a-web-developer/": {
-    "hash": "549930248b37f935a6940b7d0c156a08",
+    "hash": "19a4a39b7e49806c845f1af7017f9742",
     "lastmod": "2026-11-14"
   },
   "/blog/freelancer-vs-agency-for-website/": {
-    "hash": "06b6dc0c74db311d001e805e76a1ec9f",
+    "hash": "9437a55b2e37b0422d953e582cd7fafc",
     "lastmod": "2026-11-14"
   },
   "/blog/fixed-price-vs-hourly-development/": {
-    "hash": "595fb1c34db9d3b9fd2deea451c1c82f",
+    "hash": "1f6dcd760270e01fc9910c4d43771562",
     "lastmod": "2026-11-14"
   },
   "/blog/cheap-website-not-getting-customers/": {
-    "hash": "cd146e399678caf4ca6e2521b513bc08",
+    "hash": "928dfb6c60d3070ccbcd6e778e445fcf",
     "lastmod": "2026-11-14"
   },
   "/blog/app-development-cost-india/": {
-    "hash": "0e0f96ecd767619d01020fa581928a4b",
+    "hash": "8e9be537b44e3a0563286f4c04c4f299",
     "lastmod": "2026-11-14"
   },
   "/blog/website-for-manufacturing-company-india/": {
-    "hash": "14a3882187bce3250c9b0754b7d8f05c",
+    "hash": "372da4d3017a0186af97d2c4fd147021",
     "lastmod": "2026-11-13"
   },
   "/blog/website-for-chartered-accountants/": {
-    "hash": "247ad87c808e458548e89af2531ecd52",
+    "hash": "72b5851c120015cc9ce0f589b12c1943",
     "lastmod": "2026-11-12"
   },
   "/blog/travel-agency-website/": {
-    "hash": "f8c7ad056b6e02f921470b3e048d6b2d",
+    "hash": "482bdc9505f665011ae503a6e4f5ee8e",
     "lastmod": "2026-11-13"
   },
   "/blog/small-business-website-cost-india/": {
-    "hash": "d4891a18e877a3923e4ad1124c590119",
+    "hash": "d0771c0127bad170f7510de74b13c44d",
     "lastmod": "2026-11-13"
   },
   "/blog/school-website-design/": {
-    "hash": "731bf2e35da0cdd81ec60176a433a92d",
+    "hash": "0645e277813ba90695cebf60d7f33993",
     "lastmod": "2026-11-12"
   },
   "/blog/real-estate-website-india/": {
-    "hash": "20639a145d84e7995c160c1ed09e0c95",
+    "hash": "6af5157c363a0b239c74ef4a2604b082",
     "lastmod": "2026-11-12"
   },
   "/blog/photography-portfolio-website/": {
-    "hash": "475bdcfc365f8d797d1addd79c5fe2e0",
+    "hash": "17bace12b38ecd3c914901cd762fa17b",
     "lastmod": "2026-11-13"
   },
   "/blog/ngo-website-india/": {
-    "hash": "9b3757157cc33aa5522281e5148961e0",
+    "hash": "69379904ca243ce4167a6778f7e43b83",
     "lastmod": "2026-11-13"
   },
   "/blog/jewellery-website-india/": {
-    "hash": "93a6e8a2dd622e0b094c8c364213b872",
+    "hash": "316f2067291a945d328173553cdb773a",
     "lastmod": "2026-11-13"
   },
   "/blog/interior-designer-website/": {
-    "hash": "70ceb459b544f69ff755e708b217b0c3",
+    "hash": "d34e5eb7778c9c18567e1cc88aa74ad7",
     "lastmod": "2026-11-13"
   },
   "/blog/homestay-website/": {
-    "hash": "8d41062de8478a615c58297a82b4d9be",
+    "hash": "c27995f428401c3b27180c1249d6464c",
     "lastmod": "2026-11-12"
   },
   "/blog/home-bakery-website/": {
-    "hash": "d6c0a562f011fec45d92e7bdcd9ec8ca",
+    "hash": "698e345092ad5545cfc34f9dbd663fb7",
     "lastmod": "2026-11-13"
   },
   "/blog/event-management-company-website/": {
-    "hash": "33c9e0f84941850c779a3d013dda0813",
+    "hash": "4d7bead828c58e0abe8f7a7f95b4c3b0",
     "lastmod": "2026-11-13"
   },
   "/blog/ecommerce-website-cost-india/": {
-    "hash": "46fc3611ff14fd62f7d6496ac6b99667",
+    "hash": "d3a0345fa19c498a2bafab3d833eb674",
     "lastmod": "2026-11-14"
   },
   "/blog/diagnostic-centre-website/": {
-    "hash": "a9d211f7a04c19b251bd7e57fe9718c5",
+    "hash": "7a5c2f48f655051f806b541454246443",
     "lastmod": "2026-11-13"
   },
   "/blog/advocate-website-india/": {
-    "hash": "af9f0fff67a69cb0ef308185ad1e191a",
+    "hash": "5e2ef09391ca97a13a6aa78aa03a22d7",
     "lastmod": "2026-11-12"
   },
   "/blog/who-owns-my-website-code/": {
-    "hash": "9c67eaf2a5db93d91e58c86571614f90",
+    "hash": "a38758e871e7422c3533c9b58c31cfc2",
     "lastmod": "2026-11-15"
   },
   "/blog/wordpress-vs-webflow-vs-nextjs/": {
-    "hash": "86f7ebf981b7a6d4055829ef67f94fef",
+    "hash": "73cced3d2b4a6f4b8575ed1219681daf",
     "lastmod": "2026-11-15"
   },
   "/blog/wix-vs-wordpress-india/": {
-    "hash": "4ac1f9c7bc9a82578cdd3295e23b9d4e",
+    "hash": "044ad451d434a153be03428103a7a5a1",
     "lastmod": "2026-11-15"
   },
   "/blog/when-to-redesign-a-website/": {
-    "hash": "4aa1b3e0fc19954746c5e0254384f5a7",
+    "hash": "a848b2f8b2e3e21a4e2f70c00fb68e0b",
     "lastmod": "2026-11-15"
   },
   "/blog/whatsapp-booking-for-website/": {
-    "hash": "dbad4632cc2a22265bc6aed8b9666b8b",
+    "hash": "30def2031a35d6507d4bc45ca9a6c56f",
     "lastmod": "2026-11-15"
   },
   "/blog/web-development-company-red-flags/": {
-    "hash": "7a6b0798e69e288e8eecf11167a4a025",
+    "hash": "5bc62a58f070bbe8708a802e07f01325",
     "lastmod": "2026-11-15"
   },
   "/blog/landing-page-vs-website/": {
-    "hash": "587fa0b630236a23483265e6553967fc",
+    "hash": "a47f326ec9935d3f64544f5b8fee818e",
     "lastmod": "2026-11-15"
   },
   "/blog/landing-page-best-practices/": {
-    "hash": "012eba609d17c18517c834ef05143229",
+    "hash": "feee9b7374478127a50202818ced15a7",
     "lastmod": "2026-11-15"
   },
   "/blog/how-long-to-build-a-website/": {
-    "hash": "a2e1efed1f6735ef775f1d4d9d703f9a",
+    "hash": "02f7999e4c59db6d1740c314871cfe37",
     "lastmod": "2026-11-15"
   },
   "/blog/headless-cms-explained/": {
-    "hash": "b7f85a39b77dc798cc9116811fcc69fb",
+    "hash": "5263c3644425f9c5f7729e4a0cf0ddc8",
     "lastmod": "2026-11-15"
   },
   "/blog/payment-gateway-for-website-india/": {
-    "hash": "4f6baa5fca1578762835845040189db9",
+    "hash": "2ecbcab9d900ce43daf77f30c2199570",
     "lastmod": "2026-11-16"
   },
   "/blog/validate-a-saas-idea/": {
-    "hash": "92e05cedccd32a129ce1e2178129791a",
+    "hash": "9217d06ab3d382f4bc17a022cb9fbbf1",
     "lastmod": "2026-11-17"
   },
   "/blog/saas-user-roles-and-permissions/": {
-    "hash": "7686f120d3b74182cee5b7db649a2587",
+    "hash": "ceca0450ba5dc761d46fb5c7f510bcfc",
     "lastmod": "2026-11-17"
   },
   "/blog/saas-scaling-problems/": {
-    "hash": "67c2cc93f78e48436e743d7cc7d3c1d5",
+    "hash": "234de3a9f29c6b0328b0eb15e7078e36",
     "lastmod": "2026-11-17"
   },
   "/blog/saas-ideas-india/": {
-    "hash": "627a4fe3039f1f4e58927216f0995f8e",
+    "hash": "0af8d649bfeb8c3fe2f896454c002bd1",
     "lastmod": "2026-11-17"
   },
   "/blog/no-code-vs-custom-development/": {
-    "hash": "1960f459a253dbf31fa537576e4d8b76",
+    "hash": "be352c51b85189eae9c3033d319045b8",
     "lastmod": "2026-11-17"
   },
   "/blog/mvp-features-list/": {
-    "hash": "f06901738036445d967ab92518ed60f0",
+    "hash": "c8524cdb46d399d5ba3931e2229688f3",
     "lastmod": "2026-11-17"
   },
   "/blog/does-my-business-need-an-app/": {
-    "hash": "3153daeebc616cca31c8e9556197aaa1",
+    "hash": "bd141aa06aed9b40ec79668bd331be23",
     "lastmod": "2026-11-17"
   },
   "/blog/do-i-need-a-technical-co-founder/": {
-    "hash": "3f93910d6842d460e9bc5b1ba2e09d6e",
+    "hash": "91e57234f5a26a843b3c46ad60d1d12f",
     "lastmod": "2026-11-17"
   },
   "/blog/best-tech-stack-for-startup/": {
-    "hash": "5c78d3eb6ebea41382ff246fb753ba09",
+    "hash": "27afeee35e27a02f1fc2a46c3757abc7",
     "lastmod": "2026-11-17"
   },
   "/blog/admin-dashboard-design/": {
-    "hash": "3a87ad44f655c3029dca2fa5ee5b1888",
+    "hash": "3fc7c0b8a36dfb65b1342bf16f3a5d0e",
     "lastmod": "2026-11-17"
   },
   "/blog/what-pages-should-a-business-website-have/": {
-    "hash": "bb5999b226f985e43360edbd606b09a4",
+    "hash": "f3543f31df54c40885219da94f9f7dce",
     "lastmod": "2026-11-16"
   },
   "/blog/website-launch-checklist/": {
-    "hash": "5fb92f6aa602fb1c7abaf4278a319d9c",
+    "hash": "ae64ac1ce25a5a2c35bca63945627025",
     "lastmod": "2026-11-16"
   },
   "/blog/website-copywriting-tips/": {
-    "hash": "66f08ed1d1b524210ac13d0581b94030",
+    "hash": "732749c0e258d1ac64be9d38469fdddd",
     "lastmod": "2026-11-16"
   },
   "/blog/website-accessibility-guidelines/": {
-    "hash": "cd66c861da820d3b63d64fc2dcbe9fa8",
+    "hash": "ca9b367e711e1253fc0c5907927a5609",
     "lastmod": "2026-11-16"
   },
   "/blog/shopify-vs-woocommerce-india/": {
-    "hash": "f8eb22f135e2b4975b962f2c9bd864ec",
+    "hash": "38802c841f0036a7b0598226af568ffb",
     "lastmod": "2026-11-16"
   },
   "/blog/recurring-payments-india-saas/": {
-    "hash": "47e7d7ebd6dfc017eef4f010277b3c45",
+    "hash": "fc9c095974f2457b5fff2dc9c79496ba",
     "lastmod": "2026-11-16"
   },
   "/blog/multi-tenant-architecture-explained/": {
-    "hash": "561fb76d1a70d2833e9ee0529b014ec3",
+    "hash": "6f273bf13dbc5e3d59308b2d64634fc7",
     "lastmod": "2026-11-16"
   },
   "/blog/mobile-friendly-website/": {
-    "hash": "b236d58ea2a6a2a7155a0ab156ece09d",
+    "hash": "0a31c6609fa435d9f64dc25b70db3a41",
     "lastmod": "2026-11-16"
   },
   "/blog/how-to-build-a-saas-mvp/": {
-    "hash": "2180b2d74e699800c8db153fdd4e55d2",
+    "hash": "9a0cae027448060bdef4be7aa89aaa57",
     "lastmod": "2026-11-16"
   }
 }

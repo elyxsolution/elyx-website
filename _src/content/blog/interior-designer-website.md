@@ -12,7 +12,7 @@ An interior designer website wins projects when it lets a client check you befor
 - **Case pages.** Studios in March Branding's review give each project its own page; the template below adds the brief, scope, timeline and photographs.
 - **Before and after.** Use pairs on renovations, shot from the same angle in the same light, with a caption that says what changed.
 - **Qualification.** Five to seven questions, including a budget band, let you answer wrong-fit enquiries by message instead of by call. None of the top results covers this.
-- **Cost.** A business website of up to 10 pages is {{price:website}} on the studio's draft price data, indicative and never a quote.
+- **Cost.** Elyx engagements start from {{start}}, and a business website of up to 10 pages is quoted to your requirements.
 
 ## What an Interior Designer Website Has to Do Before the First Call
 
@@ -123,17 +123,17 @@ A template suits a studio with a handful of projects, one person who can write a
 
 ## What an Interior Designer Website Costs in India
 
-On the studio's draft price data, a focused landing page is {{price:landing}} and a business website of up to 10 pages is {{price:website}}, both indicative, never a quote, and excluding 18% GST. A fixed quote is confirmed in writing after a call.
+A focused landing page and a business website of up to 10 pages are each quoted to your requirements. Elyx engagements start from {{start}}, excluding GST, and a fixed quote is confirmed in writing after a call. The table shows how long each build usually takes.
 
-| Build | Indicative range | Typical time |
-|---|---|---|
-| Landing page | {{price:landing}} | {{weeks:landing}} |
-| Business website, 5 to 10 pages | {{price:website}} | {{weeks:website}} |
-| E-commerce store | {{price:ecommerce}} | {{weeks:ecommerce}} |
+| Build | Typical time |
+|---|---|
+| Landing page | {{weeks:landing}} |
+| Business website, 5 to 10 pages | {{weeks:website}} |
+| E-commerce store | {{weeks:ecommerce}} |
 
-Source: the studio's price data, status DRAFT, read 16 November 2026. The landing page suits a new studio with a few projects, and the business website suits the site map above. The store tier matters only if you sell products, as several studios in March's review do.
+The landing page suits a new studio with a few projects, and the business website suits the site map above. The store tier matters only if you sell products, as several studios in March's review do.
 
-Extras such as a WhatsApp lead flow, copywriting or custom animation change the total. The [website cost calculator](/tools/website-cost-calculator/) adds them up, and the [pricing page](/pricing/) shows every range.
+Extras such as a WhatsApp lead flow, copywriting or custom animation change the total, and each is scoped on the call. The [pricing page](/pricing/) explains how Elyx quotes.
 
 What interior design itself costs a homeowner is not answered here. None of my sources gives a figure, and Livspace's page points visitors to its calculators instead.
 
@@ -155,7 +155,7 @@ Martin Kemp's serious tone is the counterpoint: March says it suits his clients.
 
 ## What Is Documented and What Is My Reading
 
-Keeping the two apart shows which parts you can rely on. Documented, per the pages I read on 16 November 2026: March Branding's descriptions of the sites in the table, Livspace's payment steps and calculators, Canva's template terms, and the studio's own prices and case study.
+Keeping the two apart shows which parts you can rely on. Documented, per the pages I read on 16 November 2026: March Branding's descriptions of the sites in the table, Livspace's payment steps and calculators, Canva's template terms, and the studio's own service descriptions and case study.
 
 My reading, which no source tests: the case page template, the before and after rules, the qualifying form, the arithmetic example, the site map and the premise that high-ticket clients research before they call.
 
@@ -171,7 +171,7 @@ Turn one finished project into a case page first, then add the qualifying form a
 - [ ] Every page shows one clear next action.
 - [ ] I checked my council's advertising rules if I am a registered architect.
 
-If you want the site built, the studio's [web development service](/services/web-development/) starts with a discovery call, then a written scope with a fixed price, and design you approve before any code. Elyx Solutions is in Bengaluru, and the cost calculator gives a first range before you speak to anyone.
+If you want the site built, the studio's [web development service](/services/web-development/) starts with a discovery call, then a written scope with a fixed price, and design you approve before any code. Elyx Solutions is in Bengaluru, and its [pricing page](/pricing/) explains how it quotes before you speak to anyone.
 
 ## Sources
 
@@ -184,7 +184,7 @@ If you want the site built, the studio's [web development service](/services/web
 
 ### How much does a website designer cost?
 
-On the studio's draft price data, a landing page is {{price:landing}} and a business website of up to 10 pages is {{price:website}}. These ranges are indicative, exclude 18% GST and are not a quote. A fixed quote is confirmed in writing after a call.
+Elyx engagements start from {{start}}, excluding GST. A landing page or a business website of up to 10 pages is quoted to your requirements, in writing, after a call.
 
 ### How do I create an interior design website?
 

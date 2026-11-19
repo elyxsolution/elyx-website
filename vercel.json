@@ -3,6 +3,16 @@
   "trailingSlash": true,
   "redirects": [
     {
+      "source": "/tools/website-cost-calculator",
+      "destination": "/pricing/",
+      "permanent": true
+    },
+    {
+      "source": "/tools/website-cost-calculator/",
+      "destination": "/pricing/",
+      "permanent": true
+    },
+    {
       "source": "/blog/category/:slug",
       "destination": "/blog/",
       "permanent": true

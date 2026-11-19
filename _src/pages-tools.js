@@ -1,5 +1,5 @@
 'use strict';
-/* Free tools: website cost calculator (₹), website launch checklist, Google Business Profile checker. */
+/* Free tools: website launch checklist, Google Business Profile checker. */
 const { config, pricing, esc, inr, abs } = require('./lib');
 const chrome = require('./chrome');
 const S = require('./shell');
@@ -85,64 +85,14 @@ function toolsPages() {
   /* ------------------------------------------------- hub */
   const hubCrumbs = [['Home', '/'], ['Free tools', '/tools/']];
   const tools = [
-    ['website-cost-calculator', 'Website cost calculator', 'Get an indicative price range in ₹ for a website, store, web app, mobile app or SaaS MVP in about a minute.'],
     ['website-launch-checklist', 'Website launch checklist', '25 checks to run before you go live: domain, speed, enquiry paths, search, tracking and compliance. Your progress saves in your browser.'],
     ['google-business-profile-checker', 'Google Business Profile checker', 'Score your Google Business Profile out of 100 and see exactly which fixes will move you up in "near me" searches first.']
   ];
   out.push({
-    urlPath: '/tools/', title: 'Free Tools for Indian Small Businesses | Elyx', description: 'Free tools from Elyx: a website cost calculator in ₹, a website launch checklist and a Google Business Profile checker for small businesses in India.',
+    urlPath: '/tools/', title: 'Free Tools for Indian Small Businesses | Elyx', description: 'Free tools from Elyx: a website launch checklist and a Google Business Profile checker for small businesses in India.',
     crumbs: hubCrumbs, ogKey: 'tools', ogKicker: 'Free tools', ogHeadline: 'Free tools for small businesses', priority: 0.7, changefreq: 'monthly',
     main: `${S.pageHero({ crumbs: hubCrumbs, eyebrow: 'Free tools', h1: 'Small tools for the moment you <span class="serif-i">decide to go online.</span>', lead: 'No sign-up, no email gate. Use them, then talk to us if you want a hand.' })}
-${S.section('', '<div class="tilegrid">' + tools.map((t, i) => `<a class="tcard" href="/tools/${t[0]}/"><span class="tcard__ic">${chrome.svg24(['<path d="M6 4h12v16H6zM9 8h6M9 12h2M13 12h2M9 16h2M13 16h2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>', '<path d="M5 12l4 4 10-10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>', '<path d="M12 21s7-6.2 7-11.2A7 7 0 005 9.8C5 14.8 12 21 12 21z M12 12.2a2.4 2.4 0 100-4.8 2.4 2.4 0 000 4.8z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"></path>'][i])}</span><h3>${t[1]}</h3><p>${t[2]}</p><span class="tcard__more">Open the tool ${chrome.ARROW}</span></a>`).join('') + '</div>')}
-${S.ctaSection()}`
-  });
-
-  /* ------------------------------------------------- calculator */
-  const cUrl = '/tools/website-cost-calculator/';
-  const cCrumbs = [['Home', '/'], ['Free tools', '/tools/'], ['Website cost calculator', cUrl]];
-  const cFaqs = [
-    { q: 'How accurate is the estimate?', a: 'It is an indicative range based on the kinds of projects we take on, not a quote. The final price depends on scope and is confirmed in writing after a short call.' },
-    { q: 'Does the estimate include GST?', a: 'No. Prices are in INR and exclusive of GST, which is currently 18% on software services.' },
-    { q: 'What is the minimum I can spend?', a: 'Engagements start at ' + inr(pricing.startingPrice) + ' for a focused landing page or redesign.' },
-    { q: 'What if my project does not fit the options?', a: 'Pick the closest type, then send us the estimate. We will scope the rest in the discovery call.' }
-  ];
-  const data = JSON.stringify({ projects: pricing.projects, extraUnit: pricing.extraUnit, features: pricing.features, rush: pricing.rushMultiplier, monthly: pricing.monthly, start: pricing.startingPrice }).replace(/</g, '\\u003c');
-  out.push({
-    urlPath: cUrl, title: 'Website Cost Calculator in ₹ (India) | Elyx', description: 'Free website cost calculator for India: estimate what a landing page, business site, online store, web app, mobile app or SaaS MVP costs in rupees.',
-    crumbs: cCrumbs, graph: [toolSchema('Website cost calculator', cUrl, 'Estimate the cost of a website, app or SaaS product in INR.'), S.faqGraph(cFaqs)],
-    ogKey: 'tools-website-cost-calculator', ogKicker: 'Free tool', ogHeadline: 'Website cost calculator (₹)', priority: 0.8, changefreq: 'monthly',
-    scripts: '\n<script src="/js/tools.js"></script>',
-    main: `${S.pageHero({ crumbs: cCrumbs, eyebrow: 'Free tool', h1: 'Website cost calculator, <span class="serif-i">in rupees.</span>', lead: 'Choose what you want to build and add the features you need. You get an indicative range and timeline in about a minute.' })}
-<section class="pg pg--tool"><div class="pg__in">
-  <div class="calc" data-tool="calculator">
-    <div class="calc__form">
-      <fieldset class="calc__block"><legend>1. What are you building?</legend><div class="calc__types" id="calcTypes"></div></fieldset>
-      <fieldset class="calc__block" id="calcExtraWrap" hidden><legend id="calcExtraLegend">2. Size</legend>
-        <div class="calc__range"><input type="range" id="calcExtra" min="0" max="20" value="0" /><output id="calcExtraOut">0</output></div>
-        <p class="calc__hint" id="calcExtraHint"></p></fieldset>
-      <fieldset class="calc__block"><legend>3. Features you need</legend><div class="calc__feats" id="calcFeats"></div></fieldset>
-      <fieldset class="calc__block"><legend>4. Timeline</legend>
-        <label class="opt"><input type="radio" name="calcTime" value="std" checked /><span>Standard timeline</span></label>
-        <label class="opt"><input type="radio" name="calcTime" value="rush" /><span>I need it faster (rush, +25%)</span></label></fieldset>
-    </div>
-    <aside class="calc__result" aria-live="polite">
-      <span class="calc__k">Indicative estimate</span>
-      <div class="calc__range-out" id="calcOut">-</div>
-      <div class="calc__meta"><span id="calcWeeks"></span></div>
-      <p class="calc__note">${esc(pricing.gstNote)} A starting point, not a quote.</p>
-      <a class="btn btn--blue" id="calcSend" href="/contact.html" data-track="cta_click" data-pos="calculator">Send this estimate to Elyx ${chrome.ARROW}</a>
-      <a class="calc__link" href="/pricing/">See how we price →</a>
-    </aside>
-  </div>
-  <script type="application/json" id="calcData">${data}</script>
-</div></section>
-${S.section('pg--tint', S.sectionHead('How to read it', 'Numbers you can <span class="serif-i">plan with.</span>') + '<div class="fgrid fgrid--2">' + [
-      ['A range, not a promise', 'The low end assumes a tight scope and quick feedback. The high end assumes more pages, more revisions or more integrations.'],
-      ['What moves it', 'Size, features, who writes the content and how fast you need it. See <a href="/pricing/">pricing</a> for the full list.'],
-      ['Ongoing costs', 'Hosting, a domain and a care plan are separate from the build. Ask us what your project will need.'],
-      ['Next step', 'Send the estimate to us. We reply within one business day with a clear next step.']
-    ].map((r, n) => '<div class="fcard"><span class="fcard__n">0' + (n + 1) + '</span><h3>' + r[0] + '</h3><p>' + r[1] + '</p></div>').join('') + '</div>')}
-${S.faqBlock(cFaqs)}
+${S.section('', '<div class="tilegrid">' + tools.map((t, i) => `<a class="tcard" href="/tools/${t[0]}/"><span class="tcard__ic">${chrome.svg24(['<path d="M5 12l4 4 10-10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>', '<path d="M12 21s7-6.2 7-11.2A7 7 0 005 9.8C5 14.8 12 21 12 21z M12 12.2a2.4 2.4 0 100-4.8 2.4 2.4 0 000 4.8z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"></path>'][i])}</span><h3>${t[1]}</h3><p>${t[2]}</p><span class="tcard__more">Open the tool ${chrome.ARROW}</span></a>`).join('') + '</div>')}
 ${S.ctaSection()}`
   });
 

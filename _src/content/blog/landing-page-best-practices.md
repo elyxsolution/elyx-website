@@ -66,7 +66,7 @@ Here is a copyable headline pattern. It is my template, not a tested formula:
 
 Mailchimp advises leading with benefits to the visitor, not with why you are the best company. HubSpot's author drafts copy as four bullets (problem, solution, proof, call to action) before polishing the voice. Unbounce suggests asking someone unfamiliar with your business to read the headline and say what you offer.
 
-If your ads run in Kannada or Hindi, my reading is that the headline should match the ad's language too. The [website cost calculator](/tools/website-cost-calculator/) lists multiple languages as a separate option, so a second-language page has its own cost.
+If your ads run in Kannada or Hindi, my reading is that the headline should match the ad's language too. Multiple languages are scoped as a separate option, so a second-language page has its own cost.
 
 ## One Action: Call to Action, Form and WhatsApp Button
 
@@ -157,9 +157,9 @@ Landing pages usually fail in a few repeatable places. The table pairs each fail
 
 ## Landing Page Cost in India and What To Do Next
 
-Elyx Solutions' indicative range for a landing page is {{price:landing}}, with a typical time of {{weeks:landing}}, excluding 18% GST. The price data is a draft as of November 2026, so the range is indicative and never a quote, and a fixed quote is confirmed in writing after a call. A landing page there means one page, mobile-first design, an enquiry form with a WhatsApp button and basic SEO setup, and the [pricing page](/pricing/) shows the other ranges.
+Elyx Solutions builds landing pages from {{start}}, excluding GST, with a typical time of {{weeks:landing}}, and a fixed quote tailored to your requirements is confirmed in writing after a call. A landing page there means one page, mobile-first design, an enquiry form with a WhatsApp button and basic SEO setup, and the [pricing page](/pricing/) explains how Elyx quotes.
 
-Copywriting, content editing, a second language and extra motion are separate options in the cost calculator, so each one you add changes the figure. A written [website brief](/blog/website-requirements-template/) shortens the conversation, because the one action and the enquiry routes are already decided.
+Copywriting, content editing, a second language and extra motion are scoped as separate options, so each one you add changes the quote. A written [website brief](/blog/website-requirements-template/) shortens the conversation, because the one action and the enquiry routes are already decided.
 
 Run this checklist on your page today:
 
@@ -214,4 +214,4 @@ No source I read gives a benchmark conversion rate for Indian small businesses, 
 
 ### How much does a landing page cost in India?
 
-Elyx Solutions' indicative range is {{price:landing}}, usually {{weeks:landing}}, excluding 18% GST. The price data is a draft, so the range is never a quote. A fixed quote is confirmed in writing after a call.
+Elyx Solutions builds landing pages from {{start}}, usually in {{weeks:landing}}, excluding GST. A fixed quote tailored to your requirements is confirmed in writing after a call.

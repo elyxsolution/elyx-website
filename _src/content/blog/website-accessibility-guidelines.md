@@ -183,7 +183,7 @@ Start with a written target, then test, then fix, in that order. Say "WCAG 2.2 A
 
 If your site fails several rows, the [signs a site needs a redesign](/blog/when-to-redesign-a-website/) covers when a rebuild beats patching, and it lists keyboard navigation, alt text and contrast as a baseline.
 
-On cost: accessibility is not a separate line in the studio's price data. As of November 2026 that data is a draft, so the indicative range for a 5 to 10 page business website is {{price:website}}, over {{weeks:website}}, before 18% GST. A fixed quote is confirmed in writing after a call, and the [pricing page](/pricing/) shows every range.
+On cost: accessibility is not a separate line item at Elyx. A 5 to 10 page business website usually takes {{weeks:website}}, engagements start from {{start}}, before GST, and a fixed quote tailored to your requirements is confirmed in writing after a call. The [pricing page](/pricing/) explains how Elyx quotes.
 
 The [web development service page](/services/web-development/) does not list an accessibility audit, so ask any builder, including us, what is tested, and have it written into the scope.
 

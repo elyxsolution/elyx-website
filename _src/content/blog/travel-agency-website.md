@@ -139,19 +139,19 @@ Site Builder Report says many of its example sites use Squarespace, and it earns
 
 For the free route, check the plan terms of any builder yourself, since we did not verify them. A template gives you a layout. It does not give you the itinerary, price and cancellation logic described above.
 
-## What a Travel Agency Website Costs, in Indicative Ranges
+## What a Travel Agency Website Costs
 
-A trek operator's site usually falls into the studio's landing page, business website or e-commerce tier, and each range below is indicative. The studio's price data is a draft, so a fixed quote is confirmed in writing after a call, and all prices are exclusive of GST.
+A trek operator's site usually falls into the studio's landing page, business website or e-commerce build. Elyx engagements start from {{start}}, exclusive of GST, and a fixed quote tailored to your requirements is confirmed in writing after a call. The table shows how long each usually takes.
 
-| Build | Indicative range | Typical time |
-|---|---|---|
-| Landing page for one trek | {{price:landing}} | {{weeks:landing}} |
-| Business website | {{price:website}} | {{weeks:website}} |
-| E-commerce store | {{price:ecommerce}} | {{weeks:ecommerce}} |
+| Build | Typical time |
+|---|---|
+| Landing page for one trek | {{weeks:landing}} |
+| Business website | {{weeks:website}} |
+| E-commerce store | {{weeks:ecommerce}} |
 
-The business website tier covers 5 to 10 pages. With a home page, trips index, about page and contact page, that leaves six trip pages. An operator with 14 trips is eight pages over, so check the extra-page line in the [website cost calculator](/tools/website-cost-calculator/) and the [pricing page](/pricing/).
+The business website tier covers 5 to 10 pages. With a home page, trips index, about page and contact page, that leaves six trip pages. An operator with 14 trips is eight pages over, so ask for the extra pages to be scoped in your quote, and read how Elyx quotes on the [pricing page](/pricing/).
 
-Booking and payments are priced as add-ons in the calculator, so a seat-request flow costs more than the base tier. An album store with checkout fits the e-commerce tier.
+Booking and payments are scoped as add-ons, so a seat-request flow costs more than the base build. An album store with checkout fits the e-commerce build.
 
 ## What Usually Goes Wrong on Travel Websites
 
@@ -175,7 +175,7 @@ Start with one trip page and one booking path, then add the rest once you see wh
 3. Ask your gateway the four questions and write down the answers.
 4. Photograph or select ten images from your own batches and compress them.
 5. Draft the post-trip messages and decide whether to build or link out for albums.
-6. Get an indicative range from the [pricing page](/pricing/), then a written quote.
+6. Read how Elyx quotes on the [pricing page](/pricing/), then ask for a written quote.
 
 If you want the pages built, the studio's [web development service](/services/web-development/) covers business sites and online stores, and the [salon booking article](/blog/salon-website-with-online-booking/) shows how deposits and reminders work on another appointment-led business.
 
@@ -195,7 +195,7 @@ Start with one page per trip, each with an itinerary, dates, a price and a way t
 
 ### How much does a travel agency website cost?
 
-The studio's indicative ranges are {{price:landing}} for a landing page, {{price:website}} for a business website and {{price:ecommerce}} for an e-commerce store. These are a draft, exclusive of GST, and a fixed quote is confirmed in writing after a call. Booking and payments are add-ons in the calculator.
+Elyx engagements start from {{start}}, exclusive of GST. A landing page, a business website or an e-commerce store is quoted to your requirements, and a fixed quote is confirmed in writing after a call. Booking and payments are scoped as add-ons.
 
 ### How can I create a travel agency website for free?
 
@@ -219,7 +219,7 @@ A template is enough for a few fixed trips sold by enquiry. It is not enough onc
 
 ### How many pages does a trek operator website need?
 
-Plan one page per trip plus a home page, a trips index, an about page and a contact page. The studio's business website tier covers 5 to 10 pages, so an operator with more trips should check the extra-page line in the cost calculator.
+Plan one page per trip plus a home page, a trips index, an about page and a contact page. The studio's business website build covers 5 to 10 pages, so an operator with more trips should ask for the extra pages to be scoped in the quote.
 
 ### Can a travel website sell photo albums after the trip?
 

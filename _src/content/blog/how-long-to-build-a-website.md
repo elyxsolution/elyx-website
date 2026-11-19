@@ -7,18 +7,18 @@ description: How long to build a website: timelines for landing pages, business 
 date: 2026-11-15
 author: rahulc
 ---
-How long to build a website depends mostly on scope and on how quickly you supply content. On this site's draft price data, a landing page takes {{weeks:landing}}, a business website {{weeks:website}} and an e-commerce store or custom web app {{weeks:ecommerce}}. Published guides from Elementor and Forbes Advisor give similar or longer ranges, and all of them assume you are not the bottleneck: late copy, photos and approvals stop the clock.
+How long to build a website depends mostly on scope and on how quickly you supply content. At Elyx Solutions, a landing page usually takes {{weeks:landing}}, a business website {{weeks:website}} and an e-commerce store or custom web app {{weeks:ecommerce}}. Published guides from Elementor and Forbes Advisor give similar or longer ranges, and all of them assume you are not the bottleneck: late copy, photos and approvals stop the clock.
 
-- **Short answer.** One page is about {{weeks:landing}}, a store or web app {{weeks:ecommerce}}, and an app or SaaS MVP longer, all indicative while the price data is a draft.
+- **Short answer.** One page is about {{weeks:landing}}, a store or web app {{weeks:ecommerce}}, and an app or SaaS MVP longer, all indicative.
 - **The gap.** The jump from 1 to 2 weeks to 4 to 8 weeks comes from more pages, payments or logins, more content and more people approving, not from slower work.
 - **The usual delay.** Elementor, Wix and Forbes Advisor all point to content, and Forbes puts content creation at 4 to 6 weeks, the longest step in its process.
 - **Your lever.** One decision maker, final copy and photos in hand, and a written page list before design starts.
 
 ## How Long to Build a Website: The Answer by Project Type
 
-The time to build a website runs from about a week for one page to several months for a custom application. The table sets this site's indicative figures beside the professional timelines Elementor published, as read on 17 November 2026.
+The time to build a website runs from about a week for one page to several months for a custom application. The table sets Elyx's usual timelines beside the professional timelines Elementor published, as read on 17 November 2026.
 
-| Project type | This site, indicative | Elementor, professional build |
+| Project type | Elyx, usual | Elementor, professional build |
 |---|---|---|
 | Landing or brochure page | {{weeks:landing}} | 1 to 2 weeks (1 to 5 pages) |
 | Business website | {{weeks:website}} | 4 to 8 weeks (5 to 15 pages) |
@@ -27,13 +27,13 @@ The time to build a website runs from about a week for one page to several month
 | SaaS MVP | {{weeks:saas}} | Not listed separately |
 | Mobile app (iOS and Android) | {{weeks:mobile}} | Not listed separately |
 
-This site's price data is a draft, so every figure in its column is indicative and never a quote. A fixed quote is confirmed in writing after a call.
+Every figure in the Elyx column is a usual timeline, not a promise, and a fixed quote and schedule are confirmed in writing after a call.
 
 Two cautions on the Elementor column. Its own summary list gives e-commerce as 8 to 16 weeks while its table says 8 to 12, so treat that row as soft. Its "custom web application" row covers social networks and SaaS tools, which is wider than a portal that turns one workflow into software, so the gap to the web app figure is mostly about definition.
 
 ## Why a Landing Page Takes 1 to 2 Weeks and a Store 4 to 8
 
-A landing page takes {{weeks:landing}} and a store or web app {{weeks:ecommerce}} because five things grow together: pages, functions, content, approvals and testing. The table is built from this site's price data, which describes a landing page as one page with an enquiry form and a WhatsApp button, and e-commerce as a catalogue, cart, UPI and card payments, order emails and an admin panel.
+A landing page takes {{weeks:landing}} and a store or web app {{weeks:ecommerce}} because five things grow together: pages, functions, content, approvals and testing. The Elyx column describes a landing page as one page with an enquiry form and a WhatsApp button, and e-commerce as a catalogue, cart, UPI and card payments, order emails and an admin panel.
 
 | What grows | Landing page | Store or web app |
 |---|---|---|
@@ -71,7 +71,7 @@ Content is the most common reason a website is late: Elementor calls it the numb
 
 Wix adds two more causes: deciding the page structure late, which forces layouts to be redone, and several reviewers commenting in separate rounds. Wix goes further and says preparing these three things can turn a two-month build into a two-week one. That is the author's claim, with no data behind it.
 
-In India the content list often includes documents only the owner holds. The studio's industry pages note that food businesses are expected to show an FSSAI licence number, that real estate projects show a RERA number, and that a clinic approves every claim, photo and testimonial against its council's advertising rules. Languages matter too: the cost calculator prices multiple languages as a separate option, because every page is written again.
+In India the content list often includes documents only the owner holds. The studio's industry pages note that food businesses are expected to show an FSSAI licence number, that real estate projects show a RERA number, and that a clinic approves every claim, photo and testimonial against its council's advertising rules. Languages matter too: multiple languages are scoped as a separate option, because every page is written again.
 
 | What goes wrong | Cause | Fix |
 |---|---|---|
@@ -85,7 +85,7 @@ In India the content list often includes documents only the owner holds. The stu
 
 A slow approval cycle can add three weeks to a four-week plan, and the arithmetic below shows how. Elementor says a decisive client can finalise designs in a week, while a large committee can sit in revisions for a month.
 
-Take a business website planned at four weeks, the top of the {{weeks:website}} indicative range, with design as week 1 as in the studio's process. The table changes only the approval time.
+Take a business website planned at four weeks, the top of the usual {{weeks:website}}, with design as week 1 as in the studio's process. The table changes only the approval time.
 
 | Scenario | Design approval | Launch |
 |---|---|---|
@@ -116,9 +116,9 @@ For who to hire, the [freelancer, agency or small studio comparison](/blog/freel
 
 ## Average Cost to Build a Website: Why Time and Price Move Together
 
-The average cost to build a website rises with the same things that add weeks: pages, payments, logins and content. On this site's draft data, a landing page is {{price:landing}}, a business website {{price:website}} and an e-commerce store {{price:ecommerce}}, all excluding 18% GST. They are indicative ranges, never a quote.
+The average cost to build a website rises with the same things that add weeks: pages, payments, logins and content. At Elyx, engagements start from {{start}}, excluding GST, and a landing page, a business website or an e-commerce store is quoted to your requirements.
 
-The web development page names four price movers: the number of pages, whether you need online payments or booking, whether the studio writes the copy, and how fast you need it live. The [website cost calculator](/tools/website-cost-calculator/) lists content management, booking, UPI and card payments, WhatsApp lead flow, multiple languages, copywriting and SEO setup as separate options. The [pricing page](/pricing/) shows every range, which is the figure to compare when judging website building cost in India.
+The web development page names four price movers: the number of pages, whether you need online payments or booking, whether the studio writes the copy, and how fast you need it live. Content management, booking, UPI and card payments, WhatsApp lead flow, multiple languages, copywriting and SEO setup are scoped as separate options. The [pricing page](/pricing/) explains how Elyx quotes, and a written quote is the figure to compare when judging website building cost in India.
 
 ## How to Shorten a Website Build Without Cutting Corners
 
@@ -159,10 +159,10 @@ Start by naming your project type in the first table, then close the gaps that t
 2. Write the brief, using the [website brief template](/blog/website-requirements-template/).
 3. Gather copy and photos, and tick the checklist above.
 4. Name the one person who approves.
-5. Check the range on the [pricing page](/pricing/) and in the [cost calculator](/tools/website-cost-calculator/).
+5. Ask for a written quote, and read how Elyx quotes on the [pricing page](/pricing/).
 6. Ask any builder what their date assumes about your content.
 
-If you want to talk through a launch date, [Elyx Solutions' web development service](/services/web-development/) starts with a discovery call, then a written scope, timeline and fixed price. The ranges in this article are indicative, and a fixed quote is confirmed in writing after a call.
+If you want to talk through a launch date, [Elyx Solutions' web development service](/services/web-development/) starts with a discovery call, then a written scope, timeline and fixed price. The timelines in this article are indicative, and a fixed quote is confirmed in writing after a call.
 
 ## Sources
 
@@ -175,7 +175,7 @@ If you want to talk through a launch date, [Elyx Solutions' web development serv
 
 ### How long does it take to build a website?
 
-A landing page takes about {{weeks:landing}}, a business website {{weeks:website}} and a store or web app {{weeks:ecommerce}} on this site's indicative data. Published guides range from days for a DIY page to six months or more for a complex custom build. Late content is the usual reason a date slips.
+A landing page takes about {{weeks:landing}}, a business website {{weeks:website}} and a store or web app {{weeks:ecommerce}} at Elyx. Published guides range from days for a DIY page to six months or more for a complex custom build. Late content is the usual reason a date slips.
 
 ### How long does it take to build a website from scratch?
 
@@ -199,7 +199,7 @@ Wix estimates roughly 20 to 40 hours for a small business site you build yoursel
 
 ### How much does it cost to build a website?
 
-On this site's draft data, a landing page is {{price:landing}} and a business website {{price:website}}, excluding 18% GST. These are indicative ranges, never a quote, and a fixed quote is confirmed in writing after a call. The [pricing page](/pricing/) lists every range.
+Elyx engagements start from {{start}}, excluding GST, and a landing page or a business website is quoted to your requirements, in writing, after a call. The [pricing page](/pricing/) explains how.
 
 ### How long does a website last?
 

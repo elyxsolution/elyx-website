@@ -66,7 +66,7 @@ Four rules follow, all my reading:
 3. **Text, not a PDF.** The studio's restaurant page warns that a menu PDF takes ten seconds to open on 4G, and a catalogue PDF behaves the same.
 4. **Editable by your team.** The studio's web page describes a CMS so prices, photos and text change without touching code.
 
-The calculator counts five product categories as included in an e-commerce build and prices extra ones separately, so decide your category list before you ask for a quote.
+Extra product categories are scoped separately in an e-commerce build, so decide your category list before you ask for a quote.
 
 ## South Indian and Traditional Jewellery: Naming Pieces So They Get Found
 
@@ -81,7 +81,7 @@ Use this template for each style page:
 - **Occasions.** Bridal, festival, daily wear.
 - **Pieces.** Links to every piece in that style.
 
-To find the variants, read a month of your DMs and list the words customers type. The calculator prices multiple languages as an option, which matters if your customers search in Kannada, Telugu or Hindi.
+To find the variants, read a month of your DMs and list the words customers type. Multiple languages are scoped as an option, which matters if your customers search in Kannada, Telugu or Hindi.
 
 ## Product Pages: What Every Piece Needs to Show
 
@@ -165,16 +165,16 @@ Most jewellery sites fail on trust and upkeep, not on looks. The causes below dr
 
 On the false banner: Attrangi's cart carries a message that items are selling out quickly. Whether it is true there, I cannot check. A made-up scarcity line costs trust faster than it earns a sale.
 
-## What a Jewellery Website Costs, in Indicative Ranges
+## What a Jewellery Website Costs
 
-The cost depends on whether shoppers enquire or check out, because the studio prices an enquiry catalogue and a store separately. These figures come from this site's price data, which is a draft: every range is indicative, never a quote, and a fixed quote is confirmed in writing after a call.
+The cost depends on whether shoppers enquire or check out, because the studio scopes an enquiry catalogue and a store separately. Elyx engagements start from {{start}}, and a fixed quote tailored to your requirements is confirmed in writing after a call. This is what each build usually involves.
 
-- **Lookbook and enquiry page.** One page with an enquiry form and WhatsApp button: {{price:landing}}, usually {{weeks:landing}}.
-- **Catalogue website.** Up to 10 pages with a CMS and Google Maps, enough for style pages and a store page: {{price:website}}, usually {{weeks:website}}.
-- **Online store.** Catalogue, cart, UPI and card payments, order emails and an admin panel: {{price:ecommerce}}, usually {{weeks:ecommerce}}.
-- **Care plan.** Monitoring, updates and monthly update hours: {{price:care}} a month.
+- **Lookbook and enquiry page.** One page with an enquiry form and WhatsApp button, usually {{weeks:landing}}.
+- **Catalogue website.** Up to 10 pages with a CMS and Google Maps, enough for style pages and a store page, usually {{weeks:website}}.
+- **Online store.** Catalogue, cart, UPI and card payments, order emails and an admin panel, usually {{weeks:ecommerce}}.
+- **Care plan.** Monitoring, updates and monthly update hours, billed monthly.
 
-Ranges exclude 18% GST, and payment-gateway fees are paid separately. The [pricing page](/pricing/) lists every range, and the [website cost calculator](/tools/website-cost-calculator/) shows options such as payments, WhatsApp flow and extra categories. The studio's closest published store is [Malnad Stories](/work/malnad-stories/), a photo-album platform with payments and uploads, which is not a jewellery site.
+Prices exclude GST, and payment-gateway fees are paid separately. The [pricing page](/pricing/) explains how Elyx quotes, and options such as payments, WhatsApp flow and extra categories are scoped on the call. The studio's closest published store is [Malnad Stories](/work/malnad-stories/), a photo-album platform with payments and uploads, which is not a jewellery site.
 
 ## What to Do Next
 
@@ -232,7 +232,7 @@ Instagram can stay your showroom, but it cannot hold a price list, a rate with a
 
 ### How much does a jewellery website cost in India?
 
-The indicative range is {{price:landing}} for a one-page enquiry site, {{price:website}} for a catalogue site and {{price:ecommerce}} for an online store, excluding 18% GST. These are draft ranges, never a quote. A fixed quote is confirmed in writing after a call.
+Elyx engagements start from {{start}}, excluding GST. A one-page enquiry site, a catalogue site or an online store is quoted to your requirements, and a fixed quote is confirmed in writing after a call.
 
 ### What should a jewellery product page include?
 

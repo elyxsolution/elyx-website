@@ -133,20 +133,12 @@ function ctaSection(title, sub, ctx) {
 </section>`;
 }
 
-/** Price rows from pricing.json for the given keys (project keys or monthly keys). */
-function priceTable(keys) {
-  const rows = keys.map((k) => {
-    const pr = pricing.projects[k];
-    const mo = pricing.monthly[k];
-    if (pr) return { label: pr.label, price: inr(pr.low) + ' – ' + inr(pr.high), time: pr.weeksLow + '–' + pr.weeksHigh + ' weeks', inc: pr.includes };
-    if (mo) return { label: mo.label, price: inr(mo.low) + ' – ' + inr(mo.high) + ' / month', time: 'Monthly plan', inc: mo.includes };
-    return null;
-  }).filter(Boolean);
-  return `<div class="ptable" role="table">
-  <div class="ptable__row ptable__row--head" role="row"><span>What</span><span>Typical range</span><span>Timeline</span></div>
-  ${rows.map((r) => `<div class="ptable__row" role="row"><span class="ptable__what"><b>${esc(r.label)}</b><small>${esc(r.inc)}</small></span><span class="ptable__price">${r.price}</span><span class="ptable__time">${r.time}</span></div>`).join('\n  ')}
-</div>
-<p class="ptable__note">${esc(pricing.gstNote)} Engagements start at ${inr(pricing.startingPrice)}. Final scope and pricing are confirmed in writing before any work begins.</p>`;
+/** The one price Elyx publishes: a starting price, plus an invitation to request a quote tailored to the reader's requirements. */
+function quoteBlock() {
+  return `<div class="quoteblock">
+  <div class="quoteblock__price"><span class="quoteblock__k">Starting from</span><span class="quoteblock__n">${inr(pricing.startingPrice)}</span></div>
+  <p class="quoteblock__t">Every project is different, so we do not publish fixed prices. Request a quote tailored to your requirements and we will confirm the scope and the price in writing before any work begins. ${esc(pricing.gstNote)}</p>
+</div>`;
 }
 
 function caseCard(w, label) {
@@ -184,4 +176,4 @@ function articleRow(a) {
   return `<a class="arow" href="${a.url}"><span class="arow__cat">${esc(a.categoryName)}</span><span class="arow__t">${esc(a.title)}</span><span class="arow__d">${esc(a.description)}</span></a>`;
 }
 
-module.exports = { shell, pageHero, btn, btnPlain, bookHref, CHECK, section, sectionHead, faqBlock, faqGraph, ctaSection, priceTable, caseCard, articlesSection, articleRow, crumbsHtml, hasBooking, stripTags };
+module.exports = { shell, pageHero, btn, btnPlain, bookHref, CHECK, section, sectionHead, faqBlock, faqGraph, ctaSection, quoteBlock, caseCard, articlesSection, articleRow, crumbsHtml, hasBooking, stripTags };

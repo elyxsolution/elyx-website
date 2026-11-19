@@ -79,19 +79,13 @@ Dividing by 1.18 reverses the tax. The table applies it to the three budgets.
 
 Ask whether a number includes tax before comparing quotes. Aero warns that a cheaper-looking quote without tax can end up costing more than one that includes it, and Web Eventuals advises asking for the price with tax shown. This is a business lens on pricing, not tax advice: whether you can recover GST depends on your registration, so ask your accountant.
 
-## How Elyx's Draft Price Ranges Line Up With These Budgets
+## How Elyx Quotes Against These Budgets
 
-On Elyx Solutions' draft price data, a 30k budget reaches the business website range, a 1 lakh budget goes past it, and a 10k budget sits under the starting price. The studio states its prices excluding 18% GST on software services, so the table compares each budget's pre-tax figure from the section above.
+Elyx Solutions does not publish fixed prices, because every project is different. Engagements start from {{start}}, excluding 18% GST on software services, so compare your budget's pre-tax figure from the section above. Tell the studio your budget on the call, and it will scope what fits and confirm a quote tailored to your requirements in writing before any work begins.
 
-| Budget, before tax | Nearest draft range | What the range includes |
-|---|---|---|
-| 10k (8.47k) | Under the {{start}} starting price | Not covered by the draft data |
-| 30k (25.42k) | Bottom of the business website range, {{price:website}}, {{weeks:website}} | Up to 10 pages, CMS, Google Maps, speed and SEO foundations |
-| 1 lakh (84.75k) | Above that range; e-commerce is {{price:ecommerce}}, {{weeks:ecommerce}} | Catalogue, cart, UPI and card payments, order emails, admin panel |
+What moves the quote is the number of pages, online payments or booking, whether the studio writes the copy, and how fast you need it live. A business website of up to 10 pages, with a CMS, Google Maps, speed and SEO foundations, usually takes {{weeks:website}}. An e-commerce store, with a catalogue, cart, UPI and card payments, order emails and an admin panel, usually takes {{weeks:ecommerce}}. Options such as booking, UPI payments or copywriting are scoped separately.
 
-These ranges are a draft and indicative only, never a quote. A fixed quote is confirmed in writing after a call. The business website range overlaps every range in the first table, and at 1 lakh the headroom goes to options such as booking, UPI payments or copywriting, which the calculator prices separately.
-
-Elyx Solutions builds these through its [web development service](/services/web-development/), and its page lists what moves the price: the number of pages, online payments or booking, whether the studio writes the copy, and how fast you need it live. The [pricing page](/pricing/) and the [website cost calculator](/tools/website-cost-calculator/) show the ranges and add options one by one.
+Elyx Solutions builds these through its [web development service](/services/web-development/), and the [pricing page](/pricing/) explains how it quotes.
 
 ## Where Corners Get Cut at Each Budget
 
@@ -176,7 +170,7 @@ Start by writing down the one action the site must produce, then turn your budge
 1. Name the job: enquiries by WhatsApp, calls, bookings or online orders.
 2. Divide your all-in budget by 1.18 to get the pre-tax amount.
 3. List pages, features, who writes the copy and who owns the domain.
-4. Run the [website cost calculator](/tools/website-cost-calculator/) for an indicative range, then ask two or three vendors for written quotes.
+4. Ask two or three vendors for written quotes, and compare them line by line.
 5. Before launch, test the result with the [website launch checklist](/tools/website-launch-checklist/).
 
 ## Sources

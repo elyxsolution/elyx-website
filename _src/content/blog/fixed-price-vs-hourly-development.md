@@ -12,7 +12,7 @@ Fixed price vs hourly development comes down to one question: who pays when the 
 - **Fixed price.** Best when you can list every page and feature. Changes outside the scope are priced separately, and the quote usually carries a buffer for risk (Hunchbite puts it at 20 to 40 percent).
 - **Hourly.** Best when requirements will change. It needs a budget cap and weekly time reports to stay safe.
 - **Retainer.** Best for ongoing work, because you reserve a set number of hours each month.
-- **Price.** Indicative ranges for fixed-price builds are on the [pricing page](/pricing/). They are never a quote, and a fixed quote is confirmed in writing after a call.
+- **Price.** Elyx quotes fixed-price builds to your requirements, with engagements starting from {{start}}. The [pricing page](/pricing/) explains how, and a fixed quote is confirmed in writing after a call.
 - **Evidence.** Every source below is a vendor or practitioner page, not an independent study, so the figures are claims to test.
 
 ## How Fixed Price, Hourly and Retainer Contracts Work
@@ -114,7 +114,7 @@ The studio's published terms are 50 percent upfront to begin and 50 percent on f
 
 Between the two payments the stages follow the studio's web development process: a written scope with a fixed price before work begins, design approved before code, weekly increments with two rounds of feedback, then a staging review and launch. The [Ashirwad Dental case study](/work/ashirwad-dental/) records those stages over 8 weeks from kickoff to launch. It does not state how that project was paid, so I do not link the two.
 
-GST is the Indian detail. The studio's price data is exclusive of GST, currently 18 percent on software services, so each half carries tax. Per 100 of agreed price:
+GST is the Indian detail. Elyx's prices are exclusive of GST, currently 18 percent on software services, so each half carries tax. Per 100 of agreed price:
 
 | Payment | Share of price | GST at 18% | Invoice total |
 |---|---|---|---|
@@ -124,7 +124,7 @@ GST is the Indian detail. The studio's price data is exclusive of GST, currently
 
 The arithmetic is 50 × 0.18 = 9 and 50 + 9 = 59. Confirm GST treatment with a chartered accountant, because the rule can change.
 
-For scale, the site's draft ranges are {{price:website}} for a business website over {{weeks:website}}, and {{price:saas}} for a SaaS MVP over {{weeks:saas}}, both exclusive of GST. They are indicative, never a quote.
+For scale, a business website at Elyx usually takes {{weeks:website}} and a SaaS MVP {{weeks:saas}}, with engagements starting from {{start}}, exclusive of GST. Each one is quoted to your requirements.
 
 Designz Lab describes the market norm as 30 to 50 percent to start, one or two middle payments, and a final payment after acceptance. My reading: 50/50 sits at the top of that start range with no middle payment, so you pay half before you see the finished product. Design approval before code, weekly working builds and a staging review before the last payment are what reduce that exposure. For a longer build, ask whether a middle payment tied to a working beta is possible, since the published terms do not say.
 
@@ -164,7 +164,7 @@ Write a one-page scope first, then ask for quotes under the model that fits it. 
 
 Then send the same scope to two or three developers and compare the phase breakdowns, not only the totals. Use the checklist above on each reply.
 
-If the job is a website or web app, the studio's [web development service](/services/web-development/) works to a written scope and fixed price, and the [pricing page](/pricing/) and [website cost calculator](/tools/website-cost-calculator/) show indicative ranges before you speak to anyone. For work after launch, its [maintenance and care plans](/services/maintenance-care/) are monthly, at {{price:care}} a month as an indicative draft range exclusive of GST.
+If the job is a website or web app, the studio's [web development service](/services/web-development/) works to a written scope and fixed price, and the [pricing page](/pricing/) explains how it quotes before you speak to anyone. For work after launch, its [maintenance and care plans](/services/maintenance-care/) are monthly and scoped to the number of sites or apps they cover.
 
 ## Sources
 

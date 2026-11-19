@@ -29,7 +29,7 @@ Most of a site's running cost sits in eight lines, and each one has a different 
 | Care plan, managed WordPress | $50 to $300 a month | Web Cost Estimator, April 2026 |
 | Small text change | £95 an hour, one-hour minimum, in one UK example | Affordable Website Design |
 
-The pattern is that domain and SSL cost little, hosting and email cost a steady amount, and plugins and care plans decide whether the total is small or large. The [pricing page](/pricing/) gives indicative build ranges, and everything below is the bill that comes after the build.
+The pattern is that domain and SSL cost little, hosting and email cost a steady amount, and plugins and care plans decide whether the total is small or large. The [pricing page](/pricing/) explains how Elyx quotes the build, and everything below is the bill that comes after the build.
 
 ## Domain Names: The Small Renewal That Cannot Lapse
 
@@ -76,7 +76,7 @@ Web Cost Estimator puts a well-equipped WordPress business site at $300 to $700 
 
 ### Hidden costs of online shopping sites
 
-Selling online adds charges per sale on top of the platform. Web Cost Estimator says Shopify adds 0.2% to 2% when you use a third-party processor and WooCommerce with Stripe costs 2.9% plus $0.30 per transaction, which are US rates. Indian gateway rates are not in the sources, so ask your gateway for its rate card. My reading is that an e-commerce build price, indicatively {{price:ecommerce}} at the studio, pays for building the checkout while the per-sale charge is set by the gateway.
+Selling online adds charges per sale on top of the platform. Web Cost Estimator says Shopify adds 0.2% to 2% when you use a third-party processor and WooCommerce with Stripe costs 2.9% plus $0.30 per transaction, which are US rates. Indian gateway rates are not in the sources, so ask your gateway for its rate card. My reading is that an e-commerce build price pays for building the checkout while the per-sale charge is set by the gateway.
 
 ## Maintenance, Backups and Emergency Fixes
 
@@ -86,7 +86,7 @@ The sources disagree on price, which is itself a finding. Web Cost Estimator giv
 
 Emergency work costs more. Ayokay, a US agency, says after-hours rates can run two to three times normal, so a $200 fix on a Tuesday can become $1,200 to $2,000 on a Saturday night.
 
-The studio's own [maintenance and care plans](/services/maintenance-care/) cover uptime monitoring, security and dependency updates, backups and a set number of update hours each month, indicatively {{price:care}} a month excluding 18% GST. That range is a draft, not a quote, and a fixed quote is confirmed in writing after a call.
+The studio's own [maintenance and care plans](/services/maintenance-care/) cover uptime monitoring, security and dependency updates, backups and a set number of update hours each month. A care plan is quoted to your requirements, excluding GST, and a fixed quote is confirmed in writing after a call.
 
 ## Who Should Own Each Account
 
@@ -121,7 +121,7 @@ A small site's running bill rises about a quarter between year one and year two 
 
 Year one at the low end is 0 + 47.88 + 216 + 70 = 333.88, and at the high end 0 + 47.88 + 216 + 89 = 352.88. Year two is 10 + 119.88 + 216 + 70 = 415.88 and 15 + 119.88 + 216 + 89 = 439.88. The rise is $82.00 to $87.00, or about 25% of year one.
 
-Maintenance is not in the table. Adding Web Cost Estimator's $50 to $300 a month care plan, which is $600 to $3,600 a year at twelve months, shows why that line decides the total. Use the [website cost calculator](/tools/website-cost-calculator/) for a build estimate, then add your own running lines.
+Maintenance is not in the table. Adding Web Cost Estimator's $50 to $300 a month care plan, which is $600 to $3,600 a year at twelve months, shows why that line decides the total. Ask for a written build quote, then add your own running lines.
 
 IZI Digital Marketing models a similar pattern for Malaysia: hidden costs add about 110% to a build-only quote over three years, about 60% to a standard quote and about 20% to a fully itemised one. It calls these planning assumptions, not measured results, and advises a 15% to 25% buffer on an itemised quote.
 
@@ -129,7 +129,7 @@ IZI Digital Marketing models a similar pattern for Malaysia: hidden costs add ab
 
 Documented as of 17 November 2026: each source gives its own dated prices in dollars, pounds or euros, every source sells hosting, builds or estimating tools, and none gives an Indian rupee price for a domain, host or mailbox.
 
-My reading: the 25% rise is an illustration, not a forecast for your site. Taxes can add to the jump, since IZI notes Malaysia charges 8% service tax on digital services from foreign providers and the studio's own prices exclude 18% GST, so ask your accountant how renewals billed in dollars are taxed in India.
+My reading: the 25% rise is an illustration, not a forecast for your site. Taxes can add to the jump, since IZI notes Malaysia charges 8% service tax on digital services from foreign providers and Elyx's own prices exclude 18% GST, so ask your accountant how renewals billed in dollars are taxed in India.
 
 ## Free Website, No Hidden Fees: What to Check
 
@@ -167,7 +167,7 @@ Before signing, ask these questions in writing, adapted from IZI Digital Marketi
 5. Is migration from an old site included?
 6. What does aftercare cost once the warranty ends, and what changes at 10,000 visits a month?
 
-For the next step, run the same list against two quotes and use the [website launch checklist](/tools/website-launch-checklist/) before go-live. If you want a studio to scope the build and the running bill together, the [web development service](/services/web-development/) starts with a call and a written quote, and the [pricing page](/pricing/) shows indicative ranges that stay draft until a quote is confirmed.
+For the next step, run the same list against two quotes and use the [website launch checklist](/tools/website-launch-checklist/) before go-live. If you want a studio to scope the build and the running bill together, the [web development service](/services/web-development/) starts with a call and a written quote, and the [pricing page](/pricing/) explains how Elyx quotes.
 
 ## Sources
 
@@ -211,4 +211,4 @@ Not for long. The free part is usually the first year, and Web Cost Estimator sa
 
 ### How much does a website cost in India?
 
-The studio's indicative ranges are {{price:landing}} for a landing page and {{price:website}} for a business website, excluding 18% GST. These are draft ranges, never a quote, and a fixed quote is confirmed in writing after a call. Running costs are extra.
+Elyx engagements start from {{start}}, excluding GST. A landing page or a business website is quoted to your requirements, and a fixed quote is confirmed in writing after a call. Running costs are extra.

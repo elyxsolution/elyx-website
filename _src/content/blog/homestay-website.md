@@ -61,9 +61,9 @@ Homeyhuts also describes selling one property as single rooms, room combinations
 
 A template is enough for a single-room homestay with a WhatsApp button, and a custom build earns its cost once you need a calendar, payments and several room types. The template results we read on 16 November 2026 were mostly Framer templates and a WordPress theme with a homestay layout. A template gives you a look; it does not by itself give you availability, deposits or OTA sync, so check each of those separately.
 
-The studio's draft ranges, from the site's price data, are {{price:landing}} for a one-page site with an enquiry form and WhatsApp button, and {{price:website}} for a business site of up to ten pages with a CMS, Google Maps and SEO foundations. Typical timelines are {{weeks:landing}} and {{weeks:website}}. These are indicative, never a quote, exclusive of 18% GST, and a fixed quote is confirmed in writing after a call.
+At Elyx, a one-page site with an enquiry form and WhatsApp button usually takes {{weeks:landing}}, and a business site of up to ten pages with a CMS, Google Maps and SEO foundations usually takes {{weeks:website}}. Engagements start from {{start}}, exclusive of GST, and a fixed quote tailored to your requirements is confirmed in writing after a call.
 
-Hotels and resorts differ from a homestay in structure, not in principle. They have more room types, seasonal rates, packages and group enquiries, so they sit higher on the booking table above. Online booking and UPI and card payments are separate options in the [website cost calculator](/tools/website-cost-calculator/), so you can price a site with and without them.
+Hotels and resorts differ from a homestay in structure, not in principle. They have more room types, seasonal rates, packages and group enquiries, so they sit higher on the booking table above. Online booking and UPI and card payments are scoped as separate options, so you can ask for a quote with and without them.
 
 ## Homestay Website Design: The Sections a Guest Needs
 
@@ -83,7 +83,7 @@ The text we extracted from Homestays of India includes template code that builds
 
 UPI deposits suit Indian guests, but none of the five pages we read documents UPI, so confirm it with your booking tool or payment gateway before you promise it. MakeMyTrip says its payment gateway is secure, and Homeyhuts says its direct booking site accepts secure online payments and tracks payment status. Neither names UPI in the text we read.
 
-What the studio states is narrower and first-hand: it can add UPI and card payments through a payment gateway on a build, and the calculator lists "UPI & card payments" as a separate option. A simple deposit flow looks like this, and it is my design, not a documented standard.
+What the studio states is narrower and first-hand: it can add UPI and card payments through a payment gateway on a build, and treats it as a separate option in the scope. A simple deposit flow looks like this, and it is my design, not a documented standard.
 
 1. The guest picks dates and the site holds them for a short, fixed time.
 2. The guest pays a deposit by UPI, and the booking is confirmed on screen.
@@ -152,7 +152,7 @@ Run your own commission sum first, then choose the lightest booking setup that s
 - [ ] I have a shot list and web-sized photos.
 - [ ] I checked registration with my state tourism department.
 
-If you want a site built around that setup, [the studio's web development service](/services/web-development/) covers business sites with WhatsApp, Maps and SEO foundations, and the [pricing page](/pricing/) shows the draft ranges. The studio's listed work includes no homestay build, so scope yours on a call.
+If you want a site built around that setup, [the studio's web development service](/services/web-development/) covers business sites with WhatsApp, Maps and SEO foundations, and the [pricing page](/pricing/) explains how it quotes. The studio's listed work includes no homestay build, so scope yours on a call.
 
 ## Sources
 
@@ -202,4 +202,4 @@ There is no sourced number, but cover each room, the food, the view, the host an
 
 ### How much does a homestay website cost in India?
 
-The studio's draft range is {{price:landing}} for a one-page site and {{price:website}} for a business site of up to ten pages, excluding 18% GST. Booking and UPI payments are options in the calculator. These are indicative, never a quote, and a fixed quote is confirmed in writing after a call.
+Elyx engagements start from {{start}}, excluding GST. A one-page site or a business site of up to ten pages is quoted to your requirements, booking and UPI payments are scoped as options, and a fixed quote is confirmed in writing after a call.

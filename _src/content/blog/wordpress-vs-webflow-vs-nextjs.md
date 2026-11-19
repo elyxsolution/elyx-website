@@ -62,7 +62,7 @@ The page prints 54,800 for the WordPress top end, 4,000 below my sum, so treat t
 
 For an Indian reading, Instabizweb's year-one table gives ratios. Dividing its Next.js totals by its WordPress totals gives about 2.0 at the low end (3.4 over 1.7) and 2.6 at the high end (10.7 over 4.1), and Webflow comes out about 1.1 times WordPress. The page states these in lakh rupees for a 5 to 15 page site, and they are the agency's own estimates.
 
-For scale, the studio's indicative range for a business site of five to ten pages with a CMS is {{price:website}}, with a timeline of {{weeks:website}}. It excludes 18% GST, it is a draft and never a quote, and a fixed quote is confirmed in writing after a call. The range is not broken down by platform; the [pricing page](/pricing/) shows every option.
+For scale, a business site of five to ten pages with a CMS usually takes {{weeks:website}} at Elyx. Engagements start from {{start}}, excluding GST, and a fixed quote tailored to your requirements is confirmed in writing after a call. Quotes are not broken down by platform; the [pricing page](/pricing/) explains how Elyx quotes.
 
 ## Speed: What the Sources Claim and What Google Measures
 

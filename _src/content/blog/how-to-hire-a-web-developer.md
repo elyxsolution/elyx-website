@@ -65,7 +65,7 @@ Published hourly rates for a web developer run from about $10 to over $100 depen
 
 Rates are not prices. A $10 hour is cheap only if the job takes few hours, and the sources do not say how many hours a business site takes, so I will not guess.
 
-Studios quote by project instead. The studio's own draft price data, which is indicative and never a quote, puts a landing page at {{price:landing}} ({{weeks:landing}}) and a 5 to 10 page business website at {{price:website}} ({{weeks:website}}), excluding 18% GST on software services. A fixed quote is confirmed in writing after a call. See [Elyx Solutions web development](/services/web-development/), the [pricing page](/pricing/) and the [website cost calculator](/tools/website-cost-calculator/) for the other ranges.
+Studios quote by project instead. At Elyx Solutions, a landing page usually takes {{weeks:landing}} and a 5 to 10 page business website {{weeks:website}}. Engagements start from {{start}}, excluding GST, and a fixed quote tailored to your requirements is confirmed in writing after a call. See [Elyx Solutions web development](/services/web-development/) and the [pricing page](/pricing/) for how that works.
 
 ## The 12 Questions to Ask Before You Hire
 
@@ -127,7 +127,7 @@ A web developer contract should fix the scope, the price, the payment milestones
 Copy this checklist into your agreement:
 
 - [ ] **Scope.** Pages, features, integrations, who writes the copy, and what is out of scope.
-- [ ] **Price and GST.** A fixed price or an hours cap, and whether GST is included. The studio's price data notes 18% GST on software services as of November 2026, so a quote of 100 becomes an invoice of 118.
+- [ ] **Price and GST.** A fixed price or an hours cap, and whether GST is included. Software services carry 18% GST as of November 2026, so a quote of 100 becomes an invoice of 118.
 - [ ] **Milestones.** Each payment tied to something you can open and test, with the last part due on acceptance.
 - [ ] **Ownership.** Code, design files, domain, hosting and analytics accounts registered in your name.
 - [ ] **Revisions.** A stated number of feedback rounds and a priced process for changes after that.
@@ -207,7 +207,7 @@ If you want to put the studio through the same questions, its [web development s
 
 ### How much does it cost to hire a web developer in India?
 
-Published hourly rates range from about $10 on general marketplaces to $60 to $100+ through vetted networks, per Upwork and Arc as read on 17 November 2026. The studio's draft price data gives project ranges through the pricing page, which are indicative and never a quote. Ask every candidate for a written total, not just a rate.
+Published hourly rates range from about $10 on general marketplaces to $60 to $100+ through vetted networks, per Upwork and Arc as read on 17 November 2026. Elyx quotes by project rather than by the hour, as its [pricing page](/pricing/) explains. Ask every candidate for a written total, not just a rate.
 
 ### How do I hire a freelance web developer?
 

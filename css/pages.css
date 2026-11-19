@@ -90,6 +90,11 @@ a.fcard--link { display: block; }
 .casecard__shot { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: top center; transition: transform .8s var(--ease); }
 .casecard--shot:hover .casecard__shot { transform: scale(1.035); }
 .casecard--shot .casecard__cat { z-index: 1; color: var(--ink); background: rgba(255,255,255,.88); border: 1px solid var(--line); }
+.quoteblock { display: flex; flex-wrap: wrap; align-items: center; gap: 22px 40px; margin-top: 10px; padding: 28px 32px; background: #fff; border: 1px solid var(--line); border-radius: var(--r); }
+.quoteblock__price { display: flex; flex-direction: column; gap: 4px; }
+.quoteblock__k { font-family: var(--sans); font-size: 11px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-faint); }
+.quoteblock__n { font-family: var(--serif); font-size: clamp(40px, 5vw, 56px); line-height: 1; letter-spacing: -.03em; color: var(--ink); }
+.quoteblock__t { flex: 1 1 320px; margin: 0; font-family: var(--sans); font-size: 15px; line-height: 1.6; color: var(--ink-soft); }
 .casecard__body { padding: 24px; display: flex; flex-direction: column; gap: 8px; }
 .casecard__label { font-family: var(--sans); font-size: 11px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--blue); }
 .casecard h3 { font-family: var(--serif); font-size: 27px; letter-spacing: -.02em; line-height: 1.05; }

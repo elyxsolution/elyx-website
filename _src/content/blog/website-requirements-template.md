@@ -82,23 +82,23 @@ This is the template: copy the first two columns of each table into a Google Doc
 
 | Field | What to write | Filled example (fictional) |
 |---|---|---|
-| Budget | A range, and whether GST is included | Within the indicative range for a business website ({{price:website}}), plus 18% GST |
+| Budget | A range, and whether GST is included | A range you are comfortable with for a business website, plus 18% GST |
 | Launch date and reason | A date and what it is tied to | Before the next batch enrolment opens |
 | Decision maker | One name, and who else must be consulted | The founder; the academic head is consulted |
 | After launch | Support, updates, who is called | A monthly care plan quote requested |
 
 ## Specific Requirements for a Website: Which Answers Move the Price and Timeline
 
-The answers that move a quote most are page count, payments or booking, who writes the content, and how fast you need it. The studio's web development page lists exactly those as what moves the price. As of November 2026, the site's price data is a draft, so every range below is indicative, never a quote, and a fixed quote is confirmed in writing after a call.
+The answers that move a quote most are page count, payments or booking, who writes the content, and how fast you need it. The studio's web development page lists exactly those as what moves the price. Elyx engagements start from {{start}}, and a fixed quote tailored to your requirements is confirmed in writing after a call. The table shows how long each build usually takes and which brief fields move the quote.
 
-| What you are building | Indicative range | Typical time | Brief fields that move it |
-|---|---|---|---|
-| Landing page | {{price:landing}} | {{weeks:landing}} | The one action, enquiry routes, who writes the words |
-| Business website (5 to 10 pages) | {{price:website}} | {{weeks:website}} | Pages at launch, editing, Maps, languages |
-| E-commerce store | {{price:ecommerce}} | {{weeks:ecommerce}} | Payments, catalogue size, accounts |
-| Custom web app | {{price:webapp}} | {{weeks:webapp}} | Logins, dashboards, integrations |
+| What you are building | Typical time | Brief fields that move it |
+|---|---|---|
+| Landing page | {{weeks:landing}} | The one action, enquiry routes, who writes the words |
+| Business website (5 to 10 pages) | {{weeks:website}} | Pages at launch, editing, Maps, languages |
+| E-commerce store | {{weeks:ecommerce}} | Payments, catalogue size, accounts |
+| Custom web app | {{weeks:webapp}} | Logins, dashboards, integrations |
 
-Ranges exclude 18% GST. The [website cost calculator](/tools/website-cost-calculator/) lists content management, booking, UPI and card payments, WhatsApp lead flow, multiple languages, copywriting and SEO setup as separate options, so each "yes" in your brief has a visible cost. The [pricing page](/pricing/) shows every range.
+Prices exclude GST. Content management, booking, UPI and card payments, WhatsApp lead flow, multiple languages, copywriting and SEO setup are scoped as separate options, so each "yes" in your brief changes the quote. The [pricing page](/pricing/) explains how Elyx quotes.
 
 ## Website Development Requirements Document: What a Public-Sector Version Asks For
 
@@ -206,7 +206,7 @@ Copy the first two columns of each table into a document, answer in the order of
 
 ### How much does it cost to buy a website template?
 
-My research has no price data for theme marketplaces, so check the seller's own page. For a site built for you, the indicative range is {{price:landing}} for a landing page or {{price:website}} for a business website, excluding 18% GST. Those are draft ranges, never a quote.
+My research has no price data for theme marketplaces, so check the seller's own page. For a site built for you, Elyx engagements start from {{start}}, excluding GST, and a landing page or a business website is quoted to your requirements.
 
 ### How long should a website brief be?
 

@@ -40,9 +40,9 @@ The same two sources describe the fix: a short discovery step that ends in a wri
 
 For flag 7, WRTeam lists four explanations for a price that looks too good: underestimated scope that will be billed later, very junior staff, a project pushed behind better-paying clients, or skipped testing. Techprosense names hidden costs revealed after the project starts. WRTeam adds that the cheapest quote is not always wrong, but the vendor should be able to explain it.
 
-Indian quotes add one trap: GST. The studio's price data says its ranges exclude 18% GST on software services, as of November 2026. Worked example, with made-up numbers: Quote A says 100 plus GST, and Quote B says 112 all-in. A comes to 100 x 1.18 = 118, so B is cheaper by 6, which is 6 / 118 = about 5%.
+Indian quotes add one trap: GST. Elyx's quotes exclude 18% GST on software services, as of November 2026. Worked example, with made-up numbers: Quote A says 100 plus GST, and Quote B says 112 all-in. A comes to 100 x 1.18 = 118, so B is cheaper by 6, which is 6 / 118 = about 5%.
 
-Use a published range as a sanity check, not a verdict. The studio's own indicative range for a 5 to 10 page business website is {{price:website}} in {{weeks:website}}, excluding GST. That data is a draft, so it is never a quote, and a fixed quote is confirmed in writing after a call. For other project types, the [pricing page](/pricing/) and the [website cost calculator](/tools/website-cost-calculator/) show the rest.
+Use published ranges from several vendors as a sanity check, not a verdict. Elyx does not publish fixed prices: a 5 to 10 page business website usually takes {{weeks:website}}, engagements start from {{start}}, excluding GST, and a fixed quote tailored to your requirements is confirmed in writing after a call. The [pricing page](/pricing/) explains how Elyx quotes.
 
 ## Red Flags in the Portfolio: Screenshots and No One to Call
 
@@ -183,7 +183,7 @@ WRTeam says more than two or three flags makes the risk real, and Gramosoft says
 
 ### How much should I pay upfront for a website?
 
-Pay a modest advance and tie later payments to things you can check. Gramosoft and WRTeam both warn against 50% or more upfront, and Gramosoft suggests holding the last share until a short warranty ends. A fixed quote is confirmed in writing, with GST at 18% on top of studio ranges.
+Pay a modest advance and tie later payments to things you can check. Gramosoft and WRTeam both warn against 50% or more upfront, and Gramosoft suggests holding the last share until a short warranty ends. A fixed quote is confirmed in writing, with GST at 18% on top.
 
 ### Is a very cheap quote always a red flag?
 

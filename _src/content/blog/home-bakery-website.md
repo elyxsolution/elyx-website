@@ -72,7 +72,7 @@ The two sources disagree on Square's rate: Bakingsubs gives 2.9% + $0.30 where F
 
 ## UPI Payments on a Home Bakery Website
 
-UPI is the payment method most Indian customers will expect, yet none of the pages we read documents it, so confirm UPI support before you pick a tool. The studio's coaching page says it can add UPI and card payments through a payment gateway, with receipts. Its calculator lists UPI and card payments as a separate option.
+UPI is the payment method most Indian customers will expect, yet none of the pages we read documents it, so confirm UPI support before you pick a tool. The studio's coaching page says it can add UPI and card payments through a payment gateway, with receipts. It treats UPI and card payments as a separate option in the scope.
 
 This table is my framework for choosing how to collect money, not a sourced benchmark.
 
@@ -109,7 +109,7 @@ Make the pre-filled message do the intake work. Ask it to carry:
 - the area or PIN code
 - the customer's name
 
-The calculator prices a WhatsApp lead flow as an option.
+A WhatsApp lead flow is scoped as an option.
 
 ## Delivery Areas, Pickup Windows and Lead Times
 
@@ -137,19 +137,19 @@ For being found, Bakingsubs advises setting up a Google Business Profile and sho
 
 ## What a Home Bakery Website Costs in India
 
-Under the studio's draft price data, a one-page bakery site sits in the landing range, a site with a menu, CMS and map in the website range, and direct ordering with UPI or card payments in the e-commerce range. The ranges below are indicative, never a quote, and a fixed quote is confirmed in writing after a call.
+At Elyx, a one-page bakery site is a landing page build, a site with a menu, CMS and map is a business website, and direct ordering with UPI or card payments is an e-commerce build. Engagements start from {{start}}, and a fixed quote tailored to your requirements is confirmed in writing after a call. The table shows how long each usually takes.
 
-| Build | Indicative range | Typical time |
-|---|---|---|
-| Landing page, menu, WhatsApp button | {{price:landing}} | {{weeks:landing}} |
-| Business website, 10 pages, CMS, map | {{price:website}} | {{weeks:website}} |
-| E-commerce store, UPI and card payments | {{price:ecommerce}} | {{weeks:ecommerce}} |
+| Build | Typical time |
+|---|---|
+| Landing page, menu, WhatsApp button | {{weeks:landing}} |
+| Business website, 10 pages, CMS, map | {{weeks:website}} |
+| E-commerce store, UPI and card payments | {{weeks:ecommerce}} |
 
-Ranges exclude 18% GST. The studio says the price moves with the number of pages, whether you need online payments or booking, whether it writes the copy and how fast you need it live. The calculator prices the WhatsApp flow, UPI and card payments and CMS as separate options.
+Prices exclude GST. The studio says the price moves with the number of pages, whether you need online payments or booking, whether it writes the copy and how fast you need it live. The WhatsApp flow, UPI and card payments and CMS are scoped as separate options.
 
-A builder is the better start when you take a handful of orders a week. Bakingsubs expects $0 to $30 a month for a builder, before payment fees. A custom build earns its cost when you need your own domain, UPI and WhatsApp in one flow and delivery rules a template cannot hold, and a care plan is {{price:care}} a month.
+A builder is the better start when you take a handful of orders a week. Bakingsubs expects $0 to $30 a month for a builder, before payment fees. A custom build earns its cost when you need your own domain, UPI and WhatsApp in one flow and delivery rules a template cannot hold, and a monthly care plan covers its upkeep.
 
-The studio's published work includes no bakery. The closest proof is [Malnad Stories](/work/malnad-stories/), an e-commerce platform with secure online checkout, and the restaurants page says the same approach applies to food ordering. The [pricing page](/pricing/) and the [website cost calculator](/tools/website-cost-calculator/) show every range.
+The studio's published work includes no bakery. The closest proof is [Malnad Stories](/work/malnad-stories/), an e-commerce platform with secure online checkout, and the restaurants page says the same approach applies to food ordering. The [pricing page](/pricing/) explains how Elyx quotes.
 
 ## What Usually Goes Wrong With Home Bakery Ordering
 
@@ -228,7 +228,7 @@ It needs a menu with prices, how to order, delivery and pickup, ingredients and 
 
 ### How much should a home baker spend on a website?
 
-A builder is the lower-cost start: Bakingsubs expects $0 to $30 a month, before payment fees. The studio's draft ranges are {{price:landing}} for a landing page and {{price:ecommerce}} for a store, excluding GST. These are indicative, never a quote.
+A builder is the lower-cost start: Bakingsubs expects $0 to $30 a month, before payment fees. Elyx engagements start from {{start}}, excluding GST, and a landing page or a store is quoted to your requirements.
 
 ### Is Square Online really free for home bakers?
 

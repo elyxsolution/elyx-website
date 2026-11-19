@@ -62,7 +62,7 @@ Count pages before you ask for a quote, because catalogue size decides the build
 - 3 trust pages (capacity, quality and certificates, clients and export markets), plus 1 downloads page: 4 pages.
 - Total: 3 + 6 + 4 = 13 pages, before any product page.
 
-The studio's business website range covers up to 10 pages with a CMS, so 13 pages is over it, and the [website cost calculator](/tools/website-cost-calculator/) lets you add extra pages. If those categories hold 40 products with their own pages, my reading is that you are closer to the studio's e-commerce range, which lists a catalogue and an admin panel, even if you take no payment online.
+The studio's business website build covers up to 10 pages with a CMS, so 13 pages is over it, and extra pages are scoped on top. If those categories hold 40 products with their own pages, my reading is that you are closer to the studio's e-commerce build, which lists a catalogue and an admin panel, even if you take no payment online.
 
 ### Gate Downloads or Leave Them Open?
 
@@ -96,7 +96,7 @@ The sources do not say which languages buyers use or how much translation lifts 
 | One or two countries send orders | Translate home, category, trust and RFQ pages | Technical terms |
 | Many countries, little data | English site, then read your enquiry log | Translating blind |
 
-Have a native speaker who knows your trade check technical terms, because a wrong term on a specification page costs more than no translation. The calculator lists multiple languages as a separate priced option, so fix the language list before you request a quote.
+Have a native speaker who knows your trade check technical terms, because a wrong term on a specification page costs more than no translation. Multiple languages are scoped as a separate option, so fix the language list before you request a quote.
 
 ## Trust Pages: Capacity, Certificates and Export Record
 
@@ -148,17 +148,17 @@ Most manufacturer sites fail because they describe the company instead of qualif
 | No person to reach | Form only | Phone, WhatsApp, named contact |
 | Judged on monthly leads | Short reporting cycle | Review per quarter, by country |
 
-## What a Manufacturer's Website Costs, in Indicative Ranges
+## What a Manufacturer's Website Costs
 
-The cost depends on how many pages and products you list and whether buyers log in, and the studio prices each step separately. These figures come from this site's price data, which is a draft: every range is indicative, never a quote, and a fixed quote is confirmed in writing after a call.
+The cost depends on how many pages and products you list and whether buyers log in, and the studio scopes each step separately. Elyx engagements start from {{start}}, and a fixed quote tailored to your requirements is confirmed in writing after a call. This is what each build usually involves.
 
-- **Landing page.** One page for a single product line or a trade-fair campaign, with an enquiry form and WhatsApp button: {{price:landing}}, usually {{weeks:landing}}.
-- **Business website.** Up to 10 pages with a CMS and Google Maps, enough for a small range and the trust pages: {{price:website}}, usually {{weeks:website}}.
-- **E-commerce store.** Catalogue, admin panel and payments, the closest range for dozens of products: {{price:ecommerce}}, usually {{weeks:ecommerce}}.
-- **Custom web app.** Logins and dashboards, for a dealer portal or quote tool: {{price:webapp}}, usually {{weeks:webapp}}.
-- **Care plan.** Monitoring, updates and monthly update hours: {{price:care}} a month.
+- **Landing page.** One page for a single product line or a trade-fair campaign, with an enquiry form and WhatsApp button, usually {{weeks:landing}}.
+- **Business website.** Up to 10 pages with a CMS and Google Maps, enough for a small range and the trust pages, usually {{weeks:website}}.
+- **E-commerce store.** Catalogue, admin panel and payments, the closest build for dozens of products, usually {{weeks:ecommerce}}.
+- **Custom web app.** Logins and dashboards, for a dealer portal or quote tool, usually {{weeks:webapp}}.
+- **Care plan.** Monitoring, updates and monthly update hours, billed monthly.
 
-Ranges exclude 18% GST, and extra pages and languages are priced as options. The [pricing page](/pricing/) lists every range.
+Prices exclude GST, and extra pages and languages are scoped as options. The [pricing page](/pricing/) explains how Elyx quotes.
 
 ## What Is Documented and What Is My Reading
 
@@ -220,7 +220,7 @@ Show only the certifications you hold, with the issuer, number and validity date
 
 ### How much does a manufacturing company website cost in India?
 
-A small range with trust pages is closest to the business website at {{price:website}}, and a large catalogue is closer to the e-commerce store at {{price:ecommerce}}. A one-product campaign page is {{price:landing}}. These are indicative draft ranges, exclude 18% GST and are never a quote; a fixed quote is confirmed in writing after a call.
+A small range with trust pages is closest to a business website, a large catalogue is closer to an e-commerce store, and a one-product campaign page is a landing page. Elyx engagements start from {{start}}, excluding GST, and a fixed quote tailored to your requirements is confirmed in writing after a call.
 
 ### How long before a manufacturer's website brings enquiries?
 

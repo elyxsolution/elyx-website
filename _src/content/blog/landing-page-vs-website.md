@@ -35,7 +35,7 @@ The landing page vs website difference shows up in seven criteria: goal, navigat
 | Lifespan | Often tied to a campaign | A long-term home base |
 | Build time | Hours to two weeks | Two to four weeks |
 
-The build times combine wpnext (a single page can take hours), BoostLab (5 to 7 working days against 2 to 3 weeks) and the studio's own indicative ranges. Zoho, Heyflow and Wix all conclude that most businesses end up with both.
+The build times combine wpnext (a single page can take hours), BoostLab (5 to 7 working days against 2 to 3 weeks) and the studio's own usual timelines. Zoho, Heyflow and Wix all conclude that most businesses end up with both.
 
 Wix adds that a landing page is not a substitute for a website, and it cites a VistaPrint and Wix survey in which 81% of consumers say a branded website matters and 15% treat its absence as a dealbreaker. That is a vendor-run, global survey, and the text I have shows no Indian split.
 
@@ -68,11 +68,11 @@ A landing page costs less and ships faster than a website, and the public price 
 | BoostLab (read Nov 2026) | from €700 | from €1,700 | 5 to 7 working days / 2 to 3 weeks |
 | Creative Cult (as of Oct 2026) | from $900 | from $2,000, up to 5 pages | not stated |
 | OnWebSol (May 2026) | from $149 | from $199 (5 pages), $449 (10 pages) | 48 hours / about 5 days |
-| Elyx Solutions (indicative, draft) | {{price:landing}} | {{price:website}} | {{weeks:landing}} / {{weeks:website}} |
+| Elyx Solutions (from {{start}}, quoted to your requirements) | Quoted to scope | Quoted to scope | {{weeks:landing}} / {{weeks:website}} |
 
-The ratios, with inputs shown: BoostLab 1,700 ÷ 700 = 2.43; Creative Cult 2,000 ÷ 900 = 2.22; OnWebSol 199 ÷ 149 = 1.34 for five pages and 449 ÷ 149 = 3.01 for ten. On the studio's draft data the top of the landing range is where the website range begins, so the gap is a step and not a cliff.
+The ratios, with inputs shown: BoostLab 1,700 ÷ 700 = 2.43; Creative Cult 2,000 ÷ 900 = 2.22; OnWebSol 199 ÷ 149 = 1.34 for five pages and 449 ÷ 149 = 3.01 for ten.
 
-The figures for Elyx Solutions, which builds both through its [web development service](/services/web-development/), exclude 18% GST, are indicative and never a quote, and a fixed quote is confirmed in writing after a call. Options such as WhatsApp lead flow, languages and copywriting are priced separately in the [website cost calculator](/tools/website-cost-calculator/), and the [pricing page](/pricing/) shows every range. The data does not say a landing page built earlier is credited against a later website, so ask for that in writing.
+Elyx Solutions builds both through its [web development service](/services/web-development/). It starts engagements from {{start}}, excluding GST, and a fixed quote tailored to your requirements is confirmed in writing after a call. Options such as WhatsApp lead flow, languages and copywriting are scoped separately, and the [pricing page](/pricing/) explains how Elyx quotes. Elyx does not say a landing page built earlier is credited against a later website, so ask for that in writing.
 
 ## Landing Page or Website for Ad Campaigns
 
@@ -147,7 +147,7 @@ Answer the four questions in writing today, then pick the row in the situation t
 
 - [ ] I named one visitor, one action and one traffic source, or I know I need search.
 - [ ] I set a budget range and added 18% GST.
-- [ ] I checked the ranges on the [pricing page](/pricing/).
+- [ ] I asked for a written quote tailored to my needs, as the [pricing page](/pricing/) describes.
 - [ ] My domain is in my own name.
 - [ ] I decided how I will count form, WhatsApp and call enquiries.
 - [ ] I listed the next three pages I would add, in order.
@@ -205,4 +205,4 @@ Rarely, because they cover one topic and are built for ads or email. WPNext and 
 
 ### How much does a landing page cost compared with a website in India?
 
-On the studio's draft, indicative data a landing page is {{price:landing}} and a business website is {{price:website}}, excluding 18% GST. Those are ranges and never a quote, and a fixed quote is confirmed in writing after a call. Public lists from BoostLab, Creative Cult and OnWebSol put a first website at about 1.3 to 3 times a landing page.
+Elyx engagements start from {{start}}, excluding GST, and a landing page or a business website is quoted to your requirements, in writing, after a call. Public lists from BoostLab, Creative Cult and OnWebSol put a first website at about 1.3 to 3 times a landing page.

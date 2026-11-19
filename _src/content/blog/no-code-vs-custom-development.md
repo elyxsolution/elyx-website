@@ -86,7 +86,7 @@ Published figures for a custom MVP run from about $5,000 to over $100,000, becau
 
 The upkeep figures disagree most. On VibStack's build range, Appfarm's 15 to 25 percent gives $1,500 to $3,750 a year (15 percent of 10,000, 25 percent of 15,000), close to VibStack's $1,200 to $3,600 (100 and 300, times 12). App369's $1,000 a month or more implies much larger builds.
 
-Platform plans are priced in dollars, so your rupee bill also moves with the exchange rate. For Indian budgets in lakh, the [SaaS MVP cost article](/blog/saas-development-cost-india/) gathers agency ranges. The site's own draft range for a SaaS MVP is {{price:saas}} over {{weeks:saas}}: indicative only, excluding 18% GST, and a fixed quote is confirmed in writing after a call (see the [pricing page](/pricing/)).
+Platform plans are priced in dollars, so your rupee bill also moves with the exchange rate. For Indian budgets in lakh, the [SaaS MVP cost article](/blog/saas-development-cost-india/) gathers agency ranges. At Elyx a SaaS MVP usually takes {{weeks:saas}}, and engagements start from {{start}}, excluding GST. A fixed quote tailored to your requirements is confirmed in writing after a call (see the [pricing page](/pricing/)).
 
 ## Worked Example: When The Platform Bill Overtakes The Build
 

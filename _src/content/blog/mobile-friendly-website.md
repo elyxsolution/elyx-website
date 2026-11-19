@@ -115,7 +115,7 @@ A builder or template suits a small, simple site, while a custom build suits a s
 
 Check every page in phone view before you publish, whichever route you take. The comparison of [Wix, WordPress and a custom site](/blog/wix-vs-wordpress-india/) notes that Wix keeps a separate mobile layout you may need to rearrange. To choose by scope, read [landing page or full website](/blog/landing-page-vs-website/) first.
 
-On the site's draft, indicative data, a landing page is {{price:landing}} and a business website is {{price:website}}, excluding 18% GST. The landing page tier lists mobile-first design among its inclusions. These ranges are never a quote, and a fixed quote is confirmed in writing after a call. The [pricing page](/pricing/) shows the full table.
+Elyx engagements start from {{start}}, excluding GST, and a landing page or a business website is quoted to your requirements. The landing page package lists mobile-first design among its inclusions. A fixed quote is confirmed in writing after a call, and the [pricing page](/pricing/) explains how.
 
 ## What Usually Goes Wrong on Phones
 
@@ -209,4 +209,4 @@ Often a fast website is enough, according to the studio's app development page. 
 
 ### How much does a mobile friendly website cost in India?
 
-On the studio's draft, indicative data, a landing page is {{price:landing}} and a business website is {{price:website}}, excluding 18% GST. These are never a quote, and a fixed quote is confirmed in writing after a call. The price depends on pages, booking or payments, and who writes the copy.
+Elyx engagements start from {{start}}, excluding GST. A fixed quote is confirmed in writing after a call, and the price depends on pages, booking or payments, and who writes the copy.

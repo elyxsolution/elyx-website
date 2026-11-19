@@ -16,7 +16,7 @@ module.exports = [
     slug: 'pricing-hiring', name: 'Cost, Pricing & Hiring', topics: 15, group: 'business',
     intro: 'What websites, apps and software really cost in India, how to compare quotes, and how to hire a developer or studio without regretting it.',
     money: '/pricing/', moneyLabel: 'Pricing',
-    card: { headline: 'Want a number for your project, not a range of guesses?', proof: ['Engagements from ₹9,999', 'Fixed quote in writing before work starts', '50% to begin, 50% on delivery'], soft: { label: 'Try the cost calculator', href: '/tools/website-cost-calculator/' }, direct: 'book' }
+    card: { headline: 'Want a quote for your project, not a range of guesses?', proof: ['Engagements from ₹9,999', 'Fixed quote in writing before work starts', '50% to begin, 50% on delivery'], soft: { label: 'Request a tailored quote', href: '/contact.html' }, direct: 'book' }
   },
   {
     slug: 'websites', name: 'Websites: Build, Redesign & Sell Online', topics: 16, group: 'business',

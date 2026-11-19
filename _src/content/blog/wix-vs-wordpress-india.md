@@ -38,11 +38,11 @@ The table builds a three-year total from each source's own rates, excluding GST.
 | Wix Core, dollar reference | HostKarle's US$29.77 a month for 36 months, at 95 rupees to the dollar | about 1,01,800 |
 | WordPress, you maintain it | Hosting 1,000 to 3,000 in year 1, 3,500 to 8,000 in years 2 and 3, plus domain | 10,000 to 22,000 |
 | WordPress, developer maintains it | NeerSoft's ₹40,000 to ₹80,000 a year × 3 | 1,20,000 to 2,40,000 |
-| Custom site by Elyx | Build once at {{price:website}}, plus hosting, domain and optional care | Quote after a call |
+| Custom site by Elyx | One build quoted to your requirements, plus hosting, domain and optional care | Quote after a call |
 
 The licence is not where the gap sits, because the cheap WordPress row assumes your own time is free. Once someone is paid to look after WordPress, one source's range sits above every Wix row, including the dollar-based Core figure. My reading: price Wix by your checkout, and price WordPress by who will do the updates.
 
-The table leaves out payment-gateway fees, paid apps and any premium theme, which Tooltester puts at US$30 to US$60. Renewal prices and the lines nobody quotes are covered in [the hidden costs of a website](/blog/website-hidden-costs/). The Elyx range is indicative, excludes 18% GST and is never a quote: a fixed quote is confirmed in writing after a call.
+The table leaves out payment-gateway fees, paid apps and any premium theme, which Tooltester puts at US$30 to US$60. Renewal prices and the lines nobody quotes are covered in [the hidden costs of a website](/blog/website-hidden-costs/). Elyx engagements start from {{start}}, exclude GST, and a fixed quote tailored to your requirements is confirmed in writing after a call.
 
 ## Where Wix Hits Its Limits, and Where WordPress Does Too
 
@@ -79,9 +79,9 @@ For GST invoices, Daily Web Digest says Wix has India-specific apps in its App M
 
 ## A Custom Website: What It Adds and When Another Option Wins
 
-A custom website adds ownership, speed tuning and a fit to your own workflow, and it costs the most up front, so for a five-page brochure site it is often more than you need. We sell custom builds, so weigh this section accordingly. At Elyx Solutions a business website of up to ten pages is indicatively {{price:website}} and {{weeks:website}}, and a one-page landing page is {{price:landing}}, all excluding 18% GST and never a quote.
+A custom website adds ownership, speed tuning and a fit to your own workflow, and it costs the most up front, so for a five-page brochure site it is often more than you need. We sell custom builds, so weigh this section accordingly. At Elyx Solutions a business website of up to ten pages usually takes {{weeks:website}}, and a one-page landing page {{weeks:landing}}. Engagements start from {{start}}, excluding GST, and every quote is tailored to your requirements.
 
-That range includes a CMS for editing, Google Maps, speed and SEO foundations. We build mostly in React, Next.js and TypeScript, avoid proprietary lock-in, and hand over with a walkthrough so routine edits do not need us. Hosting, domain and any care plan, indicatively {{price:care}} a month, are separate lines.
+That build includes a CMS for editing, Google Maps, speed and SEO foundations. We build mostly in React, Next.js and TypeScript, avoid proprietary lock-in, and hand over with a walkthrough so routine edits do not need us. Hosting, domain and any care plan are separate lines.
 
 Custom wins when you need booking logic, logins, a portal or a checkout shaped to your business, which plugins stretch badly. Wix wins when you will edit weekly yourself, have no budget for a build and expect a small site for years. WordPress wins when you want ownership at a low cost and have someone to maintain it. The [web development service page](/services/web-development/) lists what a build includes.
 
@@ -134,7 +134,7 @@ Most bad outcomes come from comparing the wrong prices, not the wrong platform. 
 
 Spend an hour on four checks before you pay anyone. Write down your page count, whether you sell online, who will edit and what you expect in three years. Open Wix's India checkout for the plan that takes payments and note the billing period, renewal price and GST. Price WordPress hosting at its renewal rate, and name who will update it.
 
-If you then want a custom build or a move off Wix, [Elyx Solutions' web development service](/services/web-development/) starts with a discovery call and a written scope. See the [pricing page](/pricing/) for indicative ranges, which are drafts and not quotes.
+If you then want a custom build or a move off Wix, [Elyx Solutions' web development service](/services/web-development/) starts with a discovery call and a written scope. See the [pricing page](/pricing/) for how Elyx quotes.
 
 ## Sources
 

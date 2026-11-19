@@ -118,9 +118,9 @@ The pools are not the constraint; reaching and convincing buyers is. The listed 
 
 ## What a First Version Costs to Build
 
-A first version of most of these ideas fits the site's draft SaaS MVP range of {{price:saas}}, with a typical timeline of {{weeks:saas}}, and that range is indicative, never a quote. The data is a draft, excludes 18% GST on software services, and a fixed quote is confirmed in writing after a call.
+A first version of most of these ideas fits a SaaS MVP build, which usually takes {{weeks:saas}} at Elyx. Engagements start from {{start}}, excluding GST on software services, and a fixed quote tailored to your requirements is confirmed in writing after a call.
 
-Per the pricing data, the range covers multi-tenant architecture, authentication, billing, admin and analytics, with three modules included. My reading: a clinic booking tool is about three modules (bookings, reminders, clinic admin), and the studio scopes modules after discovery. A single-business internal tool is closer to the web app range of {{price:webapp}}. See [SaaS MVP cost in India](/blog/saas-development-cost-india/) for published agency ranges and the [pricing page](/pricing/) for every draft range.
+A SaaS MVP at Elyx covers multi-tenant architecture, authentication, billing, admin and analytics. My reading: a clinic booking tool is about three modules (bookings, reminders, clinic admin), and the studio scopes modules after discovery. A single-business internal tool is closer to a custom web app. See [SaaS MVP cost in India](/blog/saas-development-cost-india/) for published agency ranges and the [pricing page](/pricing/) for how Elyx quotes.
 
 ## What Usually Goes Wrong
 
@@ -194,7 +194,7 @@ Micro SaaS ideas solve one narrow problem for a small group at a low monthly pri
 
 ### How much does it cost to build a SaaS idea in India?
 
-The site's draft range for a SaaS MVP is {{price:saas}}, over {{weeks:saas}}, indicative and never a quote. It excludes 18% GST, and a fixed quote is confirmed in writing after a call. Published agency ranges are in the [SaaS MVP cost article](/blog/saas-development-cost-india/).
+A SaaS MVP at Elyx usually takes {{weeks:saas}}. Engagements start from {{start}}, excluding GST, and a fixed quote tailored to your requirements is confirmed in writing after a call. Published agency ranges are in the [SaaS MVP cost article](/blog/saas-development-cost-india/).
 
 ### How many customers do I need to earn 1 lakh rupees a month?
 

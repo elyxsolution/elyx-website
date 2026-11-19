@@ -136,7 +136,7 @@ Copy this list into your project notes and tick it before the first customer sig
 
 Write the role grid this week, before any screen exists, and test it with two real customers' job titles. If you want a team to build it, Elyx Solutions' [SaaS development service](/services/saas-development/) covers sign-up, login, invitations, team roles and the permission model, and you sign off the data model and permissions before the build starts.
 
-The site's draft range for a SaaS MVP is {{price:saas}}, with a typical timeline of {{weeks:saas}}. It is indicative only, never a quote, it excludes 18% GST, and a fixed quote is confirmed in writing after a call. See the [pricing page](/pricing/) for the other ranges.
+A SaaS MVP at Elyx has a typical timeline of {{weeks:saas}}. Engagements start from {{start}}, excluding GST, and a fixed quote tailored to your requirements is confirmed in writing after a call. See the [pricing page](/pricing/) for how Elyx quotes.
 
 In our cost article's sources, accounts, roles and authentication take 12 of 120 estimated days, which is 12 / 120 = 10 percent. That is one estimate for one product, so use it as a prompt to ask what a quote includes, not as a benchmark.
 
@@ -181,7 +181,7 @@ Add SSO when a paying customer's IT team requires it, not before. Nimbryx, as re
 
 ### How much does it cost to build authentication and roles?
 
-Published figures vary, and the site's draft SaaS MVP range is {{price:saas}}, indicative and never a quote. In the estimate our cost article uses, accounts, roles and authentication are 12 of 120 days. A fixed quote is confirmed in writing after a call.
+Published figures vary, and Elyx quotes a SaaS MVP to your requirements, with engagements starting from {{start}}. In the estimate our cost article uses, accounts, roles and authentication are 12 of 120 days. A fixed quote is confirmed in writing after a call.
 
 ### Should customers be able to create custom roles?
 

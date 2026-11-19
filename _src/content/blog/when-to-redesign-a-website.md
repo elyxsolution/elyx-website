@@ -137,15 +137,15 @@ Butterfly adds that even a well-run redesign can cause temporary ranking swings,
 
 ## What a Website Redesign Costs and How Long It Takes in India
 
-As of November 2026 the studio's draft price data lists a business website of 5 to 10 pages at {{price:website}} over {{weeks:website}}, and a redesign of a site that size would most likely be quoted against it. That is my reading, not a quote. The ranges below are indicative, exclude 18% GST and are never a quote; a fixed quote is confirmed in writing after a call.
+At Elyx, a business website of 5 to 10 pages usually takes {{weeks:website}}, and a redesign of a site that size would most likely be scoped like it. That is my reading, not a quote. Prices exclude GST, and a fixed quote tailored to your requirements is confirmed in writing after a call. The table shows how long each build usually takes.
 
-| Project | Indicative range | Typical time |
-|---|---|---|
-| Landing page | {{price:landing}} | {{weeks:landing}} |
-| Business website (5 to 10 pages) | {{price:website}} | {{weeks:website}} |
-| E-commerce store | {{price:ecommerce}} | {{weeks:ecommerce}} |
+| Project | Typical time |
+|---|---|
+| Landing page | {{weeks:landing}} |
+| Business website (5 to 10 pages) | {{weeks:website}} |
+| E-commerce store | {{weeks:ecommerce}} |
 
-The studio says engagements start at {{start}} for a focused landing page or redesign, and that the price moves with the number of pages, payments or booking, who writes the copy and how fast you need it. GST is added on top, so multiply a quote by 1.18. The [pricing page](/pricing/) shows every range and the [website cost calculator](/tools/website-cost-calculator/) adds options one by one.
+The studio says engagements start at {{start}} for a focused landing page or redesign, and that the price moves with the number of pages, payments or booking, who writes the copy and how fast you need it. GST is added on top, so multiply a quote by 1.18. The [pricing page](/pricing/) explains how Elyx quotes.
 
 Butterfly's figures describe a different job. Its mid-to-enterprise project work runs to dollar figures of 50,000 to 200,000 or more, and its timelines run from 4 to 8 weeks for a refresh to 14 to 24 for a mid-complexity redesign. It serves mainly government, healthcare, education and not-for-profit bodies, so do not read those as a quote for a clinic or a shop.
 
@@ -210,7 +210,7 @@ Redesign it if the tests show a problem a refresh or revamp cannot clear, such a
 
 ### How much does a website redesign cost?
 
-As of November 2026 the studio's indicative range is {{price:website}} for a business website of 5 to 10 pages and {{price:landing}} for a landing page, excluding 18% GST. These are draft ranges, never a quote, and a fixed quote follows a call.
+Elyx engagements start from {{start}}, excluding GST. A business website of 5 to 10 pages or a landing page is quoted to your requirements, and a fixed quote follows a call.
 
 ### How long does a website redesign take?
 

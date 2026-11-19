@@ -135,15 +135,15 @@ A consent line you could adapt, written by me: "We will use your number only to 
 
 ## Which Real Estate Website to Build, and What It Costs
 
-Choose by how many properties you must keep current: one project needs a landing page, a few projects need a business website, and a searchable inventory needs a custom build. The table maps each type to the nearest line in Elyx's price data. The ranges are a draft, indicative only and never a quote, and they exclude GST, currently 18% on software services.
+Choose by how many properties you must keep current: one project needs a landing page, a few projects need a business website, and a searchable inventory needs a custom build. The table maps each type to the nearest Elyx build and shows how long each usually takes. Elyx engagements start from {{start}}, excluding GST, and every quote is tailored to your requirements.
 
-| Type | Choose it when | Indicative price | Typical time |
-|---|---|---|---|
-| Single-project page | One launch, one team | {{price:landing}} | {{weeks:landing}} |
-| Agent or builder site | Several projects, editable by you | {{price:website}} | {{weeks:website}} |
-| Listings site | Search, filters, admin panel | {{price:webapp}} | {{weeks:webapp}} |
+| Type | Choose it when | Typical time |
+|---|---|---|
+| Single-project page | One launch, one team | {{weeks:landing}} |
+| Agent or builder site | Several projects, editable by you | {{weeks:website}} |
+| Listings site | Search, filters, admin panel | {{weeks:webapp}} |
 
-The third row is my mapping, not an Elyx quote: its real estate page says a full listings site with search, filters and an admin panel is quoted after discovery. A fixed quote is confirmed in writing after a call. The [pricing page](/pricing/) and the [website cost calculator](/tools/website-cost-calculator/) show the ranges in full, and the [real estate page](/websites-for/real-estate/) shows the layout.
+The third row is my mapping: Elyx's real estate page says a full listings site with search, filters and an admin panel is quoted after discovery. A fixed quote is confirmed in writing after a call. The [pricing page](/pricing/) explains how Elyx quotes, and the [real estate page](/websites-for/real-estate/) shows the layout.
 
 ## What Usually Goes Wrong With Real Estate Websites
 
@@ -205,7 +205,7 @@ It should include a page per property or project, a short qualifying form, Whats
 
 ### How much does a real estate website cost in India?
 
-On Elyx's draft, indicative price data, a single-project page is {{price:landing}} and a business website is {{price:website}}, excluding GST. A full listings site is quoted after discovery. A fixed quote is confirmed in writing after a call.
+Elyx engagements start from {{start}}, excluding GST, and a single-project page or a business website is quoted to your requirements. A full listings site is quoted after discovery. A fixed quote is confirmed in writing after a call.
 
 ### How long does it take to build a real estate website?
 

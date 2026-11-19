@@ -9,7 +9,7 @@ author: shreyasmv
 Does my business need an app? Usually not yet, because an app pays off only when customers will open it at least weekly or the job needs push notifications, offline use or phone hardware such as the camera or GPS, and otherwise a faster website does more for the money. The honest qualification is that most app statistics come from firms that sell apps, so the sections below test each figure before using it, and [the app development page on this site](/services/app-development/) starts from the same question.
 
 - **Four tests.** Weekly use, hardware or offline need, time-sensitive alerts and money moving inside the app. One clear yes is the minimum.
-- **Costs.** This site's draft range is {{price:website}} for a business website and {{price:mobile}} for an app, both indicative and before 18% GST.
+- **Costs.** An app costs far more to build and to run than a website. Elyx engagements start from {{start}}, and a website or an app is quoted to your requirements.
 - **Upkeep.** RNF Technologies says to budget 15 to 20 percent of the build price every year, for as long as the app exists.
 - **Middle step.** A website that installs to the home screen tests demand for a fraction of the cost.
 
@@ -43,19 +43,19 @@ If every gate passes, scope one narrow first release. If any gate fails, put the
 
 ## Costs Compared: Website, App and What Follows Launch
 
-A mobile app sits in a much higher price band than a website and keeps costing after launch, while a website's running cost is mostly hosting and content. The table uses this site's draft price data, as of 17 November 2026, excluding 18% GST.
+A mobile app sits in a much higher price band than a website and keeps costing after launch, while a website's running cost is mostly hosting and content. The table compares how long each route usually takes and what it includes. Elyx quotes each one to your requirements, with engagements starting from {{start}}.
 
-| Route | Indicative range | Typical time | What the range includes |
-|---|---|---|---|
-| Landing page | {{price:landing}} | {{weeks:landing}} | 1 page, enquiry form, WhatsApp button |
-| Business website | {{price:website}} | {{weeks:website}} | Up to 10 pages, CMS, Google Maps |
-| E-commerce store | {{price:ecommerce}} | {{weeks:ecommerce}} | Catalogue, cart, UPI and card payments |
-| Custom web app | {{price:webapp}} | {{weeks:webapp}} | Logins, dashboards, your workflow |
-| Mobile app (iOS and Android) | {{price:mobile}} | {{weeks:mobile}} | One codebase, store submission, push notifications |
+| Route | Typical time | What it includes |
+|---|---|---|
+| Landing page | {{weeks:landing}} | 1 page, enquiry form, WhatsApp button |
+| Business website | {{weeks:website}} | Up to 10 pages, CMS, Google Maps |
+| E-commerce store | {{weeks:ecommerce}} | Catalogue, cart, UPI and card payments |
+| Custom web app | {{weeks:webapp}} | Logins, dashboards, your workflow |
+| Mobile app (iOS and Android) | {{weeks:mobile}} | One codebase, store submission, push notifications |
 
-These ranges are indicative, never a quote, and a fixed quote is confirmed in writing after a call. If the first two rows already do the job, an app is an extra cost, not a replacement.
+A fixed quote is confirmed in writing after a call. If the first two rows already do the job, an app is an extra cost, not a replacement.
 
-After launch, RNF says to plan 15 to 20 percent of the build price every year for operating system updates, bug fixes and store compliance. It adds that 51% of App Store apps have not been updated in over a year, which is what an unfunded maintenance line looks like. A website care plan is {{price:care}} a month, indicative, and covers monitoring, security updates, backups and update hours.
+After launch, RNF says to plan 15 to 20 percent of the build price every year for operating system updates, bug fixes and store compliance. It adds that 51% of App Store apps have not been updated in over a year, which is what an unfunded maintenance line looks like. A website care plan covers monitoring, security updates, backups and update hours.
 
 Innowise says Apple and Google may take a 30% cut of app revenue. The research does not say which sales that covers, so check Apple's and Google's own terms before you model it. For a full first-year budget, [how much an app costs in India](/blog/app-development-cost-india/) works through one from nine agency pages.
 
@@ -65,7 +65,7 @@ A progressive web app (PWA) is a website built to behave like an app, and it is 
 
 RNF's advice is to ship one first when frequency is plausible but unproven, then let install and return rates decide whether a native build is worth the money. Native still wins for deep hardware access, background processing and store-only in-app purchases.
 
-This site's app page says a fast, installable-feeling website is often enough. The studio's price data has no separate PWA line, so this page does not price one; ask for a written scope.
+This site's app page says a fast, installable-feeling website is often enough. Elyx does not list a separate PWA package, so ask for a written scope.
 
 ## Worked Example: Would an App Pay Back for a Gym?
 
@@ -79,7 +79,7 @@ On assumed numbers, an app for a 400-member gym fails RNF's 24-month test by abo
 
 The app is short by ₹5.2 − 3.31 = ₹1.89 lakh to ₹5.6 − 3.31 = ₹2.29 lakh. To break even, each retained member would need to add ₹5.2 lakh ÷ (46 × 24 = 1,104 member-months) = about ₹471 a month at the low cost, or ₹5.6 lakh ÷ 1,104 = about ₹507 at the high one.
 
-Replace each input with your own numbers; this site's indicative app range is {{price:mobile}}.
+Replace each input with your own numbers, including the quote you receive for the build.
 
 ## When an App Genuinely Pays Off
 
@@ -152,11 +152,11 @@ Run the checklist, fix the website gaps, and only then ask for a written scope. 
 
 1. **Count.** Pull your top 100 customers from invoices or bookings and count their yearly contacts (an hour).
 2. **Score.** Answer the eight questions and apply the three gates (15 minutes).
-3. **Fix the website.** If gate 3 fails, the website range is {{price:website}}, typically {{weeks:website}}, indicative only.
+3. **Fix the website.** If gate 3 fails, a business website typically takes {{weeks:website}} and is quoted to your requirements.
 4. **Model payback.** Rebuild the worked example with your own pessimistic inputs.
 5. **Ask for a scope.** If every gate passes, request a written scope for a PWA or one narrow first release.
 
-[Elyx Solutions builds iOS and Android apps](/services/app-development/) and says so when a website or WhatsApp flow is enough. The [website cost calculator](/tools/website-cost-calculator/) gives an indicative range in a minute, the [pricing page](/pricing/) shows every range, and a fixed quote is confirmed in writing after a call.
+[Elyx Solutions builds iOS and Android apps](/services/app-development/) and says so when a website or WhatsApp flow is enough. The [pricing page](/pricing/) explains how Elyx quotes, and a fixed quote tailored to your requirements is confirmed in writing after a call.
 
 ## Sources
 
@@ -181,7 +181,7 @@ Only if they have a repeat reason to open it. RNF says phones hold more than 80 
 
 ### How much does it cost to make an app for my business?
 
-This site's draft range for an iOS and Android app is {{price:mobile}}, usually {{weeks:mobile}}, excluding 18% GST. It is indicative, never a quote, and a fixed quote is confirmed in writing after a call. Price moves with screens, back end, payments and real-time features.
+An iOS and Android app at Elyx usually takes {{weeks:mobile}}, and engagements start from {{start}}, excluding GST. A fixed quote tailored to your requirements is confirmed in writing after a call. Price moves with screens, back end, payments and real-time features.
 
 ### How much does an app cost to maintain each year?
 

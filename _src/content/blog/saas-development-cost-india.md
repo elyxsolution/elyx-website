@@ -6,7 +6,7 @@ description: SaaS development cost India in 2026: sourced MVP ranges in lakh, au
 date: 2026-11-14
 author: shreyasmv
 ---
-SaaS development cost India in 2026: agencies publish about 3 to 10 lakh for a lean MVP and 12 to 35 lakh for a first version you can charge for, and the studio's own draft range for a SaaS MVP is {{price:saas}}. The gap between those tiers comes from scope, not from hourly rates: self-serve sign-up, subscription billing, team roles and an admin panel make up roughly half of a build. The qualification that matters is that every figure here is an asking price from a vendor, so budget the build plus a year of upkeep, and compare quotes line by line.
+SaaS development cost India in 2026: agencies publish about 3 to 10 lakh for a lean MVP and 12 to 35 lakh for a first version you can charge for, and Elyx quotes a SaaS MVP to your requirements, with engagements starting from {{start}}. The gap between those tiers comes from scope, not from hourly rates: self-serve sign-up, subscription billing, team roles and an admin panel make up roughly half of a build. The qualification that matters is that every figure here is an asking price from a vendor, so budget the build plus a year of upkeep, and compare quotes line by line.
 
 - **Ranges.** Seven agency pages put a focused MVP between 3 and 45 lakh, and most cluster at 3 to 15 lakh.
 - **Where it goes.** Accounts, billing, admin and reporting are about 36 percent of one published 120-day estimate.
@@ -98,15 +98,15 @@ A 120-day SaaS build at 16 thousand rupees a day costs 19.2 lakh, and the core w
 
 Check: 20 + 27 + 25 + 22 + 18 + 8 = 120 days, and 120 x 16 thousand rupees = 19.2 lakh. The core workflow is 25 / 120, about 21 percent, so the other 79 percent turns a demo into something a stranger can buy and use with a team. This sits inside Appwizards' 12 to 35 lakh sellable-version band, not the lean one.
 
-## Where The Studio's Own Draft Range Sits
+## How Elyx Quotes a SaaS MVP
 
-The site's draft range for a SaaS MVP is {{price:saas}}, with a typical timeline of {{weeks:saas}}, and it is indicative only, never a quote. The price data is a draft, it excludes 18% GST on software services, and a fixed quote is confirmed in writing after a call.
+A SaaS MVP at Elyx has a typical timeline of {{weeks:saas}}. Engagements start from {{start}}, excluding GST on software services, and a fixed quote tailored to your requirements is confirmed in writing after a call.
 
-The pricing data says that range includes multi-tenant architecture, authentication, billing, admin and analytics, with three modules included and extra modules priced separately (see the [pricing page](/pricing/)). Per the service page, payment is 50% upfront and 50% on final delivery.
+The build covers multi-tenant architecture, authentication, billing, admin and analytics, with extra modules scoped separately (see the [pricing page](/pricing/)). Per the service page, payment is 50% upfront and 50% on final delivery.
 
 My reading: that scope matches the "sellable first version" row above more than the lean one, while the range is lower than most published figures. A lower range is not evidence of a smaller product, so ask each team what is in and out.
 
-If you need logins, dashboards and one workflow but no billing or several customers, the custom web app range ({{price:webapp}}, {{weeks:webapp}}) is the closer match. The studio's [SaaS development page](/services/saas-development/) sets out how a build is scoped.
+If you need logins, dashboards and one workflow but no billing or several customers, a custom web app, which usually takes {{weeks:webapp}}, is the closer match. The studio's [SaaS development page](/services/saas-development/) sets out how a build is scoped.
 
 ## What To Cut From v1
 
@@ -183,7 +183,7 @@ Write the one-sentence assumption, price it against the ranges above, then ask t
 - [ ] Who hosts it and who owns the code, in writing.
 - [ ] A 12-month budget with upkeep and running costs.
 
-If you want a scoped second opinion, the studio's [SaaS development page](/services/saas-development/) explains its process. The [pricing page](/pricing/) shows every draft range, and the [website cost calculator](/tools/website-cost-calculator/) covers the public site that sits beside a product.
+If you want a scoped second opinion, the studio's [SaaS development page](/services/saas-development/) explains its process. The [pricing page](/pricing/) explains how it quotes, and the public site that sits beside a product can be scoped alongside the build.
 
 ## Sources
 
@@ -202,7 +202,7 @@ If you want a scoped second opinion, the studio's [SaaS development page](/servi
 
 ### How much does it cost to build a SaaS platform in India?
 
-Published agency ranges run from about 3 to 10 lakh for a lean MVP and 12 to 35 lakh for a first version you can charge for, per Nevatrix, Kkeydos and Appwizards. Multi-tenant platforms with integrations start around 35 lakh, per Appwizards. The studio's draft SaaS MVP range is {{price:saas}}, indicative and never a quote.
+Published agency ranges run from about 3 to 10 lakh for a lean MVP and 12 to 35 lakh for a first version you can charge for, per Nevatrix, Kkeydos and Appwizards. Multi-tenant platforms with integrations start around 35 lakh, per Appwizards. Elyx quotes a SaaS MVP to your requirements, with engagements starting from {{start}}.
 
 ### Can a SaaS MVP be built for under 5 lakh?
 
@@ -226,7 +226,7 @@ US accounting guidance (GAAP) calls for capitalising some software development c
 
 ### Do SaaS quotes include GST?
 
-It depends on the vendor. The studio's draft ranges exclude 18% GST on software services, while NexaEx says its published ranges are inclusive of GST. Ask every team for the figure with and without tax.
+It depends on the vendor. Elyx's quotes exclude GST on software services, while NexaEx says its published ranges are inclusive of GST. Ask every team for the figure with and without tax.
 
 ### Is a 6 lakh quote for a SaaS MVP reasonable?
 

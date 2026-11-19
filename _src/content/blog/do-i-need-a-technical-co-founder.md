@@ -59,7 +59,7 @@ Worked example: if a build costs C in cash and you would give 25% for the same w
 
 The arithmetic leaves three things out:
 
-- **Duration.** A co-founder keeps working for years, while a build is a defined deliverable, so compare equity with the build plus upkeep, such as a care plan at {{price:care}} a month on the site's draft data.
+- **Duration.** A co-founder keeps working for years, while a build is a defined deliverable, so compare equity with the build plus upkeep, such as a monthly care plan.
 - **Dilution.** Later funding rounds shrink every holder's share, yours and theirs.
 - **Paperwork.** Equity handed over without a written split and a vesting schedule, which earns shares over time, is hard to take back. Ask a lawyer to draft it; this article gives a business view, not legal advice.
 
@@ -122,9 +122,9 @@ Add two practical checks of mine. Ask for the written scope with a cut line, mea
 
 ## What the Cash Route Costs at This Studio
 
-On the site's draft, indicative price data, a SaaS MVP is {{price:saas}}, usually {{weeks:saas}}, and a custom web app or portal is {{price:webapp}}, usually {{weeks:webapp}}. Prices are in INR and exclude 18% GST on software services, so a quote of 100 becomes 118 on the invoice. A fixed quote is confirmed in writing after a call, and the draft ranges are never a quote.
+At Elyx, a SaaS MVP usually takes {{weeks:saas}} and a custom web app or portal {{weeks:webapp}}. Engagements start from {{start}}, and prices are in INR and exclude GST, which is added on the invoice. A fixed quote tailored to your requirements is confirmed in writing after a call.
 
-The SaaS page says payment is 50% upfront and 50% on final delivery, that you own the code, and that there is no retainer lock-in unless you want one. For published agency ranges across India, [SaaS MVP cost in India](/blog/saas-development-cost-india/) tabulates eight, and the [pricing page](/pricing/) shows every draft range.
+The SaaS page says payment is 50% upfront and 50% on final delivery, that you own the code, and that there is no retainer lock-in unless you want one. For published agency ranges across India, [SaaS MVP cost in India](/blog/saas-development-cost-india/) tabulates eight, and the [pricing page](/pricing/) explains how Elyx quotes.
 
 A studio is a supplier, not a partner in your company's risk. It is the wrong choice if an investor will only back a team with a technical founder, or if you want someone who shares the long-term risk.
 

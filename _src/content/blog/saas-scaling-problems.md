@@ -162,7 +162,7 @@ Start with a 30-day sequence that costs time, not licences: this ordering is min
 3. **Week 3, billing.** Work through the billing table above and test every row in test mode.
 4. **Week 4, support.** Tally last month's tickets by type and fix the top one in the product.
 
-If you would rather hand part of this over, the studio's [SaaS development page](/services/saas-development/) covers monitoring, backups and clean deployment from day one. Its [maintenance and care plans](/services/maintenance-care/) cover uptime monitoring, dependency updates, backups with a tested restore, performance checks and monthly update hours, at {{price:care}} a month as an indicative draft range excluding 18% GST. A fixed quote is confirmed in writing after a call, and there is no retainer lock-in unless you want one. The [pricing page](/pricing/) shows every range.
+If you would rather hand part of this over, the studio's [SaaS development page](/services/saas-development/) covers monitoring, backups and clean deployment from day one. Its [maintenance and care plans](/services/maintenance-care/) cover uptime monitoring, dependency updates, backups with a tested restore, performance checks and monthly update hours. A fixed quote tailored to your requirements is confirmed in writing after a call, and there is no retainer lock-in unless you want one. The [pricing page](/pricing/) explains how Elyx quotes.
 
 ## Sources
 
@@ -209,4 +209,4 @@ A full rewrite is rarely the first step. V2STech advises moving gradually to mod
 
 ### How much does a care plan for a SaaS cost?
 
-The studio's draft care range is {{price:care}} a month, excluding 18% GST, and it is indicative, never a quote. It scales with how many apps are covered, the update hours and response time. A fixed quote is confirmed in writing after a call.
+A care plan at Elyx is quoted to your requirements, with engagements starting from {{start}}, excluding GST. It scales with how many apps are covered, the update hours and response time. A fixed quote is confirmed in writing after a call.

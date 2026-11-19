@@ -112,7 +112,7 @@ Decide between an enquiry form and instant booking by how much a human must chec
 
 Track form submissions, WhatsApp taps and calls separately. The studio says it sets up Google Analytics events for each, tagged by page.
 
-Deposits hold a date, but no source here documents UPI deposits for photographers. The studio says it can add UPI and card payments through a payment gateway, and the calculator lists booking as a separate option. The [salon booking article](/blog/salon-website-with-online-booking/) sets out what booking vendors state about deposits and reminders. Ask a chartered accountant how GST applies to advance payments, as this article gives no tax advice.
+Deposits hold a date, but no source here documents UPI deposits for photographers. The studio says it can add UPI and card payments through a payment gateway, and treats booking as a separate option. The [salon booking article](/blog/salon-website-with-online-booking/) sets out what booking vendors state about deposits and reminders. Ask a chartered accountant how GST applies to advance payments, as this article gives no tax advice.
 
 ## Instagram or Your Own Website: What Each One Does
 
@@ -171,16 +171,16 @@ Most photography site problems come from heavy images and hidden prices, not des
 
 The studio's maintenance page notes a form can stop delivering, and you hear when a customer tells you.
 
-## What a Photography Website Costs, in Indicative Ranges
+## What a Photography Website Costs
 
-A photography site costs what its pages and booking need, and the studio prices a landing page, a business site and an online store separately. These ranges come from this site's price data, which is a draft: every figure is indicative, never a quote, and a fixed quote is confirmed in writing after a call.
+A photography site costs what its pages and booking need, and the studio scopes a landing page, a business site and an online store separately. Elyx engagements start from {{start}}, and a fixed quote tailored to your requirements is confirmed in writing after a call. This is what each build usually involves.
 
-- **Landing page.** One page with a gallery, packages and an enquiry form: {{price:landing}}, usually {{weeks:landing}}.
-- **Business website.** Up to 10 pages with a CMS and Google Maps, enough for galleries, packages and an about page: {{price:website}}, usually {{weeks:website}}.
-- **Online store.** For selling prints, with catalogue, cart and UPI or card payments: {{price:ecommerce}}, usually {{weeks:ecommerce}}.
-- **Care plan.** Monitoring, updates and monthly update hours: {{price:care}} a month.
+- **Landing page.** One page with a gallery, packages and an enquiry form, usually {{weeks:landing}}.
+- **Business website.** Up to 10 pages with a CMS and Google Maps, enough for galleries, packages and an about page, usually {{weeks:website}}.
+- **Online store.** For selling prints, with catalogue, cart and UPI or card payments, usually {{weeks:ecommerce}}.
+- **Care plan.** Monitoring, updates and monthly update hours, billed monthly.
 
-Ranges exclude 18% GST, and gateway fees are paid separately. A builder plan is rent: Wix's $17 to $159 a month is 36 × 17 = $612 to 36 × 159 = $5,724 over three years, as of November 2026, before domains and add-ons. The [pricing page](/pricing/) lists every range and the [website cost calculator](/tools/website-cost-calculator/) shows booking and UPI payments as options.
+Prices exclude GST, and gateway fees are paid separately. A builder plan is rent: Wix's $17 to $159 a month is 36 × 17 = $612 to 36 × 159 = $5,724 over three years, as of November 2026, before domains and add-ons. The [pricing page](/pricing/) explains how Elyx quotes, and booking and UPI payments are scoped as options.
 
 ## What to Do Next
 
@@ -231,7 +231,7 @@ Upload web-sized files, never camera originals, and load below-the-fold images o
 
 ### How much does a photography website cost in India?
 
-The indicative range is {{price:landing}} for a landing page or {{price:website}} for a business site, excluding 18% GST. These are draft ranges, never a quote, and a fixed quote is confirmed in writing after a call.
+Elyx engagements start from {{start}}, excluding GST. A landing page or a business site is quoted to your requirements, and a fixed quote is confirmed in writing after a call.
 
 ### Do I need a website or is Instagram enough?
 
