@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Core Web Vitals Explained: LCP, INP and CLS in Plain English</title>
+<meta name="description" content="Core Web Vitals explained: what LCP, INP and CLS measure, Google's good-score limits, how to test your own site and what the evidence says about sales." />
+<link rel="canonical" href="https://elyxsolutions.in/blog/core-web-vitals/" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#080b1a" />
+<!-- Open Graph -->
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Elyx Solutions" />
+<meta property="og:title" content="Core Web Vitals Explained: LCP, INP and CLS in Plain English" />
+<meta property="og:description" content="Core Web Vitals explained: what LCP, INP and CLS measure, Google's good-score limits, how to test your own site and what the evidence says about sales." />
+<meta property="og:url" content="https://elyxsolutions.in/blog/core-web-vitals/" />
+<meta property="og:image" content="https://elyxsolutions.in/og/blog-core-web-vitals.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:locale" content="en_IN" />
+<meta property="article:published_time" content="2026-11-19" />
+<meta property="article:modified_time" content="2026-11-19" />
+<meta property="article:section" content="SEO &amp; Local Growth" />
+<meta property="article:author" content="https://elyxsolutions.in/blog/author/shreyasmv/" />
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Core Web Vitals Explained: LCP, INP and CLS in Plain English" />
+<meta name="twitter:description" content="Core Web Vitals explained: what LCP, INP and CLS measure, Google's good-score limits, how to test your own site and what the evidence says about sales." />
+<meta name="twitter:image" content="https://elyxsolutions.in/og/blog-core-web-vitals.png" />
+<!-- Icons -->
+<link rel="icon" href="../../favicon.svg" type="image/svg+xml" />
+<link rel="icon" href="../../icon-192.png" sizes="192x192" type="image/png" />
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500;1,6..72,600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../../css/styles.css" />
+<link rel="stylesheet" href="../../css/pages.css" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://elyxsolutions.in/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://elyxsolutions.in/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Core Web Vitals Explained: Why Speed Affects Sales and Rankings",
+          "item": "https://elyxsolutions.in/blog/core-web-vitals/"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://elyxsolutions.in/blog/core-web-vitals/#article",
+      "headline": "Core Web Vitals Explained: Why Speed Affects Sales and Rankings",
+      "description": "Core Web Vitals explained: what LCP, INP and CLS measure, Google's good-score limits, how to test your own site and what the evidence says about sales.",
+      "image": [
+        "https://elyxsolutions.in/og/blog-core-web-vitals.png"
+      ],
+      "datePublished": "2026-11-19",
+      "dateModified": "2026-11-19",
+      "author": {
+        "@type": "Person",
+        "@id": "https://elyxsolutions.in/blog/author/shreyasmv/#person",
+        "name": "Shreyas M V",
+        "url": "https://elyxsolutions.in/blog/author/shreyasmv/",
+        "sameAs": [
+          "https://www.linkedin.com/in/shreyas-m-v-311b99205/"
+        ]
+      },
+      "publisher": {
+        "@id": "https://elyxsolutions.in/#organization"
+      },
+      "mainEntityOfPage": "https://elyxsolutions.in/blog/core-web-vitals/",
+      "articleSection": "SEO & Local Growth",
+      "inLanguage": "en-IN"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What are Core Web Vitals?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Core Web Vitals are Google's three measures of real-world user experience: LCP for loading, INP for responsiveness and CLS for visual stability. Google Search Central recommends good scores for success in Search."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Core Web Vitals a ranking factor?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, Google's ranking systems use them, but Google does not say how much they count. Google Search Central says good scores align with what its core ranking systems seek to reward, and practitioners describe the weight as small next to relevance."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is a good Core Web Vitals score?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A good score is LCP of 2.5 seconds or less, INP of 200 milliseconds or less and CLS of 0.1 or less. Google judges them at the 75th percentile of real visits, per Search Console Help."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I check Core Web Vitals?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Paste your address into PageSpeed Insights and read the real-user section, then open the Core Web Vitals report in Search Console. Judge by the field data and use lab tools such as Lighthouse only to find causes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does \"Core Web Vitals assessment failed\" mean?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It means at least one of LCP, INP or CLS missed its good limit for real visitors. web.dev says only those three count in the pass or fail assessment, and corewebvitals.io says all three must pass."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does it take for Core Web Vitals fixes to show?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Expect about four weeks. CrUX data is a rolling 28-day window, so Search Console and PageSpeed Insights catch up with a fix only gradually (web.dev, DebugBear)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What replaced First Input Delay?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Interaction to Next Paint replaced First Input Delay as a Core Web Vital in March 2024, per Akamai and the CoreVitals checker. INP covers every interaction in a visit, not only the first."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why does my site show no Core Web Vitals data?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Your site is probably new or too small to appear in the Chrome UX Report. Search Console Help says the report needs a minimum amount of data, and the CoreVitals checker says lab numbers are then your best proxy."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need a developer to fix Core Web Vitals?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sometimes. web.dev says business owners can influence causes such as redirects, campaign targeting and media choices, but many fixes, especially for INP, need a developer."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body data-article="core-web-vitals">
+<div class="grain"></div>
+<div class="nav-shell scrolled" id="navShell">
+  <a class="brand nav__brand" href="../../" aria-label="Elyx Solutions home">
+    <svg class="brand__mark" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+      <g transform="skewX(-10)">
+        <rect x="7" y="4" width="15" height="4.4" rx="1.2" fill="#1f4fd8"></rect>
+        <rect x="7" y="11.8" width="11" height="4.4" rx="1.2" fill="#0b1024"></rect>
+        <rect x="7" y="19.6" width="15" height="4.4" rx="1.2" fill="#1f4fd8"></rect>
+      </g>
+    </svg>
+    <span class="brand__name">Elyx</span>
+  </a>
+
+  <nav class="nav" id="nav" aria-label="Main">
+    <div class="nav__links" id="navLinks">
+      <div class="nav__item" data-menu="services"><button type="button">Services <svg class="caret" viewBox="0 0 10 10" fill="none"><path d="M1 3l4 4 4-4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button></div>
+      <div class="nav__item" data-menu="industries"><button type="button">Industries <svg class="caret" viewBox="0 0 10 10" fill="none"><path d="M1 3l4 4 4-4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button></div>
+      <div class="nav__item" data-menu="work"><button type="button">Work <svg class="caret" viewBox="0 0 10 10" fill="none"><path d="M1 3l4 4 4-4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button></div>
+      <div class="nav__item"><a href="../../blog/">Blog</a></div>
+      <div class="nav__item"><a href="../../about.html">About</a></div>
+      <div class="nav__item"><a href="../../contact.html">Contact</a></div>
+    </div>
+  </nav>
+
+  <div class="nav__right">
+    <a class="btn btn--primary nav__cta" href="../../contact.html" data-track="cta_click" data-pos="nav">Let's talk <svg class="arr" width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H4M10 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+    <button class="nav__burger" id="burger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <div class="mobile-menu__group">
+      <span class="mobile-menu__label">Services</span>
+      <a href="../../services/web-development/">Web Development</a>
+      <a href="../../services/ecommerce-development/">E-commerce Development</a>
+      <a href="../../services/saas-development/">SaaS Development</a>
+      <a href="../../services/app-development/">App Development</a>
+      <a href="../../services/ai-chatbots/">AI Chatbots</a>
+      <a href="../../services/ai-call-assistants/">AI Call &amp; Voice Assistants</a>
+      <a href="../../services/whatsapp-automation/">WhatsApp &amp; Business Automation</a>
+      <a href="../../services/crm-lead-management/">CRM &amp; Lead Management</a>
+      <a href="../../services/booking-systems/">Booking &amp; Appointment Systems</a>
+      <a href="../../services/payments-billing/">Payments &amp; Subscription Billing</a>
+      <a href="../../services/admin-dashboards/">Admin Dashboards &amp; Internal Tools</a>
+      <a href="../../services/seo-optimization/">SEO Optimization</a>
+      <a href="../../services/maintenance-care/">Maintenance &amp; Care</a>
+    </div>
+    <div class="mobile-menu__group">
+      <span class="mobile-menu__label">Websites for</span>
+      <a href="../../websites-for/dentists/">Dentists &amp; Clinics</a>
+      <a href="../../websites-for/coaching-centres/">Coaching Centres</a>
+      <a href="../../websites-for/restaurants-and-cafes/">Restaurants &amp; Cafés</a>
+      <a href="../../websites-for/salons-and-spas/">Salons &amp; Spas</a>
+      <a href="../../websites-for/real-estate/">Real Estate</a>
+      <a href="../../websites-for/ca-and-law-firms/">CA &amp; Law Firms</a>
+    </div>
+    <div class="mobile-menu__group">
+      <span class="mobile-menu__label">Company</span>
+      <a href="../../about.html">About</a>
+      <a href="../../work.html">Work</a>
+      <a href="../../pricing/">Pricing</a>
+      <a href="../../blog/">Blog</a>
+      <a href="../../tools/">Free tools</a>
+      <a href="../../contact.html">Contact</a>
+    </div>
+    <a class="btn btn--blue mobile-menu__cta" href="../../contact.html">Let's talk <svg class="arr" width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H4M10 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+  </div>
+
+  <!-- Mega panel -->
+  <div class="mega" id="mega">
+    <div class="mega__inner">
+      <div class="mega__panel" data-panel="services">
+        <div class="mega-grid">
+          <div class="mega-tiles"><a class="mtile" href="../../services/web-development/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M9 8l-4 4 4 4M15 8l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">Web Development</span></span></a><a class="mtile" href="../../services/ecommerce-development/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M3 4h2l2.4 10.2a1 1 0 001 .8h8.2a1 1 0 001-.76L19 8H6.2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path><circle cx="9.5" cy="19" r="1.3" fill="currentColor"></circle><circle cx="16.5" cy="19" r="1.3" fill="currentColor"></circle></svg></span><span><span class="mtile__t">E-commerce Development</span></span></a><a class="mtile" href="../../services/saas-development/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M6 16a4 4 0 010-8 5 5 0 019.6-1.5A3.5 3.5 0 0118 16H6z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">SaaS Development</span></span></a><a class="mtile" href="../../services/app-development/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><rect x="7" y="3" width="10" height="18" rx="2.5" stroke="currentColor" stroke-width="1.6"></rect><path d="M11 18h2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg></span><span><span class="mtile__t">App Development</span></span></a><a class="mtile" href="../../services/ai-chatbots/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M5 6.5A2.5 2.5 0 017.5 4h9A2.5 2.5 0 0119 6.5v6a2.5 2.5 0 01-2.5 2.5H11l-4 3.5V15h-.5A2.5 2.5 0 014 12.5v-6z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"></path><path d="M9 9.7h.01M12 9.7h.01M15 9.7h.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path></svg></span><span><span class="mtile__t">AI Chatbots</span></span></a><a class="mtile" href="../../services/ai-call-assistants/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M6.6 4h2.2l1.2 3.4-1.6 1.2a10 10 0 004.2 4.2l1.2-1.6 3.4 1.2v2.2A2 2 0 0115.2 16 11.2 11.2 0 014 4.8 2 2 0 016.6 4z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"></path><path d="M15 4.5a5.5 5.5 0 014.5 4.5M15 8a2.5 2.5 0 012 2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg></span><span><span class="mtile__t">AI Call &amp; Voice Assistants</span></span></a><a class="mtile" href="../../services/whatsapp-automation/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M13 3L5 13.2h6L10 21l8-10.2h-6L13 3z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">WhatsApp &amp; Business Automation</span></span></a><a class="mtile" href="../../services/crm-lead-management/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><circle cx="9" cy="8.5" r="3" stroke="currentColor" stroke-width="1.6"></circle><path d="M3.5 19a5.5 5.5 0 0111 0" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path><path d="M16 5.8a3 3 0 010 5.4M17.5 14.4A5.5 5.5 0 0120.5 19" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg></span><span><span class="mtile__t">CRM &amp; Lead Management</span></span></a><a class="mtile" href="../../services/booking-systems/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><rect x="4" y="5.5" width="16" height="14" rx="2.5" stroke="currentColor" stroke-width="1.6"></rect><path d="M4 10h16M8.5 3.5v4M15.5 3.5v4M9 14.5l2 2 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">Booking &amp; Appointment Systems</span></span></a><a class="mtile" href="../../services/payments-billing/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><rect x="3.5" y="6" width="17" height="12" rx="2.5" stroke="currentColor" stroke-width="1.6"></rect><path d="M3.5 10.5h17M7 15h3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg></span><span><span class="mtile__t">Payments &amp; Subscription Billing</span></span></a><a class="mtile" href="../../services/admin-dashboards/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="7" height="7" rx="1.6" stroke="currentColor" stroke-width="1.6"></rect><rect x="13" y="4" width="7" height="4.5" rx="1.6" stroke="currentColor" stroke-width="1.6"></rect><rect x="13" y="11" width="7" height="9" rx="1.6" stroke="currentColor" stroke-width="1.6"></rect><rect x="4" y="14" width="7" height="6" rx="1.6" stroke="currentColor" stroke-width="1.6"></rect></svg></span><span><span class="mtile__t">Admin Dashboards &amp; Internal Tools</span></span></a><a class="mtile" href="../../services/seo-optimization/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><circle cx="10.5" cy="10.5" r="6" stroke="currentColor" stroke-width="1.6"></circle><path d="M15 15l5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg></span><span><span class="mtile__t">SEO Optimization</span></span></a><a class="mtile" href="../../services/maintenance-care/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M12 8v4l3 2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path><circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="1.6"></circle></svg></span><span><span class="mtile__t">Maintenance &amp; Care</span></span></a><a class="mtile" href="../../pricing/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M4 14l5-5 4 4 7-7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path><path d="M20 6v4h-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">Pricing</span></span></a></div>
+          <a class="mega-feature" href="../../pricing/">
+            <div class="ph-grid"></div>
+            <div class="mega-feature__k">Featured</div>
+            <div class="mega-feature__t">Starting from ₹9,999. Quotes tailored to you.</div>
+            <div class="mega-feature__l">See pricing <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H4M10 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+          </a>
+        </div>
+      </div>
+
+      <div class="mega__panel" data-panel="industries">
+        <div class="mega-grid">
+          <div class="mega-tiles"><a class="mtile" href="../../websites-for/dentists/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M12 5c-2-1.5-6-1.5-6 2.5 0 3 1.5 4 1.5 7 0 2 .8 4.5 2 4.5s1.5-2 2.5-2 1.3 2 2.5 2 2-2.5 2-4.5c0-3 1.5-4 1.5-7C18 3.5 14 3.5 12 5z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">Dentists &amp; Clinics</span></span></a><a class="mtile" href="../../websites-for/coaching-centres/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M3 9l9-4 9 4-9 4-9-4z M7 11v4c0 1.5 2.2 3 5 3s5-1.5 5-3v-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">Coaching Centres</span></span></a><a class="mtile" href="../../websites-for/restaurants-and-cafes/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M7 3v8M5 3v5a2 2 0 004 0V3M7 11v10M17 3c-2 1.5-3 4-3 7h3v11" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">Restaurants &amp; Cafés</span></span></a><a class="mtile" href="../../websites-for/salons-and-spas/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><circle cx="6" cy="7" r="2.5" stroke="currentColor" stroke-width="1.6"></circle><circle cx="6" cy="17" r="2.5" stroke="currentColor" stroke-width="1.6"></circle><path d="M8 8.5L20 18M8 15.5L20 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg></span><span><span class="mtile__t">Salons &amp; Spas</span></span></a><a class="mtile" href="../../websites-for/real-estate/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M4 21V8l8-5 8 5v13M9 21v-6h6v6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">Real Estate</span></span></a><a class="mtile" href="../../websites-for/ca-and-law-firms/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M12 4v16M6 20h12M5 8h14M5 8l-2.5 6a3 3 0 005 0L5 8zM19 8l-2.5 6a3 3 0 005 0L19 8z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">CA &amp; Law Firms</span></span></a></div>
+          <a class="mega-feature" href="../../websites-for/">
+            <div class="ph-grid"></div>
+            <div class="mega-feature__k">Built for your trade</div>
+            <div class="mega-feature__t">What a site for your kind of business actually needs.</div>
+            <div class="mega-feature__l">All industries <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H4M10 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+          </a>
+        </div>
+      </div>
+
+      <div class="mega__panel" data-panel="work">
+        <div class="mega-grid mega-grid--work">
+          <div class="mega-wlinks">
+            <a class="mtile" href="../../work.html#tools"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.6"></circle><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5.1 5.1l2.1 2.1M16.8 16.8l2.1 2.1M18.9 5.1L16.8 7.2M7.2 16.8l-2.1 2.1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg></span><span><span class="mtile__t">Tools we use</span></span></a>
+            <a class="mtile" href="../../work.html#faq"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"></circle><path d="M9.6 9.2a2.5 2.5 0 014.7 1.1c0 1.6-2.3 2-2.3 3.6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path><circle cx="12" cy="16.6" r="0.7" fill="currentColor"></circle></svg></span><span><span class="mtile__t">FAQ about Elyx</span></span></a>
+            <a class="mtile" href="../../work.html"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="6.5" height="6.5" rx="1.6" stroke="currentColor" stroke-width="1.6"></rect><rect x="13.5" y="4" width="6.5" height="6.5" rx="1.6" stroke="currentColor" stroke-width="1.6"></rect><rect x="4" y="13.5" width="6.5" height="6.5" rx="1.6" stroke="currentColor" stroke-width="1.6"></rect><rect x="13.5" y="13.5" width="6.5" height="6.5" rx="1.6" stroke="currentColor" stroke-width="1.6"></rect></svg></span><span><span class="mtile__t">All projects</span></span></a>
+          </div>
+          <div class="mega-work"><a class="wcard" href="../../work/ashirwad-dental/"><div class="wcard__img"><img src="../../uploads/projects/ashirwad-dental.jpg" alt="Ashirwad Dental Clinic website" width="1000" height="750" loading="lazy" decoding="async" /></div><div class="wcard__meta"><div class="wcard__t">Ashirwad Dental Clinic</div><div class="wcard__c">Web · Redesign</div></div></a><a class="wcard" href="../../work/malnad-stories/"><div class="wcard__img"><img src="../../uploads/projects/malnad-stories.jpg" alt="Malnad Stories website" width="1000" height="750" loading="lazy" decoding="async" /></div><div class="wcard__meta"><div class="wcard__t">Malnad Stories</div><div class="wcard__c">E-commerce · Web App</div></div></a><a class="wcard" href="https://powertekservices.in/" target="_blank" rel="noopener"><div class="wcard__img"><img src="../../uploads/projects/powertek.jpg" alt="Powertek website" width="1000" height="750" loading="lazy" decoding="async" /></div><div class="wcard__meta"><div class="wcard__t">Powertek</div><div class="wcard__c">Web · Electrical</div></div></a><a class="wcard" href="https://hindustanfoundationandconstructions.com/" target="_blank" rel="noopener"><div class="wcard__img"><img src="../../uploads/projects/hindustan-foundation.jpg" alt="Hindustan Foundation &amp; Constructions website" width="1000" height="750" loading="lazy" decoding="async" /></div><div class="wcard__meta"><div class="wcard__t">Hindustan Foundation &amp; Constructions</div><div class="wcard__c">Web · Construction</div></div></a><a class="wcard" href="https://aralikattecafe.in/" target="_blank" rel="noopener"><div class="wcard__img"><img src="../../uploads/projects/aralikatte-cafe.jpg" alt="Aralikatte Cafe website" width="1000" height="750" loading="lazy" decoding="async" /></div><div class="wcard__meta"><div class="wcard__t">Aralikatte Cafe</div><div class="wcard__c">Web · Restaurant</div></div></a><a class="wcard" href="https://bangaloremusictrust.com/" target="_blank" rel="noopener"><div class="wcard__img"><img src="../../uploads/projects/bangalore-music-trust.jpg" alt="Bangalore Music Trust website" width="1000" height="750" loading="lazy" decoding="async" /></div><div class="wcard__meta"><div class="wcard__t">Bangalore Music Trust</div><div class="wcard__c">Web · Non-profit</div></div></a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<span id="top"></span>
+<main class="bl"><div class="bl__in">
+  <div class="bl__crumbs">
+    <a class="bl__back" href="../../blog/">← Back to Blog</a>
+    <nav aria-label="Breadcrumb"><ol><li><a href="../../">Home</a></li><li aria-hidden="true">/</li><li><a href="../../blog/">Blog</a></li><li aria-hidden="true">/</li><li aria-current="page">Core Web Vitals Explained: Why Speed Affects Sales and Rankings</li></ol></nav>
+  </div>
+  <div class="bl__cols">
+    <article class="barticle" data-article="core-web-vitals">
+      <header>
+        <p class="bbyline">By <a class="bauthor" href="../../blog/author/shreyasmv/"><img class="bauthor__ph" src="../../uploads/authors/shreyasmv.jpg" alt="" width="24" height="24" loading="lazy" /><span>Shreyas M V</span></a><span aria-hidden="true">·</span><span>Published <time datetime="2026-11-19">19 November 2026</time></span><span aria-hidden="true">·</span><span>14 min read</span></p>
+        <h1>Core Web Vitals Explained: Why Speed Affects Sales and Rankings</h1>
+        <p class="blead">Core Web Vitals explained: what LCP, INP and CLS measure, Google's good-score limits, how to test your own site and what the evidence says about sales.</p>
+      </header>
+      <nav class="btoc" aria-label="Table of contents"><b>On this page</b><ol><li><a href="#core-web-vitals-meaning-three-measures-and-their-limits"><span>01</span>Core Web Vitals Meaning: Three Measures and Their Limits</a></li><li><a href="#lcp-how-long-until-the-main-content-appears"><span>02</span>LCP: How Long Until the Main Content Appears</a></li><li><a href="#inp-how-quickly-the-page-answers-a-tap"><span>03</span>INP: How Quickly the Page Answers a Tap</a></li><li><a href="#cls-how-much-the-page-jumps-while-it-loads"><span>04</span>CLS: How Much the Page Jumps While It Loads</a></li><li><a href="#do-core-web-vitals-affect-seo-what-google-says-and-what-third-party-analyses-found"><span>05</span>Do Core Web Vitals Affect SEO? What Google Says and What Third-Party Analyses Found</a></li><li><a href="#does-speed-affect-sales-what-the-evidence-supports"><span>06</span>Does Speed Affect Sales? What the Evidence Supports</a></li><li><a href="#core-web-vitals-test-how-to-check-your-own-site"><span>07</span>Core Web Vitals Test: How to Check Your Own Site</a></li><li><a href="#before-and-after-a-log-to-keep-for-your-own-site"><span>08</span>Before and After: A Log to Keep for Your Own Site</a></li><li><a href="#how-to-fix-core-web-vitals-what-moves-each-number"><span>09</span>How to Fix Core Web Vitals: What Moves Each Number</a></li><li><a href="#what-usually-goes-wrong-with-core-web-vitals-work"><span>10</span>What Usually Goes Wrong With Core Web Vitals Work</a></li><li><a href="#what-to-do-next-a-four-step-plan"><span>11</span>What to Do Next: A Four-Step Plan</a></li><li><a href="#sources"><span>12</span>Sources</a></li><li><a href="#faq"><span>13</span>Frequently asked questions</a></li></ol></nav>
+      <div class="prose">
+<p>Core Web Vitals are three measures Google publishes for how a page feels to a real visitor: Largest Contentful Paint (LCP) for how soon the main content appears, Interaction to Next Paint (INP) for how fast the page answers a tap, and Cumulative Layout Shift (CLS) for how much it jumps around. A page counts as good at 2.5 seconds, 200 milliseconds and 0.1, measured on real visits. The honest qualification is that Google treats them as one input among many, and none of the sources I read gives a conversion or revenue figure, so the link to sales rests on engagement evidence.</p>
+<ul><li><strong>The three numbers.</strong> LCP of 2.5 seconds or less, INP of 200 milliseconds or less and CLS of 0.1 or less are good, judged separately for mobile and desktop.</li><li><strong>Rankings.</strong> Google says good scores align with what its core ranking systems reward, while practitioners and studies describe the weight as small next to content relevance.</li><li><strong>Sales.</strong> Google's web.dev says faster, steadier pages often lift engagement and conversions, but no source here puts a rupee value on a second saved.</li><li><strong>Your next step.</strong> Test with PageSpeed Insights and Search Console, fix the biggest image first, and wait about 28 days before judging.</li></ul>
+<h2 id="core-web-vitals-meaning-three-measures-and-their-limits">Core Web Vitals Meaning: Three Measures and Their Limits</h2>
+<p>Core Web Vitals are the three user-experience measures Google asks site owners to watch: loading, responsiveness and visual stability. Google Search Central describes them as metrics for real-world experience of loading performance, interactivity and visual stability. web.dev adds that they come from your actual visitors, and are not &quot;what Google thinks&quot; or what Googlebot sees.</p>
+<p>One warning about older pages. Cloudflare's explainer still lists First Input Delay (FID) as the third measure, but Akamai and the CoreVitals checker both state that INP replaced FID in March 2024. A guide that names FID is out of date.</p>
+<p>Google rates each measure as good, needs improvement or poor, and the lower number is always the better one. The table below gives the ranges as published in Google's Search Console Help, read on 19 November 2026.</p>
+<div class="prose-table"><table><thead><tr><th>Measure</th><th>What it asks</th><th>Good</th><th>Poor</th></tr></thead><tbody><tr><td>LCP</td><td>How soon does the main content appear?</td><td>2.5 seconds or less</td><td>Over 4 seconds</td></tr><tr><td>INP</td><td>How fast does the page respond to taps?</td><td>200 ms or less</td><td>Over 500 ms</td></tr><tr><td>CLS</td><td>How much does the layout jump?</td><td>0.1 or less</td><td>Over 0.25</td></tr></tbody></table></div>
+<p>Anything between good and poor is &quot;needs improvement&quot;. Google reads each figure at the 75th percentile: a page passes only when three visits out of four are good.</p>
+<h2 id="lcp-how-long-until-the-main-content-appears">LCP: How Long Until the Main Content Appears</h2>
+<p>Largest Contentful Paint is the time from the visitor starting to load your page until its largest piece of content, usually a banner image or a headline, is visible. web.dev says the LCP element is an image on roughly 80% of web pages, so the hero photo on a clinic or shop home page is usually the thing being timed. Cloudflare adds that LCP does not time the whole page, only that largest element.</p>
+<p>A slow LCP often starts before the page even arrives. web.dev points to Time to First Byte (TTFB), the wait before the first part of the page downloads, and says a good LCP is impossible if the site takes seconds just to start. A host far from your visitors and chains of redirects are the usual causes it names.</p>
+<h2 id="inp-how-quickly-the-page-answers-a-tap">INP: How Quickly the Page Answers a Tap</h2>
+<p>Interaction to Next Paint measures how long the page takes to react after a visitor taps, clicks or presses a key. Akamai says it covers every such interaction during the visit and reports one value that all interactions stay under, and Search Console says the final value is the longest interaction seen, ignoring outliers.</p>
+<p>Picture tapping the menu or a &quot;Book on WhatsApp&quot; button and waiting half a second for anything to happen. That is an illustration of my own, but it sits inside Google's own ranges: poor starts above 500 milliseconds.</p>
+<p>INP is the hard one. corewebvitals.io, a performance consultancy, says only 74% of mobile sites passed it in the 2024 Web Almanac and that fixes usually mean changing how JavaScript runs. The CoreVitals checker adds that lab tests cannot measure it: Lighthouse uses Total Blocking Time as a stand-in because no one taps anything in a lab run.</p>
+<h2 id="cls-how-much-the-page-jumps-while-it-loads">CLS: How Much the Page Jumps While It Loads</h2>
+<p>Cumulative Layout Shift scores how far visible content moves unexpectedly, and 0.1 or less is good. Cloudflare explains that each shift is scored as impact fraction times distance fraction, and that the page's CLS is its largest burst of shifts. The worked example below uses Cloudflare's own figures: a 400-pixel-high screen where 200 pixels of content move down by 50 pixels.</p>
+<ol><li><strong>Impact fraction.</strong> 200 pixels affected, divided by the 400-pixel screen, gives 0.5.</li><li><strong>Distance fraction.</strong> 50 pixels moved, divided by 400, gives 0.125.</li><li><strong>Score.</strong> 0.5 multiplied by 0.125 gives 0.0625, which is under the 0.1 limit.</li></ol>
+<p>My extension, with the same arithmetic: if that block moved 80 pixels instead, the distance fraction is 80 divided by 400, or 0.2, and 0.5 times 0.2 is 0.10, right at the limit. A real phone screen is taller, so treat the 400 pixels as a teaching simplification. The practical lesson is that a late banner, an image with no reserved space or a late-loading ad can push a page from good to failing.</p>
+<h2 id="do-core-web-vitals-affect-seo-what-google-says-and-what-third-party-analyses-found">Do Core Web Vitals Affect SEO? What Google Says and What Third-Party Analyses Found</h2>
+<p>Core Web Vitals affect SEO as one signal among many, and Google does not publish how much weight they carry. Keeping the documented facts apart from other people's analysis:</p>
+<p><strong>Documented by Google</strong></p>
+<ul><li>Google Search Central (page last updated 10 December 2025, read 19 November 2026) says it highly recommends good Core Web Vitals and that they align with what its core ranking systems seek to reward.</li><li>Search Console's report is built on real-user field data from the Chrome UX Report (CrUX), and it reports mobile and desktop separately.</li></ul>
+<p><strong>Reported by others, not by Google</strong></p>
+<ul><li>corewebvitals.io says Google's documentation was updated on 12 March 2024 to say ranking systems use them.</li><li>It cites Advanced Web Ranking (2022, 3 million pages): positions 1 to 3 had lower LCP than positions 8 to 10, yet many top-10 pages had no CrUX data at all.</li><li>It also cites Perficient (December 2021), which found Core Web Vitals were not a large ranking factor, and reports Google's John Mueller saying they count for more than a tiebreaker but do not replace relevance.</li><li>Every study it lists used FID, so none measures INP against rankings.</li></ul>
+<p>My reading, and it is analysis, not fact: treat the three limits as a bar to clear, not a growth tactic. corewebvitals.io, which sells monitoring, argues the same, calling Core Web Vitals a gate and not a growth lever, so weigh that as one practitioner's opinion. If your page is failing badly, fix it; if it already passes and the content is thin, speed work will not rescue it.</p>
+<h2 id="does-speed-affect-sales-what-the-evidence-supports">Does Speed Affect Sales? What the Evidence Supports</h2>
+<p>Speed is linked to engagement in the sources I read, but none of them shows a measured effect on sales. web.dev's guide for business decision makers says user experience has been shown to affect business outcomes, and that faster, more responsive sites often see more engagement and conversions, with no figure attached.</p>
+<p>The one number comes from corewebvitals.io: a study of 7 million sessions by Agency FIFTY3 found a moderate negative correlation (r = -0.470) between CLS and engagement rate, so pages that jumped less kept visitors more. Akamai, a vendor, says slow pages send users elsewhere and that optimised sites convert better, which is a vendor's claim, not a test.</p>
+<p>So I cannot tell you what a second is worth in rupees. The way to find out is the log below. For an Indian business the phone matters most, though I have no verified Indian figure for mobile share or 4G speed. Search Console combines visits from all locations, so a slow-connection audience pulls your numbers down. The <a href="../../blog/mobile-friendly-website/">mobile-first website guide</a> covers what to measure for that audience.</p>
+<h2 id="core-web-vitals-test-how-to-check-your-own-site">Core Web Vitals Test: How to Check Your Own Site</h2>
+<p>You can run a Core Web Vitals test for free with PageSpeed Insights and Google Search Console, and the real-visitor numbers matter more than the lab score. The steps:</p>
+<ol><li><strong>PageSpeed Insights.</strong> Paste a URL and read the section on what real users experience, which shows the last 28 days of Chrome visits. Switch between Mobile and Desktop, and between This URL and the whole origin (web.dev). It also works on a competitor's site.</li><li><strong>Search Console.</strong> Verify ownership, then open the Core Web Vitals report. It groups similar pages, and a group takes the status of its worst metric, so poor CLS with good INP is poor.</li><li><strong>Lighthouse last.</strong> It is a single simulated load, and the CoreVitals checker says scores can differ by 5 to 10 points between runs. Use it to diagnose, not to judge.</li></ol>
+<div class="prose-table"><table><thead><tr><th>Tool</th><th>Data type</th><th>Best for</th></tr></thead><tbody><tr><td>PageSpeed Insights</td><td>Field and lab</td><td>Quick check of one page</td></tr><tr><td>Search Console</td><td>Field only</td><td>Whole-site groups of pages</td></tr><tr><td>Lighthouse</td><td>Lab only</td><td>Finding the cause</td></tr></tbody></table></div>
+<p>The table is a summary of web.dev's guide to Google's tools. If you see &quot;no data available&quot;, the site is new or too small for CrUX, per Search Console Help and the CoreVitals checker, and lab numbers are then your only proxy. The Core Web Vitals report also shows a sample of indexed URLs, not every page.</p>
+<h2 id="before-and-after-a-log-to-keep-for-your-own-site">Before and After: A Log to Keep for Your Own Site</h2>
+<p>A before-and-after log is a dated record of your own Core Web Vitals and enquiry counts, and it is the honest way to learn what speed work did for your business. This article cannot supply studio before-and-after figures: the research behind it holds none, so I am not inventing any. Elyx Solutions' <a href="../../services/seo-optimization/">SEO optimization</a> page lists Core Web Vitals and speed work, and the <a href="../../work/ashirwad-dental/">Ashirwad Dental case study</a> lists speed and a mobile-first layout among what was built, without Core Web Vitals numbers.</p>
+<p>Copy this into a sheet and fill the cells yourself. It is a template, not data.</p>
+<div class="prose-table"><table><thead><tr><th>Record</th><th>Where to read it</th><th>When</th></tr></thead><tbody><tr><td>LCP, INP, CLS (mobile)</td><td>PageSpeed Insights, field data</td><td>Day 0, then day 28 or later</td></tr><tr><td>Status of each page group</td><td>Search Console report</td><td>Day 0, then day 28 or later</td></tr><tr><td>Enquiries from form, WhatsApp and calls</td><td>Inbox, WhatsApp, call log</td><td>The 28 days either side</td></tr></tbody></table></div>
+<p>Use the same pages and device each time. Change nothing else that affects enquiries in that window, such as ads or copy, or you will not know which change did the work. Seasonal demand, like an admission season, is another trap to note in the sheet.</p>
+<h2 id="how-to-fix-core-web-vitals-what-moves-each-number">How to Fix Core Web Vitals: What Moves Each Number</h2>
+<p>Most fixes target one cause per measure: the main image for LCP, heavy scripts for INP and unreserved space for CLS. The table sums up what Cloudflare, Akamai, web.dev and corewebvitals.io recommend.</p>
+<div class="prose-table"><table><thead><tr><th>Measure</th><th>Common cause</th><th>Fix</th><th>Who acts</th></tr></thead><tbody><tr><td>LCP</td><td>Heavy hero image, slow server, redirects</td><td>Compress image, use a CDN, cut redirects</td><td>Owner or developer</td></tr><tr><td>INP</td><td>Long JavaScript tasks, third-party tools</td><td>Remove unused scripts, split long tasks</td><td>Developer</td></tr><tr><td>CLS</td><td>Images without set size, late ads</td><td>Set width and height, reserve space</td><td>Developer</td></tr></tbody></table></div>
+<p>web.dev says business owners influence speed through design, content and ad decisions: redirects and URL parameters in campaigns, and ads aimed at people you cannot serve, all cost speed. It also says many fixes need a developer.</p>
+<p>The November 2026 edition of The State of Web Vitals, from the corewebvitals.io team, measured React and Next.js sites. Its findings are correlations on one framework, not tests, but they show where the gaps sit.</p>
+<div class="prose-table"><table><thead><tr><th>Practice (measure)</th><th>Good with it</th><th>Good without</th></tr></thead><tbody><tr><td>Hero as an image tag, not CSS background (LCP)</td><td>88%</td><td>67%</td></tr><tr><td>High fetch priority on the LCP element (LCP)</td><td>92%</td><td>80%</td></tr><tr><td>No iframes, against four or more (CLS)</td><td>92%</td><td>84%</td></tr><tr><td>Brotli compression on the HTML, not gzip (LCP)</td><td>90%</td><td>67%</td></tr></tbody></table></div>
+<p>The table reads the dataset's own figures: the share of sites with good results. Cloudflare also notes that overusing lazy-loading correlates with worse LCP, and Google suggests limiting it to images below the fold.</p>
+<h2 id="what-usually-goes-wrong-with-core-web-vitals-work">What Usually Goes Wrong With Core Web Vitals Work</h2>
+<p>Most failed attempts trace to a handful of mistakes, each with a cause and a fix:</p>
+<ul><li><strong>Judging by the lab score.</strong> Lab runs vary and cannot measure INP. Read the field data first.</li><li><strong>Expecting results tomorrow.</strong> CrUX is a rolling 28-day window, so a fix takes weeks to show (web.dev, corewebvitals.io). Re-check after four weeks.</li><li><strong>Lazy-loading the main image.</strong> The State of Web Vitals found 30.4% of React sites lazy-load at least one image already in view. Load the hero immediately.</li><li><strong>Piling on scripts.</strong> Cloudflare says extra third-party tools slow a page, and 62% of React sites with a tag manager passed all three, against 74% overall. Remove what you do not use.</li><li><strong>Campaign redirect chains.</strong> web.dev warns that stacked redirects and link shorteners add to TTFB. Link straight to the final HTTPS address.</li><li><strong>Chasing a perfect score.</strong> corewebvitals.io's opinion is that going beyond &quot;good&quot; does nothing for SEO. Stop at green and spend the time on content.</li></ul>
+<h2 id="what-to-do-next-a-four-step-plan">What to Do Next: A Four-Step Plan</h2>
+<p>Start with measurement, then fix the worst number, then wait for the window to catch up. This order wastes the least effort:</p>
+<ol><li><strong>Today, 10 minutes.</strong> Run PageSpeed Insights on your home page and two enquiry pages, on mobile, and record the field numbers.</li><li><strong>Today, 10 minutes.</strong> Open Search Console's Core Web Vitals report and note which page groups fail.</li><li><strong>This week.</strong> Fix the weakest number: compress the main image and cut redirects for LCP, reserve image space for CLS, and ask your developer about scripts for INP. The <a href="../../blog/website-launch-checklist/">website launch checklist</a> includes a PageSpeed Insights check.</li><li><strong>Day 28.</strong> Re-read the field data and your enquiry count, and fill the log.</li></ol>
+<p>If you would rather hand this over, Elyx Solutions' <a href="../../services/seo-optimization/">SEO optimization</a> service starts with an audit that covers page speed. Engagements start from ₹9,999, and every project is quoted to your requirements, in writing, after a call: <a href="../../contact.html">request a quote</a>.</p>
+<h2 id="sources">Sources</h2>
+<ul><li><a href="https://support.google.com/webmasters/answer/9205520?hl=en" rel="noopener" target="_blank">Core Web Vitals report - Search Console Help</a>, Google</li><li><a href="https://developers.google.com/search/docs/appearance/core-web-vitals" rel="noopener" target="_blank">Understanding Core Web Vitals and Google search results</a>, Google Search Central</li><li><a href="https://web.dev/articles/optimize-cwv-business" rel="noopener" target="_blank">Optimize Core Web Vitals for business decision makers</a>, web.dev (Google)</li><li><a href="https://web.dev/articles/vitals-tools" rel="noopener" target="_blank">Core Web Vitals workflows with Google tools</a>, web.dev (Google)</li><li><a href="https://corewebvitals.io/core-web-vitals/seo" rel="noopener" target="_blank">Core Web Vitals and SEO: Do They Affect Google Rankings?</a>, corewebvitals.io</li><li><a href="https://corewebvitals.io/state-of-cwv/frameworks/react" rel="noopener" target="_blank">React Core Web Vitals: how it scores, and why (The State of Web Vitals)</a>, corewebvitals.io</li><li><a href="https://corevitals.io" rel="noopener" target="_blank">Core Web Vitals Checker</a>, CoreVitals</li><li><a href="https://www.cloudflare.com/learning/performance/what-are-core-web-vitals/" rel="noopener" target="_blank">What are the Core Web Vitals (CWV)?</a>, Cloudflare</li><li><a href="https://www.akamai.com/glossary/what-are-google-core-web-vitals" rel="noopener" target="_blank">Google Core Web Vitals Explained</a>, Akamai</li><li><a href="https://www.debugbear.com/test/core-web-vitals" rel="noopener" target="_blank">Free Core Web Vitals Test</a>, DebugBear</li></ul>
+      </div>
+      <section class="bfaq" id="faq"><h2>Frequently asked questions</h2><div class="faq__list"><details class="faq__item">
+  <summary class="faq__q"><span>What are Core Web Vitals?</span><svg class="faq__caret" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+  <div class="faq__a"><p>Core Web Vitals are Google's three measures of real-world user experience: LCP for loading, INP for responsiveness and CLS for visual stability. Google Search Central recommends good scores for success in Search.</p></div>
+</details>
+<details class="faq__item">
+  <summary class="faq__q"><span>Is Core Web Vitals a ranking factor?</span><svg class="faq__caret" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+  <div class="faq__a"><p>Yes, Google's ranking systems use them, but Google does not say how much they count. Google Search Central says good scores align with what its core ranking systems seek to reward, and practitioners describe the weight as small next to relevance.</p></div>
+</details>
+<details class="faq__item">
+  <summary class="faq__q"><span>What is a good Core Web Vitals score?</span><svg class="faq__caret" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+  <div class="faq__a"><p>A good score is LCP of 2.5 seconds or less, INP of 200 milliseconds or less and CLS of 0.1 or less. Google judges them at the 75th percentile of real visits, per Search Console Help.</p></div>
+</details>
+<details class="faq__item">
+  <summary class="faq__q"><span>How do I check Core Web Vitals?</span><svg class="faq__caret" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+  <div class="faq__a"><p>Paste your address into PageSpeed Insights and read the real-user section, then open the Core Web Vitals report in Search Console. Judge by the field data and use lab tools such as Lighthouse only to find causes.</p></div>
+</details>
+<details class="faq__item">
+  <summary class="faq__q"><span>What does &quot;Core Web Vitals assessment failed&quot; mean?</span><svg class="faq__caret" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+  <div class="faq__a"><p>It means at least one of LCP, INP or CLS missed its good limit for real visitors. web.dev says only those three count in the pass or fail assessment, and corewebvitals.io says all three must pass.</p></div>
+</details>
+<details class="faq__item">
+  <summary class="faq__q"><span>How long does it take for Core Web Vitals fixes to show?</span><svg class="faq__caret" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+  <div class="faq__a"><p>Expect about four weeks. CrUX data is a rolling 28-day window, so Search Console and PageSpeed Insights catch up with a fix only gradually (web.dev, DebugBear).</p></div>
+</details>
+<details class="faq__item">
+  <summary class="faq__q"><span>What replaced First Input Delay?</span><svg class="faq__caret" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+  <div class="faq__a"><p>Interaction to Next Paint replaced First Input Delay as a Core Web Vital in March 2024, per Akamai and the CoreVitals checker. INP covers every interaction in a visit, not only the first.</p></div>
+</details>
+<details class="faq__item">
+  <summary class="faq__q"><span>Why does my site show no Core Web Vitals data?</span><svg class="faq__caret" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+  <div class="faq__a"><p>Your site is probably new or too small to appear in the Chrome UX Report. Search Console Help says the report needs a minimum amount of data, and the CoreVitals checker says lab numbers are then your best proxy.</p></div>
+</details>
+<details class="faq__item">
+  <summary class="faq__q"><span>Do I need a developer to fix Core Web Vitals?</span><svg class="faq__caret" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+  <div class="faq__a"><p>Sometimes. web.dev says business owners can influence causes such as redirects, campaign targeting and media choices, but many fixes, especially for INP, need a developer.</p></div>
+</details></div></section>
+      <div class="bfoot"><span>SEO &amp; Local Growth</span></div>
+    </article>
+    <aside class="baside" aria-label="From Elyx"><div class="bcta">
+  <span class="bcta__k">Elyx Solutions</span>
+  <h3>Want customers to find you on Google and Maps?</h3>
+  <a class="btn btn--blue" href="https://wa.me/919611729733?text=Hi%20Elyx%2C%20I'd%20like%20to%20talk%20about%20a%20project.%20(from%20the%20article%20%22Core%20Web%20Vitals%20Explained%3A%20Why%20Speed%20Affects%20Sales%20and%20Rankings%22)" target="_blank" rel="noopener" data-track="whatsapp_click" data-article="core-web-vitals" data-card-pos="side">WhatsApp us <svg class="arr" width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H4M10 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+  <a class="btn btn--ghost" href="../../services/seo-optimization/" data-track="card_click" data-article="core-web-vitals" data-card-pos="side" data-btn="soft">See SEO services</a>
+</div></aside>
+  </div>
+</div></main>
+<section class="cta" data-screen-label="Contact CTA">
+  <div class="cta__in reveal">
+    <div class="deco deco-dark" data-parallax="0.08" style="z-index:-1" aria-hidden="true"><span class="orb orb-a"></span></div>
+    <div class="ph-grid cta__bg"></div>
+    <div class="cta__glow"></div>
+    <span class="eyebrow is-light" style="justify-content:center;">Let's build</span>
+    <h2 class="cta__t" style="color:#fff;margin-top:20px;">Have something worth <span class="em">building?</span></h2>
+    <p class="cta__sub">Tell us where you're headed. We'll bring the team, the plan and the craft to get you there.</p>
+    <div class="cta__row">
+      <a class="btn btn--blue" href="../../contact.html" data-track="cta_click" data-pos="cta-section">Start a project <svg class="arr" width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H4M10 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+      <a class="btn btn--light" href="../../contact.html#book" data-track="cta_click" data-pos="cta-section">Book a call</a>
+    </div>
+  </div>
+</section>
+<footer class="footer">
+  <div class="footer__in">
+    <div class="footer__top">
+      <div>
+        <a class="brand" href="../../" aria-label="Elyx Solutions home">
+          <svg class="brand__mark" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+            <g transform="skewX(-10)">
+              <rect x="7" y="4" width="15" height="4.4" rx="1.2" fill="#1f4fd8"></rect>
+              <rect x="7" y="11.8" width="11" height="4.4" rx="1.2" fill="#0b1024"></rect>
+              <rect x="7" y="19.6" width="15" height="4.4" rx="1.2" fill="#1f4fd8"></rect>
+            </g>
+          </svg>
+          <span class="brand__name">Elyx</span>
+        </a>
+        <p class="footer__lede">Beyond just presence, we build digital <span class="serif-i" style="color:var(--blue)">value.</span></p>
+      </div>
+      <div class="fcol">
+        <h4>Services</h4>
+        <a href="../../services/web-development/">Web Development</a>
+        <a href="../../services/ecommerce-development/">E-commerce Development</a>
+        <a href="../../services/saas-development/">SaaS Development</a>
+        <a href="../../services/app-development/">App Development</a>
+        <a href="../../services/ai-chatbots/">AI Chatbots</a>
+        <a href="../../services/ai-call-assistants/">AI Call &amp; Voice Assistants</a>
+        <a href="../../services/whatsapp-automation/">WhatsApp &amp; Business Automation</a>
+        <a href="../../services/crm-lead-management/">CRM &amp; Lead Management</a>
+        <a href="../../services/booking-systems/">Booking &amp; Appointment Systems</a>
+        <a href="../../services/payments-billing/">Payments &amp; Subscription Billing</a>
+        <a href="../../services/admin-dashboards/">Admin Dashboards &amp; Internal Tools</a>
+        <a href="../../services/seo-optimization/">SEO Optimization</a>
+        <a href="../../services/maintenance-care/">Maintenance &amp; Care</a>
+      </div>
+      <div class="fcol">
+        <h4>Websites for</h4>
+        <a href="../../websites-for/dentists/">Dentists &amp; Clinics</a>
+        <a href="../../websites-for/coaching-centres/">Coaching Centres</a>
+        <a href="../../websites-for/restaurants-and-cafes/">Restaurants &amp; Cafés</a>
+        <a href="../../websites-for/salons-and-spas/">Salons &amp; Spas</a>
+        <a href="../../websites-for/real-estate/">Real Estate</a>
+        <a href="../../websites-for/ca-and-law-firms/">CA &amp; Law Firms</a>
+      </div>
+      <div class="fcol">
+        <h4>Company</h4>
+        <a href="../../about.html">About</a>
+        <a href="../../work.html">Work</a>
+        <a href="../../pricing/">Pricing</a>
+        <a href="../../tools/">Free tools</a>
+        <a href="../../blog/">Blog</a>
+        <a href="../../web-development-bengaluru/">Bengaluru</a>
+        <a href="../../contact.html">Contact</a>
+      </div>
+      <div class="fcol">
+        <h4>Connect</h4>
+        <a href="mailto:support.elyxsolutions@gmail.com">support.elyxsolutions@gmail.com</a>
+        <a href="tel:+919611729733" data-track="call_click" data-pos="footer">+91 96117 29733</a>
+        <a href="tel:+917204723340" data-track="call_click" data-pos="footer">+91 72047 23340</a>
+        <a href="https://wa.me/919611729733?text=Hi%20Elyx%2C%20I'd%20like%20to%20talk%20about%20a%20project." target="_blank" rel="noopener" data-track="whatsapp_click" data-pos="footer">WhatsApp</a>
+        <a href="https://www.linkedin.com/company/elyxsolutions04/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://www.instagram.com/elyxsolutions" target="_blank" rel="noopener">Instagram</a>
+        <span class="footer__addr">Bengaluru, Karnataka</span>
+      </div>
+    </div>
+    <div class="footer__bot">
+      <span>© 2026 Elyx Solutions. All rights reserved.</span>
+      <span>Designed &amp; built in-house · Bengaluru, India.</span>
+    </div>
+  </div>
+</footer>
+<a class="wa-float" href="https://wa.me/919611729733?text=Hi%20Elyx%2C%20I'd%20like%20to%20talk%20about%20a%20project." target="_blank" rel="noopener" aria-label="Chat with Elyx on WhatsApp" data-track="whatsapp_click" data-pos="floating">
+  <svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16.04 3C9.4 3 4 8.4 4 15.03c0 2.12.55 4.19 1.6 6.01L4 29l8.12-1.57a12.03 12.03 0 0 0 3.92.65C22.68 28.08 28.08 22.67 28.08 16 28.08 9.36 22.7 3 16.04 3Zm0 22.06c-1.22 0-2.4-.33-3.44-.95l-.25-.15-4.82.93.97-4.7-.17-.27a9.9 9.9 0 0 1-1.52-5.27c0-5.5 4.48-9.98 10-9.98 5.5 0 9.98 4.48 9.98 9.98s-4.48 10.41-9.98 10.41l-.77-.02Zm5.47-7.46c-.3-.15-1.77-.87-2.04-.97-.28-.1-.48-.15-.68.15-.2.3-.78.97-.95 1.17-.18.2-.35.22-.65.07-.3-.15-1.27-.47-2.42-1.5-.9-.8-1.5-1.78-1.67-2.08-.18-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.68-1.64-.93-2.25-.25-.58-.5-.5-.68-.5h-.58c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.5s1.07 2.9 1.22 3.1c.15.2 2.1 3.2 5.08 4.48.7.3 1.26.48 1.7.62.72.23 1.37.2 1.88.12.58-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35Z"/></svg>
+</a>
+<script>window.ELYX={"email":"support.elyxsolutions@gmail.com","whatsapp":"https://wa.me/919611729733?text=Hi%20Elyx%2C%20I'd%20like%20to%20talk%20about%20a%20project.","phone":"+91 96117 29733","booking":""};</script>
+<script src="../../js/site.js"></script>
+<script src="../../js/analytics.js"></script>
+</body>
+</html>

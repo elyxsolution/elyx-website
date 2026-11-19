@@ -12,7 +12,7 @@
     "lastmod": "2026-11-19"
   },
   "/services/seo-optimization/": {
-    "hash": "8db818fb4e10ea1c97e3a9512add69fe",
+    "hash": "665c14108ebf8fc5d26ad744cf113b81",
     "lastmod": "2026-11-19"
   },
   "/services/maintenance-care/": {
@@ -76,7 +76,7 @@
     "lastmod": "2026-11-19"
   },
   "/blog/": {
-    "hash": "92f7c98993f5b302e2fc55d3ed77b113",
+    "hash": "c918b65f5a629a70eb81362806e5bc8a",
     "lastmod": "2026-11-19"
   },
   "/blog/category/industries/": {
@@ -156,7 +156,7 @@
     "lastmod": "2026-11-16"
   },
   "/blog/author/shreyasmv/": {
-    "hash": "0a763423ba2676b29d0d58ba4c72d815",
+    "hash": "c8b9fce980c6222623ff7562b6661558",
     "lastmod": "2026-11-19"
   },
   "/blog/author/rahulc/": {
@@ -477,6 +477,10 @@
   },
   "/services/admin-dashboards/": {
     "hash": "8263aa9e537d450de2cc2eeba2174aae",
+    "lastmod": "2026-11-19"
+  },
+  "/blog/core-web-vitals/": {
+    "hash": "2b243dee1c1cb3269727b678d3a10a07",
     "lastmod": "2026-11-19"
   }
 }
