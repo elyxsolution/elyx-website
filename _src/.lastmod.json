@@ -12,7 +12,7 @@
     "lastmod": "2026-11-19"
   },
   "/services/seo-optimization/": {
-    "hash": "8db818fb4e10ea1c97e3a9512add69fe",
+    "hash": "7902f811fbf7218c4765ad24c9553303",
     "lastmod": "2026-11-19"
   },
   "/services/maintenance-care/": {
@@ -76,7 +76,7 @@
     "lastmod": "2026-11-19"
   },
   "/blog/": {
-    "hash": "92f7c98993f5b302e2fc55d3ed77b113",
+    "hash": "9cb2524017cc77d22a67efdf92c8f223",
     "lastmod": "2026-11-19"
   },
   "/blog/category/industries/": {
@@ -156,7 +156,7 @@
     "lastmod": "2026-11-16"
   },
   "/blog/author/shreyasmv/": {
-    "hash": "0a763423ba2676b29d0d58ba4c72d815",
+    "hash": "fe8a2d8e0ee00a7ecf5f4c839cce9723",
     "lastmod": "2026-11-19"
   },
   "/blog/author/rahulc/": {
@@ -477,6 +477,10 @@
   },
   "/services/admin-dashboards/": {
     "hash": "8263aa9e537d450de2cc2eeba2174aae",
+    "lastmod": "2026-11-19"
+  },
+  "/blog/how-long-does-seo-take/": {
+    "hash": "a4af2c8248f8371f1a15121852cc1ff0",
     "lastmod": "2026-11-19"
   }
 }
