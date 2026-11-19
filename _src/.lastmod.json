@@ -8,7 +8,7 @@
     "lastmod": "2026-11-19"
   },
   "/services/app-development/": {
-    "hash": "b48532d019b74f993fbace9f43b7897d",
+    "hash": "746df5be1ec3705403b7675c56b304a2",
     "lastmod": "2026-11-19"
   },
   "/services/seo-optimization/": {
@@ -76,7 +76,7 @@
     "lastmod": "2026-11-19"
   },
   "/blog/": {
-    "hash": "92f7c98993f5b302e2fc55d3ed77b113",
+    "hash": "2bb72f7125b8c393896a1cfed9b80447",
     "lastmod": "2026-11-19"
   },
   "/blog/category/industries/": {
@@ -156,7 +156,7 @@
     "lastmod": "2026-11-16"
   },
   "/blog/author/shreyasmv/": {
-    "hash": "0a763423ba2676b29d0d58ba4c72d815",
+    "hash": "9f80fd9bcfdb8b3aa7c10b35a25b4aa7",
     "lastmod": "2026-11-19"
   },
   "/blog/author/rahulc/": {
@@ -477,6 +477,10 @@
   },
   "/services/admin-dashboards/": {
     "hash": "8263aa9e537d450de2cc2eeba2174aae",
+    "lastmod": "2026-11-19"
+  },
+  "/blog/native-vs-cross-platform-app/": {
+    "hash": "6ee320e66669dbc22974e28396cc902c",
     "lastmod": "2026-11-19"
   }
 }
