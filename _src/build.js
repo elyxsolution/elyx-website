@@ -172,7 +172,7 @@ if (!config.googleBusinessProfileUrl) note('Create the Google Business Profile, 
 if (!config.bookingUrl) note('Add your Cal.com / Calendly link to "bookingUrl" (15-minute slots) to show the booking embed on /contact.html#book.');
 if (!config.ga4Id) note('Add your GA4 measurement ID (G-XXXXXXXXXX) to "ga4Id". Events (card_click, whatsapp_click, call_booked, form_submit) are already wired.');
 (config.authors || []).forEach((a) => { if (!a.bio || !a.linkedin) note('Author "' + a.name + '": add ' + [!a.bio && 'bio', !a.linkedin && 'LinkedIn URL', !a.photo && 'photo'].filter(Boolean).join(', ') + ' in site.config.json.'); });
-require('./data/work').forEach((w) => { if (!w.metrics.length || w.metrics.length < 2 && w.slug !== 'ashirwad-dental') note('Case study "' + w.shortName + '": add real result numbers to _src/data/work.js (metrics) and a client quote' + (w.quote ? '' : ' (none yet)') + '.'); });
+require('./data/work').filter((w) => !w.external).forEach((w) => { if (!w.metrics.length || w.metrics.length < 2 && w.slug !== 'ashirwad-dental') note('Case study "' + w.shortName + '": add real result numbers to _src/data/work.js (metrics) and a client quote' + (w.quote ? '' : ' (none yet)') + '.'); });
 blog.warnings.forEach((w) => note('Blog: ' + w));
 
 console.log('\nBuilt ' + pages.length + ' generated pages + ' + HAND.length + ' hand-written pages · ' + posts.length + ' article(s) · ' + order.length + ' URLs in sitemap.xml');

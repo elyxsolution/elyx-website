@@ -45,7 +45,7 @@ module.exports = [
     title: 'Website for Coaching Centres in India | Elyx',
     description: 'Landing pages and websites for coaching and test-prep centres that turn enquiries into admissions: demo-class booking, course pages, fee clarity. From ₹9,999.',
     h1: 'Coaching centre websites that turn enquiries into <span class="serif-i">admissions.</span>',
-    answer: 'Coaching websites win when they make the next step obvious: book a demo class, see the batches, see the fees. Elyx builds coaching and test-prep sites and landing pages from ₹9,999, including the Pinnacle Inc. GRE and IELTS site.',
+    answer: 'Coaching websites win when they make the next step obvious: book a demo class, see the batches, see the fees. Elyx builds coaching and test-prep sites and landing pages from ₹9,999.',
     audience: 'Coaching centre and test-prep owners who run ads or rely on word of mouth and want more admissions from the enquiries they already get.',
     needs: [
       { t: 'Course and batch pages', d: 'One page per course (GRE, IELTS, JEE, NEET, CA) with syllabus, batch timings and who it is for, so each can rank on its own.' },
@@ -59,11 +59,10 @@ module.exports = [
     regNote: 'Indian regulators have issued guidelines on misleading coaching advertisements, including claims about selection and rank. Keep claims verifiable; we will build them into the page only with your supporting proof.',
     startPrice: 'From ₹9,999',
     pricingKeys: ['landing', 'website'],
-    relatedCase: 'pinnacle-inc',
     relatedServices: ['web-development', 'seo-optimization'],
     faqs: [
       { q: 'How much does a coaching centre website cost?', a: 'A landing page for a course or campaign starts at ₹9,999 and ships in 1–2 weeks. A full multi-page site with course pages, a CMS and tracking is quoted after a discovery call.' },
-      { q: 'Can you build a landing page for our ad campaigns?', a: 'Yes. We built Pinnacle Inc.\'s landing page and brand presence for GRE and IELTS coaching, designed to convert prospective students.' },
+      { q: 'Can you build a landing page for our ad campaigns?', a: 'Yes. A landing page for a course or campaign is one of our most common builds, designed around a single action such as booking a demo class or enquiring about a batch.' },
       { q: 'Can students pay fees online?', a: 'Yes. We can add UPI and card payments through a payment gateway, plus receipts, if you want to collect fees or registration amounts online.' },
       { q: 'Can we track which campaign produced which enquiry?', a: 'Yes. We set up GA4 events for form submissions, WhatsApp clicks and calls, tagged by page and campaign.' },
       { q: 'Can parents and students update batch timings themselves?', a: 'Not themselves, but your team can. We add a simple CMS so batch dates and fees can be edited without a developer.' }

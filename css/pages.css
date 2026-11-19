@@ -83,10 +83,13 @@ a.fcard--link { display: block; }
 .casecard:hover { transform: translateY(-5px); border-color: var(--line-2); box-shadow: 0 26px 50px -30px rgba(11,16,36,.34); }
 .casecard__media { position: relative; min-height: 190px; display: grid; place-items: center; overflow: hidden; }
 .casecard__media--dental { background: linear-gradient(135deg,#1e3a5f,#2a6ea6); }
-.casecard__media--pinnacle { background: linear-gradient(135deg,#1a1a2e,#16213e 50%,#0f3460); }
 .casecard__media--malnad { background: linear-gradient(135deg,#1b4332,#2d6a4f); }
 .casecard__mono { font-family: var(--serif); font-size: 110px; line-height: 1; color: rgba(255,255,255,.2); font-style: italic; }
 .casecard__cat { position: absolute; top: 14px; left: 14px; font-family: var(--sans); font-size: 11px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: #fff; background: rgba(255,255,255,.16); border: 1px solid rgba(255,255,255,.25); padding: 4px 10px; border-radius: 100px; backdrop-filter: blur(6px); }
+.casecard--ext .casecard__media { overflow: hidden; background: var(--bg-2); }
+.casecard__shot { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: top center; transition: transform .8s var(--ease); }
+.casecard--ext:hover .casecard__shot { transform: scale(1.035); }
+.casecard--ext .casecard__cat { z-index: 1; color: var(--ink); background: rgba(255,255,255,.88); border: 1px solid var(--line); }
 .casecard__body { padding: 24px; display: flex; flex-direction: column; gap: 8px; }
 .casecard__label { font-family: var(--sans); font-size: 11px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--blue); }
 .casecard h3 { font-family: var(--serif); font-size: 27px; letter-spacing: -.02em; line-height: 1.05; }
@@ -94,7 +97,6 @@ a.fcard--link { display: block; }
 .casecard__more { margin-top: auto; padding-top: 8px; font-family: var(--sans); font-size: 14px; font-weight: 500; color: var(--blue); display: inline-flex; align-items: center; gap: 7px; }
 .casehero { position: relative; border-radius: 22px; min-height: clamp(220px, 34vw, 380px); display: grid; place-items: center; overflow: hidden; }
 .casehero--dental { background: linear-gradient(135deg,#1e3a5f,#2a6ea6); }
-.casehero--pinnacle { background: linear-gradient(135deg,#1a1a2e,#16213e 50%,#0f3460); }
 .casehero--malnad { background: linear-gradient(135deg,#1b4332,#2d6a4f); }
 .casehero__mono { font-family: var(--serif); font-style: italic; font-size: clamp(120px, 22vw, 260px); line-height: 1; color: rgba(255,255,255,.18); }
 .casehero__live { position: absolute; bottom: 18px; left: 20px; font-family: var(--sans); font-size: 12.5px; font-weight: 600; letter-spacing: .06em; color: #fff; background: rgba(255,255,255,.16); border: 1px solid rgba(255,255,255,.25); padding: 6px 14px; border-radius: 100px; }

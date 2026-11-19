@@ -2,7 +2,10 @@
 /* Case-study pages  →  /work/{slug}/
    ONLY facts already on the live site are used. To strengthen a page, add real numbers to
    `metrics` (e.g. { n: '+38', u: '%', l: 'Enquiries in the first 60 days' }), fill `stack`,
-   or extend `problem` / `built`, then run:  node _src/build.js  */
+   or extend `problem` / `built`, then run:  node _src/build.js
+
+   Entries with `external: true` are portfolio cards for client sites we built: no /work/ page is generated. The card shows `thumb`
+   (a screenshot of the site's landing page in /uploads/projects/) and links straight to `liveUrl` in a new tab. */
 
 module.exports = [
   {
@@ -49,46 +52,6 @@ module.exports = [
     stack: []
   },
   {
-    slug: 'pinnacle-inc',
-    client: 'Pinnacle Inc.',
-    shortName: 'Pinnacle Inc.',
-    category: 'Web · EdTech',
-    tint: 'pinnacle',
-    mono: 'P',
-    liveUrl: 'https://www.pinnacleinc.co/',
-    liveLabel: 'pinnacleinc.co',
-    title: 'Coaching Centre Landing Page Case Study: Pinnacle | Elyx',
-    description: 'How Elyx built the landing page and brand presence for Pinnacle Inc., a GRE and IELTS coaching company, designed to convert prospective students.',
-    h1: 'A GRE & IELTS coaching site built to <span class="serif-i">convert students.</span>',
-    summary: 'Landing page and brand presence for a GRE & IELTS coaching company, built to convert prospective students.',
-    services: ['web-development', 'seo-optimization'],
-    industry: 'coaching-centres',
-    problem: [
-      'Pinnacle Inc. is a GRE and IELTS coaching company. Study-abroad and test-prep is a category where a lot of money goes into ads, so a landing page has to turn that traffic into enquiries, not just visits.',
-      'They needed a page and brand presence that explained the offer clearly, looked credible next to larger competitors, and made it easy for a prospective student to take the next step.'
-    ],
-    built: [
-      { t: 'A conversion-focused landing page', d: 'A page designed around one action: getting a prospective student to enquire.' },
-      { t: 'Brand presence', d: 'A consistent visual identity and tone that makes a coaching company feel established and trustworthy.' },
-      { t: 'Course clarity', d: 'GRE and IELTS offerings explained plainly so students and parents can compare quickly.' },
-      { t: 'Built to be fast', d: 'Lean pages that load quickly on mobile, so paid traffic is not wasted.' }
-    ],
-    timeline: [
-      { t: 'Discovery and scope', d: 'Understood the audience, the courses and the enquiry flow.' },
-      { t: 'Design', d: 'Page structure and visual identity agreed before build.' },
-      { t: 'Build and feedback', d: 'Built in weekly increments with feedback rounds.' },
-      { t: 'QA and launch', d: 'Testing across devices, then launch.' }
-    ],
-    timelineTotal: '',
-    metrics: [],
-    quote: {
-      text: 'The most reliable technical partner we\'ve had. Things just work, and when they don\'t, they\'re already on it.',
-      name: 'Pinnacle Inc.',
-      role: 'GRE & IELTS coaching'
-    },
-    stack: []
-  },
-  {
     slug: 'malnad-stories',
     client: 'Malnad Stories',
     shortName: 'Malnad Stories',
@@ -123,5 +86,65 @@ module.exports = [
     metrics: [],
     quote: null,
     stack: []
+  },
+  {
+    external: true,
+    slug: 'powertek',
+    client: 'Powertek',
+    shortName: 'Powertek',
+    category: 'Web · Electrical',
+    tint: 'ext',
+    mono: 'P',
+    liveUrl: 'https://powertekservices.in/',
+    liveLabel: 'powertekservices.in',
+    thumb: '/uploads/projects/powertek.jpg',
+    summary: 'Website for a Class I licensed electrical contractor in Bengaluru, working since 1995 on HT and LT infrastructure. It sets out the services, a project gallery, an enquiry form and WhatsApp and call buttons.',
+    result: ['Class I', 'electrical contractor'],
+    metrics: []
+  },
+  {
+    external: true,
+    slug: 'hindustan-foundation',
+    client: 'Hindustan Foundation & Constructions',
+    shortName: 'Hindustan Foundation & Constructions',
+    category: 'Web · Construction',
+    tint: 'ext',
+    mono: 'H',
+    liveUrl: 'https://hindustanfoundationandconstructions.com/',
+    liveLabel: 'hindustanfoundationandconstructions.com',
+    thumb: '/uploads/projects/hindustan-foundation.jpg',
+    summary: 'Website for a Bengaluru pile foundation contractor. It covers boring, cage and concrete work and load testing, with live project sections, headline stats and one-tap call and email enquiries.',
+    result: ['Piling', 'contractor, Bengaluru'],
+    metrics: []
+  },
+  {
+    external: true,
+    slug: 'aralikatte-cafe',
+    client: 'Aralikatte Cafe',
+    shortName: 'Aralikatte Cafe',
+    category: 'Web · Restaurant',
+    tint: 'ext',
+    mono: 'A',
+    liveUrl: 'https://aralikattecafe.in/',
+    liveLabel: 'aralikattecafe.in',
+    thumb: '/uploads/projects/aralikatte-cafe.jpg',
+    summary: 'Website for a pure vegetarian South Indian cafe in Subramanyapura, Bengaluru. Visitors browse the full menu by category, get map directions, call to order, and see the gallery and catering page.',
+    result: ['Menu', 'maps and catering'],
+    metrics: []
+  },
+  {
+    external: true,
+    slug: 'bangalore-music-trust',
+    client: 'Bangalore Music Trust',
+    shortName: 'Bangalore Music Trust',
+    category: 'Web · Non-profit',
+    tint: 'ext',
+    mono: 'B',
+    liveUrl: 'https://bangaloremusictrust.com/',
+    liveLabel: 'bangaloremusictrust.com',
+    thumb: '/uploads/projects/bangalore-music-trust.jpg',
+    summary: 'Website for a Bengaluru music education trust teaching Western vocals, Western instruments and Hindustani classical. It takes class enquiries and donations and has pages for events, volunteers and partnerships.',
+    result: ['Donations', 'and class enquiries'],
+    metrics: []
   }
 ];

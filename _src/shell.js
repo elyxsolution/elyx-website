@@ -150,6 +150,17 @@ function priceTable(keys) {
 }
 
 function caseCard(w, label) {
+  if (w.external) {
+    return `<a class="casecard casecard--ext" href="${esc(w.liveUrl)}" target="_blank" rel="noopener">
+  <div class="casecard__media"><img class="casecard__shot" src="${esc(w.thumb)}" alt="${esc(w.shortName)} website" width="1000" height="750" loading="lazy" decoding="async" /><span class="casecard__cat">${esc(w.category)}</span></div>
+  <div class="casecard__body">
+    ${label ? '<span class="casecard__label">' + esc(label) + '</span>' : ''}
+    <h3>${esc(w.shortName)}</h3>
+    <p>${esc(w.summary)}</p>
+    <span class="casecard__more">Visit ${esc(w.liveLabel)} ${chrome.ARROW}</span>
+  </div>
+</a>`;
+  }
   return `<a class="casecard" href="/work/${w.slug}/">
   <div class="casecard__media casecard__media--${w.tint}"><span class="casecard__cat">${esc(w.category)}</span><span class="casecard__mono">${esc(w.mono)}</span></div>
   <div class="casecard__body">

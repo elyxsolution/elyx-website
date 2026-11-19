@@ -79,7 +79,7 @@ function industryPages(ctx) {
 ${S.section('', S.sectionHead('What your site needs', 'What a site for ' + esc(it.name.toLowerCase()) + ' <span class="serif-i">actually needs.</span>') + '<div class="fgrid">' + it.needs.map((i, n) => '<div class="fcard"><span class="fcard__n">0' + (n + 1) + '</span><h3>' + esc(i.t) + '</h3><p>' + esc(i.d) + '</p></div>').join('') + '</div>')}
 ${S.section('pg--tint', '<div class="split"><div>' + S.sectionHead('Typical page structure', 'How the page <span class="serif-i">flows.</span>', 'Every site is designed around your business, but this is the order that works for most ' + esc(it.short.toLowerCase()) + ': promise first, proof next, one clear action at every step.') + (it.regNote ? '<p class="note"><b>Worth knowing.</b> ' + esc(it.regNote) + '</p>' : '') + '</div>' + wireframe(it.layout) + '</div>')}
 ${S.section('', S.sectionHead('Pricing', it.startPrice.replace('From ', 'From <span class="serif-i">') + '</span>', 'Engagements start at ' + inr(pricing.startingPrice) + '. A one-page site is the fastest way in; a fuller site with a CMS, booking or payments is quoted in writing after a short call.') + S.priceTable(it.pricingKeys) + '<div class="inline-ctas">' + S.btn('Request a quote', '/contact.html?service=web-development', 'blue', 'pricing-block') + S.btnPlain('Estimate the cost', '/tools/website-cost-calculator/', 'ghost', 'pricing-block') + '</div>')}
-${S.section('pg--tint', S.sectionHead('Related build', 'Closest work <span class="serif-i">we have shipped.</span>') + '<div class="casewrap">' + S.caseCard(c, 'Related project') + '</div>')}
+${c ? S.section('pg--tint', S.sectionHead('Related build', 'Closest work <span class="serif-i">we have shipped.</span>') + '<div class="casewrap">' + S.caseCard(c, 'Related project') + '</div>') : ''}
 ${S.section('', S.sectionHead('Services involved', 'How we <span class="serif-i">deliver</span> it.') + '<div class="page-hero__chips">' + links(it.relatedServices, '/services/', svcBySlug) + '</div>')}
 ${S.articlesSection(ctx.postsForIndustry(it.slug, url), 'Guides for ' + esc(it.name.toLowerCase()))}
 ${S.faqBlock(it.faqs)}
@@ -106,11 +106,11 @@ ${S.ctaSection()}`;
 
 /* ============================================================== WORK */
 function casePages(ctx) {
-  return work.map((w) => {
+  return work.filter((w) => !w.external).map((w) => {
     const url = '/work/' + w.slug + '/';
     const crumbs = [['Home', '/'], ['Work', '/work.html'], [w.shortName, url]];
     const metrics = w.metrics && w.metrics.length ? '<div class="why__band metrics">' + w.metrics.map((m) => '<div class="stat"><div class="stat__n">' + esc(m.n) + '<span class="u">' + esc(m.u || '') + '</span></div><div class="stat__l">' + esc(m.l) + '</div></div>').join('') + '</div>' : '';
-    const others = work.filter((x) => x.slug !== w.slug);
+    const others = work.filter((x) => x.slug !== w.slug && !x.external);
     const main = `${S.pageHero({
       crumbs, eyebrow: 'Case study · ' + w.category, h1: w.h1, lead: esc(w.summary),
       ctas: S.btn('Visit the live site', w.liveUrl, 'blue', 'case-hero', ' target="_blank" rel="noopener"') + S.btnPlain('Start a similar project', '/contact.html?service=' + w.services[0], 'ghost', 'case-hero')
@@ -214,7 +214,7 @@ function locationPage(ctx) {
   const faqs = [
     { q: 'Are you based in Bengaluru?', a: 'Yes. Elyx Solutions is a three-person studio based in Bengaluru. We work with clients across India, and with local businesses we are happy to meet in person.' },
     { q: 'How much does a website cost in Bengaluru?', a: 'Engagements start at ₹9,999 for a landing page or redesign. A multi-page business site, an online store or a custom web app is quoted in writing after a short call. See <a href="/pricing/">pricing</a> for typical ranges.' },
-    { q: 'Do you work with businesses outside Bengaluru?', a: 'Yes. Most of our work is done remotely with calls and screen shares, so location rarely matters. Ashirwad Dental, Pinnacle Inc. and Malnad Stories were all built that way.' },
+    { q: 'Do you work with businesses outside Bengaluru?', a: 'Yes. Most of our work is done remotely with calls and screen shares, so location rarely matters. Ashirwad Dental and Malnad Stories were both built that way.' },
     { q: 'Can you help my business show up on Google Maps?', a: 'Yes. We set up and optimise your Google Business Profile alongside your website so both send the same signals. See our <a href="/services/seo-optimization/">SEO service</a>.' }
   ];
   const main = `${S.pageHero({
