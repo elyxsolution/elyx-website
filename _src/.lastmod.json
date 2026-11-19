@@ -8,7 +8,7 @@
     "lastmod": "2026-11-19"
   },
   "/services/app-development/": {
-    "hash": "b48532d019b74f993fbace9f43b7897d",
+    "hash": "d918eb0794761f9cb42f5a782c4fc8ec",
     "lastmod": "2026-11-19"
   },
   "/services/seo-optimization/": {
@@ -76,7 +76,7 @@
     "lastmod": "2026-11-19"
   },
   "/blog/": {
-    "hash": "92f7c98993f5b302e2fc55d3ed77b113",
+    "hash": "996a72c175297dde186294fb2e855ab6",
     "lastmod": "2026-11-19"
   },
   "/blog/category/industries/": {
@@ -156,7 +156,7 @@
     "lastmod": "2026-11-16"
   },
   "/blog/author/shreyasmv/": {
-    "hash": "0a763423ba2676b29d0d58ba4c72d815",
+    "hash": "8e99e9414dc2090ff58577e9cc1e0fed",
     "lastmod": "2026-11-19"
   },
   "/blog/author/rahulc/": {
@@ -477,6 +477,10 @@
   },
   "/services/admin-dashboards/": {
     "hash": "8263aa9e537d450de2cc2eeba2174aae",
+    "lastmod": "2026-11-19"
+  },
+  "/blog/coaching-institute-app-development/": {
+    "hash": "59084d68354d0ff96cc7509adffa5cc6",
     "lastmod": "2026-11-19"
   }
 }
