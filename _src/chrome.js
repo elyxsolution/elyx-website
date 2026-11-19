@@ -32,7 +32,7 @@ function nav({ home }) {
   const ind = industries.map((s) => tile('/websites-for/' + s.slug + '/', s.icon, esc(s.name))).join('');
   const wc = work.map((w) => {
     const meta = '<div class="wcard__meta"><div class="wcard__t">' + esc(w.shortName) + '</div><div class="wcard__c">' + esc(w.category) + '</div></div>';
-    if (w.external) return '<a class="wcard" href="' + esc(w.liveUrl) + '" target="_blank" rel="noopener"><div class="wcard__img"><img src="' + esc(w.thumb) + '" alt="' + esc(w.shortName) + ' website" width="1000" height="750" loading="lazy" decoding="async" /></div>' + meta + '</a>';
+    if (w.thumb) return '<a class="wcard" href="' + (w.external ? esc(w.liveUrl) + '" target="_blank" rel="noopener' : '/work/' + w.slug + '/') + '"><div class="wcard__img"><img src="' + esc(w.thumb) + '" alt="' + esc(w.shortName) + ' website" width="1000" height="750" loading="lazy" decoding="async" /></div>' + meta + '</a>';
     return '<a class="wcard" href="/work/' + w.slug + '/"><div class="wcard__img ph wcard__img--' + w.tint + '"></div>' + meta + '</a>';
   }).join('');
 
