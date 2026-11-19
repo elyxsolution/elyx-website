@@ -12,7 +12,7 @@
     "lastmod": "2026-11-19"
   },
   "/services/seo-optimization/": {
-    "hash": "8db818fb4e10ea1c97e3a9512add69fe",
+    "hash": "d6b55fcc75ac7d8e59bd0cae8db78fa9",
     "lastmod": "2026-11-19"
   },
   "/services/maintenance-care/": {
@@ -76,7 +76,7 @@
     "lastmod": "2026-11-19"
   },
   "/blog/": {
-    "hash": "92f7c98993f5b302e2fc55d3ed77b113",
+    "hash": "f2a2ef592fce66b434a8066ad629171f",
     "lastmod": "2026-11-19"
   },
   "/blog/category/industries/": {
@@ -156,7 +156,7 @@
     "lastmod": "2026-11-16"
   },
   "/blog/author/shreyasmv/": {
-    "hash": "0a763423ba2676b29d0d58ba4c72d815",
+    "hash": "cc0b1ecf692bf78abdbd656eb0c3f23b",
     "lastmod": "2026-11-19"
   },
   "/blog/author/rahulc/": {
@@ -477,6 +477,10 @@
   },
   "/services/admin-dashboards/": {
     "hash": "8263aa9e537d450de2cc2eeba2174aae",
+    "lastmod": "2026-11-19"
+  },
+  "/blog/website-not-showing-on-google/": {
+    "hash": "347f706fcfd96bff56c145172dfe10a8",
     "lastmod": "2026-11-19"
   }
 }
