@@ -8,7 +8,7 @@
     "lastmod": "2026-11-19"
   },
   "/services/app-development/": {
-    "hash": "b48532d019b74f993fbace9f43b7897d",
+    "hash": "394b40fcf6055eab20a991c8cabdf127",
     "lastmod": "2026-11-19"
   },
   "/services/seo-optimization/": {
@@ -76,7 +76,7 @@
     "lastmod": "2026-11-19"
   },
   "/blog/": {
-    "hash": "92f7c98993f5b302e2fc55d3ed77b113",
+    "hash": "d175f9849012fb07a9b82c92b8c72bea",
     "lastmod": "2026-11-19"
   },
   "/blog/category/industries/": {
@@ -156,7 +156,7 @@
     "lastmod": "2026-11-16"
   },
   "/blog/author/shreyasmv/": {
-    "hash": "0a763423ba2676b29d0d58ba4c72d815",
+    "hash": "e71ff1a8c877f1f5a1603a2923bcca02",
     "lastmod": "2026-11-19"
   },
   "/blog/author/rahulc/": {
@@ -477,6 +477,10 @@
   },
   "/services/admin-dashboards/": {
     "hash": "8263aa9e537d450de2cc2eeba2174aae",
+    "lastmod": "2026-11-19"
+  },
+  "/blog/push-notification-best-practices/": {
+    "hash": "b9bc6a07663fcd62bab0c31f5e04a2cf",
     "lastmod": "2026-11-19"
   }
 }

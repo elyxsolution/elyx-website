@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Push Notifications That Don't Get Your App Uninstalled</title>
+<meta name="description" content="Push notification best practices for app owners: when to ask permission, how often and when to send, with sourced examples and a worked weekly plan." />
+<link rel="canonical" href="https://elyxsolutions.in/blog/push-notification-best-practices/" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#080b1a" />
+<!-- Open Graph -->
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Elyx Solutions" />
+<meta property="og:title" content="Push Notifications That Don't Get Your App Uninstalled" />
+<meta property="og:description" content="Push notification best practices for app owners: when to ask permission, how often and when to send, with sourced examples and a worked weekly plan." />
+<meta property="og:url" content="https://elyxsolutions.in/blog/push-notification-best-practices/" />
+<meta property="og:image" content="https://elyxsolutions.in/og/blog-push-notification-best-practices.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:locale" content="en_IN" />
+<meta property="article:published_time" content="2026-11-19" />
+<meta property="article:modified_time" content="2026-11-19" />
+<meta property="article:section" content="Mobile Apps" />
+<meta property="article:author" content="https://elyxsolutions.in/blog/author/shreyasmv/" />
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Push Notifications That Don't Get Your App Uninstalled" />
+<meta name="twitter:description" content="Push notification best practices for app owners: when to ask permission, how often and when to send, with sourced examples and a worked weekly plan." />
+<meta name="twitter:image" content="https://elyxsolutions.in/og/blog-push-notification-best-practices.png" />
+<!-- Icons -->
+<link rel="icon" href="../../favicon.svg" type="image/svg+xml" />
+<link rel="icon" href="../../icon-192.png" sizes="192x192" type="image/png" />
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500;1,6..72,600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../../css/styles.css" />
+<link rel="stylesheet" href="../../css/pages.css" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://elyxsolutions.in/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://elyxsolutions.in/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Push Notifications That Don't Get Your App Uninstalled",
+          "item": "https://elyxsolutions.in/blog/push-notification-best-practices/"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://elyxsolutions.in/blog/push-notification-best-practices/#article",
+      "headline": "Push Notifications That Don't Get Your App Uninstalled",
+      "description": "Push notification best practices for app owners: when to ask permission, how often and when to send, with sourced examples and a worked weekly plan.",
+      "image": [
+        "https://elyxsolutions.in/og/blog-push-notification-best-practices.png"
+      ],
+      "datePublished": "2026-11-19",
+      "dateModified": "2026-11-19",
+      "author": {
+        "@type": "Person",
+        "@id": "https://elyxsolutions.in/blog/author/shreyasmv/#person",
+        "name": "Shreyas M V",
+        "url": "https://elyxsolutions.in/blog/author/shreyasmv/",
+        "sameAs": [
+          "https://www.linkedin.com/in/shreyas-m-v-311b99205/"
+        ]
+      },
+      "publisher": {
+        "@id": "https://elyxsolutions.in/#organization"
+      },
+      "mainEntityOfPage": "https://elyxsolutions.in/blog/push-notification-best-practices/",
+      "articleSection": "Mobile Apps",
+      "inLanguage": "en-IN"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What are push notifications?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Push notifications are short messages that an app or website sends to a user's device, even when it is not open. Braze says they appear only if the user has opted in. They are used for order updates, reminders, offers and re-engagement."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do push notifications work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The app asks Apple's APNs or Google's FCM for a token, sends it to your server, and your server sends each message to that service with the token. The service then delivers it to the device, according to CometChat. Braze adds that a notification needs the user's opt-in."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How often should an app send push notifications?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Start with 1 to 3 marketing messages a week and test from there; Pushwoosh calls that a safe baseline. CometChat gives 5 a week as a rule-of-thumb ceiling. No source measures the exact point where users uninstall."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the best time to send push notifications?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The best time is when the individual user is usually active, not one fixed hour for everyone. Braze and OneSignal recommend send-time optimisation. Without it, send in daytime and evening and avoid the hours people sleep."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "When should an app ask for push notification permission?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ask after the user has seen the app's value, such as after a first order or booking, and not on first launch. Show your own explainer screen first, as Braze, Adjust and Pushwoosh advise. On iOS you get one system prompt, per OneSignal."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I allow push notifications?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Allow them for apps where alerts carry something time-sensitive, such as deliveries, bookings or payments, and refuse them for apps that only send promotions. You can change this later: OneSignal says iOS and Android let users mute, schedule or disable notifications."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between push notifications and in-app messages?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "An in-app message shows only while the app is open, but a push can arrive when it is closed. Adjust draws that line. A push also needs the user's opt-in and an installed app."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do push notifications cause uninstalls?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sources say excessive or irrelevant pushes can lead to opt-outs and uninstalls, but none gives a measured rate. Braze, Adjust and CometChat all make the link. Track your own opt-out and uninstall rates before and after a change."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I send push notifications from my app?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Send them from a push platform's dashboard or trigger them through an API call, as Braze and OneSignal describe. Either way the app must first register for a token with APNs or FCM. Dashboards suit marketing messages; API triggers suit order and content events."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body data-article="push-notification-best-practices">
+<div class="grain"></div>
+<div class="nav-shell scrolled" id="navShell">
+  <a class="brand nav__brand" href="../../" aria-label="Elyx Solutions home">
+    <svg class="brand__mark" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+      <g transform="skewX(-10)">
+        <rect x="7" y="4" width="15" height="4.4" rx="1.2" fill="#1f4fd8"></rect>
+        <rect x="7" y="11.8" width="11" height="4.4" rx="1.2" fill="#0b1024"></rect>
+        <rect x="7" y="19.6" width="15" height="4.4" rx="1.2" fill="#1f4fd8"></rect>
+      </g>
+    </svg>
+    <span class="brand__name">Elyx</span>
+  </a>
+
+  <nav class="nav" id="nav" aria-label="Main">
+    <div class="nav__links" id="navLinks">
+      <div class="nav__item" data-menu="services"><button type="button">Services <svg class="caret" viewBox="0 0 10 10" fill="none"><path d="M1 3l4 4 4-4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button></div>
+      <div class="nav__item" data-menu="industries"><button type="button">Industries <svg class="caret" viewBox="0 0 10 10" fill="none"><path d="M1 3l4 4 4-4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button></div>
+      <div class="nav__item" data-menu="work"><button type="button">Work <svg class="caret" viewBox="0 0 10 10" fill="none"><path d="M1 3l4 4 4-4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button></div>
+      <div class="nav__item"><a href="../../blog/">Blog</a></div>
+      <div class="nav__item"><a href="../../about.html">About</a></div>
+      <div class="nav__item"><a href="../../contact.html">Contact</a></div>
+    </div>
+  </nav>
+
+  <div class="nav__right">
+    <a class="btn btn--primary nav__cta" href="../../contact.html" data-track="cta_click" data-pos="nav">Let's talk <svg class="arr" width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H4M10 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+    <button class="nav__burger" id="burger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <div class="mobile-menu__group">
+      <span class="mobile-menu__label">Services</span>
+      <a href="../../services/web-development/">Web Development</a>
+      <a href="../../services/ecommerce-development/">E-commerce Development</a>
+      <a href="../../services/saas-development/">SaaS Development</a>
+      <a href="../../services/app-development/">App Development</a>
+      <a href="../../services/ai-chatbots/">AI Chatbots</a>
+      <a href="../../services/ai-call-assistants/">AI Call &amp; Voice Assistants</a>
+      <a href="../../services/whatsapp-automation/">WhatsApp &amp; Business Automation</a>
+      <a href="../../services/crm-lead-management/">CRM &amp; Lead Management</a>
+      <a href="../../services/booking-systems/">Booking &amp; Appointment Systems</a>
+      <a href="../../services/payments-billing/">Payments &amp; Subscription Billing</a>
+      <a href="../../services/admin-dashboards/">Admin Dashboards &amp; Internal Tools</a>
+      <a href="../../services/seo-optimization/">SEO Optimization</a>
+      <a href="../../services/maintenance-care/">Maintenance &amp; Care</a>
+    </div>
+    <div class="mobile-menu__group">
+      <span class="mobile-menu__label">Websites for</span>
+      <a href="../../websites-for/dentists/">Dentists &amp; Clinics</a>
+      <a href="../../websites-for/coaching-centres/">Coaching Centres</a>
+      <a href="../../websites-for/restaurants-and-cafes/">Restaurants &amp; Cafés</a>
+      <a href="../../websites-for/salons-and-spas/">Salons &amp; Spas</a>
+      <a href="../../websites-for/real-estate/">Real Estate</a>
+      <a href="../../websites-for/ca-and-law-firms/">CA &amp; Law Firms</a>
+    </div>
+    <div class="mobile-menu__group">
+      <span class="mobile-menu__label">Company</span>
+      <a href="../../about.html">About</a>
+      <a href="../../work.html">Work</a>
+      <a href="../../pricing/">Pricing</a>
+      <a href="../../blog/">Blog</a>
+      <a href="../../tools/">Free tools</a>
+      <a href="../../contact.html">Contact</a>
+    </div>
+    <a class="btn btn--blue mobile-menu__cta" href="../../contact.html">Let's talk <svg class="arr" width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H4M10 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+  </div>
+
+  <!-- Mega panel -->
+  <div class="mega" id="mega">
+    <div class="mega__inner">
+      <div class="mega__panel" data-panel="services">
+        <div class="mega-grid">
+          <div class="mega-tiles"><a class="mtile" href="../../services/web-development/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M9 8l-4 4 4 4M15 8l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">Web Development</span></span></a><a class="mtile" href="../../services/ecommerce-development/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M3 4h2l2.4 10.2a1 1 0 001 .8h8.2a1 1 0 001-.76L19 8H6.2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path><circle cx="9.5" cy="19" r="1.3" fill="currentColor"></circle><circle cx="16.5" cy="19" r="1.3" fill="currentColor"></circle></svg></span><span><span class="mtile__t">E-commerce Development</span></span></a><a class="mtile" href="../../services/saas-development/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M6 16a4 4 0 010-8 5 5 0 019.6-1.5A3.5 3.5 0 0118 16H6z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">SaaS Development</span></span></a><a class="mtile" href="../../services/app-development/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><rect x="7" y="3" width="10" height="18" rx="2.5" stroke="currentColor" stroke-width="1.6"></rect><path d="M11 18h2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg></span><span><span class="mtile__t">App Development</span></span></a><a class="mtile" href="../../services/ai-chatbots/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M5 6.5A2.5 2.5 0 017.5 4h9A2.5 2.5 0 0119 6.5v6a2.5 2.5 0 01-2.5 2.5H11l-4 3.5V15h-.5A2.5 2.5 0 014 12.5v-6z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"></path><path d="M9 9.7h.01M12 9.7h.01M15 9.7h.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path></svg></span><span><span class="mtile__t">AI Chatbots</span></span></a><a class="mtile" href="../../services/ai-call-assistants/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M6.6 4h2.2l1.2 3.4-1.6 1.2a10 10 0 004.2 4.2l1.2-1.6 3.4 1.2v2.2A2 2 0 0115.2 16 11.2 11.2 0 014 4.8 2 2 0 016.6 4z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"></path><path d="M15 4.5a5.5 5.5 0 014.5 4.5M15 8a2.5 2.5 0 012 2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg></span><span><span class="mtile__t">AI Call &amp; Voice Assistants</span></span></a><a class="mtile" href="../../services/whatsapp-automation/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M13 3L5 13.2h6L10 21l8-10.2h-6L13 3z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">WhatsApp &amp; Business Automation</span></span></a><a class="mtile" href="../../services/crm-lead-management/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><circle cx="9" cy="8.5" r="3" stroke="currentColor" stroke-width="1.6"></circle><path d="M3.5 19a5.5 5.5 0 0111 0" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path><path d="M16 5.8a3 3 0 010 5.4M17.5 14.4A5.5 5.5 0 0120.5 19" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg></span><span><span class="mtile__t">CRM &amp; Lead Management</span></span></a><a class="mtile" href="../../services/booking-systems/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><rect x="4" y="5.5" width="16" height="14" rx="2.5" stroke="currentColor" stroke-width="1.6"></rect><path d="M4 10h16M8.5 3.5v4M15.5 3.5v4M9 14.5l2 2 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">Booking &amp; Appointment Systems</span></span></a><a class="mtile" href="../../services/payments-billing/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><rect x="3.5" y="6" width="17" height="12" rx="2.5" stroke="currentColor" stroke-width="1.6"></rect><path d="M3.5 10.5h17M7 15h3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg></span><span><span class="mtile__t">Payments &amp; Subscription Billing</span></span></a><a class="mtile" href="../../services/admin-dashboards/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="7" height="7" rx="1.6" stroke="currentColor" stroke-width="1.6"></rect><rect x="13" y="4" width="7" height="4.5" rx="1.6" stroke="currentColor" stroke-width="1.6"></rect><rect x="13" y="11" width="7" height="9" rx="1.6" stroke="currentColor" stroke-width="1.6"></rect><rect x="4" y="14" width="7" height="6" rx="1.6" stroke="currentColor" stroke-width="1.6"></rect></svg></span><span><span class="mtile__t">Admin Dashboards &amp; Internal Tools</span></span></a><a class="mtile" href="../../services/seo-optimization/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><circle cx="10.5" cy="10.5" r="6" stroke="currentColor" stroke-width="1.6"></circle><path d="M15 15l5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg></span><span><span class="mtile__t">SEO Optimization</span></span></a><a class="mtile" href="../../services/maintenance-care/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M12 8v4l3 2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path><circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="1.6"></circle></svg></span><span><span class="mtile__t">Maintenance &amp; Care</span></span></a><a class="mtile" href="../../pricing/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M4 14l5-5 4 4 7-7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path><path d="M20 6v4h-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">Pricing</span></span></a></div>
+          <a class="mega-feature" href="../../pricing/">
+            <div class="ph-grid"></div>
+            <div class="mega-feature__k">Featured</div>
+            <div class="mega-feature__t">Starting from ₹9,999. Quotes tailored to you.</div>
+            <div class="mega-feature__l">See pricing <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H4M10 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+          </a>
+        </div>
+      </div>
+
+      <div class="mega__panel" data-panel="industries">
+        <div class="mega-grid">
+          <div class="mega-tiles"><a class="mtile" href="../../websites-for/dentists/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M12 5c-2-1.5-6-1.5-6 2.5 0 3 1.5 4 1.5 7 0 2 .8 4.5 2 4.5s1.5-2 2.5-2 1.3 2 2.5 2 2-2.5 2-4.5c0-3 1.5-4 1.5-7C18 3.5 14 3.5 12 5z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">Dentists &amp; Clinics</span></span></a><a class="mtile" href="../../websites-for/coaching-centres/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M3 9l9-4 9 4-9 4-9-4z M7 11v4c0 1.5 2.2 3 5 3s5-1.5 5-3v-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">Coaching Centres</span></span></a><a class="mtile" href="../../websites-for/restaurants-and-cafes/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M7 3v8M5 3v5a2 2 0 004 0V3M7 11v10M17 3c-2 1.5-3 4-3 7h3v11" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">Restaurants &amp; Cafés</span></span></a><a class="mtile" href="../../websites-for/salons-and-spas/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><circle cx="6" cy="7" r="2.5" stroke="currentColor" stroke-width="1.6"></circle><circle cx="6" cy="17" r="2.5" stroke="currentColor" stroke-width="1.6"></circle><path d="M8 8.5L20 18M8 15.5L20 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg></span><span><span class="mtile__t">Salons &amp; Spas</span></span></a><a class="mtile" href="../../websites-for/real-estate/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M4 21V8l8-5 8 5v13M9 21v-6h6v6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">Real Estate</span></span></a><a class="mtile" href="../../websites-for/ca-and-law-firms/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M12 4v16M6 20h12M5 8h14M5 8l-2.5 6a3 3 0 005 0L5 8zM19 8l-2.5 6a3 3 0 005 0L19 8z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">CA &amp; Law Firms</span></span></a></div>
+          <a class="mega-feature" href="../../websites-for/">
+            <div class="ph-grid"></div>
+            <div class="mega-feature__k">Built for your trade</div>
+            <div class="mega-feature__t">What a site for your kind of business actually needs.</div>
+            <div class="mega-feature__l">All industries <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H4M10 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+          </a>
+        </div>
+      </div>
+
+      <div class="mega__panel" data-panel="work">
+        <div class="mega-grid mega-grid--work">
+          <div class="mega-wlinks">
+            <a class="mtile" href="../../work.html#tools"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.6"></circle><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5.1 5.1l2.1 2.1M16.8 16.8l2.1 2.1M18.9 5.1L16.8 7.2M7.2 16.8l-2.1 2.1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg></span><span><span class="mtile__t">Tools we use</span></span></a>
+            <a class="mtile" href="../../work.html#faq"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"></circle><path d="M9.6 9.2a2.5 2.5 0 014.7 1.1c0 1.6-2.3 2-2.3 3.6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path><circle cx="12" cy="16.6" r="0.7" fill="currentColor"></circle></svg></span><span><span class="mtile__t">FAQ about Elyx</span></span></a>
+            <a class="mtile" href="../../work.html"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="6.5" height="6.5" rx="1.6" stroke="currentColor" stroke-width="1.6"></rect><rect x="13.5" y="4" width="6.5" height="6.5" rx="1.6" stroke="currentColor" stroke-width="1.6"></rect><rect x="4" y="13.5" width="6.5" height="6.5" rx="1.6" stroke="currentColor" stroke-width="1.6"></rect><rect x="13.5" y="13.5" width="6.5" height="6.5" rx="1.6" stroke="currentColor" stroke-width="1.6"></rect></svg></span><span><span class="mtile__t">All projects</span></span></a>
+          </div>
+          <div class="mega-work"><a class="wcard" href="../../work/ashirwad-dental/"><div class="wcard__img"><img src="../../uploads/projects/ashirwad-dental.jpg" alt="Ashirwad Dental Clinic website" width="1000" height="750" loading="lazy" decoding="async" /></div><div class="wcard__meta"><div class="wcard__t">Ashirwad Dental Clinic</div><div class="wcard__c">Web · Redesign</div></div></a><a class="wcard" href="../../work/malnad-stories/"><div class="wcard__img"><img src="../../uploads/projects/malnad-stories.jpg" alt="Malnad Stories website" width="1000" height="750" loading="lazy" decoding="async" /></div><div class="wcard__meta"><div class="wcard__t">Malnad Stories</div><div class="wcard__c">E-commerce · Web App</div></div></a><a class="wcard" href="https://powertekservices.in/" target="_blank" rel="noopener"><div class="wcard__img"><img src="../../uploads/projects/powertek.jpg" alt="Powertek website" width="1000" height="750" loading="lazy" decoding="async" /></div><div class="wcard__meta"><div class="wcard__t">Powertek</div><div class="wcard__c">Web · Electrical</div></div></a><a class="wcard" href="https://hindustanfoundationandconstructions.com/" target="_blank" rel="noopener"><div class="wcard__img"><img src="../../uploads/projects/hindustan-foundation.jpg" alt="Hindustan Foundation &amp; Constructions website" width="1000" height="750" loading="lazy" decoding="async" /></div><div class="wcard__meta"><div class="wcard__t">Hindustan Foundation &amp; Constructions</div><div class="wcard__c">Web · Construction</div></div></a><a class="wcard" href="https://aralikattecafe.in/" target="_blank" rel="noopener"><div class="wcard__img"><img src="../../uploads/projects/aralikatte-cafe.jpg" alt="Aralikatte Cafe website" width="1000" height="750" loading="lazy" decoding="async" /></div><div class="wcard__meta"><div class="wcard__t">Aralikatte Cafe</div><div class="wcard__c">Web · Restaurant</div></div></a><a class="wcard" href="https://bangaloremusictrust.com/" target="_blank" rel="noopener"><div class="wcard__img"><img src="../../uploads/projects/bangalore-music-trust.jpg" alt="Bangalore Music Trust website" width="1000" height="750" loading="lazy" decoding="async" /></div><div class="wcard__meta"><div class="wcard__t">Bangalore Music Trust</div><div class="wcard__c">Web · Non-profit</div></div></a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<span id="top"></span>
+<main class="bl"><div class="bl__in">
+  <div class="bl__crumbs">
+    <a class="bl__back" href="../../blog/">← Back to Blog</a>
+    <nav aria-label="Breadcrumb"><ol><li><a href="../../">Home</a></li><li aria-hidden="true">/</li><li><a href="../../blog/">Blog</a></li><li aria-hidden="true">/</li><li aria-current="page">Push Notifications That Don't Get Your App Uninstalled</li></ol></nav>
+  </div>
+  <div class="bl__cols">
+    <article class="barticle" data-article="push-notification-best-practices">
+      <header>
+        <p class="bbyline">By <a class="bauthor" href="../../blog/author/shreyasmv/"><img class="bauthor__ph" src="../../uploads/authors/shreyasmv.jpg" alt="" width="24" height="24" loading="lazy" /><span>Shreyas M V</span></a><span aria-hidden="true">·</span><span>Published <time datetime="2026-11-19">19 November 2026</time></span><span aria-hidden="true">·</span><span>14 min read</span></p>
+        <h1>Push Notifications That Don't Get Your App Uninstalled</h1>
+        <p class="blead">Push notification best practices for app owners: when to ask permission, how often and when to send, with sourced examples and a worked weekly plan.</p>
+      </header>
+      <nav class="btoc" aria-label="Table of contents"><b>On this page</b><ol><li><a href="#how-push-notifications-work-and-where-uninstalls-start"><span>01</span>How Push Notifications Work, and Where Uninstalls Start</a></li><li><a href="#push-notification-permission-prompts-ask-after-value"><span>02</span>Push Notification Permission Prompts: Ask After Value</a></li><li><a href="#push-notification-best-practices-for-frequency-what-six-sources-say"><span>03</span>Push Notification Best Practices for Frequency: What Six Sources Say</a></li><li><a href="#a-worked-example-one-week-of-notifications-for-a-grocery-app"><span>04</span>A Worked Example: One Week of Notifications for a Grocery App</a></li><li><a href="#when-to-send-push-notifications-timing-rules"><span>05</span>When to Send Push Notifications: Timing Rules</a></li><li><a href="#writing-push-copy-length-wording-and-deep-links"><span>06</span>Writing Push Copy: Length, Wording and Deep Links</a></li><li><a href="#push-notification-examples-what-the-sources-report"><span>07</span>Push Notification Examples: What the Sources Report</a></li><li><a href="#push-notification-program-best-practices-segment-trigger-test"><span>08</span>Push Notification Program Best Practices: Segment, Trigger, Test</a></li><li><a href="#how-to-choose-a-push-notification-service"><span>09</span>How to Choose a Push Notification Service</a></li><li><a href="#what-usually-goes-wrong-with-push-notifications"><span>10</span>What Usually Goes Wrong With Push Notifications</a></li><li><a href="#what-is-documented-and-what-is-my-reading"><span>11</span>What Is Documented and What Is My Reading</a></li><li><a href="#what-to-do-next"><span>12</span>What to Do Next</a></li><li><a href="#sources"><span>13</span>Sources</a></li><li><a href="#faq"><span>14</span>Frequently asked questions</a></li></ol></nav>
+      <div class="prose">
+<p>Push notification best practices come down to three decisions: ask permission after the user has seen value, send few messages that each matter to that person, and send them when that person is awake and using the phone. Break any one and users mute the app first and delete it later. The honest qualification is that every source I read is a vendor selling push tools, and none publishes a measured uninstall rate by message count, so the figures below are vendor claims and the limits are starting points to test.</p>
+<ul><li><strong>Permission.</strong> Ask after a moment of value, behind your own explainer screen, never on first launch.</li><li><strong>Frequency.</strong> Sources range from 1 to 3 messages a week as a safe start to 5 a week as a ceiling; no source proves a threshold.</li><li><strong>Timing.</strong> Send when the individual is active, tie messages to events, and keep a quiet window overnight.</li><li><strong>Measure.</strong> Track opt-outs and uninstalls, not just opens, and judge changes over 30 to 90 days.</li></ul>
+<h2 id="how-push-notifications-work-and-where-uninstalls-start">How Push Notifications Work, and Where Uninstalls Start</h2>
+<p>A push notification travels from your server to Apple's push service (APNs) or Google's Firebase Cloud Messaging (FCM), which deliver it to a device that has given your app a push token. Braze says every push, whether sent from a dashboard or an API call, goes through APNs on iOS and FCM on Android. The token is a unique address for one app on one device.</p>
+<p>Braze describes two token types, which shows how a lost user leaves in stages. A foreground token is issued when the user opts in and is what lets a notification appear. A background token exists on every device with the app installed and allows silent pushes used for jobs such as uninstall tracking; opting out leaves only that one, and uninstalling removes every token.</p>
+<p>My reading is that opt-out comes before uninstall, so both are early warnings. Braze notes that many users ignore unwanted messages for a while before disabling them or deleting the app. CometChat adds that delivery can fail on network errors, OS changes, bugs and server downtime, so a missing notification is not always a user's choice.</p>
+<p>Wiring this up is app work: the app requests a token, sends it to your server and your server stores it, per CometChat. <a href="../../services/app-development/">Elyx Solutions' app development service</a> lists push notifications and event tracking among the features of an app build. If you are still deciding whether you need an app at all, <a href="../../blog/does-my-business-need-an-app/">start with this decision checklist</a>.</p>
+<h2 id="push-notification-permission-prompts-ask-after-value">Push Notification Permission Prompts: Ask After Value</h2>
+<p>Ask for push permission after the user has experienced something that a notification would improve, and put your own explainer screen in front of the system dialog. Braze says push is an opt-in channel, so downloading the app does not mean the user agreed, and a refusal limits what you can do later. OneSignal says that on iOS you get one shot at the system dialog.</p>
+<p>Pushwoosh advises against asking on first launch and recommends a pre-permission &quot;soft ask&quot;, plus category choices such as deals or order updates. Adjust says the iOS permission text cannot be customised but your own screen before it can be, and that a shop can ask after a purchase. Adjust's guide cites a 2023 report, so it may predate newer OS rules; check Apple's and Google's current documentation before you build.</p>
+<p>The table is my application of those rules to four kinds of app. The first row follows Adjust's after-purchase example; the other rows and all the wording are my reading and illustrative.</p>
+<div class="prose-table"><table><thead><tr><th>App type</th><th>Ask after</th><th>Explainer promises</th></tr></thead><tbody><tr><td>Grocery or shop</td><td>First order placed</td><td>&quot;Know when your order is out for delivery&quot;</td></tr><tr><td>Clinic or salon booking</td><td>First booking confirmed</td><td>&quot;A reminder the evening before your visit&quot;</td></tr><tr><td>Fitness or habit</td><td>User sets a goal</td><td>&quot;A nudge at the time you chose&quot;</td></tr><tr><td>Coaching or learning</td><td>First lesson finished</td><td>&quot;Class timings and new test alerts&quot;</td></tr></tbody></table></div>
+<p>Follow this sequence:</p>
+<ol><li>Let the user reach one useful result first.</li><li>Show one screen with one specific promise.</li><li>Trigger the system dialog only when they tap yes.</li><li>On &quot;not now&quot;, ask again later at a new value moment. Braze suggests email for a re-permission nudge; for WhatsApp, see the consent rules below.</li></ol>
+<p>Pushwoosh says apps using this value-exchange approach typically see 40 to 60 percent opt-in on mobile, with no method given. Adjust says 65 percent of users return within 30 days when push is on. Treat both as vendor claims.</p>
+<h2 id="push-notification-best-practices-for-frequency-what-six-sources-say">Push Notification Best Practices for Frequency: What Six Sources Say</h2>
+<p>Sources disagree on how often to send, from 1 to 3 messages a week as a safe baseline to 5 a week as a ceiling, so treat any number as the cap you test below. The table sets out what each page says, read on 19 November 2026.</p>
+<div class="prose-table"><table><thead><tr><th>Source</th><th>Frequency guidance</th><th>Kind of claim</th></tr></thead><tbody><tr><td>Pushwoosh (March 2026)</td><td>1 to 3 a week to start; daily only for engaged users</td><td>Vendor advice, no data</td></tr><tr><td>CometChat</td><td>No more than 5 a week</td><td>Rule of thumb</td></tr><tr><td>OneSignal</td><td>More than a few a week erodes trust for most uses</td><td>Vendor opinion</td></tr><tr><td>Adjust</td><td>Use sparingly, no number</td><td>Vendor advice</td></tr><tr><td>Braze</td><td>No number; too many drives opt-outs and uninstalls</td><td>Vendor advice</td></tr><tr><td>Business of Apps, via CometChat</td><td>40 percent lose interest at 3 to 6 a day</td><td>Second-hand figure</td></tr></tbody></table></div>
+<p>The Business of Apps figure needs arithmetic. Three to six a day is 3 x 7 = 21 to 6 x 7 = 42 a week, far above every weekly ceiling in the table. It tells you where users leave in numbers, but not what is safe, and it measures lost interest, not uninstalls.</p>
+<p>Pushwoosh recommends a frequency cap, a per-user maximum per day or week, set in your push tool. Start low, test by segment, and let engaged users hear from you more often than dormant ones.</p>
+<h2 id="a-worked-example-one-week-of-notifications-for-a-grocery-app">A Worked Example: One Week of Notifications for a Grocery App</h2>
+<p>A weekly budget separates messages the user triggered from messages you chose to send, and caps only the second kind. Take a made-up neighbourhood grocery app in Hubballi. It is an illustration, not a client, and the limits are my choices inside the sourced ranges.</p>
+<div class="prose-table"><table><thead><tr><th>Message type</th><th>Rule</th><th>Messages in a week</th></tr></thead><tbody><tr><td>Order confirmed, out for delivery</td><td>Always, once per event</td><td>2 per order</td></tr><tr><td>Promotional, active customer</td><td>Cap of 2</td><td>2</td></tr><tr><td>Re-engagement, no order in 14 days</td><td>Cap of 1</td><td>1</td></tr></tbody></table></div>
+<p>An active customer who orders three times gets 3 x 2 = 6 order messages plus at most 2 promotions, so 8 pushes in the week, 2 of them marketing. Over four weeks that is 4 x 2 = 8 promotions, against 4 x 5 = 20 at CometChat's ceiling and 4 x 3 = 12 at the top of Pushwoosh's baseline. A dormant customer gets 4 x 1 = 4.</p>
+<p>My reading is that the sources' numbers describe marketing messages, because a delivery update is something the user asked for by ordering. No source tests this split, so run it as an experiment and watch opt-outs.</p>
+<h2 id="when-to-send-push-notifications-timing-rules">When to Send Push Notifications: Timing Rules</h2>
+<p>Send each message when that user is likely to be awake and active, using send-time optimisation where your tool offers it and a fixed quiet window where it does not. Braze says sleeping users ignore messages, and OneSignal warns against blasting a whole list at 10 AM. Pushwoosh reports that one gaming app saw a 25 percent rise in click-through after enabling its best-time feature, a single vendor example.</p>
+<p>Timing also means tying the message to an event. CleverTap says a good push is triggered by something meaningful such as an action, a location or a moment that matters. Pushwoosh gives a weekly account summary on Sunday evening as an example.</p>
+<div class="prose-table"><table><thead><tr><th>Message type</th><th>Send</th><th>Source or basis</th></tr></thead><tbody><tr><td>Order or payment update</td><td>Immediately</td><td>My reading</td></tr><tr><td>Appointment reminder</td><td>Evening before</td><td>My reading</td></tr><tr><td>Promotion</td><td>User's active window</td><td>Braze, OneSignal</td></tr><tr><td>Re-engagement</td><td>After a set gap</td><td>KFC India example below</td></tr></tbody></table></div>
+<p>CometChat lists time zones, active periods and festive seasons as inputs. For an app with Indian users the time-zone problem mostly disappears, so the quiet window and festival weeks matter more; I have no sourced Indian send-time data, so read your own analytics.</p>
+<h2 id="writing-push-copy-length-wording-and-deep-links">Writing Push Copy: Length, Wording and Deep Links</h2>
+<p>Put the point first: Braze and OneSignal give about 50 characters for the title and 14 to 25 words for the body. OneSignal says trays often cut a message after two lines. It also says to state the benefit, use specifics such as &quot;3 items left&quot; instead of &quot;Limited stock!&quot;, and avoid all-caps.</p>
+<p>Deep links matter as much as words. Braze says a tap should open the exact page promised, not the home screen, and OneSignal calls a home-screen landing a conversion killer. Action buttons such as &quot;View order&quot; let users act without opening the app, per OneSignal.</p>
+<p>The wording below is mine and illustrative.</p>
+<div class="prose-table"><table><thead><tr><th>Weak</th><th>Better</th><th>Why</th></tr></thead><tbody><tr><td>Don't miss out!</td><td>Order 4821 is out for delivery, arriving by 7 pm</td><td>Specific, carries the order number Adjust recommends</td></tr><tr><td>Appointment reminder</td><td>Dr Rao's clinic, tomorrow 10:30 am. Confirm or reschedule</td><td>Deep link to the booking</td></tr><tr><td>New offers inside</td><td>Your usual atta and dal are 10 percent off today</td><td>Behaviour-based, as Braze advises</td></tr></tbody></table></div>
+<h2 id="push-notification-examples-what-the-sources-report">Push Notification Examples: What the Sources Report</h2>
+<p>The sourced examples all come from vendors, and each reports a result without a method. The table lists what each did and what the publisher states; none reports uninstalls.</p>
+<div class="prose-table"><table><thead><tr><th>Example</th><th>What it did</th><th>Reported result</th></tr></thead><tbody><tr><td>KFC India (Braze)</td><td>Daily push to users who had not claimed rewards in 3 days, in a game campaign</td><td>No figure in the page</td></tr><tr><td>NASCAR (Braze)</td><td>Content and app-download prompts</td><td>13.5% and 9.6% open rates</td></tr><tr><td>Beach Bum Games (OneSignal)</td><td>Messages based on session length and quest progress</td><td>Click-through from under 1% to 12%</td></tr><tr><td>Whisker (OneSignal)</td><td>Segments by purchase history and subscription</td><td>Sales up 20%, sign-ups up 4%</td></tr><tr><td>Amazon (Pushwoosh)</td><td>Cart reminder naming the product, deep link to checkout</td><td>Pushwoosh says such pushes recover 10 to 15% of lost revenue</td></tr></tbody></table></div>
+<p>Read these as direction, not benchmarks. Vendors choose their best customers, and the Pushwoosh figure is a general claim, not a measured Amazon result. KFC India is the only Indian example, and its useful detail is the trigger: a three-day gap, not a calendar blast.</p>
+<h2 id="push-notification-program-best-practices-segment-trigger-test">Push Notification Program Best Practices: Segment, Trigger, Test</h2>
+<p>A push program that holds up has a goal for each message, behaviour-based segments, event triggers and a test plan. Pushwoosh frames the change as moving from &quot;we need to send more messages&quot; to &quot;we need to activate 5 percent more users this week&quot;. It suggests segmenting by session activity, event history and intent, not just demographics.</p>
+<p>Measure more than opens. Braze lists opt-in rate, uninstall rate and conversion; OneSignal adds direct opens, influenced opens (an app opening shortly after a push) and revenue. Both warn that early spikes can be novelty, so OneSignal suggests 30, 60 and 90 day trends.</p>
+<p>Test on both platforms. Braze says Android keeps notifications until dismissed, while on iOS opening one clears the rest, and OneSignal notes Android gives finer controls by channel.</p>
+<h2 id="how-to-choose-a-push-notification-service">How to Choose a Push Notification Service</h2>
+<p>Choose a service on whether it can segment by behaviour, test, time each send, cap frequency and show opt-outs and uninstalls, not on its headline feature list. OneSignal's list is personalisation from behavioural data, A/B testing, send-time optimisation, cross-channel messaging and analytics beyond delivery counts. I add frequency capping and rate limiting from Pushwoosh and Braze, since rate limiting spreads a large send so it does not flood your own servers.</p>
+<p>Every source here sells a push platform, and I did not compare prices or features, so check each vendor's pricing page. Pushwoosh also suggests a fallback channel when a user has push off. For Indian customers who agreed to it, <a href="../../services/whatsapp-automation/">WhatsApp and business automation</a> can play that role, within WhatsApp's rules on consent and approved templates for business-started messages.</p>
+<h2 id="what-usually-goes-wrong-with-push-notifications">What Usually Goes Wrong With Push Notifications</h2>
+<p>Most push failures trace to asking too early, sending the same thing to everyone and measuring the wrong number. The table pairs each with its cause and fix, drawn from the sources above.</p>
+<div class="prose-table"><table><thead><tr><th>Mistake</th><th>Cause</th><th>Fix</th></tr></thead><tbody><tr><td>Permission asked on first launch</td><td>No value shown yet</td><td>Ask after a value moment, with an explainer</td></tr><tr><td>One message for everyone</td><td>No segments</td><td>Segment by behaviour</td></tr><tr><td>Tap opens the home screen</td><td>No deep link</td><td>Link to the promised page</td></tr><tr><td>A spike judged a success</td><td>Novelty effect</td><td>Compare 30, 60, 90 days</td></tr><tr><td>Only delivery counted</td><td>Wrong metric</td><td>Track opt-outs and uninstalls</td></tr><tr><td>Sends at night</td><td>One fixed time</td><td>Quiet window or per-user timing</td></tr><tr><td>Push is the only channel</td><td>Opt-outs unreachable</td><td>Fallback channel</td></tr></tbody></table></div>
+<h2 id="what-is-documented-and-what-is-my-reading">What Is Documented and What Is My Reading</h2>
+<p>The documented parts are the mechanics and the vendors' stated advice; the thresholds and the Indian adjustments are my reading.</p>
+<ul><li><strong>Documented.</strong> Tokens, APNs and FCM, opt-in rules, the 50-character and 14 to 25 word guides, each source's frequency advice and the example results above, all as the vendors state them.</li><li><strong>My reading.</strong> Opt-outs precede uninstalls, the split between triggered and marketing messages, the moment-of-value table, and the point about time zones in India.</li><li><strong>Not covered.</strong> Measured uninstall rates by frequency, Indian send-time data, and platform permission rules after 2023.</li></ul>
+<h2 id="what-to-do-next">What to Do Next</h2>
+<p>Audit what you send this week against the checklist, then change one thing at a time so you can see what moved.</p>
+<ul><li>[ ] I ask for permission after a value moment, behind my own screen.</li><li>[ ] Marketing pushes are capped per user per week.</li><li>[ ] Order and booking alerts are sent as events.</li><li>[ ] Every tap opens the promised page.</li><li>[ ] No sends overnight.</li><li>[ ] I track opt-outs and uninstalls beside opens.</li><li>[ ] Users who opt out can be reached another way, with consent.</li></ul>
+<p>If you are planning an app, a focused build usually takes 8–14 weeks from discovery to store release, agreed in writing before work begins. Elyx engagements start from ₹9,999, excluding GST, and you can <a href="../../contact.html">request a quote</a> after a call. The <a href="../../services/app-development/">app development service page</a> explains the process.</p>
+<h2 id="sources">Sources</h2>
+<ul><li><a href="https://www.braze.com/resources/articles/push-notifications-best-practices" rel="noopener" target="_blank">A Guide To Push Notification Best Practices</a>, Braze (last edited 1 August 2026, read 19 November 2026)</li><li><a href="https://onesignal.com/blog/onesignal-guide-push-notification-best-practices-2026/" rel="noopener" target="_blank">OneSignal Guide: Push Notification Best Practices 2026</a>, OneSignal (read 19 November 2026)</li><li><a href="https://www.adjust.com/blog/how-to-develop-a-successfull-push-notification-strategy/" rel="noopener" target="_blank">Push notification guide: Tips and best practices</a>, Adjust (read 19 November 2026)</li><li><a href="https://www.cometchat.com/blog/push-notifications-best-practices" rel="noopener" target="_blank">Best Practices for Push Notifications in Your App</a>, CometChat (read 19 November 2026)</li><li><a href="https://clevertap.com/blog/push-notification-best-practices/" rel="noopener" target="_blank">35 Push Notification Best Practices That Work</a>, CleverTap (read 19 November 2026)</li><li><a href="https://www.pushwoosh.com/blog/push-notification-strategy/" rel="noopener" target="_blank">Push notification strategy: Best practices, examples &amp; guide</a>, Pushwoosh (16 March 2026, read 19 November 2026)</li></ul>
+      </div>
+      <section class="bfaq" id="faq"><h2>Frequently asked questions</h2><div class="faq__list"><details class="faq__item">
+  <summary class="faq__q"><span>What are push notifications?</span><svg class="faq__caret" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+  <div class="faq__a"><p>Push notifications are short messages that an app or website sends to a user's device, even when it is not open. Braze says they appear only if the user has opted in. They are used for order updates, reminders, offers and re-engagement.</p></div>
+</details>
+<details class="faq__item">
+  <summary class="faq__q"><span>How do push notifications work?</span><svg class="faq__caret" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+  <div class="faq__a"><p>The app asks Apple's APNs or Google's FCM for a token, sends it to your server, and your server sends each message to that service with the token. The service then delivers it to the device, according to CometChat. Braze adds that a notification needs the user's opt-in.</p></div>
+</details>
+<details class="faq__item">
+  <summary class="faq__q"><span>How often should an app send push notifications?</span><svg class="faq__caret" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+  <div class="faq__a"><p>Start with 1 to 3 marketing messages a week and test from there; Pushwoosh calls that a safe baseline. CometChat gives 5 a week as a rule-of-thumb ceiling. No source measures the exact point where users uninstall.</p></div>
+</details>
+<details class="faq__item">
+  <summary class="faq__q"><span>What is the best time to send push notifications?</span><svg class="faq__caret" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+  <div class="faq__a"><p>The best time is when the individual user is usually active, not one fixed hour for everyone. Braze and OneSignal recommend send-time optimisation. Without it, send in daytime and evening and avoid the hours people sleep.</p></div>
+</details>
+<details class="faq__item">
+  <summary class="faq__q"><span>When should an app ask for push notification permission?</span><svg class="faq__caret" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+  <div class="faq__a"><p>Ask after the user has seen the app's value, such as after a first order or booking, and not on first launch. Show your own explainer screen first, as Braze, Adjust and Pushwoosh advise. On iOS you get one system prompt, per OneSignal.</p></div>
+</details>
+<details class="faq__item">
+  <summary class="faq__q"><span>Should I allow push notifications?</span><svg class="faq__caret" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+  <div class="faq__a"><p>Allow them for apps where alerts carry something time-sensitive, such as deliveries, bookings or payments, and refuse them for apps that only send promotions. You can change this later: OneSignal says iOS and Android let users mute, schedule or disable notifications.</p></div>
+</details>
+<details class="faq__item">
+  <summary class="faq__q"><span>What is the difference between push notifications and in-app messages?</span><svg class="faq__caret" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+  <div class="faq__a"><p>An in-app message shows only while the app is open, but a push can arrive when it is closed. Adjust draws that line. A push also needs the user's opt-in and an installed app.</p></div>
+</details>
+<details class="faq__item">
+  <summary class="faq__q"><span>Do push notifications cause uninstalls?</span><svg class="faq__caret" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+  <div class="faq__a"><p>Sources say excessive or irrelevant pushes can lead to opt-outs and uninstalls, but none gives a measured rate. Braze, Adjust and CometChat all make the link. Track your own opt-out and uninstall rates before and after a change.</p></div>
+</details>
+<details class="faq__item">
+  <summary class="faq__q"><span>How do I send push notifications from my app?</span><svg class="faq__caret" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+  <div class="faq__a"><p>Send them from a push platform's dashboard or trigger them through an API call, as Braze and OneSignal describe. Either way the app must first register for a token with APNs or FCM. Dashboards suit marketing messages; API triggers suit order and content events.</p></div>
+</details></div></section>
+      <div class="bfoot"><span>Mobile Apps</span></div>
+    </article>
+    <aside class="baside" aria-label="From Elyx"><div class="bcta">
+  <span class="bcta__k">Elyx Solutions</span>
+  <h3>Thinking about a mobile app?</h3>
+  <a class="btn btn--blue" href="https://wa.me/919611729733?text=Hi%20Elyx%2C%20I'd%20like%20to%20talk%20about%20a%20project.%20(from%20the%20article%20%22Push%20Notifications%20That%20Don't%20Get%20Your%20App%20Uninstalled%22)" target="_blank" rel="noopener" data-track="whatsapp_click" data-article="push-notification-best-practices" data-card-pos="side">WhatsApp us <svg class="arr" width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H4M10 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+  <a class="btn btn--ghost" href="../../services/app-development/" data-track="card_click" data-article="push-notification-best-practices" data-card-pos="side" data-btn="soft">See app development</a>
+</div></aside>
+  </div>
+</div></main>
+<section class="cta" data-screen-label="Contact CTA">
+  <div class="cta__in reveal">
+    <div class="deco deco-dark" data-parallax="0.08" style="z-index:-1" aria-hidden="true"><span class="orb orb-a"></span></div>
+    <div class="ph-grid cta__bg"></div>
+    <div class="cta__glow"></div>
+    <span class="eyebrow is-light" style="justify-content:center;">Let's build</span>
+    <h2 class="cta__t" style="color:#fff;margin-top:20px;">Have something worth <span class="em">building?</span></h2>
+    <p class="cta__sub">Tell us where you're headed. We'll bring the team, the plan and the craft to get you there.</p>
+    <div class="cta__row">
+      <a class="btn btn--blue" href="../../contact.html" data-track="cta_click" data-pos="cta-section">Start a project <svg class="arr" width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H4M10 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+      <a class="btn btn--light" href="../../contact.html#book" data-track="cta_click" data-pos="cta-section">Book a call</a>
+    </div>
+  </div>
+</section>
+<footer class="footer">
+  <div class="footer__in">
+    <div class="footer__top">
+      <div>
+        <a class="brand" href="../../" aria-label="Elyx Solutions home">
+          <svg class="brand__mark" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+            <g transform="skewX(-10)">
+              <rect x="7" y="4" width="15" height="4.4" rx="1.2" fill="#1f4fd8"></rect>
+              <rect x="7" y="11.8" width="11" height="4.4" rx="1.2" fill="#0b1024"></rect>
+              <rect x="7" y="19.6" width="15" height="4.4" rx="1.2" fill="#1f4fd8"></rect>
+            </g>
+          </svg>
+          <span class="brand__name">Elyx</span>
+        </a>
+        <p class="footer__lede">Beyond just presence, we build digital <span class="serif-i" style="color:var(--blue)">value.</span></p>
+      </div>
+      <div class="fcol">
+        <h4>Services</h4>
+        <a href="../../services/web-development/">Web Development</a>
+        <a href="../../services/ecommerce-development/">E-commerce Development</a>
+        <a href="../../services/saas-development/">SaaS Development</a>
+        <a href="../../services/app-development/">App Development</a>
+        <a href="../../services/ai-chatbots/">AI Chatbots</a>
+        <a href="../../services/ai-call-assistants/">AI Call &amp; Voice Assistants</a>
+        <a href="../../services/whatsapp-automation/">WhatsApp &amp; Business Automation</a>
+        <a href="../../services/crm-lead-management/">CRM &amp; Lead Management</a>
+        <a href="../../services/booking-systems/">Booking &amp; Appointment Systems</a>
+        <a href="../../services/payments-billing/">Payments &amp; Subscription Billing</a>
+        <a href="../../services/admin-dashboards/">Admin Dashboards &amp; Internal Tools</a>
+        <a href="../../services/seo-optimization/">SEO Optimization</a>
+        <a href="../../services/maintenance-care/">Maintenance &amp; Care</a>
+      </div>
+      <div class="fcol">
+        <h4>Websites for</h4>
+        <a href="../../websites-for/dentists/">Dentists &amp; Clinics</a>
+        <a href="../../websites-for/coaching-centres/">Coaching Centres</a>
+        <a href="../../websites-for/restaurants-and-cafes/">Restaurants &amp; Cafés</a>
+        <a href="../../websites-for/salons-and-spas/">Salons &amp; Spas</a>
+        <a href="../../websites-for/real-estate/">Real Estate</a>
+        <a href="../../websites-for/ca-and-law-firms/">CA &amp; Law Firms</a>
+      </div>
+      <div class="fcol">
+        <h4>Company</h4>
+        <a href="../../about.html">About</a>
+        <a href="../../work.html">Work</a>
+        <a href="../../pricing/">Pricing</a>
+        <a href="../../tools/">Free tools</a>
+        <a href="../../blog/">Blog</a>
+        <a href="../../web-development-bengaluru/">Bengaluru</a>
+        <a href="../../contact.html">Contact</a>
+      </div>
+      <div class="fcol">
+        <h4>Connect</h4>
+        <a href="mailto:support.elyxsolutions@gmail.com">support.elyxsolutions@gmail.com</a>
+        <a href="tel:+919611729733" data-track="call_click" data-pos="footer">+91 96117 29733</a>
+        <a href="tel:+917204723340" data-track="call_click" data-pos="footer">+91 72047 23340</a>
+        <a href="https://wa.me/919611729733?text=Hi%20Elyx%2C%20I'd%20like%20to%20talk%20about%20a%20project." target="_blank" rel="noopener" data-track="whatsapp_click" data-pos="footer">WhatsApp</a>
+        <a href="https://www.linkedin.com/company/elyxsolutions04/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://www.instagram.com/elyxsolutions" target="_blank" rel="noopener">Instagram</a>
+        <span class="footer__addr">Bengaluru, Karnataka</span>
+      </div>
+    </div>
+    <div class="footer__bot">
+      <span>© 2026 Elyx Solutions. All rights reserved.</span>
+      <span>Designed &amp; built in-house · Bengaluru, India.</span>
+    </div>
+  </div>
+</footer>
+<a class="wa-float" href="https://wa.me/919611729733?text=Hi%20Elyx%2C%20I'd%20like%20to%20talk%20about%20a%20project." target="_blank" rel="noopener" aria-label="Chat with Elyx on WhatsApp" data-track="whatsapp_click" data-pos="floating">
+  <svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16.04 3C9.4 3 4 8.4 4 15.03c0 2.12.55 4.19 1.6 6.01L4 29l8.12-1.57a12.03 12.03 0 0 0 3.92.65C22.68 28.08 28.08 22.67 28.08 16 28.08 9.36 22.7 3 16.04 3Zm0 22.06c-1.22 0-2.4-.33-3.44-.95l-.25-.15-4.82.93.97-4.7-.17-.27a9.9 9.9 0 0 1-1.52-5.27c0-5.5 4.48-9.98 10-9.98 5.5 0 9.98 4.48 9.98 9.98s-4.48 10.41-9.98 10.41l-.77-.02Zm5.47-7.46c-.3-.15-1.77-.87-2.04-.97-.28-.1-.48-.15-.68.15-.2.3-.78.97-.95 1.17-.18.2-.35.22-.65.07-.3-.15-1.27-.47-2.42-1.5-.9-.8-1.5-1.78-1.67-2.08-.18-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.68-1.64-.93-2.25-.25-.58-.5-.5-.68-.5h-.58c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.5s1.07 2.9 1.22 3.1c.15.2 2.1 3.2 5.08 4.48.7.3 1.26.48 1.7.62.72.23 1.37.2 1.88.12.58-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35Z"/></svg>
+</a>
+<script>window.ELYX={"email":"support.elyxsolutions@gmail.com","whatsapp":"https://wa.me/919611729733?text=Hi%20Elyx%2C%20I'd%20like%20to%20talk%20about%20a%20project.","phone":"+91 96117 29733","booking":""};</script>
+<script src="../../js/site.js"></script>
+<script src="../../js/analytics.js"></script>
+</body>
+</html>
