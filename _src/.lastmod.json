@@ -12,7 +12,7 @@
     "lastmod": "2026-11-19"
   },
   "/services/seo-optimization/": {
-    "hash": "8db818fb4e10ea1c97e3a9512add69fe",
+    "hash": "d5fa1bc7e24546b32ff7bb73ea565612",
     "lastmod": "2026-11-19"
   },
   "/services/maintenance-care/": {
@@ -76,7 +76,7 @@
     "lastmod": "2026-11-19"
   },
   "/blog/": {
-    "hash": "92f7c98993f5b302e2fc55d3ed77b113",
+    "hash": "893560eea9c995180c4b4169cbe7ae60",
     "lastmod": "2026-11-19"
   },
   "/blog/category/industries/": {
@@ -156,7 +156,7 @@
     "lastmod": "2026-11-16"
   },
   "/blog/author/shreyasmv/": {
-    "hash": "0a763423ba2676b29d0d58ba4c72d815",
+    "hash": "bb96943b5959a4a3be277628533b44ac",
     "lastmod": "2026-11-19"
   },
   "/blog/author/rahulc/": {
@@ -477,6 +477,10 @@
   },
   "/services/admin-dashboards/": {
     "hash": "8263aa9e537d450de2cc2eeba2174aae",
+    "lastmod": "2026-11-19"
+  },
+  "/blog/seo-packages-india/": {
+    "hash": "2ef338a0735585cd54bcdd4451bebb35",
     "lastmod": "2026-11-19"
   }
 }
