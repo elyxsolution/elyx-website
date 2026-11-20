@@ -76,8 +76,8 @@
     "lastmod": "2026-11-19"
   },
   "/blog/": {
-    "hash": "92f7c98993f5b302e2fc55d3ed77b113",
-    "lastmod": "2026-11-19"
+    "hash": "88cc7130fb5d0b0f4083e2c6ca6a4922",
+    "lastmod": "2026-11-20"
   },
   "/blog/category/industries/": {
     "hash": "c34533d3d71c91e85f357950dc59bf11",
@@ -156,8 +156,8 @@
     "lastmod": "2026-11-16"
   },
   "/blog/author/shreyasmv/": {
-    "hash": "0a763423ba2676b29d0d58ba4c72d815",
-    "lastmod": "2026-11-19"
+    "hash": "27e9406c9185523ecaf80ba52ca7a0e8",
+    "lastmod": "2026-11-20"
   },
   "/blog/author/rahulc/": {
     "hash": "9657b1741132810f73a942f71d8f05d2",
@@ -452,8 +452,8 @@
     "lastmod": "2026-11-19"
   },
   "/services/ai-chatbots/": {
-    "hash": "4e7ca51fdba67cf0bff4083dde5b55b4",
-    "lastmod": "2026-11-19"
+    "hash": "e9f5f5913253824956f8e66b975a6c84",
+    "lastmod": "2026-11-20"
   },
   "/services/ai-call-assistants/": {
     "hash": "7aa12100ed2d18a979d0a7893d2ac9d0",
@@ -478,5 +478,9 @@
   "/services/admin-dashboards/": {
     "hash": "8263aa9e537d450de2cc2eeba2174aae",
     "lastmod": "2026-11-19"
+  },
+  "/blog/chatgpt-for-website-content/": {
+    "hash": "da0995ef5f425914e530dfe8c04c5154",
+    "lastmod": "2026-11-20"
   }
 }
