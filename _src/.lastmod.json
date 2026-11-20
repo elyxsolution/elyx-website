@@ -20,8 +20,8 @@
     "lastmod": "2026-11-19"
   },
   "/websites-for/dentists/": {
-    "hash": "a8f7b2b431f0b3d6dede62d2c2f4c2b2",
-    "lastmod": "2026-11-19"
+    "hash": "7a1a0e0616cea5a26da2838a52e92bd3",
+    "lastmod": "2026-11-20"
   },
   "/websites-for/coaching-centres/": {
     "hash": "b7df68120ff8743dd76a81f07c062d6f",
@@ -48,8 +48,8 @@
     "lastmod": "2026-11-19"
   },
   "/work/ashirwad-dental/": {
-    "hash": "3e731e0e17f5b0a552de32c69d5075bb",
-    "lastmod": "2026-11-19"
+    "hash": "b84b438f2606c74d155f55dcb7a4ed9c",
+    "lastmod": "2026-11-20"
   },
   "/work/malnad-stories/": {
     "hash": "fb13f26c16e660cd888df950580f6fa5",
@@ -76,8 +76,8 @@
     "lastmod": "2026-11-19"
   },
   "/blog/": {
-    "hash": "92f7c98993f5b302e2fc55d3ed77b113",
-    "lastmod": "2026-11-19"
+    "hash": "882059f8d16f4776602e5750d36a88b7",
+    "lastmod": "2026-11-20"
   },
   "/blog/category/industries/": {
     "hash": "c34533d3d71c91e85f357950dc59bf11",
@@ -156,8 +156,8 @@
     "lastmod": "2026-11-16"
   },
   "/blog/author/shreyasmv/": {
-    "hash": "0a763423ba2676b29d0d58ba4c72d815",
-    "lastmod": "2026-11-19"
+    "hash": "ca753e5d5ff85317adbdbe33e48214e1",
+    "lastmod": "2026-11-20"
   },
   "/blog/author/rahulc/": {
     "hash": "9657b1741132810f73a942f71d8f05d2",
@@ -478,5 +478,9 @@
   "/services/admin-dashboards/": {
     "hash": "8263aa9e537d450de2cc2eeba2174aae",
     "lastmod": "2026-11-19"
+  },
+  "/blog/ai-receptionist-for-clinics/": {
+    "hash": "bdaf388841cc259f53cccfe0f88faed7",
+    "lastmod": "2026-11-20"
   }
 }
