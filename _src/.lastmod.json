@@ -12,8 +12,8 @@
     "lastmod": "2026-11-19"
   },
   "/services/seo-optimization/": {
-    "hash": "8db818fb4e10ea1c97e3a9512add69fe",
-    "lastmod": "2026-11-19"
+    "hash": "12d5cee5c3c0a63b5b32472ddee22c73",
+    "lastmod": "2026-11-20"
   },
   "/services/maintenance-care/": {
     "hash": "1fe72749bda51300744013ffe9aa888a",
@@ -76,8 +76,8 @@
     "lastmod": "2026-11-19"
   },
   "/blog/": {
-    "hash": "92f7c98993f5b302e2fc55d3ed77b113",
-    "lastmod": "2026-11-19"
+    "hash": "baaa39bff3213df3c79c91e80273f51f",
+    "lastmod": "2026-11-20"
   },
   "/blog/category/industries/": {
     "hash": "c34533d3d71c91e85f357950dc59bf11",
@@ -156,8 +156,8 @@
     "lastmod": "2026-11-16"
   },
   "/blog/author/shreyasmv/": {
-    "hash": "0a763423ba2676b29d0d58ba4c72d815",
-    "lastmod": "2026-11-19"
+    "hash": "7cbbe5f5751ab9c4800e5e658c3fd8f8",
+    "lastmod": "2026-11-20"
   },
   "/blog/author/rahulc/": {
     "hash": "9657b1741132810f73a942f71d8f05d2",
@@ -478,5 +478,9 @@
   "/services/admin-dashboards/": {
     "hash": "8263aa9e537d450de2cc2eeba2174aae",
     "lastmod": "2026-11-19"
+  },
+  "/blog/technical-seo-checklist/": {
+    "hash": "b2d4c0f7d66e0b157d74041bf397868d",
+    "lastmod": "2026-11-20"
   }
 }
