@@ -3,7 +3,7 @@ title: Website Hacked? What to Do in the First 24 Hours
 slug: website-hacked-what-to-do
 category: care
 description: Website hacked, what to do: contain it, change passwords, restore or clean, clear Google warnings and stop a repeat, in order across the first 24 hours.
-date: 2026-11-20
+date: 2026-11-19
 author: shreyasmv
 ---
 If your website is hacked, do four things in this order: take it offline or serve a maintenance page, call your hosting provider, change every password tied to the site, and keep a copy of the infected files before you touch anything. Then restore from a backup you know is clean, or clean the site, and only after that deal with Google warnings. The honest qualification is that my sources are four hosting and security vendors, who sell cleanup and protection, and one Google post from April 2008, so the order below is my synthesis of their advice, not a tested procedure.

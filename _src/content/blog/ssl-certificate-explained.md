@@ -4,7 +4,7 @@ seo_title: SSL Certificate Explained: Free vs Paid and Renewals
 slug: ssl-certificate-explained
 category: care
 description: SSL certificate explained for business owners: what it is, free vs paid, why renewals fail, and a checklist that stops a "Not Secure" warning.
-date: 2026-11-20
+date: 2026-11-19
 author: shreyasmv
 ---
 An SSL certificate is a small file on your web server that proves your website is the one it claims to be and lets visitors' browsers encrypt everything they send you. When it is missing, expired or wrong, the browser puts a "Not secure" or "Your connection is not private" warning between the customer and your page. The honest qualification is that the five vendor pages I read assert that visitors leave, but none gives a measured figure, so the cost of a warning rests on their reasoning and mine.

@@ -4,7 +4,7 @@ seo_title: Google Search Console Guide: The 5 Reports That Matter
 slug: google-search-console-guide
 category: seo
 description: A plain Google Search Console guide for business owners: the five reports to check each month, what the numbers mean and what to fix first.
-date: 2026-11-19
+date: 2026-11-18
 author: shreyasmv
 ---
 A Google Search Console guide for a business owner comes down to five reports: Performance, Indexing, Sitemaps, Experience and Links. Search Console is Google's free tool that shows how Google finds, stores and displays your site, and a monthly look at those five covers most of what an owner needs. The honest qualification is that it reports what Google recorded, not what customers did, and I wrote this from Google's own documentation and four SEO publishers' guides, with no tests of my own.

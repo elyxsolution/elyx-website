@@ -4,7 +4,7 @@ seo_title: Dental SEO: How a Clinic Gets Found for Dentist Near Me
 slug: dental-seo
 category: seo
 description: Dental SEO for Indian clinics: Google Business Profile, local and treatment pages, reviews and medical advertising limits, with a 30-day plan to follow.
-date: 2026-11-20
+date: 2026-11-19
 author: shreyasmv
 industry: dentists
 case: ashirwad-dental

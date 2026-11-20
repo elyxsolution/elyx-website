@@ -3,7 +3,7 @@ title: App Analytics: The Metrics That Matter After Launch
 slug: app-analytics-metrics
 category: apps
 description: App analytics metrics to track after launch: retention, activation, crashes and money, with worked examples, a tool comparison and a 30-day plan.
-date: 2026-11-19
+date: 2026-11-18
 author: shreyasmv
 ---
 App analytics metrics are the few numbers that show whether people who installed your app get value from it and whether it works for them. After launch, track four or five: day-1, day-7 and day-30 retention by install cohort, activation, the crash rate, and one money number such as revenue per user. Downloads alone mislead, because Mixpanel cites Inc for the claim that 80 to 90 percent of downloaders never return.

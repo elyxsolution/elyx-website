@@ -3,7 +3,7 @@ title: How to Show Up in ChatGPT and Google's AI Answers
 slug: how-to-rank-in-chatgpt
 category: seo
 description: How to rank in ChatGPT and Google's AI answers: what Google says, what Ahrefs data finds, what to skip (including llms.txt) and a checklist to start with.
-date: 2026-11-20
+date: 2026-11-19
 author: shreyasmv
 ---
 How to rank in ChatGPT is a slightly wrong question, because ChatGPT has no ranked list to climb: your business is named or cited in an answer, or it is not. You get there by letting OpenAI's crawler read your pages, putting a clear answer in a passage that can be lifted and being described consistently on other sites, while Google's own guidance says ordinary SEO still applies and llms.txt is not needed. The honest qualification is that OpenAI publishes little about how it picks brands, so most ChatGPT advice rests on vendor studies.

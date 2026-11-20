@@ -3,7 +3,7 @@ title: Keyword Research for Local Businesses Using Only Free Tools
 slug: free-keyword-research-tools
 category: seo
 description: Free keyword research tools for a local business: how to use Keyword Planner, Search Console, autocomplete and People Also Ask, with a worked example.
-date: 2026-11-20
+date: 2026-11-19
 author: shreyasmv
 ---
 A local business can do solid keyword research with four free keyword research tools: Google Keyword Planner for rough search volume, Search Console for what your own site already earns, Google autocomplete for the exact phrases people type, and People Also Ask for the questions they ask. None needs a paid subscription, only an afternoon and a habit of writing every finding into one sheet. The honest qualification is that Keyword Planner's numbers are estimates, Search Console needs a live site, and my evidence for the paid tools' free limits is one review and the vendors' own pages, all read on 20 November 2026.

@@ -4,7 +4,7 @@ seo_title: DPDP Act Website Compliance: What Small Businesses Do
 slug: dpdp-act-website-compliance
 category: care
 description: DPDP Act website compliance for small businesses: what applies and when, consent on forms, the privacy notice, data retention and a 10-step checklist.
-date: 2026-11-20
+date: 2026-11-19
 author: shreyasmv
 ---
 DPDP Act website compliance means that a business site collecting a name, phone number or email must show a notice with each consent request, take clean consent, honour withdrawal, protect the data and erase it when the purpose ends. As of 20 November 2026, most of those duties start on 13 May 2027, so a site built or changed now should be ready for that date. The honest qualification is that I read practitioner guides, a law-firm article and one government explanatory note, not a lawyer's advice, so confirm your own duties with a qualified professional.

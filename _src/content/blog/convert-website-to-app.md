@@ -3,7 +3,7 @@ title: Turning Your Website Into an App: Options and Costs
 slug: convert-website-to-app
 category: apps
 description: Convert website to app: wrappers, PWAs and rebuilds compared, what Apple and Google accept, and sourced costs worked out for year one, read Nov 2026.
-date: 2026-11-20
+date: 2026-11-18
 author: shreyasmv
 ---
 People who search "convert website to app" are asking for one of four different jobs: wrap the site in a shell, publish it as a progressive web app, have a vendor build a native app on top of it, or rebuild it from scratch. A wrapper is the fastest and cheapest, but MobiLoud says Apple often rejects apps that are only a website in a frame. Nearly every price below comes from a vendor selling one of the routes, in US dollars, read on 19 November 2026, so treat each as that vendor's claim. [Elyx's app development page](/services/app-development/) starts from the same first question: does this need an app at all?

@@ -4,7 +4,7 @@ seo_title: Google Ads vs SEO: Where to Spend First
 slug: google-ads-vs-seo
 category: seo
 description: Google Ads vs SEO for a small business: sourced costs and timelines, a break-even worked example, and which to start with by business type.
-date: 2026-11-20
+date: 2026-11-19
 author: shreyasmv
 ---
 In the Google Ads vs SEO choice, spend on Google Ads first if you need enquiries this month and your site already records calls, forms and WhatsApp clicks. Spend on SEO first if the business can wait a few months for traffic that keeps arriving after the spending stops, and expect to fund both in the order your cash allows. The honest qualification is that I found no Indian cost-per-lead benchmark in the sources, so the break-even test below uses your numbers, not mine.

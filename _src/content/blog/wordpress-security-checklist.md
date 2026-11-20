@@ -3,7 +3,7 @@ title: WordPress Security Checklist for Small Businesses
 slug: wordpress-security-checklist
 category: care
 description: A WordPress security checklist for small businesses covering plugins, updates, logins, firewalls and backups, ranked by what the handbook recommends.
-date: 2026-11-20
+date: 2026-11-19
 author: shreyasmv
 ---
 A WordPress security checklist for a small business comes down to five jobs: keep core, plugins and themes updated, prune and vet plugins, protect the login, put a firewall in front of the site, and keep backups you have actually restored. WordPress's own handbook names updating as the most important step, and the other four limit the damage when an update comes late. The honest qualification is that every attack figure below comes from vendors who sell security or hosting, so I treat them as indications, not measurements.

@@ -3,7 +3,7 @@ title: Local SEO for Small Businesses in India: The Complete Guide
 slug: local-seo-india
 category: seo
 description: Local SEO India guide for small businesses: Business Profile, citations, reviews, location pages and local links, with every claim sorted by who made it.
-date: 2026-11-19
+date: 2026-11-18
 author: shreyasmv
 ---
 Local SEO in India means making your business easy for Google to place on a map and easy for a nearby customer to choose, and most local SEO India advice reduces to five jobs: a verified Google Business Profile, the same name, address and phone number everywhere you are listed, real reviews, a page on your own site for each place you serve, and a few links from other local sites. Google's own documentation backs the profile and the site basics. The claim that citations, reviews and links lift your Maps position comes from agency pages, and nobody can promise you a position.

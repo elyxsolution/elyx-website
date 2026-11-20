@@ -3,7 +3,7 @@ title: How Google's AI Overviews Change SEO for Small Businesses
 slug: ai-overviews-impact-on-small-business
 category: seo
 description: AI Overviews impact on small business: which searches still send clicks, how local results differ and what to change, with a worked example.
-date: 2026-11-20
+date: 2026-11-19
 author: shreyasmv
 ---
 The AI Overviews impact on small business is real for broad "what is" and "how to" searches and much smaller for searches where someone wants to hire, buy or visit. In a Pew Research Center study of 900 U.S. adults, people clicked a result on 8% of visits that showed an AI summary and 15% of visits that did not, while Google says total organic clicks have been relatively stable. The honest qualification: the best click data is American and from early 2025, so it shows direction, not what your own site will lose.

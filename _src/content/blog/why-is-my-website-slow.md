@@ -3,7 +3,7 @@ title: Why Is My Website Slow? 12 Fixes, From Quick to Serious
 slug: why-is-my-website-slow
 category: care
 description: Why is my website slow? Test it first, then work through 12 fixes from images and caching to hosting, with a symptom table and a worked example.
-date: 2026-11-20
+date: 2026-11-19
 author: shreyasmv
 ---
 Why is my website slow? Usually because the page is heavier, or the server slower, than a visitor on a phone connection will wait for: oversized images, no caching, too many plugins and outside scripts, or weak hosting. ImageEngine, DebugBear and Wix, the three pages I could read in full, name nearly the same causes, and the cheapest fixes need only your admin login. The honest qualification is that all three are vendors, my research found no Google or HTTP Archive page to check them against, and I ran no tests of my own, so every figure below belongs to its source, not to your site.

@@ -3,7 +3,7 @@ title: Technical SEO Audit Checklist (Free Download)
 slug: technical-seo-checklist
 category: seo
 description: A free technical SEO checklist for Indian business sites: crawl, index, canonicals, sitemaps, speed and schema in fix order, with a worked example.
-date: 2026-11-20
+date: 2026-11-19
 author: shreyasmv
 ---
 A technical SEO checklist is a list of checks that confirm search engines can crawl your pages, store them in their index and understand them, and that the pages load properly on a phone. The one below covers crawl, index, canonicals, sitemaps, speed and schema, in the order a small business site should fix them. The honest qualification is that I ran no audits myself: the checks rest on Google's own documentation and four vendor guides, and Google says its own basics are no secret formula for ranking first.

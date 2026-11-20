@@ -3,7 +3,7 @@ title: Building Apps That Work Offline on Patchy Networks
 slug: offline-first-app
 category: apps
 description: An offline-first app reads and writes on the phone first and syncs later. Sync strategies, caching and field-team use cases for patchy networks.
-date: 2026-11-20
+date: 2026-11-18
 author: shreyasmv
 ---
 An offline-first app reads from and writes to a database on the phone, and syncs with the server whenever a connection allows. The screen never waits on a signal, which is what a field team on a patchy network needs. The honest qualification is that the sync, caching and conflict rules below are documented by Google, Flutter, Mendix and others, but my research holds no Indian connectivity data, so the India angle is my reading and not a measured finding.

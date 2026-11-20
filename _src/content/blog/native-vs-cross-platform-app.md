@@ -3,7 +3,7 @@ title: Native vs Cross-Platform Apps, in Plain English
 slug: native-vs-cross-platform-app
 category: apps
 description: Native vs cross-platform app, explained for owners: cost, speed, feel and upkeep compared with sourced figures, plus rules for when each one wins.
-date: 2026-11-19
+date: 2026-11-18
 author: shreyasmv
 ---
 In a native vs cross-platform app decision, native means a separate app for iPhone and for Android, each built with the phone maker's own tools, while cross-platform means one shared codebase that produces both. For most business apps cross-platform is cheaper and quicker and customers rarely notice the difference, but native still wins for heavy graphics, specialist hardware and features that exist on one platform only. The honest qualification is that every figure below comes from firms that sell apps or app tooling, so I test the arithmetic before using any of it.

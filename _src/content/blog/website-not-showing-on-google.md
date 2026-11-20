@@ -4,7 +4,7 @@ seo_title: Website Not Showing on Google: 10 Causes and Fixes
 slug: website-not-showing-on-google
 category: seo
 description: Website not showing on Google? Test whether it is missing or only ranking low, then work through 10 causes, from noindex to canonicals, with fixes.
-date: 2026-11-19
+date: 2026-11-18
 author: shreyasmv
 ---
 A website not showing on Google is in one of two states: Google has not indexed the page, or it has indexed it and ranks it too low to be found. The first is a block or a timing issue, such as a noindex tag, a robots.txt rule or a launch last week. The second is a content and competition problem that takes months, not a setting you flip.

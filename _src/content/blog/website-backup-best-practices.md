@@ -4,7 +4,7 @@ seo_title: Website Backup Best Practices: Schedule, Off-Site, Restore
 slug: website-backup-best-practices
 category: care
 description: Website backup best practices for a small business: how often to back up, where to keep off-site copies, and a restore drill with a checklist and log.
-date: 2026-11-20
+date: 2026-11-19
 author: shreyasmv
 ---
 Website backup best practices come down to three decisions: back up as often as the gap in work you could bear to lose, keep at least one copy away from your host, and restore a backup onto a test copy on a schedule to prove it works. For most small business sites a daily backup is the floor, and the database should be copied more often if you take orders or bookings. The qualification is that every source I read is a hosting or agency blog, not a standards body, so the schedules below are practitioner consensus rather than a rule.

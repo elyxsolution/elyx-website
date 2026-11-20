@@ -4,7 +4,7 @@ seo_title: How to Publish an App on the Play Store (Step by Step)
 slug: how-to-publish-app-on-play-store
 category: apps
 description: How to publish an app on the Play Store and App Store: accounts, closed testing, listing limits and review times, with a sourced timeline.
-date: 2026-11-19
+date: 2026-11-18
 author: shreyasmv
 ---
 To publish an app on the Play Store, you register a Google Play developer account, create the app in Play Console, upload a signed Android App Bundle, complete the store listing and app content forms, and send the release for review. The honest qualification is that a new personal account must also run a closed test first, so plan in weeks, not days. The App Store follows the same outline, but the research behind this page holds Google's own documents and practitioner guides with no Apple primary source, so the Apple part is deliberately short.

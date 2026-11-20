@@ -4,7 +4,7 @@ seo_title: Core Web Vitals Explained: LCP, INP and CLS in Plain English
 slug: core-web-vitals
 category: seo
 description: Core Web Vitals explained: what LCP, INP and CLS measure, Google's good-score limits, how to test your own site and what the evidence says about sales.
-date: 2026-11-19
+date: 2026-11-18
 author: shreyasmv
 ---
 Core Web Vitals are three measures Google publishes for how a page feels to a real visitor: Largest Contentful Paint (LCP) for how soon the main content appears, Interaction to Next Paint (INP) for how fast the page answers a tap, and Cumulative Layout Shift (CLS) for how much it jumps around. A page counts as good at 2.5 seconds, 200 milliseconds and 0.1, measured on real visits. The honest qualification is that Google treats them as one input among many, and none of the sources I read gives a conversion or revenue figure, so the link to sales rests on engagement evidence.

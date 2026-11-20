@@ -4,7 +4,7 @@ seo_title: App Store Rejection Reasons: Apple and Google Fixes
 slug: app-store-rejection-reasons
 category: apps
 description: App store rejection reasons on Apple and Google, from privacy labels to demo accounts, with a fix for each and a pre-submission checklist to copy.
-date: 2026-11-19
+date: 2026-11-18
 author: shreyasmv
 ---
 App store rejection reasons come down to a short list: an app that crashes or looks unfinished, a reviewer who cannot log in, privacy labels that do not match what the code collects, missing account deletion, payments routed the wrong way, a listing that misdescribes the app, and an app that is too thin or too similar to others. Most of these are fixable in a day once you know which rule was cited. The honest qualification is that I have no rejection data from Elyx builds, so the causes below come from four practitioner guides and the stores' own support pages, and show what is commonly reported, not a measured ranking.

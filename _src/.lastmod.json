@@ -8,19 +8,19 @@
     "lastmod": "2026-11-19"
   },
   "/services/app-development/": {
-    "hash": "92670befbf28e07b54cf58d015195c57",
-    "lastmod": "2026-11-19"
+    "hash": "3524b460b252575d859537eaec70051f",
+    "lastmod": "2026-11-20"
   },
   "/services/seo-optimization/": {
-    "hash": "ff45aff491d723b235413126c92dfc50",
-    "lastmod": "2026-11-19"
+    "hash": "2e9a1d8a48c477b82752c72ff5d8de4d",
+    "lastmod": "2026-11-20"
   },
   "/services/maintenance-care/": {
-    "hash": "ebc335e42f344cb8e63e8d03055b335d",
+    "hash": "ee0525c3bfb2ecf492bc6e8efcc6b683",
     "lastmod": "2026-11-20"
   },
   "/websites-for/dentists/": {
-    "hash": "9e6a41e05718b4782d0aa8bfec45cae1",
+    "hash": "ecb109c6f77d240776cf64bb56afc7ed",
     "lastmod": "2026-11-20"
   },
   "/websites-for/coaching-centres/": {
@@ -48,7 +48,7 @@
     "lastmod": "2026-11-19"
   },
   "/work/ashirwad-dental/": {
-    "hash": "9533b423d88e64ca7872dbfee48d3cc5",
+    "hash": "fa2db40dccd129f3a1a7e7bf42436fe6",
     "lastmod": "2026-11-20"
   },
   "/work/malnad-stories/": {
@@ -76,8 +76,8 @@
     "lastmod": "2026-11-19"
   },
   "/blog/": {
-    "hash": "7e759749c2b0ba5bb1a8d6d8a81c5944",
-    "lastmod": "2026-11-19"
+    "hash": "49da510de161461d090e9f5d40a0d459",
+    "lastmod": "2026-11-20"
   },
   "/blog/category/industries/": {
     "hash": "c34533d3d71c91e85f357950dc59bf11",
@@ -156,8 +156,8 @@
     "lastmod": "2026-11-16"
   },
   "/blog/author/shreyasmv/": {
-    "hash": "1e2aa0004c7abbcfd553e7c5d4825dec",
-    "lastmod": "2026-11-19"
+    "hash": "91525c731d410af2db4c06ef2319c3f2",
+    "lastmod": "2026-11-20"
   },
   "/blog/author/rahulc/": {
     "hash": "9657b1741132810f73a942f71d8f05d2",
@@ -452,7 +452,7 @@
     "lastmod": "2026-11-19"
   },
   "/services/ai-chatbots/": {
-    "hash": "1092001234d80bc85877022d262de015",
+    "hash": "f202a01733ac367ef0b3f5dc26c74106",
     "lastmod": "2026-11-20"
   },
   "/services/ai-call-assistants/": {
@@ -480,7 +480,163 @@
     "lastmod": "2026-11-19"
   },
   "/blog/react-native-vs-flutter/": {
-    "hash": "2f61e576afe6e892830fa8450dce6321",
+    "hash": "888e8b48ca8f24f3f66ff5c250f9abba",
+    "lastmod": "2026-11-18"
+  },
+  "/blog/whatsapp-chatbot-india/": {
+    "hash": "a9f33be5b0e5074e1ccf108dc4e0fd2c",
+    "lastmod": "2026-11-20"
+  },
+  "/blog/website-uptime-monitoring/": {
+    "hash": "94a761a1d1265083191a299de68dd6da",
+    "lastmod": "2026-11-20"
+  },
+  "/blog/vibe-coding/": {
+    "hash": "c31e4023182ed89fa25a192c620e5c4f",
+    "lastmod": "2026-11-20"
+  },
+  "/blog/domain-expired-how-to-recover/": {
+    "hash": "375d58dc0d573c16fb8811b5e92bfe7f",
+    "lastmod": "2026-11-20"
+  },
+  "/blog/chatgpt-vs-claude-vs-gemini/": {
+    "hash": "676982c10524da1123cb876955efbab1",
+    "lastmod": "2026-11-20"
+  },
+  "/blog/chatgpt-for-website-content/": {
+    "hash": "da0995ef5f425914e530dfe8c04c5154",
+    "lastmod": "2026-11-20"
+  },
+  "/blog/ai-website-builder/": {
+    "hash": "bc48a11bbb757d336ef3566f8795dd61",
+    "lastmod": "2026-11-20"
+  },
+  "/blog/ai-receptionist-for-clinics/": {
+    "hash": "bdaf388841cc259f53cccfe0f88faed7",
+    "lastmod": "2026-11-20"
+  },
+  "/blog/ai-for-small-business/": {
+    "hash": "04ae1888e038c1712d11db38223e6f5a",
+    "lastmod": "2026-11-20"
+  },
+  "/blog/ai-chatbot-for-website/": {
+    "hash": "443ba6717116abb4c740cf5d92cbcf22",
+    "lastmod": "2026-11-20"
+  },
+  "/blog/wordpress-security-checklist/": {
+    "hash": "2262dd9feb937b490e9aaa4c04836108",
     "lastmod": "2026-11-19"
+  },
+  "/blog/why-is-my-website-slow/": {
+    "hash": "e1a6dc3f60faf20fecc19a50712aef42",
+    "lastmod": "2026-11-19"
+  },
+  "/blog/website-maintenance-services/": {
+    "hash": "5026ae03d6809f5ef39b710c847b4f4f",
+    "lastmod": "2026-11-19"
+  },
+  "/blog/website-hacked-what-to-do/": {
+    "hash": "c7c59a0e7a0a83f840c689f6ebb12c99",
+    "lastmod": "2026-11-19"
+  },
+  "/blog/website-backup-best-practices/": {
+    "hash": "0373a6673a896f45b69aee5aa044dc37",
+    "lastmod": "2026-11-19"
+  },
+  "/blog/technical-seo-checklist/": {
+    "hash": "856449c2ec60c369ce7038637d94d983",
+    "lastmod": "2026-11-19"
+  },
+  "/blog/ssl-certificate-explained/": {
+    "hash": "261ec29d04abc685c6b10aad73209dd6",
+    "lastmod": "2026-11-19"
+  },
+  "/blog/seo-packages-india/": {
+    "hash": "2ef338a0735585cd54bcdd4451bebb35",
+    "lastmod": "2026-11-19"
+  },
+  "/blog/how-to-rank-in-chatgpt/": {
+    "hash": "9511a0fafd893d58d8f87aee706a282c",
+    "lastmod": "2026-11-19"
+  },
+  "/blog/how-long-does-seo-take/": {
+    "hash": "a4af2c8248f8371f1a15121852cc1ff0",
+    "lastmod": "2026-11-19"
+  },
+  "/blog/google-ads-vs-seo/": {
+    "hash": "d2c11cf97c9d0f3d2f736944ef17eac6",
+    "lastmod": "2026-11-19"
+  },
+  "/blog/free-keyword-research-tools/": {
+    "hash": "6c46755f55ad1ee973984595042cf231",
+    "lastmod": "2026-11-19"
+  },
+  "/blog/dpdp-act-website-compliance/": {
+    "hash": "07b63f35f3c432249dd1e744ef267616",
+    "lastmod": "2026-11-19"
+  },
+  "/blog/dental-seo/": {
+    "hash": "1d94cf42f2a04bb33d888eb815c5bd5b",
+    "lastmod": "2026-11-19"
+  },
+  "/blog/ai-overviews-impact-on-small-business/": {
+    "hash": "301d621a675cda6372fcac95671e3925",
+    "lastmod": "2026-11-19"
+  },
+  "/blog/website-not-showing-on-google/": {
+    "hash": "33a8d64fac9c503d23e7ee51d3b3aacb",
+    "lastmod": "2026-11-18"
+  },
+  "/blog/pwa-vs-native-app/": {
+    "hash": "8eb4b75f0f286c9de6b941f6ef5df2c6",
+    "lastmod": "2026-11-18"
+  },
+  "/blog/push-notification-best-practices/": {
+    "hash": "37b52e96f44907779ff3afd65a4669b2",
+    "lastmod": "2026-11-18"
+  },
+  "/blog/offline-first-app/": {
+    "hash": "0fce738344f2f77d6d351b5958b01d00",
+    "lastmod": "2026-11-18"
+  },
+  "/blog/native-vs-cross-platform-app/": {
+    "hash": "05134d6a900e76f214bb7cb6c33f26f0",
+    "lastmod": "2026-11-18"
+  },
+  "/blog/local-seo-india/": {
+    "hash": "14409624c3bb49a3d4e5fdc0bfe09662",
+    "lastmod": "2026-11-18"
+  },
+  "/blog/how-to-publish-app-on-play-store/": {
+    "hash": "48cf7552371960501a5cebd86229b00b",
+    "lastmod": "2026-11-18"
+  },
+  "/blog/how-to-get-google-reviews/": {
+    "hash": "758e33514f4a6d9b06112d893c146005",
+    "lastmod": "2026-11-18"
+  },
+  "/blog/google-search-console-guide/": {
+    "hash": "0f47639917bfc69db3039054fd03dc5b",
+    "lastmod": "2026-11-18"
+  },
+  "/blog/core-web-vitals/": {
+    "hash": "66ba4e25e3373983fd88c5debb5cd235",
+    "lastmod": "2026-11-18"
+  },
+  "/blog/convert-website-to-app/": {
+    "hash": "04e12169ba09a6ba0e86c887fdc982b6",
+    "lastmod": "2026-11-18"
+  },
+  "/blog/coaching-institute-app-development/": {
+    "hash": "cfc77bfcac6cf1879cf04ae3427e31cb",
+    "lastmod": "2026-11-18"
+  },
+  "/blog/app-store-rejection-reasons/": {
+    "hash": "637197482b0e0bac9b8f2a38753a4f3f",
+    "lastmod": "2026-11-18"
+  },
+  "/blog/app-analytics-metrics/": {
+    "hash": "70e9d46d79d593a507da9facb8a83c9f",
+    "lastmod": "2026-11-18"
   }
 }

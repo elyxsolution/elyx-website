@@ -3,7 +3,7 @@ title: Push Notifications That Don't Get Your App Uninstalled
 slug: push-notification-best-practices
 category: apps
 description: Push notification best practices for app owners: when to ask permission, how often and when to send, with sourced examples and a worked weekly plan.
-date: 2026-11-19
+date: 2026-11-18
 author: shreyasmv
 ---
 Push notification best practices come down to three decisions: ask permission after the user has seen value, send few messages that each matter to that person, and send them when that person is awake and using the phone. Break any one and users mute the app first and delete it later. The honest qualification is that every source I read is a vendor selling push tools, and none publishes a measured uninstall rate by message count, so the figures below are vendor claims and the limits are starting points to test.
