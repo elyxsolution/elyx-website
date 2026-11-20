@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>App Analytics: The Metrics That Matter After Launch</title>
+<meta name="description" content="App analytics metrics to track after launch: retention, activation, crashes and money, with worked examples, a tool comparison and a 30-day plan." />
+<link rel="canonical" href="https://elyxsolutions.in/blog/app-analytics-metrics/" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#080b1a" />
+<!-- Open Graph -->
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Elyx Solutions" />
+<meta property="og:title" content="App Analytics: The Metrics That Matter After Launch" />
+<meta property="og:description" content="App analytics metrics to track after launch: retention, activation, crashes and money, with worked examples, a tool comparison and a 30-day plan." />
+<meta property="og:url" content="https://elyxsolutions.in/blog/app-analytics-metrics/" />
+<meta property="og:image" content="https://elyxsolutions.in/og/blog-app-analytics-metrics.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:locale" content="en_IN" />
+<meta property="article:published_time" content="2026-11-19" />
+<meta property="article:modified_time" content="2026-11-19" />
+<meta property="article:section" content="Mobile Apps" />
+<meta property="article:author" content="https://elyxsolutions.in/blog/author/shreyasmv/" />
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="App Analytics: The Metrics That Matter After Launch" />
+<meta name="twitter:description" content="App analytics metrics to track after launch: retention, activation, crashes and money, with worked examples, a tool comparison and a 30-day plan." />
+<meta name="twitter:image" content="https://elyxsolutions.in/og/blog-app-analytics-metrics.png" />
+<!-- Icons -->
+<link rel="icon" href="../../favicon.svg" type="image/svg+xml" />
+<link rel="icon" href="../../icon-192.png" sizes="192x192" type="image/png" />
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500;1,6..72,600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../../css/styles.css" />
+<link rel="stylesheet" href="../../css/pages.css" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://elyxsolutions.in/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://elyxsolutions.in/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "App Analytics: The Metrics That Matter After Launch",
+          "item": "https://elyxsolutions.in/blog/app-analytics-metrics/"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://elyxsolutions.in/blog/app-analytics-metrics/#article",
+      "headline": "App Analytics: The Metrics That Matter After Launch",
+      "description": "App analytics metrics to track after launch: retention, activation, crashes and money, with worked examples, a tool comparison and a 30-day plan.",
+      "image": [
+        "https://elyxsolutions.in/og/blog-app-analytics-metrics.png"
+      ],
+      "datePublished": "2026-11-19",
+      "dateModified": "2026-11-19",
+      "author": {
+        "@type": "Person",
+        "@id": "https://elyxsolutions.in/blog/author/shreyasmv/#person",
+        "name": "Shreyas M V",
+        "url": "https://elyxsolutions.in/blog/author/shreyasmv/",
+        "sameAs": [
+          "https://www.linkedin.com/in/shreyas-m-v-311b99205/"
+        ]
+      },
+      "publisher": {
+        "@id": "https://elyxsolutions.in/#organization"
+      },
+      "mainEntityOfPage": "https://elyxsolutions.in/blog/app-analytics-metrics/",
+      "articleSection": "Mobile Apps",
+      "inLanguage": "en-IN"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What are app analytics metrics?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "App analytics metrics are numbers that describe how people find, use, keep and pay for your app, and how well it runs. Common ones are retention, active users, activation, crash rate and revenue per user. Pick four or five that match your goals."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is a metric in analytics?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A metric is a single quantitative measurement, such as users, sessions, engagement or revenue. Google's Analytics Data API documentation separates metrics from dimensions, which are attributes such as country or app version that you break a metric down by."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between metrics and analytics?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A metric is one measured number, while analytics is the collection and interpretation of many metrics to make decisions. Day-30 retention is a metric. Working out why it fell, with cohorts and funnels, is analytics."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the analytics app?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Analytics app is Google's mobile viewer for Google Analytics reports on a phone or tablet. It does not add tracking to your own app. For that you set up a property and an app data stream, which Google says you can do with Firebase."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which app metrics should I track first?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Track retention by install cohort, activation, crash rate and one revenue metric first. Add the store listing conversion rate if you pay for installs. Everything else can wait until one of these four tells you where to look."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is a good retention rate for an app?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "There is no single good figure, because the sources disagree. Userpilot puts most apps at 1.2% to 9.9% on day 30, and UXCam gives about 7% as a median. The reliable test is whether each new cohort retains as well as the last."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is a good crash-free rate?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Above 99% is the common reference. Userpilot says the industry average for crash-free sessions is above 99%, and UXCam targets 99% for users and 99.5% for sessions. Check whether a number counts users or sessions before comparing."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are there free app analytics tools?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Some are, but confirm current terms on each provider's page. Google Play Console and App Store Connect report core metrics for apps you publish, and Google's Firebase page is titled &quot;Get unlimited app analytics&quot;."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How many users do I need before the numbers mean anything?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The sources give no universal minimum. Meta's Horizon store opens its dashboard at 100 users, which is a platform rule. With fewer users, one person moves a percentage a lot, so read single sessions and crash reports."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who fixes the problems analytics finds?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Whoever maintains the app does, so settle that before launch. Ask your builder in writing whether crash fixes, OS updates and a monthly allowance of update hours are included, and who watches the crash rate."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body data-article="app-analytics-metrics">
+<div class="grain"></div>
+<div class="nav-shell scrolled" id="navShell">
+  <a class="brand nav__brand" href="../../" aria-label="Elyx Solutions home">
+    <svg class="brand__mark" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+      <g transform="skewX(-10)">
+        <rect x="7" y="4" width="15" height="4.4" rx="1.2" fill="#1f4fd8"></rect>
+        <rect x="7" y="11.8" width="11" height="4.4" rx="1.2" fill="#0b1024"></rect>
+        <rect x="7" y="19.6" width="15" height="4.4" rx="1.2" fill="#1f4fd8"></rect>
+      </g>
+    </svg>
+    <span class="brand__name">Elyx</span>
+  </a>
+
+  <nav class="nav" id="nav" aria-label="Main">
+    <div class="nav__links" id="navLinks">
+      <div class="nav__item" data-menu="services"><button type="button">Services <svg class="caret" viewBox="0 0 10 10" fill="none"><path d="M1 3l4 4 4-4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button></div>
+      <div class="nav__item" data-menu="industries"><button type="button">Industries <svg class="caret" viewBox="0 0 10 10" fill="none"><path d="M1 3l4 4 4-4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button></div>
+      <div class="nav__item" data-menu="work"><button type="button">Work <svg class="caret" viewBox="0 0 10 10" fill="none"><path d="M1 3l4 4 4-4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button></div>
+      <div class="nav__item"><a href="../../blog/">Blog</a></div>
+      <div class="nav__item"><a href="../../about.html">About</a></div>
+      <div class="nav__item"><a href="../../contact.html">Contact</a></div>
+    </div>
+  </nav>
+
+  <div class="nav__right">
+    <a class="btn btn--primary nav__cta" href="../../contact.html" data-track="cta_click" data-pos="nav">Let's talk <svg class="arr" width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H4M10 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+    <button class="nav__burger" id="burger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <div class="mobile-menu__group">
+      <span class="mobile-menu__label">Services</span>
+      <a href="../../services/web-development/">Web Development</a>
+      <a href="../../services/ecommerce-development/">E-commerce Development</a>
+      <a href="../../services/saas-development/">SaaS Development</a>
+      <a href="../../services/app-development/">App Development</a>
+      <a href="../../services/ai-chatbots/">AI Chatbots</a>
+      <a href="../../services/ai-call-assistants/">AI Call &amp; Voice Assistants</a>
+      <a href="../../services/whatsapp-automation/">WhatsApp &amp; Business Automation</a>
+      <a href="../../services/crm-lead-management/">CRM &amp; Lead Management</a>
+      <a href="../../services/booking-systems/">Booking &amp; Appointment Systems</a>
+      <a href="../../services/payments-billing/">Payments &amp; Subscription Billing</a>
+      <a href="../../services/admin-dashboards/">Admin Dashboards &amp; Internal Tools</a>
+      <a href="../../services/seo-optimization/">SEO Optimization</a>
+      <a href="../../services/maintenance-care/">Maintenance &amp; Care</a>
+    </div>
+    <div class="mobile-menu__group">
+      <span class="mobile-menu__label">Websites for</span>
+      <a href="../../websites-for/dentists/">Dentists &amp; Clinics</a>
+      <a href="../../websites-for/coaching-centres/">Coaching Centres</a>
+      <a href="../../websites-for/restaurants-and-cafes/">Restaurants &amp; Cafés</a>
+      <a href="../../websites-for/salons-and-spas/">Salons &amp; Spas</a>
+      <a href="../../websites-for/real-estate/">Real Estate</a>
+      <a href="../../websites-for/ca-and-law-firms/">CA &amp; Law Firms</a>
+    </div>
+    <div class="mobile-menu__group">
+      <span class="mobile-menu__label">Company</span>
+      <a href="../../about.html">About</a>
+      <a href="../../work.html">Work</a>
+      <a href="../../pricing/">Pricing</a>
+      <a href="../../blog/">Blog</a>
+      <a href="../../tools/">Free tools</a>
+      <a href="../../contact.html">Contact</a>
+    </div>
+    <a class="btn btn--blue mobile-menu__cta" href="../../contact.html">Let's talk <svg class="arr" width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H4M10 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+  </div>
+
+  <!-- Mega panel -->
+  <div class="mega" id="mega">
+    <div class="mega__inner">
+      <div class="mega__panel" data-panel="services">
+        <div class="mega-grid">
+          <div class="mega-tiles"><a class="mtile" href="../../services/web-development/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M9 8l-4 4 4 4M15 8l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">Web Development</span></span></a><a class="mtile" href="../../services/ecommerce-development/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M3 4h2l2.4 10.2a1 1 0 001 .8h8.2a1 1 0 001-.76L19 8H6.2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path><circle cx="9.5" cy="19" r="1.3" fill="currentColor"></circle><circle cx="16.5" cy="19" r="1.3" fill="currentColor"></circle></svg></span><span><span class="mtile__t">E-commerce Development</span></span></a><a class="mtile" href="../../services/saas-development/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M6 16a4 4 0 010-8 5 5 0 019.6-1.5A3.5 3.5 0 0118 16H6z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">SaaS Development</span></span></a><a class="mtile" href="../../services/app-development/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><rect x="7" y="3" width="10" height="18" rx="2.5" stroke="currentColor" stroke-width="1.6"></rect><path d="M11 18h2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg></span><span><span class="mtile__t">App Development</span></span></a><a class="mtile" href="../../services/ai-chatbots/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M5 6.5A2.5 2.5 0 017.5 4h9A2.5 2.5 0 0119 6.5v6a2.5 2.5 0 01-2.5 2.5H11l-4 3.5V15h-.5A2.5 2.5 0 014 12.5v-6z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"></path><path d="M9 9.7h.01M12 9.7h.01M15 9.7h.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path></svg></span><span><span class="mtile__t">AI Chatbots</span></span></a><a class="mtile" href="../../services/ai-call-assistants/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M6.6 4h2.2l1.2 3.4-1.6 1.2a10 10 0 004.2 4.2l1.2-1.6 3.4 1.2v2.2A2 2 0 0115.2 16 11.2 11.2 0 014 4.8 2 2 0 016.6 4z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"></path><path d="M15 4.5a5.5 5.5 0 014.5 4.5M15 8a2.5 2.5 0 012 2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg></span><span><span class="mtile__t">AI Call &amp; Voice Assistants</span></span></a><a class="mtile" href="../../services/whatsapp-automation/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M13 3L5 13.2h6L10 21l8-10.2h-6L13 3z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">WhatsApp &amp; Business Automation</span></span></a><a class="mtile" href="../../services/crm-lead-management/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><circle cx="9" cy="8.5" r="3" stroke="currentColor" stroke-width="1.6"></circle><path d="M3.5 19a5.5 5.5 0 0111 0" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path><path d="M16 5.8a3 3 0 010 5.4M17.5 14.4A5.5 5.5 0 0120.5 19" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg></span><span><span class="mtile__t">CRM &amp; Lead Management</span></span></a><a class="mtile" href="../../services/booking-systems/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><rect x="4" y="5.5" width="16" height="14" rx="2.5" stroke="currentColor" stroke-width="1.6"></rect><path d="M4 10h16M8.5 3.5v4M15.5 3.5v4M9 14.5l2 2 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">Booking &amp; Appointment Systems</span></span></a><a class="mtile" href="../../services/payments-billing/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><rect x="3.5" y="6" width="17" height="12" rx="2.5" stroke="currentColor" stroke-width="1.6"></rect><path d="M3.5 10.5h17M7 15h3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg></span><span><span class="mtile__t">Payments &amp; Subscription Billing</span></span></a><a class="mtile" href="../../services/admin-dashboards/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="7" height="7" rx="1.6" stroke="currentColor" stroke-width="1.6"></rect><rect x="13" y="4" width="7" height="4.5" rx="1.6" stroke="currentColor" stroke-width="1.6"></rect><rect x="13" y="11" width="7" height="9" rx="1.6" stroke="currentColor" stroke-width="1.6"></rect><rect x="4" y="14" width="7" height="6" rx="1.6" stroke="currentColor" stroke-width="1.6"></rect></svg></span><span><span class="mtile__t">Admin Dashboards &amp; Internal Tools</span></span></a><a class="mtile" href="../../services/seo-optimization/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><circle cx="10.5" cy="10.5" r="6" stroke="currentColor" stroke-width="1.6"></circle><path d="M15 15l5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg></span><span><span class="mtile__t">SEO Optimization</span></span></a><a class="mtile" href="../../services/maintenance-care/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M12 8v4l3 2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path><circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="1.6"></circle></svg></span><span><span class="mtile__t">Maintenance &amp; Care</span></span></a><a class="mtile" href="../../pricing/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M4 14l5-5 4 4 7-7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path><path d="M20 6v4h-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">Pricing</span></span></a></div>
+          <a class="mega-feature" href="../../pricing/">
+            <div class="ph-grid"></div>
+            <div class="mega-feature__k">Featured</div>
+            <div class="mega-feature__t">Starting from ₹9,999. Quotes tailored to you.</div>
+            <div class="mega-feature__l">See pricing <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H4M10 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+          </a>
+        </div>
+      </div>
+
+      <div class="mega__panel" data-panel="industries">
+        <div class="mega-grid">
+          <div class="mega-tiles"><a class="mtile" href="../../websites-for/dentists/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M12 5c-2-1.5-6-1.5-6 2.5 0 3 1.5 4 1.5 7 0 2 .8 4.5 2 4.5s1.5-2 2.5-2 1.3 2 2.5 2 2-2.5 2-4.5c0-3 1.5-4 1.5-7C18 3.5 14 3.5 12 5z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">Dentists &amp; Clinics</span></span></a><a class="mtile" href="../../websites-for/coaching-centres/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M3 9l9-4 9 4-9 4-9-4z M7 11v4c0 1.5 2.2 3 5 3s5-1.5 5-3v-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">Coaching Centres</span></span></a><a class="mtile" href="../../websites-for/restaurants-and-cafes/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M7 3v8M5 3v5a2 2 0 004 0V3M7 11v10M17 3c-2 1.5-3 4-3 7h3v11" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">Restaurants &amp; Cafés</span></span></a><a class="mtile" href="../../websites-for/salons-and-spas/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><circle cx="6" cy="7" r="2.5" stroke="currentColor" stroke-width="1.6"></circle><circle cx="6" cy="17" r="2.5" stroke="currentColor" stroke-width="1.6"></circle><path d="M8 8.5L20 18M8 15.5L20 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg></span><span><span class="mtile__t">Salons &amp; Spas</span></span></a><a class="mtile" href="../../websites-for/real-estate/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M4 21V8l8-5 8 5v13M9 21v-6h6v6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">Real Estate</span></span></a><a class="mtile" href="../../websites-for/ca-and-law-firms/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M12 4v16M6 20h12M5 8h14M5 8l-2.5 6a3 3 0 005 0L5 8zM19 8l-2.5 6a3 3 0 005 0L19 8z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">CA &amp; Law Firms</span></span></a></div>
+          <a class="mega-feature" href="../../websites-for/">
+            <div class="ph-grid"></div>
+            <div class="mega-feature__k">Built for your trade</div>
+            <div class="mega-feature__t">What a site for your kind of business actually needs.</div>
+            <div class="mega-feature__l">All industries <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H4M10 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+          </a>
+        </div>
+      </div>
+
+      <div class="mega__panel" data-panel="work">
+        <div class="mega-grid mega-grid--work">
+          <div class="mega-wlinks">
+            <a class="mtile" href="../../work.html#tools"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.6"></circle><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5.1 5.1l2.1 2.1M16.8 16.8l2.1 2.1M18.9 5.1L16.8 7.2M7.2 16.8l-2.1 2.1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg></span><span><span class="mtile__t">Tools we use</span></span></a>
+            <a class="mtile" href="../../work.html#faq"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"></circle><path d="M9.6 9.2a2.5 2.5 0 014.7 1.1c0 1.6-2.3 2-2.3 3.6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path><circle cx="12" cy="16.6" r="0.7" fill="currentColor"></circle></svg></span><span><span class="mtile__t">FAQ about Elyx</span></span></a>
+            <a class="mtile" href="../../work.html"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="6.5" height="6.5" rx="1.6" stroke="currentColor" stroke-width="1.6"></rect><rect x="13.5" y="4" width="6.5" height="6.5" rx="1.6" stroke="currentColor" stroke-width="1.6"></rect><rect x="4" y="13.5" width="6.5" height="6.5" rx="1.6" stroke="currentColor" stroke-width="1.6"></rect><rect x="13.5" y="13.5" width="6.5" height="6.5" rx="1.6" stroke="currentColor" stroke-width="1.6"></rect></svg></span><span><span class="mtile__t">All projects</span></span></a>
+          </div>
+          <div class="mega-work"><a class="wcard" href="../../work/ashirwad-dental/"><div class="wcard__img"><img src="../../uploads/projects/ashirwad-dental.jpg" alt="Ashirwad Dental Clinic website" width="1000" height="750" loading="lazy" decoding="async" /></div><div class="wcard__meta"><div class="wcard__t">Ashirwad Dental Clinic</div><div class="wcard__c">Web · Redesign</div></div></a><a class="wcard" href="../../work/malnad-stories/"><div class="wcard__img"><img src="../../uploads/projects/malnad-stories.jpg" alt="Malnad Stories website" width="1000" height="750" loading="lazy" decoding="async" /></div><div class="wcard__meta"><div class="wcard__t">Malnad Stories</div><div class="wcard__c">E-commerce · Web App</div></div></a><a class="wcard" href="https://powertekservices.in/" target="_blank" rel="noopener"><div class="wcard__img"><img src="../../uploads/projects/powertek.jpg" alt="Powertek website" width="1000" height="750" loading="lazy" decoding="async" /></div><div class="wcard__meta"><div class="wcard__t">Powertek</div><div class="wcard__c">Web · Electrical</div></div></a><a class="wcard" href="https://hindustanfoundationandconstructions.com/" target="_blank" rel="noopener"><div class="wcard__img"><img src="../../uploads/projects/hindustan-foundation.jpg" alt="Hindustan Foundation &amp; Constructions website" width="1000" height="750" loading="lazy" decoding="async" /></div><div class="wcard__meta"><div class="wcard__t">Hindustan Foundation &amp; Constructions</div><div class="wcard__c">Web · Construction</div></div></a><a class="wcard" href="https://aralikattecafe.in/" target="_blank" rel="noopener"><div class="wcard__img"><img src="../../uploads/projects/aralikatte-cafe.jpg" alt="Aralikatte Cafe website" width="1000" height="750" loading="lazy" decoding="async" /></div><div class="wcard__meta"><div class="wcard__t">Aralikatte Cafe</div><div class="wcard__c">Web · Restaurant</div></div></a><a class="wcard" href="https://bangaloremusictrust.com/" target="_blank" rel="noopener"><div class="wcard__img"><img src="../../uploads/projects/bangalore-music-trust.jpg" alt="Bangalore Music Trust website" width="1000" height="750" loading="lazy" decoding="async" /></div><div class="wcard__meta"><div class="wcard__t">Bangalore Music Trust</div><div class="wcard__c">Web · Non-profit</div></div></a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<span id="top"></span>
+<main class="bl"><div class="bl__in">
+  <div class="bl__crumbs">
+    <a class="bl__back" href="../../blog/">← Back to Blog</a>
+    <nav aria-label="Breadcrumb"><ol><li><a href="../../">Home</a></li><li aria-hidden="true">/</li><li><a href="../../blog/">Blog</a></li><li aria-hidden="true">/</li><li aria-current="page">App Analytics: The Metrics That Matter After Launch</li></ol></nav>
+  </div>
+  <div class="bl__cols">
+    <article class="barticle" data-article="app-analytics-metrics">
+      <header>
+        <p class="bbyline">By <a class="bauthor" href="../../blog/author/shreyasmv/"><img class="bauthor__ph" src="../../uploads/authors/shreyasmv.jpg" alt="" width="24" height="24" loading="lazy" /><span>Shreyas M V</span></a><span aria-hidden="true">·</span><span>Published <time datetime="2026-11-19">19 November 2026</time></span><span aria-hidden="true">·</span><span>14 min read</span></p>
+        <h1>App Analytics: The Metrics That Matter After Launch</h1>
+        <p class="blead">App analytics metrics to track after launch: retention, activation, crashes and money, with worked examples, a tool comparison and a 30-day plan.</p>
+      </header>
+      <nav class="btoc" aria-label="Table of contents"><b>On this page</b><ol><li><a href="#what-is-the-difference-between-a-metric-and-analytics"><span>01</span>What Is the Difference Between a Metric and Analytics?</a></li><li><a href="#which-app-analytics-metrics-should-you-track-after-launch"><span>02</span>Which App Analytics Metrics Should You Track After Launch?</a></li><li><a href="#retention-read-it-by-install-cohort"><span>03</span>Retention: Read It by Install Cohort</a></li><li><a href="#activation-the-one-action-that-predicts-day-30"><span>04</span>Activation: The One Action That Predicts Day 30</a></li><li><a href="#crash-rate-what-the-store-consoles-actually-report"><span>05</span>Crash Rate: What the Store Consoles Actually Report</a></li><li><a href="#dau-mau-and-stickiness-useful-if-you-define-active"><span>06</span>DAU, MAU and Stickiness: Useful if You Define Active</a></li><li><a href="#money-metrics-cost-per-retained-user-arpu-and-ltv"><span>07</span>Money Metrics: Cost per Retained User, ARPU and LTV</a></li><li><a href="#which-app-analytics-tools-do-you-need"><span>08</span>Which App Analytics Tools Do You Need?</a></li><li><a href="#what-usually-goes-wrong-with-app-analytics"><span>09</span>What Usually Goes Wrong With App Analytics</a></li><li><a href="#a-30-day-plan-for-the-weeks-after-launch"><span>10</span>A 30-Day Plan for the Weeks After Launch</a></li><li><a href="#what-to-do-next-turn-the-numbers-into-fixes"><span>11</span>What to Do Next: Turn the Numbers Into Fixes</a></li><li><a href="#sources"><span>12</span>Sources</a></li><li><a href="#faq"><span>13</span>Frequently asked questions</a></li></ol></nav>
+      <div class="prose">
+<p>App analytics metrics are the few numbers that show whether people who installed your app get value from it and whether it works for them. After launch, track four or five: day-1, day-7 and day-30 retention by install cohort, activation, the crash rate, and one money number such as revenue per user. Downloads alone mislead, because Mixpanel cites Inc for the claim that 80 to 90 percent of downloaders never return.</p>
+<p>The honest qualification is that every benchmark in the sources I read comes from a tool vendor, is quoted in dollars and sometimes contradicts another, so your own cohorts are the only fair yardstick.</p>
+<ul><li><strong>Pick few.</strong> Mixpanel says focus on four to five KPIs and UXCam says five to eight, and UXCam says overloaded dashboards rarely lead to action.</li><li><strong>Retention first.</strong> Read it by install cohort, never as one blended number.</li><li><strong>Activation and crashes.</strong> Activation explains retention, and crashes are the fastest way to lose a new user.</li><li><strong>Tools.</strong> The two store consoles plus one event tool cover most small apps; the table below sets out each one's job.</li></ul>
+<h2 id="what-is-the-difference-between-a-metric-and-analytics">What Is the Difference Between a Metric and Analytics?</h2>
+<p>A metric is one number, such as day-30 retention, and analytics is the tooling and habit of collecting and reading many of them. Google's Analytics Data API documentation uses the same split: dimensions are attributes of your data, and metrics are quantitative measurements such as users, sessions, engagement and revenue. Mixpanel describes an app analytics platform as software that records actions such as logins and purchases and summarises them on a dashboard.</p>
+<p>One search result trap is worth clearing up. Google's &quot;Analytics app&quot; is a viewer: Google's help page says it gives you access to your Analytics accounts and data on a phone or tablet, so it reads reports and does not track your own app.</p>
+<h2 id="which-app-analytics-metrics-should-you-track-after-launch">Which App Analytics Metrics Should You Track After Launch?</h2>
+<p>Track one metric per question you need answered, and five questions cover most small apps. The table maps each question to a metric and to where a small team can read it. It is my own grouping of metrics from Mixpanel, UXCam, Userpilot and Google Play Console Help, read on 19 November 2026.</p>
+<div class="prose-table"><table><thead><tr><th>Question</th><th>Metric</th><th>Where to read it</th></tr></thead><tbody><tr><td>Do people install after seeing the listing?</td><td>Store listing conversion rate</td><td>Play Console, App Store Connect</td></tr><tr><td>Do new users reach the point of the app?</td><td>Activation rate</td><td>An event tool</td></tr><tr><td>Do they come back?</td><td>Day-1, day-7, day-30 retention</td><td>Event tool, Play Console</td></tr><tr><td>Does it work?</td><td>Crash rate, ANR rate</td><td>Store consoles, crash reporter</td></tr><tr><td>Does it earn?</td><td>Revenue per user, cost per retained user</td><td>Consoles, your ad accounts</td></tr></tbody></table></div>
+<p>Event tracking is part of what <a href="../../services/app-development/">Elyx Solutions' app development service</a> builds, so ask for the events you need to be listed in the written scope, not added after launch.</p>
+<h2 id="retention-read-it-by-install-cohort">Retention: Read It by Install Cohort</h2>
+<p>Retention is the share of users who are still active some days after they installed, and it is the number most sources rank first. UXCam calls day-30 retention by install cohort the strongest predictor of long-term success and says a blended number can hide a decline for months while installs grow. A cohort is simply everyone who installed in the same week.</p>
+<p><strong>The benchmarks disagree.</strong> Userpilot says most apps land at 1.2% to 9.9% on day 30. UXCam gives about 7% as the median and 10% to 15% for strong performers in one passage, and 5% to 8% for a strong performer in another. I would not hold an Indian small-business app to any of these, because none is split by country or by app type.</p>
+<p><strong>A worked example.</strong> The numbers are invented for a fictional salon booking app in Mysuru, to show the method.</p>
+<ol><li>The week of 3 November brings 400 installs. Active on day 1: 140. Active on day 7: 60. Active on day 30: 28.</li><li>Day-1 retention is 140 ÷ 400 = 35%. Day 7 is 60 ÷ 400 = 15%. Day 30 is 28 ÷ 400 = 7%.</li><li>The week of 10 November brings 800 installs after an ad push, and 200 are active on day 1, which is 200 ÷ 800 = 25%.</li><li>Blended day-1 retention is (140 + 200) ÷ (400 + 800) = 340 ÷ 1,200 = 28.3%.</li></ol>
+<p>The blended 28.3% looks like a mild dip. The cohort view shows the ad-driven users return ten points less often (35% to 25%), which is the thing to investigate.</p>
+<p>Mixpanel's page also gives a period formula, ((customers at end minus customers acquired) ÷ customers at start) × 100, and a worked case of 120, 104 and 20 that gives about 96%. Its next line says a 90 percent retention rate means a 20 percent churn rate. By its own formula churn is 100 minus retention, so 90 percent retention is 10 percent churn, and that sentence is a slip.</p>
+<h2 id="activation-the-one-action-that-predicts-day-30">Activation: The One Action That Predicts Day 30</h2>
+<p>Activation is the share of new users who complete the single action that best predicts they will still be using the app a month later. UXCam says to find it by comparing first-session actions against day-30 retention and picking the strongest link. Its examples are logging a first workout for a fitness app and, historically, seven friends in ten days for Facebook.</p>
+<p>For a small-business app the candidates are usually plain. A clinic app might test &quot;booked a first appointment&quot;, a shop app &quot;placed a first order&quot; and a coaching app &quot;opened a first lesson&quot;. Those three are my illustrations, not tested results, and your data picks the real one.</p>
+<p>UXCam adds a speed version: the median time from opening the app to that action. It claims users who reach the action within 60 seconds of their first session retain at far higher rates, which is a vendor claim I could not check.</p>
+<h3 id="onboarding-drop-off-compounds">Onboarding drop-off compounds</h3>
+<p>UXCam says onboarding flows longer than five steps typically lose 15% to 25% of users at each step. If each step keeps 85% to 75% of people, a six-step flow keeps 0.85 to the sixth power, about 38%, down to 0.75 to the sixth power, about 18%.</p>
+<p>A three-step flow keeps 0.85 cubed (61%) down to 0.75 cubed (42%). Each step you remove therefore helps more than it looks.</p>
+<h2 id="crash-rate-what-the-store-consoles-actually-report">Crash Rate: What the Store Consoles Actually Report</h2>
+<p>A crash rate counts how often the app fails, and the store consoles define it differently from the vendor guides, so read the definition before comparing numbers. Google Play Console Help defines the user-perceived crash rate as the percentage of daily active users who may have noticed at least one crash, and it reports a separate ANR rate for &quot;App Not Responding&quot; freezes. Userpilot instead counts sessions: crashes divided by total sessions, times 100.</p>
+<p>Targets also differ in unit. Userpilot says the industry average for crash-free sessions is above 99%. UXCam aims for a crash-free user rate above 99% daily and 99.5% or more for crash-free sessions.</p>
+<p>My arithmetic shows why a small gap matters. An app with 5,000 daily active users and a 99% crash-free user rate still has 5,000 × 0.01 = 50 people hitting a crash every day. UXCam also says one crash in a first session multiplies that user's churn about threefold, a vendor figure I treat as a warning, not a measurement.</p>
+<p>Speed belongs in the same review. Mixpanel says load times over two or three seconds can cause drop-off, while Userpilot says under five seconds is the sweet spot, so pick a limit and track it yourself.</p>
+<h2 id="dau-mau-and-stickiness-useful-if-you-define-active">DAU, MAU and Stickiness: Useful if You Define Active</h2>
+<p>Stickiness is daily active users divided by monthly active users, and it only means something if &quot;active&quot; means a real action. UXCam warns that counting a bare app open inflates the figure. Google Play Console Help counts a daily active user as someone who opens the app at least once a day and a monthly one as an open within 28 days, while Mixpanel says MAU is usually the trailing 30 days.</p>
+<p>UXCam gives reference ranges drawn from AppsFlyer and data.ai: social apps above 50%, productivity 25% to 35%, fintech 15% to 25% and e-commerce 10% to 20%. Mixpanel makes the sharper point that a healthcare app wants people to need it less. Whether daily use should be your goal at all is the question in <a href="../../blog/does-my-business-need-an-app/">does your business need an app or a better website</a>.</p>
+<h2 id="money-metrics-cost-per-retained-user-arpu-and-ltv">Money Metrics: Cost per Retained User, ARPU and LTV</h2>
+<p>The most useful money metric for a small team is the cost of each user who is still around on day 30, because it joins ad spend to retention. UXCam shows the idea with a $2 install channel retaining 2% against a $6 channel retaining 12%, where the cheaper one is worse. Here is the same logic in rupees, with invented figures.</p>
+<ol><li>Channel A costs ₹150 per install and keeps 2% at day 30: ₹150 ÷ 0.02 = ₹7,500 per retained user.</li><li>Channel B costs ₹450 per install and keeps 12%: ₹450 ÷ 0.12 = ₹3,750 per retained user.</li></ol>
+<p>Channel B costs three times as much per install and half as much per user who stays.</p>
+<p>UXCam gives lifetime value (LTV) as average revenue per user times average customer lifespan, and says an LTV above three times acquisition cost is sustainable. Mixpanel says that if cost per acquisition ever exceeds LTV, you lose money on each user. UXCam warns that young apps over-project LTV because they have not yet seen a real lifespan.</p>
+<h2 id="which-app-analytics-tools-do-you-need">Which App Analytics Tools Do You Need?</h2>
+<p>Most small apps need the two store consoles, one event tool and one crash reporter, and the table sets out each tool's job. I have not tested these products. The descriptions come from Google's own pages, a help article from STQRY and vendor pages, all read on 19 November 2026, and I give no prices because the research holds none.</p>
+<div class="prose-table"><table><thead><tr><th>Tool</th><th>Best for</th><th>What the source says</th></tr></thead><tbody><tr><td>Google Play Console</td><td>Android installs, listing conversion, crash and ANR</td><td>Lists 15 KPIs including DAU, MAU and user-perceived crash rate</td></tr><tr><td>App Store Connect</td><td>iOS impressions, units, proceeds, sessions, crashes</td><td>STQRY says you can filter by device, territory and source and export CSV</td></tr><tr><td>Firebase with Google Analytics</td><td>Events across Android and iOS</td><td>Google says the Firebase SDK collects basic usage such as opens and active users automatically</td></tr><tr><td>Crash reporters</td><td>The stack trace behind a crash</td><td>UXCam names Crashlytics, Sentry, Bugsnag and Instabug</td></tr><tr><td>Mixpanel, Amplitude, UXCam, Userpilot</td><td>Cohorts, funnels, session replay</td><td>Vendor pages; each sells its own product</td></tr><tr><td>Google Analytics app</td><td>Reading reports on a phone</td><td>Viewer only; it does not track your app</td></tr></tbody></table></div>
+<p><strong>Choose the store consoles alone</strong> when you have one platform, a few hundred users and only the five questions above. They also see what an in-app tool cannot: Play counts store listing visitors who did not already have the app. <strong>Add Firebase</strong> when you need your own events on both platforms. <strong>Add a product-analytics tool</strong> when you need funnels and replays, which UXCam says explain why a number moved.</p>
+<p>The vendors behind those pages sell what they describe, so use them for definitions, not for a verdict on their own product.</p>
+<h2 id="what-usually-goes-wrong-with-app-analytics">What Usually Goes Wrong With App Analytics</h2>
+<p>Most analytics failures are setup mistakes made in the first week, not tool failures. The table below uses the sources named in each row, plus questions I read in developer forum threads in 2026 about which stats matter and what to track first.</p>
+<div class="prose-table"><table><thead><tr><th>Mistake</th><th>Why it happens</th><th>Fix</th></tr></thead><tbody><tr><td>Tracking random events</td><td>Events added before any question</td><td>Write the five questions first</td></tr><tr><td>Counting opens as active</td><td>An open is easiest to log</td><td>Define a meaningful action (UXCam)</td></tr><tr><td>Blending cohorts</td><td>One chart is simpler</td><td>Chart each install week separately</td></tr><tr><td>Test users in the data</td><td>Team phones look like drop-offs</td><td>Exclude internal and QA users (UXCam)</td></tr><tr><td>Android and iOS counted twice</td><td>Unlinked user IDs</td><td>Unify the ID before comparing platforms</td></tr><tr><td>Trend across a rule change</td><td>ATT made paid attribution noisier, per UXCam</td><td>Annotate the break, do not trend through it</td></tr><tr><td>Judging by another category</td><td>Benchmarks are averages</td><td>Compare with your own past cohorts</td></tr><tr><td>Skipping privacy</td><td>Tools collect by default</td><td>Ask a lawyer what applies to your users</td></tr></tbody></table></div>
+<p>On the last row, Userpilot names GDPR, CCPA and Apple's App Tracking Transparency, and none of the sources I read cover Indian data rules. That gap is mine to flag, and a qualified professional should answer it.</p>
+<h2 id="a-30-day-plan-for-the-weeks-after-launch">A 30-Day Plan for the Weeks After Launch</h2>
+<p>A month is enough to read one full cohort, so the plan below runs from before release to the first day-30 number. It is my suggested order, built from the metric definitions above, not a studio process.</p>
+<ol><li><strong>Before release.</strong> Write the five questions and your best guess at the activation action. Open the live build and confirm a test event reaches the dashboard, the same check the <a href="../../blog/website-launch-checklist/">website launch checklist</a> asks of a site.</li><li><strong>Days 1 to 3.</strong> Read crash and ANR rates in the consoles every day and exclude team phones.</li><li><strong>Day 7.</strong> Read day-1 and day-7 retention for the first cohort, and the drop-off at each onboarding step.</li><li><strong>Day 14.</strong> Compare what retained users did in their first session with what lost users did, and name your activation action.</li><li><strong>Day 30.</strong> Read your first day-30 number and compare cohorts.</li><li><strong>Every month.</strong> Keep a one-page review: the five metrics, the change you made and what moved.</li></ol>
+<p>Do not draw conclusions from small groups. The sources give no universal sample size, and Meta's Horizon store only opens its dashboard once an app has 100 users, which is a platform rule, not statistics. With 20 users, one person is 5%, so read single sessions and crash reports instead.</p>
+<h2 id="what-to-do-next-turn-the-numbers-into-fixes">What to Do Next: Turn the Numbers Into Fixes</h2>
+<p>Analytics tells you what is wrong, and someone still has to fix it, so decide who that is before launch. If your app is live, pick your five metrics this week and write each one's definition in a shared note. If it is not built yet, put the event list in the brief.</p>
+<p><a href="../../services/app-development/">Elyx Solutions' app development service</a> stays on after launch with monthly care plans covering monitoring, OS updates and an agreed number of update hours, and the <a href="../../services/maintenance-care/">maintenance and care page</a> describes the monitoring side. Engagements start from ₹9,999, and every project is quoted to your requirements, in writing, after a call, so you can <a href="../../contact.html">request a quote</a>. For the upkeep budget, <a href="../../blog/app-development-cost-india/">how much an app costs in India</a> covers maintenance as a share of the build.</p>
+<h2 id="sources">Sources</h2>
+<p>All pages were read on 19 November 2026.</p>
+<ul><li><a href="https://mixpanel.com/blog/what-are-mobile-app-analytics-metrics/" rel="noopener" target="_blank">What are mobile app analytics metrics?</a>, Mixpanel</li><li><a href="https://uxcam.com/blog/important-mobile-app-analytics-metrics/" rel="noopener" target="_blank">12 Mobile App Analytics Metrics That Actually Matter in 2026</a>, UXCam</li><li><a href="https://medium.com/@userpilot/the-complete-mobile-analytics-guide-challenges-metrics-and-tools-f09c4734b395" rel="noopener" target="_blank">The Complete Mobile Analytics Guide: Challenges, Metrics, and Tools</a>, Userpilot</li><li><a href="https://support.google.com/googleplay/android-developer/answer/139628?co=GENIE.Platform%3DAndroid&amp;hl=en" rel="noopener" target="_blank">View app statistics</a>, Google Play Console Help</li><li><a href="https://developers.google.com/analytics/devguides/collection/app" rel="noopener" target="_blank">Google Analytics for apps</a>, Google for Developers</li><li><a href="https://developers.google.com/analytics/devguides/reporting/data/v1/api-schema" rel="noopener" target="_blank">API dimensions and metrics</a>, Google for Developers</li><li><a href="https://support.google.com/analytics/answer/12674799?hl=en" rel="noopener" target="_blank">About the Analytics app</a>, Google Analytics Help</li><li><a href="https://support.stqry.com/support/solutions/articles/153000136723-app-store-analytics-how-to-track-and-improve-app-performance" rel="noopener" target="_blank">App Store Analytics: How to Track and Improve App Performance</a>, STQRY Support</li><li><a href="https://developers.meta.com/vr/resources/publish-analytics-intro/" rel="noopener" target="_blank">App analytics introduction</a>, Meta Horizon OS Developers</li></ul>
+      </div>
+      <section class="bfaq" id="faq"><h2>Frequently asked questions</h2><div class="faq__list"><details class="faq__item">
+  <summary class="faq__q"><span>What are app analytics metrics?</span><svg class="faq__caret" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+  <div class="faq__a"><p>App analytics metrics are numbers that describe how people find, use, keep and pay for your app, and how well it runs. Common ones are retention, active users, activation, crash rate and revenue per user. Pick four or five that match your goals.</p></div>
+</details>
+<details class="faq__item">
+  <summary class="faq__q"><span>What is a metric in analytics?</span><svg class="faq__caret" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+  <div class="faq__a"><p>A metric is a single quantitative measurement, such as users, sessions, engagement or revenue. Google's Analytics Data API documentation separates metrics from dimensions, which are attributes such as country or app version that you break a metric down by.</p></div>
+</details>
+<details class="faq__item">
+  <summary class="faq__q"><span>What is the difference between metrics and analytics?</span><svg class="faq__caret" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+  <div class="faq__a"><p>A metric is one measured number, while analytics is the collection and interpretation of many metrics to make decisions. Day-30 retention is a metric. Working out why it fell, with cohorts and funnels, is analytics.</p></div>
+</details>
+<details class="faq__item">
+  <summary class="faq__q"><span>What is the analytics app?</span><svg class="faq__caret" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+  <div class="faq__a"><p>The Analytics app is Google's mobile viewer for Google Analytics reports on a phone or tablet. It does not add tracking to your own app. For that you set up a property and an app data stream, which Google says you can do with Firebase.</p></div>
+</details>
+<details class="faq__item">
+  <summary class="faq__q"><span>Which app metrics should I track first?</span><svg class="faq__caret" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+  <div class="faq__a"><p>Track retention by install cohort, activation, crash rate and one revenue metric first. Add the store listing conversion rate if you pay for installs. Everything else can wait until one of these four tells you where to look.</p></div>
+</details>
+<details class="faq__item">
+  <summary class="faq__q"><span>What is a good retention rate for an app?</span><svg class="faq__caret" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+  <div class="faq__a"><p>There is no single good figure, because the sources disagree. Userpilot puts most apps at 1.2% to 9.9% on day 30, and UXCam gives about 7% as a median. The reliable test is whether each new cohort retains as well as the last.</p></div>
+</details>
+<details class="faq__item">
+  <summary class="faq__q"><span>What is a good crash-free rate?</span><svg class="faq__caret" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+  <div class="faq__a"><p>Above 99% is the common reference. Userpilot says the industry average for crash-free sessions is above 99%, and UXCam targets 99% for users and 99.5% for sessions. Check whether a number counts users or sessions before comparing.</p></div>
+</details>
+<details class="faq__item">
+  <summary class="faq__q"><span>Are there free app analytics tools?</span><svg class="faq__caret" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+  <div class="faq__a"><p>Some are, but confirm current terms on each provider's page. Google Play Console and App Store Connect report core metrics for apps you publish, and Google's Firebase page is titled &quot;Get unlimited app analytics&quot;.</p></div>
+</details>
+<details class="faq__item">
+  <summary class="faq__q"><span>How many users do I need before the numbers mean anything?</span><svg class="faq__caret" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+  <div class="faq__a"><p>The sources give no universal minimum. Meta's Horizon store opens its dashboard at 100 users, which is a platform rule. With fewer users, one person moves a percentage a lot, so read single sessions and crash reports.</p></div>
+</details>
+<details class="faq__item">
+  <summary class="faq__q"><span>Who fixes the problems analytics finds?</span><svg class="faq__caret" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+  <div class="faq__a"><p>Whoever maintains the app does, so settle that before launch. Ask your builder in writing whether crash fixes, OS updates and a monthly allowance of update hours are included, and who watches the crash rate.</p></div>
+</details></div></section>
+      <div class="bfoot"><span>Mobile Apps</span></div>
+    </article>
+    <aside class="baside" aria-label="From Elyx"><div class="bcta">
+  <span class="bcta__k">Elyx Solutions</span>
+  <h3>Thinking about a mobile app?</h3>
+  <a class="btn btn--blue" href="https://wa.me/919611729733?text=Hi%20Elyx%2C%20I'd%20like%20to%20talk%20about%20a%20project.%20(from%20the%20article%20%22App%20Analytics%3A%20The%20Metrics%20That%20Matter%20After%20Launch%22)" target="_blank" rel="noopener" data-track="whatsapp_click" data-article="app-analytics-metrics" data-card-pos="side">WhatsApp us <svg class="arr" width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H4M10 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+  <a class="btn btn--ghost" href="../../services/app-development/" data-track="card_click" data-article="app-analytics-metrics" data-card-pos="side" data-btn="soft">See app development</a>
+</div></aside>
+  </div>
+</div></main>
+<section class="cta" data-screen-label="Contact CTA">
+  <div class="cta__in reveal">
+    <div class="deco deco-dark" data-parallax="0.08" style="z-index:-1" aria-hidden="true"><span class="orb orb-a"></span></div>
+    <div class="ph-grid cta__bg"></div>
+    <div class="cta__glow"></div>
+    <span class="eyebrow is-light" style="justify-content:center;">Let's build</span>
+    <h2 class="cta__t" style="color:#fff;margin-top:20px;">Have something worth <span class="em">building?</span></h2>
+    <p class="cta__sub">Tell us where you're headed. We'll bring the team, the plan and the craft to get you there.</p>
+    <div class="cta__row">
+      <a class="btn btn--blue" href="../../contact.html" data-track="cta_click" data-pos="cta-section">Start a project <svg class="arr" width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H4M10 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+      <a class="btn btn--light" href="../../contact.html#book" data-track="cta_click" data-pos="cta-section">Book a call</a>
+    </div>
+  </div>
+</section>
+<footer class="footer">
+  <div class="footer__in">
+    <div class="footer__top">
+      <div>
+        <a class="brand" href="../../" aria-label="Elyx Solutions home">
+          <svg class="brand__mark" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+            <g transform="skewX(-10)">
+              <rect x="7" y="4" width="15" height="4.4" rx="1.2" fill="#1f4fd8"></rect>
+              <rect x="7" y="11.8" width="11" height="4.4" rx="1.2" fill="#0b1024"></rect>
+              <rect x="7" y="19.6" width="15" height="4.4" rx="1.2" fill="#1f4fd8"></rect>
+            </g>
+          </svg>
+          <span class="brand__name">Elyx</span>
+        </a>
+        <p class="footer__lede">Beyond just presence, we build digital <span class="serif-i" style="color:var(--blue)">value.</span></p>
+      </div>
+      <div class="fcol">
+        <h4>Services</h4>
+        <a href="../../services/web-development/">Web Development</a>
+        <a href="../../services/ecommerce-development/">E-commerce Development</a>
+        <a href="../../services/saas-development/">SaaS Development</a>
+        <a href="../../services/app-development/">App Development</a>
+        <a href="../../services/ai-chatbots/">AI Chatbots</a>
+        <a href="../../services/ai-call-assistants/">AI Call &amp; Voice Assistants</a>
+        <a href="../../services/whatsapp-automation/">WhatsApp &amp; Business Automation</a>
+        <a href="../../services/crm-lead-management/">CRM &amp; Lead Management</a>
+        <a href="../../services/booking-systems/">Booking &amp; Appointment Systems</a>
+        <a href="../../services/payments-billing/">Payments &amp; Subscription Billing</a>
+        <a href="../../services/admin-dashboards/">Admin Dashboards &amp; Internal Tools</a>
+        <a href="../../services/seo-optimization/">SEO Optimization</a>
+        <a href="../../services/maintenance-care/">Maintenance &amp; Care</a>
+      </div>
+      <div class="fcol">
+        <h4>Websites for</h4>
+        <a href="../../websites-for/dentists/">Dentists &amp; Clinics</a>
+        <a href="../../websites-for/coaching-centres/">Coaching Centres</a>
+        <a href="../../websites-for/restaurants-and-cafes/">Restaurants &amp; Cafés</a>
+        <a href="../../websites-for/salons-and-spas/">Salons &amp; Spas</a>
+        <a href="../../websites-for/real-estate/">Real Estate</a>
+        <a href="../../websites-for/ca-and-law-firms/">CA &amp; Law Firms</a>
+      </div>
+      <div class="fcol">
+        <h4>Company</h4>
+        <a href="../../about.html">About</a>
+        <a href="../../work.html">Work</a>
+        <a href="../../pricing/">Pricing</a>
+        <a href="../../tools/">Free tools</a>
+        <a href="../../blog/">Blog</a>
+        <a href="../../web-development-bengaluru/">Bengaluru</a>
+        <a href="../../contact.html">Contact</a>
+      </div>
+      <div class="fcol">
+        <h4>Connect</h4>
+        <a href="mailto:support.elyxsolutions@gmail.com">support.elyxsolutions@gmail.com</a>
+        <a href="tel:+919611729733" data-track="call_click" data-pos="footer">+91 96117 29733</a>
+        <a href="tel:+917204723340" data-track="call_click" data-pos="footer">+91 72047 23340</a>
+        <a href="https://wa.me/919611729733?text=Hi%20Elyx%2C%20I'd%20like%20to%20talk%20about%20a%20project." target="_blank" rel="noopener" data-track="whatsapp_click" data-pos="footer">WhatsApp</a>
+        <a href="https://www.linkedin.com/company/elyxsolutions04/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://www.instagram.com/elyxsolutions" target="_blank" rel="noopener">Instagram</a>
+        <span class="footer__addr">Bengaluru, Karnataka</span>
+      </div>
+    </div>
+    <div class="footer__bot">
+      <span>© 2026 Elyx Solutions. All rights reserved.</span>
+      <span>Designed &amp; built in-house · Bengaluru, India.</span>
+    </div>
+  </div>
+</footer>
+<a class="wa-float" href="https://wa.me/919611729733?text=Hi%20Elyx%2C%20I'd%20like%20to%20talk%20about%20a%20project." target="_blank" rel="noopener" aria-label="Chat with Elyx on WhatsApp" data-track="whatsapp_click" data-pos="floating">
+  <svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16.04 3C9.4 3 4 8.4 4 15.03c0 2.12.55 4.19 1.6 6.01L4 29l8.12-1.57a12.03 12.03 0 0 0 3.92.65C22.68 28.08 28.08 22.67 28.08 16 28.08 9.36 22.7 3 16.04 3Zm0 22.06c-1.22 0-2.4-.33-3.44-.95l-.25-.15-4.82.93.97-4.7-.17-.27a9.9 9.9 0 0 1-1.52-5.27c0-5.5 4.48-9.98 10-9.98 5.5 0 9.98 4.48 9.98 9.98s-4.48 10.41-9.98 10.41l-.77-.02Zm5.47-7.46c-.3-.15-1.77-.87-2.04-.97-.28-.1-.48-.15-.68.15-.2.3-.78.97-.95 1.17-.18.2-.35.22-.65.07-.3-.15-1.27-.47-2.42-1.5-.9-.8-1.5-1.78-1.67-2.08-.18-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.68-1.64-.93-2.25-.25-.58-.5-.5-.68-.5h-.58c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.5s1.07 2.9 1.22 3.1c.15.2 2.1 3.2 5.08 4.48.7.3 1.26.48 1.7.62.72.23 1.37.2 1.88.12.58-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35Z"/></svg>
+</a>
+<script>window.ELYX={"email":"support.elyxsolutions@gmail.com","whatsapp":"https://wa.me/919611729733?text=Hi%20Elyx%2C%20I'd%20like%20to%20talk%20about%20a%20project.","phone":"+91 96117 29733","booking":""};</script>
+<script src="../../js/site.js"></script>
+<script src="../../js/analytics.js"></script>
+</body>
+</html>
