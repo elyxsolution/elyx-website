@@ -16,8 +16,8 @@
     "lastmod": "2026-11-19"
   },
   "/services/maintenance-care/": {
-    "hash": "1fe72749bda51300744013ffe9aa888a",
-    "lastmod": "2026-11-19"
+    "hash": "403d9181863e6017fc1ba2d40e55946b",
+    "lastmod": "2026-11-20"
   },
   "/websites-for/dentists/": {
     "hash": "a8f7b2b431f0b3d6dede62d2c2f4c2b2",
@@ -76,8 +76,8 @@
     "lastmod": "2026-11-19"
   },
   "/blog/": {
-    "hash": "92f7c98993f5b302e2fc55d3ed77b113",
-    "lastmod": "2026-11-19"
+    "hash": "17ce0873f4d18bb9ba39e69f704c253a",
+    "lastmod": "2026-11-20"
   },
   "/blog/category/industries/": {
     "hash": "c34533d3d71c91e85f357950dc59bf11",
@@ -156,8 +156,8 @@
     "lastmod": "2026-11-16"
   },
   "/blog/author/shreyasmv/": {
-    "hash": "0a763423ba2676b29d0d58ba4c72d815",
-    "lastmod": "2026-11-19"
+    "hash": "53100bd19c3cff8ae61b216ea9e45ec0",
+    "lastmod": "2026-11-20"
   },
   "/blog/author/rahulc/": {
     "hash": "9657b1741132810f73a942f71d8f05d2",
@@ -478,5 +478,9 @@
   "/services/admin-dashboards/": {
     "hash": "8263aa9e537d450de2cc2eeba2174aae",
     "lastmod": "2026-11-19"
+  },
+  "/blog/ssl-certificate-explained/": {
+    "hash": "aa19f0b224e8462f89075edb4651e016",
+    "lastmod": "2026-11-20"
   }
 }
