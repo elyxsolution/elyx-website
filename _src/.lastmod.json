@@ -16,8 +16,8 @@
     "lastmod": "2026-11-19"
   },
   "/services/maintenance-care/": {
-    "hash": "1fe72749bda51300744013ffe9aa888a",
-    "lastmod": "2026-11-19"
+    "hash": "97851e443e76a99c41f91240d5d243da",
+    "lastmod": "2026-11-20"
   },
   "/websites-for/dentists/": {
     "hash": "a8f7b2b431f0b3d6dede62d2c2f4c2b2",
@@ -76,8 +76,8 @@
     "lastmod": "2026-11-19"
   },
   "/blog/": {
-    "hash": "92f7c98993f5b302e2fc55d3ed77b113",
-    "lastmod": "2026-11-19"
+    "hash": "89cf6d1f45d06fe0bd35874569010e62",
+    "lastmod": "2026-11-20"
   },
   "/blog/category/industries/": {
     "hash": "c34533d3d71c91e85f357950dc59bf11",
@@ -156,8 +156,8 @@
     "lastmod": "2026-11-16"
   },
   "/blog/author/shreyasmv/": {
-    "hash": "0a763423ba2676b29d0d58ba4c72d815",
-    "lastmod": "2026-11-19"
+    "hash": "87ef485aeebbb40c4d458068f7c7ca0b",
+    "lastmod": "2026-11-20"
   },
   "/blog/author/rahulc/": {
     "hash": "9657b1741132810f73a942f71d8f05d2",
@@ -478,5 +478,9 @@
   "/services/admin-dashboards/": {
     "hash": "8263aa9e537d450de2cc2eeba2174aae",
     "lastmod": "2026-11-19"
+  },
+  "/blog/why-is-my-website-slow/": {
+    "hash": "5fc617163663a5c280330499b6060d7b",
+    "lastmod": "2026-11-20"
   }
 }

@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Why Is My Website Slow? 12 Fixes, From Quick to Serious</title>
+<meta name="description" content="Why is my website slow? Test it first, then work through 12 fixes from images and caching to hosting, with a symptom table and a worked example." />
+<link rel="canonical" href="https://elyxsolutions.in/blog/why-is-my-website-slow/" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#080b1a" />
+<!-- Open Graph -->
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Elyx Solutions" />
+<meta property="og:title" content="Why Is My Website Slow? 12 Fixes, From Quick to Serious" />
+<meta property="og:description" content="Why is my website slow? Test it first, then work through 12 fixes from images and caching to hosting, with a symptom table and a worked example." />
+<meta property="og:url" content="https://elyxsolutions.in/blog/why-is-my-website-slow/" />
+<meta property="og:image" content="https://elyxsolutions.in/og/blog-why-is-my-website-slow.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:locale" content="en_IN" />
+<meta property="article:published_time" content="2026-11-20" />
+<meta property="article:modified_time" content="2026-11-20" />
+<meta property="article:section" content="Maintenance, Security &amp; Speed" />
+<meta property="article:author" content="https://elyxsolutions.in/blog/author/shreyasmv/" />
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Why Is My Website Slow? 12 Fixes, From Quick to Serious" />
+<meta name="twitter:description" content="Why is my website slow? Test it first, then work through 12 fixes from images and caching to hosting, with a symptom table and a worked example." />
+<meta name="twitter:image" content="https://elyxsolutions.in/og/blog-why-is-my-website-slow.png" />
+<!-- Icons -->
+<link rel="icon" href="../../favicon.svg" type="image/svg+xml" />
+<link rel="icon" href="../../icon-192.png" sizes="192x192" type="image/png" />
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500;1,6..72,600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../../css/styles.css" />
+<link rel="stylesheet" href="../../css/pages.css" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://elyxsolutions.in/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://elyxsolutions.in/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Why Is My Website Slow? 12 Fixes, From Quick to Serious",
+          "item": "https://elyxsolutions.in/blog/why-is-my-website-slow/"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://elyxsolutions.in/blog/why-is-my-website-slow/#article",
+      "headline": "Why Is My Website Slow? 12 Fixes, From Quick to Serious",
+      "description": "Why is my website slow? Test it first, then work through 12 fixes from images and caching to hosting, with a symptom table and a worked example.",
+      "image": [
+        "https://elyxsolutions.in/og/blog-why-is-my-website-slow.png"
+      ],
+      "datePublished": "2026-11-20",
+      "dateModified": "2026-11-20",
+      "author": {
+        "@type": "Person",
+        "@id": "https://elyxsolutions.in/blog/author/shreyasmv/#person",
+        "name": "Shreyas M V",
+        "url": "https://elyxsolutions.in/blog/author/shreyasmv/",
+        "sameAs": [
+          "https://www.linkedin.com/in/shreyas-m-v-311b99205/"
+        ]
+      },
+      "publisher": {
+        "@id": "https://elyxsolutions.in/#organization"
+      },
+      "mainEntityOfPage": "https://elyxsolutions.in/blog/why-is-my-website-slow/",
+      "articleSection": "Maintenance, Security & Speed",
+      "inLanguage": "en-IN"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Why is my website slow to load?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A website is usually slow to load because of oversized images, missing caching, too many plugins or outside scripts, or a slow host. ImageEngine, DebugBear and Wix all list these causes. Run a mobile test and use the symptom table above to see which one applies to you."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why is my website slow on mobile?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A site is slow on mobile when the page is too heavy for a phone connection or asks the phone to process too much script. DebugBear's test site showed 3.7 seconds LCP on desktop and up to 12 seconds on mobile, and Wix points to desktop-sized images and inefficient code. Shrink images and scripts first, and see the mobile article for the 4G arithmetic."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How fast should a website load?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ImageEngine says to aim for under 3 seconds and claims 53% of visitors leave after that, but I could not trace the figure to a study. A firmer yardstick is a mobile LCP under 2.5 seconds, the pass line in the SEOmator audit reported in the mobile article."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does website speed affect SEO?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Speed is said to affect search results, but my evidence is vendor statements only. DebugBear says Google prioritises speed as a ranking factor and Wix says search engines penalise slow sites, and I found no Google page to confirm the weight. Slow pages also lose visitors directly, whatever the ranking effect."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I fix a slow website myself?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can fix images, plugins and caching yourself if you have admin access and a backup. Hosting changes, render-blocking code and database cleaning are developer or host-support jobs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why is my WordPress website slow?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A WordPress site is slow mainly because pages are built on request by PHP and a database, plugins add code, and caching is often off. DebugBear's WordPress test site had no page cache detected and a slow server response. Switch on caching first, then audit plugins and the theme."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why did my website get slower when I changed nothing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A site slows without an edit from you because the things around it change: updates, large uploads, more traffic, a growing database or an ageing host. Wix and ImageEngine list outdated software, traffic spikes and database build-up as causes. Retest, then compare against your saved baseline."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why is my website slow even though I have fast internet?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Your own connection is only one part, because the page must also come from a server and be assembled by the browser. A slow server response, heavy images and many scripts cost time on any line, so open a few other sites on it to separate the two."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body data-article="why-is-my-website-slow">
+<div class="grain"></div>
+<div class="nav-shell scrolled" id="navShell">
+  <a class="brand nav__brand" href="../../" aria-label="Elyx Solutions home">
+    <svg class="brand__mark" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+      <g transform="skewX(-10)">
+        <rect x="7" y="4" width="15" height="4.4" rx="1.2" fill="#1f4fd8"></rect>
+        <rect x="7" y="11.8" width="11" height="4.4" rx="1.2" fill="#0b1024"></rect>
+        <rect x="7" y="19.6" width="15" height="4.4" rx="1.2" fill="#1f4fd8"></rect>
+      </g>
+    </svg>
+    <span class="brand__name">Elyx</span>
+  </a>
+
+  <nav class="nav" id="nav" aria-label="Main">
+    <div class="nav__links" id="navLinks">
+      <div class="nav__item" data-menu="services"><button type="button">Services <svg class="caret" viewBox="0 0 10 10" fill="none"><path d="M1 3l4 4 4-4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button></div>
+      <div class="nav__item" data-menu="industries"><button type="button">Industries <svg class="caret" viewBox="0 0 10 10" fill="none"><path d="M1 3l4 4 4-4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button></div>
+      <div class="nav__item" data-menu="work"><button type="button">Work <svg class="caret" viewBox="0 0 10 10" fill="none"><path d="M1 3l4 4 4-4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button></div>
+      <div class="nav__item"><a href="../../blog/">Blog</a></div>
+      <div class="nav__item"><a href="../../about.html">About</a></div>
+      <div class="nav__item"><a href="../../contact.html">Contact</a></div>
+    </div>
+  </nav>
+
+  <div class="nav__right">
+    <a class="btn btn--primary nav__cta" href="../../contact.html" data-track="cta_click" data-pos="nav">Let's talk <svg class="arr" width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H4M10 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+    <button class="nav__burger" id="burger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <div class="mobile-menu__group">
+      <span class="mobile-menu__label">Services</span>
+      <a href="../../services/web-development/">Web Development</a>
+      <a href="../../services/ecommerce-development/">E-commerce Development</a>
+      <a href="../../services/saas-development/">SaaS Development</a>
+      <a href="../../services/app-development/">App Development</a>
+      <a href="../../services/ai-chatbots/">AI Chatbots</a>
+      <a href="../../services/ai-call-assistants/">AI Call &amp; Voice Assistants</a>
+      <a href="../../services/whatsapp-automation/">WhatsApp &amp; Business Automation</a>
+      <a href="../../services/crm-lead-management/">CRM &amp; Lead Management</a>
+      <a href="../../services/booking-systems/">Booking &amp; Appointment Systems</a>
+      <a href="../../services/payments-billing/">Payments &amp; Subscription Billing</a>
+      <a href="../../services/admin-dashboards/">Admin Dashboards &amp; Internal Tools</a>
+      <a href="../../services/seo-optimization/">SEO Optimization</a>
+      <a href="../../services/maintenance-care/">Maintenance &amp; Care</a>
+    </div>
+    <div class="mobile-menu__group">
+      <span class="mobile-menu__label">Websites for</span>
+      <a href="../../websites-for/dentists/">Dentists &amp; Clinics</a>
+      <a href="../../websites-for/coaching-centres/">Coaching Centres</a>
+      <a href="../../websites-for/restaurants-and-cafes/">Restaurants &amp; Cafés</a>
+      <a href="../../websites-for/salons-and-spas/">Salons &amp; Spas</a>
+      <a href="../../websites-for/real-estate/">Real Estate</a>
+      <a href="../../websites-for/ca-and-law-firms/">CA &amp; Law Firms</a>
+    </div>
+    <div class="mobile-menu__group">
+      <span class="mobile-menu__label">Company</span>
+      <a href="../../about.html">About</a>
+      <a href="../../work.html">Work</a>
+      <a href="../../pricing/">Pricing</a>
+      <a href="../../blog/">Blog</a>
+      <a href="../../tools/">Free tools</a>
+      <a href="../../contact.html">Contact</a>
+    </div>
+    <a class="btn btn--blue mobile-menu__cta" href="../../contact.html">Let's talk <svg class="arr" width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H4M10 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+  </div>
+
+  <!-- Mega panel -->
+  <div class="mega" id="mega">
+    <div class="mega__inner">
+      <div class="mega__panel" data-panel="services">
+        <div class="mega-grid">
+          <div class="mega-tiles"><a class="mtile" href="../../services/web-development/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M9 8l-4 4 4 4M15 8l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">Web Development</span></span></a><a class="mtile" href="../../services/ecommerce-development/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M3 4h2l2.4 10.2a1 1 0 001 .8h8.2a1 1 0 001-.76L19 8H6.2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path><circle cx="9.5" cy="19" r="1.3" fill="currentColor"></circle><circle cx="16.5" cy="19" r="1.3" fill="currentColor"></circle></svg></span><span><span class="mtile__t">E-commerce Development</span></span></a><a class="mtile" href="../../services/saas-development/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M6 16a4 4 0 010-8 5 5 0 019.6-1.5A3.5 3.5 0 0118 16H6z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">SaaS Development</span></span></a><a class="mtile" href="../../services/app-development/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><rect x="7" y="3" width="10" height="18" rx="2.5" stroke="currentColor" stroke-width="1.6"></rect><path d="M11 18h2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg></span><span><span class="mtile__t">App Development</span></span></a><a class="mtile" href="../../services/ai-chatbots/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M5 6.5A2.5 2.5 0 017.5 4h9A2.5 2.5 0 0119 6.5v6a2.5 2.5 0 01-2.5 2.5H11l-4 3.5V15h-.5A2.5 2.5 0 014 12.5v-6z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"></path><path d="M9 9.7h.01M12 9.7h.01M15 9.7h.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path></svg></span><span><span class="mtile__t">AI Chatbots</span></span></a><a class="mtile" href="../../services/ai-call-assistants/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M6.6 4h2.2l1.2 3.4-1.6 1.2a10 10 0 004.2 4.2l1.2-1.6 3.4 1.2v2.2A2 2 0 0115.2 16 11.2 11.2 0 014 4.8 2 2 0 016.6 4z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"></path><path d="M15 4.5a5.5 5.5 0 014.5 4.5M15 8a2.5 2.5 0 012 2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg></span><span><span class="mtile__t">AI Call &amp; Voice Assistants</span></span></a><a class="mtile" href="../../services/whatsapp-automation/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M13 3L5 13.2h6L10 21l8-10.2h-6L13 3z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">WhatsApp &amp; Business Automation</span></span></a><a class="mtile" href="../../services/crm-lead-management/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><circle cx="9" cy="8.5" r="3" stroke="currentColor" stroke-width="1.6"></circle><path d="M3.5 19a5.5 5.5 0 0111 0" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path><path d="M16 5.8a3 3 0 010 5.4M17.5 14.4A5.5 5.5 0 0120.5 19" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg></span><span><span class="mtile__t">CRM &amp; Lead Management</span></span></a><a class="mtile" href="../../services/booking-systems/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><rect x="4" y="5.5" width="16" height="14" rx="2.5" stroke="currentColor" stroke-width="1.6"></rect><path d="M4 10h16M8.5 3.5v4M15.5 3.5v4M9 14.5l2 2 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">Booking &amp; Appointment Systems</span></span></a><a class="mtile" href="../../services/payments-billing/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><rect x="3.5" y="6" width="17" height="12" rx="2.5" stroke="currentColor" stroke-width="1.6"></rect><path d="M3.5 10.5h17M7 15h3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg></span><span><span class="mtile__t">Payments &amp; Subscription Billing</span></span></a><a class="mtile" href="../../services/admin-dashboards/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="7" height="7" rx="1.6" stroke="currentColor" stroke-width="1.6"></rect><rect x="13" y="4" width="7" height="4.5" rx="1.6" stroke="currentColor" stroke-width="1.6"></rect><rect x="13" y="11" width="7" height="9" rx="1.6" stroke="currentColor" stroke-width="1.6"></rect><rect x="4" y="14" width="7" height="6" rx="1.6" stroke="currentColor" stroke-width="1.6"></rect></svg></span><span><span class="mtile__t">Admin Dashboards &amp; Internal Tools</span></span></a><a class="mtile" href="../../services/seo-optimization/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><circle cx="10.5" cy="10.5" r="6" stroke="currentColor" stroke-width="1.6"></circle><path d="M15 15l5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg></span><span><span class="mtile__t">SEO Optimization</span></span></a><a class="mtile" href="../../services/maintenance-care/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M12 8v4l3 2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path><circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="1.6"></circle></svg></span><span><span class="mtile__t">Maintenance &amp; Care</span></span></a><a class="mtile" href="../../pricing/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M4 14l5-5 4 4 7-7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path><path d="M20 6v4h-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">Pricing</span></span></a></div>
+          <a class="mega-feature" href="../../pricing/">
+            <div class="ph-grid"></div>
+            <div class="mega-feature__k">Featured</div>
+            <div class="mega-feature__t">Starting from ₹9,999. Quotes tailored to you.</div>
+            <div class="mega-feature__l">See pricing <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H4M10 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+          </a>
+        </div>
+      </div>
+
+      <div class="mega__panel" data-panel="industries">
+        <div class="mega-grid">
+          <div class="mega-tiles"><a class="mtile" href="../../websites-for/dentists/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M12 5c-2-1.5-6-1.5-6 2.5 0 3 1.5 4 1.5 7 0 2 .8 4.5 2 4.5s1.5-2 2.5-2 1.3 2 2.5 2 2-2.5 2-4.5c0-3 1.5-4 1.5-7C18 3.5 14 3.5 12 5z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">Dentists &amp; Clinics</span></span></a><a class="mtile" href="../../websites-for/coaching-centres/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M3 9l9-4 9 4-9 4-9-4z M7 11v4c0 1.5 2.2 3 5 3s5-1.5 5-3v-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">Coaching Centres</span></span></a><a class="mtile" href="../../websites-for/restaurants-and-cafes/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M7 3v8M5 3v5a2 2 0 004 0V3M7 11v10M17 3c-2 1.5-3 4-3 7h3v11" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">Restaurants &amp; Cafés</span></span></a><a class="mtile" href="../../websites-for/salons-and-spas/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><circle cx="6" cy="7" r="2.5" stroke="currentColor" stroke-width="1.6"></circle><circle cx="6" cy="17" r="2.5" stroke="currentColor" stroke-width="1.6"></circle><path d="M8 8.5L20 18M8 15.5L20 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg></span><span><span class="mtile__t">Salons &amp; Spas</span></span></a><a class="mtile" href="../../websites-for/real-estate/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M4 21V8l8-5 8 5v13M9 21v-6h6v6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">Real Estate</span></span></a><a class="mtile" href="../../websites-for/ca-and-law-firms/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M12 4v16M6 20h12M5 8h14M5 8l-2.5 6a3 3 0 005 0L5 8zM19 8l-2.5 6a3 3 0 005 0L19 8z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">CA &amp; Law Firms</span></span></a></div>
+          <a class="mega-feature" href="../../websites-for/">
+            <div class="ph-grid"></div>
+            <div class="mega-feature__k">Built for your trade</div>
+            <div class="mega-feature__t">What a site for your kind of business actually needs.</div>
+            <div class="mega-feature__l">All industries <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H4M10 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+          </a>
+        </div>
+      </div>
+
+      <div class="mega__panel" data-panel="work">
+        <div class="mega-grid mega-grid--work">
+          <div class="mega-wlinks">
+            <a class="mtile" href="../../work.html#tools"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.6"></circle><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5.1 5.1l2.1 2.1M16.8 16.8l2.1 2.1M18.9 5.1L16.8 7.2M7.2 16.8l-2.1 2.1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg></span><span><span class="mtile__t">Tools we use</span></span></a>
+            <a class="mtile" href="../../work.html#faq"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"></circle><path d="M9.6 9.2a2.5 2.5 0 014.7 1.1c0 1.6-2.3 2-2.3 3.6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path><circle cx="12" cy="16.6" r="0.7" fill="currentColor"></circle></svg></span><span><span class="mtile__t">FAQ about Elyx</span></span></a>
+            <a class="mtile" href="../../work.html"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="6.5" height="6.5" rx="1.6" stroke="currentColor" stroke-width="1.6"></rect><rect x="13.5" y="4" width="6.5" height="6.5" rx="1.6" stroke="currentColor" stroke-width="1.6"></rect><rect x="4" y="13.5" width="6.5" height="6.5" rx="1.6" stroke="currentColor" stroke-width="1.6"></rect><rect x="13.5" y="13.5" width="6.5" height="6.5" rx="1.6" stroke="currentColor" stroke-width="1.6"></rect></svg></span><span><span class="mtile__t">All projects</span></span></a>
+          </div>
+          <div class="mega-work"><a class="wcard" href="../../work/ashirwad-dental/"><div class="wcard__img"><img src="../../uploads/projects/ashirwad-dental.jpg" alt="Ashirwad Dental Clinic website" width="1000" height="750" loading="lazy" decoding="async" /></div><div class="wcard__meta"><div class="wcard__t">Ashirwad Dental Clinic</div><div class="wcard__c">Web · Redesign</div></div></a><a class="wcard" href="../../work/malnad-stories/"><div class="wcard__img"><img src="../../uploads/projects/malnad-stories.jpg" alt="Malnad Stories website" width="1000" height="750" loading="lazy" decoding="async" /></div><div class="wcard__meta"><div class="wcard__t">Malnad Stories</div><div class="wcard__c">E-commerce · Web App</div></div></a><a class="wcard" href="https://powertekservices.in/" target="_blank" rel="noopener"><div class="wcard__img"><img src="../../uploads/projects/powertek.jpg" alt="Powertek website" width="1000" height="750" loading="lazy" decoding="async" /></div><div class="wcard__meta"><div class="wcard__t">Powertek</div><div class="wcard__c">Web · Electrical</div></div></a><a class="wcard" href="https://hindustanfoundationandconstructions.com/" target="_blank" rel="noopener"><div class="wcard__img"><img src="../../uploads/projects/hindustan-foundation.jpg" alt="Hindustan Foundation &amp; Constructions website" width="1000" height="750" loading="lazy" decoding="async" /></div><div class="wcard__meta"><div class="wcard__t">Hindustan Foundation &amp; Constructions</div><div class="wcard__c">Web · Construction</div></div></a><a class="wcard" href="https://aralikattecafe.in/" target="_blank" rel="noopener"><div class="wcard__img"><img src="../../uploads/projects/aralikatte-cafe.jpg" alt="Aralikatte Cafe website" width="1000" height="750" loading="lazy" decoding="async" /></div><div class="wcard__meta"><div class="wcard__t">Aralikatte Cafe</div><div class="wcard__c">Web · Restaurant</div></div></a><a class="wcard" href="https://bangaloremusictrust.com/" target="_blank" rel="noopener"><div class="wcard__img"><img src="../../uploads/projects/bangalore-music-trust.jpg" alt="Bangalore Music Trust website" width="1000" height="750" loading="lazy" decoding="async" /></div><div class="wcard__meta"><div class="wcard__t">Bangalore Music Trust</div><div class="wcard__c">Web · Non-profit</div></div></a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<span id="top"></span>
+<main class="bl"><div class="bl__in">
+  <div class="bl__crumbs">
+    <a class="bl__back" href="../../blog/">← Back to Blog</a>
+    <nav aria-label="Breadcrumb"><ol><li><a href="../../">Home</a></li><li aria-hidden="true">/</li><li><a href="../../blog/">Blog</a></li><li aria-hidden="true">/</li><li aria-current="page">Why Is My Website Slow? 12 Fixes, From Quick to Serious</li></ol></nav>
+  </div>
+  <div class="bl__cols">
+    <article class="barticle" data-article="why-is-my-website-slow">
+      <header>
+        <p class="bbyline">By <a class="bauthor" href="../../blog/author/shreyasmv/"><img class="bauthor__ph" src="../../uploads/authors/shreyasmv.jpg" alt="" width="24" height="24" loading="lazy" /><span>Shreyas M V</span></a><span aria-hidden="true">·</span><span>Published <time datetime="2026-11-20">20 November 2026</time></span><span aria-hidden="true">·</span><span>15 min read</span></p>
+        <h1>Why Is My Website Slow? 12 Fixes, From Quick to Serious</h1>
+        <p class="blead">Why is my website slow? Test it first, then work through 12 fixes from images and caching to hosting, with a symptom table and a worked example.</p>
+      </header>
+      <nav class="btoc" aria-label="Table of contents"><b>On this page</b><ol><li><a href="#check-why-your-website-is-slow-before-you-fix-anything"><span>01</span>Check Why Your Website Is Slow Before You Fix Anything</a></li><li><a href="#why-is-my-website-slow-match-the-symptom-to-the-cause"><span>02</span>Why Is My Website Slow? Match the Symptom to the Cause</a></li><li><a href="#the-12-fixes-in-order-from-quick-to-serious"><span>03</span>The 12 Fixes in Order, From Quick to Serious</a></li><li><a href="#images-fixes-2-and-3"><span>04</span>Images: Fixes 2 and 3</a></li><li><a href="#plugins-and-caching-fixes-4-and-5"><span>05</span>Plugins and Caching: Fixes 4 and 5</a></li><li><a href="#scripts-and-render-blocking-code-fixes-6-and-7"><span>06</span>Scripts and Render-Blocking Code: Fixes 6 and 7</a></li><li><a href="#cdn-updates-and-the-database-fixes-8-to-10"><span>07</span>CDN, Updates and the Database: Fixes 8 to 10</a></li><li><a href="#hosting-and-rebuild-fixes-11-and-12"><span>08</span>Hosting and Rebuild: Fixes 11 and 12</a></li><li><a href="#a-worked-example-one-site-five-changes"><span>09</span>A Worked Example: One Site, Five Changes</a></li><li><a href="#what-usually-goes-wrong"><span>10</span>What Usually Goes Wrong</a></li><li><a href="#what-to-do-next"><span>11</span>What to Do Next</a></li><li><a href="#sources"><span>12</span>Sources</a></li><li><a href="#faq"><span>13</span>Frequently asked questions</a></li></ol></nav>
+      <div class="prose">
+<p>Why is my website slow? Usually because the page is heavier, or the server slower, than a visitor on a phone connection will wait for: oversized images, no caching, too many plugins and outside scripts, or weak hosting. ImageEngine, DebugBear and Wix, the three pages I could read in full, name nearly the same causes, and the cheapest fixes need only your admin login. The honest qualification is that all three are vendors, my research found no Google or HTTP Archive page to check them against, and I ran no tests of my own, so every figure below belongs to its source, not to your site.</p>
+<ul><li><strong>Test first.</strong> Run PageSpeed Insights on the mobile setting and retest after every change.</li><li><strong>Order.</strong> Fixes 1 to 5 are quick, 6 to 10 need care, and 11 and 12 are decisions about hosting and rebuilding.</li><li><strong>Evidence.</strong> One published case cut a mobile main-content time from 12 seconds to 1.8 seconds, mostly through image fixes.</li><li><strong>Limit.</strong> A fast server cannot rescue a heavy page, and the test tells you which you have.</li></ul>
+<h2 id="check-why-your-website-is-slow-before-you-fix-anything">Check Why Your Website Is Slow Before You Fix Anything</h2>
+<p>You check why a website is slow by running a speed test on the mobile setting, writing down three numbers and repeating the test after every change. ImageEngine tells owners to run Google's PageSpeed Insights first, which returns one score from 1 to 100. DebugBear's free test goes further and shows a waterfall, the order in which each file loads.</p>
+<p>Run this checklist before you touch anything:</p>
+<ol><li><strong>Rule out your own connection.</strong> Open two well-known sites on the same device; if they crawl too, the fault is the line or the phone, not your site (my reading).</li><li><strong>Test the pages that matter.</strong> Run PageSpeed Insights on the home page and on the page that brings enquiries, and read the mobile result first.</li><li><strong>Write down three numbers.</strong> The overall score, Largest Contentful Paint (LCP, when the biggest image or heading appears) and Time to First Byte (TTFB, how long the server takes to start replying), as DebugBear defines them.</li><li><strong>Note what the report flags.</strong> Images, missing caching and render-blocking files are the usual items.</li><li><strong>Change one thing, then retest.</strong> Otherwise you cannot tell which fix worked.</li></ol>
+<p>Core Web Vitals are Google's page-experience measures, and ImageEngine says images can affect all three. The SEOmator audit reported in <a href="../../blog/mobile-friendly-website/">Why Your Website Must Be Built for Phones First</a> counted a mobile LCP above 2.5 seconds as a failure, as it did a tap response (INP) above 200 milliseconds.</p>
+<p>A single test is one run on one connection. DebugBear separates such synthetic tests from real user monitoring, which records what actual visitors experienced.</p>
+<h2 id="why-is-my-website-slow-match-the-symptom-to-the-cause">Why Is My Website Slow? Match the Symptom to the Cause</h2>
+<p>A slow site usually shows one of seven patterns, and each pattern points at a different fix. The table below is my reading of the three vendor pages, not a measured result, and the last column refers to the fix numbers in the next section.</p>
+<div class="prose-table"><table><thead><tr><th>What you see</th><th>Likely cause</th><th>Fix</th></tr></thead><tbody><tr><td>Blank screen, then everything at once</td><td>Slow server response (high TTFB)</td><td>5, 11</td></tr><tr><td>Text appears, main image arrives late</td><td>Oversized or low-priority top image</td><td>2, 3</td></tr><tr><td>Fine on Wi-Fi, slow on mobile data</td><td>Heavy images and many scripts</td><td>2, 6, 7</td></tr><tr><td>Slower for visitors far from the server</td><td>No CDN, distant server</td><td>8, 11</td></tr><tr><td>Only some pages are slow</td><td>Uncached pages, heavy database</td><td>5, 10</td></tr><tr><td>Got slower though you changed nothing</td><td>New plugins, big uploads, ageing software</td><td>4, 9, 10</td></tr><tr><td>Page loads but taps lag</td><td>Ads, widgets, heavy JavaScript</td><td>6, 7</td></tr></tbody></table></div>
+<h2 id="the-12-fixes-in-order-from-quick-to-serious">The 12 Fixes in Order, From Quick to Serious</h2>
+<p>The fixes run from quick to serious because ImageEngine ranks its list by impact and ease, and DebugBear says to fix the most impactful problem first. The effort column is my own grouping.</p>
+<div class="prose-table"><table><thead><tr><th>Fix</th><th>Effort</th><th>Who does it</th></tr></thead><tbody><tr><td>1. Test and record a baseline</td><td>Quick</td><td>You</td></tr><tr><td>2. Resize, compress and convert images</td><td>Quick</td><td>You or a developer</td></tr><tr><td>3. Lazy-load images, prioritise the top one</td><td>Quick</td><td>Developer or a setting</td></tr><tr><td>4. Remove unused plugins and apps</td><td>Quick</td><td>You, after a backup</td></tr><tr><td>5. Switch on caching</td><td>Quick</td><td>You or host support</td></tr><tr><td>6. Cut third-party scripts and ads</td><td>Medium</td><td>You decide, developer removes</td></tr><tr><td>7. Defer and minify blocking code</td><td>Medium</td><td>Developer</td></tr><tr><td>8. Add a CDN</td><td>Medium</td><td>Developer or host</td></tr><tr><td>9. Update CMS, theme and plugins</td><td>Medium</td><td>You, tested first</td></tr><tr><td>10. Clean the database</td><td>Medium</td><td>Developer or host support</td></tr><tr><td>11. Upgrade or move hosting</td><td>Serious</td><td>Developer, your decision</td></tr><tr><td>12. Replace the theme or rebuild</td><td>Serious</td><td>Developer</td></tr></tbody></table></div>
+<p>If you would rather have someone watch these numbers every month, <a href="../../services/maintenance-care/">Elyx Solutions' maintenance and care service</a> lists periodic speed and Core Web Vitals checks and uptime monitoring among what it covers.</p>
+<h2 id="images-fixes-2-and-3">Images: Fixes 2 and 3</h2>
+<p>Images come first because they are the largest part of a typical page. ImageEngine, quoting HTTP Archive, says the average page weighed 2 MB in 2021 and half of that was images. I did not check HTTP Archive directly and the figure is old, so take it as direction only: half of 2 MB is about 1 MB of images.</p>
+<p><strong>Fix 2: size, compress and convert.</strong></p>
+<ul><li><strong>Size to the slot.</strong> DebugBear found nine oversized images on its test site even after converting them to a compressed format, and notes that a WebP or AVIF file still hurts if it is bigger than the space it fills.</li><li><strong>Convert.</strong> Wix recommends WebP and AVIF and says WebP works in all modern browsers.</li><li><strong>Replace GIFs.</strong> Wix calls GIFs very heavy and suggests animated WebP or looped video instead.</li></ul>
+<p>A photo uploaded straight from a phone gallery is the likely culprit on small-business sites (my reading), and the studio's maintenance page uses a 6 MB upload as its example of post-launch slowing. The mobile article works the arithmetic: 6 MB is 48 megabits, so at an illustrative 2 Mbps (a chosen input, not an Indian measurement) it takes 24 seconds.</p>
+<p><strong>Fix 3: load images at the right time.</strong> Lazy loading means an image downloads only when the visitor scrolls near it, and DebugBear and Wix both recommend it for images below the fold. The top image is the opposite case: DebugBear's test showed its largest image had a low request priority, and a preload hint with <code>fetchpriority</code> set to high cut that page's LCP from 2.7 to 1.2 seconds. Do not lazy-load the top image (my reading of that result).</p>
+<h2 id="plugins-and-caching-fixes-4-and-5">Plugins and Caching: Fixes 4 and 5</h2>
+<p>Every plugin or app adds code, so removing the unused ones is the cheapest speed-up on a CMS site. ImageEngine says each plugin and theme adds code and weight, advises installing only what you need, and warns that badly written plugins can leave leftover data behind. Wix adds that third-party plugins load at speeds their makers control, which makes your own page times unpredictable.</p>
+<p>Take a backup, remove one plugin at a time and retest. On a hosted builder the same goes for apps: Wix says its slow sites usually come from unoptimised images, too many apps or heavy video embeds, which is a vendor's view of its own platform.</p>
+<p><strong>Fix 5: caching</strong> keeps a ready-made copy so the server does not rebuild the page for every visit. DebugBear describes three kinds: page caching, which skips the PHP and database work for anonymous visitors; object caching, which stores frequent database queries; and browser caching, which tells the visitor's browser to keep files locally. ImageEngine adds that without caching a returning visitor downloads everything again, and that the risk is stale content, so clear the cache after you change a price or a photo.</p>
+<p>On DebugBear's WordPress site, Site Health flagged that no page cache was detected. With all three types on, its TTFB was 415 milliseconds and its score rose from 61% to 73%. If only some pages are slow, check whether they are the uncached ones, such as logged-in or checkout pages (my reading).</p>
+<h2 id="scripts-and-render-blocking-code-fixes-6-and-7">Scripts and Render-Blocking Code: Fixes 6 and 7</h2>
+<p>Outside scripts slow a page because each one is another request to someone else's server. Wix says ads need requests to several servers for scripts, images and tracking pixels, and that ad scripts often load synchronously, so the browser waits for them. ImageEngine adds that ads can destabilise page loading, which feeds into Core Web Vitals.</p>
+<p>On a small-business site the equivalents are a chat bubble, a Google Maps embed, a social feed, an analytics tag and an ad pixel (my reading). My own rule, not the sources': list every script and remove any whose data nobody has opened in three months.</p>
+<p><strong>Fix 7: render-blocking code</strong> is a file the browser must finish before it can draw the page. ImageEngine's remedies are to defer JavaScript until content has loaded, minify JavaScript and CSS (strip needless characters), combine files, and inline only small snippets. DebugBear notes that a page builder such as Divi can add JavaScript that raises Total Blocking Time, so try these on a staging copy with a developer.</p>
+<h2 id="cdn-updates-and-the-database-fixes-8-to-10">CDN, Updates and the Database: Fixes 8 to 10</h2>
+<p>A content delivery network (CDN) copies your files to servers around the world so each visitor downloads from a nearby one. Wix says this cuts travel distance and latency, and DebugBear says a site without one makes distant visitors wait longer. Ask your host where the server sits before paying for a CDN: a server abroad serving customers in Karnataka is where it matters most (my reading).</p>
+<p>Keep expectations modest: on DebugBear's site the CDN only held earlier gains, and the big jump came later from images.</p>
+<p><strong>Fix 9: updates.</strong> Wix lists four costs of an outdated CMS: security holes, compatibility problems, slower performance and search impact. Test updates on a staging copy before they touch the live site.</p>
+<p><strong>Fix 10: the database.</strong> ImageEngine says obsolete data builds up and slows queries, and that there are few easy fixes. Back up first and ask your host or developer to do it. Jobs like fixes 9 and 10 repeat monthly on a maintained site, and what that costs in India is in <a href="../../blog/website-maintenance-charges/">website maintenance charges</a>.</p>
+<h2 id="hosting-and-rebuild-fixes-11-and-12">Hosting and Rebuild: Fixes 11 and 12</h2>
+<p>Hosting is the cause when the server is slow to start replying even with caching switched on. DebugBear called a 1.36-second TTFB poor on a plain two-page site and reached 415 milliseconds with caching, so a TTFB that stays high after caching points at the host. Wix names shared hosting with limited resources, outdated servers and traffic spikes that outgrow the plan.</p>
+<p>ImageEngine says a respectable host such as Bluehost or GoDaddy is enough for most local or small-business sites, while a high-traffic store needs premium hosting. Both views come from companies with something to sell, so measure before buying a bigger plan. Hosting renewals are one of the yearly charges in <a href="../../blog/website-hidden-costs/">the hidden costs of a website</a>.</p>
+<p><strong>Fix 12: replace the theme or rebuild.</strong> When fixes 1 to 11 are done and the numbers are still poor, the theme or builder is the limit. DebugBear observed that a visual builder like Divi can add JavaScript, while Wix argues for a managed platform that applies CDN, caching and lazy loading automatically. The platform trade-offs are in <a href="../../blog/wix-vs-wordpress-india/">Wix vs WordPress vs a custom website for Indian small businesses</a>.</p>
+<p>The table is a decision rule built from the sources' causes; the choices are my reading.</p>
+<div class="prose-table"><table><thead><tr><th>After fixes 1 to 10</th><th>Choose</th></tr></thead><tbody><tr><td>TTFB still high, page is light</td><td>Upgrade or move hosting (fix 11)</td></tr><tr><td>TTFB fine, page heavy, many scripts</td><td>Replace the theme or builder layer (fix 12)</td></tr><tr><td>Fine on desktop, poor on mobile</td><td>Shrink images and scripts, retest on mobile</td></tr><tr><td>Slow only during traffic spikes</td><td>A plan that scales, plus a CDN</td></tr></tbody></table></div>
+<h2 id="a-worked-example-one-site-five-changes">A Worked Example: One Site, Five Changes</h2>
+<p>One published case shows how much each fix can move, and the arithmetic is below. A DebugBear author tuned a small WordPress site (Divi theme, SiteGround hosting) with DebugBear's tool, so the scores are DebugBear's, not PageSpeed Insights numbers.</p>
+<div class="prose-table"><table><thead><tr><th>Step</th><th>Reported result</th></tr></thead><tbody><tr><td>Start</td><td>Desktop LCP 3.7 s, mobile load up to 12 s, scores 61% desktop and 33% mobile</td></tr><tr><td>Page, object and browser caching</td><td>TTFB 415 ms, desktop score 73%</td></tr><tr><td>Cloudflare CDN</td><td>Gains held, minor fluctuations</td></tr><tr><td>Preload the top image</td><td>LCP 2.7 s down to 1.2 s</td></tr><tr><td>Resize images, lazy-load the rest</td><td>Desktop 94%, mobile LCP 1.8 s, mobile 86%</td></tr></tbody></table></div>
+<p>The working, from the page's own figures:</p>
+<ul><li><strong>Mobile LCP.</strong> 12 minus 1.8 is 10.2 seconds saved, and 10.2 divided by 12 is 85%.</li><li><strong>Preload.</strong> 2.7 minus 1.2 is 1.5 seconds, and 1.5 divided by 2.7 is about 56%.</li><li><strong>Desktop score.</strong> 61 to 73 is 12 points and 73 to 94 is 21 more, 33 in all; mobile went 33 to 86, which is 53.</li><li><strong>TTFB.</strong> The page gives both 1.36 and 3.68 seconds as the start: (1.36 minus 0.415) divided by 1.36 is about 69%, and from 3.68 it is about 89%.</li></ul>
+<p>On this site, caching cut the server wait and images moved the main-content time most. The limits are real: a tiny site, written by the tool's vendor, no control group, and a TTFB baseline that differs inside the same page, so it is no forecast for yours.</p>
+<h2 id="what-usually-goes-wrong">What Usually Goes Wrong</h2>
+<p>Most failed speed fixes skip the measurement or fix the wrong layer, and these are the mistakes I can tie to the sources.</p>
+<ul><li><strong>Testing on desktop only.</strong> DebugBear's site read 3.7 seconds LCP on desktop and up to 12 on mobile, so read the mobile result first.</li><li><strong>Chasing a perfect score.</strong> DebugBear says 100 is not the goal; stop when real pages feel quick and Core Web Vitals pass.</li><li><strong>Lazy-loading the top image.</strong> It delays the main content, so preload it instead.</li><li><strong>Forgetting the cache after an edit.</strong> ImageEngine warns of visitors seeing old content, so clear it after changing a price or photo.</li><li><strong>Deactivating a plugin instead of removing it.</strong> ImageEngine says leftovers remain, so delete it and check.</li><li><strong>Treating speed as a one-off.</strong> DebugBear lists new code, plugins and traffic as causes of regression, so retest monthly.</li><li><strong>Buying hosting before measuring.</strong> If TTFB is fine and the page is heavy, a bigger plan will not help (my reading).</li></ul>
+<h2 id="what-to-do-next">What to Do Next</h2>
+<p>This week, run the five-step test, fix images and plugins yourself, and decide on hosting only if the server wait stays high after caching.</p>
+<ol><li>Test the home page and your enquiry page on mobile, and save the score, LCP and TTFB.</li><li>Resize and compress every image, starting with the top of each page.</li><li>Delete plugins and apps you do not use, then switch on caching.</li><li>Retest. If LCP is still poor, list every script and cut the ones nobody reads.</li><li>If TTFB is still poor, ask your host where the server is and what limits your plan has.</li><li>Repeat the same test every month.</li></ol>
+<p>For a second pair of hands, <a href="../../services/maintenance-care/">Elyx Solutions' maintenance and care service</a> covers the periodic speed checks above. Engagements start from ₹9,999, and every project is quoted to your requirements, in writing, after a call, so <a href="../../contact.html">request a quote</a> and send the three numbers from step 1.</p>
+<h2 id="sources">Sources</h2>
+<ul><li><a href="https://imageengine.io/why-is-my-website-slow/" rel="noopener" target="_blank">Why is my Website Slow?</a>, ImageEngine (read 20 November 2026; cites HTTP Archive for the 2021 page-weight figure)</li><li><a href="https://www.debugbear.com/blog/fix-slow-loading-websites" rel="noopener" target="_blank">How To Fix A Slow Website: 4 Web Performance Tips</a>, DebugBear (read 20 November 2026)</li><li><a href="https://www.wix.com/blog/slow-loading-websites" rel="noopener" target="_blank">11 common causes of slow loading websites</a>, Wix (read 20 November 2026)</li><li><a href="../../blog/mobile-friendly-website/">Why Your Website Must Be Built for Phones First</a>, Elyx Solutions (reports SEOmator's 2026 audit thresholds and the 4G download arithmetic)</li><li><a href="https://help.webflow.com/article/why-is-my-website-loading-or-performing-slow" rel="noopener" target="_blank">Troubleshooting performance issues</a>, Webflow Help (further reading, not used for any claim)</li><li><a href="https://www.cloudflare.com/learning/performance/speed-up-a-website/" rel="noopener" target="_blank">Tips to improve website speed</a>, Cloudflare Learning Center (further reading, not used for any claim)</li></ul>
+      </div>
+      <section class="bfaq" id="faq"><h2>Frequently asked questions</h2><div class="faq__list"><details class="faq__item">
+  <summary class="faq__q"><span>Why is my website slow to load?</span><svg class="faq__caret" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+  <div class="faq__a"><p>A website is usually slow to load because of oversized images, missing caching, too many plugins or outside scripts, or a slow host. ImageEngine, DebugBear and Wix all list these causes. Run a mobile test and use the symptom table above to see which one applies to you.</p></div>
+</details>
+<details class="faq__item">
+  <summary class="faq__q"><span>Why is my website slow on mobile?</span><svg class="faq__caret" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+  <div class="faq__a"><p>A site is slow on mobile when the page is too heavy for a phone connection or asks the phone to process too much script. DebugBear's test site showed 3.7 seconds LCP on desktop and up to 12 seconds on mobile, and Wix points to desktop-sized images and inefficient code. Shrink images and scripts first, and see the mobile article for the 4G arithmetic.</p></div>
+</details>
+<details class="faq__item">
+  <summary class="faq__q"><span>How fast should a website load?</span><svg class="faq__caret" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+  <div class="faq__a"><p>ImageEngine says to aim for under 3 seconds and claims 53% of visitors leave after that, but I could not trace the figure to a study. A firmer yardstick is a mobile LCP under 2.5 seconds, the pass line in the SEOmator audit reported in the mobile article.</p></div>
+</details>
+<details class="faq__item">
+  <summary class="faq__q"><span>Does website speed affect SEO?</span><svg class="faq__caret" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+  <div class="faq__a"><p>Speed is said to affect search results, but my evidence is vendor statements only. DebugBear says Google prioritises speed as a ranking factor and Wix says search engines penalise slow sites, and I found no Google page to confirm the weight. Slow pages also lose visitors directly, whatever the ranking effect.</p></div>
+</details>
+<details class="faq__item">
+  <summary class="faq__q"><span>Can I fix a slow website myself?</span><svg class="faq__caret" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+  <div class="faq__a"><p>You can fix images, plugins and caching yourself if you have admin access and a backup. Hosting changes, render-blocking code and database cleaning are developer or host-support jobs.</p></div>
+</details>
+<details class="faq__item">
+  <summary class="faq__q"><span>Why is my WordPress website slow?</span><svg class="faq__caret" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+  <div class="faq__a"><p>A WordPress site is slow mainly because pages are built on request by PHP and a database, plugins add code, and caching is often off. DebugBear's WordPress test site had no page cache detected and a slow server response. Switch on caching first, then audit plugins and the theme.</p></div>
+</details>
+<details class="faq__item">
+  <summary class="faq__q"><span>Why did my website get slower when I changed nothing?</span><svg class="faq__caret" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+  <div class="faq__a"><p>A site slows without an edit from you because the things around it change: updates, large uploads, more traffic, a growing database or an ageing host. Wix and ImageEngine list outdated software, traffic spikes and database build-up as causes. Retest, then compare against your saved baseline.</p></div>
+</details>
+<details class="faq__item">
+  <summary class="faq__q"><span>Why is my website slow even though I have fast internet?</span><svg class="faq__caret" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+  <div class="faq__a"><p>Your own connection is only one part, because the page must also come from a server and be assembled by the browser. A slow server response, heavy images and many scripts cost time on any line, so open a few other sites on it to separate the two.</p></div>
+</details></div></section>
+      <div class="bfoot"><span>Maintenance, Security &amp; Speed</span></div>
+    </article>
+    <aside class="baside" aria-label="From Elyx"><div class="bcta">
+  <span class="bcta__k">Elyx Solutions</span>
+  <h3>Tired of wondering whether your site is still working?</h3>
+  <a class="btn btn--blue" href="https://wa.me/919611729733?text=Hi%20Elyx%2C%20I'd%20like%20to%20talk%20about%20a%20project.%20(from%20the%20article%20%22Why%20Is%20My%20Website%20Slow%3F%2012%20Fixes%2C%20From%20Quick%20to%20Serious%22)" target="_blank" rel="noopener" data-track="whatsapp_click" data-article="why-is-my-website-slow" data-card-pos="side">WhatsApp us <svg class="arr" width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H4M10 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+  <a class="btn btn--ghost" href="../../services/maintenance-care/" data-track="card_click" data-article="why-is-my-website-slow" data-card-pos="side" data-btn="soft">See care plans</a>
+</div></aside>
+  </div>
+</div></main>
+<section class="cta" data-screen-label="Contact CTA">
+  <div class="cta__in reveal">
+    <div class="deco deco-dark" data-parallax="0.08" style="z-index:-1" aria-hidden="true"><span class="orb orb-a"></span></div>
+    <div class="ph-grid cta__bg"></div>
+    <div class="cta__glow"></div>
+    <span class="eyebrow is-light" style="justify-content:center;">Let's build</span>
+    <h2 class="cta__t" style="color:#fff;margin-top:20px;">Have something worth <span class="em">building?</span></h2>
+    <p class="cta__sub">Tell us where you're headed. We'll bring the team, the plan and the craft to get you there.</p>
+    <div class="cta__row">
+      <a class="btn btn--blue" href="../../contact.html" data-track="cta_click" data-pos="cta-section">Start a project <svg class="arr" width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H4M10 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+      <a class="btn btn--light" href="../../contact.html#book" data-track="cta_click" data-pos="cta-section">Book a call</a>
+    </div>
+  </div>
+</section>
+<footer class="footer">
+  <div class="footer__in">
+    <div class="footer__top">
+      <div>
+        <a class="brand" href="../../" aria-label="Elyx Solutions home">
+          <svg class="brand__mark" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+            <g transform="skewX(-10)">
+              <rect x="7" y="4" width="15" height="4.4" rx="1.2" fill="#1f4fd8"></rect>
+              <rect x="7" y="11.8" width="11" height="4.4" rx="1.2" fill="#0b1024"></rect>
+              <rect x="7" y="19.6" width="15" height="4.4" rx="1.2" fill="#1f4fd8"></rect>
+            </g>
+          </svg>
+          <span class="brand__name">Elyx</span>
+        </a>
+        <p class="footer__lede">Beyond just presence, we build digital <span class="serif-i" style="color:var(--blue)">value.</span></p>
+      </div>
+      <div class="fcol">
+        <h4>Services</h4>
+        <a href="../../services/web-development/">Web Development</a>
+        <a href="../../services/ecommerce-development/">E-commerce Development</a>
+        <a href="../../services/saas-development/">SaaS Development</a>
+        <a href="../../services/app-development/">App Development</a>
+        <a href="../../services/ai-chatbots/">AI Chatbots</a>
+        <a href="../../services/ai-call-assistants/">AI Call &amp; Voice Assistants</a>
+        <a href="../../services/whatsapp-automation/">WhatsApp &amp; Business Automation</a>
+        <a href="../../services/crm-lead-management/">CRM &amp; Lead Management</a>
+        <a href="../../services/booking-systems/">Booking &amp; Appointment Systems</a>
+        <a href="../../services/payments-billing/">Payments &amp; Subscription Billing</a>
+        <a href="../../services/admin-dashboards/">Admin Dashboards &amp; Internal Tools</a>
+        <a href="../../services/seo-optimization/">SEO Optimization</a>
+        <a href="../../services/maintenance-care/">Maintenance &amp; Care</a>
+      </div>
+      <div class="fcol">
+        <h4>Websites for</h4>
+        <a href="../../websites-for/dentists/">Dentists &amp; Clinics</a>
+        <a href="../../websites-for/coaching-centres/">Coaching Centres</a>
+        <a href="../../websites-for/restaurants-and-cafes/">Restaurants &amp; Cafés</a>
+        <a href="../../websites-for/salons-and-spas/">Salons &amp; Spas</a>
+        <a href="../../websites-for/real-estate/">Real Estate</a>
+        <a href="../../websites-for/ca-and-law-firms/">CA &amp; Law Firms</a>
+      </div>
+      <div class="fcol">
+        <h4>Company</h4>
+        <a href="../../about.html">About</a>
+        <a href="../../work.html">Work</a>
+        <a href="../../pricing/">Pricing</a>
+        <a href="../../tools/">Free tools</a>
+        <a href="../../blog/">Blog</a>
+        <a href="../../web-development-bengaluru/">Bengaluru</a>
+        <a href="../../contact.html">Contact</a>
+      </div>
+      <div class="fcol">
+        <h4>Connect</h4>
+        <a href="mailto:support.elyxsolutions@gmail.com">support.elyxsolutions@gmail.com</a>
+        <a href="tel:+919611729733" data-track="call_click" data-pos="footer">+91 96117 29733</a>
+        <a href="tel:+917204723340" data-track="call_click" data-pos="footer">+91 72047 23340</a>
+        <a href="https://wa.me/919611729733?text=Hi%20Elyx%2C%20I'd%20like%20to%20talk%20about%20a%20project." target="_blank" rel="noopener" data-track="whatsapp_click" data-pos="footer">WhatsApp</a>
+        <a href="https://www.linkedin.com/company/elyxsolutions04/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://www.instagram.com/elyxsolutions" target="_blank" rel="noopener">Instagram</a>
+        <span class="footer__addr">Bengaluru, Karnataka</span>
+      </div>
+    </div>
+    <div class="footer__bot">
+      <span>© 2026 Elyx Solutions. All rights reserved.</span>
+      <span>Designed &amp; built in-house · Bengaluru, India.</span>
+    </div>
+  </div>
+</footer>
+<a class="wa-float" href="https://wa.me/919611729733?text=Hi%20Elyx%2C%20I'd%20like%20to%20talk%20about%20a%20project." target="_blank" rel="noopener" aria-label="Chat with Elyx on WhatsApp" data-track="whatsapp_click" data-pos="floating">
+  <svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16.04 3C9.4 3 4 8.4 4 15.03c0 2.12.55 4.19 1.6 6.01L4 29l8.12-1.57a12.03 12.03 0 0 0 3.92.65C22.68 28.08 28.08 22.67 28.08 16 28.08 9.36 22.7 3 16.04 3Zm0 22.06c-1.22 0-2.4-.33-3.44-.95l-.25-.15-4.82.93.97-4.7-.17-.27a9.9 9.9 0 0 1-1.52-5.27c0-5.5 4.48-9.98 10-9.98 5.5 0 9.98 4.48 9.98 9.98s-4.48 10.41-9.98 10.41l-.77-.02Zm5.47-7.46c-.3-.15-1.77-.87-2.04-.97-.28-.1-.48-.15-.68.15-.2.3-.78.97-.95 1.17-.18.2-.35.22-.65.07-.3-.15-1.27-.47-2.42-1.5-.9-.8-1.5-1.78-1.67-2.08-.18-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.68-1.64-.93-2.25-.25-.58-.5-.5-.68-.5h-.58c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.5s1.07 2.9 1.22 3.1c.15.2 2.1 3.2 5.08 4.48.7.3 1.26.48 1.7.62.72.23 1.37.2 1.88.12.58-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35Z"/></svg>
+</a>
+<script>window.ELYX={"email":"support.elyxsolutions@gmail.com","whatsapp":"https://wa.me/919611729733?text=Hi%20Elyx%2C%20I'd%20like%20to%20talk%20about%20a%20project.","phone":"+91 96117 29733","booking":""};</script>
+<script src="../../js/site.js"></script>
+<script src="../../js/analytics.js"></script>
+</body>
+</html>
