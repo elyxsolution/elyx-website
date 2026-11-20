@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>WordPress Security Checklist for Small Businesses</title>
+<meta name="description" content="A WordPress security checklist for small businesses covering plugins, updates, logins, firewalls and backups, ranked by what the handbook recommends." />
+<link rel="canonical" href="https://elyxsolutions.in/blog/wordpress-security-checklist/" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#080b1a" />
+<!-- Open Graph -->
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Elyx Solutions" />
+<meta property="og:title" content="WordPress Security Checklist for Small Businesses" />
+<meta property="og:description" content="A WordPress security checklist for small businesses covering plugins, updates, logins, firewalls and backups, ranked by what the handbook recommends." />
+<meta property="og:url" content="https://elyxsolutions.in/blog/wordpress-security-checklist/" />
+<meta property="og:image" content="https://elyxsolutions.in/og/blog-wordpress-security-checklist.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:locale" content="en_IN" />
+<meta property="article:published_time" content="2026-11-20" />
+<meta property="article:modified_time" content="2026-11-20" />
+<meta property="article:section" content="Maintenance, Security &amp; Speed" />
+<meta property="article:author" content="https://elyxsolutions.in/blog/author/shreyasmv/" />
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="WordPress Security Checklist for Small Businesses" />
+<meta name="twitter:description" content="A WordPress security checklist for small businesses covering plugins, updates, logins, firewalls and backups, ranked by what the handbook recommends." />
+<meta name="twitter:image" content="https://elyxsolutions.in/og/blog-wordpress-security-checklist.png" />
+<!-- Icons -->
+<link rel="icon" href="../../favicon.svg" type="image/svg+xml" />
+<link rel="icon" href="../../icon-192.png" sizes="192x192" type="image/png" />
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500;1,6..72,600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../../css/styles.css" />
+<link rel="stylesheet" href="../../css/pages.css" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://elyxsolutions.in/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://elyxsolutions.in/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "WordPress Security Checklist for Small Businesses",
+          "item": "https://elyxsolutions.in/blog/wordpress-security-checklist/"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://elyxsolutions.in/blog/wordpress-security-checklist/#article",
+      "headline": "WordPress Security Checklist for Small Businesses",
+      "description": "A WordPress security checklist for small businesses covering plugins, updates, logins, firewalls and backups, ranked by what the handbook recommends.",
+      "image": [
+        "https://elyxsolutions.in/og/blog-wordpress-security-checklist.png"
+      ],
+      "datePublished": "2026-11-20",
+      "dateModified": "2026-11-20",
+      "author": {
+        "@type": "Person",
+        "@id": "https://elyxsolutions.in/blog/author/shreyasmv/#person",
+        "name": "Shreyas M V",
+        "url": "https://elyxsolutions.in/blog/author/shreyasmv/",
+        "sameAs": [
+          "https://www.linkedin.com/in/shreyas-m-v-311b99205/"
+        ]
+      },
+      "publisher": {
+        "@id": "https://elyxsolutions.in/#organization"
+      },
+      "mainEntityOfPage": "https://elyxsolutions.in/blog/wordpress-security-checklist/",
+      "articleSection": "Maintenance, Security & Speed",
+      "inLanguage": "en-IN"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What are the best WordPress security tips?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The best WordPress security tips are to update everything promptly, delete unused plugins, use unique passwords with two-factor authentication, put a firewall in front of the site and keep tested backups. The WordPress handbook calls updating the most important step. The checklist above ranks the rest."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is WordPress security?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "WordPress security is the set of habits and settings that keep a WordPress site from being broken into, and that let you recover if it is. The handbook describes it as reducing risk and planning for recovery, covering your hosting and your own working practices as well as WordPress."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does WordPress offer built-in security?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "WordPress has some built-in protection, such as a password strength meter and user roles, but not everything a business needs. As of 2025 the handbook says core does not include two-factor authentication."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How often should I revisit the WordPress security checklist?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Check for updates and confirm a backup at least weekly, per Wordfence's checklist, and review users and test a restore monthly. The monthly and quarterly steps are my suggestion. The handbook describes security as continuous work, not a one-off task."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need a WordPress security plugin?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A security plugin is useful when your host offers no firewall, but it is not the whole job. WPScan, Wordfence, Liquid Web and NitroPack all recommend one, and all sell security or hosting. The handbook prefers edge or server protection."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is a WordPress security audit?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A WordPress security audit is a systematic examination of your site, theme and plugins to find weak points an attacker could use. SentinelOne says a good one combines a scanning tool with manual review and log files. The routine above is a small-business version."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is WordPress itself insecure?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "WordPress core is not where most reported flaws sit, so the platform is rarely the weakest link. SentinelOne puts 4% of issues in core and 90% in plugins, while NitroPack says 56% involve plugins. Different sources, different figures, same direction: plugins dominate."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I check whether my WordPress site is secure?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Start with the routine above, then run an online scanner. NitroPack names Qualys, SiteLock and VirusTotal for checking malware and known issues. A scan finds known problems only, so it does not replace a restore test."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body data-article="wordpress-security-checklist">
+<div class="grain"></div>
+<div class="nav-shell scrolled" id="navShell">
+  <a class="brand nav__brand" href="../../" aria-label="Elyx Solutions home">
+    <svg class="brand__mark" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+      <g transform="skewX(-10)">
+        <rect x="7" y="4" width="15" height="4.4" rx="1.2" fill="#1f4fd8"></rect>
+        <rect x="7" y="11.8" width="11" height="4.4" rx="1.2" fill="#0b1024"></rect>
+        <rect x="7" y="19.6" width="15" height="4.4" rx="1.2" fill="#1f4fd8"></rect>
+      </g>
+    </svg>
+    <span class="brand__name">Elyx</span>
+  </a>
+
+  <nav class="nav" id="nav" aria-label="Main">
+    <div class="nav__links" id="navLinks">
+      <div class="nav__item" data-menu="services"><button type="button">Services <svg class="caret" viewBox="0 0 10 10" fill="none"><path d="M1 3l4 4 4-4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button></div>
+      <div class="nav__item" data-menu="industries"><button type="button">Industries <svg class="caret" viewBox="0 0 10 10" fill="none"><path d="M1 3l4 4 4-4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button></div>
+      <div class="nav__item" data-menu="work"><button type="button">Work <svg class="caret" viewBox="0 0 10 10" fill="none"><path d="M1 3l4 4 4-4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button></div>
+      <div class="nav__item"><a href="../../blog/">Blog</a></div>
+      <div class="nav__item"><a href="../../about.html">About</a></div>
+      <div class="nav__item"><a href="../../contact.html">Contact</a></div>
+    </div>
+  </nav>
+
+  <div class="nav__right">
+    <a class="btn btn--primary nav__cta" href="../../contact.html" data-track="cta_click" data-pos="nav">Let's talk <svg class="arr" width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H4M10 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+    <button class="nav__burger" id="burger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <div class="mobile-menu__group">
+      <span class="mobile-menu__label">Services</span>
+      <a href="../../services/web-development/">Web Development</a>
+      <a href="../../services/ecommerce-development/">E-commerce Development</a>
+      <a href="../../services/saas-development/">SaaS Development</a>
+      <a href="../../services/app-development/">App Development</a>
+      <a href="../../services/ai-chatbots/">AI Chatbots</a>
+      <a href="../../services/ai-call-assistants/">AI Call &amp; Voice Assistants</a>
+      <a href="../../services/whatsapp-automation/">WhatsApp &amp; Business Automation</a>
+      <a href="../../services/crm-lead-management/">CRM &amp; Lead Management</a>
+      <a href="../../services/booking-systems/">Booking &amp; Appointment Systems</a>
+      <a href="../../services/payments-billing/">Payments &amp; Subscription Billing</a>
+      <a href="../../services/admin-dashboards/">Admin Dashboards &amp; Internal Tools</a>
+      <a href="../../services/seo-optimization/">SEO Optimization</a>
+      <a href="../../services/maintenance-care/">Maintenance &amp; Care</a>
+    </div>
+    <div class="mobile-menu__group">
+      <span class="mobile-menu__label">Websites for</span>
+      <a href="../../websites-for/dentists/">Dentists &amp; Clinics</a>
+      <a href="../../websites-for/coaching-centres/">Coaching Centres</a>
+      <a href="../../websites-for/restaurants-and-cafes/">Restaurants &amp; Cafés</a>
+      <a href="../../websites-for/salons-and-spas/">Salons &amp; Spas</a>
+      <a href="../../websites-for/real-estate/">Real Estate</a>
+      <a href="../../websites-for/ca-and-law-firms/">CA &amp; Law Firms</a>
+    </div>
+    <div class="mobile-menu__group">
+      <span class="mobile-menu__label">Company</span>
+      <a href="../../about.html">About</a>
+      <a href="../../work.html">Work</a>
+      <a href="../../pricing/">Pricing</a>
+      <a href="../../blog/">Blog</a>
+      <a href="../../tools/">Free tools</a>
+      <a href="../../contact.html">Contact</a>
+    </div>
+    <a class="btn btn--blue mobile-menu__cta" href="../../contact.html">Let's talk <svg class="arr" width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H4M10 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+  </div>
+
+  <!-- Mega panel -->
+  <div class="mega" id="mega">
+    <div class="mega__inner">
+      <div class="mega__panel" data-panel="services">
+        <div class="mega-grid">
+          <div class="mega-tiles"><a class="mtile" href="../../services/web-development/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M9 8l-4 4 4 4M15 8l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">Web Development</span></span></a><a class="mtile" href="../../services/ecommerce-development/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M3 4h2l2.4 10.2a1 1 0 001 .8h8.2a1 1 0 001-.76L19 8H6.2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path><circle cx="9.5" cy="19" r="1.3" fill="currentColor"></circle><circle cx="16.5" cy="19" r="1.3" fill="currentColor"></circle></svg></span><span><span class="mtile__t">E-commerce Development</span></span></a><a class="mtile" href="../../services/saas-development/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M6 16a4 4 0 010-8 5 5 0 019.6-1.5A3.5 3.5 0 0118 16H6z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">SaaS Development</span></span></a><a class="mtile" href="../../services/app-development/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><rect x="7" y="3" width="10" height="18" rx="2.5" stroke="currentColor" stroke-width="1.6"></rect><path d="M11 18h2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg></span><span><span class="mtile__t">App Development</span></span></a><a class="mtile" href="../../services/ai-chatbots/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M5 6.5A2.5 2.5 0 017.5 4h9A2.5 2.5 0 0119 6.5v6a2.5 2.5 0 01-2.5 2.5H11l-4 3.5V15h-.5A2.5 2.5 0 014 12.5v-6z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"></path><path d="M9 9.7h.01M12 9.7h.01M15 9.7h.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path></svg></span><span><span class="mtile__t">AI Chatbots</span></span></a><a class="mtile" href="../../services/ai-call-assistants/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M6.6 4h2.2l1.2 3.4-1.6 1.2a10 10 0 004.2 4.2l1.2-1.6 3.4 1.2v2.2A2 2 0 0115.2 16 11.2 11.2 0 014 4.8 2 2 0 016.6 4z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"></path><path d="M15 4.5a5.5 5.5 0 014.5 4.5M15 8a2.5 2.5 0 012 2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg></span><span><span class="mtile__t">AI Call &amp; Voice Assistants</span></span></a><a class="mtile" href="../../services/whatsapp-automation/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M13 3L5 13.2h6L10 21l8-10.2h-6L13 3z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">WhatsApp &amp; Business Automation</span></span></a><a class="mtile" href="../../services/crm-lead-management/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><circle cx="9" cy="8.5" r="3" stroke="currentColor" stroke-width="1.6"></circle><path d="M3.5 19a5.5 5.5 0 0111 0" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path><path d="M16 5.8a3 3 0 010 5.4M17.5 14.4A5.5 5.5 0 0120.5 19" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg></span><span><span class="mtile__t">CRM &amp; Lead Management</span></span></a><a class="mtile" href="../../services/booking-systems/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><rect x="4" y="5.5" width="16" height="14" rx="2.5" stroke="currentColor" stroke-width="1.6"></rect><path d="M4 10h16M8.5 3.5v4M15.5 3.5v4M9 14.5l2 2 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">Booking &amp; Appointment Systems</span></span></a><a class="mtile" href="../../services/payments-billing/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><rect x="3.5" y="6" width="17" height="12" rx="2.5" stroke="currentColor" stroke-width="1.6"></rect><path d="M3.5 10.5h17M7 15h3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg></span><span><span class="mtile__t">Payments &amp; Subscription Billing</span></span></a><a class="mtile" href="../../services/admin-dashboards/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="7" height="7" rx="1.6" stroke="currentColor" stroke-width="1.6"></rect><rect x="13" y="4" width="7" height="4.5" rx="1.6" stroke="currentColor" stroke-width="1.6"></rect><rect x="13" y="11" width="7" height="9" rx="1.6" stroke="currentColor" stroke-width="1.6"></rect><rect x="4" y="14" width="7" height="6" rx="1.6" stroke="currentColor" stroke-width="1.6"></rect></svg></span><span><span class="mtile__t">Admin Dashboards &amp; Internal Tools</span></span></a><a class="mtile" href="../../services/seo-optimization/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><circle cx="10.5" cy="10.5" r="6" stroke="currentColor" stroke-width="1.6"></circle><path d="M15 15l5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg></span><span><span class="mtile__t">SEO Optimization</span></span></a><a class="mtile" href="../../services/maintenance-care/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M12 8v4l3 2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path><circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="1.6"></circle></svg></span><span><span class="mtile__t">Maintenance &amp; Care</span></span></a><a class="mtile" href="../../pricing/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M4 14l5-5 4 4 7-7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path><path d="M20 6v4h-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">Pricing</span></span></a></div>
+          <a class="mega-feature" href="../../pricing/">
+            <div class="ph-grid"></div>
+            <div class="mega-feature__k">Featured</div>
+            <div class="mega-feature__t">Starting from ₹9,999. Quotes tailored to you.</div>
+            <div class="mega-feature__l">See pricing <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H4M10 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+          </a>
+        </div>
+      </div>
+
+      <div class="mega__panel" data-panel="industries">
+        <div class="mega-grid">
+          <div class="mega-tiles"><a class="mtile" href="../../websites-for/dentists/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M12 5c-2-1.5-6-1.5-6 2.5 0 3 1.5 4 1.5 7 0 2 .8 4.5 2 4.5s1.5-2 2.5-2 1.3 2 2.5 2 2-2.5 2-4.5c0-3 1.5-4 1.5-7C18 3.5 14 3.5 12 5z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">Dentists &amp; Clinics</span></span></a><a class="mtile" href="../../websites-for/coaching-centres/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M3 9l9-4 9 4-9 4-9-4z M7 11v4c0 1.5 2.2 3 5 3s5-1.5 5-3v-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">Coaching Centres</span></span></a><a class="mtile" href="../../websites-for/restaurants-and-cafes/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M7 3v8M5 3v5a2 2 0 004 0V3M7 11v10M17 3c-2 1.5-3 4-3 7h3v11" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">Restaurants &amp; Cafés</span></span></a><a class="mtile" href="../../websites-for/salons-and-spas/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><circle cx="6" cy="7" r="2.5" stroke="currentColor" stroke-width="1.6"></circle><circle cx="6" cy="17" r="2.5" stroke="currentColor" stroke-width="1.6"></circle><path d="M8 8.5L20 18M8 15.5L20 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg></span><span><span class="mtile__t">Salons &amp; Spas</span></span></a><a class="mtile" href="../../websites-for/real-estate/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M4 21V8l8-5 8 5v13M9 21v-6h6v6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">Real Estate</span></span></a><a class="mtile" href="../../websites-for/ca-and-law-firms/"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M12 4v16M6 20h12M5 8h14M5 8l-2.5 6a3 3 0 005 0L5 8zM19 8l-2.5 6a3 3 0 005 0L19 8z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span><span class="mtile__t">CA &amp; Law Firms</span></span></a></div>
+          <a class="mega-feature" href="../../websites-for/">
+            <div class="ph-grid"></div>
+            <div class="mega-feature__k">Built for your trade</div>
+            <div class="mega-feature__t">What a site for your kind of business actually needs.</div>
+            <div class="mega-feature__l">All industries <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H4M10 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+          </a>
+        </div>
+      </div>
+
+      <div class="mega__panel" data-panel="work">
+        <div class="mega-grid mega-grid--work">
+          <div class="mega-wlinks">
+            <a class="mtile" href="../../work.html#tools"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.6"></circle><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5.1 5.1l2.1 2.1M16.8 16.8l2.1 2.1M18.9 5.1L16.8 7.2M7.2 16.8l-2.1 2.1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg></span><span><span class="mtile__t">Tools we use</span></span></a>
+            <a class="mtile" href="../../work.html#faq"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"></circle><path d="M9.6 9.2a2.5 2.5 0 014.7 1.1c0 1.6-2.3 2-2.3 3.6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path><circle cx="12" cy="16.6" r="0.7" fill="currentColor"></circle></svg></span><span><span class="mtile__t">FAQ about Elyx</span></span></a>
+            <a class="mtile" href="../../work.html"><span class="mtile__ic"><svg viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="6.5" height="6.5" rx="1.6" stroke="currentColor" stroke-width="1.6"></rect><rect x="13.5" y="4" width="6.5" height="6.5" rx="1.6" stroke="currentColor" stroke-width="1.6"></rect><rect x="4" y="13.5" width="6.5" height="6.5" rx="1.6" stroke="currentColor" stroke-width="1.6"></rect><rect x="13.5" y="13.5" width="6.5" height="6.5" rx="1.6" stroke="currentColor" stroke-width="1.6"></rect></svg></span><span><span class="mtile__t">All projects</span></span></a>
+          </div>
+          <div class="mega-work"><a class="wcard" href="../../work/ashirwad-dental/"><div class="wcard__img"><img src="../../uploads/projects/ashirwad-dental.jpg" alt="Ashirwad Dental Clinic website" width="1000" height="750" loading="lazy" decoding="async" /></div><div class="wcard__meta"><div class="wcard__t">Ashirwad Dental Clinic</div><div class="wcard__c">Web · Redesign</div></div></a><a class="wcard" href="../../work/malnad-stories/"><div class="wcard__img"><img src="../../uploads/projects/malnad-stories.jpg" alt="Malnad Stories website" width="1000" height="750" loading="lazy" decoding="async" /></div><div class="wcard__meta"><div class="wcard__t">Malnad Stories</div><div class="wcard__c">E-commerce · Web App</div></div></a><a class="wcard" href="https://powertekservices.in/" target="_blank" rel="noopener"><div class="wcard__img"><img src="../../uploads/projects/powertek.jpg" alt="Powertek website" width="1000" height="750" loading="lazy" decoding="async" /></div><div class="wcard__meta"><div class="wcard__t">Powertek</div><div class="wcard__c">Web · Electrical</div></div></a><a class="wcard" href="https://hindustanfoundationandconstructions.com/" target="_blank" rel="noopener"><div class="wcard__img"><img src="../../uploads/projects/hindustan-foundation.jpg" alt="Hindustan Foundation &amp; Constructions website" width="1000" height="750" loading="lazy" decoding="async" /></div><div class="wcard__meta"><div class="wcard__t">Hindustan Foundation &amp; Constructions</div><div class="wcard__c">Web · Construction</div></div></a><a class="wcard" href="https://aralikattecafe.in/" target="_blank" rel="noopener"><div class="wcard__img"><img src="../../uploads/projects/aralikatte-cafe.jpg" alt="Aralikatte Cafe website" width="1000" height="750" loading="lazy" decoding="async" /></div><div class="wcard__meta"><div class="wcard__t">Aralikatte Cafe</div><div class="wcard__c">Web · Restaurant</div></div></a><a class="wcard" href="https://bangaloremusictrust.com/" target="_blank" rel="noopener"><div class="wcard__img"><img src="../../uploads/projects/bangalore-music-trust.jpg" alt="Bangalore Music Trust website" width="1000" height="750" loading="lazy" decoding="async" /></div><div class="wcard__meta"><div class="wcard__t">Bangalore Music Trust</div><div class="wcard__c">Web · Non-profit</div></div></a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<span id="top"></span>
+<main class="bl"><div class="bl__in">
+  <div class="bl__crumbs">
+    <a class="bl__back" href="../../blog/">← Back to Blog</a>
+    <nav aria-label="Breadcrumb"><ol><li><a href="../../">Home</a></li><li aria-hidden="true">/</li><li><a href="../../blog/">Blog</a></li><li aria-hidden="true">/</li><li aria-current="page">WordPress Security Checklist for Small Businesses</li></ol></nav>
+  </div>
+  <div class="bl__cols">
+    <article class="barticle" data-article="wordpress-security-checklist">
+      <header>
+        <p class="bbyline">By <a class="bauthor" href="../../blog/author/shreyasmv/"><img class="bauthor__ph" src="../../uploads/authors/shreyasmv.jpg" alt="" width="24" height="24" loading="lazy" /><span>Shreyas M V</span></a><span aria-hidden="true">·</span><span>Published <time datetime="2026-11-20">20 November 2026</time></span><span aria-hidden="true">·</span><span>14 min read</span></p>
+        <h1>WordPress Security Checklist for Small Businesses</h1>
+        <p class="blead">A WordPress security checklist for small businesses covering plugins, updates, logins, firewalls and backups, ranked by what the handbook recommends.</p>
+      </header>
+      <nav class="btoc" aria-label="Table of contents"><b>On this page</b><ol><li><a href="#why-a-wordpress-security-checklist-matters-for-a-small-business"><span>01</span>Why a WordPress Security Checklist Matters for a Small Business</a></li><li><a href="#wordpress-security-checklist-what-to-do-first-next-and-later"><span>02</span>WordPress Security Checklist: What to Do First, Next and Later</a></li><li><a href="#plugins-how-to-vet-update-and-remove-them"><span>03</span>Plugins: How to Vet, Update and Remove Them</a></li><li><a href="#updates-core-themes-php-and-a-staging-copy"><span>04</span>Updates: Core, Themes, PHP and a Staging Copy</a></li><li><a href="#logins-passwords-two-factor-authentication-and-attempt-limits"><span>05</span>Logins: Passwords, Two-Factor Authentication and Attempt Limits</a></li><li><a href="#firewalls-host-edge-or-plugin"><span>06</span>Firewalls: Host, Edge or Plugin</a></li><li><a href="#backups-files-database-location-and-a-restore-test"><span>07</span>Backups: Files, Database, Location and a Restore Test</a></li><li><a href="#hardening-settings-what-is-worth-doing-and-what-the-sources-dispute"><span>08</span>Hardening Settings: What Is Worth Doing and What the Sources Dispute</a></li><li><a href="#spotting-a-hack-early-signs-and-first-steps"><span>09</span>Spotting a Hack Early: Signs and First Steps</a></li><li><a href="#what-usually-goes-wrong-with-wordpress-security"><span>10</span>What Usually Goes Wrong With WordPress Security</a></li><li><a href="#what-to-do-next-a-weekly-monthly-and-quarterly-routine"><span>11</span>What to Do Next: A Weekly, Monthly and Quarterly Routine</a></li><li><a href="#sources"><span>12</span>Sources</a></li><li><a href="#faq"><span>13</span>Frequently asked questions</a></li></ol></nav>
+      <div class="prose">
+<p>A WordPress security checklist for a small business comes down to five jobs: keep core, plugins and themes updated, prune and vet plugins, protect the login, put a firewall in front of the site, and keep backups you have actually restored. WordPress's own handbook names updating as the most important step, and the other four limit the damage when an update comes late. The honest qualification is that every attack figure below comes from vendors who sell security or hosting, so I treat them as indications, not measurements.</p>
+<ul><li><strong>Priority.</strong> Updates, plugin pruning, logins, a firewall and tested backups come first, because the WordPress handbook and five competing checklists keep returning to them.</li><li><strong>Plugins.</strong> Plugins hold most reported flaws (90% per SentinelOne, 56% per NitroPack), so deleting unused ones is the cheapest fix.</li><li><strong>Disputed extras.</strong> Hiding the login URL, renaming the database prefix and country blocking are contested, so do them after the five.</li><li><strong>Routine.</strong> A weekly, monthly and quarterly list at the end turns the checklist into a habit.</li></ul>
+<h2 id="why-a-wordpress-security-checklist-matters-for-a-small-business">Why a WordPress Security Checklist Matters for a Small Business</h2>
+<p>A checklist matters because WordPress is used so widely that attackers scan for its known flaws automatically, whatever the size of the site. Liquid Web, citing W3Techs, says about 43% of websites run WordPress, while NitroPack gives a 64.2% market share. The shares differ, probably because they use different bases, though neither page says which (my reading).</p>
+<p>Liquid Web estimates at least 13,000 WordPress sites are hacked every day, and NitroPack reports that Sucuri's 2022 annual report put 96.2% of attacks on WordPress. Both are vendor figures with no method shown in the text I read. WPScan, a WordPress security scanner, says its database holds over 39,000 WordPress vulnerabilities.</p>
+<p>Most of those flaws are not in WordPress itself. SentinelOne says 90% of WordPress security issues sit in plugins, 6% in themes and 4% in core, while NitroPack says 56% of vulnerabilities involve plugins. SentinelOne adds that cross-site scripting, where an attacker injects a malicious script into a page other visitors load, makes up 50% of plugin vulnerabilities.</p>
+<p>For a clinic or a shop the cost is practical, not technical. SentinelOne says Google can flag a compromised site as malicious and demote it. <a href="../../services/maintenance-care/">Elyx's Maintenance &amp; Care page</a> describes the usual pattern: a plug-in goes out of date or a form stops delivering, and nobody notices until a customer says so.</p>
+<h2 id="wordpress-security-checklist-what-to-do-first-next-and-later">WordPress Security Checklist: What to Do First, Next and Later</h2>
+<p>Do the first tier before anything else, because those checks are named in the WordPress handbook or listed by at least four of the five guides I read. I ranked each item on those two tests, so the tiers are my reading, not a published standard. The guides are from WPScan, Wordfence, SentinelOne, Liquid Web and NitroPack, as read on 20 November 2026.</p>
+<div class="prose-table"><table><thead><tr><th>Tier</th><th>Checks</th><th>Why it sits here</th></tr></thead><tbody><tr><td>First</td><td>Updates, plugin pruning, 2FA, login limits, firewall, backups</td><td>Handbook names them or four guides list them</td></tr><tr><td>Next</td><td>Least-privilege users, HTTPS, SFTP, activity log, file editing off, PHP version</td><td>Cheap and sensible, but fewer sources agree</td></tr><tr><td>Later or disputed</td><td>Login URL, database prefix, version hiding, country blocking</td><td>Sources differ on value</td></tr></tbody></table></div>
+<h2 id="plugins-how-to-vet-update-and-remove-them">Plugins: How to Vet, Update and Remove Them</h2>
+<p>Treat every plugin as code you let run on your business, and keep only those that are maintained, needed and checked. NitroPack's vetting list, shortened, is a fair test before you install or keep one:</p>
+<ul><li><strong>Reputation.</strong> A large install count and good reviews.</li><li><strong>Update recency.</strong> A last update no more than a few months old.</li><li><strong>Support.</strong> The developer answers questions in the plugin's support forum.</li><li><strong>Compatibility.</strong> It works with your WordPress version.</li><li><strong>Permissions.</strong> Be wary of plugins that ask for more than the job needs.</li><li><strong>Known flaws.</strong> Search WPScan for advisories, and try new plugins on a staging copy first.</li></ul>
+<p>WPScan says plugins from reputable sources such as the WordPress.org repository rarely cause trouble. SentinelOne warns that &quot;nulled&quot; plugins, which are pirated copies of paid ones, can contain malicious code. NitroPack's example of a popular plugin going wrong is a LiteSpeed Cache flaw that affected over 4 million sites and let users with contributor access inject scripts.</p>
+<p>The cheapest fix in the whole checklist is deletion. Wordfence and Liquid Web both say to remove unused plugins and themes, not just switch them off.</p>
+<p>Here is a worked example on a made-up clinic site, an illustration and not a client. It has 22 plugins installed and 6 are inactive, so deleting them leaves 22 - 6 = 16. Three of those 16 have not been updated by their developers in over a year, so replace or drop them, leaving 16 - 3 = 13 to keep patched. That is 9 fewer than before, or about 41% (9 / 22 = 0.41).</p>
+<h2 id="updates-core-themes-php-and-a-staging-copy">Updates: Core, Themes, PHP and a Staging Copy</h2>
+<p>Install updates for WordPress core, plugins and themes promptly, because the WordPress handbook calls this the most important security step. It also asks owners to choose plugins and themes that are actively updated. WPScan says updates sit under Dashboard, then Updates, and advises testing them on a staging copy, a private duplicate of the site, because updates can cause compatibility problems.</p>
+<p>Wordfence's checklist says to enable auto-updates where practical and to check for updates at least weekly. That checklist is a 2015 PDF, so I use it only for cadence.</p>
+<p>PHP, the language WordPress runs on, needs updating too. WPScan says to find your version under Tools, Health, Info, Server, and that most hosts let you switch versions. NitroPack adds that you should back up before bulk updates and audit the site after.</p>
+<p>The table is my reading, built from Wordfence's weekly cadence and WPScan's staging advice. It matches the update routine to what a broken site would cost you.</p>
+<div class="prose-table"><table><thead><tr><th>Site type</th><th>Routine</th><th>Reason</th></tr></thead><tbody><tr><td>Brochure site</td><td>Auto-updates on, weekly manual check</td><td>Few plugins, little custom code</td></tr><tr><td>Shop, booking or paid forms</td><td>Backup, staging test, then live update, weekly</td><td>A broken checkout loses orders</td></tr><tr><td>Heavily customised site</td><td>Developer applies and tests updates</td><td>Custom code can break silently</td></tr></tbody></table></div>
+<h2 id="logins-passwords-two-factor-authentication-and-attempt-limits">Logins: Passwords, Two-Factor Authentication and Attempt Limits</h2>
+<p>Protect the login with a long unique password, two-factor authentication for every administrator and a cap on repeated attempts. The WordPress handbook explains why: a brute force attack is an attacker repeatedly trying username and password combinations, and because the attempts are automated and often come from botnets, even failed ones can overwhelm a site.</p>
+<ul><li><strong>Passwords.</strong> The handbook recommends long, unique passwords and a password manager. Liquid Web says at least 16 characters and no reuse across wp-admin, database, FTP and hosting, while NitroPack says 10 or more. The sources differ, so take the longer.</li><li><strong>Two-factor authentication (2FA).</strong> This asks for a second code from an app or key. As of 2025, per the handbook, WordPress core does not ship 2FA, so add it by plugin or single sign-on for every administrator. The handbook also lists passkeys, a passwordless login, as a plugin option.</li><li><strong>Attempt limits.</strong> The handbook prefers limits at the host or edge, because a plugin runs inside PHP and uses resources during a heavy attack. Liquid Web suggests blocking a user after three failed attempts.</li><li><strong>Accounts.</strong> Do not use &quot;admin&quot; as a username, keep few administrators and give staff the least access their work needs (handbook, WPScan). Wordfence says to review the user list often and delete obsolete accounts.</li><li><strong>XML-RPC.</strong> This older interface, xmlrpc.php, is a frequent brute-force target. The handbook says to disable it if unused, or restrict and rate-limit it if Jetpack or an app needs it.</li></ul>
+<p>An activity log adds the missing view: WPScan says logs record logins, file changes and page updates, and alerts on chosen events save you reading entries daily.</p>
+<h2 id="firewalls-host-edge-or-plugin">Firewalls: Host, Edge or Plugin</h2>
+<p>A web application firewall (WAF) filters requests to your site and drops those that look like attacks, such as SQL injection, where an attacker types database commands into a form (WPScan). The table compares three placements, drawn from WPScan, NitroPack, Liquid Web and the handbook as read on 20 November 2026.</p>
+<div class="prose-table"><table><thead><tr><th>Type</th><th>Where it filters</th><th>Trade-off</th></tr></thead><tbody><tr><td>Edge or CDN firewall</td><td>Before traffic reaches your server</td><td>Traffic routes through the provider</td></tr><tr><td>Host or server firewall</td><td>On the hosting server</td><td>Depends on your plan</td></tr><tr><td>Plugin firewall</td><td>Inside WordPress, after traffic arrives</td><td>Adds server load</td></tr></tbody></table></div>
+<p>The handbook names Cloudflare, Sucuri and host-provided WAFs as edge options and says blocking before requests reach your server preserves resources during an attack. NitroPack and the handbook both note that plugin-level filtering consumes server resources. WPScan says some hosts include a server-level firewall.</p>
+<p>My decision rule: choose the edge or host firewall first, and ask your host which one your plan includes. Choose a plugin firewall only when neither is available, and accept the extra load.</p>
+<h2 id="backups-files-database-location-and-a-restore-test">Backups: Files, Database, Location and a Restore Test</h2>
+<p>A backup protects you only if it holds both the site files and the database, sits on a different server and has been restored at least once. WPScan says a full WordPress backup needs both and that hosting backups alone are not enough, so keep a copy elsewhere. SentinelOne and the handbook both say to test the restore, and the handbook says risk can never reach zero, so recovery must be planned.</p>
+<p>Wordfence's checklist says to back up files and database at least weekly. The frequency decides how much you can lose, so here is the arithmetic: a weekly backup can lose almost 7 days of changes if the site fails just before the next run, and a daily backup caps the loss at 1 day. WPScan recommends real-time backups for larger sites, which save each change as it happens, so no order or form entry is lost.</p>
+<p>Run this restore test after setting up backups and then monthly. It is my suggested routine, not a sourced method:</p>
+<ol><li>Download the latest backup, files and database.</li><li>Restore it to a staging copy, not the live site.</li><li>Open the home page, log in, send the contact form and, for a shop, place a test order.</li><li>Write down the date and what failed.</li></ol>
+<h2 id="hardening-settings-what-is-worth-doing-and-what-the-sources-dispute">Hardening Settings: What Is Worth Doing and What the Sources Dispute</h2>
+<p>Disable file editing, force HTTPS and use encrypted file transfer first; most of the rest of the common hardening list is disputed or low value. These four are the ones sources agree on:</p>
+<ul><li><strong>File editing off.</strong> Liquid Web's snippet adds a <code>DISALLOW_FILE_EDIT</code> line to wp-config.php, which removes the code editor from the dashboard so a stolen login cannot rewrite plugin files.</li><li><strong>HTTPS.</strong> WPScan says an SSL certificate encrypts data between your server and visitors, and many hosts set one up automatically.</li><li><strong>Encrypted transfer.</strong> Wordfence and WPScan say to use SFTP or SSH, not plain FTP.</li><li><strong>File permissions.</strong> NitroPack gives 644 for files, 755 for directories and 600 for wp-config.php. Confirm with your host before changing them.</li></ul>
+<p>The table lists settings that appear on competing checklists where the sources disagree on value.</p>
+<div class="prose-table"><table><thead><tr><th>Setting</th><th>Who lists it</th><th>Counterpoint</th></tr></thead><tbody><tr><td>Hidden login URL</td><td>WPScan, Liquid Web, NitroPack</td><td>Handbook: reduces noise, not a sole defence</td></tr><tr><td>Country blocking</td><td>Wordfence, as a plugin feature</td><td>Handbook: avoid permanent country blocklists</td></tr><tr><td>Heavy rules on wp-admin</td><td>Older guides</td><td>Handbook: unreliable, can break AJAX plugins</td></tr><tr><td>Database prefix change</td><td>WPScan, Liquid Web, NitroPack</td><td>Not in the handbook text I read</td></tr><tr><td>Version hiding</td><td>Liquid Web, NitroPack</td><td>Not in the handbook text I read</td></tr></tbody></table></div>
+<p>My reading is to do these after the first tier, with a fresh backup. They reduce noise more than risk, and WPScan notes the prefix change also means renaming every existing table, which can break a live site if done wrongly.</p>
+<h2 id="spotting-a-hack-early-signs-and-first-steps">Spotting a Hack Early: Signs and First Steps</h2>
+<p>Catch a hack early by checking the site yourself, using alerts and treating every customer report as real. Wordfence's checklist lists the signals:</p>
+<ul><li>Visit your own site often, and search for it in Google.</li><li>Set up email alerts in Google Search Console.</li><li>Run a malware scanner with email alerts.</li><li>Investigate customer reports immediately.</li><li>Watch for unexplained spikes in traffic.</li></ul>
+<p>In practice, a customer's WhatsApp message saying the site shows a warning or the enquiry form has gone quiet is exactly that kind of report. SentinelOne says activity logs then show who changed a file or installed a plugin.</p>
+<p>If a hack is confirmed, my suggested order is: restore the last clean backup, change every password, remove unknown administrators, check the log for the way in, then update everything. Prevention is cheaper than cleanup, and <a href="../../blog/website-maintenance-charges/">the website maintenance charges article</a> reports what two vendors quote for cleanup.</p>
+<h2 id="what-usually-goes-wrong-with-wordpress-security">What Usually Goes Wrong With WordPress Security</h2>
+<p>Most failures trace to a handful of habits, each with an easy cause and a plain fix. The table pairs them, using the sources named in the last column.</p>
+<div class="prose-table"><table><thead><tr><th>Mistake</th><th>Cause</th><th>Fix</th></tr></thead><tbody><tr><td>Updates left for months</td><td>Fear of breaking the site</td><td>Staging test and a weekly slot (Wordfence)</td></tr><tr><td>Inactive plugins left installed</td><td>&quot;Might need it later&quot;</td><td>Delete them (Wordfence, Liquid Web)</td></tr><tr><td>Backups only on the host</td><td>The plan includes them</td><td>Also store a copy elsewhere (WPScan)</td></tr><tr><td>A backup never restored</td><td>No test step</td><td>Rehearse the restore (handbook)</td></tr><tr><td>Pirated &quot;nulled&quot; plugins</td><td>Saving the licence fee</td><td>Use trusted sources (SentinelOne)</td></tr><tr><td>One shared admin login</td><td>Convenience</td><td>Named accounts, least access (handbook)</td></tr><tr><td>A security plugin as the only measure</td><td>Belief that a tool finishes the job</td><td>Treat security as continuous work (handbook)</td></tr></tbody></table></div>
+<h2 id="what-to-do-next-a-weekly-monthly-and-quarterly-routine">What to Do Next: A Weekly, Monthly and Quarterly Routine</h2>
+<p>Run the checklist as a routine: a short weekly pass, a monthly review and a quarterly clean-up. The weekly cadence for updates and backups is Wordfence's, and the monthly and quarterly steps are my suggestion.</p>
+<p>Weekly:</p>
+<ul><li>[ ] Check for core, plugin and theme updates, and apply them after a backup or staging test.</li><li>[ ] Confirm the latest backup ran and a copy sits off the server.</li><li>[ ] Send a test message through the contact form.</li></ul>
+<p>Monthly:</p>
+<ul><li>[ ] Review the user list and remove leavers.</li><li>[ ] Restore the latest backup to staging.</li><li>[ ] Read the activity log and login alerts.</li></ul>
+<p>Quarterly:</p>
+<ul><li>[ ] Delete inactive plugins and themes, and replace any that are no longer updated.</li><li>[ ] Check the PHP version.</li><li>[ ] Confirm every administrator still has 2FA.</li></ul>
+<p>If you would rather not own this routine, <a href="../../services/maintenance-care/">Elyx's Maintenance &amp; Care page</a> lists what a care plan covers: uptime monitoring, security and dependency updates tested on a staging copy, backups with a tested restore, and monthly update hours. Engagements start from ₹9,999, and a care plan is quoted to your site, so <a href="../../contact.html">request a quote</a> to see what yours would include. The studio also says it maintains websites it did not build, after a short health check, though its page does not name WordPress, so ask on the call whether your setup fits.</p>
+<p>Still choosing a platform? <a href="../../blog/wix-vs-wordpress-india/">Wix vs WordPress vs a custom website for Indian small businesses</a> compares them, and <a href="../../blog/website-launch-checklist/">the website launch checklist</a> covers backup and access checks before going live.</p>
+<h2 id="sources">Sources</h2>
+<ul><li><a href="https://developer.wordpress.org/advanced-administration/security" rel="noopener" target="_blank">Security, Advanced Administration Handbook</a>, WordPress Developer Resources (read 20 November 2026)</li><li><a href="https://developer.wordpress.org/advanced-administration/security/brute-force" rel="noopener" target="_blank">Brute Force Attacks, Advanced Administration Handbook</a>, WordPress Developer Resources (read 20 November 2026)</li><li><a href="https://wpscan.com/blog/wordpress-security-checklist/" rel="noopener" target="_blank">The Ultimate WordPress Security Checklist</a>, WPScan (read 20 November 2026)</li><li><a href="https://www.wordfence.com/wp-content/uploads/2015/12/Wordfence-How-To-Secure-Your-WordPress-Website-Checklist.pdf" rel="noopener" target="_blank">WordPress Security Checklist (PDF, 2015)</a>, Wordfence (read 20 November 2026)</li><li><a href="https://www.sentinelone.com/cybersecurity-101/cybersecurity/wordpress-security-audit/" rel="noopener" target="_blank">WordPress Security Audit: Checklist &amp; Best Practices</a>, SentinelOne (read 20 November 2026)</li><li>[WordPress Security Checklist [18 Key Steps]](https://www.liquidweb.com/wordpress/security/), Liquid Web (read 20 November 2026)</li><li><a href="https://nitropack.io/blog/wordpress-security-checklist/" rel="noopener" target="_blank">2026 WordPress Security Checklist To Keep Your Site Safe</a>, NitroPack (read 20 November 2026)</li></ul>
+      </div>
+      <section class="bfaq" id="faq"><h2>Frequently asked questions</h2><div class="faq__list"><details class="faq__item">
+  <summary class="faq__q"><span>What are the best WordPress security tips?</span><svg class="faq__caret" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+  <div class="faq__a"><p>The best WordPress security tips are to update everything promptly, delete unused plugins, use unique passwords with two-factor authentication, put a firewall in front of the site and keep tested backups. The WordPress handbook calls updating the most important step. The checklist above ranks the rest.</p></div>
+</details>
+<details class="faq__item">
+  <summary class="faq__q"><span>What is WordPress security?</span><svg class="faq__caret" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+  <div class="faq__a"><p>WordPress security is the set of habits and settings that keep a WordPress site from being broken into, and that let you recover if it is. The handbook describes it as reducing risk and planning for recovery, covering your hosting and your own working practices as well as WordPress.</p></div>
+</details>
+<details class="faq__item">
+  <summary class="faq__q"><span>Does WordPress offer built-in security?</span><svg class="faq__caret" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+  <div class="faq__a"><p>WordPress has some built-in protection, such as a password strength meter and user roles, but not everything a business needs. As of 2025 the handbook says core does not include two-factor authentication.</p></div>
+</details>
+<details class="faq__item">
+  <summary class="faq__q"><span>How often should I revisit the WordPress security checklist?</span><svg class="faq__caret" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+  <div class="faq__a"><p>Check for updates and confirm a backup at least weekly, per Wordfence's checklist, and review users and test a restore monthly. The monthly and quarterly steps are my suggestion. The handbook describes security as continuous work, not a one-off task.</p></div>
+</details>
+<details class="faq__item">
+  <summary class="faq__q"><span>Do I need a WordPress security plugin?</span><svg class="faq__caret" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+  <div class="faq__a"><p>A security plugin is useful when your host offers no firewall, but it is not the whole job. WPScan, Wordfence, Liquid Web and NitroPack all recommend one, and all sell security or hosting. The handbook prefers edge or server protection.</p></div>
+</details>
+<details class="faq__item">
+  <summary class="faq__q"><span>What is a WordPress security audit?</span><svg class="faq__caret" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+  <div class="faq__a"><p>A WordPress security audit is a systematic examination of your site, theme and plugins to find weak points an attacker could use. SentinelOne says a good one combines a scanning tool with manual review and log files. The routine above is a small-business version.</p></div>
+</details>
+<details class="faq__item">
+  <summary class="faq__q"><span>Is WordPress itself insecure?</span><svg class="faq__caret" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+  <div class="faq__a"><p>WordPress core is not where most reported flaws sit, so the platform is rarely the weakest link. SentinelOne puts 4% of issues in core and 90% in plugins, while NitroPack says 56% involve plugins. Different sources, different figures, same direction: plugins dominate.</p></div>
+</details>
+<details class="faq__item">
+  <summary class="faq__q"><span>How do I check whether my WordPress site is secure?</span><svg class="faq__caret" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+  <div class="faq__a"><p>Start with the routine above, then run an online scanner. NitroPack names Qualys, SiteLock and VirusTotal for checking malware and known issues. A scan finds known problems only, so it does not replace a restore test.</p></div>
+</details></div></section>
+      <div class="bfoot"><span>Maintenance, Security &amp; Speed</span></div>
+    </article>
+    <aside class="baside" aria-label="From Elyx"><div class="bcta">
+  <span class="bcta__k">Elyx Solutions</span>
+  <h3>Tired of wondering whether your site is still working?</h3>
+  <a class="btn btn--blue" href="https://wa.me/919611729733?text=Hi%20Elyx%2C%20I'd%20like%20to%20talk%20about%20a%20project.%20(from%20the%20article%20%22WordPress%20Security%20Checklist%20for%20Small%20Businesses%22)" target="_blank" rel="noopener" data-track="whatsapp_click" data-article="wordpress-security-checklist" data-card-pos="side">WhatsApp us <svg class="arr" width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H4M10 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+  <a class="btn btn--ghost" href="../../services/maintenance-care/" data-track="card_click" data-article="wordpress-security-checklist" data-card-pos="side" data-btn="soft">See care plans</a>
+</div></aside>
+  </div>
+</div></main>
+<section class="cta" data-screen-label="Contact CTA">
+  <div class="cta__in reveal">
+    <div class="deco deco-dark" data-parallax="0.08" style="z-index:-1" aria-hidden="true"><span class="orb orb-a"></span></div>
+    <div class="ph-grid cta__bg"></div>
+    <div class="cta__glow"></div>
+    <span class="eyebrow is-light" style="justify-content:center;">Let's build</span>
+    <h2 class="cta__t" style="color:#fff;margin-top:20px;">Have something worth <span class="em">building?</span></h2>
+    <p class="cta__sub">Tell us where you're headed. We'll bring the team, the plan and the craft to get you there.</p>
+    <div class="cta__row">
+      <a class="btn btn--blue" href="../../contact.html" data-track="cta_click" data-pos="cta-section">Start a project <svg class="arr" width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H4M10 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+      <a class="btn btn--light" href="../../contact.html#book" data-track="cta_click" data-pos="cta-section">Book a call</a>
+    </div>
+  </div>
+</section>
+<footer class="footer">
+  <div class="footer__in">
+    <div class="footer__top">
+      <div>
+        <a class="brand" href="../../" aria-label="Elyx Solutions home">
+          <svg class="brand__mark" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+            <g transform="skewX(-10)">
+              <rect x="7" y="4" width="15" height="4.4" rx="1.2" fill="#1f4fd8"></rect>
+              <rect x="7" y="11.8" width="11" height="4.4" rx="1.2" fill="#0b1024"></rect>
+              <rect x="7" y="19.6" width="15" height="4.4" rx="1.2" fill="#1f4fd8"></rect>
+            </g>
+          </svg>
+          <span class="brand__name">Elyx</span>
+        </a>
+        <p class="footer__lede">Beyond just presence, we build digital <span class="serif-i" style="color:var(--blue)">value.</span></p>
+      </div>
+      <div class="fcol">
+        <h4>Services</h4>
+        <a href="../../services/web-development/">Web Development</a>
+        <a href="../../services/ecommerce-development/">E-commerce Development</a>
+        <a href="../../services/saas-development/">SaaS Development</a>
+        <a href="../../services/app-development/">App Development</a>
+        <a href="../../services/ai-chatbots/">AI Chatbots</a>
+        <a href="../../services/ai-call-assistants/">AI Call &amp; Voice Assistants</a>
+        <a href="../../services/whatsapp-automation/">WhatsApp &amp; Business Automation</a>
+        <a href="../../services/crm-lead-management/">CRM &amp; Lead Management</a>
+        <a href="../../services/booking-systems/">Booking &amp; Appointment Systems</a>
+        <a href="../../services/payments-billing/">Payments &amp; Subscription Billing</a>
+        <a href="../../services/admin-dashboards/">Admin Dashboards &amp; Internal Tools</a>
+        <a href="../../services/seo-optimization/">SEO Optimization</a>
+        <a href="../../services/maintenance-care/">Maintenance &amp; Care</a>
+      </div>
+      <div class="fcol">
+        <h4>Websites for</h4>
+        <a href="../../websites-for/dentists/">Dentists &amp; Clinics</a>
+        <a href="../../websites-for/coaching-centres/">Coaching Centres</a>
+        <a href="../../websites-for/restaurants-and-cafes/">Restaurants &amp; Cafés</a>
+        <a href="../../websites-for/salons-and-spas/">Salons &amp; Spas</a>
+        <a href="../../websites-for/real-estate/">Real Estate</a>
+        <a href="../../websites-for/ca-and-law-firms/">CA &amp; Law Firms</a>
+      </div>
+      <div class="fcol">
+        <h4>Company</h4>
+        <a href="../../about.html">About</a>
+        <a href="../../work.html">Work</a>
+        <a href="../../pricing/">Pricing</a>
+        <a href="../../tools/">Free tools</a>
+        <a href="../../blog/">Blog</a>
+        <a href="../../web-development-bengaluru/">Bengaluru</a>
+        <a href="../../contact.html">Contact</a>
+      </div>
+      <div class="fcol">
+        <h4>Connect</h4>
+        <a href="mailto:support.elyxsolutions@gmail.com">support.elyxsolutions@gmail.com</a>
+        <a href="tel:+919611729733" data-track="call_click" data-pos="footer">+91 96117 29733</a>
+        <a href="tel:+917204723340" data-track="call_click" data-pos="footer">+91 72047 23340</a>
+        <a href="https://wa.me/919611729733?text=Hi%20Elyx%2C%20I'd%20like%20to%20talk%20about%20a%20project." target="_blank" rel="noopener" data-track="whatsapp_click" data-pos="footer">WhatsApp</a>
+        <a href="https://www.linkedin.com/company/elyxsolutions04/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://www.instagram.com/elyxsolutions" target="_blank" rel="noopener">Instagram</a>
+        <span class="footer__addr">Bengaluru, Karnataka</span>
+      </div>
+    </div>
+    <div class="footer__bot">
+      <span>© 2026 Elyx Solutions. All rights reserved.</span>
+      <span>Designed &amp; built in-house · Bengaluru, India.</span>
+    </div>
+  </div>
+</footer>
+<a class="wa-float" href="https://wa.me/919611729733?text=Hi%20Elyx%2C%20I'd%20like%20to%20talk%20about%20a%20project." target="_blank" rel="noopener" aria-label="Chat with Elyx on WhatsApp" data-track="whatsapp_click" data-pos="floating">
+  <svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16.04 3C9.4 3 4 8.4 4 15.03c0 2.12.55 4.19 1.6 6.01L4 29l8.12-1.57a12.03 12.03 0 0 0 3.92.65C22.68 28.08 28.08 22.67 28.08 16 28.08 9.36 22.7 3 16.04 3Zm0 22.06c-1.22 0-2.4-.33-3.44-.95l-.25-.15-4.82.93.97-4.7-.17-.27a9.9 9.9 0 0 1-1.52-5.27c0-5.5 4.48-9.98 10-9.98 5.5 0 9.98 4.48 9.98 9.98s-4.48 10.41-9.98 10.41l-.77-.02Zm5.47-7.46c-.3-.15-1.77-.87-2.04-.97-.28-.1-.48-.15-.68.15-.2.3-.78.97-.95 1.17-.18.2-.35.22-.65.07-.3-.15-1.27-.47-2.42-1.5-.9-.8-1.5-1.78-1.67-2.08-.18-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.68-1.64-.93-2.25-.25-.58-.5-.5-.68-.5h-.58c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.5s1.07 2.9 1.22 3.1c.15.2 2.1 3.2 5.08 4.48.7.3 1.26.48 1.7.62.72.23 1.37.2 1.88.12.58-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35Z"/></svg>
+</a>
+<script>window.ELYX={"email":"support.elyxsolutions@gmail.com","whatsapp":"https://wa.me/919611729733?text=Hi%20Elyx%2C%20I'd%20like%20to%20talk%20about%20a%20project.","phone":"+91 96117 29733","booking":""};</script>
+<script src="../../js/site.js"></script>
+<script src="../../js/analytics.js"></script>
+</body>
+</html>
