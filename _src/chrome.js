@@ -243,10 +243,21 @@ function ga4() {
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${esc(config.ga4Id)}');</script>`;
 }
 
+/* Google Ads / Tag Manager tag (GTM-TQRQB3F4). Goes on every page via headExtras. */
+function gads() {
+  return `<script async src="https://www.googletagmanager.com/gtm.js?id=GTM-TQRQB3F4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+</script>`;
+}
+
 function headExtras(extraGraph) {
   return [
     '<link rel="stylesheet" href="/css/pages.css" />',
     ld(extraGraph || []),
+    gads(),
     ga4()
   ].filter(Boolean).join('\n');
 }
